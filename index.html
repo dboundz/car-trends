@@ -1,34 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Car Trends Dashboards</title>
-  <style>
-    :root { --bg:#0d1117; --panel:#161b22; --text:#e6edf3; --muted:#8b949e; --link:#58a6ff; --border:#30363d; }
-    * { box-sizing: border-box; }
-    body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-      background: var(--bg); color: var(--text); min-height: 100vh; padding: 48px 24px; }
-    main { max-width: 720px; margin: 0 auto; }
-    h1 { margin: 0 0 8px; font-size: 1.75rem; letter-spacing: -0.02em; }
-    p { color: var(--muted); margin: 0 0 28px; line-height: 1.5; }
-    .cards { display: grid; gap: 14px; }
-    a.card { display: block; padding: 18px 20px; background: var(--panel); border: 1px solid var(--border);
-      border-radius: 12px; color: var(--text); text-decoration: none; }
-    a.card:hover { border-color: var(--link); }
-    a.card strong { display: block; font-size: 1.1rem; margin-bottom: 4px; color: var(--link); }
-    a.card span { color: var(--muted); font-size: 0.9rem; }
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Car Trends</title>
+<style>
+:root{
+  --bg:#0d1117;--panel:#161b22;--panel2:#1c2330;--border:#30363d;
+  --text:#e6edf3;--muted:#8b949e;--accent:#e63946;--link:#58a6ff;
+  --up:#3fb950;--down:#f85149;--flat:#8b949e;
+  --radius:12px;--font:Inter,Segoe UI,system-ui,sans-serif;
+  --mono:JetBrains Mono,SF Mono,ui-monospace,Menlo,monospace;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:var(--font);background:var(--bg);color:var(--text);line-height:1.45;min-height:100vh}
+a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:1100px;margin:0 auto;padding:24px 20px 72px}
+header{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:12px;margin-bottom:22px;border-bottom:1px solid var(--border);padding-bottom:16px}
+header h1{margin:0;font-size:1.65rem;font-weight:650;letter-spacing:-.02em}
+header .sub{color:var(--muted);font-size:.9rem;margin-top:4px}
+.badge{background:var(--panel2);border:1px solid var(--border);border-radius:999px;padding:6px 12px;font-size:.8rem;color:var(--muted);white-space:nowrap}
+.callouts{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px;margin-bottom:22px}
+.callout{background:var(--panel2);border:1px solid var(--border);border-radius:10px;padding:14px 16px}
+.callout .k{font-size:.75rem;text-transform:uppercase;letter-spacing:.04em;color:var(--muted);margin-bottom:6px}
+.callout .v{font-size:.95rem;font-weight:600}
+.cards{display:grid;grid-template-columns:1fr;gap:16px}
+.card{background:var(--panel);border:1px solid var(--border);border-radius:var(--radius);padding:18px 18px 14px;border-top:3px solid var(--card-accent,#58a6ff)}
+.card-head{display:flex;flex-wrap:wrap;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:14px}
+.card-head h2{margin:0;font-size:1.15rem;font-weight:650}
+.card-head .sub{color:var(--muted);font-size:.82rem;margin-top:2px}
+.totals{display:flex;flex-wrap:wrap;gap:18px;align-items:baseline}
+.total-n{font-size:2rem;font-weight:700;letter-spacing:-.03em;font-family:var(--mono)}
+.delta{font-family:var(--mono);font-size:.85rem;font-weight:600}
+.delta.up{color:var(--up)}.delta.down{color:var(--down)}.delta.flat{color:var(--flat)}
+.meta{color:var(--muted);font-size:.8rem}
+table{width:100%;border-collapse:collapse;font-size:.88rem}
+th,td{padding:8px 10px;text-align:left;border-bottom:1px solid var(--border)}
+th{color:var(--muted);font-weight:600;font-size:.75rem;text-transform:uppercase;letter-spacing:.03em}
+td.num,th.num{text-align:right;font-family:var(--mono);font-variant-numeric:tabular-nums}
+td.variant{font-weight:550}
+.card-foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px;align-items:center;margin-top:12px;padding-top:10px}
+.btn{display:inline-flex;align-items:center;gap:6px;background:var(--panel2);border:1px solid var(--border);border-radius:8px;padding:8px 12px;font-size:.85rem;color:var(--link)}
+.btn:hover{border-color:var(--link);text-decoration:none}
+.moved{margin-top:10px;display:flex;flex-wrap:wrap;gap:8px}
+.chip{background:var(--panel2);border:1px solid var(--border);border-radius:999px;padding:4px 10px;font-size:.78rem;color:var(--muted)}
+.chip strong{color:var(--text);font-weight:600}
+footer{margin-top:28px;padding-top:16px;border-top:1px solid var(--border);color:var(--muted);font-size:.82rem}
+.empty{color:var(--muted);font-style:italic;padding:8px 0}
+</style>
 </head>
 <body>
-  <main>
-    <h1>Car Trends</h1>
-    <p>Local listing dashboards — asking prices, miles, and trends from daily scrapes.</p>
-    <div class="cards">
-      <a class="card" href="ferrari-488-f8.html"><strong>Ferrari 488 / F8</strong><span>GTB &amp; Spider asking prices · model toggles</span></a>
-      <a class="card" href="mclaren-lt.html"><strong>McLaren 675LT / 600LT / 765LT</strong><span>LT coupe &amp; Spider asking prices</span></a>
-      <a class="card" href="ford-gt-gen1.html"><strong>Ford GT Gen 1</strong><span>2005–2006 only · year toggles</span></a>
+<div class="wrap">
+  <header>
+    <div>
+      <h1>Car Trends</h1>
+      <div class="sub" id="header-sub">Loading…</div>
     </div>
-  </main>
+    <div class="badge" id="gen-badge"></div>
+  </header>
+
+  <section class="callouts" id="global-callouts"></section>
+  <section class="cards" id="cards"></section>
+
+  <footer>
+    Detail dashboards have full charts, filters, and listing tables.
+    Relative links: <code>ferrari-488-f8.html</code>, <code>mclaren-lt.html</code>, <code>ford-gt-gen1.html</code>.
+    Overview is a high-level day-over-day snapshot across all categories.
+  </footer>
+</div>
+<script id="overview-data" type="application/json">{"title":"Car Trends","generated_at":"2026-09-07 20:08 UTC","snapshot_dates":["2026-09-07"],"categories":[{"id":"ferrari","title":"Ferrari 488 / F8","subtitle":"488 · F8 · 458 (if present)","detail_href":"ferrari-488-f8.html","accent":"#e63946","available":true,"snapshot_date":"2026-09-07","prior_date":"2026-09-06","total_listings":372,"prior_total_listings":349,"delta_total":23,"overall_median_ask":472812,"delta_median_ask_overall":28103,"variants":[{"key":"488_coupe","label":"488 Coupe","count":65,"median_ask":339900,"median_miles":10775,"delta_count":-6,"delta_ask":0,"prior_count":71,"prior_median_ask":339900},{"key":"488_spider","label":"488 Spider","count":114,"median_ask":419422,"median_miles":9282,"delta_count":-28,"delta_ask":0,"prior_count":142,"prior_median_ask":419422},{"key":"F8_coupe","label":"F8 Coupe","count":55,"median_ask":473076,"median_miles":4216,"delta_count":22,"delta_ask":3080,"prior_count":33,"prior_median_ask":469996},{"key":"F8_spider","label":"F8 Spider","count":80,"median_ask":659725,"median_miles":3911,"delta_count":-23,"delta_ask":383,"prior_count":103,"prior_median_ask":659342},{"key":"458_coupe","label":"458 Coupe","count":28,"median_ask":472548,"median_miles":8860,"delta_count":null,"delta_ask":null,"prior_count":null,"prior_median_ask":null},{"key":"458_spider","label":"458 Spider","count":30,"median_ask":538192,"median_miles":9928,"delta_count":null,"delta_ask":null,"prior_count":null,"prior_median_ask":null}],"callouts":[{"type":"median_ask","variant":"F8 Coupe","delta":3080,"from":469996,"to":473076},{"type":"count","variant":"488 Spider","delta":-28,"from":142,"to":114}],"sources_used":["Classic.com","Ferrari Approved (preowned.ferrari.com)","Ferrari Fort Lauderdale","Ferrari Philadelphia","Limited Spec","Prestige Imports","bringatrailer","cars.com","dupontregistry","hemmings"]},{"id":"mclaren","title":"McLaren LT","subtitle":"600LT · 675LT · 765LT","detail_href":"mclaren-lt.html","accent":"#f4a261","available":true,"snapshot_date":"2026-09-07","prior_date":"2026-09-06","total_listings":65,"prior_total_listings":73,"delta_total":-8,"overall_median_ask":447192,"delta_median_ask_overall":54998,"variants":[{"key":"600LT_coupe","label":"600LT Coupe","count":21,"median_ask":239990,"median_miles":8680,"delta_count":-2,"delta_ask":417,"prior_count":23,"prior_median_ask":239573},{"key":"600LT_spider","label":"600LT Spider","count":14,"median_ask":259999,"median_miles":15915,"delta_count":-2,"delta_ask":5,"prior_count":16,"prior_median_ask":259994},{"key":"675LT_coupe","label":"675LT Coupe","count":1,"median_ask":519990,"median_miles":2290,"delta_count":-2,"delta_ask":109995,"prior_count":3,"prior_median_ask":409995},{"key":"675LT_spider","label":"675LT Spider","count":1,"median_ask":374393,"median_miles":null,"delta_count":0,"delta_ask":0,"prior_count":1,"prior_median_ask":374393},{"key":"765LT_coupe","label":"765LT Coupe","count":12,"median_ask":742431,"median_miles":17000,"delta_count":-2,"delta_ask":0,"prior_count":14,"prior_median_ask":742431},{"key":"765LT_spider","label":"765LT Spider","count":16,"median_ask":849999,"median_miles":5112,"delta_count":0,"delta_ask":0,"prior_count":16,"prior_median_ask":849999}],"callouts":[{"type":"median_ask","variant":"675LT Coupe","delta":109995,"from":409995,"to":519990},{"type":"count","variant":"600LT Coupe","delta":-2,"from":23,"to":21}],"sources_used":["Classic.com","Cars.com","Hemmings","duPont REGISTRY"]},{"id":"ford_gt","title":"Ford GT Gen 1","subtitle":"2005 · 2006","detail_href":"ford-gt-gen1.html","accent":"#58a6ff","available":true,"snapshot_date":"2026-09-07","prior_date":null,"total_listings":26,"prior_total_listings":null,"delta_total":null,"overall_median_ask":774940,"delta_median_ask_overall":null,"variants":[{"key":"2005","label":"2005","count":13,"median_ask":649900,"median_miles":9012,"delta_count":null,"delta_ask":null,"prior_count":null,"prior_median_ask":null},{"key":"2006","label":"2006","count":13,"median_ask":899980,"median_miles":752,"delta_count":null,"delta_ask":null,"prior_count":null,"prior_median_ask":null}],"callouts":[],"sources_used":["Cars.com","Classic.com","Hemmings"]}]}</script>
+<script>
+(function(){
+  const raw = document.getElementById('overview-data').textContent;
+  const DATA = JSON.parse(raw);
+
+  function fmtMoney(n){
+    if(n==null || n===undefined) return '—';
+    return '$' + Number(n).toLocaleString('en-US');
+  }
+  function fmtMiles(n){
+    if(n==null || n===undefined) return '—';
+    return Number(n).toLocaleString('en-US') + ' mi';
+  }
+  function fmtCount(n){
+    if(n==null || n===undefined) return '—';
+    return Number(n).toLocaleString('en-US');
+  }
+  function deltaClass(d){
+    if(d==null || d===undefined) return 'flat';
+    if(d>0) return 'up';
+    if(d<0) return 'down';
+    return 'flat';
+  }
+  function deltaArrow(d){
+    if(d==null || d===undefined) return '';
+    if(d>0) return '↑';
+    if(d<0) return '↓';
+    return '→';
+  }
+  function fmtDeltaCount(d){
+    if(d==null || d===undefined) return '<span class="delta flat">n/a</span>';
+    if(d===0) return '<span class="delta flat">→ 0</span>';
+    const sign = d>0 ? '+' : '';
+    return `<span class="delta ${deltaClass(d)}">${deltaArrow(d)} ${sign}${d}</span>`;
+  }
+  function fmtDeltaAsk(d){
+    if(d==null || d===undefined) return '<span class="delta flat">n/a</span>';
+    if(d===0) return '<span class="delta flat">→ $0</span>';
+    const sign = d>0 ? '+' : '−';
+    const abs = Math.abs(d).toLocaleString('en-US');
+    return `<span class="delta ${deltaClass(d)}">${deltaArrow(d)} ${sign}$${abs}</span>`;
+  }
+  function fmtDeltaAskPlain(d){
+    if(d==null) return 'n/a';
+    if(d===0) return '→ $0';
+    const sign = d>0 ? '+' : '−';
+    return `${deltaArrow(d)} ${sign}$${Math.abs(d).toLocaleString('en-US')}`;
+  }
+
+  const dates = (DATA.snapshot_dates||[]).join(' · ') || '—';
+  document.getElementById('header-sub').textContent =
+    'Latest snapshot' + ((DATA.snapshot_dates||[]).length>1 ? 's' : '') + ': ' + dates;
+  document.getElementById('gen-badge').textContent = 'Built ' + (DATA.generated_at||'');
+
+  // Global "what moved" from all category callouts
+  const global = document.getElementById('global-callouts');
+  const allAsk = [];
+  const allCnt = [];
+  (DATA.categories||[]).forEach(c=>{
+    (c.callouts||[]).forEach(x=>{
+      if(x.type==='median_ask') allAsk.push({...x, cat:c.title});
+      if(x.type==='count') allCnt.push({...x, cat:c.title});
+    });
+  });
+  let ghtml = '';
+  if(allAsk.length){
+    const t = allAsk.slice().sort((a,b)=>Math.abs(b.delta)-Math.abs(a.delta))[0];
+    ghtml += `<div class="callout"><div class="k">Biggest median ask move</div><div class="v">${t.cat} · ${t.variant}: <span class="delta ${deltaClass(t.delta)}">${fmtDeltaAskPlain(t.delta)}</span></div></div>`;
+  }
+  if(allCnt.length){
+    const t = allCnt.slice().sort((a,b)=>Math.abs(b.delta)-Math.abs(a.delta))[0];
+    const sign = t.delta>0?'+':'';
+    ghtml += `<div class="callout"><div class="k">Largest listing count change</div><div class="v">${t.cat} · ${t.variant}: <span class="delta ${deltaClass(t.delta)}">${deltaArrow(t.delta)} ${sign}${t.delta}</span> (${fmtCount(t.from)} → ${fmtCount(t.to)})</div></div>`;
+  }
+  if(!ghtml){
+    ghtml = `<div class="callout"><div class="k">What moved</div><div class="v meta">No day-over-day comparison available yet for some categories.</div></div>`;
+  }
+  global.innerHTML = ghtml;
+
+  const cards = document.getElementById('cards');
+  cards.innerHTML = (DATA.categories||[]).map(c=>{
+    if(!c.available){
+      return `<article class="card" style="--card-accent:${c.accent}"><div class="card-head"><div><h2>${c.title}</h2><div class="sub">${c.subtitle||''}</div></div></div><div class="empty">${c.error||'No data'}</div></article>`;
+    }
+    const priorNote = c.prior_date
+      ? `vs ${c.prior_date}`
+      : 'no prior day';
+    const rows = (c.variants||[]).map(v=>`
+      <tr>
+        <td class="variant">${v.label}</td>
+        <td class="num">${fmtCount(v.count)}</td>
+        <td class="num">${fmtDeltaCount(v.delta_count)}</td>
+        <td class="num">${fmtMoney(v.median_ask)}</td>
+        <td class="num">${fmtDeltaAsk(v.delta_ask)}</td>
+        <td class="num">${fmtMiles(v.median_miles)}</td>
+      </tr>`).join('') || `<tr><td colspan="6" class="empty">No variants</td></tr>`;
+
+    const chips = (c.callouts||[]).map(x=>{
+      if(x.type==='median_ask'){
+        return `<span class="chip">Ask: <strong>${x.variant}</strong> ${fmtDeltaAskPlain(x.delta)}</span>`;
+      }
+      const sign = x.delta>0?'+':'';
+      return `<span class="chip">Count: <strong>${x.variant}</strong> ${deltaArrow(x.delta)} ${sign}${x.delta}</span>`;
+    }).join('');
+
+    return `
+    <article class="card" style="--card-accent:${c.accent}">
+      <div class="card-head">
+        <div>
+          <h2>${c.title}</h2>
+          <div class="sub">${c.subtitle||''} · snapshot ${c.snapshot_date||'—'} <span class="meta">(${priorNote})</span></div>
+        </div>
+        <div class="totals">
+          <div>
+            <div class="meta">Listings</div>
+            <div class="total-n">${fmtCount(c.total_listings)}</div>
+            <div>${fmtDeltaCount(c.delta_total)} <span class="meta">listings</span></div>
+          </div>
+          <div>
+            <div class="meta">Median ask (variants)</div>
+            <div class="total-n" style="font-size:1.35rem">${fmtMoney(c.overall_median_ask)}</div>
+            <div>${fmtDeltaAsk(c.delta_median_ask_overall)}</div>
+          </div>
+        </div>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Variant</th>
+            <th class="num">Count</th>
+            <th class="num">Δ Count</th>
+            <th class="num">Median ask</th>
+            <th class="num">Δ Ask</th>
+            <th class="num">Median mi</th>
+          </tr>
+        </thead>
+        <tbody>${rows}</tbody>
+      </table>
+      ${chips ? `<div class="moved">${chips}</div>` : ''}
+      <div class="card-foot">
+        <div class="meta">${(c.sources_used||[]).slice(0,6).join(' · ') || ''}${(c.sources_used||[]).length>6?' · …':''}</div>
+        <a class="btn" href="${c.detail_href}">Open detail dashboard →</a>
+      </div>
+    </article>`;
+  }).join('');
+})();
+</script>
 </body>
 </html>
