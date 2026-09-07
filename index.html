@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Car Trends Dashboards</title>
+  <style>
+    :root { --bg:#0d1117; --panel:#161b22; --text:#e6edf3; --muted:#8b949e; --link:#58a6ff; --border:#30363d; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg); color: var(--text); min-height: 100vh; padding: 48px 24px; }
+    main { max-width: 720px; margin: 0 auto; }
+    h1 { margin: 0 0 8px; font-size: 1.75rem; letter-spacing: -0.02em; }
+    p { color: var(--muted); margin: 0 0 28px; line-height: 1.5; }
+    .cards { display: grid; gap: 14px; }
+    a.card { display: block; padding: 18px 20px; background: var(--panel); border: 1px solid var(--border);
+      border-radius: 12px; color: var(--text); text-decoration: none; }
+    a.card:hover { border-color: var(--link); }
+    a.card strong { display: block; font-size: 1.1rem; margin-bottom: 4px; color: var(--link); }
+    a.card span { color: var(--muted); font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Car Trends</h1>
+    <p>Local listing dashboards — asking prices, miles, and trends from daily scrapes.</p>
+    <div class="cards">
+      <a class="card" href="ferrari-488-f8.html"><strong>Ferrari 488 / F8</strong><span>GTB &amp; Spider asking prices · model toggles</span></a>
+      <a class="card" href="mclaren-lt.html"><strong>McLaren 675LT / 600LT / 765LT</strong><span>LT coupe &amp; Spider asking prices</span></a>
+      <a class="card" href="ford-gt-gen1.html"><strong>Ford GT Gen 1</strong><span>2005–2006 only · year toggles</span></a>
+    </div>
+  </main>
+</body>
+</html>
