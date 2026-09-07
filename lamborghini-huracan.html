@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Lamborghini Huracán STO / Performante Listing Tracker</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+<style>
+:root{--bg:#0d1117;--panel:#161b22;--panel2:#1c2330;--border:#30363d;--text:#e6edf3;--muted:#8b949e;--accent:#ff6b35;--link:#58a6ff;--radius:12px;--font:Inter,Segoe UI,system-ui,sans-serif;--mono:JetBrains Mono,SF Mono,ui-monospace,Menlo,monospace}
+*{box-sizing:border-box}
+body{margin:0;font-family:var(--font);background:var(--bg);color:var(--text);line-height:1.45;min-height:100vh}
+a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:1280px;margin:0 auto;padding:24px 20px 64px}
+header{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:12px;margin-bottom:24px;border-bottom:1px solid var(--border);padding-bottom:16px}
+header h1{margin:0;font-size:1.55rem;font-weight:650;letter-spacing:-.02em}
+header .sub{color:var(--muted);font-size:.9rem}
+header .badge{background:var(--panel2);border:1px solid var(--border);border-radius:999px;padding:6px 12px;font-size:.8rem;color:var(--muted)}
+.grid-kpi{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-bottom:22px}
+.card{background:var(--panel);border:1px solid var(--border);border-radius:var(--radius);padding:16px 18px}
+.card h3{margin:0 0 10px;font-size:.85rem;color:var(--muted);font-weight:600;display:flex;align-items:center;gap:8px}
+.dot{width:10px;height:10px;border-radius:50%;display:inline-block}
+.kpi-count{font-size:1.85rem;font-weight:700;letter-spacing:-.03em}
+.kpi-row{display:flex;justify-content:space-between;gap:8px;margin-top:8px;font-size:.82rem}
+.kpi-row span{color:var(--muted)}.kpi-row strong{color:var(--text);font-family:var(--mono);font-weight:550}
+.charts{display:grid;grid-template-columns:1.4fr 1fr;gap:14px;margin-bottom:22px}
+@media(max-width:960px){.charts{grid-template-columns:1fr}}
+.chart-wrap{position:relative;height:320px}
+.section-title{margin:0 0 12px;font-size:1.1rem;font-weight:650}
+.standouts{margin-bottom:22px}
+.standout-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:12px}
+.standout-card{background:var(--panel2);border:1px solid var(--border);border-radius:10px;padding:14px 16px;display:flex;flex-direction:column;gap:6px}
+.standout-card .title{font-weight:600;font-size:.95rem}
+.standout-card .meta{color:var(--muted);font-size:.8rem}
+.flags{display:flex;flex-wrap:wrap;gap:6px;margin-top:4px}
+.flag{font-size:.7rem;font-weight:650;text-transform:uppercase;letter-spacing:.04em;padding:3px 8px;border-radius:999px;border:1px solid transparent}
+.flag.low_miles{background:rgba(63,185,80,.12);color:#56d364;border-color:rgba(63,185,80,.35)}
+.flag.cheapest{background:rgba(88,166,255,.15);color:#58a6ff;border-color:rgba(88,166,255,.35)}
+.flag.price_outlier{background:rgba(230,57,70,.15);color:#ff8fa3;border-color:rgba(230,57,70,.35)}
+.filters{display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center;margin-bottom:12px;padding:12px 14px;background:var(--panel);border:1px solid var(--border);border-radius:var(--radius)}
+.filters label{font-size:.85rem;color:var(--muted);display:flex;align-items:center;gap:6px}
+.filters select,.filters input[type=search]{background:var(--bg);color:var(--text);border:1px solid var(--border);border-radius:8px;padding:7px 10px;font-size:.85rem}
+.filters input[type=search]{min-width:200px;flex:1}
+.filters input[type=checkbox]{accent-color:var(--accent)}
+.table-wrap{overflow-x:auto;border:1px solid var(--border);border-radius:var(--radius);background:var(--panel)}
+table{width:100%;border-collapse:collapse;font-size:.82rem}
+th,td{padding:9px 12px;text-align:left;border-bottom:1px solid var(--border);white-space:nowrap}
+th{background:var(--panel2);color:var(--muted);font-weight:600;position:sticky;top:0;cursor:pointer;user-select:none}
+th:hover{color:var(--text)}
+tr:last-child td{border-bottom:none}
+tr:hover td{background:rgba(255,255,255,.02)}
+td.num{font-family:var(--mono);text-align:right}
+.empty{color:var(--muted);padding:24px;text-align:center}
+footer{margin-top:28px;color:var(--muted);font-size:.78rem}
+.count-pill{display:inline-block;margin-left:8px;background:var(--panel2);border:1px solid var(--border);border-radius:999px;padding:2px 8px;font-size:.75rem;color:var(--muted);vertical-align:middle}
+
+
+.variant-bar{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-bottom:18px;padding:12px 14px;background:var(--panel);border:1px solid var(--border);border-radius:var(--radius)}
+.variant-bar .vb-label{font-size:.85rem;font-weight:650;color:var(--muted);margin-right:4px;white-space:nowrap}
+.variant-bar .vb-actions{display:flex;gap:6px;margin-right:4px}
+.variant-bar .vb-btn{background:var(--panel2);border:1px solid var(--border);color:var(--muted);border-radius:999px;padding:4px 10px;font-size:.75rem;font-weight:600;cursor:pointer}
+.variant-bar .vb-btn:hover{color:var(--text);border-color:#4a5260}
+.variant-pills{display:flex;flex-wrap:wrap;gap:8px;flex:1}
+.variant-pill{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--border);border-radius:999px;padding:5px 12px 5px 8px;font-size:.8rem;font-weight:600;cursor:pointer;user-select:none;background:var(--panel2);color:var(--muted);opacity:.45;transition:opacity .15s,background .15s,border-color .15s,color .15s}
+.variant-pill .dot{width:9px;height:9px;border-radius:50%;display:inline-block;flex-shrink:0;background:currentColor;opacity:.5}
+.variant-pill.active{opacity:1;color:var(--text);border-color:transparent;box-shadow:0 0 0 1px rgba(255,255,255,.08) inset}
+.variant-pill.active .dot{opacity:1;background:var(--pill-color,#adb5bd)}
+.variant-pill.active{background:color-mix(in srgb, var(--pill-color,#adb5bd) 22%, var(--panel2))}
+.variant-pill:hover{opacity:.85}
+.variant-pill.active:hover{opacity:1}
+
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <h1>Lamborghini Huracán STO / Performante Listing Tracker</h1>
+      <div class="sub">Self-contained snapshot dashboard · data from daily CSVs only</div>
+    </div>
+    <div class="badge" id="headerMeta">Loading…</div>
+  </header>
+  <div class="variant-bar" id="variantBar" aria-label="Show models">
+    <span class="vb-label">Show models</span>
+    <div class="vb-actions">
+      <button type="button" class="vb-btn" id="variantAll">All</button>
+      <button type="button" class="vb-btn" id="variantNone">None</button>
+    </div>
+    <div class="variant-pills" id="variantPills"></div>
+  </div>
+  <div class="grid-kpi" id="kpiGrid"></div>
+  <div class="charts">
+    <div class="card">
+      <h3>Median asking price over time</h3>
+      <div class="chart-wrap"><canvas id="lineChart"></canvas></div>
+    </div>
+    <div class="card">
+      <h3>Price vs miles <span style="font-weight:500;color:var(--muted)">(latest day)</span></h3>
+      <div class="chart-wrap"><canvas id="scatterChart"></canvas></div>
+    </div>
+  </div>
+  <section class="standouts">
+    <h2 class="section-title">Standouts <span class="count-pill" id="standoutCount"></span></h2>
+    <div class="sub" style="margin-bottom:12px;color:var(--muted);font-size:0.85rem;">
+      Sub-10k mile cars · cheapest-in-variant · price outliers vs variant median
+    </div>
+    <div class="standout-grid" id="standoutGrid"></div>
+  </section>
+  <section>
+    <h2 class="section-title">Latest listings <span class="count-pill" id="tableCount"></span></h2>
+    <div class="filters">
+      <label>Model <select id="filterModel"><option value="">All</option></select></label>
+      <label>Body
+        <select id="filterBody">
+          <option value="">All</option>
+          <option value="coupe">Coupe</option>
+          <option value="spider">Spider</option>
+                  </select>
+      </label>
+      <label><input type="checkbox" id="filterCheapest" /> Cheapest in variant</label>
+      <label><input type="checkbox" id="filterLowMile" /> Low-mile</label>
+      <input type="search" id="filterSearch" placeholder="Search title, location, VIN, source…" />
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th data-sort="model_family">Model</th>
+            <th data-sort="body">Body</th>
+            <th data-sort="model_year">Year</th>
+            <th data-sort="asking_price_usd">Ask (USD)</th>
+            <th data-sort="mileage_miles">Miles</th>
+            <th data-sort="location">Location</th>
+            <th data-sort="seller_type">Seller</th>
+            <th data-sort="source">Source</th>
+            <th data-sort="listing_title">Title</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+      </table>
+    </div>
+  </section>
+  <footer id="footerMeta"></footer>
+</div>
+
+<script id="dashboard-data" type="application/json">{"generated_at":"2026-09-07T20:28:14Z","latest_snapshot_date":"2026-09-07","snapshot_dates":["2026-09-07"],"variants":["STO Coupe","Performante Coupe","Performante Spider"],"variant_colors":{"STO Coupe":"#ff6b35","Performante Coupe":"#4cc9f0","Performante Spider":"#90e0ef"},"kpis":[{"variant":"STO Coupe","count":24,"median_ask":489994,"median_miles":6043,"min_ask":400447,"max_ask":590000,"priced_count":24,"miled_count":20,"color":"#ff6b35"},{"variant":"Performante Coupe","count":9,"median_ask":378991,"median_miles":null,"min_ask":159999,"max_ask":459990,"priced_count":9,"miled_count":0,"color":"#4cc9f0"},{"variant":"Performante Spider","count":4,"median_ask":406499,"median_miles":null,"min_ask":314993,"max_ask":430598,"priced_count":4,"miled_count":0,"color":"#90e0ef"}],"median_series":{"STO Coupe":[{"date":"2026-09-07","median_ask":489994,"count":24}],"Performante Coupe":[{"date":"2026-09-07","median_ask":378991,"count":9}],"Performante Spider":[{"date":"2026-09-07","median_ask":406499,"count":4}]},"latest_listings":[{"snapshot_date":"2026-09-07","model_family":"STO","body":"coupe","variant":"STO Coupe","model_year":2021,"asking_price_usd":464433,"mileage_miles":7051,"currency":"USD","location":"Murrieta, California, USA","seller_type":"dealer","listing_title":"2021 Lamborghini Huracan STO","listing_url":"https://www.classic.com/veh/2021-lamborghini-huracan-sto-zhwua6zx3mla17567-4DweP8p/","source":"Classic.com","vin_or_stock":"ZHWUA6ZX3MLA17567","notes":"Classic.com asterisk asking; 7k mi displayed; mileage blank (rounded Nk mi); fixed-price; seller:West Coast Exotic Cars; mileage enriched from Cars.com; also listed on Cars.com @ $464518","flags":["low_miles"]},{"snapshot_date":"2026-09-07","model_family":"STO","body":"coupe","variant":"STO Coupe","model_year":2021,"asking_price_usd":474989,"mileage_miles":14202,"currency":"USD","location":"Johnson Creek, WI, USA","seller_type":"dealer","listing_title":"2021 Lamborghini Huracan STO","listing_url":"https://www.cars.com/vehicledetail/6d129822-aa5d-487c-8315-dbafaefd9c6d/","source":"Cars.com","vin_or_stock":"ZHWUA6ZX8MLA17242","notes":"Cars.com search results; exact miles from Cars.com JSON: 14202; seller:Kearns Motor Car Co.; stock:Used","flags":[]},{"snapshot_date":"2026-09-07","model_family":"STO","body":"coupe","variant":"STO Coupe","model_year":2022,"asking_price_usd":400447,"mileage_miles":21012,"currency":"USD","location":"Maserati Cleveland Cleveland, OH, USA","seller_type":"dealer","listing_title":"2022 Lamborghini Huracan STO","listing_url":"https://www.cars.com/vehicledetail/5668ac7b-3d08-4cb4-9d93-303893dd6ec9/","source":"Cars.com","vin_or_stock":"ZHWUA6ZX5NLA19418","notes":"Cars.com search results; exact miles from Cars.com JSON: 21012; seller:Maserati of Cleveland; stock:Used; location city cleaned from Cars.com card text","flags":["cheapest"]},{"snapshot_date":"2026-09-07","model_family":"STO","body":"coupe","variant":"STO Coupe","model_year":2022,"asking_price_usd":411246,"mileage_miles":16878,"currency":"USD","location":"Merrillville, Indiana, USA","seller_type":"dealer","listing_title":"2022 Lamborghini Huracan STO","listing_url":"https://www.classic.com/veh/2022-lamborghini-huracan-sto-zhwua6zx2nla18324-p6w2m14/","source":"Classic.com","vin_or_stock":"ZHWUA6ZX2NLA18324","notes":"Classic.com asterisk asking; 16k mi displayed; mileage blank (rounded Nk mi); fixed-price; seller:Sweis Infiniti Merrillville; mileage enriched from Cars.com; also listed on Cars.com @ $411246","flags":[]},{"snapshot_date":"2026-09-07","model_family":"STO","body":"coupe","variant":"STO Coupe","model_year":2022,"asking_price_usd":445988,"mileage_miles":null,"currency":"USD","location":"Pompano Beach, Florida, USA","seller_type":"dealer","listing_title":"2022 Lamborghini Huracan STO","listing_url":"https://www.classic.com/veh/2022-lamborghini-huracan-sto-zhwua6zx1nla18251-nBxwZJp/","source":"Classic.com","vin_or_stock":"ZHWUA6ZX1NLA18251","notes":"Classic.com asterisk asking; 13k mi displayed; mileage blank (rounded Nk mi); fixed-price; seller:Sienna Motors","flags":[]},{"snapshot_date":"2026-09-07","model_family":"STO","body":"coupe","variant":"STO Coupe","model_year":2022,"asking_price_usd":450000,"mileage_miles":2009,"currency":"USD","location":"AUTO GROUP Quincy, MA, USA","seller_type":"dealer","listing_title":"2022 Lamborghini Huracan STO","listing_url":"https://www.cars.com/vehicledetail/73220e42-78e6-4564-9c16-e42c31444de0/","source":"Cars.com","vin_or_stock":"ZHWUA6ZX9NLA20281","notes":"Cars.com search results; exact miles from Cars.com JSON: 2009; seller:SR AUTO GROUP; stock:Used; location city cleaned from Cars.com card text","flags":["low_miles"]},{"snapshot_date":"2026-09-07","model_family":"STO","body":"coupe","variant":"STO Coupe","model_year":2022,"asking_price_usd":470223,"mileage_miles":7640,"currency":"USD","location":"Houston, TX, USA","seller_type":"dealer","listing_title":"2022 Lamborghini Huracan STO","listing_url":"https://www.cars.com/vehicledetail/45e3ef4a-3595-4ae6-904f-317a8e74898f/","source":"Cars.com","vin_or_stock":"ZHWUA6ZX8NLA18151","notes":"Cars.com search results; exact miles from Cars.com JSON: 7640; seller:Lamborghini Houston, Rolls-Royce Motorcars North Houston, McLaren Houston; stock:Used","flags":["low_miles"]},{"snapshot_date":"2026-09-07","model_family":"STO","body":"coupe","variant":"STO Coupe","model_year":2022,"asking_price_usd":484991,"mileage_miles":9072,"currency":"USD","location":"Scottsdale, AZ, USA","seller_type":"dealer","listing_title":"2022 Lamborghini Huracan STO","listing_url":"https://www.cars.com/vehicledetail/cd25bf42-5360-4577-bbd6-5fbe2744f697/","source":"Cars.com","vin_or_stock":"ZHWUA6ZX8NLA18876","notes":"Cars.com search results; exact miles from Cars.com JSON: 9072; seller:Auto Boom LLC; stock:Used","flags":["low_miles"]},{"snapshot_date":"2026-09-07","model_family":"STO","body":"coupe","variant":"STO Coupe","model_year":2022,"asking_price_usd":489998,"mileage_miles":8744,"currency":"USD","location":"Pompano Beach, FL, USA","seller_type":"dealer","listing_title":"2022 Lamborghini Huracan STO","listing_url":"https://www.cars.com/vehicledetail/c4958d5f-44d9-4a36-8dd1-f5a4d66cf480/","source":"Cars.com","vin_or_stock":"ZHWUA6ZX7NLA18853","notes":"Cars.com search results; exact miles from Cars.com JSON: 8744; seller:HGreg.com Lux; stock:Used","flags":["low_miles"]},{"snapshot_date":"2026-09-07","model_family":"STO","body":"coupe","variant":"STO Coupe","model_year":2022,"asking_price_usd":499980,"mileage_miles":2500,"currency":"USD","location":"Jonesboro, Arkansas, USA","seller_type":"dealer","listing_title":"2022 Lamborghini Huracán STO","listing_url":"https://www.classic.com/veh/2022-lamborghini-huracan-sto-zhwua6zx4nla20978-nXxY8Bn/","source":"Classic.com","vin_or_stock":"ZHWUA6ZX4NLA20978","notes":"Classic.com asterisk asking; 2k mi displayed; mileage blank (rounded Nk mi); fixed-price; seller:Elite Autos LLC; mileage enriched from Cars.com; also listed on Cars.com @ $499980","flags":["low_miles"]},{"snapshot_date":"2026-09-07","model_family":"STO","body":"coupe","variant":"STO Coupe","model_year":2022,"asking_price_usd":539000,"mileage_miles":880,"currency":"USD","location":"Pompano Beach, Florida, USA","seller_type":"dealer","listing_title":"2022 Lamborghini Huracan STO","listing_url":"https://www.classic.com/veh/2022-lamborghini-huracan-sto-zhwua6zx5nla18317-45j6jzn/","source":"Classic.com","vin_or_stock":"ZHWUA6ZX5NLA18317","notes":"Classic.com asterisk asking; exact miles displayed: 880 mi; fixed-price; seller:Southeast Auto Showroom; also listed on Cars.com @ $539000","flags":["low_miles"]},{"snapshot_date":"2026-09-07","model_family":"STO","body":"coupe","variant":"STO Coupe","model_year":2022,"asking_price_usd":569999,"mileage_miles":928,"currency":"USD","location":"Costa Mesa, California, USA","seller_type":"dealer","listing_title":"2022 Lamborghini Huracan STO","listing_url":"https://www.classic.com/veh/2022-lamborghini-huracan-sto-zhwua6zxxnla18345-4ZwKrKn/","source":"Classic.com","vin_or_stock":"ZHWUA6ZXXNLA18345","notes":"Classic.com asterisk asking; exact miles displayed: 928 mi; fixed-price; seller:Eurocar Inc.; also listed on Cars.com @ $570084","flags":["low_miles"]},{"snapshot_date":"2026-09-07","model_family":"STO","body":"coupe","variant":"STO Coupe","model_year":2023,"asking_price_usd":426120,"mileage_miles":5035,"currency":"USD","location":"Ashburn, Virginia, USA","seller_type":"dealer","listing_title":"2023 Lamborghini Huracan STO","listing_url":"https://www.classic.com/veh/2023-lamborghini-huracan-sto-zhwua6zx4pla21809-WYw8yv4/","source":"Classic.com","vin_or_stock":"ZHWUA6ZX4PLA21809","notes":"Classic.com asterisk asking; 4k mi displayed; mileage blank (rounded Nk mi); fixed-price; seller:Exclusive Automotive Group; mileage enriched from Cars.com; also listed on Cars.com @ $426120","flags":["low_miles"]},{"snapshot_date":"2026-09-07","model_family":"STO","body":"coupe","variant":"STO Coupe","model_year":2023,"asking_price_usd":450489,"mileage_miles":16204,"currency":"USD","location":"Highlands Ranch, Colorado, USA","seller_type":"dealer","listing_title":"2023 Lamborghini Huracan STO","listing_url":"https://www.classic.com/veh/2023-lamborghini-huracan-sto-zhwua6zx8pla25300-4rmrm9p/","source":"Classic.com","vin_or_stock":"ZHWUA6ZX8PLA25300","notes":"Classic.com asterisk asking; 16k mi displayed; mileage blank (rounded Nk mi); fixed-price; seller:Maserati Denver; mileage enriched from Cars.com; also listed on Cars.com @ $450489","flags":[]},{"snapshot_date":"2026-09-07","model_family":"STO","body":"coupe","variant":"STO Coupe","model_year":2023,"asking_price_usd":471148,"mileage_miles":12968,"currency":"USD","location":"Fort Lauderdale, Florida, USA","seller_type":"dealer","listing_title":"2023 Lamborghini Huracan STO 2D Coupe","listing_url":"https://www.classic.com/veh/2023-lamborghini-huracan-sto-2d-coupe-zhwua6zxxpla-4awGElW/","source":"Classic.com","vin_or_stock":"ZHWUA6ZXXPLA24598","notes":"Classic.com asterisk asking; 13k mi displayed; mileage blank (rounded Nk mi); fixed-price; seller:Holman Motorcars; VIN truncated/absent in Classic.com URL; mileage enriched from Cars.com; VIN enriched from Cars.com; also listed on Cars.com @ $471148","flags":[]},{"snapshot_date":"2026-09-07","model_family":"STO","body":"coupe","variant":"STO Coupe","model_year":2023,"asking_price_usd":489990,"mileage_miles":9738,"currency":"USD","location":"Village Westlake Village, CA, USA","seller_type":"dealer","listing_title":"2023 Lamborghini Huracan STO","listing_url":"https://www.cars.com/vehicledetail/b89c4b53-b81f-466b-ba08-9baa405d0a25/","source":"Cars.com","vin_or_stock":"ZHWUA6ZX5PLA22922","notes":"Cars.com search results; exact miles from Cars.com JSON: 9738; seller:O'Gara Coach Westlake Village; stock:Used; location city cleaned from Cars.com card text","flags":["low_miles"]},{"snapshot_date":"2026-09-07","model_family":"STO","body":"coupe","variant":"STO Coupe","model_year":2023,"asking_price_usd":499912,"mileage_miles":null,"currency":"USD","location":"West Chicago, Illinois, USA","seller_type":"dealer","listing_title":"2023 Lamborghini Huracan STO","listing_url":"https://www.classic.com/veh/2023-lamborghini-huracan-sto-zhwua6zx4pla23110-pGAD7xn/","source":"Classic.com","vin_or_stock":"ZHWUA6ZX4PLA23110","notes":"Classic.com asterisk asking; 5k mi displayed; mileage blank (rounded Nk mi); fixed-price; seller:Chicago Motor Cars","flags":[]},{"snapshot_date":"2026-09-07","model_family":"STO","body":"coupe","variant":"STO Coupe","model_year":2023,"asking_price_usd":502172,"mileage_miles":null,"currency":"USD","location":"Naples, Florida, USA","seller_type":"dealer","listing_title":"2023 Lamborghini Huracan STO","listing_url":"https://www.classic.com/veh/2023-lamborghini-huracan-sto-zhwua6zx3pla23793-47e6rAW/","source":"Classic.com","vin_or_stock":"ZHWUA6ZX3PLA23793","notes":"Classic.com asterisk asking; 1k mi displayed; mileage blank (rounded Nk mi); fixed-price; seller:Naples Motorsports","flags":[]},{"snapshot_date":"2026-09-07","model_family":"STO","body":"coupe","variant":"STO Coupe","model_year":2023,"asking_price_usd":549912,"mileage_miles":657,"currency":"USD","location":"West Chicago, Illinois, USA","seller_type":"dealer","listing_title":"2023 Lamborghini Huracan STO","listing_url":"https://www.classic.com/veh/2023-lamborghini-huracan-sto-zhwua6zx5pla21835-nQxA1e4/","source":"Classic.com","vin_or_stock":"ZHWUA6ZX5PLA21835","notes":"Classic.com asterisk asking; exact miles displayed: 657 mi; fixed-price; seller:Chicago Motor Cars; also listed on Cars.com @ $549912","flags":["low_miles"]},{"snapshot_date":"2026-09-07","model_family":"STO","body":"coupe","variant":"STO Coupe","model_year":2023,"asking_price_usd":579990,"mileage_miles":926,"currency":"USD","location":"Fort Collins, Colorado, USA","seller_type":"dealer","listing_title":"2023 Lamborghini Huracan STO","listing_url":"https://www.classic.com/veh/2023-lamborghini-huracan-sto-zhwca6zx2pla23344-WbQZ0wn/","source":"Classic.com","vin_or_stock":"ZHWCA6ZX2PLA23344","notes":"Classic.com asterisk asking; exact miles displayed: 926 mi; fixed-price; seller:Auto Trends","flags":["low_miles"]},{"snapshot_date":"2026-09-07","model_family":"STO","body":"coupe","variant":"STO Coupe","model_year":2023,"asking_price_usd":590000,"mileage_miles":null,"currency":"USD","location":"Rockingham County, New Hampshire, USA","seller_type":"dealer","listing_title":"2023 Lamborghini Huracan STO","listing_url":"https://www.classic.com/veh/2023-lamborghini-huracan-sto-zhwua6zx6pla24677-Wjby1NW/","source":"Classic.com","vin_or_stock":"ZHWUA6ZX6PLA24677","notes":"Classic.com asterisk asking; 1k mi displayed; mileage blank (rounded Nk mi); fixed-price; seller:Cella Motors Llc","flags":[]},{"snapshot_date":"2026-09-07","model_family":"STO","body":"coupe","variant":"STO Coupe","model_year":2024,"asking_price_usd":519900,"mileage_miles":527,"currency":"USD","location":"King Cars Sewell, NJ, USA","seller_type":"dealer","listing_title":"2024 Lamborghini Huracan STO","listing_url":"https://www.cars.com/vehicledetail/b16db7d8-894f-41c6-a3a1-4ce6a4a83df6/","source":"Cars.com","vin_or_stock":"ZHWUA6ZX9RLA26734","notes":"Cars.com search results; exact miles from Cars.com JSON: 527; seller:King of Cars; stock:Used; location city cleaned from Cars.com card text","flags":["low_miles"]},{"snapshot_date":"2026-09-07","model_family":"STO","body":"coupe","variant":"STO Coupe","model_year":2024,"asking_price_usd":564990,"mileage_miles":418,"currency":"USD","location":"Minneapolis Wayzata, MN, USA","seller_type":"dealer","listing_title":"2024 Lamborghini Huracan STO","listing_url":"https://www.cars.com/vehicledetail/4038ad3e-a4e5-46b4-a30b-7e2f19f388ca/","source":"Cars.com","vin_or_stock":"ZHWUA6ZX2RLA25649","notes":"Cars.com search results; exact miles from Cars.com JSON: 418; seller:Lamborghini Minneapolis; stock:Used; location city cleaned from Cars.com card text","flags":["low_miles"]},{"snapshot_date":"2026-09-07","model_family":"STO","body":"coupe","variant":"STO Coupe","model_year":2024,"asking_price_usd":570975,"mileage_miles":381,"currency":"USD","location":"Spec Automotive Miami, FL, USA","seller_type":"dealer","listing_title":"2024 Lamborghini Huracan STO","listing_url":"https://www.cars.com/vehicledetail/513d8b60-f8e9-4c01-accf-4d2145f2b3f9/","source":"Cars.com","vin_or_stock":"ZHWUA6ZX0RLA28856","notes":"Cars.com search results; exact miles from Cars.com JSON: 381; seller:Limited Spec Automotive; stock:Used; location city cleaned from Cars.com card text","flags":["low_miles"]},{"snapshot_date":"2026-09-07","model_family":"Performante","body":"coupe","variant":"Performante Coupe","model_year":2018,"asking_price_usd":159999,"mileage_miles":null,"currency":"USD","location":"Everett, Washington, USA","seller_type":"dealer","listing_title":"2018 Lamborghini Huracan LP640-4 Performante","listing_url":"https://www.classic.com/veh/2018-lamborghini-huracan-lp640-4-performante-zhwud-pgw9aPp/","source":"Classic.com","vin_or_stock":"","notes":"Classic.com asterisk asking; 7k mi displayed; mileage blank (rounded Nk mi); fixed-price; seller:Nouri Motor Company; VIN truncated/absent in Classic.com URL","flags":["cheapest","price_outlier"]},{"snapshot_date":"2026-09-07","model_family":"Performante","body":"coupe","variant":"Performante Coupe","model_year":2018,"asking_price_usd":349000,"mileage_miles":null,"currency":"USD","location":"Town of Webster, New York, USA","seller_type":"dealer","listing_title":"2018 Lamborghini Huracan LP640-4 Performante","listing_url":"https://www.classic.com/veh/2018-lamborghini-huracan-lp640-4-performante-zhwud-WLOyYxn/","source":"Classic.com","vin_or_stock":"","notes":"Classic.com asterisk asking; 11k mi displayed; mileage blank (rounded Nk mi); fixed-price; seller:Ek2 Exotics; VIN truncated/absent in Classic.com URL","flags":[]},{"snapshot_date":"2026-09-07","model_family":"Performante","body":"coupe","variant":"Performante Coupe","model_year":2018,"asking_price_usd":349985,"mileage_miles":null,"currency":"USD","location":"Alsip, Illinois, USA","seller_type":"dealer","listing_title":"2018 Lamborghini Huracan Performante Coupe","listing_url":"https://www.classic.com/veh/2018-lamborghini-huracan-performante-coupe-zhwud4z-4y0oorp/","source":"Classic.com","vin_or_stock":"","notes":"Classic.com asterisk asking; 9k mi displayed; mileage blank (rounded Nk mi); fixed-price; seller:Pro Cars Usa; VIN truncated/absent in Classic.com URL","flags":[]},{"snapshot_date":"2026-09-07","model_family":"Performante","body":"coupe","variant":"Performante Coupe","model_year":2018,"asking_price_usd":357995,"mileage_miles":null,"currency":"USD","location":"Trenton, New Jersey, USA","seller_type":"dealer","listing_title":"2018 Lamborghini Huracan LP640-4 Performante","listing_url":"https://www.classic.com/veh/2018-lamborghini-huracan-lp640-4-performante-zhwud-WLVMjl4/","source":"Classic.com","vin_or_stock":"","notes":"Classic.com asterisk asking; 19k mi displayed; mileage blank (rounded Nk mi); fixed-price; seller:J&S AutoHaus Group; VIN truncated/absent in Classic.com URL","flags":[]},{"snapshot_date":"2026-09-07","model_family":"Performante","body":"coupe","variant":"Performante Coupe","model_year":2018,"asking_price_usd":378991,"mileage_miles":null,"currency":"USD","location":"Scottsdale, Arizona, USA","seller_type":"dealer","listing_title":"2018 Lamborghini Huracan LP640-4 Performante","listing_url":"https://www.classic.com/veh/2018-lamborghini-huracan-lp640-4-performante-zhwcd-nwXmgKW/","source":"Classic.com","vin_or_stock":"","notes":"Classic.com asterisk asking; 13k mi displayed; mileage blank (rounded Nk mi); fixed-price; seller:Spady Auto Group; VIN truncated/absent in Classic.com URL","flags":[]},{"snapshot_date":"2026-09-07","model_family":"Performante","body":"coupe","variant":"Performante Coupe","model_year":2018,"asking_price_usd":379912,"mileage_miles":null,"currency":"USD","location":"West Chicago, Illinois, USA","seller_type":"dealer","listing_title":"2018 Lamborghini Huracan LP640-4 Performante","listing_url":"https://www.classic.com/veh/2018-lamborghini-huracan-lp640-4-performante-zhwud-pgKryPp/","source":"Classic.com","vin_or_stock":"","notes":"Classic.com asterisk asking; 31k mi displayed; mileage blank (rounded Nk mi); fixed-price; seller:Chicago Motor Cars; VIN truncated/absent in Classic.com URL","flags":[]},{"snapshot_date":"2026-09-07","model_family":"Performante","body":"coupe","variant":"Performante Coupe","model_year":2018,"asking_price_usd":404404,"mileage_miles":null,"currency":"USD","location":"Wilsonville, Oregon, USA","seller_type":"dealer","listing_title":"2018 Lamborghini Huracan LP640-4 Performante","listing_url":"https://www.classic.com/veh/2018-lamborghini-huracan-lp640-4-performante-zhwud-pGARXYn/","source":"Classic.com","vin_or_stock":"","notes":"Classic.com asterisk asking; 9k mi displayed; mileage blank (rounded Nk mi); fixed-price; seller:Ron Tonkin Gran Turismo; VIN truncated/absent in Classic.com URL","flags":[]},{"snapshot_date":"2026-09-07","model_family":"Performante","body":"coupe","variant":"Performante Coupe","model_year":2018,"asking_price_usd":429900,"mileage_miles":null,"currency":"USD","location":"Addison, Texas, USA","seller_type":"dealer","listing_title":"2018 Lamborghini Huracan LP640-4 Performante","listing_url":"https://www.classic.com/veh/2018-lamborghini-huracan-lp640-4-performante-zhwud-4oaN01W/","source":"Classic.com","vin_or_stock":"","notes":"Classic.com asterisk asking; 5k mi displayed; mileage blank (rounded Nk mi); fixed-price; seller:Tactical Fleet Dallas; VIN truncated/absent in Classic.com URL","flags":[]},{"snapshot_date":"2026-09-07","model_family":"Performante","body":"coupe","variant":"Performante Coupe","model_year":2018,"asking_price_usd":459990,"mileage_miles":null,"currency":"USD","location":"New Albany, Indiana, USA","seller_type":"dealer","listing_title":"2018 Lamborghini Huracan LP640-4 Performante","listing_url":"https://www.classic.com/veh/2018-lamborghini-huracan-lp640-4-performante-zhwud-peLm67W/","source":"Classic.com","vin_or_stock":"","notes":"Classic.com asterisk asking; 11k mi displayed; mileage blank (rounded Nk mi); fixed-price; seller:Hypercars; VIN truncated/absent in Classic.com URL","flags":[]},{"snapshot_date":"2026-09-07","model_family":"Performante","body":"spider","variant":"Performante Spider","model_year":2018,"asking_price_usd":409950,"mileage_miles":null,"currency":"USD","location":"Miami-Dade County, Florida, USA","seller_type":"dealer","listing_title":"2018 Lamborghini Huracan LP640-4 Performante Spyder","listing_url":"https://www.classic.com/veh/2018-lamborghini-huracan-lp640-4-performante-spyde-nBkZYZW/","source":"Classic.com","vin_or_stock":"","notes":"Classic.com asterisk asking; 8k mi displayed; mileage blank (rounded Nk mi); fixed-price; seller:Prestige Imports; VIN truncated/absent in Classic.com URL","flags":[]},{"snapshot_date":"2026-09-07","model_family":"Performante","body":"spider","variant":"Performante Spider","model_year":2018,"asking_price_usd":430598,"mileage_miles":null,"currency":"USD","location":"Scottsdale, Arizona, USA","seller_type":"dealer","listing_title":"2018 Lamborghini Huracan LP640-4 Performante","listing_url":"https://www.classic.com/veh/2018-lamborghini-huracan-lp640-4-performante-zhwus-nQGgMep/","source":"Classic.com","vin_or_stock":"","notes":"Classic.com asterisk asking; 4k mi displayed; mileage blank (rounded Nk mi); fixed-price; seller:Scottsdale Maserati; VIN truncated/absent in Classic.com URL; body inferred as spider from title/VIN-prefix (page was coupe)","flags":[]},{"snapshot_date":"2026-09-07","model_family":"Performante","body":"spider","variant":"Performante Spider","model_year":2019,"asking_price_usd":314993,"mileage_miles":null,"currency":"USD","location":"Costa Mesa, California, USA","seller_type":"dealer","listing_title":"2019 Lamborghini Huracan LP640-4 Performante Spyder","listing_url":"https://www.classic.com/veh/2019-lamborghini-huracan-lp640-4-performante-spyde-4yBLron/","source":"Classic.com","vin_or_stock":"","notes":"Classic.com asterisk asking; 29k mi displayed; mileage blank (rounded Nk mi); fixed-price; seller:Pro Motorcars; VIN truncated/absent in Classic.com URL","flags":["cheapest"]},{"snapshot_date":"2026-09-07","model_family":"Performante","body":"spider","variant":"Performante Spider","model_year":2019,"asking_price_usd":403048,"mileage_miles":null,"currency":"USD","location":"Marysville, Ohio, USA","seller_type":"dealer","listing_title":"2019 Lamborghini Huracan LP640-4 Performante Spyder","listing_url":"https://www.classic.com/veh/2019-lamborghini-huracan-lp640-4-performante-spyde-nBlgvRp/","source":"Classic.com","vin_or_stock":"","notes":"Classic.com asterisk asking; 12k mi displayed; mileage blank (rounded Nk mi); fixed-price; seller:Performance Luxury Sport; VIN truncated/absent in Classic.com URL","flags":[]}],"standouts":[{"snapshot_date":"2026-09-07","model_family":"STO","body":"coupe","variant":"STO Coupe","model_year":2021,"asking_price_usd":464433,"mileage_miles":7051,"currency":"USD","location":"Murrieta, California, USA","seller_type":"dealer","listing_title":"2021 Lamborghini Huracan STO","listing_url":"https://www.classic.com/veh/2021-lamborghini-huracan-sto-zhwua6zx3mla17567-4DweP8p/","source":"Classic.com","vin_or_stock":"ZHWUA6ZX3MLA17567","notes":"Classic.com asterisk asking; 7k mi displayed; mileage blank (rounded Nk mi); fixed-price; seller:West Coast Exotic Cars; mileage enriched from Cars.com; also listed on Cars.com @ $464518","flags":["low_miles"]},{"snapshot_date":"2026-09-07","model_family":"STO","body":"coupe","variant":"STO Coupe","model_year":2022,"asking_price_usd":400447,"mileage_miles":21012,"currency":"USD","location":"Maserati Cleveland Cleveland, OH, USA","seller_type":"dealer","listing_title":"2022 Lamborghini Huracan STO","listing_url":"https://www.cars.com/vehicledetail/5668ac7b-3d08-4cb4-9d93-303893dd6ec9/","source":"Cars.com","vin_or_stock":"ZHWUA6ZX5NLA19418","notes":"Cars.com search results; exact miles from Cars.com JSON: 21012; seller:Maserati of Cleveland; stock:Used; location city cleaned from Cars.com card text","flags":["cheapest"]},{"snapshot_date":"2026-09-07","model_family":"STO","body":"coupe","variant":"STO Coupe","model_year":2022,"asking_price_usd":450000,"mileage_miles":2009,"currency":"USD","location":"AUTO GROUP Quincy, MA, USA","seller_type":"dealer","listing_title":"2022 Lamborghini Huracan STO","listing_url":"https://www.cars.com/vehicledetail/73220e42-78e6-4564-9c16-e42c31444de0/","source":"Cars.com","vin_or_stock":"ZHWUA6ZX9NLA20281","notes":"Cars.com search results; exact miles from Cars.com JSON: 2009; seller:SR AUTO GROUP; stock:Used; location city cleaned from Cars.com card text","flags":["low_miles"]},{"snapshot_date":"2026-09-07","model_family":"STO","body":"coupe","variant":"STO Coupe","model_year":2022,"asking_price_usd":470223,"mileage_miles":7640,"currency":"USD","location":"Houston, TX, USA","seller_type":"dealer","listing_title":"2022 Lamborghini Huracan STO","listing_url":"https://www.cars.com/vehicledetail/45e3ef4a-3595-4ae6-904f-317a8e74898f/","source":"Cars.com","vin_or_stock":"ZHWUA6ZX8NLA18151","notes":"Cars.com search results; exact miles from Cars.com JSON: 7640; seller:Lamborghini Houston, Rolls-Royce Motorcars North Houston, McLaren Houston; stock:Used","flags":["low_miles"]},{"snapshot_date":"2026-09-07","model_family":"STO","body":"coupe","variant":"STO Coupe","model_year":2022,"asking_price_usd":484991,"mileage_miles":9072,"currency":"USD","location":"Scottsdale, AZ, USA","seller_type":"dealer","listing_title":"2022 Lamborghini Huracan STO","listing_url":"https://www.cars.com/vehicledetail/cd25bf42-5360-4577-bbd6-5fbe2744f697/","source":"Cars.com","vin_or_stock":"ZHWUA6ZX8NLA18876","notes":"Cars.com search results; exact miles from Cars.com JSON: 9072; seller:Auto Boom LLC; stock:Used","flags":["low_miles"]},{"snapshot_date":"2026-09-07","model_family":"STO","body":"coupe","variant":"STO Coupe","model_year":2022,"asking_price_usd":489998,"mileage_miles":8744,"currency":"USD","location":"Pompano Beach, FL, USA","seller_type":"dealer","listing_title":"2022 Lamborghini Huracan STO","listing_url":"https://www.cars.com/vehicledetail/c4958d5f-44d9-4a36-8dd1-f5a4d66cf480/","source":"Cars.com","vin_or_stock":"ZHWUA6ZX7NLA18853","notes":"Cars.com search results; exact miles from Cars.com JSON: 8744; seller:HGreg.com Lux; stock:Used","flags":["low_miles"]},{"snapshot_date":"2026-09-07","model_family":"STO","body":"coupe","variant":"STO Coupe","model_year":2022,"asking_price_usd":499980,"mileage_miles":2500,"currency":"USD","location":"Jonesboro, Arkansas, USA","seller_type":"dealer","listing_title":"2022 Lamborghini Huracán STO","listing_url":"https://www.classic.com/veh/2022-lamborghini-huracan-sto-zhwua6zx4nla20978-nXxY8Bn/","source":"Classic.com","vin_or_stock":"ZHWUA6ZX4NLA20978","notes":"Classic.com asterisk asking; 2k mi displayed; mileage blank (rounded Nk mi); fixed-price; seller:Elite Autos LLC; mileage enriched from Cars.com; also listed on Cars.com @ $499980","flags":["low_miles"]},{"snapshot_date":"2026-09-07","model_family":"STO","body":"coupe","variant":"STO Coupe","model_year":2022,"asking_price_usd":539000,"mileage_miles":880,"currency":"USD","location":"Pompano Beach, Florida, USA","seller_type":"dealer","listing_title":"2022 Lamborghini Huracan STO","listing_url":"https://www.classic.com/veh/2022-lamborghini-huracan-sto-zhwua6zx5nla18317-45j6jzn/","source":"Classic.com","vin_or_stock":"ZHWUA6ZX5NLA18317","notes":"Classic.com asterisk asking; exact miles displayed: 880 mi; fixed-price; seller:Southeast Auto Showroom; also listed on Cars.com @ $539000","flags":["low_miles"]},{"snapshot_date":"2026-09-07","model_family":"STO","body":"coupe","variant":"STO Coupe","model_year":2022,"asking_price_usd":569999,"mileage_miles":928,"currency":"USD","location":"Costa Mesa, California, USA","seller_type":"dealer","listing_title":"2022 Lamborghini Huracan STO","listing_url":"https://www.classic.com/veh/2022-lamborghini-huracan-sto-zhwua6zxxnla18345-4ZwKrKn/","source":"Classic.com","vin_or_stock":"ZHWUA6ZXXNLA18345","notes":"Classic.com asterisk asking; exact miles displayed: 928 mi; fixed-price; seller:Eurocar Inc.; also listed on Cars.com @ $570084","flags":["low_miles"]},{"snapshot_date":"2026-09-07","model_family":"STO","body":"coupe","variant":"STO Coupe","model_year":2023,"asking_price_usd":426120,"mileage_miles":5035,"currency":"USD","location":"Ashburn, Virginia, USA","seller_type":"dealer","listing_title":"2023 Lamborghini Huracan STO","listing_url":"https://www.classic.com/veh/2023-lamborghini-huracan-sto-zhwua6zx4pla21809-WYw8yv4/","source":"Classic.com","vin_or_stock":"ZHWUA6ZX4PLA21809","notes":"Classic.com asterisk asking; 4k mi displayed; mileage blank (rounded Nk mi); fixed-price; seller:Exclusive Automotive Group; mileage enriched from Cars.com; also listed on Cars.com @ $426120","flags":["low_miles"]},{"snapshot_date":"2026-09-07","model_family":"STO","body":"coupe","variant":"STO Coupe","model_year":2023,"asking_price_usd":489990,"mileage_miles":9738,"currency":"USD","location":"Village Westlake Village, CA, USA","seller_type":"dealer","listing_title":"2023 Lamborghini Huracan STO","listing_url":"https://www.cars.com/vehicledetail/b89c4b53-b81f-466b-ba08-9baa405d0a25/","source":"Cars.com","vin_or_stock":"ZHWUA6ZX5PLA22922","notes":"Cars.com search results; exact miles from Cars.com JSON: 9738; seller:O'Gara Coach Westlake Village; stock:Used; location city cleaned from Cars.com card text","flags":["low_miles"]},{"snapshot_date":"2026-09-07","model_family":"STO","body":"coupe","variant":"STO Coupe","model_year":2023,"asking_price_usd":549912,"mileage_miles":657,"currency":"USD","location":"West Chicago, Illinois, USA","seller_type":"dealer","listing_title":"2023 Lamborghini Huracan STO","listing_url":"https://www.classic.com/veh/2023-lamborghini-huracan-sto-zhwua6zx5pla21835-nQxA1e4/","source":"Classic.com","vin_or_stock":"ZHWUA6ZX5PLA21835","notes":"Classic.com asterisk asking; exact miles displayed: 657 mi; fixed-price; seller:Chicago Motor Cars; also listed on Cars.com @ $549912","flags":["low_miles"]},{"snapshot_date":"2026-09-07","model_family":"STO","body":"coupe","variant":"STO Coupe","model_year":2023,"asking_price_usd":579990,"mileage_miles":926,"currency":"USD","location":"Fort Collins, Colorado, USA","seller_type":"dealer","listing_title":"2023 Lamborghini Huracan STO","listing_url":"https://www.classic.com/veh/2023-lamborghini-huracan-sto-zhwca6zx2pla23344-WbQZ0wn/","source":"Classic.com","vin_or_stock":"ZHWCA6ZX2PLA23344","notes":"Classic.com asterisk asking; exact miles displayed: 926 mi; fixed-price; seller:Auto Trends","flags":["low_miles"]},{"snapshot_date":"2026-09-07","model_family":"STO","body":"coupe","variant":"STO Coupe","model_year":2024,"asking_price_usd":519900,"mileage_miles":527,"currency":"USD","location":"King Cars Sewell, NJ, USA","seller_type":"dealer","listing_title":"2024 Lamborghini Huracan STO","listing_url":"https://www.cars.com/vehicledetail/b16db7d8-894f-41c6-a3a1-4ce6a4a83df6/","source":"Cars.com","vin_or_stock":"ZHWUA6ZX9RLA26734","notes":"Cars.com search results; exact miles from Cars.com JSON: 527; seller:King of Cars; stock:Used; location city cleaned from Cars.com card text","flags":["low_miles"]},{"snapshot_date":"2026-09-07","model_family":"STO","body":"coupe","variant":"STO Coupe","model_year":2024,"asking_price_usd":564990,"mileage_miles":418,"currency":"USD","location":"Minneapolis Wayzata, MN, USA","seller_type":"dealer","listing_title":"2024 Lamborghini Huracan STO","listing_url":"https://www.cars.com/vehicledetail/4038ad3e-a4e5-46b4-a30b-7e2f19f388ca/","source":"Cars.com","vin_or_stock":"ZHWUA6ZX2RLA25649","notes":"Cars.com search results; exact miles from Cars.com JSON: 418; seller:Lamborghini Minneapolis; stock:Used; location city cleaned from Cars.com card text","flags":["low_miles"]},{"snapshot_date":"2026-09-07","model_family":"STO","body":"coupe","variant":"STO Coupe","model_year":2024,"asking_price_usd":570975,"mileage_miles":381,"currency":"USD","location":"Spec Automotive Miami, FL, USA","seller_type":"dealer","listing_title":"2024 Lamborghini Huracan STO","listing_url":"https://www.cars.com/vehicledetail/513d8b60-f8e9-4c01-accf-4d2145f2b3f9/","source":"Cars.com","vin_or_stock":"ZHWUA6ZX0RLA28856","notes":"Cars.com search results; exact miles from Cars.com JSON: 381; seller:Limited Spec Automotive; stock:Used; location city cleaned from Cars.com card text","flags":["low_miles"]},{"snapshot_date":"2026-09-07","model_family":"Performante","body":"coupe","variant":"Performante Coupe","model_year":2018,"asking_price_usd":159999,"mileage_miles":null,"currency":"USD","location":"Everett, Washington, USA","seller_type":"dealer","listing_title":"2018 Lamborghini Huracan LP640-4 Performante","listing_url":"https://www.classic.com/veh/2018-lamborghini-huracan-lp640-4-performante-zhwud-pgw9aPp/","source":"Classic.com","vin_or_stock":"","notes":"Classic.com asterisk asking; 7k mi displayed; mileage blank (rounded Nk mi); fixed-price; seller:Nouri Motor Company; VIN truncated/absent in Classic.com URL","flags":["cheapest","price_outlier"]},{"snapshot_date":"2026-09-07","model_family":"Performante","body":"spider","variant":"Performante Spider","model_year":2019,"asking_price_usd":314993,"mileage_miles":null,"currency":"USD","location":"Costa Mesa, California, USA","seller_type":"dealer","listing_title":"2019 Lamborghini Huracan LP640-4 Performante Spyder","listing_url":"https://www.classic.com/veh/2019-lamborghini-huracan-lp640-4-performante-spyde-4yBLron/","source":"Classic.com","vin_or_stock":"","notes":"Classic.com asterisk asking; 29k mi displayed; mileage blank (rounded Nk mi); fixed-price; seller:Pro Motorcars; VIN truncated/absent in Classic.com URL","flags":["cheapest"]}],"all_rows":[{"snapshot_date":"2026-09-07","model_family":"STO","body":"coupe","variant":"STO Coupe","model_year":2021,"asking_price_usd":464433,"mileage_miles":7051,"currency":"USD","location":"Murrieta, California, USA","seller_type":"dealer","listing_title":"2021 Lamborghini Huracan STO","listing_url":"https://www.classic.com/veh/2021-lamborghini-huracan-sto-zhwua6zx3mla17567-4DweP8p/","source":"Classic.com","vin_or_stock":"ZHWUA6ZX3MLA17567","notes":"Classic.com asterisk asking; 7k mi displayed; mileage blank (rounded Nk mi); fixed-price; seller:West Coast Exotic Cars; mileage enriched from Cars.com; also listed on Cars.com @ $464518","flags":["low_miles"]},{"snapshot_date":"2026-09-07","model_family":"STO","body":"coupe","variant":"STO Coupe","model_year":2021,"asking_price_usd":474989,"mileage_miles":14202,"currency":"USD","location":"Johnson Creek, WI, USA","seller_type":"dealer","listing_title":"2021 Lamborghini Huracan STO","listing_url":"https://www.cars.com/vehicledetail/6d129822-aa5d-487c-8315-dbafaefd9c6d/","source":"Cars.com","vin_or_stock":"ZHWUA6ZX8MLA17242","notes":"Cars.com search results; exact miles from Cars.com JSON: 14202; seller:Kearns Motor Car Co.; stock:Used","flags":[]},{"snapshot_date":"2026-09-07","model_family":"STO","body":"coupe","variant":"STO Coupe","model_year":2022,"asking_price_usd":400447,"mileage_miles":21012,"currency":"USD","location":"Maserati Cleveland Cleveland, OH, USA","seller_type":"dealer","listing_title":"2022 Lamborghini Huracan STO","listing_url":"https://www.cars.com/vehicledetail/5668ac7b-3d08-4cb4-9d93-303893dd6ec9/","source":"Cars.com","vin_or_stock":"ZHWUA6ZX5NLA19418","notes":"Cars.com search results; exact miles from Cars.com JSON: 21012; seller:Maserati of Cleveland; stock:Used; location city cleaned from Cars.com card text","flags":["cheapest"]},{"snapshot_date":"2026-09-07","model_family":"STO","body":"coupe","variant":"STO Coupe","model_year":2022,"asking_price_usd":411246,"mileage_miles":16878,"currency":"USD","location":"Merrillville, Indiana, USA","seller_type":"dealer","listing_title":"2022 Lamborghini Huracan STO","listing_url":"https://www.classic.com/veh/2022-lamborghini-huracan-sto-zhwua6zx2nla18324-p6w2m14/","source":"Classic.com","vin_or_stock":"ZHWUA6ZX2NLA18324","notes":"Classic.com asterisk asking; 16k mi displayed; mileage blank (rounded Nk mi); fixed-price; seller:Sweis Infiniti Merrillville; mileage enriched from Cars.com; also listed on Cars.com @ $411246","flags":[]},{"snapshot_date":"2026-09-07","model_family":"STO","body":"coupe","variant":"STO Coupe","model_year":2022,"asking_price_usd":445988,"mileage_miles":null,"currency":"USD","location":"Pompano Beach, Florida, USA","seller_type":"dealer","listing_title":"2022 Lamborghini Huracan STO","listing_url":"https://www.classic.com/veh/2022-lamborghini-huracan-sto-zhwua6zx1nla18251-nBxwZJp/","source":"Classic.com","vin_or_stock":"ZHWUA6ZX1NLA18251","notes":"Classic.com asterisk asking; 13k mi displayed; mileage blank (rounded Nk mi); fixed-price; seller:Sienna Motors","flags":[]},{"snapshot_date":"2026-09-07","model_family":"STO","body":"coupe","variant":"STO Coupe","model_year":2022,"asking_price_usd":450000,"mileage_miles":2009,"currency":"USD","location":"AUTO GROUP Quincy, MA, USA","seller_type":"dealer","listing_title":"2022 Lamborghini Huracan STO","listing_url":"https://www.cars.com/vehicledetail/73220e42-78e6-4564-9c16-e42c31444de0/","source":"Cars.com","vin_or_stock":"ZHWUA6ZX9NLA20281","notes":"Cars.com search results; exact miles from Cars.com JSON: 2009; seller:SR AUTO GROUP; stock:Used; location city cleaned from Cars.com card text","flags":["low_miles"]},{"snapshot_date":"2026-09-07","model_family":"STO","body":"coupe","variant":"STO Coupe","model_year":2022,"asking_price_usd":470223,"mileage_miles":7640,"currency":"USD","location":"Houston, TX, USA","seller_type":"dealer","listing_title":"2022 Lamborghini Huracan STO","listing_url":"https://www.cars.com/vehicledetail/45e3ef4a-3595-4ae6-904f-317a8e74898f/","source":"Cars.com","vin_or_stock":"ZHWUA6ZX8NLA18151","notes":"Cars.com search results; exact miles from Cars.com JSON: 7640; seller:Lamborghini Houston, Rolls-Royce Motorcars North Houston, McLaren Houston; stock:Used","flags":["low_miles"]},{"snapshot_date":"2026-09-07","model_family":"STO","body":"coupe","variant":"STO Coupe","model_year":2022,"asking_price_usd":484991,"mileage_miles":9072,"currency":"USD","location":"Scottsdale, AZ, USA","seller_type":"dealer","listing_title":"2022 Lamborghini Huracan STO","listing_url":"https://www.cars.com/vehicledetail/cd25bf42-5360-4577-bbd6-5fbe2744f697/","source":"Cars.com","vin_or_stock":"ZHWUA6ZX8NLA18876","notes":"Cars.com search results; exact miles from Cars.com JSON: 9072; seller:Auto Boom LLC; stock:Used","flags":["low_miles"]},{"snapshot_date":"2026-09-07","model_family":"STO","body":"coupe","variant":"STO Coupe","model_year":2022,"asking_price_usd":489998,"mileage_miles":8744,"currency":"USD","location":"Pompano Beach, FL, USA","seller_type":"dealer","listing_title":"2022 Lamborghini Huracan STO","listing_url":"https://www.cars.com/vehicledetail/c4958d5f-44d9-4a36-8dd1-f5a4d66cf480/","source":"Cars.com","vin_or_stock":"ZHWUA6ZX7NLA18853","notes":"Cars.com search results; exact miles from Cars.com JSON: 8744; seller:HGreg.com Lux; stock:Used","flags":["low_miles"]},{"snapshot_date":"2026-09-07","model_family":"STO","body":"coupe","variant":"STO Coupe","model_year":2022,"asking_price_usd":499980,"mileage_miles":2500,"currency":"USD","location":"Jonesboro, Arkansas, USA","seller_type":"dealer","listing_title":"2022 Lamborghini Huracán STO","listing_url":"https://www.classic.com/veh/2022-lamborghini-huracan-sto-zhwua6zx4nla20978-nXxY8Bn/","source":"Classic.com","vin_or_stock":"ZHWUA6ZX4NLA20978","notes":"Classic.com asterisk asking; 2k mi displayed; mileage blank (rounded Nk mi); fixed-price; seller:Elite Autos LLC; mileage enriched from Cars.com; also listed on Cars.com @ $499980","flags":["low_miles"]},{"snapshot_date":"2026-09-07","model_family":"STO","body":"coupe","variant":"STO Coupe","model_year":2022,"asking_price_usd":539000,"mileage_miles":880,"currency":"USD","location":"Pompano Beach, Florida, USA","seller_type":"dealer","listing_title":"2022 Lamborghini Huracan STO","listing_url":"https://www.classic.com/veh/2022-lamborghini-huracan-sto-zhwua6zx5nla18317-45j6jzn/","source":"Classic.com","vin_or_stock":"ZHWUA6ZX5NLA18317","notes":"Classic.com asterisk asking; exact miles displayed: 880 mi; fixed-price; seller:Southeast Auto Showroom; also listed on Cars.com @ $539000","flags":["low_miles"]},{"snapshot_date":"2026-09-07","model_family":"STO","body":"coupe","variant":"STO Coupe","model_year":2022,"asking_price_usd":569999,"mileage_miles":928,"currency":"USD","location":"Costa Mesa, California, USA","seller_type":"dealer","listing_title":"2022 Lamborghini Huracan STO","listing_url":"https://www.classic.com/veh/2022-lamborghini-huracan-sto-zhwua6zxxnla18345-4ZwKrKn/","source":"Classic.com","vin_or_stock":"ZHWUA6ZXXNLA18345","notes":"Classic.com asterisk asking; exact miles displayed: 928 mi; fixed-price; seller:Eurocar Inc.; also listed on Cars.com @ $570084","flags":["low_miles"]},{"snapshot_date":"2026-09-07","model_family":"STO","body":"coupe","variant":"STO Coupe","model_year":2023,"asking_price_usd":426120,"mileage_miles":5035,"currency":"USD","location":"Ashburn, Virginia, USA","seller_type":"dealer","listing_title":"2023 Lamborghini Huracan STO","listing_url":"https://www.classic.com/veh/2023-lamborghini-huracan-sto-zhwua6zx4pla21809-WYw8yv4/","source":"Classic.com","vin_or_stock":"ZHWUA6ZX4PLA21809","notes":"Classic.com asterisk asking; 4k mi displayed; mileage blank (rounded Nk mi); fixed-price; seller:Exclusive Automotive Group; mileage enriched from Cars.com; also listed on Cars.com @ $426120","flags":["low_miles"]},{"snapshot_date":"2026-09-07","model_family":"STO","body":"coupe","variant":"STO Coupe","model_year":2023,"asking_price_usd":450489,"mileage_miles":16204,"currency":"USD","location":"Highlands Ranch, Colorado, USA","seller_type":"dealer","listing_title":"2023 Lamborghini Huracan STO","listing_url":"https://www.classic.com/veh/2023-lamborghini-huracan-sto-zhwua6zx8pla25300-4rmrm9p/","source":"Classic.com","vin_or_stock":"ZHWUA6ZX8PLA25300","notes":"Classic.com asterisk asking; 16k mi displayed; mileage blank (rounded Nk mi); fixed-price; seller:Maserati Denver; mileage enriched from Cars.com; also listed on Cars.com @ $450489","flags":[]},{"snapshot_date":"2026-09-07","model_family":"STO","body":"coupe","variant":"STO Coupe","model_year":2023,"asking_price_usd":471148,"mileage_miles":12968,"currency":"USD","location":"Fort Lauderdale, Florida, USA","seller_type":"dealer","listing_title":"2023 Lamborghini Huracan STO 2D Coupe","listing_url":"https://www.classic.com/veh/2023-lamborghini-huracan-sto-2d-coupe-zhwua6zxxpla-4awGElW/","source":"Classic.com","vin_or_stock":"ZHWUA6ZXXPLA24598","notes":"Classic.com asterisk asking; 13k mi displayed; mileage blank (rounded Nk mi); fixed-price; seller:Holman Motorcars; VIN truncated/absent in Classic.com URL; mileage enriched from Cars.com; VIN enriched from Cars.com; also listed on Cars.com @ $471148","flags":[]},{"snapshot_date":"2026-09-07","model_family":"STO","body":"coupe","variant":"STO Coupe","model_year":2023,"asking_price_usd":489990,"mileage_miles":9738,"currency":"USD","location":"Village Westlake Village, CA, USA","seller_type":"dealer","listing_title":"2023 Lamborghini Huracan STO","listing_url":"https://www.cars.com/vehicledetail/b89c4b53-b81f-466b-ba08-9baa405d0a25/","source":"Cars.com","vin_or_stock":"ZHWUA6ZX5PLA22922","notes":"Cars.com search results; exact miles from Cars.com JSON: 9738; seller:O'Gara Coach Westlake Village; stock:Used; location city cleaned from Cars.com card text","flags":["low_miles"]},{"snapshot_date":"2026-09-07","model_family":"STO","body":"coupe","variant":"STO Coupe","model_year":2023,"asking_price_usd":499912,"mileage_miles":null,"currency":"USD","location":"West Chicago, Illinois, USA","seller_type":"dealer","listing_title":"2023 Lamborghini Huracan STO","listing_url":"https://www.classic.com/veh/2023-lamborghini-huracan-sto-zhwua6zx4pla23110-pGAD7xn/","source":"Classic.com","vin_or_stock":"ZHWUA6ZX4PLA23110","notes":"Classic.com asterisk asking; 5k mi displayed; mileage blank (rounded Nk mi); fixed-price; seller:Chicago Motor Cars","flags":[]},{"snapshot_date":"2026-09-07","model_family":"STO","body":"coupe","variant":"STO Coupe","model_year":2023,"asking_price_usd":502172,"mileage_miles":null,"currency":"USD","location":"Naples, Florida, USA","seller_type":"dealer","listing_title":"2023 Lamborghini Huracan STO","listing_url":"https://www.classic.com/veh/2023-lamborghini-huracan-sto-zhwua6zx3pla23793-47e6rAW/","source":"Classic.com","vin_or_stock":"ZHWUA6ZX3PLA23793","notes":"Classic.com asterisk asking; 1k mi displayed; mileage blank (rounded Nk mi); fixed-price; seller:Naples Motorsports","flags":[]},{"snapshot_date":"2026-09-07","model_family":"STO","body":"coupe","variant":"STO Coupe","model_year":2023,"asking_price_usd":549912,"mileage_miles":657,"currency":"USD","location":"West Chicago, Illinois, USA","seller_type":"dealer","listing_title":"2023 Lamborghini Huracan STO","listing_url":"https://www.classic.com/veh/2023-lamborghini-huracan-sto-zhwua6zx5pla21835-nQxA1e4/","source":"Classic.com","vin_or_stock":"ZHWUA6ZX5PLA21835","notes":"Classic.com asterisk asking; exact miles displayed: 657 mi; fixed-price; seller:Chicago Motor Cars; also listed on Cars.com @ $549912","flags":["low_miles"]},{"snapshot_date":"2026-09-07","model_family":"STO","body":"coupe","variant":"STO Coupe","model_year":2023,"asking_price_usd":579990,"mileage_miles":926,"currency":"USD","location":"Fort Collins, Colorado, USA","seller_type":"dealer","listing_title":"2023 Lamborghini Huracan STO","listing_url":"https://www.classic.com/veh/2023-lamborghini-huracan-sto-zhwca6zx2pla23344-WbQZ0wn/","source":"Classic.com","vin_or_stock":"ZHWCA6ZX2PLA23344","notes":"Classic.com asterisk asking; exact miles displayed: 926 mi; fixed-price; seller:Auto Trends","flags":["low_miles"]},{"snapshot_date":"2026-09-07","model_family":"STO","body":"coupe","variant":"STO Coupe","model_year":2023,"asking_price_usd":590000,"mileage_miles":null,"currency":"USD","location":"Rockingham County, New Hampshire, USA","seller_type":"dealer","listing_title":"2023 Lamborghini Huracan STO","listing_url":"https://www.classic.com/veh/2023-lamborghini-huracan-sto-zhwua6zx6pla24677-Wjby1NW/","source":"Classic.com","vin_or_stock":"ZHWUA6ZX6PLA24677","notes":"Classic.com asterisk asking; 1k mi displayed; mileage blank (rounded Nk mi); fixed-price; seller:Cella Motors Llc","flags":[]},{"snapshot_date":"2026-09-07","model_family":"STO","body":"coupe","variant":"STO Coupe","model_year":2024,"asking_price_usd":519900,"mileage_miles":527,"currency":"USD","location":"King Cars Sewell, NJ, USA","seller_type":"dealer","listing_title":"2024 Lamborghini Huracan STO","listing_url":"https://www.cars.com/vehicledetail/b16db7d8-894f-41c6-a3a1-4ce6a4a83df6/","source":"Cars.com","vin_or_stock":"ZHWUA6ZX9RLA26734","notes":"Cars.com search results; exact miles from Cars.com JSON: 527; seller:King of Cars; stock:Used; location city cleaned from Cars.com card text","flags":["low_miles"]},{"snapshot_date":"2026-09-07","model_family":"STO","body":"coupe","variant":"STO Coupe","model_year":2024,"asking_price_usd":564990,"mileage_miles":418,"currency":"USD","location":"Minneapolis Wayzata, MN, USA","seller_type":"dealer","listing_title":"2024 Lamborghini Huracan STO","listing_url":"https://www.cars.com/vehicledetail/4038ad3e-a4e5-46b4-a30b-7e2f19f388ca/","source":"Cars.com","vin_or_stock":"ZHWUA6ZX2RLA25649","notes":"Cars.com search results; exact miles from Cars.com JSON: 418; seller:Lamborghini Minneapolis; stock:Used; location city cleaned from Cars.com card text","flags":["low_miles"]},{"snapshot_date":"2026-09-07","model_family":"STO","body":"coupe","variant":"STO Coupe","model_year":2024,"asking_price_usd":570975,"mileage_miles":381,"currency":"USD","location":"Spec Automotive Miami, FL, USA","seller_type":"dealer","listing_title":"2024 Lamborghini Huracan STO","listing_url":"https://www.cars.com/vehicledetail/513d8b60-f8e9-4c01-accf-4d2145f2b3f9/","source":"Cars.com","vin_or_stock":"ZHWUA6ZX0RLA28856","notes":"Cars.com search results; exact miles from Cars.com JSON: 381; seller:Limited Spec Automotive; stock:Used; location city cleaned from Cars.com card text","flags":["low_miles"]},{"snapshot_date":"2026-09-07","model_family":"Performante","body":"coupe","variant":"Performante Coupe","model_year":2018,"asking_price_usd":159999,"mileage_miles":null,"currency":"USD","location":"Everett, Washington, USA","seller_type":"dealer","listing_title":"2018 Lamborghini Huracan LP640-4 Performante","listing_url":"https://www.classic.com/veh/2018-lamborghini-huracan-lp640-4-performante-zhwud-pgw9aPp/","source":"Classic.com","vin_or_stock":"","notes":"Classic.com asterisk asking; 7k mi displayed; mileage blank (rounded Nk mi); fixed-price; seller:Nouri Motor Company; VIN truncated/absent in Classic.com URL","flags":["cheapest","price_outlier"]},{"snapshot_date":"2026-09-07","model_family":"Performante","body":"coupe","variant":"Performante Coupe","model_year":2018,"asking_price_usd":349000,"mileage_miles":null,"currency":"USD","location":"Town of Webster, New York, USA","seller_type":"dealer","listing_title":"2018 Lamborghini Huracan LP640-4 Performante","listing_url":"https://www.classic.com/veh/2018-lamborghini-huracan-lp640-4-performante-zhwud-WLOyYxn/","source":"Classic.com","vin_or_stock":"","notes":"Classic.com asterisk asking; 11k mi displayed; mileage blank (rounded Nk mi); fixed-price; seller:Ek2 Exotics; VIN truncated/absent in Classic.com URL","flags":[]},{"snapshot_date":"2026-09-07","model_family":"Performante","body":"coupe","variant":"Performante Coupe","model_year":2018,"asking_price_usd":349985,"mileage_miles":null,"currency":"USD","location":"Alsip, Illinois, USA","seller_type":"dealer","listing_title":"2018 Lamborghini Huracan Performante Coupe","listing_url":"https://www.classic.com/veh/2018-lamborghini-huracan-performante-coupe-zhwud4z-4y0oorp/","source":"Classic.com","vin_or_stock":"","notes":"Classic.com asterisk asking; 9k mi displayed; mileage blank (rounded Nk mi); fixed-price; seller:Pro Cars Usa; VIN truncated/absent in Classic.com URL","flags":[]},{"snapshot_date":"2026-09-07","model_family":"Performante","body":"coupe","variant":"Performante Coupe","model_year":2018,"asking_price_usd":357995,"mileage_miles":null,"currency":"USD","location":"Trenton, New Jersey, USA","seller_type":"dealer","listing_title":"2018 Lamborghini Huracan LP640-4 Performante","listing_url":"https://www.classic.com/veh/2018-lamborghini-huracan-lp640-4-performante-zhwud-WLVMjl4/","source":"Classic.com","vin_or_stock":"","notes":"Classic.com asterisk asking; 19k mi displayed; mileage blank (rounded Nk mi); fixed-price; seller:J&S AutoHaus Group; VIN truncated/absent in Classic.com URL","flags":[]},{"snapshot_date":"2026-09-07","model_family":"Performante","body":"coupe","variant":"Performante Coupe","model_year":2018,"asking_price_usd":378991,"mileage_miles":null,"currency":"USD","location":"Scottsdale, Arizona, USA","seller_type":"dealer","listing_title":"2018 Lamborghini Huracan LP640-4 Performante","listing_url":"https://www.classic.com/veh/2018-lamborghini-huracan-lp640-4-performante-zhwcd-nwXmgKW/","source":"Classic.com","vin_or_stock":"","notes":"Classic.com asterisk asking; 13k mi displayed; mileage blank (rounded Nk mi); fixed-price; seller:Spady Auto Group; VIN truncated/absent in Classic.com URL","flags":[]},{"snapshot_date":"2026-09-07","model_family":"Performante","body":"coupe","variant":"Performante Coupe","model_year":2018,"asking_price_usd":379912,"mileage_miles":null,"currency":"USD","location":"West Chicago, Illinois, USA","seller_type":"dealer","listing_title":"2018 Lamborghini Huracan LP640-4 Performante","listing_url":"https://www.classic.com/veh/2018-lamborghini-huracan-lp640-4-performante-zhwud-pgKryPp/","source":"Classic.com","vin_or_stock":"","notes":"Classic.com asterisk asking; 31k mi displayed; mileage blank (rounded Nk mi); fixed-price; seller:Chicago Motor Cars; VIN truncated/absent in Classic.com URL","flags":[]},{"snapshot_date":"2026-09-07","model_family":"Performante","body":"coupe","variant":"Performante Coupe","model_year":2018,"asking_price_usd":404404,"mileage_miles":null,"currency":"USD","location":"Wilsonville, Oregon, USA","seller_type":"dealer","listing_title":"2018 Lamborghini Huracan LP640-4 Performante","listing_url":"https://www.classic.com/veh/2018-lamborghini-huracan-lp640-4-performante-zhwud-pGARXYn/","source":"Classic.com","vin_or_stock":"","notes":"Classic.com asterisk asking; 9k mi displayed; mileage blank (rounded Nk mi); fixed-price; seller:Ron Tonkin Gran Turismo; VIN truncated/absent in Classic.com URL","flags":[]},{"snapshot_date":"2026-09-07","model_family":"Performante","body":"coupe","variant":"Performante Coupe","model_year":2018,"asking_price_usd":429900,"mileage_miles":null,"currency":"USD","location":"Addison, Texas, USA","seller_type":"dealer","listing_title":"2018 Lamborghini Huracan LP640-4 Performante","listing_url":"https://www.classic.com/veh/2018-lamborghini-huracan-lp640-4-performante-zhwud-4oaN01W/","source":"Classic.com","vin_or_stock":"","notes":"Classic.com asterisk asking; 5k mi displayed; mileage blank (rounded Nk mi); fixed-price; seller:Tactical Fleet Dallas; VIN truncated/absent in Classic.com URL","flags":[]},{"snapshot_date":"2026-09-07","model_family":"Performante","body":"coupe","variant":"Performante Coupe","model_year":2018,"asking_price_usd":459990,"mileage_miles":null,"currency":"USD","location":"New Albany, Indiana, USA","seller_type":"dealer","listing_title":"2018 Lamborghini Huracan LP640-4 Performante","listing_url":"https://www.classic.com/veh/2018-lamborghini-huracan-lp640-4-performante-zhwud-peLm67W/","source":"Classic.com","vin_or_stock":"","notes":"Classic.com asterisk asking; 11k mi displayed; mileage blank (rounded Nk mi); fixed-price; seller:Hypercars; VIN truncated/absent in Classic.com URL","flags":[]},{"snapshot_date":"2026-09-07","model_family":"Performante","body":"spider","variant":"Performante Spider","model_year":2018,"asking_price_usd":409950,"mileage_miles":null,"currency":"USD","location":"Miami-Dade County, Florida, USA","seller_type":"dealer","listing_title":"2018 Lamborghini Huracan LP640-4 Performante Spyder","listing_url":"https://www.classic.com/veh/2018-lamborghini-huracan-lp640-4-performante-spyde-nBkZYZW/","source":"Classic.com","vin_or_stock":"","notes":"Classic.com asterisk asking; 8k mi displayed; mileage blank (rounded Nk mi); fixed-price; seller:Prestige Imports; VIN truncated/absent in Classic.com URL","flags":[]},{"snapshot_date":"2026-09-07","model_family":"Performante","body":"spider","variant":"Performante Spider","model_year":2018,"asking_price_usd":430598,"mileage_miles":null,"currency":"USD","location":"Scottsdale, Arizona, USA","seller_type":"dealer","listing_title":"2018 Lamborghini Huracan LP640-4 Performante","listing_url":"https://www.classic.com/veh/2018-lamborghini-huracan-lp640-4-performante-zhwus-nQGgMep/","source":"Classic.com","vin_or_stock":"","notes":"Classic.com asterisk asking; 4k mi displayed; mileage blank (rounded Nk mi); fixed-price; seller:Scottsdale Maserati; VIN truncated/absent in Classic.com URL; body inferred as spider from title/VIN-prefix (page was coupe)","flags":[]},{"snapshot_date":"2026-09-07","model_family":"Performante","body":"spider","variant":"Performante Spider","model_year":2019,"asking_price_usd":314993,"mileage_miles":null,"currency":"USD","location":"Costa Mesa, California, USA","seller_type":"dealer","listing_title":"2019 Lamborghini Huracan LP640-4 Performante Spyder","listing_url":"https://www.classic.com/veh/2019-lamborghini-huracan-lp640-4-performante-spyde-4yBLron/","source":"Classic.com","vin_or_stock":"","notes":"Classic.com asterisk asking; 29k mi displayed; mileage blank (rounded Nk mi); fixed-price; seller:Pro Motorcars; VIN truncated/absent in Classic.com URL","flags":["cheapest"]},{"snapshot_date":"2026-09-07","model_family":"Performante","body":"spider","variant":"Performante Spider","model_year":2019,"asking_price_usd":403048,"mileage_miles":null,"currency":"USD","location":"Marysville, Ohio, USA","seller_type":"dealer","listing_title":"2019 Lamborghini Huracan LP640-4 Performante Spyder","listing_url":"https://www.classic.com/veh/2019-lamborghini-huracan-lp640-4-performante-spyde-nBlgvRp/","source":"Classic.com","vin_or_stock":"","notes":"Classic.com asterisk asking; 12k mi displayed; mileage blank (rounded Nk mi); fixed-price; seller:Performance Luxury Sport; VIN truncated/absent in Classic.com URL","flags":[]}],"stats":{"total_rows":37,"latest_count":37,"standout_count":18}}</script>
+<script>
+(function () {
+  const DATA = JSON.parse(document.getElementById("dashboard-data").textContent);
+  const STORAGE_KEY = 'huracan-dash-variants';
+  const fmtMoney = (n) => {
+    if (n == null || Number.isNaN(n)) return "—";
+    return "$" + Math.round(n).toLocaleString("en-US");
+  };
+  const fmtMiles = (n) => {
+    if (n == null || Number.isNaN(n)) return "—";
+    return Math.round(n).toLocaleString("en-US");
+  };
+  const flagLabel = {
+    low_miles: "<10k mi",
+    cheapest: "Cheapest in variant",
+    price_outlier: "Price outlier",
+  };
+  function escapeHtml(s) {
+    return String(s)
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;");
+  }
+  document.getElementById("headerMeta").textContent =
+    `Latest: ${DATA.latest_snapshot_date || "—"} · ${DATA.stats.latest_count} listings · ${DATA.stats.standout_count} standouts`;
+  document.getElementById("footerMeta").textContent =
+    `Embedded ${DATA.stats.total_rows} rows across ${DATA.snapshot_dates.length} snapshot(s). Generated ${DATA.generated_at}. Chart.js 4.x CDN.`;
+
+  // --- Variant visibility (localStorage) ---
+  const allVariants = (DATA.variants && DATA.variants.length)
+    ? DATA.variants.slice()
+    : Object.keys(DATA.variant_colors || {});
+  function loadEnabled() {
+    const enabled = {};
+    allVariants.forEach((v) => { enabled[v] = true; });
+    try {
+      const raw = localStorage.getItem(STORAGE_KEY);
+      if (!raw) return enabled;
+      const arr = JSON.parse(raw);
+      if (!Array.isArray(arr)) return enabled;
+      const set = new Set(arr);
+      allVariants.forEach((v) => { enabled[v] = set.has(v); });
+      return enabled;
+    } catch (e) {
+      return enabled;
+    }
+  }
+  let enabledVariants = loadEnabled();
+  function saveEnabled() {
+    const arr = allVariants.filter((v) => enabledVariants[v]);
+    try { localStorage.setItem(STORAGE_KEY, JSON.stringify(arr)); } catch (e) {}
+  }
+  function isVariantOn(v) {
+    return enabledVariants[v] !== false;
+  }
+
+  function renderVariantBar() {
+    const pills = document.getElementById("variantPills");
+    pills.innerHTML = allVariants.map((v) => {
+      const color = (DATA.variant_colors && DATA.variant_colors[v]) || "#adb5bd";
+      const on = isVariantOn(v);
+      return `<button type="button" class="variant-pill ${on ? "active" : ""}" data-variant="${escapeHtml(v)}" style="--pill-color:${color}" title="${escapeHtml(v)}"><span class="dot" style="background:${on ? color : "currentColor"}"></span>${escapeHtml(v)}</button>`;
+    }).join("");
+    pills.querySelectorAll(".variant-pill").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const v = btn.getAttribute("data-variant");
+        enabledVariants[v] = !isVariantOn(v);
+        saveEnabled();
+        applyVariantFilter();
+      });
+    });
+  }
+  document.getElementById("variantAll").addEventListener("click", () => {
+    allVariants.forEach((v) => { enabledVariants[v] = true; });
+    saveEnabled();
+    applyVariantFilter();
+  });
+  document.getElementById("variantNone").addEventListener("click", () => {
+    allVariants.forEach((v) => { enabledVariants[v] = false; });
+    saveEnabled();
+    applyVariantFilter();
+  });
+
+  // --- KPIs ---
+  function renderKpis() {
+    const kpiGrid = document.getElementById("kpiGrid");
+    const kpis = (DATA.kpis || []).filter((k) => isVariantOn(k.variant));
+    if (!kpis.length) {
+      kpiGrid.innerHTML = `<div class="card empty">No listings for selected models.</div>`;
+      return;
+    }
+    kpiGrid.innerHTML = kpis.map((k) => `
+      <div class="card">
+        <h3><span class="dot" style="background:${k.color}"></span>${escapeHtml(k.variant)}</h3>
+        <div class="kpi-count">${k.count}</div>
+        <div class="kpi-row"><span>Median ask</span><strong>${fmtMoney(k.median_ask)}</strong></div>
+        <div class="kpi-row"><span>Median miles</span><strong>${fmtMiles(k.median_miles)}</strong></div>
+        <div class="kpi-row"><span>Ask range</span><strong>${fmtMoney(k.min_ask)} – ${fmtMoney(k.max_ask)}</strong></div>
+      </div>`).join("");
+  }
+
+  // --- Charts ---
+  let lineChart = null;
+  let scatterChart = null;
+
+  function buildLineDatasets() {
+    return allVariants.filter(isVariantOn).map((v) => {
+      const pts = (DATA.median_series[v] || []).map((p) => ({ x: p.date, y: p.median_ask })).filter((p) => p.y != null);
+      return {
+        label: v, data: pts,
+        borderColor: DATA.variant_colors[v] || "#adb5bd",
+        backgroundColor: DATA.variant_colors[v] || "#adb5bd",
+        tension: 0.25, spanGaps: true, pointRadius: 4, pointHoverRadius: 6,
+      };
+    });
+  }
+  function renderLineChart() {
+    const canvas = document.getElementById("lineChart");
+    if (lineChart) { lineChart.destroy(); lineChart = null; }
+    lineChart = new Chart(canvas, {
+      type: "line",
+      data: { datasets: buildLineDatasets() },
+      options: {
+        responsive: true, maintainAspectRatio: false,
+        interaction: { mode: "nearest", intersect: false },
+        plugins: {
+          legend: { labels: { color: "#8b949e" } },
+          tooltip: { callbacks: { label: (ctx) => `${ctx.dataset.label}: ${fmtMoney(ctx.parsed.y)}` } },
+        },
+        scales: {
+          x: { type: "category", labels: DATA.snapshot_dates, ticks: { color: "#8b949e" }, grid: { color: "rgba(48,54,61,0.6)" } },
+          y: { ticks: { color: "#8b949e", callback: (v) => "$" + (v / 1000) + "k" }, grid: { color: "rgba(48,54,61,0.6)" } },
+        },
+      },
+    });
+  }
+
+  function buildScatterDatasets() {
+    const groups = {};
+    DATA.latest_listings.forEach((r) => {
+      if (r.asking_price_usd == null || r.mileage_miles == null) return;
+      if (!isVariantOn(r.variant)) return;
+      if (!groups[r.variant]) groups[r.variant] = [];
+      groups[r.variant].push({ x: r.mileage_miles, y: r.asking_price_usd, title: r.listing_title });
+    });
+    return Object.keys(groups).map((v) => ({
+      label: v, data: groups[v],
+      backgroundColor: DATA.variant_colors[v] || "#adb5bd",
+      borderColor: DATA.variant_colors[v] || "#adb5bd",
+      pointRadius: 5, pointHoverRadius: 7,
+    }));
+  }
+  function renderScatterChart() {
+    const canvas = document.getElementById("scatterChart");
+    if (scatterChart) { scatterChart.destroy(); scatterChart = null; }
+    scatterChart = new Chart(canvas, {
+      type: "scatter",
+      data: { datasets: buildScatterDatasets() },
+      options: {
+        responsive: true, maintainAspectRatio: false,
+        plugins: {
+          legend: { labels: { color: "#8b949e" } },
+          tooltip: { callbacks: { label: (ctx) => {
+            const raw = ctx.raw || {};
+            return `${ctx.dataset.label}: ${fmtMoney(raw.y)} · ${fmtMiles(raw.x)} mi`;
+          } } },
+        },
+        scales: {
+          x: { title: { display: true, text: "Miles", color: "#8b949e" }, ticks: { color: "#8b949e" }, grid: { color: "rgba(48,54,61,0.6)" } },
+          y: { title: { display: true, text: "Ask (USD)", color: "#8b949e" }, ticks: { color: "#8b949e", callback: (v) => "$" + (v / 1000) + "k" }, grid: { color: "rgba(48,54,61,0.6)" } },
+        },
+      },
+    });
+  }
+
+  // --- Standouts ---
+  function renderStandouts() {
+    const sg = document.getElementById("standoutGrid");
+    const items = (DATA.standouts || []).filter((r) => isVariantOn(r.variant));
+    document.getElementById("standoutCount").textContent = String(items.length);
+    if (!items.length) {
+      sg.innerHTML = `<div class="empty">No standouts for selected models.</div>`;
+      return;
+    }
+    const sorted = items.slice().sort((a, b) => (a.asking_price_usd ?? Infinity) - (b.asking_price_usd ?? Infinity));
+    sg.innerHTML = sorted.map((r) => `
+      <div class="standout-card">
+        <div class="title">${r.listing_url ? `<a href="${r.listing_url}" target="_blank" rel="noopener">${escapeHtml(r.listing_title || "Listing")}</a>` : escapeHtml(r.listing_title || "Listing")}</div>
+        <div class="meta">${escapeHtml(r.variant)} · ${r.model_year ?? "—"} · ${fmtMoney(r.asking_price_usd)} · ${fmtMiles(r.mileage_miles)} mi</div>
+        <div class="meta">${escapeHtml(r.location || "—")} · ${escapeHtml(r.source || "")}</div>
+        <div class="flags">${(r.flags || []).map((f) => `<span class="flag ${f}">${flagLabel[f] || f}</span>`).join("")}</div>
+      </div>`).join("");
+  }
+
+  // --- Table / existing filters ---
+  const modelSel = document.getElementById("filterModel");
+  const models = [...new Set(DATA.latest_listings.map((r) => r.model_family).filter(Boolean))].sort();
+  models.forEach((m) => { const opt = document.createElement("option"); opt.value = m; opt.textContent = m; modelSel.appendChild(opt); });
+  let sortKey = "asking_price_usd";
+  let sortAsc = true;
+  function isLowMile(r) {
+    return r.mileage_miles != null && r.mileage_miles < 10000;
+  }
+  function isCheapest(r) {
+    return (r.flags || []).includes("cheapest");
+  }
+  function filtered() {
+    const model = document.getElementById("filterModel").value;
+    const body = document.getElementById("filterBody").value;
+    const cheap = document.getElementById("filterCheapest").checked;
+    const low = document.getElementById("filterLowMile").checked;
+    const q = document.getElementById("filterSearch").value.trim().toLowerCase();
+    let rows = DATA.latest_listings.slice().filter((r) => isVariantOn(r.variant));
+    if (model) rows = rows.filter((r) => r.model_family === model);
+    if (body) rows = rows.filter((r) => r.body === body);
+    if (cheap) rows = rows.filter(isCheapest);
+    if (low) rows = rows.filter(isLowMile);
+    if (q) {
+      rows = rows.filter((r) => [r.listing_title, r.location, r.vin_or_stock, r.source, r.notes, r.seller_type].join(" ").toLowerCase().includes(q));
+    }
+    rows.sort((a, b) => {
+      const va = a[sortKey], vb = b[sortKey];
+      if (va == null && vb == null) return 0;
+      if (va == null) return 1;
+      if (vb == null) return -1;
+      if (typeof va === "number" && typeof vb === "number") return sortAsc ? va - vb : vb - va;
+      const sa = String(va).toLowerCase(), sb = String(vb).toLowerCase();
+      if (sa < sb) return sortAsc ? -1 : 1;
+      if (sa > sb) return sortAsc ? 1 : -1;
+      return 0;
+    });
+    return rows;
+  }
+  function renderTable() {
+    const rows = filtered();
+    document.getElementById("tableCount").textContent = String(rows.length);
+    const tb = document.getElementById("tableBody");
+    if (!rows.length) {
+      tb.innerHTML = `<tr><td colspan="9" class="empty">No listings match filters.</td></tr>`;
+      return;
+    }
+    tb.innerHTML = rows.map((r) => `
+      <tr>
+        <td>${escapeHtml(r.model_family)}</td>
+        <td>${escapeHtml(r.body)}</td>
+        <td class="num">${r.model_year ?? "—"}</td>
+        <td class="num">${fmtMoney(r.asking_price_usd)}</td>
+        <td class="num">${fmtMiles(r.mileage_miles)}</td>
+        <td>${escapeHtml(r.location || "—")}</td>
+        <td>${escapeHtml(r.seller_type || "—")}</td>
+        <td>${escapeHtml(r.source || "—")}</td>
+        <td>${r.listing_url ? `<a href="${r.listing_url}" target="_blank" rel="noopener">${escapeHtml(r.listing_title || "link")}</a>` : escapeHtml(r.listing_title || "—")}</td>
+      </tr>`).join("");
+  }
+  ["filterModel", "filterBody", "filterCheapest", "filterLowMile", "filterSearch"].forEach((id) => {
+    document.getElementById(id).addEventListener("input", renderTable);
+    document.getElementById(id).addEventListener("change", renderTable);
+  });
+  document.querySelectorAll("th[data-sort]").forEach((th) => {
+    th.addEventListener("click", () => {
+      const key = th.getAttribute("data-sort");
+      if (sortKey === key) sortAsc = !sortAsc; else { sortKey = key; sortAsc = true; }
+      renderTable();
+    });
+  });
+
+  function applyVariantFilter() {
+    renderVariantBar();
+    renderKpis();
+    renderLineChart();
+    renderScatterChart();
+    renderStandouts();
+    renderTable();
+  }
+
+  applyVariantFilter();
+})();
+
+</script></script>
+</body>
+</html>
