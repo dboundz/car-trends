@@ -27,8 +27,26 @@ header .sub{color:var(--muted);font-size:.9rem;margin-top:4px}
 .callout{background:var(--panel2);border:1px solid var(--border);border-radius:10px;padding:14px 16px}
 .callout .k{font-size:.75rem;text-transform:uppercase;letter-spacing:.04em;color:var(--muted);margin-bottom:6px}
 .callout .v{font-size:.95rem;font-weight:600}
+.brand-scan{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-bottom:22px}
+.scan-card{background:var(--panel);border:1px solid var(--border);border-radius:var(--radius);padding:14px 16px 12px;border-top:3px solid var(--card-accent,#58a6ff);transition:border-color .15s,transform .15s,background .15s}
+.scan-card:hover{border-color:var(--card-accent,#58a6ff);background:var(--panel2);transform:translateY(-1px)}
+.scan-card .scan-main{display:block;color:inherit;text-decoration:none}
+.scan-card .scan-main:hover{text-decoration:none}
+.scan-card .scan-main:focus-visible{outline:2px solid var(--link);outline-offset:2px;border-radius:6px}
+.scan-card .scan-name{font-size:1.05rem;font-weight:700;letter-spacing:-.02em;margin:0 0 10px}
+.scan-card .scan-stats{display:grid;grid-template-columns:1fr 1fr;gap:6px 10px}
+.scan-card .scan-stats .stat .lbl{font-size:.65rem;text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}
+.scan-card .scan-stats .stat .val{font-family:var(--mono);font-size:.88rem;font-variant-numeric:tabular-nums;font-weight:600}
+.scan-card .scan-deltas{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px;padding-top:8px;border-top:1px solid var(--border);align-items:center}
+.scan-card .scan-foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px;align-items:center;margin-top:10px;padding-top:8px;border-top:1px solid var(--border)}
+.scan-card .scan-jump{font-size:.75rem;color:var(--muted)}
+.scan-card .scan-jump:hover{color:var(--text);text-decoration:none}
+.scan-card .scan-detail{font-size:.75rem;color:var(--link);font-weight:550}
+.scan-card .scan-detail:hover{text-decoration:underline}
+.scan-card.unavailable{opacity:.65}
+.scan-card.unavailable:hover{transform:none;border-color:var(--border);background:var(--panel)}
 .brands{display:grid;grid-template-columns:1fr;gap:20px}
-.brand{background:var(--panel);border:1px solid var(--border);border-radius:var(--radius);padding:18px 18px 16px;border-top:3px solid var(--card-accent,#58a6ff)}
+.brand{background:var(--panel);border:1px solid var(--border);border-radius:var(--radius);padding:18px 18px 16px;border-top:3px solid var(--card-accent,#58a6ff);scroll-margin-top:20px}
 .brand-head{display:flex;flex-wrap:wrap;align-items:flex-start;justify-content:space-between;gap:14px;margin-bottom:16px}
 .brand-head h2{margin:0;font-size:1.35rem;font-weight:700;letter-spacing:-.02em}
 .brand-head .sub{color:var(--muted);font-size:.82rem;margin-top:3px}
@@ -54,7 +72,11 @@ footer{margin-top:28px;padding-top:16px;border-top:1px solid var(--border);color
 .empty{color:var(--muted);font-style:italic;padding:8px 0}
 @media (max-width:640px){
   .models{grid-template-columns:1fr}
+  .brand-scan{grid-template-columns:1fr 1fr}
   .total-n{font-size:1.6rem}
+}
+@media (max-width:420px){
+  .brand-scan{grid-template-columns:1fr}
 }
 </style>
 </head>
@@ -68,17 +90,19 @@ footer{margin-top:28px;padding-top:16px;border-top:1px solid var(--border);color
     <div class="badge" id="gen-badge"></div>
   </header>
 
+  <section class="brand-scan" id="brand-scan" aria-label="Brand quick scan"></section>
+
   <div class="geo-bar" id="geo-bar"></div>
   <section class="callouts" id="global-callouts"></section>
   <section class="brands" id="brands"></section>
 
   <footer>
-    Brand sections: Ferrari → McLaren → Ford → Lamborghini. Per-model cards show count, median ask, median miles, and day-over-day Δ when a prior day exists.
+    Brand scan cards jump to sections below. Brand sections: Ferrari → McLaren → Lamborghini → Ford. Per-model cards show count, median ask, median miles, and day-over-day Δ when a prior day exists.
     Geography: <strong>US + Canada only</strong> (see GEO.md). Detail dashboards:
     <code>ferrari-488-f8.html</code>, <code>mclaren-lt.html</code>, <code>ford-gt-gen1.html</code>, <code>lamborghini-huracan.html</code>.
   </footer>
 </div>
-<script id="overview-data" type="application/json">{"title":"Car Trends","generated_at":"2026-09-07 20:28 UTC","snapshot_dates":["2026-09-07"],"geography":"US + Canada only","geo_totals":{"raw":500,"kept":472,"dropped":28},"categories":[{"id":"ferrari","brand":"Ferrari","title":"Ferrari","subtitle":"488 · F8 · 458","detail_href":"ferrari-488-f8.html","accent":"#e63946","available":true,"snapshot_date":"2026-09-07","prior_date":"2026-09-06","total_listings":367,"prior_total_listings":344,"delta_total":23,"overall_median_ask":449996,"delta_median_ask_overall":21654,"variants":[{"key":"488_coupe","label":"488 Coupe","count":64,"median_ask":339900,"median_miles":10775,"delta_count":-6,"delta_ask":0,"prior_count":70,"prior_median_ask":339900},{"key":"488_spider","label":"488 Spider","count":112,"median_ask":418903,"median_miles":9754,"delta_count":-28,"delta_ask":757,"prior_count":140,"prior_median_ask":418146},{"key":"F8_coupe","label":"F8 Coupe","count":55,"median_ask":473076,"median_miles":4216,"delta_count":22,"delta_ask":3080,"prior_count":33,"prior_median_ask":469996},{"key":"F8_spider","label":"F8 Spider","count":78,"median_ask":659725,"median_miles":3911,"delta_count":-23,"delta_ask":383,"prior_count":101,"prior_median_ask":659342},{"key":"458_coupe","label":"458 Coupe","count":28,"median_ask":472548,"median_miles":8860,"delta_count":null,"delta_ask":null,"prior_count":null,"prior_median_ask":null},{"key":"458_spider","label":"458 Spider","count":30,"median_ask":538192,"median_miles":9928,"delta_count":null,"delta_ask":null,"prior_count":null,"prior_median_ask":null}],"callouts":[{"type":"median_ask","variant":"F8 Coupe","delta":3080,"from":469996,"to":473076},{"type":"count","variant":"488 Spider","delta":-28,"from":140,"to":112}],"geo":{"raw":372,"kept":367,"dropped":5,"prior":{"raw":349,"kept":344,"dropped":5}}},{"id":"mclaren","brand":"McLaren","title":"McLaren","subtitle":"600LT · 675LT · 765LT","detail_href":"mclaren-lt.html","accent":"#f4a261","available":true,"snapshot_date":"2026-09-07","prior_date":"2026-09-06","total_listings":43,"prior_total_listings":50,"delta_total":-7,"overall_median_ask":299900,"delta_median_ask_overall":6056,"variants":[{"key":"600LT_coupe","label":"600LT Coupe","count":16,"median_ask":241497,"median_miles":984,"delta_count":-2,"delta_ask":1503,"prior_count":18,"prior_median_ask":239994},{"key":"600LT_spider","label":"600LT Spider","count":7,"median_ask":274000,"median_miles":null,"delta_count":-2,"delta_ask":14272,"prior_count":9,"prior_median_ask":259728},{"key":"675LT_coupe","label":"675LT Coupe","count":1,"median_ask":519990,"median_miles":2290,"delta_count":-2,"delta_ask":109995,"prior_count":3,"prior_median_ask":409995},{"key":"675LT_spider","label":"675LT Spider","count":1,"median_ask":374393,"median_miles":null,"delta_count":0,"delta_ask":0,"prior_count":1,"prior_median_ask":374393},{"key":"765LT_coupe","label":"765LT Coupe","count":9,"median_ask":739912,"median_miles":null,"delta_count":-1,"delta_ask":7456,"prior_count":10,"prior_median_ask":732456},{"key":"765LT_spider","label":"765LT Spider","count":9,"median_ask":849999,"median_miles":null,"delta_count":0,"delta_ask":0,"prior_count":9,"prior_median_ask":849999}],"callouts":[{"type":"median_ask","variant":"675LT Coupe","delta":109995,"from":409995,"to":519990},{"type":"count","variant":"600LT Coupe","delta":-2,"from":18,"to":16}],"geo":{"raw":65,"kept":43,"dropped":22,"prior":{"raw":73,"kept":50,"dropped":23}}},{"id":"ford_gt","brand":"Ford","title":"Ford","subtitle":"2005 GT · 2006 GT","detail_href":"ford-gt-gen1.html","accent":"#58a6ff","available":true,"snapshot_date":"2026-09-07","prior_date":null,"total_listings":25,"prior_total_listings":null,"delta_total":null,"overall_median_ask":750000,"delta_median_ask_overall":null,"variants":[{"key":"2005","label":"2005 GT","count":13,"median_ask":649900,"median_miles":9012,"delta_count":null,"delta_ask":null,"prior_count":null,"prior_median_ask":null},{"key":"2006","label":"2006 GT","count":12,"median_ask":899990,"median_miles":579,"delta_count":null,"delta_ask":null,"prior_count":null,"prior_median_ask":null}],"callouts":[],"geo":{"raw":26,"kept":25,"dropped":1,"prior":null}},{"id":"lamborghini","brand":"Lamborghini","title":"Lamborghini","subtitle":"Huracán STO · Performante","detail_href":"lamborghini-huracan.html","accent":"#c9a227","available":true,"snapshot_date":"2026-09-07","prior_date":null,"total_listings":37,"prior_total_listings":null,"delta_total":null,"overall_median_ask":459990,"delta_median_ask_overall":null,"variants":[{"key":"STO_coupe","label":"STO Coupe","count":24,"median_ask":489994,"median_miles":6043,"delta_count":null,"delta_ask":null,"prior_count":null,"prior_median_ask":null},{"key":"Performante_coupe","label":"Performante Coupe","count":9,"median_ask":378991,"median_miles":null,"delta_count":null,"delta_ask":null,"prior_count":null,"prior_median_ask":null},{"key":"Performante_spider","label":"Performante Spider","count":4,"median_ask":406499,"median_miles":null,"delta_count":null,"delta_ask":null,"prior_count":null,"prior_median_ask":null}],"callouts":[],"geo":{"raw":37,"kept":37,"dropped":0,"prior":null}}]}</script>
+<script id="overview-data" type="application/json">{"title":"Car Trends","generated_at":"2026-09-07 20:31 UTC","snapshot_dates":["2026-09-07"],"geography":"US + Canada only","geo_totals":{"raw":500,"kept":472,"dropped":28},"categories":[{"id":"ferrari","brand":"Ferrari","title":"Ferrari","subtitle":"488 · F8 · 458","detail_href":"ferrari-488-f8.html","accent":"#e63946","available":true,"snapshot_date":"2026-09-07","prior_date":"2026-09-06","total_listings":367,"prior_total_listings":344,"delta_total":23,"overall_median_ask":449996,"overall_median_miles":6619,"delta_median_ask_overall":21654,"variants":[{"key":"488_coupe","label":"488 Coupe","count":64,"median_ask":339900,"median_miles":10775,"delta_count":-6,"delta_ask":0,"prior_count":70,"prior_median_ask":339900},{"key":"488_spider","label":"488 Spider","count":112,"median_ask":418903,"median_miles":9754,"delta_count":-28,"delta_ask":757,"prior_count":140,"prior_median_ask":418146},{"key":"F8_coupe","label":"F8 Coupe","count":55,"median_ask":473076,"median_miles":4216,"delta_count":22,"delta_ask":3080,"prior_count":33,"prior_median_ask":469996},{"key":"F8_spider","label":"F8 Spider","count":78,"median_ask":659725,"median_miles":3911,"delta_count":-23,"delta_ask":383,"prior_count":101,"prior_median_ask":659342},{"key":"458_coupe","label":"458 Coupe","count":28,"median_ask":472548,"median_miles":8860,"delta_count":null,"delta_ask":null,"prior_count":null,"prior_median_ask":null},{"key":"458_spider","label":"458 Spider","count":30,"median_ask":538192,"median_miles":9928,"delta_count":null,"delta_ask":null,"prior_count":null,"prior_median_ask":null}],"callouts":[{"type":"median_ask","variant":"F8 Coupe","delta":3080,"from":469996,"to":473076},{"type":"count","variant":"488 Spider","delta":-28,"from":140,"to":112}],"geo":{"raw":372,"kept":367,"dropped":5,"prior":{"raw":349,"kept":344,"dropped":5}}},{"id":"mclaren","brand":"McLaren","title":"McLaren","subtitle":"600LT · 675LT · 765LT","detail_href":"mclaren-lt.html","accent":"#f4a261","available":true,"snapshot_date":"2026-09-07","prior_date":"2026-09-06","total_listings":43,"prior_total_listings":50,"delta_total":-7,"overall_median_ask":299900,"overall_median_miles":1637,"delta_median_ask_overall":6056,"variants":[{"key":"600LT_coupe","label":"600LT Coupe","count":16,"median_ask":241497,"median_miles":984,"delta_count":-2,"delta_ask":1503,"prior_count":18,"prior_median_ask":239994},{"key":"600LT_spider","label":"600LT Spider","count":7,"median_ask":274000,"median_miles":null,"delta_count":-2,"delta_ask":14272,"prior_count":9,"prior_median_ask":259728},{"key":"675LT_coupe","label":"675LT Coupe","count":1,"median_ask":519990,"median_miles":2290,"delta_count":-2,"delta_ask":109995,"prior_count":3,"prior_median_ask":409995},{"key":"675LT_spider","label":"675LT Spider","count":1,"median_ask":374393,"median_miles":null,"delta_count":0,"delta_ask":0,"prior_count":1,"prior_median_ask":374393},{"key":"765LT_coupe","label":"765LT Coupe","count":9,"median_ask":739912,"median_miles":null,"delta_count":-1,"delta_ask":7456,"prior_count":10,"prior_median_ask":732456},{"key":"765LT_spider","label":"765LT Spider","count":9,"median_ask":849999,"median_miles":null,"delta_count":0,"delta_ask":0,"prior_count":9,"prior_median_ask":849999}],"callouts":[{"type":"median_ask","variant":"675LT Coupe","delta":109995,"from":409995,"to":519990},{"type":"count","variant":"600LT Coupe","delta":-2,"from":18,"to":16}],"geo":{"raw":65,"kept":43,"dropped":22,"prior":{"raw":73,"kept":50,"dropped":23}}},{"id":"lamborghini","brand":"Lamborghini","title":"Lamborghini","subtitle":"Huracán STO · Performante","detail_href":"lamborghini-huracan.html","accent":"#c9a227","available":true,"snapshot_date":"2026-09-07","prior_date":null,"total_listings":37,"prior_total_listings":null,"delta_total":null,"overall_median_ask":459990,"overall_median_miles":6043,"delta_median_ask_overall":null,"variants":[{"key":"STO_coupe","label":"STO Coupe","count":24,"median_ask":489994,"median_miles":6043,"delta_count":null,"delta_ask":null,"prior_count":null,"prior_median_ask":null},{"key":"Performante_coupe","label":"Performante Coupe","count":9,"median_ask":378991,"median_miles":null,"delta_count":null,"delta_ask":null,"prior_count":null,"prior_median_ask":null},{"key":"Performante_spider","label":"Performante Spider","count":4,"median_ask":406499,"median_miles":null,"delta_count":null,"delta_ask":null,"prior_count":null,"prior_median_ask":null}],"callouts":[],"geo":{"raw":37,"kept":37,"dropped":0,"prior":null}},{"id":"ford_gt","brand":"Ford","title":"Ford","subtitle":"2005 GT · 2006 GT","detail_href":"ford-gt-gen1.html","accent":"#58a6ff","available":true,"snapshot_date":"2026-09-07","prior_date":null,"total_listings":25,"prior_total_listings":null,"delta_total":null,"overall_median_ask":750000,"overall_median_miles":6000,"delta_median_ask_overall":null,"variants":[{"key":"2005","label":"2005 GT","count":13,"median_ask":649900,"median_miles":9012,"delta_count":null,"delta_ask":null,"prior_count":null,"prior_median_ask":null},{"key":"2006","label":"2006 GT","count":12,"median_ask":899990,"median_miles":579,"delta_count":null,"delta_ask":null,"prior_count":null,"prior_median_ask":null}],"callouts":[],"geo":{"raw":26,"kept":25,"dropped":1,"prior":null}}]}</script>
 <script>
 (function(){
   const raw = document.getElementById('overview-data').textContent;
@@ -127,6 +151,21 @@ footer{margin-top:28px;padding-top:16px;border-top:1px solid var(--border);color
     const sign = d>0 ? '+' : '−';
     return `${deltaArrow(d)} ${sign}$${Math.abs(d).toLocaleString('en-US')}`;
   }
+  function brandAnchor(c){
+    const name = (c.brand || c.title || c.id || 'brand').toString();
+    return 'brand-' + name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+  }
+  function fmtDeltaTiny(d, kind){
+    if(d==null || d===undefined) return '';
+    if(kind==='ask'){
+      if(d===0) return '<span class="delta flat">→ $0</span>';
+      const sign = d>0 ? '+' : '−';
+      return `<span class="delta ${deltaClass(d)}">${deltaArrow(d)} ${sign}$${Math.abs(d).toLocaleString('en-US')}</span>`;
+    }
+    if(d===0) return '<span class="delta flat">→ 0</span>';
+    const sign = d>0 ? '+' : '';
+    return `<span class="delta ${deltaClass(d)}">${deltaArrow(d)} ${sign}${d}</span>`;
+  }
 
   const dates = (DATA.snapshot_dates||[]).join(' · ') || '—';
   document.getElementById('header-sub').textContent =
@@ -140,6 +179,39 @@ footer{margin-top:28px;padding-top:16px;border-top:1px solid var(--border);color
     + `<span class="geo-pill">Raw rows <strong>${fmtCount(gt.raw)}</strong></span>`
     + `<span class="geo-pill">Kept <strong>${fmtCount(gt.kept)}</strong></span>`
     + `<span class="geo-pill">Dropped <strong>${fmtCount(gt.dropped)}</strong></span>`;
+
+  const scan = document.getElementById('brand-scan');
+  scan.innerHTML = (DATA.categories||[]).map(c=>{
+    const anchor = brandAnchor(c);
+    const accent = c.accent || '#58a6ff';
+    if(!c.available){
+      return `<div class="scan-card unavailable" style="--card-accent:${accent}">
+        <div class="scan-name">${c.brand||c.title}</div>
+        <div class="meta empty">${c.error||'No data'}</div>
+      </div>`;
+    }
+    const dCount = fmtDeltaTiny(c.delta_total, 'count');
+    const dAsk = fmtDeltaTiny(c.delta_median_ask_overall, 'ask');
+    const deltas = [dCount ? `<span class="meta">listings</span> ${dCount}` : '',
+                    dAsk ? `<span class="meta">ask</span> ${dAsk}` : '']
+      .filter(Boolean).join(' · ') || '<span class="meta">DoD n/a</span>';
+    return `<div class="scan-card" style="--card-accent:${accent}">
+      <a class="scan-main" href="#${anchor}">
+        <div class="scan-name">${c.brand||c.title}</div>
+        <div class="scan-stats">
+          <div class="stat"><div class="lbl">US/CA listings</div><div class="val">${fmtCount(c.total_listings)}</div></div>
+          <div class="stat"><div class="lbl">Median ask</div><div class="val">${fmtMoney(c.overall_median_ask)}</div></div>
+          <div class="stat"><div class="lbl">Median mi</div><div class="val">${fmtMiles(c.overall_median_miles)}</div></div>
+          <div class="stat"><div class="lbl">DoD</div><div class="val" style="font-size:.78rem">${dCount || '<span class="delta flat">n/a</span>'}</div></div>
+        </div>
+        <div class="scan-deltas">${deltas}</div>
+      </a>
+      <div class="scan-foot">
+        <a class="scan-jump" href="#${anchor}">Jump to section ↓</a>
+        <a class="scan-detail" href="${c.detail_href}">Detail dashboard →</a>
+      </div>
+    </div>`;
+  }).join('');
 
   const global = document.getElementById('global-callouts');
   const allAsk = [];
@@ -168,7 +240,8 @@ footer{margin-top:28px;padding-top:16px;border-top:1px solid var(--border);color
   const brands = document.getElementById('brands');
   brands.innerHTML = (DATA.categories||[]).map(c=>{
     if(!c.available){
-      return `<article class="brand" style="--card-accent:${c.accent}"><div class="brand-head"><div><h2>${c.brand||c.title}</h2><div class="sub">${c.subtitle||''}</div></div></div><div class="empty">${c.error||'No data'}</div></article>`;
+      const aid0 = brandAnchor(c);
+      return `<article class="brand" id="${aid0}" style="--card-accent:${c.accent}"><div class="brand-head"><div><h2>${c.brand||c.title}</h2><div class="sub">${c.subtitle||''}</div></div></div><div class="empty">${c.error||'No data'}</div></article>`;
     }
     const priorNote = c.prior_date ? `vs ${c.prior_date}` : 'no prior day';
     const geo = c.geo || {};
@@ -194,8 +267,9 @@ footer{margin-top:28px;padding-top:16px;border-top:1px solid var(--border);color
       return `<span class="chip">Count: <strong>${x.variant}</strong> ${deltaArrow(x.delta)} ${sign}${x.delta}</span>`;
     }).join('');
 
+    const aid = brandAnchor(c);
     return `
-    <article class="brand" style="--card-accent:${c.accent}">
+    <article class="brand" id="${aid}" style="--card-accent:${c.accent}">
       <div class="brand-head">
         <div>
           <h2>${c.brand||c.title}</h2>
