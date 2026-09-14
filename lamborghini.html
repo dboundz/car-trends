@@ -222,7 +222,7 @@ td.mag .mag-empty{display:inline-block;width:28px;color:var(--muted);opacity:.35
         <select id="filterBody">
           <option value="">All</option>
           <option value="coupe">Coupe</option>
-          <option value="spider">Spider</option>
+          <option value="spider">Spider / Convertible</option>
                   </select>
       </label>
       <label><input type="checkbox" id="filterCheapest" /> Cheapest in variant</label>
@@ -304,10 +304,23 @@ td.mag .mag-empty{display:inline-block;width:28px;color:var(--muted);opacity:.35
     try {
       const raw = localStorage.getItem(STORAGE_KEY);
       if (!raw) return enabled;
-      const arr = JSON.parse(raw);
-      if (!Array.isArray(arr)) return enabled;
-      const set = new Set(arr);
-      allVariants.forEach((v) => { enabled[v] = set.has(v); });
+      const parsed = JSON.parse(raw);
+      let set, known;
+      if (Array.isArray(parsed)) {
+        // Migrate array-only: enabled list; no known → treat absent as new (on)
+        set = new Set(parsed);
+        known = new Set();
+      } else if (parsed && typeof parsed === "object") {
+        set = new Set(parsed.enabled || []);
+        known = new Set(parsed.known || []);
+      } else {
+        return enabled;
+      }
+      allVariants.forEach((v) => {
+        if (set.has(v)) enabled[v] = true;
+        else if (!known.has(v)) enabled[v] = true; // new variant
+        else enabled[v] = false; // user previously disabled
+      });
       return enabled;
     } catch (e) {
       return enabled;
@@ -315,9 +328,13 @@ td.mag .mag-empty{display:inline-block;width:28px;color:var(--muted);opacity:.35
   }
   let enabledVariants = loadEnabled();
   function saveEnabled() {
-    const arr = allVariants.filter((v) => enabledVariants[v]);
-    try { localStorage.setItem(STORAGE_KEY, JSON.stringify(arr)); } catch (e) {}
+    const payload = {
+      enabled: allVariants.filter((v) => enabledVariants[v]),
+      known: allVariants.slice(),
+    };
+    try { localStorage.setItem(STORAGE_KEY, JSON.stringify(payload)); } catch (e) {}
   }
+  try { saveEnabled(); } catch (e) {} // migrate storage shape
   function isVariantOn(v) {
     return enabledVariants[v] !== false;
   }
@@ -609,15 +626,49 @@ td.mag .mag-empty{display:inline-block;width:28px;color:var(--muted);opacity:.35
   function isCheapest(r) {
     return (r.flags || []).includes("cheapest");
   }
-  function filtered() {
+  function bodyMatches(rowBody, filterBody) {
+    if (!filterBody) return true;
+    const b = String(rowBody || "").toLowerCase();
+    const fb = String(filterBody).toLowerCase();
+    const OPEN = new Set(["spider", "convertible", "spyder", "roadster"]);
+    if (fb === "spider" || fb === "convertible") return OPEN.has(b);
+    return b === fb;
+  }
+  function enableVariantsForSelection() {
+    const model = document.getElementById("filterModel").value;
+    const body = document.getElementById("filterBody").value;
+    if (!model && !body) return false;
+    let changed = false;
+    (DATA.latest_listings || []).forEach((r) => {
+      if (model && r.model_family !== model) return;
+      if (body && !bodyMatches(r.body, body)) return;
+      if (r.variant && enabledVariants[r.variant] === false) {
+        enabledVariants[r.variant] = true;
+        changed = true;
+      }
+    });
+    if (changed) saveEnabled();
+    return changed;
+  }
+  function onModelBodyFilterChange() {
+    const changed = enableVariantsForSelection();
+    if (changed) applyVariantFilter();
+    else renderTable();
+  }
+
+function filtered() {
     const model = document.getElementById("filterModel").value;
     const body = document.getElementById("filterBody").value;
     const cheap = document.getElementById("filterCheapest").checked;
     const low = document.getElementById("filterLowMile").checked;
     const q = document.getElementById("filterSearch").value.trim().toLowerCase();
-    let rows = DATA.latest_listings.slice().filter((r) => isVariantOn(r.variant));
+    let rows = DATA.latest_listings.slice();
+    // Dropdown Model/Body intent wins over variant pills for the listings table
+    if (!model && !body) {
+      rows = rows.filter((r) => isVariantOn(r.variant));
+    }
     if (model) rows = rows.filter((r) => r.model_family === model);
-    if (body) rows = rows.filter((r) => r.body === body);
+    if (body) rows = rows.filter((r) => bodyMatches(r.body, body));
     const ext = document.getElementById("filterExterior").value;
     const inn = document.getElementById("filterInterior").value;
     if (ext) rows = rows.filter((r) => (r.exterior_color || "") === ext);
@@ -645,7 +696,20 @@ td.mag .mag-empty{display:inline-block;width:28px;color:var(--muted);opacity:.35
     document.getElementById("tableCount").textContent = String(rows.length);
     const tb = document.getElementById("tableBody");
     if (!rows.length) {
-      tb.innerHTML = `<tr><td colspan="12" class="empty">No listings match filters.</td></tr>`;
+      {
+      const modelV = document.getElementById("filterModel").value;
+      const bodyV = document.getElementById("filterBody").value;
+      let onlyPills = DATA.latest_listings.slice();
+      if (modelV) onlyPills = onlyPills.filter((r) => r.model_family === modelV);
+      if (bodyV) onlyPills = onlyPills.filter((r) => bodyMatches(r.body, bodyV));
+      const blockedByPills = onlyPills.length > 0 && onlyPills.every((r) => !isVariantOn(r.variant));
+      const anyHidden = onlyPills.some((r) => !isVariantOn(r.variant));
+      let msg = "No listings match filters.";
+      if (!rows.length && anyHidden && (blockedByPills || (!modelV && !bodyV))) {
+        msg = "Some matching cars are hidden by variant pills above — click All or the matching variant pill.";
+      }
+      tb.innerHTML = `<tr><td colspan="12" class="empty">${msg}</td></tr>`;
+    }
       return;
     }
     tb.innerHTML = rows.map((r) => `
@@ -664,7 +728,11 @@ td.mag .mag-empty{display:inline-block;width:28px;color:var(--muted);opacity:.35
         <td>${r.listing_url ? `<a href="${r.listing_url}" target="_blank" rel="noopener">${escapeHtml(r.listing_title || "link")}</a>` : escapeHtml(r.listing_title || "—")}</td>
       </tr>`).join("");
   }
-  ["filterModel", "filterBody", "filterCheapest", "filterLowMile", "filterExterior", "filterInterior", "filterSearch"].forEach((id) => {
+  ["filterModel", "filterBody"].forEach((id) => {
+    document.getElementById(id).addEventListener("input", onModelBodyFilterChange);
+    document.getElementById(id).addEventListener("change", onModelBodyFilterChange);
+  });
+  ["filterCheapest", "filterLowMile", "filterExterior", "filterInterior", "filterSearch"].forEach((id) => {
     document.getElementById(id).addEventListener("input", renderTable);
     document.getElementById(id).addEventListener("change", renderTable);
   });
