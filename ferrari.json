@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-15T17:04:01Z",
+  "generated_at": "2026-09-15T17:21:40Z",
   "latest_snapshot_date": "2026-09-15",
   "snapshot_dates": [
     "2026-09-03",
@@ -30,16 +30,7 @@
     "F8 Spider",
     "458 Coupe",
     "458 Spider",
-    "458 Speciale",
-    "F430 Coupe",
-    "F430 Spider",
-    "360 Modena",
-    "360 Spider",
-    "355 Berlinetta",
-    "355 GTS",
-    "355 Spider",
-    "348 TS",
-    "348 Spider"
+    "458 Speciale"
   ],
   "classic_variants": [
     "F430 Coupe",
@@ -57,32 +48,32 @@
   ],
   "classic_note": "Pre-2010 regular Ferraris. 348 GTS is the later targa; 348 TS is the earlier targa. Both included. Excludes Scuderia, 16M, Challenge, Challenge Stradale, and Fiorano numbered specials.",
   "variant_colors": {
-    "296 Spider": "#7a828c",
-    "F8 Coupe": "#64748b",
-    "348 TB": "#71717a",
+    "812 Spider": "#6b7280",
+    "SF90 Spider": "#8f6a6a",
+    "348 GTS": "#6b7280",
     "488 Coupe": "#c45c5c",
+    "458 Coupe": "#737373",
+    "360 Modena": "#78716c",
+    "348 TS": "#8b8b93",
+    "SF90 Coupe": "#a85858",
+    "458 Speciale": "#525252",
+    "355 Berlinetta": "#57534e",
+    "F8 Spider": "#94a3b8",
+    "F12 Coupe": "#57534e",
+    "348 Spider": "#9ca3af",
+    "348 TB": "#71717a",
     "F430 Spider": "#8b919a",
+    "F8 Coupe": "#64748b",
     "296 Coupe": "#5c6570",
     "F430 Coupe": "#6b7280",
-    "360 Spider": "#a8a29e",
-    "458 Speciale": "#525252",
-    "458 Coupe": "#737373",
-    "488 Spider": "#a87878",
-    "812 Spider": "#6b7280",
-    "F8 Spider": "#94a3b8",
-    "SF90 Coupe": "#a85858",
-    "348 TS": "#8b8b93",
-    "F12 Coupe": "#57534e",
     "458 Spider": "#9ca3af",
+    "355 GTS": "#7c746c",
+    "360 Spider": "#a8a29e",
+    "488 Spider": "#a87878",
     "348 GTB": "#52525b",
     "812 Coupe": "#4b5563",
-    "355 GTS": "#7c746c",
     "355 Spider": "#a1a1aa",
-    "355 Berlinetta": "#57534e",
-    "348 Spider": "#9ca3af",
-    "SF90 Spider": "#8f6a6a",
-    "360 Modena": "#78716c",
-    "348 GTS": "#6b7280"
+    "296 Spider": "#7a828c"
   },
   "kpis": [
     {
@@ -252,150 +243,6 @@
       "miled_count": 1,
       "color": "#525252",
       "group": "current"
-    },
-    {
-      "variant": "F430 Coupe",
-      "count": 30,
-      "median_ask": 254814,
-      "median_miles": 20552,
-      "min_ask": 154999,
-      "max_ask": 675125,
-      "priced_count": 30,
-      "miled_count": 22,
-      "color": "#6b7280",
-      "group": "classic"
-    },
-    {
-      "variant": "F430 Spider",
-      "count": 49,
-      "median_ask": 274708,
-      "median_miles": 12978,
-      "min_ask": 135698,
-      "max_ask": 720536,
-      "priced_count": 49,
-      "miled_count": 26,
-      "color": "#8b919a",
-      "group": "classic"
-    },
-    {
-      "variant": "360 Modena",
-      "count": 26,
-      "median_ask": 169932,
-      "median_miles": 21105,
-      "min_ask": 89799,
-      "max_ask": 424895,
-      "priced_count": 26,
-      "miled_count": 23,
-      "color": "#78716c",
-      "group": "classic"
-    },
-    {
-      "variant": "360 Spider",
-      "count": 42,
-      "median_ask": 152404,
-      "median_miles": 17560,
-      "min_ask": 83000,
-      "max_ask": 500216,
-      "priced_count": 42,
-      "miled_count": 31,
-      "color": "#a8a29e",
-      "group": "classic"
-    },
-    {
-      "variant": "355 Berlinetta",
-      "count": 7,
-      "median_ask": 239995,
-      "median_miles": 45416,
-      "min_ask": 19999,
-      "max_ask": 449000,
-      "priced_count": 7,
-      "miled_count": 5,
-      "color": "#57534e",
-      "group": "classic"
-    },
-    {
-      "variant": "355 GTS",
-      "count": 2,
-      "median_ask": 384998,
-      "median_miles": 33022,
-      "min_ask": 370000,
-      "max_ask": 399995,
-      "priced_count": 2,
-      "miled_count": 2,
-      "color": "#7c746c",
-      "group": "classic"
-    },
-    {
-      "variant": "355 Spider",
-      "count": 10,
-      "median_ask": 264677,
-      "median_miles": 22250,
-      "min_ask": 94900,
-      "max_ask": 379990,
-      "priced_count": 10,
-      "miled_count": 7,
-      "color": "#a1a1aa",
-      "group": "classic"
-    },
-    {
-      "variant": "348 TS",
-      "count": 4,
-      "median_ask": 141450,
-      "median_miles": 17776,
-      "min_ask": 111698,
-      "max_ask": 259999,
-      "priced_count": 4,
-      "miled_count": 2,
-      "color": "#8b8b93",
-      "group": "classic"
-    },
-    {
-      "variant": "348 Spider",
-      "count": 1,
-      "median_ask": 125000,
-      "median_miles": null,
-      "min_ask": 125000,
-      "max_ask": 125000,
-      "priced_count": 1,
-      "miled_count": 0,
-      "color": "#9ca3af",
-      "group": "classic"
-    },
-    {
-      "variant": "348 TB",
-      "count": 0,
-      "median_ask": null,
-      "median_miles": null,
-      "min_ask": null,
-      "max_ask": null,
-      "priced_count": 0,
-      "miled_count": 0,
-      "color": "#71717a",
-      "group": "classic"
-    },
-    {
-      "variant": "348 GTB",
-      "count": 0,
-      "median_ask": null,
-      "median_miles": null,
-      "min_ask": null,
-      "max_ask": null,
-      "priced_count": 0,
-      "miled_count": 0,
-      "color": "#52525b",
-      "group": "classic"
-    },
-    {
-      "variant": "348 GTS",
-      "count": 0,
-      "median_ask": null,
-      "median_miles": null,
-      "min_ask": null,
-      "max_ask": null,
-      "priced_count": 0,
-      "miled_count": 0,
-      "color": "#6b7280",
-      "group": "classic"
     }
   ],
   "median_series": {
@@ -1334,609 +1181,6 @@
       {
         "date": "2026-09-15",
         "median_ask": 1299900,
-        "count": 1
-      }
-    ],
-    "F430 Coupe": [
-      {
-        "date": "2026-09-03",
-        "median_ask": null,
-        "count": 0
-      },
-      {
-        "date": "2026-09-04",
-        "median_ask": null,
-        "count": 0
-      },
-      {
-        "date": "2026-09-05",
-        "median_ask": null,
-        "count": 0
-      },
-      {
-        "date": "2026-09-06",
-        "median_ask": null,
-        "count": 0
-      },
-      {
-        "date": "2026-09-07",
-        "median_ask": null,
-        "count": 0
-      },
-      {
-        "date": "2026-09-08",
-        "median_ask": 249014,
-        "count": 30
-      },
-      {
-        "date": "2026-09-09",
-        "median_ask": 259465,
-        "count": 24
-      },
-      {
-        "date": "2026-09-10",
-        "median_ask": 259465,
-        "count": 24
-      },
-      {
-        "date": "2026-09-11",
-        "median_ask": 259700,
-        "count": 26
-      },
-      {
-        "date": "2026-09-12",
-        "median_ask": 259900,
-        "count": 31
-      },
-      {
-        "date": "2026-09-13",
-        "median_ask": 274706,
-        "count": 27
-      },
-      {
-        "date": "2026-09-14",
-        "median_ask": 276853,
-        "count": 28
-      },
-      {
-        "date": "2026-09-15",
-        "median_ask": 254814,
-        "count": 30
-      }
-    ],
-    "F430 Spider": [
-      {
-        "date": "2026-09-03",
-        "median_ask": null,
-        "count": 0
-      },
-      {
-        "date": "2026-09-04",
-        "median_ask": null,
-        "count": 0
-      },
-      {
-        "date": "2026-09-05",
-        "median_ask": null,
-        "count": 0
-      },
-      {
-        "date": "2026-09-06",
-        "median_ask": null,
-        "count": 0
-      },
-      {
-        "date": "2026-09-07",
-        "median_ask": null,
-        "count": 0
-      },
-      {
-        "date": "2026-09-08",
-        "median_ask": 279000,
-        "count": 60
-      },
-      {
-        "date": "2026-09-09",
-        "median_ask": 278962,
-        "count": 48
-      },
-      {
-        "date": "2026-09-10",
-        "median_ask": 278962,
-        "count": 48
-      },
-      {
-        "date": "2026-09-11",
-        "median_ask": 279000,
-        "count": 47
-      },
-      {
-        "date": "2026-09-12",
-        "median_ask": 275038,
-        "count": 50
-      },
-      {
-        "date": "2026-09-13",
-        "median_ask": 279000,
-        "count": 49
-      },
-      {
-        "date": "2026-09-14",
-        "median_ask": 272349,
-        "count": 50
-      },
-      {
-        "date": "2026-09-15",
-        "median_ask": 274708,
-        "count": 49
-      }
-    ],
-    "360 Modena": [
-      {
-        "date": "2026-09-03",
-        "median_ask": null,
-        "count": 0
-      },
-      {
-        "date": "2026-09-04",
-        "median_ask": null,
-        "count": 0
-      },
-      {
-        "date": "2026-09-05",
-        "median_ask": null,
-        "count": 0
-      },
-      {
-        "date": "2026-09-06",
-        "median_ask": null,
-        "count": 0
-      },
-      {
-        "date": "2026-09-07",
-        "median_ask": null,
-        "count": 0
-      },
-      {
-        "date": "2026-09-08",
-        "median_ask": 149908,
-        "count": 23
-      },
-      {
-        "date": "2026-09-09",
-        "median_ask": 149680,
-        "count": 22
-      },
-      {
-        "date": "2026-09-10",
-        "median_ask": 149680,
-        "count": 22
-      },
-      {
-        "date": "2026-09-11",
-        "median_ask": 149995,
-        "count": 25
-      },
-      {
-        "date": "2026-09-12",
-        "median_ask": 154908,
-        "count": 25
-      },
-      {
-        "date": "2026-09-13",
-        "median_ask": 159908,
-        "count": 23
-      },
-      {
-        "date": "2026-09-14",
-        "median_ask": 169890,
-        "count": 25
-      },
-      {
-        "date": "2026-09-15",
-        "median_ask": 169932,
-        "count": 26
-      }
-    ],
-    "360 Spider": [
-      {
-        "date": "2026-09-03",
-        "median_ask": null,
-        "count": 0
-      },
-      {
-        "date": "2026-09-04",
-        "median_ask": null,
-        "count": 0
-      },
-      {
-        "date": "2026-09-05",
-        "median_ask": null,
-        "count": 0
-      },
-      {
-        "date": "2026-09-06",
-        "median_ask": null,
-        "count": 0
-      },
-      {
-        "date": "2026-09-07",
-        "median_ask": null,
-        "count": 0
-      },
-      {
-        "date": "2026-09-08",
-        "median_ask": 145149,
-        "count": 44
-      },
-      {
-        "date": "2026-09-09",
-        "median_ask": 148099,
-        "count": 42
-      },
-      {
-        "date": "2026-09-10",
-        "median_ask": 148099,
-        "count": 42
-      },
-      {
-        "date": "2026-09-11",
-        "median_ask": 155000,
-        "count": 43
-      },
-      {
-        "date": "2026-09-12",
-        "median_ask": 146298,
-        "count": 43
-      },
-      {
-        "date": "2026-09-13",
-        "median_ask": 148099,
-        "count": 42
-      },
-      {
-        "date": "2026-09-14",
-        "median_ask": 146298,
-        "count": 41
-      },
-      {
-        "date": "2026-09-15",
-        "median_ask": 152404,
-        "count": 42
-      }
-    ],
-    "355 Berlinetta": [
-      {
-        "date": "2026-09-03",
-        "median_ask": null,
-        "count": 0
-      },
-      {
-        "date": "2026-09-04",
-        "median_ask": null,
-        "count": 0
-      },
-      {
-        "date": "2026-09-05",
-        "median_ask": null,
-        "count": 0
-      },
-      {
-        "date": "2026-09-06",
-        "median_ask": null,
-        "count": 0
-      },
-      {
-        "date": "2026-09-07",
-        "median_ask": null,
-        "count": 0
-      },
-      {
-        "date": "2026-09-08",
-        "median_ask": 285900,
-        "count": 7
-      },
-      {
-        "date": "2026-09-09",
-        "median_ask": 285900,
-        "count": 7
-      },
-      {
-        "date": "2026-09-10",
-        "median_ask": 285900,
-        "count": 7
-      },
-      {
-        "date": "2026-09-11",
-        "median_ask": 249995,
-        "count": 7
-      },
-      {
-        "date": "2026-09-12",
-        "median_ask": 262948,
-        "count": 6
-      },
-      {
-        "date": "2026-09-13",
-        "median_ask": 239995,
-        "count": 7
-      },
-      {
-        "date": "2026-09-14",
-        "median_ask": 239995,
-        "count": 7
-      },
-      {
-        "date": "2026-09-15",
-        "median_ask": 239995,
-        "count": 7
-      }
-    ],
-    "355 GTS": [
-      {
-        "date": "2026-09-03",
-        "median_ask": null,
-        "count": 0
-      },
-      {
-        "date": "2026-09-04",
-        "median_ask": null,
-        "count": 0
-      },
-      {
-        "date": "2026-09-05",
-        "median_ask": null,
-        "count": 0
-      },
-      {
-        "date": "2026-09-06",
-        "median_ask": null,
-        "count": 0
-      },
-      {
-        "date": "2026-09-07",
-        "median_ask": null,
-        "count": 0
-      },
-      {
-        "date": "2026-09-08",
-        "median_ask": 90236,
-        "count": 1
-      },
-      {
-        "date": "2026-09-09",
-        "median_ask": null,
-        "count": 0
-      },
-      {
-        "date": "2026-09-10",
-        "median_ask": null,
-        "count": 0
-      },
-      {
-        "date": "2026-09-11",
-        "median_ask": null,
-        "count": 0
-      },
-      {
-        "date": "2026-09-12",
-        "median_ask": null,
-        "count": 0
-      },
-      {
-        "date": "2026-09-13",
-        "median_ask": 399995,
-        "count": 1
-      },
-      {
-        "date": "2026-09-14",
-        "median_ask": 399995,
-        "count": 1
-      },
-      {
-        "date": "2026-09-15",
-        "median_ask": 384998,
-        "count": 2
-      }
-    ],
-    "355 Spider": [
-      {
-        "date": "2026-09-03",
-        "median_ask": null,
-        "count": 0
-      },
-      {
-        "date": "2026-09-04",
-        "median_ask": null,
-        "count": 0
-      },
-      {
-        "date": "2026-09-05",
-        "median_ask": null,
-        "count": 0
-      },
-      {
-        "date": "2026-09-06",
-        "median_ask": null,
-        "count": 0
-      },
-      {
-        "date": "2026-09-07",
-        "median_ask": null,
-        "count": 0
-      },
-      {
-        "date": "2026-09-08",
-        "median_ask": 299355,
-        "count": 11
-      },
-      {
-        "date": "2026-09-09",
-        "median_ask": 259977,
-        "count": 10
-      },
-      {
-        "date": "2026-09-10",
-        "median_ask": 259977,
-        "count": 10
-      },
-      {
-        "date": "2026-09-11",
-        "median_ask": 229999,
-        "count": 11
-      },
-      {
-        "date": "2026-09-12",
-        "median_ask": 264677,
-        "count": 10
-      },
-      {
-        "date": "2026-09-13",
-        "median_ask": 264677,
-        "count": 10
-      },
-      {
-        "date": "2026-09-14",
-        "median_ask": 264677,
-        "count": 10
-      },
-      {
-        "date": "2026-09-15",
-        "median_ask": 264677,
-        "count": 10
-      }
-    ],
-    "348 TS": [
-      {
-        "date": "2026-09-03",
-        "median_ask": null,
-        "count": 0
-      },
-      {
-        "date": "2026-09-04",
-        "median_ask": null,
-        "count": 0
-      },
-      {
-        "date": "2026-09-05",
-        "median_ask": null,
-        "count": 0
-      },
-      {
-        "date": "2026-09-06",
-        "median_ask": null,
-        "count": 0
-      },
-      {
-        "date": "2026-09-07",
-        "median_ask": null,
-        "count": 0
-      },
-      {
-        "date": "2026-09-08",
-        "median_ask": 141450,
-        "count": 4
-      },
-      {
-        "date": "2026-09-09",
-        "median_ask": 141450,
-        "count": 4
-      },
-      {
-        "date": "2026-09-10",
-        "median_ask": 141450,
-        "count": 4
-      },
-      {
-        "date": "2026-09-11",
-        "median_ask": 141450,
-        "count": 4
-      },
-      {
-        "date": "2026-09-12",
-        "median_ask": 141450,
-        "count": 4
-      },
-      {
-        "date": "2026-09-13",
-        "median_ask": 141450,
-        "count": 4
-      },
-      {
-        "date": "2026-09-14",
-        "median_ask": 141450,
-        "count": 4
-      },
-      {
-        "date": "2026-09-15",
-        "median_ask": 141450,
-        "count": 4
-      }
-    ],
-    "348 Spider": [
-      {
-        "date": "2026-09-03",
-        "median_ask": null,
-        "count": 0
-      },
-      {
-        "date": "2026-09-04",
-        "median_ask": null,
-        "count": 0
-      },
-      {
-        "date": "2026-09-05",
-        "median_ask": null,
-        "count": 0
-      },
-      {
-        "date": "2026-09-06",
-        "median_ask": null,
-        "count": 0
-      },
-      {
-        "date": "2026-09-07",
-        "median_ask": null,
-        "count": 0
-      },
-      {
-        "date": "2026-09-08",
-        "median_ask": 125000,
-        "count": 1
-      },
-      {
-        "date": "2026-09-09",
-        "median_ask": 125000,
-        "count": 1
-      },
-      {
-        "date": "2026-09-10",
-        "median_ask": 125000,
-        "count": 1
-      },
-      {
-        "date": "2026-09-11",
-        "median_ask": 117498,
-        "count": 2
-      },
-      {
-        "date": "2026-09-12",
-        "median_ask": 117498,
-        "count": 2
-      },
-      {
-        "date": "2026-09-13",
-        "median_ask": 117498,
-        "count": 2
-      },
-      {
-        "date": "2026-09-14",
-        "median_ask": 117498,
-        "count": 2
-      },
-      {
-        "date": "2026-09-15",
-        "median_ask": 125000,
         "count": 1
       }
     ]
@@ -27921,50 +27165,6 @@
       "body": "coupe",
       "variant": "F430 Coupe",
       "model_year": 2005,
-      "asking_price_usd": 194900,
-      "mileage_miles": null,
-      "currency": "USD",
-      "location": "Cockeysville, Maryland, USA",
-      "seller_type": "dealer",
-      "listing_title": "2005 Ferrari F430 Berlinetta",
-      "listing_url": "https://www.classic.com/veh/2005-ferrari-f430-berlinetta-zffew58ax50142556-pe5JXXp/",
-      "source": "Classic.com",
-      "vin_or_stock": "ZFFEW58AX50142556",
-      "exterior_color": "",
-      "interior_color": "",
-      "notes": "Classic.com asterisk asking; 39k mi displayed; mileage blank (rounded Nk mi); fixed-price; seller:PurMotive",
-      "flags": [
-        "classic_value"
-      ]
-    },
-    {
-      "snapshot_date": "2026-09-15",
-      "model_family": "F430",
-      "body": "coupe",
-      "variant": "F430 Coupe",
-      "model_year": 2005,
-      "asking_price_usd": 199990,
-      "mileage_miles": 31593,
-      "currency": "USD",
-      "location": "Minneapolis, MN",
-      "seller_type": "dealer",
-      "listing_title": "Used 2005 Ferrari F430 Berlinetta",
-      "listing_url": "https://www.cars.com/vehicledetail/88e8b52c-78a2-410a-92eb-508bf81f377f/",
-      "source": "Cars.com",
-      "vin_or_stock": "ZFFEW58A350142348",
-      "exterior_color": "Red",
-      "interior_color": "",
-      "notes": "Cars.com asking; seller:Twin Cities Performance; zip:55426; trim:Berlinetta; exterior color: Red",
-      "flags": [
-        "classic_value"
-      ]
-    },
-    {
-      "snapshot_date": "2026-09-15",
-      "model_family": "F430",
-      "body": "coupe",
-      "variant": "F430 Coupe",
-      "model_year": 2005,
       "asking_price_usd": 259900,
       "mileage_miles": 13767,
       "currency": "USD",
@@ -28009,50 +27209,6 @@
       "body": "coupe",
       "variant": "F430 Coupe",
       "model_year": 2006,
-      "asking_price_usd": 169998,
-      "mileage_miles": 41003,
-      "currency": "USD",
-      "location": "Mocksville, North Carolina, USA",
-      "seller_type": "dealer",
-      "listing_title": "2006 Ferrari F430 Berlinetta",
-      "listing_url": "https://www.classic.com/veh/2006-ferrari-f430-berlinetta-zffew58a060145306-pPxzjRp/",
-      "source": "Classic.com",
-      "vin_or_stock": "ZFFEW58A060145306",
-      "exterior_color": "Black",
-      "interior_color": "Nero",
-      "notes": "Classic.com asterisk asking; 41k mi displayed; mileage blank (rounded Nk mi); fixed-price; seller:HBi Auto",
-      "flags": [
-        "classic_value"
-      ]
-    },
-    {
-      "snapshot_date": "2026-09-15",
-      "model_family": "F430",
-      "body": "coupe",
-      "variant": "F430 Coupe",
-      "model_year": 2006,
-      "asking_price_usd": 180043,
-      "mileage_miles": 30909,
-      "currency": "USD",
-      "location": "San Juan Capistrano, CA",
-      "seller_type": "dealer",
-      "listing_title": "2006 Ferrari F430",
-      "listing_url": "https://www.cargurus.com/details/452447535",
-      "source": "CarGurus",
-      "vin_or_stock": "ZFFEW58A660148646",
-      "exterior_color": "Black",
-      "interior_color": "Black",
-      "notes": "CarGurus asking; base price $179823; recorded fees-included total; stock:AV17096; seller:Paradise Automotive Group; exterior color: Black; interior color: Black",
-      "flags": [
-        "classic_value"
-      ]
-    },
-    {
-      "snapshot_date": "2026-09-15",
-      "model_family": "F430",
-      "body": "coupe",
-      "variant": "F430 Coupe",
-      "model_year": 2006,
       "asking_price_usd": 599900,
       "mileage_miles": 11183,
       "currency": "USD",
@@ -28067,50 +27223,6 @@
       "notes": "Classic.com asterisk asking; 11k mi displayed; mileage blank (rounded Nk mi); fixed-price; seller:Ferrari South Bay",
       "flags": [
         "low_mile_classic"
-      ]
-    },
-    {
-      "snapshot_date": "2026-09-15",
-      "model_family": "F430",
-      "body": "coupe",
-      "variant": "F430 Coupe",
-      "model_year": 2007,
-      "asking_price_usd": 154999,
-      "mileage_miles": 22297,
-      "currency": "USD",
-      "location": "Downingtown, Pennsylvania, USA",
-      "seller_type": "dealer",
-      "listing_title": "2007 Ferrari F430 Berlinetta",
-      "listing_url": "https://www.classic.com/veh/2007-ferrari-f430-berlinetta-zffew58a470154978-4yjl5an/",
-      "source": "Classic.com",
-      "vin_or_stock": "ZFFEW58A470154978",
-      "exterior_color": "Rosso Corsa Ds",
-      "interior_color": "Cuoio",
-      "notes": "Classic.com asterisk asking; 22k mi displayed; mileage blank (rounded Nk mi); fixed-price; seller:PA Euros",
-      "flags": [
-        "classic_value"
-      ]
-    },
-    {
-      "snapshot_date": "2026-09-15",
-      "model_family": "F430",
-      "body": "coupe",
-      "variant": "F430 Coupe",
-      "model_year": 2007,
-      "asking_price_usd": 195043,
-      "mileage_miles": 21048,
-      "currency": "USD",
-      "location": "San Juan Capistrano, CA",
-      "seller_type": "dealer",
-      "listing_title": "2007 Ferrari F430",
-      "listing_url": "https://www.cargurus.com/details/451015665",
-      "source": "CarGurus",
-      "vin_or_stock": "ZFFEW58A870156541",
-      "exterior_color": "Black",
-      "interior_color": "Black",
-      "notes": "CarGurus asking; base price $194823; recorded fees-included total; trim:2 Dr Coupe; stock:AV17095; seller:Paradise Automotive Group; exterior color: Black; interior color: Black",
-      "flags": [
-        "classic_value"
       ]
     },
     {
@@ -28248,72 +27360,6 @@
     {
       "snapshot_date": "2026-09-15",
       "model_family": "F430",
-      "body": "coupe",
-      "variant": "F430 Coupe",
-      "model_year": 2009,
-      "asking_price_usd": 195965,
-      "mileage_miles": 37898,
-      "currency": "USD",
-      "location": "Los Angeles, CA",
-      "seller_type": "dealer",
-      "listing_title": "2009 Ferrari F430",
-      "listing_url": "https://www.cargurus.com/details/452352116",
-      "source": "CarGurus",
-      "vin_or_stock": "ZFFEW58A490166289",
-      "exterior_color": "Silver Nurburgring",
-      "interior_color": "Sand",
-      "notes": "CarGurus asking; base price $195800; recorded fees-included total; trim:Coupe; stock:P2911; seller:Motorenn Inc; exterior color: Silver Nurburgring; interior color: Sand",
-      "flags": [
-        "classic_value"
-      ]
-    },
-    {
-      "snapshot_date": "2026-09-15",
-      "model_family": "F430",
-      "body": "spider",
-      "variant": "F430 Spider",
-      "model_year": 2005,
-      "asking_price_usd": 180000,
-      "mileage_miles": null,
-      "currency": "USD",
-      "location": "Wellington, Florida, USA",
-      "seller_type": "dealer",
-      "listing_title": "2005 Ferrari F430 Spider",
-      "listing_url": "https://www.classic.com/veh/2005-ferrari-f430-spider-zffew59a650143587-nQRXPvW/",
-      "source": "Classic.com",
-      "vin_or_stock": "ZFFEW59A650143587",
-      "exterior_color": "",
-      "interior_color": "",
-      "notes": "Classic.com asterisk asking; unparsed mileage text 'TMU'; left blank; fixed-price; seller:Autosport",
-      "flags": [
-        "classic_value"
-      ]
-    },
-    {
-      "snapshot_date": "2026-09-15",
-      "model_family": "F430",
-      "body": "spider",
-      "variant": "F430 Spider",
-      "model_year": 2005,
-      "asking_price_usd": 190399,
-      "mileage_miles": null,
-      "currency": "USD",
-      "location": "Murray, Utah, USA",
-      "seller_type": "dealer",
-      "listing_title": "2005 Ferrari F430 Spider",
-      "listing_url": "https://www.classic.com/veh/2005-ferrari-f430-spider-zffew59a950143745-nOmVqDp/",
-      "source": "Classic.com",
-      "vin_or_stock": "ZFFEW59A950143745",
-      "exterior_color": "",
-      "interior_color": "",
-      "notes": "Classic.com asterisk asking; 27k mi displayed; mileage blank (rounded Nk mi); fixed-price; seller:Automotive Addiction",
-      "flags": [
-        "classic_value"
-      ]
-    },
-    {
-      "snapshot_date": "2026-09-15",
-      "model_family": "F430",
       "body": "spider",
       "variant": "F430 Spider",
       "model_year": 2005,
@@ -28352,30 +27398,7 @@
       "interior_color": "Black",
       "notes": "Cars.com asking; seller:CarNova; zip:80012; trim:Spider",
       "flags": [
-        "low_mile_classic",
-        "classic_value"
-      ]
-    },
-    {
-      "snapshot_date": "2026-09-15",
-      "model_family": "F430",
-      "body": "spider",
-      "variant": "F430 Spider",
-      "model_year": 2006,
-      "asking_price_usd": 219000,
-      "mileage_miles": null,
-      "currency": "USD",
-      "location": "Wellington, Florida, USA",
-      "seller_type": "dealer",
-      "listing_title": "2006 Ferrari F430 Spider",
-      "listing_url": "https://www.classic.com/veh/2006-ferrari-f430-spider-zffew59a560148815-pP7xkNW/",
-      "source": "Classic.com",
-      "vin_or_stock": "ZFFEW59A560148815",
-      "exterior_color": "",
-      "interior_color": "",
-      "notes": "Classic.com asterisk asking; 20k mi displayed; mileage blank (rounded Nk mi); fixed-price; seller:Autosport",
-      "flags": [
-        "classic_value"
+        "low_mile_classic"
       ]
     },
     {
@@ -28398,50 +27421,6 @@
       "notes": "CarGurus asking; base price $278500; recorded fees-included total; trim:F1 Spider; stock:149420; seller:Marino Performance Motors",
       "flags": [
         "low_mile_classic"
-      ]
-    },
-    {
-      "snapshot_date": "2026-09-15",
-      "model_family": "F430",
-      "body": "spider",
-      "variant": "F430 Spider",
-      "model_year": 2007,
-      "asking_price_usd": 149988,
-      "mileage_miles": null,
-      "currency": "USD",
-      "location": "Allegheny County, Pennsylvania, USA",
-      "seller_type": "dealer",
-      "listing_title": "2007 Ferrari F430 Spider",
-      "listing_url": "https://www.classic.com/veh/2007-ferrari-f430-spider-zffew59a270153259-WqmMLZW/",
-      "source": "Classic.com",
-      "vin_or_stock": "ZFFEW59A270153259",
-      "exterior_color": "",
-      "interior_color": "",
-      "notes": "Classic.com asterisk asking; 15k mi displayed; mileage blank (rounded Nk mi); fixed-price; seller:Martin Auto Gallery",
-      "flags": [
-        "classic_value"
-      ]
-    },
-    {
-      "snapshot_date": "2026-09-15",
-      "model_family": "F430",
-      "body": "spider",
-      "variant": "F430 Spider",
-      "model_year": 2007,
-      "asking_price_usd": 170965,
-      "mileage_miles": 25406,
-      "currency": "USD",
-      "location": "Carrollton, TX",
-      "seller_type": "dealer",
-      "listing_title": "2007 Ferrari F430 Spider",
-      "listing_url": "https://www.cargurus.com/details/455296272",
-      "source": "CarGurus",
-      "vin_or_stock": "ZFFEW59A370156879",
-      "exterior_color": "Black",
-      "interior_color": "Black",
-      "notes": "CarGurus asking; base price $169991; recorded fees-included total; trim:2 Dr Spider; stock:526151; seller:Texas Hot Rides, LLC; exterior color: Black; interior color: Black",
-      "flags": [
-        "classic_value"
       ]
     },
     {
@@ -28530,94 +27509,6 @@
       "notes": "Classic.com asterisk asking; fixed-price; seller:Ferrari of Greensboro",
       "flags": [
         "low_mile_classic"
-      ]
-    },
-    {
-      "snapshot_date": "2026-09-15",
-      "model_family": "F430",
-      "body": "spider",
-      "variant": "F430 Spider",
-      "model_year": 2008,
-      "asking_price_usd": 169998,
-      "mileage_miles": 34736,
-      "currency": "USD",
-      "location": "Mocksville, North Carolina, USA",
-      "seller_type": "dealer",
-      "listing_title": "2008 Ferrari F430 Spider",
-      "listing_url": "https://www.classic.com/veh/2008-ferrari-f430-zffew59a080159742-Wb2NMyW/",
-      "source": "Classic.com",
-      "vin_or_stock": "ZFFEW59A080159742",
-      "exterior_color": "Black",
-      "interior_color": "Black",
-      "notes": "Classic.com asterisk asking; 34k mi displayed; mileage blank (rounded Nk mi); fixed-price; seller:HBi Auto",
-      "flags": [
-        "classic_value"
-      ]
-    },
-    {
-      "snapshot_date": "2026-09-15",
-      "model_family": "F430",
-      "body": "spider",
-      "variant": "F430 Spider",
-      "model_year": 2008,
-      "asking_price_usd": 185000,
-      "mileage_miles": null,
-      "currency": "USD",
-      "location": "Bridgeport, Connecticut, USA",
-      "seller_type": "dealer",
-      "listing_title": "2008 Ferrari F430 Spider",
-      "listing_url": "https://www.classic.com/veh/2008-ferrari-f430-spider-zffew59a080159739-nBv9Ymn/",
-      "source": "Classic.com",
-      "vin_or_stock": "ZFFEW59A080159739",
-      "exterior_color": "",
-      "interior_color": "",
-      "notes": "Classic.com asterisk asking; 35k mi displayed; mileage blank (rounded Nk mi); fixed-price; seller:Black Horse Garage",
-      "flags": [
-        "classic_value"
-      ]
-    },
-    {
-      "snapshot_date": "2026-09-15",
-      "model_family": "F430",
-      "body": "spider",
-      "variant": "F430 Spider",
-      "model_year": 2008,
-      "asking_price_usd": 192493,
-      "mileage_miles": 37994,
-      "currency": "USD",
-      "location": "Miami, FL",
-      "seller_type": "dealer",
-      "listing_title": "2008 Ferrari F430 Spider",
-      "listing_url": "https://www.cargurus.com/details/458626471",
-      "source": "CarGurus",
-      "vin_or_stock": "ZFFEW59A380158567",
-      "exterior_color": "Black",
-      "interior_color": "Brown (Beige)",
-      "notes": "CarGurus asking; base price $189998; recorded fees-included total; trim:F1 Spider; stock:158567; seller:GTA Motorcars; exterior color: Black; interior color: Brown (Beige)",
-      "flags": [
-        "classic_value"
-      ]
-    },
-    {
-      "snapshot_date": "2026-09-15",
-      "model_family": "F430",
-      "body": "spider",
-      "variant": "F430 Spider",
-      "model_year": 2008,
-      "asking_price_usd": 219000,
-      "mileage_miles": null,
-      "currency": "USD",
-      "location": "Boynton Beach, Florida, USA",
-      "seller_type": "dealer",
-      "listing_title": "2008 Ferrari F430 Spider",
-      "listing_url": "https://www.classic.com/veh/2008-ferrari-f430-spider-zffew59a180158826-WL00XxW/",
-      "source": "Classic.com",
-      "vin_or_stock": "ZFFEW59A180158826",
-      "exterior_color": "",
-      "interior_color": "",
-      "notes": "Classic.com asterisk asking; 19k mi displayed; mileage blank (rounded Nk mi); fixed-price; seller:iLusso Boynton Beach",
-      "flags": [
-        "classic_value"
       ]
     },
     {
@@ -28780,28 +27671,6 @@
       "body": "coupe",
       "variant": "360 Modena",
       "model_year": 1999,
-      "asking_price_usd": 119000,
-      "mileage_miles": null,
-      "currency": "USD",
-      "location": "Wellington, Florida, USA",
-      "seller_type": "dealer",
-      "listing_title": "1999 Ferrari 360 Modena",
-      "listing_url": "https://www.classic.com/veh/1999-ferrari-360-modena-zffyr51axx0119456-WxRAm24/",
-      "source": "Classic.com",
-      "vin_or_stock": "ZFFYR51AXX0119456",
-      "exterior_color": "",
-      "interior_color": "",
-      "notes": "Classic.com asterisk asking; 360 Modena (regular coupe); 38k mi displayed; mileage blank (rounded Nk mi); fixed-price; seller:Autosport",
-      "flags": [
-        "classic_value"
-      ]
-    },
-    {
-      "snapshot_date": "2026-09-15",
-      "model_family": "360",
-      "body": "coupe",
-      "variant": "360 Modena",
-      "model_year": 1999,
       "asking_price_usd": 149908,
       "mileage_miles": 13381,
       "currency": "USD",
@@ -28816,50 +27685,6 @@
       "notes": "Cars.com asking; 360 Modena (regular coupe); seller:Paradise Automotive Group; zip:92675; exterior color: Black",
       "flags": [
         "low_mile_classic"
-      ]
-    },
-    {
-      "snapshot_date": "2026-09-15",
-      "model_family": "360",
-      "body": "coupe",
-      "variant": "360 Modena",
-      "model_year": 2000,
-      "asking_price_usd": 89799,
-      "mileage_miles": null,
-      "currency": "USD",
-      "location": "Thousand Oaks, California, USA",
-      "seller_type": "dealer",
-      "listing_title": "2000 Ferrari 360 Modena",
-      "listing_url": "https://www.classic.com/veh/2000-ferrari-360-modena-zffyu51a9y0121652-pe52LMp/",
-      "source": "Classic.com",
-      "vin_or_stock": "ZFFYU51A9Y0121652",
-      "exterior_color": "",
-      "interior_color": "",
-      "notes": "Classic.com asterisk asking; 360 Modena (regular coupe); 51k mi displayed; mileage blank (rounded Nk mi); fixed-price; seller:Inside Car Guys",
-      "flags": [
-        "classic_value"
-      ]
-    },
-    {
-      "snapshot_date": "2026-09-15",
-      "model_family": "360",
-      "body": "coupe",
-      "variant": "360 Modena",
-      "model_year": 2002,
-      "asking_price_usd": 100095,
-      "mileage_miles": 27700,
-      "currency": "USD",
-      "location": "Cadillac, MI",
-      "seller_type": "dealer",
-      "listing_title": "2002 Ferrari 360",
-      "listing_url": "https://www.cargurus.com/details/456373803",
-      "source": "CarGurus",
-      "vin_or_stock": "000000000AMS32218",
-      "exterior_color": "Silver",
-      "interior_color": "Black",
-      "notes": "CarGurus asking; 360 Modena (regular coupe); stock:342483; seller:Classic Car Deals; exterior color: Silver; interior color: Black",
-      "flags": [
-        "classic_value"
       ]
     },
     {
@@ -28882,72 +27707,6 @@
       "notes": "duPont REGISTRY SRP initialDataCars; stock:C128130; exterior color: Red; interior color: Black",
       "flags": [
         "low_mile_classic"
-      ]
-    },
-    {
-      "snapshot_date": "2026-09-15",
-      "model_family": "360",
-      "body": "coupe",
-      "variant": "360 Modena",
-      "model_year": 2003,
-      "asking_price_usd": 111581,
-      "mileage_miles": 21982,
-      "currency": "USD",
-      "location": "Leasing Tampa, FL",
-      "seller_type": "dealer",
-      "listing_title": "Used 2003 Ferrari 360 Modena Rwd",
-      "listing_url": "https://www.cars.com/vehicledetail/9d9a6865-1ef6-4e91-9b8e-93eaf5e20695/",
-      "source": "Cars.com",
-      "vin_or_stock": "ZFFYT53B000134873",
-      "exterior_color": "Black",
-      "interior_color": "",
-      "notes": "Cars.com asking; 360 Modena (regular coupe); seller:Tampa Auto Gallery Sales & Leasing; zip:33624; trim:Rwd; exterior color: Black",
-      "flags": [
-        "classic_value"
-      ]
-    },
-    {
-      "snapshot_date": "2026-09-15",
-      "model_family": "360",
-      "body": "coupe",
-      "variant": "360 Modena",
-      "model_year": 2003,
-      "asking_price_usd": 135714,
-      "mileage_miles": 16322,
-      "currency": "USD",
-      "location": "Modena Good Deal Mark Motors Boerne, TX",
-      "seller_type": "dealer",
-      "listing_title": "Used 2003 Ferrari 360 Modena",
-      "listing_url": "https://www.cars.com/vehicledetail/61d31405-16a0-4721-92b3-b87e0c6743e8/",
-      "source": "Cars.com",
-      "vin_or_stock": "ZFFYT53A130131374",
-      "exterior_color": "Gray",
-      "interior_color": "Blue",
-      "notes": "Cars.com asking; 360 Modena (regular coupe); seller:Mark Motors; zip:78006; exterior color: Gray",
-      "flags": [
-        "classic_value"
-      ]
-    },
-    {
-      "snapshot_date": "2026-09-15",
-      "model_family": "360",
-      "body": "coupe",
-      "variant": "360 Modena",
-      "model_year": 2004,
-      "asking_price_usd": 117887,
-      "mileage_miles": 30897,
-      "currency": "USD",
-      "location": "Topsfield, Massachusetts, USA",
-      "seller_type": "dealer",
-      "listing_title": "2004 Ferrari 360 Modena",
-      "listing_url": "https://www.classic.com/veh/2004-ferrari-360-modena-zffyu51a440137168-WN2dOAW/",
-      "source": "Classic.com",
-      "vin_or_stock": "ZFFYU51A440137168",
-      "exterior_color": "Argento Nurburgring",
-      "interior_color": "Brown (Beige)",
-      "notes": "Classic.com asterisk asking; 360 Modena (regular coupe); 31k mi displayed; mileage blank (rounded Nk mi); fixed-price; seller:Topsfield Motor Company",
-      "flags": [
-        "classic_value"
       ]
     },
     {
@@ -29022,116 +27781,6 @@
       "body": "spider",
       "variant": "360 Spider",
       "model_year": 2001,
-      "asking_price_usd": 88995,
-      "mileage_miles": 39598,
-      "currency": "USD",
-      "location": "Mesa, AZ",
-      "seller_type": "dealer",
-      "listing_title": "Used 2001 Ferrari 360 Spider Base",
-      "listing_url": "https://www.cars.com/vehicledetail/6d8ddd27-31bf-452a-8c34-f9f9f6d9cad4/",
-      "source": "Cars.com",
-      "vin_or_stock": "ZFFYT53B000124831",
-      "exterior_color": "Silver",
-      "interior_color": "",
-      "notes": "Cars.com asking; seller:Carz R Us LLC; zip:85207; trim:Base; exterior color: Silver",
-      "flags": [
-        "classic_value"
-      ]
-    },
-    {
-      "snapshot_date": "2026-09-15",
-      "model_family": "360",
-      "body": "spider",
-      "variant": "360 Spider",
-      "model_year": 2001,
-      "asking_price_usd": 99890,
-      "mileage_miles": null,
-      "currency": "USD",
-      "location": "Thousand Oaks, California, USA",
-      "seller_type": "dealer",
-      "listing_title": "2001 Ferrari 360 Spider",
-      "listing_url": "https://www.classic.com/veh/2001-ferrari-360-spider-zffyt53a010124848-nKJNxx4/",
-      "source": "Classic.com",
-      "vin_or_stock": "ZFFYT53A010124848",
-      "exterior_color": "",
-      "interior_color": "",
-      "notes": "Classic.com asterisk asking; 28k mi displayed; mileage blank (rounded Nk mi); fixed-price; seller:Malibu Automotive Group",
-      "flags": [
-        "classic_value"
-      ]
-    },
-    {
-      "snapshot_date": "2026-09-15",
-      "model_family": "360",
-      "body": "spider",
-      "variant": "360 Spider",
-      "model_year": 2001,
-      "asking_price_usd": 109908,
-      "mileage_miles": 17560,
-      "currency": "USD",
-      "location": "San Juan Capistrano, CA",
-      "seller_type": "dealer",
-      "listing_title": "Used 2001 Ferrari 360 Spider",
-      "listing_url": "https://www.cars.com/vehicledetail/bd67852c-b78c-425e-a7aa-2bef07d7687d/",
-      "source": "Cars.com",
-      "vin_or_stock": "ZFFYT53A910123827",
-      "exterior_color": "Yellow",
-      "interior_color": "",
-      "notes": "Cars.com asking; seller:Paradise Automotive Group; zip:92675; exterior color: Yellow",
-      "flags": [
-        "classic_value"
-      ]
-    },
-    {
-      "snapshot_date": "2026-09-15",
-      "model_family": "360",
-      "body": "spider",
-      "variant": "360 Spider",
-      "model_year": 2001,
-      "asking_price_usd": 115990,
-      "mileage_miles": 40033,
-      "currency": "USD",
-      "location": "Miami-Dade County, Florida, USA",
-      "seller_type": "dealer",
-      "listing_title": "2001 Ferrari 360 Spider",
-      "listing_url": "https://www.classic.com/veh/2001-ferrari-360-spider-zffyt53a710123633-nmqvwQn/",
-      "source": "Classic.com",
-      "vin_or_stock": "ZFFYT53A710123633",
-      "exterior_color": "Silver",
-      "interior_color": "Blue",
-      "notes": "Classic.com asterisk asking; 40k mi displayed; mileage blank (rounded Nk mi); fixed-price; seller:Sport Cars Lux",
-      "flags": [
-        "classic_value"
-      ]
-    },
-    {
-      "snapshot_date": "2026-09-15",
-      "model_family": "360",
-      "body": "spider",
-      "variant": "360 Spider",
-      "model_year": 2001,
-      "asking_price_usd": 119451,
-      "mileage_miles": 40625,
-      "currency": "USD",
-      "location": "Auburn, Massachusetts, USA",
-      "seller_type": "dealer",
-      "listing_title": "2001 Ferrari 360 Spider",
-      "listing_url": "https://www.classic.com/veh/2001-ferrari-360-spider-zffyt53a110124969-WqOLLJ4/",
-      "source": "Classic.com",
-      "vin_or_stock": "ZFFYT53A110124969",
-      "exterior_color": "Rosso Corsa",
-      "interior_color": "Brown (Beige Tradizione)",
-      "notes": "Classic.com asterisk asking; 40k mi displayed; mileage blank (rounded Nk mi); fixed-price; seller:High Octane Classics",
-      "flags": [
-        "classic_value"
-      ]
-    },
-    {
-      "snapshot_date": "2026-09-15",
-      "model_family": "360",
-      "body": "spider",
-      "variant": "360 Spider",
-      "model_year": 2001,
       "asking_price_usd": 124165,
       "mileage_miles": 14021,
       "currency": "USD",
@@ -29198,72 +27847,6 @@
       "body": "spider",
       "variant": "360 Spider",
       "model_year": 2002,
-      "asking_price_usd": 83000,
-      "mileage_miles": null,
-      "currency": "USD",
-      "location": "South Salt Lake, Utah, USA",
-      "seller_type": "dealer",
-      "listing_title": "2002 Ferrari 360 Spider",
-      "listing_url": "https://www.classic.com/veh/2002-ferrari-360-spider-zffyt53a820128759-4aywLl4/",
-      "source": "Classic.com",
-      "vin_or_stock": "ZFFYT53A820128759",
-      "exterior_color": "",
-      "interior_color": "",
-      "notes": "Classic.com asterisk asking; 27k mi displayed; mileage blank (rounded Nk mi); fixed-price; seller:Ararat Automotive",
-      "flags": [
-        "classic_value"
-      ]
-    },
-    {
-      "snapshot_date": "2026-09-15",
-      "model_family": "360",
-      "body": "spider",
-      "variant": "360 Spider",
-      "model_year": 2002,
-      "asking_price_usd": 114908,
-      "mileage_miles": 21261,
-      "currency": "USD",
-      "location": "San Juan Capistrano, CA",
-      "seller_type": "dealer",
-      "listing_title": "Used 2002 Ferrari 360 Spider",
-      "listing_url": "https://www.cars.com/vehicledetail/e8d74dfa-a467-46fd-9a19-eb5f2a3f1355/",
-      "source": "Cars.com",
-      "vin_or_stock": "ZFFYT53A420129018",
-      "exterior_color": "Silver",
-      "interior_color": "",
-      "notes": "Cars.com asking; seller:Paradise Automotive Group; zip:92675; exterior color: Silver",
-      "flags": [
-        "classic_value"
-      ]
-    },
-    {
-      "snapshot_date": "2026-09-15",
-      "model_family": "360",
-      "body": "spider",
-      "variant": "360 Spider",
-      "model_year": 2002,
-      "asking_price_usd": 119988,
-      "mileage_miles": null,
-      "currency": "USD",
-      "location": "Mercer County, New Jersey, USA",
-      "seller_type": "dealer",
-      "listing_title": "2002 Ferrari 360 Spider",
-      "listing_url": "https://www.classic.com/veh/2002-ferrari-360-spider-zffyt53a920129550-knXGd54/",
-      "source": "Classic.com",
-      "vin_or_stock": "ZFFYT53A920129550",
-      "exterior_color": "",
-      "interior_color": "",
-      "notes": "Classic.com asterisk asking; 22k mi displayed; mileage blank (rounded Nk mi); fixed-price; seller:Interstate Motorsport",
-      "flags": [
-        "classic_value"
-      ]
-    },
-    {
-      "snapshot_date": "2026-09-15",
-      "model_family": "360",
-      "body": "spider",
-      "variant": "360 Spider",
-      "model_year": 2002,
       "asking_price_usd": 154908,
       "mileage_miles": 10679,
       "currency": "USD",
@@ -29322,50 +27905,6 @@
       "notes": "Classic.com asterisk asking; 12k mi displayed; mileage blank (rounded Nk mi); fixed-price; seller:Ryan Friedman Motor Cars",
       "flags": [
         "low_mile_classic"
-      ]
-    },
-    {
-      "snapshot_date": "2026-09-15",
-      "model_family": "360",
-      "body": "spider",
-      "variant": "360 Spider",
-      "model_year": 2003,
-      "asking_price_usd": 119800,
-      "mileage_miles": 19062,
-      "currency": "USD",
-      "location": "Spider Base Motorenn Inc. Los Angeles, CA",
-      "seller_type": "dealer",
-      "listing_title": "Used 2003 Ferrari 360 Spider Base",
-      "listing_url": "https://www.cars.com/vehicledetail/1e8c982e-64c9-45de-8a3f-eeba095ddda8/",
-      "source": "Cars.com",
-      "vin_or_stock": "ZFFYT53A430131045",
-      "exterior_color": "",
-      "interior_color": "",
-      "notes": "Cars.com asking; seller:Motorenn Inc.; zip:90045; trim:Base",
-      "flags": [
-        "classic_value"
-      ]
-    },
-    {
-      "snapshot_date": "2026-09-15",
-      "model_family": "360",
-      "body": "spider",
-      "variant": "360 Spider",
-      "model_year": 2003,
-      "asking_price_usd": 119908,
-      "mileage_miles": 26333,
-      "currency": "USD",
-      "location": "San Juan Capistrano, CA",
-      "seller_type": "dealer",
-      "listing_title": "Used 2003 Ferrari 360 Spider",
-      "listing_url": "https://www.cars.com/vehicledetail/275491fa-78b0-4bd5-9adf-ff610c4efc4c/",
-      "source": "Cars.com",
-      "vin_or_stock": "ZFFYT53A630131466",
-      "exterior_color": "Silver",
-      "interior_color": "",
-      "notes": "Cars.com asking; seller:Paradise Automotive Group; zip:92675; exterior color: Silver",
-      "flags": [
-        "classic_value"
       ]
     },
     {
@@ -29503,28 +28042,6 @@
     {
       "snapshot_date": "2026-09-15",
       "model_family": "355",
-      "body": "berlinetta",
-      "variant": "355 Berlinetta",
-      "model_year": 1996,
-      "asking_price_usd": 19999,
-      "mileage_miles": 70000,
-      "currency": "USD",
-      "location": "Base High Demand RV Car Depot Spring Valley, CA",
-      "seller_type": "dealer",
-      "listing_title": "Used 1996 Ferrari F355 Base",
-      "listing_url": "https://www.cars.com/vehicledetail/999909cf-325d-44a1-b2b2-27407282fd1b/",
-      "source": "Cars.com",
-      "vin_or_stock": "FFFFFFFFFFFFFFFFFF",
-      "exterior_color": "Yellow",
-      "interior_color": "",
-      "notes": "Cars.com asking; seller:RV Car Depot; zip:91977; trim:Base; exterior color: Yellow",
-      "flags": [
-        "classic_value"
-      ]
-    },
-    {
-      "snapshot_date": "2026-09-15",
-      "model_family": "355",
       "body": "spider",
       "variant": "355 Spider",
       "model_year": 1997,
@@ -29591,94 +28108,6 @@
     {
       "snapshot_date": "2026-09-15",
       "model_family": "355",
-      "body": "berlinetta",
-      "variant": "355 Berlinetta",
-      "model_year": 1998,
-      "asking_price_usd": 139000,
-      "mileage_miles": 36116,
-      "currency": "USD",
-      "location": "Base Black Horse Garage Bridgeport, CT",
-      "seller_type": "dealer",
-      "listing_title": "Used 1998 Ferrari F355 Base",
-      "listing_url": "https://www.cars.com/vehicledetail/80cadee9-a543-4883-8788-0ba48a70faf8/",
-      "source": "Cars.com",
-      "vin_or_stock": "ZFFXR48A0W0112333",
-      "exterior_color": "",
-      "interior_color": "",
-      "notes": "Cars.com asking; seller:Black Horse Garage; zip:06607; trim:Base",
-      "flags": [
-        "classic_value"
-      ]
-    },
-    {
-      "snapshot_date": "2026-09-15",
-      "model_family": "355",
-      "body": "spider",
-      "variant": "355 Spider",
-      "model_year": 1998,
-      "asking_price_usd": 160494,
-      "mileage_miles": 33047,
-      "currency": "USD",
-      "location": "Roswell, GA",
-      "seller_type": "dealer",
-      "listing_title": "1998 Ferrari F355",
-      "listing_url": "https://www.cargurus.com/details/454873069",
-      "source": "CarGurus",
-      "vin_or_stock": "ZFFXR48A2W0109787",
-      "exterior_color": "Red",
-      "interior_color": "Brown (Tan)",
-      "notes": "CarGurus asking; base price $159995; recorded fees-included total; trim:Spider V8 RWD; stock:1206; seller:Clark Motors; exterior color: Red; interior color: Brown (Tan)",
-      "flags": [
-        "classic_value"
-      ]
-    },
-    {
-      "snapshot_date": "2026-09-15",
-      "model_family": "355",
-      "body": "spider",
-      "variant": "355 Spider",
-      "model_year": 1999,
-      "asking_price_usd": 94900,
-      "mileage_miles": null,
-      "currency": "USD",
-      "location": "Wellington, Florida, USA",
-      "seller_type": "dealer",
-      "listing_title": "1999 Ferrari F355 Spider",
-      "listing_url": "https://www.classic.com/veh/1999-ferrari-355-f1-spider-zffxr48a6x0115934-n35NXQp/",
-      "source": "Classic.com",
-      "vin_or_stock": "ZFFXR48A6X0115934",
-      "exterior_color": "",
-      "interior_color": "",
-      "notes": "Classic.com asterisk asking; 20k mi displayed; mileage blank (rounded Nk mi); fixed-price; seller:Thoroughbred Motors",
-      "flags": [
-        "classic_value"
-      ]
-    },
-    {
-      "snapshot_date": "2026-09-15",
-      "model_family": "355",
-      "body": "berlinetta",
-      "variant": "355 Berlinetta",
-      "model_year": 1999,
-      "asking_price_usd": 114813,
-      "mileage_miles": 58297,
-      "currency": "USD",
-      "location": "Base One Exotics Tampa, FL",
-      "seller_type": "dealer",
-      "listing_title": "Used 1999 Ferrari F355 Base",
-      "listing_url": "https://www.cars.com/vehicledetail/4133382c-dc39-428e-9d5c-4022ea74a39b/",
-      "source": "Cars.com",
-      "vin_or_stock": "ZFFXR48A5X0115424",
-      "exterior_color": "Yellow",
-      "interior_color": "Black",
-      "notes": "Cars.com asking; seller:One Exotics; zip:33602; trim:Base; exterior color: Yellow",
-      "flags": [
-        "classic_value"
-      ]
-    },
-    {
-      "snapshot_date": "2026-09-15",
-      "model_family": "355",
       "body": "spider",
       "variant": "355 Spider",
       "model_year": 1999,
@@ -29695,30 +28124,7 @@
       "interior_color": "Brown (Tan)",
       "notes": "Cars.com asking; seller:Ferrari Lake Forest; zip:60044; trim:Spider; exterior color: Red",
       "flags": [
-        "low_mile_classic",
-        "classic_value"
-      ]
-    },
-    {
-      "snapshot_date": "2026-09-15",
-      "model_family": "348",
-      "body": "ts",
-      "variant": "348 TS",
-      "model_year": 1990,
-      "asking_price_usd": 111698,
-      "mileage_miles": 28258,
-      "currency": "USD",
-      "location": "Louisville, KY",
-      "seller_type": "dealer",
-      "listing_title": "1990 Ferrari 348",
-      "listing_url": "https://www.cargurus.com/details/457440466",
-      "source": "CarGurus",
-      "vin_or_stock": "ZFFFG36A0L0087833",
-      "exterior_color": "Blue Chiaro",
-      "interior_color": "Dark Blue",
-      "notes": "CarGurus asking; base price $111005; recorded fees-included total; 348 TS is the earlier targa; trim:TS; stock:P8566; seller:Cross Chrysler Jeep; exterior color: Blue Chiaro; interior color: Dark Blue",
-      "flags": [
-        "classic_value"
+        "low_mile_classic"
       ]
     },
     {
@@ -163338,7 +161744,7 @@
   "stats": {
     "total_rows": 7031,
     "latest_count": 1116,
-    "standout_count": 299
+    "standout_count": 261
   },
   "median_series_backfill_last_ask": {
     "488 Spider": [
