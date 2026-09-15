@@ -1,22 +1,22 @@
 {
-  "generated_at": "2026-09-15T09:30:12.396737-04:00",
+  "generated_at": "2026-09-15T09:48:26.363088-04:00",
   "as_of": "2026-09-15",
   "schema_version": "1.0.0",
-  "aggregate_sha256": "99c208dfa56f8584cca1bf9805e0956fe8b593f2f3d2c32a5c52990204e1a2f5",
+  "aggregate_sha256": "45e05ed08d61eed05d75e9e6402db1dba0f920a737767c919e971ba2bb229257",
   "aggregate_definition": "SHA-256 of UTF-8 bytes of sorted unique lines 'path:sha256\\n' for every entry in files[]. This is integrity verification, not a digital signature. Optional later: minisign/GPG over this manifest or aggregate_sha256.",
   "aggregate_material_preview_lines": [
-    "data/export/README.md:c33e33d7b09bc2cd005f92f5e7c7a6e4389df32e1cf72f81b833f0fce786dbc6",
+    "data/export/README.md:adce8e75e0daef2d76a3c068b326fc13c192fc43d3c63cbedf58839de0239aae",
     "data/export/brands/ferrari.json:4917bbd4b64e90b85986ca6671a79c373aea6c8abc982121542248580b64d7e1",
     "data/export/brands/ford.json:8e07d11ea3a74525cbdd616c9e568af3e0f5c7114b20785f49e095f02015626d",
     "data/export/brands/lamborghini.json:4d3294ce3a5f1a87a48f51a4e9de75d6932a67527cf8812c22185e45e75fc51f",
-    "data/export/brands/mclaren.json:407b1d71f246ae3eec2c8080d2019f3e872090caa2ecbe452fb278dc6b8ef610"
+    "data/export/brands/mclaren.json:a386ad6450e22e23771d88e92d4dc56a574163261dd9256049139f3cc1bf2a02"
   ],
   "file_count": 27,
   "files": [
     {
       "path": "data/export/README.md",
       "bytes": 2763,
-      "sha256": "c33e33d7b09bc2cd005f92f5e7c7a6e4389df32e1cf72f81b833f0fce786dbc6"
+      "sha256": "adce8e75e0daef2d76a3c068b326fc13c192fc43d3c63cbedf58839de0239aae"
     },
     {
       "path": "data/export/brands/ferrari.json",
@@ -38,24 +38,24 @@
     },
     {
       "path": "data/export/brands/mclaren.json",
-      "bytes": 122716,
-      "sha256": "407b1d71f246ae3eec2c8080d2019f3e872090caa2ecbe452fb278dc6b8ef610",
-      "row_count": 154
+      "bytes": 319276,
+      "sha256": "a386ad6450e22e23771d88e92d4dc56a574163261dd9256049139f3cc1bf2a02",
+      "row_count": 413
     },
     {
       "path": "data/export/index.html",
       "bytes": 1743,
-      "sha256": "d4210497233b624a08e30771249255fa38904044a095dc506c4c088b233aaa44"
+      "sha256": "df9d94b4cdf4460edd82e7a3191768fec27de3bf2a6212f0f71345bd87da305a"
     },
     {
       "path": "data/export/latest.json",
-      "bytes": 87189,
-      "sha256": "f8c32aeaf08450a2ca6ceec3cd72488732b6d400265b87b22f4639c9e7ac5141"
+      "bytes": 92653,
+      "sha256": "a8891a3c857bfa6fa6d4aea52d33c8da71ef37aac3d8b044ccb1efca59d191c1"
     },
     {
       "path": "data/export/sources/GEO.md",
-      "bytes": 3994,
-      "sha256": "6acf0e0cbfe608087837e2be6274b55db92f0cb878caf34b8c3bb3f1b53dc27d"
+      "bytes": 4492,
+      "sha256": "14447d46d93c95af462af536f81870344ecfb7da5e7d7d52758087a03bf32af6"
     },
     {
       "path": "data/export/sources/auction-watch/latest.json",
@@ -76,14 +76,14 @@
     },
     {
       "path": "data/export/sources/backfill/classic_historical_90d.csv",
-      "bytes": 382272,
-      "sha256": "4215dcfd46de080629ea6771da1c388e299ff1cbf57d5f8701c442137c34b736",
-      "row_count": 1128
+      "bytes": 462731,
+      "sha256": "1664e51f7cdca2e590546d93d323adc64e4ceac098022185e453c4beb84d3433",
+      "row_count": 1369
     },
     {
       "path": "data/export/sources/backfill/classic_historical_90d_summary.json",
-      "bytes": 57161,
-      "sha256": "52a9d2ffe811cb7685c94d2bcd80f7ff5b63fef6b2e2f766e223b965a9d1641a"
+      "bytes": 25925,
+      "sha256": "dcecbfe0ac7c4cf8e3bd6b13146fa4093ee0a57252f99865ff7787dd067b5400"
     },
     {
       "path": "data/export/sources/daily/ferrari-488-f8-listings/2026-09-15-summary.json",
@@ -142,24 +142,24 @@
     },
     {
       "path": "data/export/sources/daily/mclaren-lt-listings/2026-09-15-summary.json",
-      "bytes": 6751,
-      "sha256": "41ab59a219937f783c39abeb4a8f9676d87e16ace5be63a636e5281f0a85bb0d"
+      "bytes": 9489,
+      "sha256": "4ce71ca920f47ec2f3f326ec3d9f3a70faf8db90627b390d10d53ba9902738a4"
     },
     {
       "path": "data/export/sources/daily/mclaren-lt-listings/2026-09-15.csv",
-      "bytes": 47393,
-      "sha256": "d5c9f638014d5163da4e59577fa4cc99f9df56dd5fbfaa92841a141b4854665c",
-      "row_count": 154
+      "bytes": 129087,
+      "sha256": "c0b2dd3e19312e135a673768a48a023a08ff5717029c060f1ad8406f3cb1288f",
+      "row_count": 413
     },
     {
       "path": "data/export/sources/market-commentary/2026-09-15.json",
-      "bytes": 72613,
-      "sha256": "5d23afe8b7c37044de47ab82dd4cfb01dfb8025f96cb23123c18508b8d8324a7"
+      "bytes": 84530,
+      "sha256": "a791239fe207b4c0aab6c36f3dad9fbeb16f4e44ad0452ff591cd05b30c3d663"
     },
     {
       "path": "data/export/sources/market-commentary/latest.json",
-      "bytes": 72613,
-      "sha256": "5d23afe8b7c37044de47ab82dd4cfb01dfb8025f96cb23123c18508b8d8324a7"
+      "bytes": 84530,
+      "sha256": "a791239fe207b4c0aab6c36f3dad9fbeb16f4e44ad0452ff591cd05b30c3d663"
     }
   ]
 }

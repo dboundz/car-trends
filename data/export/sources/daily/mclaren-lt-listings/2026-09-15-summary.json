@@ -1,8 +1,15 @@
 {
   "snapshot_date": "2026-09-15",
   "timezone": "America/New_York",
-  "total_listings": 154,
-  "artura_listings": 67,
+  "total_listings": 413,
+  "new_family_listings": 259,
+  "new_by_family": {
+    "720S": 76,
+    "750S": 59,
+    "570S": 62,
+    "570GT": 16,
+    "GT": 46
+  },
   "counts_by_variant": {
     "600LT_coupe": 23,
     "600LT_spider": 23,
@@ -11,7 +18,15 @@
     "765LT_coupe": 18,
     "765LT_spider": 18,
     "Artura_coupe": 50,
-    "Artura_spider": 17
+    "Artura_spider": 17,
+    "720S_coupe": 29,
+    "720S_spider": 47,
+    "750S_coupe": 18,
+    "750S_spider": 41,
+    "570S_coupe": 41,
+    "570S_spider": 21,
+    "570GT_coupe": 16,
+    "GT_coupe": 46
   },
   "medians_by_variant": {
     "600LT_coupe": {
@@ -45,6 +60,38 @@
     "Artura_spider": {
       "median_ask": 289250,
       "median_miles": 214
+    },
+    "720S_coupe": {
+      "median_ask": 259595,
+      "median_miles": 11657
+    },
+    "720S_spider": {
+      "median_ask": 285800,
+      "median_miles": 9855
+    },
+    "750S_coupe": {
+      "median_ask": 355361,
+      "median_miles": 1196
+    },
+    "750S_spider": {
+      "median_ask": 379500,
+      "median_miles": 639
+    },
+    "570S_coupe": {
+      "median_ask": 139990,
+      "median_miles": 27266
+    },
+    "570S_spider": {
+      "median_ask": 157800,
+      "median_miles": 16671
+    },
+    "570GT_coupe": {
+      "median_ask": 129937,
+      "median_miles": 22031
+    },
+    "GT_coupe": {
+      "median_ask": 158281,
+      "median_miles": 13319
     }
   },
   "variants": {
@@ -119,55 +166,150 @@
       "min_asking_price_usd": 228004,
       "max_asking_price_usd": 406983,
       "median_mileage_miles": 214
+    },
+    "720S_coupe": {
+      "count": 29,
+      "priced_count": 29,
+      "with_mileage_count": 13,
+      "median_asking_price_usd": 259595,
+      "min_asking_price_usd": 190590,
+      "max_asking_price_usd": 359985,
+      "median_mileage_miles": 11657
+    },
+    "720S_spider": {
+      "count": 47,
+      "priced_count": 47,
+      "with_mileage_count": 22,
+      "median_asking_price_usd": 285800,
+      "min_asking_price_usd": 229989,
+      "max_asking_price_usd": 349600,
+      "median_mileage_miles": 9855
+    },
+    "750S_coupe": {
+      "count": 18,
+      "priced_count": 18,
+      "with_mileage_count": 14,
+      "median_asking_price_usd": 355361,
+      "min_asking_price_usd": 324991,
+      "max_asking_price_usd": 446899,
+      "median_mileage_miles": 1196
+    },
+    "750S_spider": {
+      "count": 41,
+      "priced_count": 41,
+      "with_mileage_count": 30,
+      "median_asking_price_usd": 379500,
+      "min_asking_price_usd": 320020,
+      "max_asking_price_usd": 476295,
+      "median_mileage_miles": 639
+    },
+    "570S_coupe": {
+      "count": 41,
+      "priced_count": 41,
+      "with_mileage_count": 10,
+      "median_asking_price_usd": 139990,
+      "min_asking_price_usd": 104999,
+      "max_asking_price_usd": 329000,
+      "median_mileage_miles": 27266
+    },
+    "570S_spider": {
+      "count": 21,
+      "priced_count": 21,
+      "with_mileage_count": 9,
+      "median_asking_price_usd": 157800,
+      "min_asking_price_usd": 130080,
+      "max_asking_price_usd": 190268,
+      "median_mileage_miles": 16671
+    },
+    "570GT_coupe": {
+      "count": 16,
+      "priced_count": 16,
+      "with_mileage_count": 10,
+      "median_asking_price_usd": 129937,
+      "min_asking_price_usd": 102999,
+      "max_asking_price_usd": 199777,
+      "median_mileage_miles": 22031
+    },
+    "GT_coupe": {
+      "count": 46,
+      "priced_count": 46,
+      "with_mileage_count": 21,
+      "median_asking_price_usd": 158281,
+      "min_asking_price_usd": 103000,
+      "max_asking_price_usd": 186991,
+      "median_mileage_miles": 13319
     }
   },
   "counts_by_source": {
-    "Cars.com": 26,
-    "Classic.com": 74,
+    "Cars.com": 69,
+    "Classic.com": 226,
     "Hemmings": 1,
-    "CarGurus": 19,
-    "duPont REGISTRY": 34
+    "CarGurus": 54,
+    "duPont REGISTRY": 63
   },
-  "artura_source_raw_counts": {
-    "Classic.com": 60,
-    "Cars.com": 20,
-    "CarGurus": 23,
-    "duPont REGISTRY": 16
+  "new_source_raw_counts": {
+    "Classic.com": 152,
+    "Cars.com": 98,
+    "CarGurus": 83,
+    "duPont REGISTRY": 98
   },
-  "cargurus_artura": {
-    "raw": 23,
-    "priced": 23,
-    "added": 14,
-    "excluded": 0,
-    "no_price": 0
+  "cargurus_expand": {
+    "720S": {
+      "raw": 22,
+      "priced": 21,
+      "excluded": 0,
+      "geo": 0,
+      "no_price": 0
+    },
+    "750S": {
+      "raw": 22,
+      "priced": 21,
+      "excluded": 0,
+      "geo": 0,
+      "no_price": 0
+    },
+    "570S": {
+      "raw": 21,
+      "priced": 20,
+      "excluded": 0,
+      "geo": 0,
+      "no_price": 0
+    },
+    "GT": {
+      "raw": 22,
+      "priced": 21,
+      "excluded": 0,
+      "geo": 0,
+      "no_price": 0
+    }
   },
-  "dedupe_notes_count": 29,
+  "dedupe_notes_count": 143,
   "dedupe_notes_sample": [
-    "keep existing Classic.com drop Cars.com SBM16AEA8PW001874",
-    "keep existing Classic.com drop Cars.com SBM16BEAXSW003396",
-    "keep existing Classic.com drop Cars.com SBM16BEA0SW002838",
-    "keep existing Classic.com drop Cars.com SBM16AEAXPW001908",
-    "keep existing Classic.com drop Cars.com SBM16AEA7PW001610",
-    "keep existing Classic.com drop Cars.com SBM16AEA3SW003671",
-    "keep existing Classic.com drop Cars.com SBM16BEA4SW003040",
-    "keep existing Classic.com drop Cars.com SBM16AEA0PW000623",
-    "keep existing Classic.com drop duPont REGISTRY SBM16AEA6RW002153",
-    "keep existing Classic.com drop duPont REGISTRY SBM16BEAXSW002989",
-    "keep existing Classic.com drop duPont REGISTRY SBM16AEA2SW003872",
-    "keep existing Cars.com drop duPont REGISTRY SBM16BEA2SW003232",
-    "keep existing Classic.com drop duPont REGISTRY SBM16BEA6SW003198",
-    "keep existing Classic.com drop duPont REGISTRY SBM16AEA0PW000623",
-    "keep existing Cars.com drop duPont REGISTRY SBM16BEAXSW003320",
-    "keep existing Classic.com drop CarGurus SBM16AEA4PW001466",
-    "keep existing Classic.com drop CarGurus SBM16AEA2SW003872",
-    "keep existing Cars.com drop CarGurus SBM16AEA1RW002142",
-    "keep existing Cars.com drop CarGurus SBM16AEA9SW003321",
-    "keep existing Classic.com drop CarGurus SBM16AEA6RW002153",
-    "keep existing Cars.com drop CarGurus SBM16AEA4SW002822",
-    "keep existing Classic.com drop CarGurus SBM16AEA6PW001727",
-    "keep existing duPont REGISTRY drop CarGurus SBM16BEA6SW002729",
-    "keep existing Cars.com drop CarGurus SBM16AEA8SW003648",
-    "cars.com fuzzy dedupe drop 185092 https://www.cars.com/vehicledetail/c14e0b7e-16e3-4bbf-9644-c7b10848c60a/"
+    "keep existing Classic.com drop Cars.com SBM14FCA5LW004862",
+    "keep existing Classic.com drop Cars.com SBM14FCA3PW007149",
+    "keep existing Classic.com drop Cars.com SBM14DCA2JW000768",
+    "keep existing Classic.com drop Cars.com SBM14FCA7NW006812",
+    "keep existing Classic.com drop Cars.com SBM14DCA7KW002565",
+    "keep existing Classic.com drop Cars.com SBM14FCAXLW005019",
+    "keep existing Classic.com drop Cars.com SBM14DCAXMW005835",
+    "keep existing Classic.com drop Cars.com SBM14BCA0SW009460",
+    "keep existing Classic.com drop Cars.com SBM14BCA5VW010494",
+    "keep existing Classic.com drop Cars.com SBM14BCA5RW008508",
+    "keep existing Classic.com drop Cars.com SBM14BCA3TW009860",
+    "keep existing Classic.com drop Cars.com SBM14BCA9SW009280",
+    "keep existing Classic.com drop Cars.com SBM14BCA2TW009977",
+    "keep existing Classic.com drop Cars.com SBM14BCA6RW007903",
+    "keep existing Classic.com drop Cars.com SBM14BCA8RW008650",
+    "keep existing Classic.com drop Cars.com SBM14BCA3RW007700",
+    "keep existing Classic.com drop Cars.com SBM14BCA9RW008382",
+    "keep existing Classic.com drop Cars.com SBM14BCA2RW007381",
+    "keep existing Classic.com drop Cars.com SBM14ACAXSW009248",
+    "keep existing Classic.com drop Cars.com SBM13FAA0KW008208",
+    "keep existing Classic.com drop Cars.com SBM13FAA6KW007550",
+    "keep existing Classic.com drop Cars.com SBM13FAA8LW009074",
+    "keep existing Classic.com drop Cars.com SBM13DAAXGW001147",
+    "keep existing Classic.com drop Cars.com SBM13DAA6GW000285",
+    "keep existing Classic.com drop Cars.com SBM13DAA7HW003357"
   ],
   "sources_used": [
     "CarGurus",
@@ -176,36 +318,18 @@
     "Hemmings",
     "duPont REGISTRY"
   ],
-  "sources_blocked_or_empty": [
-    "Autotrader (page unavailable ~3.7KB shell)",
-    "Hemmings (no Artura classifieds found)",
-    "BaT (auction model page only; no fixed asks merged)",
-    "Classic coupe/spider subpaths 404 \u2014 used /artura/ all pages"
-  ],
   "roof_scoop": {
-    "note": "Roof-scoop rules do NOT apply to Artura"
+    "note": "Roof-scoop rules remain LT-only; not applied to 720S/750S/570S/570GT/GT"
   },
   "csv": "/home/box/agent-data/projects/mclaren-lt-listings/data/daily/2026-09-15.csv",
-  "scrape_dir": "/workspace/mclaren-artura-scrape-2026-09-15",
+  "scrape_dir": "/workspace/mclaren-expand-scrape-2026-09-15",
   "data_quality_notes": [
-    "Artura baseline added 2026-09-15 into existing mclaren-lt-listings (not a separate brand section).",
-    "Excluded GT4 / Senna / Speedtail / Solus / Elva / GT / 720S / 750S.",
-    "TechLux/Performance/etc. captured in notes as trim/pack when evidenced.",
-    "Roof-scoop tagging skipped for Artura.",
-    "US/Canada preferred; foreign locations dropped when identifiable.",
-    "CarGurus d3238 (m141/d3238) via headless chrome; prefer non-CarGurus on VIN conflict."
-  ],
-  "drop_check_vs_2026-09-14": {
-    "striking_count": 0,
-    "striking": [],
-    "rule": ">=5% AND >=$5k, or >=$15k same VIN/URL",
-    "note": "New duPont 628160 (675LT) had price:0 in search JSON \u2014 excluded as POR; no invented ask."
-  },
-  "cargurus_lt": {
-    "raw": 53,
-    "priced": 46,
-    "added": 5,
-    "deduped_against_existing": 41,
-    "skipped_null_price": 7
-  }
+    "Expanded McLaren page 2026-09-15: added 720S, 750S, 570S, 570GT, GT (same brand section).",
+    "Excluded Senna/Speedtail/Solus/Elva/P1/F1/Sabre/540C/GT3/GT4/race.",
+    "570GT separate pill (model_family=570GT, body=coupe); 620R folded under 570S with notes.",
+    "McLaren GT = grand tourer only (not Ford GT).",
+    "Roof-scoop tagging skipped for these families.",
+    "US/Canada preferred; foreign dropped when identifiable.",
+    "CarGurus d2605/d3339/d2324/d3011 via headless chrome; prefer non-CarGurus on VIN conflict."
+  ]
 }

@@ -21,7 +21,7 @@ All counts, medians, and day-over-day deltas on the overview are recomputed from
 
 ## Latest run
 
-- Totals: raw **1397** · kept **1333** · dropped **64**
+- Totals: raw **1656** · kept **1591** · dropped **65**
 
 - **Ferrari** (2026-09-15): raw 871, kept 852, dropped 19
   - SF90 Coupe: count=56, median_ask=479951, median_miles=2250
@@ -46,7 +46,7 @@ All counts, medians, and day-over-day deltas on the overview are recomputed from
   - 348 TB: count=0, median_ask=None, median_miles=None
   - 348 GTB: count=0, median_ask=None, median_miles=None
   - 348 GTS: count=0, median_ask=None, median_miles=None
-- **McLaren** (2026-09-15): raw 154, kept 128, dropped 26
+- **McLaren** (2026-09-15): raw 413, kept 386, dropped 27
   - 600LT Coupe: count=20, median_ask=240298, median_miles=16067
   - 600LT Spider: count=14, median_ask=258749, median_miles=14772
   - 675LT Coupe: count=3, median_ask=379900, median_miles=11542
@@ -55,6 +55,14 @@ All counts, medians, and day-over-day deltas on the overview are recomputed from
   - 765LT Spider: count=7, median_ask=879400, median_miles=12074
   - Artura Coupe: count=49, median_ask=191498, median_miles=2357
   - Artura Spider: count=17, median_ask=289250, median_miles=214
+  - 720S Coupe: count=29, median_ask=259595, median_miles=11657
+  - 720S Spider: count=47, median_ask=285800, median_miles=9856
+  - 750S Coupe: count=18, median_ask=355362, median_miles=1196
+  - 750S Spider: count=40, median_ask=377788, median_miles=685
+  - 570S Coupe: count=41, median_ask=139990, median_miles=27266
+  - 570S Spider: count=21, median_ask=157800, median_miles=16671
+  - 570GT: count=16, median_ask=129938, median_miles=22031
+  - GT: count=46, median_ask=158281, median_miles=13319
 - **Lamborghini** (2026-09-15): raw 325, kept 319, dropped 6
   - STO Coupe: count=30, median_ask=501042, median_miles=4319
   - Performante Coupe: count=24, median_ask=370240, median_miles=14094

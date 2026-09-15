@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-15T13:19:47.514660Z",
+  "generated_at": "2026-09-15T13:48:25.822410Z",
   "as_of": "2026-09-15",
   "windows": [
     "7d",
@@ -8,12 +8,12 @@
   "geography": "US + Canada only",
   "overall": {
     "headline": "Exotics desk: asks flat -0.1% cross-brand",
-    "summary": "As of 2026-09-15, tracked Ferrari / McLaren / Lamborghini / Ford GT US+Canada asks are flat on a ~7-day read (-0.1% median of brand medians). Inventory Δ across the board: +653.",
-    "take_short": "-0.1% cross-brand · inv Δ +653",
+    "summary": "As of 2026-09-15, tracked Ferrari / McLaren / Lamborghini / Ford GT US+Canada asks are flat on a ~7-day read (-0.1% median of brand medians). Inventory Δ across the board: +911.",
+    "take_short": "-0.1% cross-brand · inv Δ +911",
     "bullets": [
       "Softest ~7d ask move: lamborghini -2.5%",
       "Firmest: ford +4.0%",
-      "Cross-brand inventory Δ sum: +653 listings",
+      "Cross-brand inventory Δ sum: +911 listings",
       "Cross-brand median ask Δ: -0.1%",
       "Auction vs retail: No Reserve: 5k-Mile 2018 Ferrari 488 Spider bid $210,000 vs ask $417,895"
     ],
@@ -36,12 +36,12 @@
               "brand": "mclaren",
               "median_ask_pct": -0.19,
               "median_ask_delta": -75129,
-              "median_ask_pct_raw_mix": -30.36,
-              "count_delta": 63,
-              "count": 128,
+              "median_ask_pct_raw_mix": -31.35,
+              "count_delta": 321,
+              "count": 386,
               "prior_date": "2026-09-08",
               "span_days": 7,
-              "composition_note": "new variants: Artura Coupe, Artura Spider; inventory Δ +63"
+              "composition_note": "new variants: 570GT, 570S Coupe, 570S Spider, 720S Coupe, 720S Spider, 750S Coupe; inventory Δ +321"
             },
             {
               "brand": "lamborghini",
@@ -67,7 +67,7 @@
             }
           ],
           "median_ask_pct_cross": -0.1,
-          "inventory_delta_sum": 653
+          "inventory_delta_sum": 911
         },
         "14d": {
           "brands": [
@@ -141,21 +141,21 @@
             "median_ask_lfl_pct": 1.15,
             "variant_pct_median": 0.0,
             "overlap_variants": [
-              "F8 Coupe",
-              "458 Spider",
-              "F430 Spider",
-              "360 Spider",
-              "355 GTS",
-              "488 Spider",
-              "355 Berlinetta",
-              "360 Modena",
-              "348 TS",
               "458 Coupe",
+              "488 Spider",
+              "348 Spider",
+              "F8 Coupe",
+              "355 Berlinetta",
+              "F8 Spider",
+              "348 TS",
+              "360 Spider",
+              "458 Spider",
+              "360 Modena",
+              "F430 Spider",
+              "F430 Coupe",
               "488 Coupe",
               "355 Spider",
-              "348 Spider",
-              "F430 Coupe",
-              "F8 Spider"
+              "355 GTS"
             ],
             "composition_note": "new variants: 296 Coupe, 296 Spider, SF90 Coupe, SF90 Spider; inventory Δ +319",
             "drops": {
@@ -312,10 +312,10 @@
             "median_ask_lfl_pct": 3.4,
             "variant_pct_median": 3.17,
             "overlap_variants": [
-              "F8 Coupe",
               "488 Spider",
-              "488 Coupe",
-              "F8 Spider"
+              "F8 Spider",
+              "F8 Coupe",
+              "488 Coupe"
             ],
             "composition_note": "new variants: 296 Coupe, 296 Spider, 348 Spider, 348 TS, 355 Berlinetta, 355 GTS; inventory Δ +738",
             "drops": {
@@ -798,17 +798,17 @@
       "brand": "McLaren",
       "brand_key": "mclaren",
       "headline": "McLaren flat: -0.2% variant-median ask · 7d",
-      "summary": "As of 2026-09-15, McLaren US/Canada tracked inventory sits at 128 cars (Δ +63 vs 2026-09-08). Variant-median ask -0.2% over ~7d (LFL $283,844, $-75,129 / -20.9%).",
-      "take_short": "-0.2% · 128 cars · 7d",
+      "summary": "As of 2026-09-15, McLaren US/Canada tracked inventory sits at 386 cars (Δ +321 vs 2026-09-08). Variant-median ask -0.2% over ~7d (LFL $283,844, $-75,129 / -20.9%).",
+      "take_short": "-0.2% · 386 cars · 7d",
       "bullets": [
         "Variant-median ask move: -0.2% (LFL pool -20.9%) [2026-09-08→2026-09-15]",
         "675LT: median ask $-2,292 (-0.6%) · n=5 [2026-09-08→2026-09-15]",
         "765LT: median ask $-4,960 (-0.6%) · n=23 [2026-09-08→2026-09-15]",
         "600LT: median ask $-490 (-0.2%) · n=34 [2026-09-08→2026-09-15]",
         "Same-VIN cuts: 16/51 (31%) over 7d; median cut $5,940",
-        "Inventory: 128 listings (+63 vs 2026-09-08)",
-        "Mix: new variants: Artura Coupe, Artura Spider; inventory Δ +63",
-        "Example: Artura Spider @ $259,996 / 2,130 mi"
+        "Inventory: 386 listings (+321 vs 2026-09-08)",
+        "Mix: new variants: 570GT, 570S Coupe, 570S Spider, 720S Coupe, 720S Spider, 750S Coupe; inventory Δ +321",
+        "Example: 750S Coupe @ $324,991 / 1,691 mi"
       ],
       "metrics": {
         "as_of": "2026-09-15",
@@ -822,27 +822,27 @@
             "as_of": "2026-09-15",
             "prior_date": "2026-09-08",
             "span_days": 7,
-            "count": 128,
+            "count": 386,
             "count_prior": 65,
-            "count_delta": 63,
-            "median_ask": 249988,
+            "count_delta": 321,
+            "median_ask": 246439,
             "median_ask_prior": 358973,
-            "median_ask_delta": -108985,
-            "median_ask_pct": -30.36,
+            "median_ask_delta": -112534,
+            "median_ask_pct": -31.35,
             "median_ask_lfl": 283844,
             "median_ask_lfl_prior": 358973,
             "median_ask_lfl_delta": -75129,
             "median_ask_lfl_pct": -20.93,
             "variant_pct_median": -0.19,
             "overlap_variants": [
+              "765LT Spider",
+              "675LT Spider",
+              "600LT Spider",
               "765LT Coupe",
               "600LT Coupe",
-              "675LT Spider",
-              "675LT Coupe",
-              "765LT Spider",
-              "600LT Spider"
+              "675LT Coupe"
             ],
-            "composition_note": "new variants: Artura Coupe, Artura Spider; inventory Δ +63",
+            "composition_note": "new variants: 570GT, 570S Coupe, 570S Spider, 720S Coupe, 720S Spider, 750S Coupe; inventory Δ +321",
             "drops": {
               "comparable_vins": 51,
               "cuts": 16,
@@ -937,6 +937,54 @@
                 "variants": [
                   "Artura Coupe",
                   "Artura Spider"
+                ]
+              },
+              "720S": {
+                "count": 76,
+                "median_ask": 272698,
+                "median_ask_delta": null,
+                "median_ask_pct": null,
+                "variants": [
+                  "720S Coupe",
+                  "720S Spider"
+                ]
+              },
+              "750S": {
+                "count": 58,
+                "median_ask": 366575,
+                "median_ask_delta": null,
+                "median_ask_pct": null,
+                "variants": [
+                  "750S Coupe",
+                  "750S Spider"
+                ]
+              },
+              "570S": {
+                "count": 62,
+                "median_ask": 148895,
+                "median_ask_delta": null,
+                "median_ask_pct": null,
+                "variants": [
+                  "570S Coupe",
+                  "570S Spider"
+                ]
+              },
+              "570GT": {
+                "count": 16,
+                "median_ask": 129938,
+                "median_ask_delta": null,
+                "median_ask_pct": null,
+                "variants": [
+                  "570GT"
+                ]
+              },
+              "GT": {
+                "count": 46,
+                "median_ask": 158281,
+                "median_ask_delta": null,
+                "median_ask_pct": null,
+                "variants": [
+                  "GT"
                 ]
               }
             }
@@ -1119,22 +1167,292 @@
             "sold_median": null,
             "sold_n": 0
           }
+        },
+        "720S": {
+          "headline": "720S — baseline (no 7d history yet)",
+          "take_short": "Baseline · $272,698 · n=76 · Classic last-ask $259,998",
+          "metrics": {
+            "median_ask": 272698,
+            "median_ask_delta": null,
+            "median_ask_pct": null,
+            "count": 76,
+            "window": "7d",
+            "prior_date": "2026-09-08",
+            "as_of": "2026-09-15",
+            "baseline": true,
+            "retail_thin": true
+          },
+          "summary": "McLaren 720S retail median is $272,698 · n=76. First snapshot for this family — no prior Δ yet. Secondary: Classic last-ask (not retail scrape) $259,998 · n=4 · ~7d.",
+          "classic": {
+            "source": "Classic.com",
+            "disclaimer": "Classic.com market cards — not our daily retail ask scrape",
+            "primary_window": "7d",
+            "windows": {
+              "7d": {
+                "last_ask_median": 259998,
+                "last_ask_n": 4,
+                "sold_median": null,
+                "sold_n": 0,
+                "geo": "US/CA",
+                "label_last_ask": "Classic last-ask (not retail scrape)",
+                "label_sold": "Classic sold"
+              },
+              "14d": {
+                "last_ask_median": 255000,
+                "last_ask_n": 8,
+                "sold_median": null,
+                "sold_n": 0,
+                "geo": "US/CA",
+                "label_last_ask": "Classic last-ask (not retail scrape)",
+                "label_sold": "Classic sold"
+              },
+              "30d": {
+                "last_ask_median": 255000,
+                "last_ask_n": 21,
+                "sold_median": null,
+                "sold_n": 0,
+                "geo": "US/CA",
+                "label_last_ask": "Classic last-ask (not retail scrape)",
+                "label_sold": "Classic sold"
+              }
+            },
+            "last_ask_median": 259998,
+            "last_ask_n": 4,
+            "sold_median": null,
+            "sold_n": 0
+          }
+        },
+        "750S": {
+          "headline": "750S — baseline (no 7d history yet)",
+          "take_short": "Baseline · $366,575 · n=58 · Classic last-ask $404,406",
+          "metrics": {
+            "median_ask": 366575,
+            "median_ask_delta": null,
+            "median_ask_pct": null,
+            "count": 58,
+            "window": "7d",
+            "prior_date": "2026-09-08",
+            "as_of": "2026-09-15",
+            "baseline": true,
+            "retail_thin": true
+          },
+          "summary": "McLaren 750S retail median is $366,575 · n=58. First snapshot for this family — no prior Δ yet. Secondary: Classic last-ask (not retail scrape) $404,406 · n=2 · ~7d · Classic sold $326,000 · n=1 · ~7d.",
+          "classic": {
+            "source": "Classic.com",
+            "disclaimer": "Classic.com market cards — not our daily retail ask scrape",
+            "primary_window": "7d",
+            "windows": {
+              "7d": {
+                "last_ask_median": 404406,
+                "last_ask_n": 2,
+                "sold_median": 326000,
+                "sold_n": 1,
+                "geo": "US/CA",
+                "label_last_ask": "Classic last-ask (not retail scrape)",
+                "label_sold": "Classic sold"
+              },
+              "14d": {
+                "last_ask_median": 389995,
+                "last_ask_n": 7,
+                "sold_median": 326000,
+                "sold_n": 1,
+                "geo": "US/CA",
+                "label_last_ask": "Classic last-ask (not retail scrape)",
+                "label_sold": "Classic sold"
+              },
+              "30d": {
+                "last_ask_median": 389948,
+                "last_ask_n": 14,
+                "sold_median": 326000,
+                "sold_n": 1,
+                "geo": "US/CA",
+                "label_last_ask": "Classic last-ask (not retail scrape)",
+                "label_sold": "Classic sold"
+              }
+            },
+            "last_ask_median": 404406,
+            "last_ask_n": 2,
+            "sold_median": 326000,
+            "sold_n": 1
+          }
+        },
+        "570S": {
+          "headline": "570S — baseline (no 7d history yet)",
+          "take_short": "Baseline · $148,895 · n=62 · Classic last-ask $147,990",
+          "metrics": {
+            "median_ask": 148895,
+            "median_ask_delta": null,
+            "median_ask_pct": null,
+            "count": 62,
+            "window": "7d",
+            "prior_date": "2026-09-08",
+            "as_of": "2026-09-15",
+            "baseline": true,
+            "retail_thin": true
+          },
+          "summary": "McLaren 570S retail median is $148,895 · n=62. First snapshot for this family — no prior Δ yet. Secondary: Classic last-ask (not retail scrape) $147,990 · n=4 · ~7d.",
+          "classic": {
+            "source": "Classic.com",
+            "disclaimer": "Classic.com market cards — not our daily retail ask scrape",
+            "primary_window": "7d",
+            "windows": {
+              "7d": {
+                "last_ask_median": 147990,
+                "last_ask_n": 4,
+                "sold_median": null,
+                "sold_n": 0,
+                "geo": "US/CA",
+                "label_last_ask": "Classic last-ask (not retail scrape)",
+                "label_sold": "Classic sold"
+              },
+              "14d": {
+                "last_ask_median": 149990,
+                "last_ask_n": 7,
+                "sold_median": null,
+                "sold_n": 0,
+                "geo": "US/CA",
+                "label_last_ask": "Classic last-ask (not retail scrape)",
+                "label_sold": "Classic sold"
+              },
+              "30d": {
+                "last_ask_median": 149995,
+                "last_ask_n": 17,
+                "sold_median": null,
+                "sold_n": 0,
+                "geo": "US/CA",
+                "label_last_ask": "Classic last-ask (not retail scrape)",
+                "label_sold": "Classic sold"
+              }
+            },
+            "last_ask_median": 147990,
+            "last_ask_n": 4,
+            "sold_median": null,
+            "sold_n": 0
+          }
+        },
+        "570GT": {
+          "headline": "570GT — baseline (no 7d history yet)",
+          "take_short": "Baseline · $129,938 · n=16 · Classic last-ask $139,991",
+          "metrics": {
+            "median_ask": 129938,
+            "median_ask_delta": null,
+            "median_ask_pct": null,
+            "count": 16,
+            "window": "7d",
+            "prior_date": "2026-09-08",
+            "as_of": "2026-09-15",
+            "baseline": true,
+            "retail_thin": true
+          },
+          "summary": "McLaren 570GT retail median is $129,938 · n=16. First snapshot for this family — no prior Δ yet. Secondary: Classic last-ask (not retail scrape) $139,991 · n=1 · ~7d.",
+          "classic": {
+            "source": "Classic.com",
+            "disclaimer": "Classic.com market cards — not our daily retail ask scrape",
+            "primary_window": "7d",
+            "windows": {
+              "7d": {
+                "last_ask_median": 139991,
+                "last_ask_n": 1,
+                "sold_median": null,
+                "sold_n": 0,
+                "geo": "US/CA",
+                "label_last_ask": "Classic last-ask (not retail scrape)",
+                "label_sold": "Classic sold"
+              },
+              "14d": {
+                "last_ask_median": 139991,
+                "last_ask_n": 1,
+                "sold_median": null,
+                "sold_n": 0,
+                "geo": "US/CA",
+                "label_last_ask": "Classic last-ask (not retail scrape)",
+                "label_sold": "Classic sold"
+              },
+              "30d": {
+                "last_ask_median": 139970,
+                "last_ask_n": 2,
+                "sold_median": 111200,
+                "sold_n": 1,
+                "geo": "US/CA",
+                "label_last_ask": "Classic last-ask (not retail scrape)",
+                "label_sold": "Classic sold"
+              }
+            },
+            "last_ask_median": 139991,
+            "last_ask_n": 1,
+            "sold_median": null,
+            "sold_n": 0
+          }
+        },
+        "GT": {
+          "headline": "GT — baseline (no 7d history yet)",
+          "take_short": "Baseline · $158,281 · n=46 · Classic last-ask $159,845",
+          "metrics": {
+            "median_ask": 158281,
+            "median_ask_delta": null,
+            "median_ask_pct": null,
+            "count": 46,
+            "window": "7d",
+            "prior_date": "2026-09-08",
+            "as_of": "2026-09-15",
+            "baseline": true,
+            "retail_thin": true
+          },
+          "summary": "McLaren GT retail median is $158,281 · n=46. First snapshot for this family — no prior Δ yet. Secondary: Classic last-ask (not retail scrape) $159,845 · n=3 · ~7d.",
+          "classic": {
+            "source": "Classic.com",
+            "disclaimer": "Classic.com market cards — not our daily retail ask scrape",
+            "primary_window": "7d",
+            "windows": {
+              "7d": {
+                "last_ask_median": 159845,
+                "last_ask_n": 3,
+                "sold_median": null,
+                "sold_n": 0,
+                "geo": "US/CA",
+                "label_last_ask": "Classic last-ask (not retail scrape)",
+                "label_sold": "Classic sold"
+              },
+              "14d": {
+                "last_ask_median": 159845,
+                "last_ask_n": 3,
+                "sold_median": null,
+                "sold_n": 0,
+                "geo": "US/CA",
+                "label_last_ask": "Classic last-ask (not retail scrape)",
+                "label_sold": "Classic sold"
+              },
+              "30d": {
+                "last_ask_median": 152900,
+                "last_ask_n": 11,
+                "sold_median": null,
+                "sold_n": 0,
+                "geo": "US/CA",
+                "label_last_ask": "Classic last-ask (not retail scrape)",
+                "label_sold": "Classic sold"
+              }
+            },
+            "last_ask_median": 159845,
+            "last_ask_n": 3,
+            "sold_median": null,
+            "sold_n": 0
+          }
         }
       },
       "examples": [
+        {
+          "title": "2024 McLaren 750S",
+          "ask": 324991,
+          "miles": 1691,
+          "variant": "750S Coupe",
+          "url": "https://www.dupontregistry.com/car/mclaren/750s/2024/SBM14ACA7RW007984/583464"
+        },
         {
           "title": "2025 McLaren Artura Spider",
           "ask": 259996,
           "miles": 2130,
           "variant": "Artura Spider",
           "url": "https://www.dupontregistry.com/car/mclaren/artura--spider/2025/SBM16BEA5SW003371/403522"
-        },
-        {
-          "title": "2025 McLaren Artura Spider",
-          "ask": 249991,
-          "miles": 2359,
-          "variant": "Artura Spider",
-          "url": "https://www.dupontregistry.com/car/mclaren/artura--spider/2025/SBM16BEA4SW003300/614662"
         }
       ],
       "windows_available": [
@@ -1183,9 +1501,9 @@
             "median_ask_lfl_pct": 1.55,
             "variant_pct_median": -2.55,
             "overlap_variants": [
+              "Performante Spider",
               "Performante Coupe",
-              "STO Coupe",
-              "Performante Spider"
+              "STO Coupe"
             ],
             "composition_note": "new variants: Gallardo Coupe, Gallardo Spider, Murcielago Coupe, Murcielago Spider, Revuelto Coupe, SVJ Coupe; inventory Δ +263",
             "drops": {
