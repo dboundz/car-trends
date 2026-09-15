@@ -3,37 +3,45 @@
   "window_end": "2026-09-15",
   "timezone": "America/New_York",
   "source": "Classic.com",
-  "method": "Shell curl; status=sold + status=all&sort=lotdate; stricter status (skip for_sale/active auction; Price Undisclosed/Pending Sale -> off_market); Gen1/Gen2 Ford GT year pages + base /m/ford/gt/; retag legacy GT\u2192Gen1/Gen2; REPLACE refreshed families; keep other old families",
-  "geo_note": "Classic.com market pages not geo-filterable; kept all locations; non_US_Canada_location noted in notes",
-  "total_rows_in_csv": 1128,
-  "total_rows_in_window": 1090,
+  "method": "Shell curl; status=sold + status=all&sort=lotdate; reparsed with stricter status (skip for_sale/active auction; Price Undisclosed/Pending Sale -> off_market); APPEND new families only (old families retained)",
+  "geo_note": "Classic.com market pages not geo-filterable; kept all locations; non_US_Canada_location noted in notes; Brand takes prefer US/CA when location present",
+  "total_rows_in_window": 1503,
   "total_undated": 0,
-  "refreshed_families_rows_in_window": 662,
-  "refreshed_families_added": 662,
+  "new_families_rows_in_window": 134,
+  "new_families_added": 134,
+  "new_families_replaced": 0,
   "counts_by_status": {
-    "last_ask": 836,
-    "sold": 133,
-    "off_market": 121
+    "last_ask": 1157,
+    "sold": 180,
+    "off_market": 165,
+    "unknown": 1
   },
   "counts_by_model_family": {
     "296": 201,
+    "812": 104,
     "Gen1": 41,
     "Revuelto": 70,
+    "720S": 76,
+    "GT": 33,
     "SF90": 158,
+    "570S": 57,
     "Aventador_SVJ": 17,
+    "570GT": 9,
+    "750S": 66,
     "Gallardo": 81,
     "Gen2": 16,
+    "F12": 30,
     "Murcielago": 26,
     "Artura": 41,
-    "488": 140,
-    "600LT": 32,
-    "F8": 91,
-    "Huracan_STO": 30,
-    "458": 95,
-    "Huracan_Performante": 19,
+    "488": 151,
+    "600LT": 34,
+    "F8": 98,
+    "Huracan_STO": 36,
+    "458": 102,
+    "Huracan_Performante": 21,
     "Aventador_SV": 11,
-    "765LT": 16,
-    "675LT": 5
+    "765LT": 17,
+    "675LT": 7
   },
   "counts_by_model_family_and_status": {
     "296": {
@@ -42,27 +50,53 @@
       "off_market": 7
     },
     "458": {
-      "last_ask": 48,
-      "sold": 30,
+      "last_ask": 53,
+      "sold": 32,
       "off_market": 17
     },
     "488": {
-      "last_ask": 109,
-      "sold": 17,
-      "off_market": 14
+      "last_ask": 118,
+      "sold": 18,
+      "off_market": 15
+    },
+    "570GT": {
+      "last_ask": 7,
+      "sold": 2
+    },
+    "570S": {
+      "last_ask": 49,
+      "off_market": 3,
+      "sold": 5
     },
     "600LT": {
-      "last_ask": 31,
+      "last_ask": 33,
       "off_market": 1
     },
     "675LT": {
       "last_ask": 4,
-      "off_market": 1
+      "off_market": 1,
+      "sold": 2
+    },
+    "720S": {
+      "last_ask": 61,
+      "off_market": 11,
+      "sold": 4
+    },
+    "750S": {
+      "sold": 4,
+      "last_ask": 60,
+      "off_market": 1,
+      "unknown": 1
     },
     "765LT": {
-      "last_ask": 13,
+      "last_ask": 14,
       "sold": 2,
       "off_market": 1
+    },
+    "812": {
+      "last_ask": 67,
+      "sold": 23,
+      "off_market": 14
     },
     "Artura": {
       "last_ask": 33,
@@ -79,10 +113,20 @@
       "sold": 3,
       "off_market": 4
     },
+    "F12": {
+      "last_ask": 17,
+      "off_market": 10,
+      "sold": 3
+    },
     "F8": {
-      "last_ask": 75,
+      "last_ask": 81,
       "sold": 6,
-      "off_market": 10
+      "off_market": 11
+    },
+    "GT": {
+      "last_ask": 29,
+      "off_market": 3,
+      "sold": 1
     },
     "Gallardo": {
       "sold": 22,
@@ -101,10 +145,10 @@
     },
     "Huracan_Performante": {
       "sold": 3,
-      "last_ask": 16
+      "last_ask": 18
     },
     "Huracan_STO": {
-      "last_ask": 25,
+      "last_ask": 31,
       "off_market": 4,
       "sold": 1
     },
@@ -124,1590 +168,554 @@
       "sold": 6
     }
   },
-  "refreshed_families_counts_by_status": {
-    "296": {
-      "last_ask": 190,
-      "sold": 4,
-      "off_market": 7
+  "new_families_counts_by_status": {
+    "812": {
+      "last_ask": 67,
+      "sold": 23,
+      "off_market": 14
     },
-    "Artura": {
-      "last_ask": 33,
-      "sold": 3,
-      "off_market": 5
-    },
-    "Aventador_SV": {
-      "last_ask": 7,
-      "off_market": 3,
-      "sold": 1
-    },
-    "Aventador_SVJ": {
-      "last_ask": 10,
-      "sold": 3,
-      "off_market": 4
-    },
-    "Gallardo": {
-      "sold": 22,
-      "last_ask": 53,
-      "unknown": 1,
-      "off_market": 5
-    },
-    "Gen1": {
-      "last_ask": 20,
-      "sold": 13,
-      "off_market": 8
-    },
-    "Gen2": {
-      "sold": 7,
-      "last_ask": 8,
-      "off_market": 1
-    },
-    "Murcielago": {
-      "last_ask": 7,
-      "sold": 11,
-      "off_market": 8
-    },
-    "Revuelto": {
-      "last_ask": 53,
-      "off_market": 13,
-      "sold": 4
-    },
-    "SF90": {
-      "last_ask": 134,
-      "off_market": 18,
-      "sold": 6
+    "F12": {
+      "last_ask": 17,
+      "off_market": 10,
+      "sold": 3
     }
   },
-  "gen2_counts": {
-    "sold": 7,
-    "last_ask": 8,
-    "off_market": 1
-  },
-  "gen1_counts": {
-    "last_ask": 20,
-    "sold": 13,
-    "off_market": 8
-  },
-  "temerario_counts": {},
-  "temerario_classic": "empty \u2014 market path 404; quoted search 0 Temerario cards",
-  "temerario_bat_optional": [
-    {
-      "listing_title": "2026 Lamborghini Temerario",
-      "listing_url": "https://bringatrailer.com/listing/2026-lamborghini-temerario/",
-      "status": "sold",
-      "sold_price_usd": 440000,
-      "auction_date": "2026-08-04",
-      "source": "Bring a Trailer",
-      "notes": "Public BaT sold; Classic.com has 0 Temerario rows"
-    },
-    {
-      "listing_title": "2026 Lamborghini Temerario Alleggerita",
-      "listing_url": "https://bringatrailer.com/listing/2026-lamborghini-temerario-3/",
-      "status": "not_sold",
-      "high_bid_usd": 476000,
-      "auction_date": "2026-07-28",
-      "source": "Bring a Trailer",
-      "notes": "Public BaT bid-to (not sold); Classic.com has 0 Temerario rows"
-    }
-  ],
   "skip_summary": {
-    "skip_for_sale_or_active_auction": 357,
-    "excluded_gt_mkii_race": 15,
-    "excluded_gt_year_out_of_range": 1,
-    "excluded_sf90_xx": 6,
-    "excluded_296_challenge": 7,
-    "not_aventador_sv": 1,
-    "not_temerario": 144
+    "skip_for_sale_or_active_auction": 347,
+    "excluded_f12tdf": 29
   },
   "failed_markets": [
-    {
-      "key": "temerario_market",
-      "error": "HTTP 404 size=30682",
-      "path": "/m/lamborghini/temerario/?status=all&sort=lotdate",
-      "family": "Temerario",
-      "http": 404
-    },
     {
       "path": "/m/lamborghini/temerario/",
       "family": "Temerario",
       "http": 404,
-      "note": "No Classic.com market page; quoted search returns 0 Temerario cards (fuzzy search returns unrelated Lambos)"
+      "note": "No Classic.com market page; search \"Temerario\" returns 0 listings"
+    },
+    {
+      "path": "/m/lamborghini/aventador/svj/",
+      "family": "Aventador_SVJ",
+      "http": 404,
+      "note": "Wrong path; use /m/lamborghini/aventador/lp770-4-svj/ (+ roadster)"
     }
   ],
   "markets_scraped": [
     {
-      "key": "ford_gen1_2005_sold",
-      "make": "Ford",
-      "family": "Gen1",
-      "path": "/m/ford/gt/year-2005/?status=sold&sort=lotdate",
+      "key": "812_sold",
+      "make": "Ferrari",
+      "family": "812",
+      "path": "/m/ferrari/812/?status=sold&sort=lotdate",
       "mode": "sold",
       "pages": [
         {
           "page": 1,
           "http": 200,
-          "bytes": 402091,
-          "file": "ford_gen1_2005_sold_p1.html",
-          "url": "https://www.classic.com/m/ford/gt/year-2005/?status=sold&sort=lotdate"
+          "bytes": 417833,
+          "file": "812_sold_p1.html",
+          "url": "https://www.classic.com/m/ferrari/812/?status=sold&sort=lotdate"
         },
         {
           "page": 2,
           "http": 200,
-          "bytes": 301502,
-          "file": "ford_gen1_2005_sold_p2.html",
-          "url": "https://www.classic.com/m/ford/gt/year-2005/?status=sold&sort=lotdate&page=2"
-        }
-      ],
-      "http_ok": true,
-      "error": null,
-      "items_seen": 37,
-      "rows_parsed": 37,
-      "stopped_reason": "all_dates_before_window_p2",
-      "skip_counts": {}
-    },
-    {
-      "key": "ford_gen1_2005_all",
-      "make": "Ford",
-      "family": "Gen1",
-      "path": "/m/ford/gt/year-2005/?status=all&sort=lotdate",
-      "mode": "all",
-      "pages": [
-        {
-          "page": 1,
-          "http": 200,
-          "bytes": 435298,
-          "file": "ford_gen1_2005_all_p1.html",
-          "url": "https://www.classic.com/m/ford/gt/year-2005/?status=all&sort=lotdate"
-        },
-        {
-          "page": 2,
-          "http": 200,
-          "bytes": 414881,
-          "file": "ford_gen1_2005_all_p2.html",
-          "url": "https://www.classic.com/m/ford/gt/year-2005/?status=all&sort=lotdate&page=2"
-        },
-        {
-          "page": 3,
-          "http": 200,
-          "bytes": 419024,
-          "file": "ford_gen1_2005_all_p3.html",
-          "url": "https://www.classic.com/m/ford/gt/year-2005/?status=all&sort=lotdate&page=3"
-        }
-      ],
-      "http_ok": true,
-      "error": null,
-      "items_seen": 72,
-      "rows_parsed": 59,
-      "stopped_reason": "all_dates_before_window_p3",
-      "skip_counts": {
-        "skip_for_sale_or_active_auction": 13
-      }
-    },
-    {
-      "key": "ford_gen1_2006_sold",
-      "make": "Ford",
-      "family": "Gen1",
-      "path": "/m/ford/gt/year-2006/?status=sold&sort=lotdate",
-      "mode": "sold",
-      "pages": [
-        {
-          "page": 1,
-          "http": 200,
-          "bytes": 405048,
-          "file": "ford_gen1_2006_sold_p1.html",
-          "url": "https://www.classic.com/m/ford/gt/year-2006/?status=sold&sort=lotdate"
-        },
-        {
-          "page": 2,
-          "http": 200,
-          "bytes": 301499,
-          "file": "ford_gen1_2006_sold_p2.html",
-          "url": "https://www.classic.com/m/ford/gt/year-2006/?status=sold&sort=lotdate&page=2"
-        }
-      ],
-      "http_ok": true,
-      "error": null,
-      "items_seen": 37,
-      "rows_parsed": 37,
-      "stopped_reason": "all_dates_before_window_p2",
-      "skip_counts": {}
-    },
-    {
-      "key": "ford_gen1_2006_all",
-      "make": "Ford",
-      "family": "Gen1",
-      "path": "/m/ford/gt/year-2006/?status=all&sort=lotdate",
-      "mode": "all",
-      "pages": [
-        {
-          "page": 1,
-          "http": 200,
-          "bytes": 441766,
-          "file": "ford_gen1_2006_all_p1.html",
-          "url": "https://www.classic.com/m/ford/gt/year-2006/?status=all&sort=lotdate"
-        },
-        {
-          "page": 2,
-          "http": 200,
-          "bytes": 417400,
-          "file": "ford_gen1_2006_all_p2.html",
-          "url": "https://www.classic.com/m/ford/gt/year-2006/?status=all&sort=lotdate&page=2"
-        },
-        {
-          "page": 3,
-          "http": 200,
-          "bytes": 407418,
-          "file": "ford_gen1_2006_all_p3.html",
-          "url": "https://www.classic.com/m/ford/gt/year-2006/?status=all&sort=lotdate&page=3"
-        }
-      ],
-      "http_ok": true,
-      "error": null,
-      "items_seen": 72,
-      "rows_parsed": 56,
-      "stopped_reason": "all_dates_before_window_p3",
-      "skip_counts": {
-        "skip_for_sale_or_active_auction": 16
-      }
-    },
-    {
-      "key": "ford_gen2_2017_sold",
-      "make": "Ford",
-      "family": "Gen2",
-      "path": "/m/ford/gt/year-2017/?status=sold&sort=lotdate",
-      "mode": "sold",
-      "pages": [
-        {
-          "page": 1,
-          "http": 200,
-          "bytes": 244110,
-          "file": "ford_gen2_2017_sold_p1.html",
-          "url": "https://www.classic.com/m/ford/gt/year-2017/?status=sold&sort=lotdate"
-        }
-      ],
-      "http_ok": true,
-      "error": null,
-      "items_seen": 7,
-      "rows_parsed": 5,
-      "stopped_reason": "last_page_p1",
-      "skip_counts": {
-        "excluded_gt_mkii_race": 2
-      }
-    },
-    {
-      "key": "ford_gen2_2017_all",
-      "make": "Ford",
-      "family": "Gen2",
-      "path": "/m/ford/gt/year-2017/?status=all&sort=lotdate",
-      "mode": "all",
-      "pages": [
-        {
-          "page": 1,
-          "http": 200,
-          "bytes": 287816,
-          "file": "ford_gen2_2017_all_p1.html",
-          "url": "https://www.classic.com/m/ford/gt/year-2017/?status=all&sort=lotdate"
-        }
-      ],
-      "http_ok": true,
-      "error": null,
-      "items_seen": 11,
-      "rows_parsed": 8,
-      "stopped_reason": "last_page_p1",
-      "skip_counts": {
-        "skip_for_sale_or_active_auction": 1,
-        "excluded_gt_mkii_race": 2
-      }
-    },
-    {
-      "key": "ford_gen2_2018_sold",
-      "make": "Ford",
-      "family": "Gen2",
-      "path": "/m/ford/gt/year-2018/?status=sold&sort=lotdate",
-      "mode": "sold",
-      "pages": [
-        {
-          "page": 1,
-          "http": 200,
-          "bytes": 207648,
-          "file": "ford_gen2_2018_sold_p1.html",
-          "url": "https://www.classic.com/m/ford/gt/year-2018/?status=sold&sort=lotdate"
-        }
-      ],
-      "http_ok": true,
-      "error": null,
-      "items_seen": 3,
-      "rows_parsed": 3,
-      "stopped_reason": "all_dates_before_window_p1",
-      "skip_counts": {}
-    },
-    {
-      "key": "ford_gen2_2018_all",
-      "make": "Ford",
-      "family": "Gen2",
-      "path": "/m/ford/gt/year-2018/?status=all&sort=lotdate",
-      "mode": "all",
-      "pages": [
-        {
-          "page": 1,
-          "http": 200,
-          "bytes": 267198,
-          "file": "ford_gen2_2018_all_p1.html",
-          "url": "https://www.classic.com/m/ford/gt/year-2018/?status=all&sort=lotdate"
-        }
-      ],
-      "http_ok": true,
-      "error": null,
-      "items_seen": 9,
-      "rows_parsed": 9,
-      "stopped_reason": "last_page_p1",
-      "skip_counts": {}
-    },
-    {
-      "key": "ford_gen2_2019_sold",
-      "make": "Ford",
-      "family": "Gen2",
-      "path": "/m/ford/gt/year-2019/?status=sold&sort=lotdate",
-      "mode": "sold",
-      "pages": [
-        {
-          "page": 1,
-          "http": 200,
-          "bytes": 216509,
-          "file": "ford_gen2_2019_sold_p1.html",
-          "url": "https://www.classic.com/m/ford/gt/year-2019/?status=sold&sort=lotdate"
-        }
-      ],
-      "http_ok": true,
-      "error": null,
-      "items_seen": 4,
-      "rows_parsed": 4,
-      "stopped_reason": "last_page_p1",
-      "skip_counts": {}
-    },
-    {
-      "key": "ford_gen2_2019_all",
-      "make": "Ford",
-      "family": "Gen2",
-      "path": "/m/ford/gt/year-2019/?status=all&sort=lotdate",
-      "mode": "all",
-      "pages": [
-        {
-          "page": 1,
-          "http": 200,
-          "bytes": 421526,
-          "file": "ford_gen2_2019_all_p1.html",
-          "url": "https://www.classic.com/m/ford/gt/year-2019/?status=all&sort=lotdate"
-        }
-      ],
-      "http_ok": true,
-      "error": null,
-      "items_seen": 23,
-      "rows_parsed": 18,
-      "stopped_reason": "last_page_p1",
-      "skip_counts": {
-        "skip_for_sale_or_active_auction": 5
-      }
-    },
-    {
-      "key": "ford_gen2_2020_sold",
-      "make": "Ford",
-      "family": "Gen2",
-      "path": "/m/ford/gt/year-2020/?status=sold&sort=lotdate",
-      "mode": "sold",
-      "pages": [
-        {
-          "page": 1,
-          "http": 200,
-          "bytes": 207353,
-          "file": "ford_gen2_2020_sold_p1.html",
-          "url": "https://www.classic.com/m/ford/gt/year-2020/?status=sold&sort=lotdate"
-        }
-      ],
-      "http_ok": true,
-      "error": null,
-      "items_seen": 3,
-      "rows_parsed": 1,
-      "stopped_reason": "all_dates_before_window_p1",
-      "skip_counts": {
-        "excluded_gt_mkii_race": 2
-      }
-    },
-    {
-      "key": "ford_gen2_2020_all",
-      "make": "Ford",
-      "family": "Gen2",
-      "path": "/m/ford/gt/year-2020/?status=all&sort=lotdate",
-      "mode": "all",
-      "pages": [
-        {
-          "page": 1,
-          "http": 200,
-          "bytes": 343813,
-          "file": "ford_gen2_2020_all_p1.html",
-          "url": "https://www.classic.com/m/ford/gt/year-2020/?status=all&sort=lotdate"
-        }
-      ],
-      "http_ok": true,
-      "error": null,
-      "items_seen": 15,
-      "rows_parsed": 6,
-      "stopped_reason": "all_dates_before_window_p1",
-      "skip_counts": {
-        "skip_for_sale_or_active_auction": 6,
-        "excluded_gt_mkii_race": 3
-      }
-    },
-    {
-      "key": "ford_gen2_2021_sold",
-      "make": "Ford",
-      "family": "Gen2",
-      "path": "/m/ford/gt/year-2021/?status=sold&sort=lotdate",
-      "mode": "sold",
-      "pages": [
-        {
-          "page": 1,
-          "http": 200,
-          "bytes": 217364,
-          "file": "ford_gen2_2021_sold_p1.html",
-          "url": "https://www.classic.com/m/ford/gt/year-2021/?status=sold&sort=lotdate"
-        }
-      ],
-      "http_ok": true,
-      "error": null,
-      "items_seen": 4,
-      "rows_parsed": 4,
-      "stopped_reason": "last_page_p1",
-      "skip_counts": {}
-    },
-    {
-      "key": "ford_gen2_2021_all",
-      "make": "Ford",
-      "family": "Gen2",
-      "path": "/m/ford/gt/year-2021/?status=all&sort=lotdate",
-      "mode": "all",
-      "pages": [
-        {
-          "page": 1,
-          "http": 200,
-          "bytes": 323572,
-          "file": "ford_gen2_2021_all_p1.html",
-          "url": "https://www.classic.com/m/ford/gt/year-2021/?status=all&sort=lotdate"
-        }
-      ],
-      "http_ok": true,
-      "error": null,
-      "items_seen": 15,
-      "rows_parsed": 12,
-      "stopped_reason": "last_page_p1",
-      "skip_counts": {
-        "skip_for_sale_or_active_auction": 1,
-        "excluded_gt_mkii_race": 2
-      }
-    },
-    {
-      "key": "ford_gen2_2022_sold",
-      "make": "Ford",
-      "family": "Gen2",
-      "path": "/m/ford/gt/year-2022/?status=sold&sort=lotdate",
-      "mode": "sold",
-      "pages": [
-        {
-          "page": 1,
-          "http": 200,
-          "bytes": 236168,
-          "file": "ford_gen2_2022_sold_p1.html",
-          "url": "https://www.classic.com/m/ford/gt/year-2022/?status=sold&sort=lotdate"
-        }
-      ],
-      "http_ok": true,
-      "error": null,
-      "items_seen": 6,
-      "rows_parsed": 6,
-      "stopped_reason": "last_page_p1",
-      "skip_counts": {}
-    },
-    {
-      "key": "ford_gen2_2022_all",
-      "make": "Ford",
-      "family": "Gen2",
-      "path": "/m/ford/gt/year-2022/?status=all&sort=lotdate",
-      "mode": "all",
-      "pages": [
-        {
-          "page": 1,
-          "http": 200,
-          "bytes": 302763,
-          "file": "ford_gen2_2022_all_p1.html",
-          "url": "https://www.classic.com/m/ford/gt/year-2022/?status=all&sort=lotdate"
-        }
-      ],
-      "http_ok": true,
-      "error": null,
-      "items_seen": 13,
-      "rows_parsed": 13,
-      "stopped_reason": "last_page_p1",
-      "skip_counts": {}
-    },
-    {
-      "key": "ford_gt_base_sold",
-      "make": "Ford",
-      "family": "Gen2",
-      "path": "/m/ford/gt/?status=sold&sort=lotdate",
-      "mode": "sold",
-      "pages": [
-        {
-          "page": 1,
-          "http": 200,
-          "bytes": 410964,
-          "file": "ford_gt_base_sold_p1.html",
-          "url": "https://www.classic.com/m/ford/gt/?status=sold&sort=lotdate"
-        },
-        {
-          "page": 2,
-          "http": 200,
-          "bytes": 414338,
-          "file": "ford_gt_base_sold_p2.html",
-          "url": "https://www.classic.com/m/ford/gt/?status=sold&sort=lotdate&page=2"
+          "bytes": 423916,
+          "file": "812_sold_p2.html",
+          "url": "https://www.classic.com/m/ferrari/812/?status=sold&sort=lotdate&page=2"
         }
       ],
       "http_ok": true,
       "error": null,
       "items_seen": 48,
-      "rows_parsed": 45,
+      "rows_parsed": 48,
       "stopped_reason": "all_dates_before_window_p2",
-      "skip_counts": {
-        "excluded_gt_mkii_race": 3
-      }
+      "skip_counts": {}
     },
     {
-      "key": "ford_gt_base_all",
-      "make": "Ford",
-      "family": "Gen2",
-      "path": "/m/ford/gt/?status=all&sort=lotdate",
+      "key": "812_all",
+      "make": "Ferrari",
+      "family": "812",
+      "path": "/m/ferrari/812/?status=all&sort=lotdate",
       "mode": "all",
       "pages": [
         {
           "page": 1,
           "http": 200,
-          "bytes": 460214,
-          "file": "ford_gt_base_all_p1.html",
-          "url": "https://www.classic.com/m/ford/gt/?status=all&sort=lotdate"
+          "bytes": 483816,
+          "file": "812_all_p1.html",
+          "url": "https://www.classic.com/m/ferrari/812/?status=all&sort=lotdate"
         },
         {
           "page": 2,
           "http": 200,
-          "bytes": 450675,
-          "file": "ford_gt_base_all_p2.html",
-          "url": "https://www.classic.com/m/ford/gt/?status=all&sort=lotdate&page=2"
+          "bytes": 488360,
+          "file": "812_all_p2.html",
+          "url": "https://www.classic.com/m/ferrari/812/?status=all&sort=lotdate&page=2"
         },
         {
           "page": 3,
           "http": 200,
-          "bytes": 438700,
-          "file": "ford_gt_base_all_p3.html",
-          "url": "https://www.classic.com/m/ford/gt/?status=all&sort=lotdate&page=3"
+          "bytes": 482203,
+          "file": "812_all_p3.html",
+          "url": "https://www.classic.com/m/ferrari/812/?status=all&sort=lotdate&page=3"
         },
         {
           "page": 4,
           "http": 200,
-          "bytes": 424624,
-          "file": "ford_gt_base_all_p4.html",
-          "url": "https://www.classic.com/m/ford/gt/?status=all&sort=lotdate&page=4"
+          "bytes": 482792,
+          "file": "812_all_p4.html",
+          "url": "https://www.classic.com/m/ferrari/812/?status=all&sort=lotdate&page=4"
         },
         {
           "page": 5,
           "http": 200,
-          "bytes": 430003,
-          "file": "ford_gt_base_all_p5.html",
-          "url": "https://www.classic.com/m/ford/gt/?status=all&sort=lotdate&page=5"
+          "bytes": 469451,
+          "file": "812_all_p5.html",
+          "url": "https://www.classic.com/m/ferrari/812/?status=all&sort=lotdate&page=5"
         },
         {
           "page": 6,
           "http": 200,
-          "bytes": 419921,
-          "file": "ford_gt_base_all_p6.html",
-          "url": "https://www.classic.com/m/ford/gt/?status=all&sort=lotdate&page=6"
-        }
-      ],
-      "http_ok": true,
-      "error": null,
-      "items_seen": 144,
-      "rows_parsed": 101,
-      "stopped_reason": "all_dates_before_window_p6",
-      "skip_counts": {
-        "skip_for_sale_or_active_auction": 41,
-        "excluded_gt_mkii_race": 1,
-        "excluded_gt_year_out_of_range": 1
-      }
-    },
-    {
-      "key": "sf90_sold",
-      "make": "Ferrari",
-      "family": "SF90",
-      "path": "/m/ferrari/sf90/?status=sold&sort=lotdate",
-      "mode": "sold",
-      "pages": [
-        {
-          "page": 1,
-          "http": 200,
-          "bytes": 386041,
-          "file": "sf90_sold_p1.html",
-          "url": "https://www.classic.com/m/ferrari/sf90/?status=sold&sort=lotdate"
-        }
-      ],
-      "http_ok": true,
-      "error": null,
-      "items_seen": 21,
-      "rows_parsed": 19,
-      "stopped_reason": "last_page_p1",
-      "skip_counts": {
-        "excluded_sf90_xx": 2
-      }
-    },
-    {
-      "key": "sf90_all",
-      "make": "Ferrari",
-      "family": "SF90",
-      "path": "/m/ferrari/sf90/?status=all&sort=lotdate",
-      "mode": "all",
-      "pages": [
-        {
-          "page": 1,
-          "http": 200,
-          "bytes": 452463,
-          "file": "sf90_all_p1.html",
-          "url": "https://www.classic.com/m/ferrari/sf90/?status=all&sort=lotdate"
-        },
-        {
-          "page": 2,
-          "http": 200,
-          "bytes": 453412,
-          "file": "sf90_all_p2.html",
-          "url": "https://www.classic.com/m/ferrari/sf90/?status=all&sort=lotdate&page=2"
-        },
-        {
-          "page": 3,
-          "http": 200,
-          "bytes": 448384,
-          "file": "sf90_all_p3.html",
-          "url": "https://www.classic.com/m/ferrari/sf90/?status=all&sort=lotdate&page=3"
-        },
-        {
-          "page": 4,
-          "http": 200,
-          "bytes": 434606,
-          "file": "sf90_all_p4.html",
-          "url": "https://www.classic.com/m/ferrari/sf90/?status=all&sort=lotdate&page=4"
-        },
-        {
-          "page": 5,
-          "http": 200,
-          "bytes": 444899,
-          "file": "sf90_all_p5.html",
-          "url": "https://www.classic.com/m/ferrari/sf90/?status=all&sort=lotdate&page=5"
-        },
-        {
-          "page": 6,
-          "http": 200,
-          "bytes": 443042,
-          "file": "sf90_all_p6.html",
-          "url": "https://www.classic.com/m/ferrari/sf90/?status=all&sort=lotdate&page=6"
+          "bytes": 471582,
+          "file": "812_all_p6.html",
+          "url": "https://www.classic.com/m/ferrari/812/?status=all&sort=lotdate&page=6"
         },
         {
           "page": 7,
           "http": 200,
-          "bytes": 436801,
-          "file": "sf90_all_p7.html",
-          "url": "https://www.classic.com/m/ferrari/sf90/?status=all&sort=lotdate&page=7"
+          "bytes": 476509,
+          "file": "812_all_p7.html",
+          "url": "https://www.classic.com/m/ferrari/812/?status=all&sort=lotdate&page=7"
         },
         {
           "page": 8,
           "http": 200,
-          "bytes": 436169,
-          "file": "sf90_all_p8.html",
-          "url": "https://www.classic.com/m/ferrari/sf90/?status=all&sort=lotdate&page=8"
+          "bytes": 436051,
+          "file": "812_all_p8.html",
+          "url": "https://www.classic.com/m/ferrari/812/?status=all&sort=lotdate&page=8"
         },
         {
           "page": 9,
           "http": 200,
-          "bytes": 442189,
-          "file": "sf90_all_p9.html",
-          "url": "https://www.classic.com/m/ferrari/sf90/?status=all&sort=lotdate&page=9"
+          "bytes": 445705,
+          "file": "812_all_p9.html",
+          "url": "https://www.classic.com/m/ferrari/812/?status=all&sort=lotdate&page=9"
         },
         {
           "page": 10,
           "http": 200,
-          "bytes": 440598,
-          "file": "sf90_all_p10.html",
-          "url": "https://www.classic.com/m/ferrari/sf90/?status=all&sort=lotdate&page=10"
+          "bytes": 440580,
+          "file": "812_all_p10.html",
+          "url": "https://www.classic.com/m/ferrari/812/?status=all&sort=lotdate&page=10"
         },
         {
           "page": 11,
           "http": 200,
-          "bytes": 438381,
-          "file": "sf90_all_p11.html",
-          "url": "https://www.classic.com/m/ferrari/sf90/?status=all&sort=lotdate&page=11"
-        }
-      ],
-      "http_ok": true,
-      "error": null,
-      "items_seen": 264,
-      "rows_parsed": 204,
-      "stopped_reason": "all_dates_before_window_p11",
-      "skip_counts": {
-        "skip_for_sale_or_active_auction": 56,
-        "excluded_sf90_xx": 4
-      }
-    },
-    {
-      "key": "296_sold",
-      "make": "Ferrari",
-      "family": "296",
-      "path": "/m/ferrari/296/?status=sold&sort=lotdate",
-      "mode": "sold",
-      "pages": [
-        {
-          "page": 1,
-          "http": 200,
-          "bytes": 414745,
-          "file": "296_sold_p1.html",
-          "url": "https://www.classic.com/m/ferrari/296/?status=sold&sort=lotdate"
-        },
-        {
-          "page": 2,
-          "http": 200,
-          "bytes": 217667,
-          "file": "296_sold_p2.html",
-          "url": "https://www.classic.com/m/ferrari/296/?status=sold&sort=lotdate&page=2"
-        }
-      ],
-      "http_ok": true,
-      "error": null,
-      "items_seen": 27,
-      "rows_parsed": 25,
-      "stopped_reason": "all_dates_before_window_p2",
-      "skip_counts": {
-        "excluded_296_challenge": 2
-      }
-    },
-    {
-      "key": "296_all",
-      "make": "Ferrari",
-      "family": "296",
-      "path": "/m/ferrari/296/?status=all&sort=lotdate",
-      "mode": "all",
-      "pages": [
-        {
-          "page": 1,
-          "http": 200,
-          "bytes": 458729,
-          "file": "296_all_p1.html",
-          "url": "https://www.classic.com/m/ferrari/296/?status=all&sort=lotdate"
-        },
-        {
-          "page": 2,
-          "http": 200,
-          "bytes": 447607,
-          "file": "296_all_p2.html",
-          "url": "https://www.classic.com/m/ferrari/296/?status=all&sort=lotdate&page=2"
-        },
-        {
-          "page": 3,
-          "http": 200,
-          "bytes": 434453,
-          "file": "296_all_p3.html",
-          "url": "https://www.classic.com/m/ferrari/296/?status=all&sort=lotdate&page=3"
-        },
-        {
-          "page": 4,
-          "http": 200,
-          "bytes": 446896,
-          "file": "296_all_p4.html",
-          "url": "https://www.classic.com/m/ferrari/296/?status=all&sort=lotdate&page=4"
-        },
-        {
-          "page": 5,
-          "http": 200,
-          "bytes": 434308,
-          "file": "296_all_p5.html",
-          "url": "https://www.classic.com/m/ferrari/296/?status=all&sort=lotdate&page=5"
-        },
-        {
-          "page": 6,
-          "http": 200,
-          "bytes": 444836,
-          "file": "296_all_p6.html",
-          "url": "https://www.classic.com/m/ferrari/296/?status=all&sort=lotdate&page=6"
-        },
-        {
-          "page": 7,
-          "http": 200,
-          "bytes": 445194,
-          "file": "296_all_p7.html",
-          "url": "https://www.classic.com/m/ferrari/296/?status=all&sort=lotdate&page=7"
-        },
-        {
-          "page": 8,
-          "http": 200,
-          "bytes": 444721,
-          "file": "296_all_p8.html",
-          "url": "https://www.classic.com/m/ferrari/296/?status=all&sort=lotdate&page=8"
-        },
-        {
-          "page": 9,
-          "http": 200,
-          "bytes": 445964,
-          "file": "296_all_p9.html",
-          "url": "https://www.classic.com/m/ferrari/296/?status=all&sort=lotdate&page=9"
-        },
-        {
-          "page": 10,
-          "http": 200,
-          "bytes": 445596,
-          "file": "296_all_p10.html",
-          "url": "https://www.classic.com/m/ferrari/296/?status=all&sort=lotdate&page=10"
-        },
-        {
-          "page": 11,
-          "http": 200,
-          "bytes": 431537,
-          "file": "296_all_p11.html",
-          "url": "https://www.classic.com/m/ferrari/296/?status=all&sort=lotdate&page=11"
+          "bytes": 433588,
+          "file": "812_all_p11.html",
+          "url": "https://www.classic.com/m/ferrari/812/?status=all&sort=lotdate&page=11"
         },
         {
           "page": 12,
           "http": 200,
-          "bytes": 438869,
-          "file": "296_all_p12.html",
-          "url": "https://www.classic.com/m/ferrari/296/?status=all&sort=lotdate&page=12"
-        },
-        {
-          "page": 13,
-          "http": 200,
-          "bytes": 443028,
-          "file": "296_all_p13.html",
-          "url": "https://www.classic.com/m/ferrari/296/?status=all&sort=lotdate&page=13"
+          "bytes": 435500,
+          "file": "812_all_p12.html",
+          "url": "https://www.classic.com/m/ferrari/812/?status=all&sort=lotdate&page=12"
         }
       ],
       "http_ok": true,
       "error": null,
-      "items_seen": 312,
-      "rows_parsed": 250,
-      "stopped_reason": "all_dates_before_window_p13",
+      "items_seen": 288,
+      "rows_parsed": 145,
+      "stopped_reason": "all_dates_before_window_p12",
       "skip_counts": {
-        "skip_for_sale_or_active_auction": 57,
-        "excluded_296_challenge": 5
+        "skip_for_sale_or_active_auction": 143
       }
     },
     {
-      "key": "artura_sold",
-      "make": "McLaren",
-      "family": "Artura",
-      "path": "/m/mclaren/artura/?status=sold&sort=lotdate",
+      "key": "812_superfast_sold",
+      "make": "Ferrari",
+      "family": "812",
+      "path": "/m/ferrari/812/superfast/?status=sold&sort=lotdate",
       "mode": "sold",
       "pages": [
         {
           "page": 1,
           "http": 200,
-          "bytes": 211354,
-          "file": "artura_sold_p1.html",
-          "url": "https://www.classic.com/m/mclaren/artura/?status=sold&sort=lotdate"
+          "bytes": 278937,
+          "file": "812_superfast_sold_p1.html",
+          "url": "https://www.classic.com/m/ferrari/812/superfast/?status=sold&sort=lotdate"
         }
       ],
       "http_ok": true,
       "error": null,
-      "items_seen": 5,
-      "rows_parsed": 5,
+      "items_seen": 16,
+      "rows_parsed": 16,
       "stopped_reason": "last_page_p1",
       "skip_counts": {}
     },
     {
-      "key": "artura_all",
-      "make": "McLaren",
-      "family": "Artura",
-      "path": "/m/mclaren/artura/?status=all&sort=lotdate",
+      "key": "812_superfast_all",
+      "make": "Ferrari",
+      "family": "812",
+      "path": "/m/ferrari/812/superfast/?status=all&sort=lotdate",
       "mode": "all",
       "pages": [
         {
           "page": 1,
           "http": 200,
-          "bytes": 438605,
-          "file": "artura_all_p1.html",
-          "url": "https://www.classic.com/m/mclaren/artura/?status=all&sort=lotdate"
+          "bytes": 415022,
+          "file": "812_superfast_all_p1.html",
+          "url": "https://www.classic.com/m/ferrari/812/superfast/?status=all&sort=lotdate"
         },
         {
           "page": 2,
           "http": 200,
-          "bytes": 417959,
-          "file": "artura_all_p2.html",
-          "url": "https://www.classic.com/m/mclaren/artura/?status=all&sort=lotdate&page=2"
+          "bytes": 404700,
+          "file": "812_superfast_all_p2.html",
+          "url": "https://www.classic.com/m/ferrari/812/superfast/?status=all&sort=lotdate&page=2"
         },
         {
           "page": 3,
           "http": 200,
-          "bytes": 430516,
-          "file": "artura_all_p3.html",
-          "url": "https://www.classic.com/m/mclaren/artura/?status=all&sort=lotdate&page=3"
+          "bytes": 360421,
+          "file": "812_superfast_all_p3.html",
+          "url": "https://www.classic.com/m/ferrari/812/superfast/?status=all&sort=lotdate&page=3"
         },
         {
           "page": 4,
           "http": 200,
-          "bytes": 416840,
-          "file": "artura_all_p4.html",
-          "url": "https://www.classic.com/m/mclaren/artura/?status=all&sort=lotdate&page=4"
+          "bytes": 364912,
+          "file": "812_superfast_all_p4.html",
+          "url": "https://www.classic.com/m/ferrari/812/superfast/?status=all&sort=lotdate&page=4"
         },
         {
           "page": 5,
           "http": 200,
-          "bytes": 342353,
-          "file": "artura_all_p5.html",
-          "url": "https://www.classic.com/m/mclaren/artura/?status=all&sort=lotdate&page=5"
+          "bytes": 369776,
+          "file": "812_superfast_all_p5.html",
+          "url": "https://www.classic.com/m/ferrari/812/superfast/?status=all&sort=lotdate&page=5"
         }
       ],
       "http_ok": true,
       "error": null,
-      "items_seen": 113,
-      "rows_parsed": 75,
+      "items_seen": 120,
+      "rows_parsed": 81,
       "stopped_reason": "all_dates_before_window_p5",
       "skip_counts": {
-        "skip_for_sale_or_active_auction": 38
+        "skip_for_sale_or_active_auction": 39
       }
     },
     {
-      "key": "murcielago_sold",
-      "make": "Lamborghini",
-      "family": "Murcielago",
-      "path": "/m/lamborghini/murcielago/?status=sold&sort=lotdate",
+      "key": "812_gts_sold",
+      "make": "Ferrari",
+      "family": "812",
+      "path": "/m/ferrari/812/gts/?status=sold&sort=lotdate",
       "mode": "sold",
       "pages": [
         {
           "page": 1,
           "http": 200,
-          "bytes": 480430,
-          "file": "murcielago_sold_p1.html",
-          "url": "https://www.classic.com/m/lamborghini/murcielago/?status=sold&sort=lotdate"
+          "bytes": 351555,
+          "file": "812_gts_sold_p1.html",
+          "url": "https://www.classic.com/m/ferrari/812/gts/?status=sold&sort=lotdate"
         },
         {
           "page": 2,
           "http": 200,
-          "bytes": 481809,
-          "file": "murcielago_sold_p2.html",
-          "url": "https://www.classic.com/m/lamborghini/murcielago/?status=sold&sort=lotdate&page=2"
+          "bytes": 139680,
+          "file": "812_gts_sold_p2.html",
+          "url": "https://www.classic.com/m/ferrari/812/gts/?status=sold&sort=lotdate&page=2"
         }
       ],
       "http_ok": true,
       "error": null,
-      "items_seen": 48,
-      "rows_parsed": 48,
+      "items_seen": 25,
+      "rows_parsed": 25,
       "stopped_reason": "all_dates_before_window_p2",
       "skip_counts": {}
     },
     {
-      "key": "murcielago_all",
-      "make": "Lamborghini",
-      "family": "Murcielago",
-      "path": "/m/lamborghini/murcielago/?status=all&sort=lotdate",
+      "key": "812_gts_all",
+      "make": "Ferrari",
+      "family": "812",
+      "path": "/m/ferrari/812/gts/?status=all&sort=lotdate",
       "mode": "all",
       "pages": [
         {
           "page": 1,
           "http": 200,
-          "bytes": 494700,
-          "file": "murcielago_all_p1.html",
-          "url": "https://www.classic.com/m/lamborghini/murcielago/?status=all&sort=lotdate"
+          "bytes": 420309,
+          "file": "812_gts_all_p1.html",
+          "url": "https://www.classic.com/m/ferrari/812/gts/?status=all&sort=lotdate"
         },
         {
           "page": 2,
           "http": 200,
-          "bytes": 490026,
-          "file": "murcielago_all_p2.html",
-          "url": "https://www.classic.com/m/lamborghini/murcielago/?status=all&sort=lotdate&page=2"
+          "bytes": 420401,
+          "file": "812_gts_all_p2.html",
+          "url": "https://www.classic.com/m/ferrari/812/gts/?status=all&sort=lotdate&page=2"
         },
         {
           "page": 3,
           "http": 200,
-          "bytes": 486059,
-          "file": "murcielago_all_p3.html",
-          "url": "https://www.classic.com/m/lamborghini/murcielago/?status=all&sort=lotdate&page=3"
-        }
-      ],
-      "http_ok": true,
-      "error": null,
-      "items_seen": 72,
-      "rows_parsed": 62,
-      "stopped_reason": "all_dates_before_window_p3",
-      "skip_counts": {
-        "skip_for_sale_or_active_auction": 10
-      }
-    },
-    {
-      "key": "gallardo_sold",
-      "make": "Lamborghini",
-      "family": "Gallardo",
-      "path": "/m/lamborghini/gallardo/?status=sold&sort=lotdate",
-      "mode": "sold",
-      "pages": [
-        {
-          "page": 1,
-          "http": 200,
-          "bytes": 495785,
-          "file": "gallardo_sold_p1.html",
-          "url": "https://www.classic.com/m/lamborghini/gallardo/?status=sold&sort=lotdate"
-        },
-        {
-          "page": 2,
-          "http": 200,
-          "bytes": 502678,
-          "file": "gallardo_sold_p2.html",
-          "url": "https://www.classic.com/m/lamborghini/gallardo/?status=sold&sort=lotdate&page=2"
-        }
-      ],
-      "http_ok": true,
-      "error": null,
-      "items_seen": 48,
-      "rows_parsed": 48,
-      "stopped_reason": "all_dates_before_window_p2",
-      "skip_counts": {}
-    },
-    {
-      "key": "gallardo_all",
-      "make": "Lamborghini",
-      "family": "Gallardo",
-      "path": "/m/lamborghini/gallardo/?status=all&sort=lotdate",
-      "mode": "all",
-      "pages": [
-        {
-          "page": 1,
-          "http": 200,
-          "bytes": 535292,
-          "file": "gallardo_all_p1.html",
-          "url": "https://www.classic.com/m/lamborghini/gallardo/?status=all&sort=lotdate"
-        },
-        {
-          "page": 2,
-          "http": 200,
-          "bytes": 538287,
-          "file": "gallardo_all_p2.html",
-          "url": "https://www.classic.com/m/lamborghini/gallardo/?status=all&sort=lotdate&page=2"
-        },
-        {
-          "page": 3,
-          "http": 200,
-          "bytes": 531364,
-          "file": "gallardo_all_p3.html",
-          "url": "https://www.classic.com/m/lamborghini/gallardo/?status=all&sort=lotdate&page=3"
+          "bytes": 405771,
+          "file": "812_gts_all_p3.html",
+          "url": "https://www.classic.com/m/ferrari/812/gts/?status=all&sort=lotdate&page=3"
         },
         {
           "page": 4,
           "http": 200,
-          "bytes": 519721,
-          "file": "gallardo_all_p4.html",
-          "url": "https://www.classic.com/m/lamborghini/gallardo/?status=all&sort=lotdate&page=4"
+          "bytes": 409799,
+          "file": "812_gts_all_p4.html",
+          "url": "https://www.classic.com/m/ferrari/812/gts/?status=all&sort=lotdate&page=4"
         },
         {
           "page": 5,
           "http": 200,
-          "bytes": 530135,
-          "file": "gallardo_all_p5.html",
-          "url": "https://www.classic.com/m/lamborghini/gallardo/?status=all&sort=lotdate&page=5"
+          "bytes": 392819,
+          "file": "812_gts_all_p5.html",
+          "url": "https://www.classic.com/m/ferrari/812/gts/?status=all&sort=lotdate&page=5"
         },
         {
           "page": 6,
           "http": 200,
-          "bytes": 519350,
-          "file": "gallardo_all_p6.html",
-          "url": "https://www.classic.com/m/lamborghini/gallardo/?status=all&sort=lotdate&page=6"
+          "bytes": 376475,
+          "file": "812_gts_all_p6.html",
+          "url": "https://www.classic.com/m/ferrari/812/gts/?status=all&sort=lotdate&page=6"
         },
         {
           "page": 7,
           "http": 200,
-          "bytes": 520539,
-          "file": "gallardo_all_p7.html",
-          "url": "https://www.classic.com/m/lamborghini/gallardo/?status=all&sort=lotdate&page=7"
+          "bytes": 365327,
+          "file": "812_gts_all_p7.html",
+          "url": "https://www.classic.com/m/ferrari/812/gts/?status=all&sort=lotdate&page=7"
+        },
+        {
+          "page": 8,
+          "http": 200,
+          "bytes": 379801,
+          "file": "812_gts_all_p8.html",
+          "url": "https://www.classic.com/m/ferrari/812/gts/?status=all&sort=lotdate&page=8"
         }
       ],
       "http_ok": true,
       "error": null,
-      "items_seen": 168,
-      "rows_parsed": 118,
-      "stopped_reason": "all_dates_before_window_p7",
+      "items_seen": 192,
+      "rows_parsed": 101,
+      "stopped_reason": "all_dates_before_window_p8",
       "skip_counts": {
-        "skip_for_sale_or_active_auction": 50
+        "skip_for_sale_or_active_auction": 91
       }
     },
     {
-      "key": "revuelto_sold",
-      "make": "Lamborghini",
-      "family": "Revuelto",
-      "path": "/m/lamborghini/revuelto/?status=sold&sort=lotdate",
+      "key": "f12_sold",
+      "make": "Ferrari",
+      "family": "F12",
+      "path": "/m/ferrari/f12/?status=sold&sort=lotdate",
       "mode": "sold",
       "pages": [
         {
           "page": 1,
           "http": 200,
-          "bytes": 247060,
-          "file": "revuelto_sold_p1.html",
-          "url": "https://www.classic.com/m/lamborghini/revuelto/?status=sold&sort=lotdate"
+          "bytes": 422569,
+          "file": "f12_sold_p1.html",
+          "url": "https://www.classic.com/m/ferrari/f12/?status=sold&sort=lotdate"
+        },
+        {
+          "page": 2,
+          "http": 200,
+          "bytes": 262499,
+          "file": "f12_sold_p2.html",
+          "url": "https://www.classic.com/m/ferrari/f12/?status=sold&sort=lotdate&page=2"
         }
       ],
       "http_ok": true,
       "error": null,
-      "items_seen": 9,
-      "rows_parsed": 9,
-      "stopped_reason": "last_page_p1",
-      "skip_counts": {}
+      "items_seen": 31,
+      "rows_parsed": 22,
+      "stopped_reason": "all_dates_before_window_p2",
+      "skip_counts": {
+        "excluded_f12tdf": 9
+      }
     },
     {
-      "key": "revuelto_all",
-      "make": "Lamborghini",
-      "family": "Revuelto",
-      "path": "/m/lamborghini/revuelto/?status=all&sort=lotdate",
+      "key": "f12_all",
+      "make": "Ferrari",
+      "family": "F12",
+      "path": "/m/ferrari/f12/?status=all&sort=lotdate",
       "mode": "all",
       "pages": [
         {
           "page": 1,
           "http": 200,
-          "bytes": 420879,
-          "file": "revuelto_all_p1.html",
-          "url": "https://www.classic.com/m/lamborghini/revuelto/?status=all&sort=lotdate"
+          "bytes": 475983,
+          "file": "f12_all_p1.html",
+          "url": "https://www.classic.com/m/ferrari/f12/?status=all&sort=lotdate"
         },
         {
           "page": 2,
           "http": 200,
-          "bytes": 415619,
-          "file": "revuelto_all_p2.html",
-          "url": "https://www.classic.com/m/lamborghini/revuelto/?status=all&sort=lotdate&page=2"
+          "bytes": 461053,
+          "file": "f12_all_p2.html",
+          "url": "https://www.classic.com/m/ferrari/f12/?status=all&sort=lotdate&page=2"
         },
         {
           "page": 3,
           "http": 200,
-          "bytes": 418305,
-          "file": "revuelto_all_p3.html",
-          "url": "https://www.classic.com/m/lamborghini/revuelto/?status=all&sort=lotdate&page=3"
+          "bytes": 440110,
+          "file": "f12_all_p3.html",
+          "url": "https://www.classic.com/m/ferrari/f12/?status=all&sort=lotdate&page=3"
         },
         {
           "page": 4,
           "http": 200,
-          "bytes": 411220,
-          "file": "revuelto_all_p4.html",
-          "url": "https://www.classic.com/m/lamborghini/revuelto/?status=all&sort=lotdate&page=4"
+          "bytes": 440518,
+          "file": "f12_all_p4.html",
+          "url": "https://www.classic.com/m/ferrari/f12/?status=all&sort=lotdate&page=4"
         },
         {
           "page": 5,
           "http": 200,
-          "bytes": 413966,
-          "file": "revuelto_all_p5.html",
-          "url": "https://www.classic.com/m/lamborghini/revuelto/?status=all&sort=lotdate&page=5"
-        },
-        {
-          "page": 6,
-          "http": 200,
-          "bytes": 406019,
-          "file": "revuelto_all_p6.html",
-          "url": "https://www.classic.com/m/lamborghini/revuelto/?status=all&sort=lotdate&page=6"
+          "bytes": 432469,
+          "file": "f12_all_p5.html",
+          "url": "https://www.classic.com/m/ferrari/f12/?status=all&sort=lotdate&page=5"
         }
       ],
       "http_ok": true,
       "error": null,
-      "items_seen": 144,
-      "rows_parsed": 108,
-      "stopped_reason": "all_dates_before_window_p6",
+      "items_seen": 120,
+      "rows_parsed": 61,
+      "stopped_reason": "all_dates_before_window_p5",
       "skip_counts": {
-        "skip_for_sale_or_active_auction": 36
+        "skip_for_sale_or_active_auction": 39,
+        "excluded_f12tdf": 20
       }
     },
     {
-      "key": "aventador_sv_sold",
-      "make": "Lamborghini",
-      "family": "Aventador_SV",
-      "path": "/m/lamborghini/aventador/lp750-4-sv/?status=sold&sort=lotdate",
+      "key": "f12_berlinetta_sold",
+      "make": "Ferrari",
+      "family": "F12",
+      "path": "/m/ferrari/f12/berlinetta/?status=sold&sort=lotdate",
       "mode": "sold",
       "pages": [
         {
           "page": 1,
           "http": 200,
-          "bytes": 216677,
-          "file": "aventador_sv_sold_p1.html",
-          "url": "https://www.classic.com/m/lamborghini/aventador/lp750-4-sv/?status=sold&sort=lotdate"
+          "bytes": 301717,
+          "file": "f12_berlinetta_sold_p1.html",
+          "url": "https://www.classic.com/m/ferrari/f12/berlinetta/?status=sold&sort=lotdate"
         }
       ],
       "http_ok": true,
       "error": null,
-      "items_seen": 4,
-      "rows_parsed": 4,
-      "stopped_reason": "all_dates_before_window_p1",
-      "skip_counts": {}
-    },
-    {
-      "key": "aventador_sv_all",
-      "make": "Lamborghini",
-      "family": "Aventador_SV",
-      "path": "/m/lamborghini/aventador/lp750-4-sv/?status=all&sort=lotdate",
-      "mode": "all",
-      "pages": [
-        {
-          "page": 1,
-          "http": 200,
-          "bytes": 435273,
-          "file": "aventador_sv_all_p1.html",
-          "url": "https://www.classic.com/m/lamborghini/aventador/lp750-4-sv/?status=all&sort=lotdate"
-        },
-        {
-          "page": 2,
-          "http": 200,
-          "bytes": 376683,
-          "file": "aventador_sv_all_p2.html",
-          "url": "https://www.classic.com/m/lamborghini/aventador/lp750-4-sv/?status=all&sort=lotdate&page=2"
-        }
-      ],
-      "http_ok": true,
-      "error": null,
-      "items_seen": 46,
-      "rows_parsed": 38,
-      "stopped_reason": "all_dates_before_window_p2",
-      "skip_counts": {
-        "skip_for_sale_or_active_auction": 8
-      }
-    },
-    {
-      "key": "aventador_sv_rd_sold",
-      "make": "Lamborghini",
-      "family": "Aventador_SV",
-      "path": "/m/lamborghini/aventador/lp750-4-sv-roadster/?status=sold&sort=lotdate",
-      "mode": "sold",
-      "pages": [
-        {
-          "page": 1,
-          "http": 200,
-          "bytes": 187946,
-          "file": "aventador_sv_rd_sold_p1.html",
-          "url": "https://www.classic.com/m/lamborghini/aventador/lp750-4-sv-roadster/?status=sold&sort=lotdate"
-        }
-      ],
-      "http_ok": true,
-      "error": null,
-      "items_seen": 1,
-      "rows_parsed": 1,
+      "items_seen": 18,
+      "rows_parsed": 18,
       "stopped_reason": "last_page_p1",
       "skip_counts": {}
     },
     {
-      "key": "aventador_sv_rd_all",
-      "make": "Lamborghini",
-      "family": "Aventador_SV",
-      "path": "/m/lamborghini/aventador/lp750-4-sv-roadster/?status=all&sort=lotdate",
+      "key": "f12_berlinetta_all",
+      "make": "Ferrari",
+      "family": "F12",
+      "path": "/m/ferrari/f12/berlinetta/?status=all&sort=lotdate",
       "mode": "all",
       "pages": [
         {
           "page": 1,
           "http": 200,
-          "bytes": 367763,
-          "file": "aventador_sv_rd_all_p1.html",
-          "url": "https://www.classic.com/m/lamborghini/aventador/lp750-4-sv-roadster/?status=all&sort=lotdate"
-        }
-      ],
-      "http_ok": true,
-      "error": null,
-      "items_seen": 20,
-      "rows_parsed": 17,
-      "stopped_reason": "last_page_p1",
-      "skip_counts": {
-        "not_aventador_sv": 1,
-        "skip_for_sale_or_active_auction": 2
-      }
-    },
-    {
-      "key": "aventador_svj_sold",
-      "make": "Lamborghini",
-      "family": "Aventador_SVJ",
-      "path": "/m/lamborghini/aventador/lp770-4-svj/?status=sold&sort=lotdate",
-      "mode": "sold",
-      "pages": [
-        {
-          "page": 1,
-          "http": 200,
-          "bytes": 226211,
-          "file": "aventador_svj_sold_p1.html",
-          "url": "https://www.classic.com/m/lamborghini/aventador/lp770-4-svj/?status=sold&sort=lotdate"
-        }
-      ],
-      "http_ok": true,
-      "error": null,
-      "items_seen": 5,
-      "rows_parsed": 5,
-      "stopped_reason": "last_page_p1",
-      "skip_counts": {}
-    },
-    {
-      "key": "aventador_svj_all",
-      "make": "Lamborghini",
-      "family": "Aventador_SVJ",
-      "path": "/m/lamborghini/aventador/lp770-4-svj/?status=all&sort=lotdate",
-      "mode": "all",
-      "pages": [
-        {
-          "page": 1,
-          "http": 200,
-          "bytes": 431984,
-          "file": "aventador_svj_all_p1.html",
-          "url": "https://www.classic.com/m/lamborghini/aventador/lp770-4-svj/?status=all&sort=lotdate"
+          "bytes": 408711,
+          "file": "f12_berlinetta_all_p1.html",
+          "url": "https://www.classic.com/m/ferrari/f12/berlinetta/?status=all&sort=lotdate"
         },
         {
           "page": 2,
           "http": 200,
-          "bytes": 383170,
-          "file": "aventador_svj_all_p2.html",
-          "url": "https://www.classic.com/m/lamborghini/aventador/lp770-4-svj/?status=all&sort=lotdate&page=2"
-        }
-      ],
-      "http_ok": true,
-      "error": null,
-      "items_seen": 45,
-      "rows_parsed": 37,
-      "stopped_reason": "all_dates_before_window_p2",
-      "skip_counts": {
-        "skip_for_sale_or_active_auction": 8
-      }
-    },
-    {
-      "key": "aventador_svj_rd_sold",
-      "make": "Lamborghini",
-      "family": "Aventador_SVJ",
-      "path": "/m/lamborghini/aventador/lp770-4-svj-roadster/?status=sold&sort=lotdate",
-      "mode": "sold",
-      "pages": [
-        {
-          "page": 1,
-          "http": 200,
-          "bytes": 197539,
-          "file": "aventador_svj_rd_sold_p1.html",
-          "url": "https://www.classic.com/m/lamborghini/aventador/lp770-4-svj-roadster/?status=sold&sort=lotdate"
-        }
-      ],
-      "http_ok": true,
-      "error": null,
-      "items_seen": 2,
-      "rows_parsed": 2,
-      "stopped_reason": "last_page_p1",
-      "skip_counts": {}
-    },
-    {
-      "key": "aventador_svj_rd_all",
-      "make": "Lamborghini",
-      "family": "Aventador_SVJ",
-      "path": "/m/lamborghini/aventador/lp770-4-svj-roadster/?status=all&sort=lotdate",
-      "mode": "all",
-      "pages": [
-        {
-          "page": 1,
-          "http": 200,
-          "bytes": 437941,
-          "file": "aventador_svj_rd_all_p1.html",
-          "url": "https://www.classic.com/m/lamborghini/aventador/lp770-4-svj-roadster/?status=all&sort=lotdate"
-        },
-        {
-          "page": 2,
-          "http": 200,
-          "bytes": 294821,
-          "file": "aventador_svj_rd_all_p2.html",
-          "url": "https://www.classic.com/m/lamborghini/aventador/lp770-4-svj-roadster/?status=all&sort=lotdate&page=2"
-        }
-      ],
-      "http_ok": true,
-      "error": null,
-      "items_seen": 36,
-      "rows_parsed": 27,
-      "stopped_reason": "all_dates_before_window_p2",
-      "skip_counts": {
-        "skip_for_sale_or_active_auction": 9
-      }
-    },
-    {
-      "key": "temerario_market",
-      "make": "Lamborghini",
-      "family": "Temerario",
-      "path": "/m/lamborghini/temerario/?status=all&sort=lotdate",
-      "mode": "all",
-      "pages": [
-        {
-          "page": 1,
-          "http": 404,
-          "bytes": 30682,
-          "file": "temerario_market_p1.html",
-          "url": "https://www.classic.com/m/lamborghini/temerario/?status=all&sort=lotdate"
-        }
-      ],
-      "http_ok": false,
-      "error": "HTTP 404 size=30682",
-      "items_seen": 0,
-      "rows_parsed": 0,
-      "stopped_reason": "bad_response_p1",
-      "skip_counts": {}
-    },
-    {
-      "key": "temerario_search_sold",
-      "make": "Lamborghini",
-      "family": "Temerario",
-      "path": "/search/?q=%22Temerario%22&status=sold&sort=lotdate",
-      "mode": "sold",
-      "pages": [
-        {
-          "page": 1,
-          "http": 200,
-          "bytes": 65971,
-          "file": "temerario_search_sold_p1.html",
-          "url": "https://www.classic.com/search/?q=%22Temerario%22&status=sold&sort=lotdate"
-        }
-      ],
-      "http_ok": true,
-      "error": null,
-      "items_seen": 0,
-      "rows_parsed": 0,
-      "stopped_reason": "no_items_p1",
-      "skip_counts": {}
-    },
-    {
-      "key": "temerario_search_all",
-      "make": "Lamborghini",
-      "family": "Temerario",
-      "path": "/search/?q=%22Temerario%22&status=all&sort=lotdate",
-      "mode": "all",
-      "pages": [
-        {
-          "page": 1,
-          "http": 200,
-          "bytes": 65971,
-          "file": "temerario_search_all_p1.html",
-          "url": "https://www.classic.com/search/?q=%22Temerario%22&status=all&sort=lotdate"
-        }
-      ],
-      "http_ok": true,
-      "error": null,
-      "items_seen": 0,
-      "rows_parsed": 0,
-      "stopped_reason": "no_items_p1",
-      "skip_counts": {}
-    },
-    {
-      "key": "temerario_search_q2",
-      "make": "Lamborghini",
-      "family": "Temerario",
-      "path": "/search/?q=lamborghini+temerario&status=sold&sort=lotdate",
-      "mode": "sold",
-      "pages": [
-        {
-          "page": 1,
-          "http": 200,
-          "bytes": 296751,
-          "file": "temerario_search_q2_p1.html",
-          "url": "https://www.classic.com/search/?q=lamborghini+temerario&status=sold&sort=lotdate"
-        },
-        {
-          "page": 2,
-          "http": 200,
-          "bytes": 312072,
-          "file": "temerario_search_q2_p2.html",
-          "url": "https://www.classic.com/search/?q=lamborghini+temerario&status=sold&sort=lotdate&page=2"
+          "bytes": 396963,
+          "file": "f12_berlinetta_all_p2.html",
+          "url": "https://www.classic.com/m/ferrari/f12/berlinetta/?status=all&sort=lotdate&page=2"
         },
         {
           "page": 3,
           "http": 200,
-          "bytes": 313747,
-          "file": "temerario_search_q2_p3.html",
-          "url": "https://www.classic.com/search/?q=lamborghini+temerario&status=sold&sort=lotdate&page=3"
+          "bytes": 382180,
+          "file": "f12_berlinetta_all_p3.html",
+          "url": "https://www.classic.com/m/ferrari/f12/berlinetta/?status=all&sort=lotdate&page=3"
         },
         {
           "page": 4,
           "http": 200,
-          "bytes": 312934,
-          "file": "temerario_search_q2_p4.html",
-          "url": "https://www.classic.com/search/?q=lamborghini+temerario&status=sold&sort=lotdate&page=4"
-        },
-        {
-          "page": 5,
-          "http": 200,
-          "bytes": 313564,
-          "file": "temerario_search_q2_p5.html",
-          "url": "https://www.classic.com/search/?q=lamborghini+temerario&status=sold&sort=lotdate&page=5"
-        },
-        {
-          "page": 6,
-          "http": 200,
-          "bytes": 313998,
-          "file": "temerario_search_q2_p6.html",
-          "url": "https://www.classic.com/search/?q=lamborghini+temerario&status=sold&sort=lotdate&page=6"
+          "bytes": 374390,
+          "file": "f12_berlinetta_all_p4.html",
+          "url": "https://www.classic.com/m/ferrari/f12/berlinetta/?status=all&sort=lotdate&page=4"
         }
       ],
       "http_ok": true,
       "error": null,
-      "items_seen": 144,
-      "rows_parsed": 0,
-      "stopped_reason": "page_fully_old_p6",
+      "items_seen": 96,
+      "rows_parsed": 61,
+      "stopped_reason": "all_dates_before_window_p4",
       "skip_counts": {
-        "not_temerario": 144
+        "skip_for_sale_or_active_auction": 35
       }
     }
   ],
   "dedupe_notes_sample": [
-    "dedupe ('url', 'https://www.classic.com/veh/2005-ford-gt-1fafp90s35y400970-nBwmq7W/'): https://www.classic.com/veh/2005-ford-gt-1fafp90s35y400970-nBwmq7W/ vs https://www.classic.com/veh/2005-ford-gt-1fafp90s35y400970-nBwmq7W/",
-    "dedupe ('url', 'https://www.classic.com/veh/2005-ford-gt-1fafp90s35y400970-nBwmq7W/'): https://www.classic.com/veh/2005-ford-gt-1fafp90s35y400970-nBwmq7W/ vs https://www.classic.com/veh/2005-ford-gt-1fafp90s35y400970-nBwmq7W/",
-    "dedupe ('url', 'https://www.classic.com/veh/2005-ford-gt-1fafp90s95y401895-WRG22Gp/'): https://www.classic.com/veh/2005-ford-gt-1fafp90s95y401895-WRG22Gp/ vs https://www.classic.com/veh/2005-ford-gt-1fafp90s95y401895-WRG22Gp/",
-    "dedupe ('url', 'https://www.classic.com/veh/2005-ford-gt-1fafp90s25y401589-4ayqAO4/'): https://www.classic.com/veh/2005-ford-gt-1fafp90s25y401589-4ayqAO4/ vs https://www.classic.com/veh/2005-ford-gt-1fafp90s25y401589-4ayqAO4/",
-    "dedupe ('url', 'https://www.classic.com/veh/2005-ford-gt-1fafp90s55y400582-45GdwkW/'): https://www.classic.com/veh/2005-ford-gt-1fafp90s55y400582-45GdwkW/ vs https://www.classic.com/veh/2005-ford-gt-1fafp90s55y400582-45GdwkW/",
-    "dedupe ('url', 'https://www.classic.com/veh/2005-ford-gt-1fafp90s35y400970-nBwmq7W/'): https://www.classic.com/veh/2005-ford-gt-1fafp90s35y400970-nBwmq7W/ vs https://www.classic.com/veh/2005-ford-gt-1fafp90s35y400970-nBwmq7W/",
-    "dedupe ('url', 'https://www.classic.com/veh/2005-ford-gt-1fafp90s65y401062-pdV7Kon/'): https://www.classic.com/veh/2005-ford-gt-1fafp90s65y401062-pdV7Kon/ vs https://www.classic.com/veh/2005-ford-gt-1fafp90s65y401062-pdV7Kon/",
-    "dedupe ('url', 'https://www.classic.com/veh/2005-ford-gt-1fafp90sx5y400805-nBrdLZn/'): https://www.classic.com/veh/2005-ford-gt-1fafp90sx5y400805-nBrdLZn/ vs https://www.classic.com/veh/2005-ford-gt-1fafp90sx5y400805-nBrdLZn/",
-    "dedupe ('url', 'https://www.classic.com/veh/2005-ford-gt-1fafp90s65y401062-pdV7Kon/'): https://www.classic.com/veh/2005-ford-gt-1fafp90s65y401062-pdV7Kon/ vs https://www.classic.com/veh/2005-ford-gt-1fafp90s65y401062-pdV7Kon/",
-    "dedupe ('url', 'https://www.classic.com/veh/2005-ford-gt-1fafp90sx5y401632-4oDP2Ln/'): https://www.classic.com/veh/2005-ford-gt-1fafp90sx5y401632-4oDP2Ln/ vs https://www.classic.com/veh/2005-ford-gt-1fafp90sx5y401632-4oDP2Ln/",
-    "dedupe ('url', 'https://www.classic.com/veh/2005-ford-gt-1fafp90s45y400136-WqAaVlW/'): https://www.classic.com/veh/2005-ford-gt-1fafp90s45y400136-WqAaVlW/ vs https://www.classic.com/veh/2005-ford-gt-1fafp90s45y400136-WqAaVlW/",
-    "dedupe ('url', 'https://www.classic.com/veh/2005-ford-gt-1fafp90s55y401070-n85yqLW/'): https://www.classic.com/veh/2005-ford-gt-1fafp90s55y401070-n85yqLW/ vs https://www.classic.com/veh/2005-ford-gt-1fafp90s55y401070-n85yqLW/",
-    "dedupe ('url', 'https://www.classic.com/veh/2005-ford-gt-1fafp90s85y400172-nwG0oyn/'): https://www.classic.com/veh/2005-ford-gt-1fafp90s85y400172-nwG0oyn/ vs https://www.classic.com/veh/2005-ford-gt-1fafp90s85y400172-nwG0oyn/",
-    "dedupe ('url', 'https://www.classic.com/veh/2005-ford-gt-1fafp90s25y401348-pJPwNVn/'): https://www.classic.com/veh/2005-ford-gt-1fafp90s25y401348-pJPwNVn/ vs https://www.classic.com/veh/2005-ford-gt-1fafp90s25y401348-pJPwNVn/",
-    "dedupe ('url', 'https://www.classic.com/veh/2005-ford-gt-1fafp90s45y401898-pgJGdwW/'): https://www.classic.com/veh/2005-ford-gt-1fafp90s45y401898-pgJGdwW/ vs https://www.classic.com/veh/2005-ford-gt-1fafp90s45y401898-pgJGdwW/",
-    "dedupe ('url', 'https://www.classic.com/veh/2005-ford-gt-1fafp90s25y401589-4ayqAO4/'): https://www.classic.com/veh/2005-ford-gt-1fafp90s25y401589-4ayqAO4/ vs https://www.classic.com/veh/2005-ford-gt-1fafp90s25y401589-4ayqAO4/",
-    "dedupe ('url', 'https://www.classic.com/veh/2005-ford-gt-1fafp90s35y400970-nBwmq7W/'): https://www.classic.com/veh/2005-ford-gt-1fafp90s35y400970-nBwmq7W/ vs https://www.classic.com/veh/2005-ford-gt-1fafp90s35y400970-nBwmq7W/",
-    "dedupe ('url', 'https://www.classic.com/veh/2005-ford-gt-1fafp90s25y401348-pJPwNVn/'): https://www.classic.com/veh/2005-ford-gt-1fafp90s25y401348-pJPwNVn/ vs https://www.classic.com/veh/2005-ford-gt-1fafp90s25y401348-pJPwNVn/",
-    "dedupe ('url', 'https://www.classic.com/veh/2005-ford-gt-1fafp90s25y400071-WLJLOk4/'): https://www.classic.com/veh/2005-ford-gt-1fafp90s25y400071-WLJLOk4/ vs https://www.classic.com/veh/2005-ford-gt-1fafp90s25y400071-WLJLOk4/",
-    "dedupe ('url', 'https://www.classic.com/veh/2005-ford-gt-1fafp90s45y400167-nObyAv4/'): https://www.classic.com/veh/2005-ford-gt-1fafp90s45y400167-nObyAv4/ vs https://www.classic.com/veh/2005-ford-gt-1fafp90s45y400167-nObyAv4/",
-    "dedupe ('url', 'https://www.classic.com/veh/2005-ford-gt-1fafp90s15y400868-Wq8J5Jn/'): https://www.classic.com/veh/2005-ford-gt-1fafp90s15y400868-Wq8J5Jn/ vs https://www.classic.com/veh/2005-ford-gt-1fafp90s15y400868-Wq8J5Jn/",
-    "dedupe ('url', 'https://www.classic.com/veh/2005-ford-gt-1fafp90s75y401412-WRegwen/'): https://www.classic.com/veh/2005-ford-gt-1fafp90s75y401412-WRegwen/ vs https://www.classic.com/veh/2005-ford-gt-1fafp90s75y401412-WRegwen/",
-    "dedupe ('url', 'https://www.classic.com/veh/2005-ford-gt-1fafp90s65y400946-p6my1VW/'): https://www.classic.com/veh/2005-ford-gt-1fafp90s65y400946-p6my1VW/ vs https://www.classic.com/veh/2005-ford-gt-1fafp90s65y400946-p6my1VW/",
-    "dedupe ('url', 'https://www.classic.com/veh/2005-ford-gt-1fafp90s15y401194-pERPaw4/'): https://www.classic.com/veh/2005-ford-gt-1fafp90s15y401194-pERPaw4/ vs https://www.classic.com/veh/2005-ford-gt-1fafp90s15y401194-pERPaw4/",
-    "dedupe ('url', 'https://www.classic.com/veh/2005-ford-gt-1fafp90sx5y400805-nBrdLZn/'): https://www.classic.com/veh/2005-ford-gt-1fafp90sx5y400805-nBrdLZn/ vs https://www.classic.com/veh/2005-ford-gt-1fafp90sx5y400805-nBrdLZn/",
-    "dedupe ('url', 'https://www.classic.com/veh/2005-ford-gt-1fafp90s45y400136-WqAaVlW/'): https://www.classic.com/veh/2005-ford-gt-1fafp90s45y400136-WqAaVlW/ vs https://www.classic.com/veh/2005-ford-gt-1fafp90s45y400136-WqAaVlW/",
-    "dedupe ('url', 'https://www.classic.com/veh/2005-ford-gt-1fafp90s75y401412-WRegwen/'): https://www.classic.com/veh/2005-ford-gt-1fafp90s75y401412-WRegwen/ vs https://www.classic.com/veh/2005-ford-gt-1fafp90s75y401412-WRegwen/",
-    "dedupe ('url', 'https://www.classic.com/veh/2005-ford-gt-1fafp90s85y400673-nXEwoBW/'): https://www.classic.com/veh/2005-ford-gt-1fafp90s85y400673-nXEwoBW/ vs https://www.classic.com/veh/2005-ford-gt-1fafp90s85y400673-nXEwoBW/",
-    "dedupe ('url', 'https://www.classic.com/veh/2005-ford-gt-1fafp90s05y400201-nwJONv4/'): https://www.classic.com/veh/2005-ford-gt-1fafp90s05y400201-nwJONv4/ vs https://www.classic.com/veh/2005-ford-gt-1fafp90s05y400201-nwJONv4/",
-    "dedupe ('url', 'https://www.classic.com/veh/2005-ford-gt-1fafp90s05y400232-pg9aP0n/'): https://www.classic.com/veh/2005-ford-gt-1fafp90s05y400232-pg9aP0n/ vs https://www.classic.com/veh/2005-ford-gt-1fafp90s05y400232-pg9aP0n/",
-    "dedupe ('url', 'https://www.classic.com/veh/2005-ford-gt-1fafp90s75y400311-nKPYVQW/'): https://www.classic.com/veh/2005-ford-gt-1fafp90s75y400311-nKPYVQW/ vs https://www.classic.com/veh/2005-ford-gt-1fafp90s75y400311-nKPYVQW/",
-    "dedupe ('url', 'https://www.classic.com/veh/2005-ford-gt-1fafp90s85y401063-WjDwvg4/'): https://www.classic.com/veh/2005-ford-gt-1fafp90s85y401063-WjDwvg4/ vs https://www.classic.com/veh/2005-ford-gt-1fafp90s85y401063-WjDwvg4/",
-    "dedupe ('url', 'https://www.classic.com/veh/2006-ford-gt-1fafp90s26y401433-WLJrxk4/'): https://www.classic.com/veh/2006-ford-gt-1fafp90s26y401433-WLJrxk4/ vs https://www.classic.com/veh/2006-ford-gt-1fafp90s26y401433-WLJrxk4/",
-    "dedupe ('url', 'https://www.classic.com/veh/2006-ford-gt-1fafp90s86y400464-pGADqgn/'): https://www.classic.com/veh/2006-ford-gt-1fafp90s86y400464-pGADqgn/ vs https://www.classic.com/veh/2006-ford-gt-1fafp90s86y400464-pGADqgn/",
-    "dedupe ('url', 'https://www.classic.com/veh/2006-ford-gt-1fafp90s26y401190-pJqMZ7W/'): https://www.classic.com/veh/2006-ford-gt-1fafp90s26y401190-pJqMZ7W/ vs https://www.classic.com/veh/2006-ford-gt-1fafp90s26y401190-pJqMZ7W/",
-    "dedupe ('url', 'https://www.classic.com/veh/2006-ford-gt-1fafp90s36y402042-4ymD7L4/'): https://www.classic.com/veh/2006-ford-gt-1fafp90s36y402042-4ymD7L4/ vs https://www.classic.com/veh/2006-ford-gt-1fafp90s36y402042-4ymD7L4/",
-    "dedupe ('url', 'https://www.classic.com/veh/2006-ford-gt-heritage-edition-1fafp90s06y401706-n1yBVgn/'): https://www.classic.com/veh/2006-ford-gt-heritage-edition-1fafp90s06y401706-n1yBVgn/ vs https://www.classic.com/veh/2006-ford-gt-heritage-edition-1fafp90s06y401706-n1yBVgn/",
-    "dedupe ('url', 'https://www.classic.com/veh/2006-ford-gt-1fafp90s56y400101-pdXDKOp/'): https://www.classic.com/veh/2006-ford-gt-1fafp90s56y400101-pdXDKOp/ vs https://www.classic.com/veh/2006-ford-gt-1fafp90s56y400101-pdXDKOp/",
-    "dedupe ('url', 'https://www.classic.com/veh/2006-ford-gt-heritage-edition-1fafp90s36y400307-4rQXz9p/'): https://www.classic.com/veh/2006-ford-gt-heritage-edition-1fafp90s36y400307-4rQXz9p/ vs https://www.classic.com/veh/2006-ford-gt-heritage-edition-1fafp90s36y400307-4rQXz9p/",
-    "dedupe ('url', 'https://www.classic.com/veh/2006-ford-gt-1fafp90sx6y401048-p6qV7jW/'): https://www.classic.com/veh/2006-ford-gt-1fafp90sx6y401048-p6qV7jW/ vs https://www.classic.com/veh/2006-ford-gt-1fafp90sx6y401048-p6qV7jW/"
+    "dedupe ('url', 'https://www.classic.com/veh/2022-ferrari-812-gts-zff97cma5n0279980-pJd8y7n/'): https://www.classic.com/veh/2022-ferrari-812-gts-zff97cma5n0279980-pJd8y7n/ vs https://www.classic.com/veh/2022-ferrari-812-gts-zff97cma5n0279980-pJd8y7n/",
+    "dedupe ('url', 'https://www.classic.com/veh/2018-ferrari-812-superfast-zff83cla7j0237040-nlamAJW/'): https://www.classic.com/veh/2018-ferrari-812-superfast-zff83cla7j0237040-nlamAJW/ vs https://www.classic.com/veh/2018-ferrari-812-superfast-zff83cla7j0237040-nlamAJW/",
+    "dedupe ('url', 'https://www.classic.com/veh/2023-ferrari-812-gts-zff97cma4p0291895-nKxEVgW/'): https://www.classic.com/veh/2023-ferrari-812-gts-zff97cma4p0291895-nKxEVgW/ vs https://www.classic.com/veh/2023-ferrari-812-gts-zff97cma4p0291895-nKxEVgW/",
+    "dedupe ('url', 'https://www.classic.com/veh/2021-ferrari-812-gts-zff97cma3m0262237-4oaPzvW/'): https://www.classic.com/veh/2021-ferrari-812-gts-zff97cma3m0262237-4oaPzvW/ vs https://www.classic.com/veh/2021-ferrari-812-gts-zff97cma3m0262237-4oaPzvW/",
+    "dedupe ('url', 'https://www.classic.com/veh/2021-ferrari-812-gts-zff97cma3m0258219-Wqyx0XW/'): https://www.classic.com/veh/2021-ferrari-812-gts-zff97cma3m0258219-Wqyx0XW/ vs https://www.classic.com/veh/2021-ferrari-812-gts-zff97cma3m0258219-Wqyx0XW/",
+    "dedupe ('url', 'https://www.classic.com/veh/2023-ferrari-812-gts-zff97cma9p0298258-nOxm3AW/'): https://www.classic.com/veh/2023-ferrari-812-gts-zff97cma9p0298258-nOxm3AW/ vs https://www.classic.com/veh/2023-ferrari-812-gts-zff97cma9p0298258-nOxm3AW/",
+    "dedupe ('url', 'https://www.classic.com/veh/2021-ferrari-812-gts-zff97cma0m0260347-47rePLp/'): https://www.classic.com/veh/2021-ferrari-812-gts-zff97cma0m0260347-47rePLp/ vs https://www.classic.com/veh/2021-ferrari-812-gts-zff97cma0m0260347-47rePLp/",
+    "dedupe ('url', 'https://www.classic.com/veh/2019-ferrari-812-superfast-zff83cla3k0246223-nOxL12W/'): https://www.classic.com/veh/2019-ferrari-812-superfast-zff83cla3k0246223-nOxL12W/ vs https://www.classic.com/veh/2019-ferrari-812-superfast-zff83cla3k0246223-nOxL12W/",
+    "dedupe ('url', 'https://www.classic.com/veh/2023-ferrari-812-gts-zff97cma9p0298258-nOxm3AW/'): https://www.classic.com/veh/2023-ferrari-812-gts-zff97cma9p0298258-nOxm3AW/ vs https://www.classic.com/veh/2023-ferrari-812-gts-zff97cma9p0298258-nOxm3AW/",
+    "dedupe ('url', 'https://www.classic.com/veh/2021-ferrari-812-gts-zff97cma2m0262679-WY09mvn/'): https://www.classic.com/veh/2021-ferrari-812-gts-zff97cma2m0262679-WY09mvn/ vs https://www.classic.com/veh/2021-ferrari-812-gts-zff97cma2m0262679-WY09mvn/",
+    "dedupe ('url', 'https://www.classic.com/veh/2023-ferrari-812-competizione-zff03tla4p0288873-4rmRBYp/'): https://www.classic.com/veh/2023-ferrari-812-competizione-zff03tla4p0288873-4rmRBYp/ vs https://www.classic.com/veh/2023-ferrari-812-competizione-zff03tla4p0288873-4rmRBYp/",
+    "dedupe ('url', 'https://www.classic.com/veh/2024-ferrari-812-competizione-a-zff04tma6r0301363-47kA8l4/'): https://www.classic.com/veh/2024-ferrari-812-competizione-a-zff04tma6r0301363-47kA8l4/ vs https://www.classic.com/veh/2024-ferrari-812-competizione-a-zff04tma6r0301363-47kA8l4/",
+    "dedupe ('url', 'https://www.classic.com/veh/2019-ferrari-812-superfast-zff83cla8k0241664-4yo1jqW/'): https://www.classic.com/veh/2019-ferrari-812-superfast-zff83cla8k0241664-4yo1jqW/ vs https://www.classic.com/veh/2019-ferrari-812-superfast-zff83cla8k0241664-4yo1jqW/",
+    "dedupe ('url', 'https://www.classic.com/veh/2020-ferrari-812-superfast-zff83cla1l0249882-pzm0v3W/'): https://www.classic.com/veh/2020-ferrari-812-superfast-zff83cla1l0249882-pzm0v3W/ vs https://www.classic.com/veh/2020-ferrari-812-superfast-zff83cla1l0249882-pzm0v3W/",
+    "dedupe ('url', 'https://www.classic.com/veh/2024-ferrari-812-competizione-zff03tla2r0303177-4Av5yzn/'): https://www.classic.com/veh/2024-ferrari-812-competizione-zff03tla2r0303177-4Av5yzn/ vs https://www.classic.com/veh/2024-ferrari-812-competizione-zff03tla2r0303177-4Av5yzn/",
+    "dedupe ('url', 'https://www.classic.com/veh/2022-ferrari-812-gts-zff97cma1n0271715-WNGe2Ep/'): https://www.classic.com/veh/2022-ferrari-812-gts-zff97cma1n0271715-WNGe2Ep/ vs https://www.classic.com/veh/2022-ferrari-812-gts-zff97cma1n0271715-WNGe2Ep/",
+    "dedupe ('url', 'https://www.classic.com/veh/2023-ferrari-812-gts-zff97cma3p0298918-pE7Pden/'): https://www.classic.com/veh/2023-ferrari-812-gts-zff97cma3p0298918-pE7Pden/ vs https://www.classic.com/veh/2023-ferrari-812-gts-zff97cma3p0298918-pE7Pden/",
+    "dedupe ('url', 'https://www.classic.com/veh/2019-ferrari-812-superfast-zff83cla4k0242326-nXwPOk4/'): https://www.classic.com/veh/2019-ferrari-812-superfast-zff83cla4k0242326-nXwPOk4/ vs https://www.classic.com/veh/2019-ferrari-812-superfast-zff83cla4k0242326-nXwPOk4/",
+    "dedupe ('url', 'https://www.classic.com/veh/2021-ferrari-812-gts-zff97cma5m0265723-Wxm6Exp/'): https://www.classic.com/veh/2021-ferrari-812-gts-zff97cma5m0265723-Wxm6Exp/ vs https://www.classic.com/veh/2021-ferrari-812-gts-zff97cma5m0265723-Wxm6Exp/",
+    "dedupe ('url', 'https://www.classic.com/veh/2022-ferrari-812-gts-zff97cma0n0280700-p6mdD3W/'): https://www.classic.com/veh/2022-ferrari-812-gts-zff97cma0n0280700-p6mdD3W/ vs https://www.classic.com/veh/2022-ferrari-812-gts-zff97cma0n0280700-p6mdD3W/",
+    "dedupe ('url', 'https://www.classic.com/veh/2022-ferrari-812-gts-zff97cma1n0271715-WNGe2Ep/'): https://www.classic.com/veh/2022-ferrari-812-gts-zff97cma1n0271715-WNGe2Ep/ vs https://www.classic.com/veh/2022-ferrari-812-gts-zff97cma1n0271715-WNGe2Ep/",
+    "dedupe ('url', 'https://www.classic.com/veh/2022-ferrari-812-competizione-zff03tmt9n0278336-pE7jGDn/'): https://www.classic.com/veh/2022-ferrari-812-competizione-zff03tmt9n0278336-pE7jGDn/ vs https://www.classic.com/veh/2022-ferrari-812-competizione-zff03tmt9n0278336-pE7jGDn/",
+    "dedupe ('url', 'https://www.classic.com/veh/2022-ferrari-812-gts-zff97cmaxn0274015-nBOmPQW/'): https://www.classic.com/veh/2022-ferrari-812-gts-zff97cmaxn0274015-nBOmPQW/ vs https://www.classic.com/veh/2022-ferrari-812-gts-zff97cmaxn0274015-nBOmPQW/",
+    "dedupe ('url', 'https://www.classic.com/veh/2021-ferrari-812-gts-zff97cma5m0267441-n36K9Q4/'): https://www.classic.com/veh/2021-ferrari-812-gts-zff97cma5m0267441-n36K9Q4/ vs https://www.classic.com/veh/2021-ferrari-812-gts-zff97cma5m0267441-n36K9Q4/",
+    "dedupe ('url', 'https://www.classic.com/veh/2022-ferrari-812-gts-zff97cma7n0280368-pJQob7W/'): https://www.classic.com/veh/2022-ferrari-812-gts-zff97cma7n0280368-pJQob7W/ vs https://www.classic.com/veh/2022-ferrari-812-gts-zff97cma7n0280368-pJQob7W/",
+    "dedupe ('url', 'https://www.classic.com/veh/2019-ferrari-812-superfast-zff83cla1k0245281-nlK61V4/'): https://www.classic.com/veh/2019-ferrari-812-superfast-zff83cla1k0245281-nlK61V4/ vs https://www.classic.com/veh/2019-ferrari-812-superfast-zff83cla1k0245281-nlK61V4/",
+    "dedupe ('url', 'https://www.classic.com/veh/2019-ferrari-812-superfast-zff83cla2k0241675-p6k9RO4/'): https://www.classic.com/veh/2019-ferrari-812-superfast-zff83cla2k0241675-p6k9RO4/ vs https://www.classic.com/veh/2019-ferrari-812-superfast-zff83cla2k0241675-p6k9RO4/",
+    "dedupe ('url', 'https://www.classic.com/veh/2019-ferrari-812-superfast-zff83cmb000249862-n85LV0W/'): https://www.classic.com/veh/2019-ferrari-812-superfast-zff83cmb000249862-n85LV0W/ vs https://www.classic.com/veh/2019-ferrari-812-superfast-zff83cmb000249862-n85LV0W/",
+    "dedupe ('url', 'https://www.classic.com/veh/2021-ferrari-812-gts-zff97cma0m0261174-Wj3Mjqp/'): https://www.classic.com/veh/2021-ferrari-812-gts-zff97cma0m0261174-Wj3Mjqp/ vs https://www.classic.com/veh/2021-ferrari-812-gts-zff97cma0m0261174-Wj3Mjqp/",
+    "dedupe ('url', 'https://www.classic.com/veh/2023-ferrari-812-gts-zff97cma4p0291895-nKxEVgW/'): https://www.classic.com/veh/2023-ferrari-812-gts-zff97cma4p0291895-nKxEVgW/ vs https://www.classic.com/veh/2023-ferrari-812-gts-zff97cma4p0291895-nKxEVgW/",
+    "dedupe ('url', 'https://www.classic.com/veh/2023-ferrari-812-competizione-zff03tmb000286622-47kYNe4/'): https://www.classic.com/veh/2023-ferrari-812-competizione-zff03tmb000286622-47kYNe4/ vs https://www.classic.com/veh/2023-ferrari-812-competizione-zff03tmb000286622-47kYNe4/",
+    "dedupe ('url', 'https://www.classic.com/veh/2023-ferrari-812-gts-zff97cmaxp0302348-n2Q5g94/'): https://www.classic.com/veh/2023-ferrari-812-gts-zff97cmaxp0302348-n2Q5g94/ vs https://www.classic.com/veh/2023-ferrari-812-gts-zff97cmaxp0302348-n2Q5g94/",
+    "dedupe ('url', 'https://www.classic.com/veh/2023-ferrari-812-gts-zff97cma8p0297280-Wj15eln/'): https://www.classic.com/veh/2023-ferrari-812-gts-zff97cma8p0297280-Wj15eln/ vs https://www.classic.com/veh/2023-ferrari-812-gts-zff97cma8p0297280-Wj15eln/",
+    "dedupe ('url', 'https://www.classic.com/veh/2020-ferrari-812-superfast-zff83cmj000253195-pzOQPx4/'): https://www.classic.com/veh/2020-ferrari-812-superfast-zff83cmj000253195-pzOQPx4/ vs https://www.classic.com/veh/2020-ferrari-812-superfast-zff83cmj000253195-pzOQPx4/",
+    "dedupe ('url', 'https://www.classic.com/veh/2021-ferrari-812-gts-zff97cma3m0267101-nKxMZ8W/'): https://www.classic.com/veh/2021-ferrari-812-gts-zff97cma3m0267101-nKxMZ8W/ vs https://www.classic.com/veh/2021-ferrari-812-gts-zff97cma3m0267101-nKxMZ8W/",
+    "dedupe ('url', 'https://www.classic.com/veh/2021-ferrari-812-superfast-zff83cla8m0266535-4VNey24/'): https://www.classic.com/veh/2021-ferrari-812-superfast-zff83cla8m0266535-4VNey24/ vs https://www.classic.com/veh/2021-ferrari-812-superfast-zff83cla8m0266535-4VNey24/",
+    "dedupe ('url', 'https://www.classic.com/veh/2021-ferrari-812-gts-zff97cma0m0264012-pPgJQ3W/'): https://www.classic.com/veh/2021-ferrari-812-gts-zff97cma0m0264012-pPgJQ3W/ vs https://www.classic.com/veh/2021-ferrari-812-gts-zff97cma0m0264012-pPgJQ3W/",
+    "dedupe ('url', 'https://www.classic.com/veh/2023-ferrari-812-gts-zff97cma4p0291895-nKxEVgW/'): https://www.classic.com/veh/2023-ferrari-812-gts-zff97cma4p0291895-nKxEVgW/ vs https://www.classic.com/veh/2023-ferrari-812-gts-zff97cma4p0291895-nKxEVgW/",
+    "dedupe ('url', 'https://www.classic.com/veh/2022-ferrari-812-gts-zff97cma1n0271715-WNGe2Ep/'): https://www.classic.com/veh/2022-ferrari-812-gts-zff97cma1n0271715-WNGe2Ep/ vs https://www.classic.com/veh/2022-ferrari-812-gts-zff97cma1n0271715-WNGe2Ep/",
+    "dedupe ('url', 'https://www.classic.com/veh/2018-ferrari-812-superfast-zff83cla2j0232490-p6mJNGW/'): https://www.classic.com/veh/2018-ferrari-812-superfast-zff83cla2j0232490-p6mJNGW/ vs https://www.classic.com/veh/2018-ferrari-812-superfast-zff83cla2j0232490-p6mJNGW/"
   ],
-  "dedupe_notes_count": 431,
+  "dedupe_notes_count": 319,
   "output_files": [
     "/home/box/agent-data/projects/car-trends-overview/data/backfill/classic_historical_90d.csv",
     "/home/box/agent-data/projects/car-trends-overview/data/backfill/classic_historical_undated.csv",
     "/home/box/agent-data/projects/car-trends-overview/data/backfill/classic_historical_90d_summary.json",
     "/workspace/classic-historical-90d/classic_historical_90d.csv",
-    "/workspace/classic-historical-90d/classic_rollforward_new_rows_90d.csv",
-    "/workspace/classic-historical-90d/temerario_auction_comps_optional.json"
+    "/workspace/classic-historical-90d/classic_812_f12_90d.csv"
   ],
   "rules": [
     "Never invent prices/dates/miles",
-    "Refreshed rows dated outside 2026-06-17..2026-09-15 dropped",
-    "REPLACE Gen1/Gen2/new families; keep other old families",
+    "New rows dated outside 2026-06-17..2026-09-15 dropped",
+    "APPEND new families; keep old families",
     "Dedupe by listing_url / vin+date",
-    "Exclude SF90 XX; GT40/replicas/Mustang/MK II race; Aventador Ultimae/base S from SV",
-    "Temerario: Classic empty; optional BaT comps documented separately (not as Classic rows)",
-    "Label Classic last_ask vs sold clearly",
+    "Exclude SF90 XX; Aventador Ultimae/base S from SV; require SV/SVJ signals",
+    "Temerario: Classic path 404 / zero listings",
+    "Prefer US/Canada noted; non-US kept with note",
     "Do NOT invent retail daily ask medians"
   ],
-  "generated_at": "2026-09-15T09:16:55.771684-04:00",
-  "summary_recounted_at": "2026-09-15T09:17:22.024412-04:00"
+  "generated_at": "2026-09-15T10:12:19.505740-04:00"
 }

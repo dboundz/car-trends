@@ -1,7 +1,9 @@
 {
   "snapshot_date": "2026-09-15",
-  "total_rows": 871,
+  "total_rows": 1116,
   "families": {
+    "SF90": 120,
+    "296": 133,
     "488": 230,
     "F8": 145,
     "458": 72,
@@ -9,8 +11,8 @@
     "360": 68,
     "355": 19,
     "348": 5,
-    "SF90": 120,
-    "296": 133
+    "812": 194,
+    "F12": 51
   },
   "variants": {
     "296_coupe": {
@@ -111,6 +113,27 @@
       "max_ask": 549898,
       "median_miles": 10853
     },
+    "812_coupe": {
+      "count": 68,
+      "median_ask": 599900,
+      "min_ask": 279000,
+      "max_ask": 4100894,
+      "median_miles": 6734
+    },
+    "812_spider": {
+      "count": 126,
+      "median_ask": 899900,
+      "min_ask": 619675,
+      "max_ask": 1399990,
+      "median_miles": 2637
+    },
+    "F12_coupe": {
+      "count": 51,
+      "median_ask": 579900,
+      "min_ask": 275000,
+      "max_ask": 1149063,
+      "median_miles": 12231
+    },
     "F430_coupe": {
       "count": 30,
       "median_ask": 254814,
@@ -154,25 +177,24 @@
       "median_miles": 867
     }
   },
-  "sf90_296_baseline": {
-    "approved": 149,
-    "classic": 454,
+  "baseline_812_f12": {
+    "approved": 138,
+    "classic": 512,
     "carscom": 72,
     "dupont": 0,
-    "cargurus": 70,
-    "sf90_296_unique": 253,
+    "cargurus": 17,
+    "812_f12_unique": 245,
     "by_variant": {
-      "SF90_coupe": 57,
-      "SF90_spider": 63,
-      "296_coupe": 67,
-      "296_spider": 66
+      "812_coupe": 68,
+      "812_spider": 126,
+      "F12_coupe": 51
     }
   },
   "sources": {
-    "Classic.com": 337,
-    "Cars.com": 121,
-    "CarGurus": 46,
-    "Ferrari Approved (preowned.ferrari.com)": 358,
+    "Cars.com": 162,
+    "Classic.com": 405,
+    "Ferrari Approved (preowned.ferrari.com)": 493,
+    "CarGurus": 47,
     "dupontregistry": 9
   }
 }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-15T13:48:25.822410Z",
+  "generated_at": "2026-09-15T14:15:15.568844Z",
   "as_of": "2026-09-15",
   "windows": [
     "7d",
@@ -8,14 +8,14 @@
   "geography": "US + Canada only",
   "overall": {
     "headline": "Exotics desk: asks flat -0.1% cross-brand",
-    "summary": "As of 2026-09-15, tracked Ferrari / McLaren / Lamborghini / Ford GT US+Canada asks are flat on a ~7-day read (-0.1% median of brand medians). Inventory Δ across the board: +911.",
-    "take_short": "-0.1% cross-brand · inv Δ +911",
+    "summary": "As of 2026-09-15, tracked Ferrari / McLaren / Lamborghini / Ford GT US+Canada asks are flat on a ~7-day read (-0.1% median of brand medians). Inventory Δ across the board: +1141.",
+    "take_short": "-0.1% cross-brand · inv Δ +1141",
     "bullets": [
       "Softest ~7d ask move: lamborghini -2.5%",
       "Firmest: ford +4.0%",
-      "Cross-brand inventory Δ sum: +911 listings",
+      "Cross-brand inventory Δ sum: +1141 listings",
       "Cross-brand median ask Δ: -0.1%",
-      "Auction vs retail: No Reserve: 5k-Mile 2018 Ferrari 488 Spider bid $210,000 vs ask $417,895"
+      "Auction vs retail: No Reserve: 5k-Mile 2018 Ferrari 488 Spider bid $250,000 vs ask $417,895"
     ],
     "metrics": {
       "by_window": {
@@ -25,12 +25,12 @@
               "brand": "ferrari",
               "median_ask_pct": 0.0,
               "median_ask_delta": 4587,
-              "median_ask_pct_raw_mix": 5.42,
-              "count_delta": 319,
-              "count": 852,
+              "median_ask_pct_raw_mix": 16.26,
+              "count_delta": 549,
+              "count": 1082,
               "prior_date": "2026-09-08",
               "span_days": 7,
-              "composition_note": "new variants: 296 Coupe, 296 Spider, SF90 Coupe, SF90 Spider; inventory Δ +319"
+              "composition_note": "new variants: 296 Coupe, 296 Spider, 812 Coupe, 812 Spider, F12 Coupe, SF90 Coupe; inventory Δ +549"
             },
             {
               "brand": "mclaren",
@@ -67,7 +67,7 @@
             }
           ],
           "median_ask_pct_cross": -0.1,
-          "inventory_delta_sum": 911
+          "inventory_delta_sum": 1141
         },
         "14d": {
           "brands": [
@@ -75,16 +75,16 @@
               "brand": "ferrari",
               "median_ask_pct": 3.17,
               "median_ask_delta": 14150,
-              "median_ask_pct_raw_mix": 1.4,
-              "count_delta": 738,
-              "count": 852,
+              "median_ask_pct_raw_mix": 11.83,
+              "count_delta": 968,
+              "count": 1082,
               "prior_date": "2026-09-03",
               "span_days": 12,
-              "composition_note": "new variants: 296 Coupe, 296 Spider, 348 Spider, 348 TS, 355 Berlinetta, 355 GTS; inventory Δ +738"
+              "composition_note": "new variants: 296 Coupe, 296 Spider, 348 Spider, 348 TS, 355 Berlinetta, 355 GTS; inventory Δ +968"
             }
           ],
           "median_ask_pct_cross": 3.17,
-          "inventory_delta_sum": 738
+          "inventory_delta_sum": 968
         }
       },
       "as_of": "2026-09-15",
@@ -103,17 +103,17 @@
       "brand": "Ferrari",
       "brand_key": "ferrari",
       "headline": "Ferrari flat: 0.0% variant-median ask · 7d",
-      "summary": "As of 2026-09-15, Ferrari US/Canada tracked inventory sits at 852 cars (Δ +319 vs 2026-09-08). Variant-median ask 0.0% over ~7d (LFL $404,475, +$4,587 / +1.1%).",
-      "take_short": "0.0% · 852 cars · 7d",
+      "summary": "As of 2026-09-15, Ferrari US/Canada tracked inventory sits at 1082 cars (Δ +549 vs 2026-09-08). Variant-median ask 0.0% over ~7d (LFL $404,475, +$4,587 / +1.1%).",
+      "take_short": "0.0% · 1082 cars · 7d",
       "bullets": [
         "Variant-median ask move: 0.0% (LFL pool +1.1%) [2026-09-08→2026-09-15]",
         "F430: median ask +$8,114 (+3.6%) · n=79 [2026-09-08→2026-09-15]",
         "458: median ask +$11,456 (+2.2%) · n=68 [2026-09-08→2026-09-15]",
         "488: median ask +$3,998 (+1.0%) · n=228 [2026-09-08→2026-09-15]",
         "Same-VIN cuts: 132/402 (33%) over 7d; median cut $10,000",
-        "Inventory: 852 listings (+319 vs 2026-09-08)",
-        "Mix: new variants: 296 Coupe, 296 Spider, SF90 Coupe, SF90 Spider; inventory Δ +319",
-        "Auction softness: No Reserve: 5k-Mile 2018 Ferrari 488 Spider bid $210,000 vs retail $417,895 (-50% vs ask)",
+        "Inventory: 1082 listings (+549 vs 2026-09-08)",
+        "Mix: new variants: 296 Coupe, 296 Spider, 812 Coupe, 812 Spider, F12 Coupe, SF90 Coupe; inventory Δ +549",
+        "Auction softness: No Reserve: 5k-Mile 2018 Ferrari 488 Spider bid $250,000 vs retail $417,895 (-40% vs ask)",
         "Example: 296 Spider @ $384,995 / 191 mi"
       ],
       "metrics": {
@@ -128,36 +128,36 @@
             "as_of": "2026-09-15",
             "prior_date": "2026-09-08",
             "span_days": 7,
-            "count": 852,
+            "count": 1082,
             "count_prior": 533,
-            "count_delta": 319,
-            "median_ask": 421581,
+            "count_delta": 549,
+            "median_ask": 464925,
             "median_ask_prior": 399888,
-            "median_ask_delta": 21693,
-            "median_ask_pct": 5.42,
+            "median_ask_delta": 65037,
+            "median_ask_pct": 16.26,
             "median_ask_lfl": 404475,
             "median_ask_lfl_prior": 399888,
             "median_ask_lfl_delta": 4587,
             "median_ask_lfl_pct": 1.15,
             "variant_pct_median": 0.0,
             "overlap_variants": [
-              "458 Coupe",
-              "488 Spider",
-              "348 Spider",
-              "F8 Coupe",
-              "355 Berlinetta",
-              "F8 Spider",
-              "348 TS",
-              "360 Spider",
-              "458 Spider",
-              "360 Modena",
-              "F430 Spider",
               "F430 Coupe",
+              "360 Spider",
+              "F8 Spider",
+              "F430 Spider",
+              "348 Spider",
+              "458 Spider",
+              "F8 Coupe",
+              "355 GTS",
+              "348 TS",
+              "458 Coupe",
               "488 Coupe",
               "355 Spider",
-              "355 GTS"
+              "355 Berlinetta",
+              "360 Modena",
+              "488 Spider"
             ],
-            "composition_note": "new variants: 296 Coupe, 296 Spider, SF90 Coupe, SF90 Spider; inventory Δ +319",
+            "composition_note": "new variants: 296 Coupe, 296 Spider, 812 Coupe, 812 Spider, F12 Coupe, SF90 Coupe; inventory Δ +549",
             "drops": {
               "comparable_vins": 402,
               "cuts": 132,
@@ -234,6 +234,25 @@
                   "296 Spider"
                 ]
               },
+              "812": {
+                "count": 185,
+                "median_ask": 749972,
+                "median_ask_delta": null,
+                "median_ask_pct": null,
+                "variants": [
+                  "812 Coupe",
+                  "812 Spider"
+                ]
+              },
+              "F12": {
+                "count": 45,
+                "median_ask": 593841,
+                "median_ask_delta": null,
+                "median_ask_pct": null,
+                "variants": [
+                  "F12 Coupe"
+                ]
+              },
               "F8": {
                 "count": 144,
                 "median_ask": 564104,
@@ -299,13 +318,13 @@
             "as_of": "2026-09-15",
             "prior_date": "2026-09-03",
             "span_days": 12,
-            "count": 852,
+            "count": 1082,
             "count_prior": 114,
-            "count_delta": 738,
-            "median_ask": 421581,
+            "count_delta": 968,
+            "median_ask": 464925,
             "median_ask_prior": 415750,
-            "median_ask_delta": 5831,
-            "median_ask_pct": 1.4,
+            "median_ask_delta": 49175,
+            "median_ask_pct": 11.83,
             "median_ask_lfl": 429900,
             "median_ask_lfl_prior": 415750,
             "median_ask_lfl_delta": 14150,
@@ -317,7 +336,7 @@
               "F8 Coupe",
               "488 Coupe"
             ],
-            "composition_note": "new variants: 296 Coupe, 296 Spider, 348 Spider, 348 TS, 355 Berlinetta, 355 GTS; inventory Δ +738",
+            "composition_note": "new variants: 296 Coupe, 296 Spider, 348 Spider, 348 TS, 355 Berlinetta, 355 GTS; inventory Δ +968",
             "drops": {
               "comparable_vins": 3,
               "cuts": 2,
@@ -385,6 +404,25 @@
                   "296 Spider"
                 ]
               },
+              "812": {
+                "count": 185,
+                "median_ask": 749972,
+                "median_ask_delta": null,
+                "median_ask_pct": null,
+                "variants": [
+                  "812 Coupe",
+                  "812 Spider"
+                ]
+              },
+              "F12": {
+                "count": 45,
+                "median_ask": 593841,
+                "median_ask_delta": null,
+                "median_ask_pct": null,
+                "variants": [
+                  "F12 Coupe"
+                ]
+              },
               "F8": {
                 "count": 144,
                 "median_ask": 564104,
@@ -449,10 +487,10 @@
           {
             "title": "No Reserve: 5k-Mile 2018 Ferrari 488 Spider",
             "url": "https://bringatrailer.com/listing/2018-ferrari-488-spider-50/",
-            "bid": 210000,
+            "bid": 250000,
             "retail_median": 417895,
-            "gap_usd": -207895,
-            "gap_pct": -49.75,
+            "gap_usd": -167895,
+            "gap_pct": -40.18,
             "softness": "soft",
             "no_reserve": true,
             "location": "Manitowoc, Wisconsin, USA",
@@ -477,10 +515,10 @@
           {
             "title": "2005 Ferrari F430 | Giallo Modena | 11k Miles",
             "url": "https://live.dupontregistry.com/auction/2005-ferrari-f430giallomodena11kmiles-4089",
-            "bid": 1500,
+            "bid": 45000,
             "retail_median": 254814,
-            "gap_usd": -253314,
-            "gap_pct": -99.41,
+            "gap_usd": -209814,
+            "gap_pct": -82.34,
             "softness": "soft",
             "no_reserve": true,
             "location": "Lebanon, Tennessee, USA",
@@ -601,6 +639,114 @@
             "last_ask_n": 14,
             "sold_median": 350000,
             "sold_n": 1
+          }
+        },
+        "812": {
+          "headline": "812 — baseline (no 7d history yet)",
+          "take_short": "Baseline · $749,972 · n=185 · Classic last-ask $801,589",
+          "metrics": {
+            "median_ask": 749972,
+            "median_ask_delta": null,
+            "median_ask_pct": null,
+            "count": 185,
+            "window": "7d",
+            "prior_date": "2026-09-08",
+            "as_of": "2026-09-15",
+            "baseline": true,
+            "retail_thin": true
+          },
+          "summary": "Ferrari 812 retail median is $749,972 · n=185. First snapshot for this family — no prior Δ yet. Secondary: Classic last-ask (not retail scrape) $801,589 · n=7 · ~7d · Classic sold $641,500 · n=2 · ~7d.",
+          "classic": {
+            "source": "Classic.com",
+            "disclaimer": "Classic.com market cards — not our daily retail ask scrape",
+            "primary_window": "7d",
+            "windows": {
+              "7d": {
+                "last_ask_median": 801589,
+                "last_ask_n": 7,
+                "sold_median": 641500,
+                "sold_n": 2,
+                "geo": "US/CA",
+                "label_last_ask": "Classic last-ask (not retail scrape)",
+                "label_sold": "Classic sold"
+              },
+              "14d": {
+                "last_ask_median": 777899,
+                "last_ask_n": 13,
+                "sold_median": 750000,
+                "sold_n": 5,
+                "geo": "US/CA",
+                "label_last_ask": "Classic last-ask (not retail scrape)",
+                "label_sold": "Classic sold"
+              },
+              "30d": {
+                "last_ask_median": 789744,
+                "last_ask_n": 24,
+                "sold_median": 742500,
+                "sold_n": 8,
+                "geo": "US/CA",
+                "label_last_ask": "Classic last-ask (not retail scrape)",
+                "label_sold": "Classic sold"
+              }
+            },
+            "last_ask_median": 801589,
+            "last_ask_n": 7,
+            "sold_median": 641500,
+            "sold_n": 2
+          }
+        },
+        "F12": {
+          "headline": "F12 — baseline (no 7d history yet)",
+          "take_short": "Baseline · $593,841 · n=45 · Classic last-ask $535,000",
+          "metrics": {
+            "median_ask": 593841,
+            "median_ask_delta": null,
+            "median_ask_pct": null,
+            "count": 45,
+            "window": "7d",
+            "prior_date": "2026-09-08",
+            "as_of": "2026-09-15",
+            "baseline": true,
+            "retail_thin": true
+          },
+          "summary": "Ferrari F12 retail median is $593,841 · n=45. First snapshot for this family — no prior Δ yet. Secondary: Classic last-ask (not retail scrape) $535,000 · n=3 · ~7d.",
+          "classic": {
+            "source": "Classic.com",
+            "disclaimer": "Classic.com market cards — not our daily retail ask scrape",
+            "primary_window": "7d",
+            "windows": {
+              "7d": {
+                "last_ask_median": 535000,
+                "last_ask_n": 3,
+                "sold_median": null,
+                "sold_n": 0,
+                "geo": "US/CA",
+                "label_last_ask": "Classic last-ask (not retail scrape)",
+                "label_sold": "Classic sold"
+              },
+              "14d": {
+                "last_ask_median": 521474,
+                "last_ask_n": 4,
+                "sold_median": null,
+                "sold_n": 0,
+                "geo": "US/CA",
+                "label_last_ask": "Classic last-ask (not retail scrape)",
+                "label_sold": "Classic sold"
+              },
+              "30d": {
+                "last_ask_median": 535844,
+                "last_ask_n": 6,
+                "sold_median": null,
+                "sold_n": 0,
+                "geo": "US/CA",
+                "label_last_ask": "Classic last-ask (not retail scrape)",
+                "label_sold": "Classic sold"
+              }
+            },
+            "last_ask_median": 535000,
+            "last_ask_n": 3,
+            "sold_median": null,
+            "sold_n": 0
           }
         },
         "F8": {
@@ -835,12 +981,12 @@
             "median_ask_lfl_pct": -20.93,
             "variant_pct_median": -0.19,
             "overlap_variants": [
-              "765LT Spider",
+              "765LT Coupe",
               "675LT Spider",
               "600LT Spider",
-              "765LT Coupe",
+              "675LT Coupe",
               "600LT Coupe",
-              "675LT Coupe"
+              "765LT Spider"
             ],
             "composition_note": "new variants: 570GT, 570S Coupe, 570S Spider, 720S Coupe, 720S Spider, 750S Coupe; inventory Δ +321",
             "drops": {
@@ -1472,7 +1618,7 @@
         "Same-VIN cuts: 5/38 (13%) over 7d; median cut $4,789",
         "Inventory: 319 listings (+263 vs 2026-09-08)",
         "Mix: new variants: Gallardo Coupe, Gallardo Spider, Murcielago Coupe, Murcielago Spider, Revuelto Coupe, SVJ Coupe; inventory Δ +263",
-        "Auction softness: 2004 Lamborghini Gallardo bid $30,000 vs retail $169,990 (-82% vs ask)",
+        "Auction softness: 2004 Lamborghini Gallardo bid $40,000 vs retail $169,990 (-76% vs ask)",
         "Canada listing — apply ~×1.5 tariff lens vs US retail asks",
         "Example: Temerario Coupe @ $410,975 / 781 mi"
       ],
@@ -1501,9 +1647,9 @@
             "median_ask_lfl_pct": 1.55,
             "variant_pct_median": -2.55,
             "overlap_variants": [
-              "Performante Spider",
               "Performante Coupe",
-              "STO Coupe"
+              "STO Coupe",
+              "Performante Spider"
             ],
             "composition_note": "new variants: Gallardo Coupe, Gallardo Spider, Murcielago Coupe, Murcielago Spider, Revuelto Coupe, SVJ Coupe; inventory Δ +263",
             "drops": {
@@ -1628,10 +1774,10 @@
           {
             "title": "2004 Lamborghini Gallardo",
             "url": "https://bringatrailer.com/listing/2004-lamborghini-gallardo-67/",
-            "bid": 30000,
+            "bid": 40000,
             "retail_median": 169990,
-            "gap_usd": -139990,
-            "gap_pct": -82.35,
+            "gap_usd": -129990,
+            "gap_pct": -76.47,
             "softness": "soft",
             "no_reserve": false,
             "location": "Saskatoon, Saskatchewan, Canada",
@@ -2047,7 +2193,7 @@
         "Same-VIN cuts: 0/19 (0%) over 7d",
         "Inventory: 34 listings (+8 vs 2026-09-08)",
         "Mix: new variants: Gen 2",
-        "Auction softness: Ex–Mac Davis 2006 Ford GT bid $510,000 vs retail $779,996 (-35% vs ask)",
+        "Auction softness: Ex–Mac Davis 2006 Ford GT bid $511,000 vs retail $779,996 (-34% vs ask)",
         "Canada listing — apply ~×1.5 tariff lens vs US retail asks",
         "Example: Gen 2 @ $749,000 / 392 mi"
       ],
@@ -2124,10 +2270,10 @@
           {
             "title": "Ex–Mac Davis 2006 Ford GT",
             "url": "https://bringatrailer.com/listing/2006-ford-gt-217/",
-            "bid": 510000,
+            "bid": 511000,
             "retail_median": 779996,
-            "gap_usd": -269996,
-            "gap_pct": -34.62,
+            "gap_usd": -268996,
+            "gap_pct": -34.49,
             "softness": "soft",
             "no_reserve": false,
             "location": "Vancouver, British Columbia, Canada",
@@ -2138,10 +2284,10 @@
           {
             "title": "166-Mile 2005 Ford GT",
             "url": "https://bringatrailer.com/listing/2005-ford-gt-244/",
-            "bid": 551000,
+            "bid": 552500,
             "retail_median": 779996,
-            "gap_usd": -228996,
-            "gap_pct": -29.36,
+            "gap_usd": -227496,
+            "gap_pct": -29.17,
             "softness": "soft",
             "no_reserve": false,
             "location": "Fresno, California, USA",

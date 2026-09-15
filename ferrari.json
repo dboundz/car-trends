@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-15T14:15:08Z",
+  "generated_at": "2026-09-15T14:15:33Z",
   "latest_snapshot_date": "2026-09-15",
   "snapshot_dates": [
     "2026-09-03",
@@ -57,32 +57,32 @@
   ],
   "classic_note": "Pre-2010 regular Ferraris. 348 GTS is the later targa; 348 TS is the earlier targa. Both included. Excludes Scuderia, 16M, Challenge, Challenge Stradale, and Fiorano numbered specials.",
   "variant_colors": {
-    "F430 Spider": "#e6c36a",
-    "458 Speciale": "#2a9d8f",
-    "458 Coupe": "#f4a261",
-    "296 Coupe": "#8338ec",
-    "488 Coupe": "#e63946",
-    "SF90 Spider": "#ff4d94",
-    "348 TB": "#8d99ae",
-    "F12 Coupe": "#adb5bd",
-    "812 Coupe": "#adb5bd",
-    "812 Spider": "#adb5bd",
-    "348 GTB": "#6c757d",
-    "360 Modena": "#d4a373",
-    "355 Spider": "#ffb4a2",
-    "348 GTS": "#ffd166",
-    "458 Spider": "#e9c46a",
-    "F430 Coupe": "#c9a227",
-    "360 Spider": "#faedcd",
-    "348 TS": "#edf2f4",
-    "348 Spider": "#adb5bd",
+    "355 GTS": "#e5989b",
     "296 Spider": "#b388ff",
+    "348 Spider": "#adb5bd",
+    "348 GTS": "#ffd166",
+    "812 Spider": "#ff9f1c",
+    "360 Modena": "#d4a373",
+    "355 Berlinetta": "#b5838d",
+    "F430 Coupe": "#c9a227",
+    "348 GTB": "#6c757d",
+    "296 Coupe": "#8338ec",
+    "F430 Spider": "#e6c36a",
+    "360 Spider": "#faedcd",
+    "458 Spider": "#e9c46a",
+    "488 Spider": "#ff8fa3",
+    "F12 Coupe": "#3a86ff",
+    "488 Coupe": "#e63946",
+    "348 TB": "#8d99ae",
+    "355 Spider": "#ffb4a2",
+    "812 Coupe": "#fb5607",
     "F8 Spider": "#90e0ef",
     "SF90 Coupe": "#ff006e",
     "F8 Coupe": "#4cc9f0",
-    "355 Berlinetta": "#b5838d",
-    "488 Spider": "#ff8fa3",
-    "355 GTS": "#e5989b"
+    "SF90 Spider": "#ff4d94",
+    "458 Coupe": "#f4a261",
+    "458 Speciale": "#2a9d8f",
+    "348 TS": "#edf2f4"
   },
   "kpis": [
     {
@@ -142,7 +142,7 @@
       "max_ask": 4100894,
       "priced_count": 68,
       "miled_count": 55,
-      "color": "#adb5bd",
+      "color": "#fb5607",
       "group": "current"
     },
     {
@@ -154,7 +154,7 @@
       "max_ask": 1399990,
       "priced_count": 126,
       "miled_count": 99,
-      "color": "#adb5bd",
+      "color": "#ff9f1c",
       "group": "current"
     },
     {
@@ -166,7 +166,7 @@
       "max_ask": 1149063,
       "priced_count": 51,
       "miled_count": 39,
-      "color": "#adb5bd",
+      "color": "#3a86ff",
       "group": "current"
     },
     {
@@ -164024,21 +164024,21 @@
           "median_ask_lfl_pct": 1.15,
           "variant_pct_median": 0.0,
           "overlap_variants": [
+            "F430 Coupe",
+            "360 Spider",
             "F8 Spider",
+            "F430 Spider",
+            "348 Spider",
+            "458 Spider",
+            "F8 Coupe",
+            "355 GTS",
             "348 TS",
-            "488 Coupe",
-            "488 Spider",
             "458 Coupe",
+            "488 Coupe",
+            "355 Spider",
             "355 Berlinetta",
             "360 Modena",
-            "458 Spider",
-            "355 GTS",
-            "348 Spider",
-            "360 Spider",
-            "F430 Coupe",
-            "F8 Coupe",
-            "355 Spider",
-            "F430 Spider"
+            "488 Spider"
           ],
           "composition_note": "new variants: 296 Coupe, 296 Spider, 812 Coupe, 812 Spider, F12 Coupe, SF90 Coupe; inventory Δ +549",
           "drops": {
@@ -164214,10 +164214,10 @@
           "median_ask_lfl_pct": 3.4,
           "variant_pct_median": 3.17,
           "overlap_variants": [
+            "488 Spider",
             "F8 Spider",
             "F8 Coupe",
-            "488 Coupe",
-            "488 Spider"
+            "488 Coupe"
           ],
           "composition_note": "new variants: 296 Coupe, 296 Spider, 348 Spider, 348 TS, 355 Berlinetta, 355 GTS; inventory Δ +968",
           "drops": {

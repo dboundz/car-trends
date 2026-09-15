@@ -1,23 +1,24 @@
 {
-  "window_start": "2026-06-16",
-  "window_end": "2026-09-14",
+  "window_start": "2026-06-17",
+  "window_end": "2026-09-15",
   "timezone": "America/New_York",
   "source": "Classic.com",
   "method": "Shell curl; status=sold + status=all&sort=lotdate; reparsed with stricter status (skip for_sale/active auction; Price Undisclosed/Pending Sale -> off_market); APPEND new families only (old families retained)",
   "geo_note": "Classic.com market pages not geo-filterable; kept all locations; non_US_Canada_location noted in notes; Brand takes prefer US/CA when location present",
-  "total_rows_in_window": 1369,
+  "total_rows_in_window": 1503,
   "total_undated": 0,
-  "new_families_rows_in_window": 241,
-  "new_families_added": 241,
+  "new_families_rows_in_window": 134,
+  "new_families_added": 134,
   "new_families_replaced": 0,
   "counts_by_status": {
-    "last_ask": 1073,
-    "sold": 154,
-    "off_market": 141,
+    "last_ask": 1157,
+    "sold": 180,
+    "off_market": 165,
     "unknown": 1
   },
   "counts_by_model_family": {
     "296": 201,
+    "812": 104,
     "Gen1": 41,
     "Revuelto": 70,
     "720S": 76,
@@ -29,6 +30,7 @@
     "750S": 66,
     "Gallardo": 81,
     "Gen2": 16,
+    "F12": 30,
     "Murcielago": 26,
     "Artura": 41,
     "488": 151,
@@ -91,6 +93,11 @@
       "sold": 2,
       "off_market": 1
     },
+    "812": {
+      "last_ask": 67,
+      "sold": 23,
+      "off_market": 14
+    },
     "Artura": {
       "last_ask": 33,
       "sold": 3,
@@ -105,6 +112,11 @@
       "last_ask": 10,
       "sold": 3,
       "off_market": 4
+    },
+    "F12": {
+      "last_ask": 17,
+      "off_market": 10,
+      "sold": 3
     },
     "F8": {
       "last_ask": 81,
@@ -157,35 +169,20 @@
     }
   },
   "new_families_counts_by_status": {
-    "570GT": {
-      "last_ask": 7,
-      "sold": 2
+    "812": {
+      "last_ask": 67,
+      "sold": 23,
+      "off_market": 14
     },
-    "570S": {
-      "last_ask": 49,
-      "off_market": 3,
-      "sold": 5
-    },
-    "720S": {
-      "last_ask": 61,
-      "off_market": 11,
-      "sold": 4
-    },
-    "750S": {
-      "sold": 4,
-      "last_ask": 60,
-      "off_market": 1,
-      "unknown": 1
-    },
-    "GT": {
-      "last_ask": 29,
-      "off_market": 3,
-      "sold": 1
+    "F12": {
+      "last_ask": 17,
+      "off_market": 10,
+      "sold": 3
     }
   },
   "skip_summary": {
-    "skip_for_sale_or_active_auction": 155,
-    "excluded": 7
+    "skip_for_sale_or_active_auction": 347,
+    "excluded_f12tdf": 29
   },
   "failed_markets": [
     {
@@ -203,18 +200,408 @@
   ],
   "markets_scraped": [
     {
-      "key": "720s_sold",
-      "make": "McLaren",
-      "family": "720S",
-      "path": "/m/mclaren/720s/?status=sold&sort=lotdate",
+      "key": "812_sold",
+      "make": "Ferrari",
+      "family": "812",
+      "path": "/m/ferrari/812/?status=sold&sort=lotdate",
       "mode": "sold",
       "pages": [
         {
           "page": 1,
           "http": 200,
-          "bytes": 356194,
-          "file": "720s_sold_p1.html",
-          "url": "https://www.classic.com/m/mclaren/720s/?status=sold&sort=lotdate"
+          "bytes": 417833,
+          "file": "812_sold_p1.html",
+          "url": "https://www.classic.com/m/ferrari/812/?status=sold&sort=lotdate"
+        },
+        {
+          "page": 2,
+          "http": 200,
+          "bytes": 423916,
+          "file": "812_sold_p2.html",
+          "url": "https://www.classic.com/m/ferrari/812/?status=sold&sort=lotdate&page=2"
+        }
+      ],
+      "http_ok": true,
+      "error": null,
+      "items_seen": 48,
+      "rows_parsed": 48,
+      "stopped_reason": "all_dates_before_window_p2",
+      "skip_counts": {}
+    },
+    {
+      "key": "812_all",
+      "make": "Ferrari",
+      "family": "812",
+      "path": "/m/ferrari/812/?status=all&sort=lotdate",
+      "mode": "all",
+      "pages": [
+        {
+          "page": 1,
+          "http": 200,
+          "bytes": 483816,
+          "file": "812_all_p1.html",
+          "url": "https://www.classic.com/m/ferrari/812/?status=all&sort=lotdate"
+        },
+        {
+          "page": 2,
+          "http": 200,
+          "bytes": 488360,
+          "file": "812_all_p2.html",
+          "url": "https://www.classic.com/m/ferrari/812/?status=all&sort=lotdate&page=2"
+        },
+        {
+          "page": 3,
+          "http": 200,
+          "bytes": 482203,
+          "file": "812_all_p3.html",
+          "url": "https://www.classic.com/m/ferrari/812/?status=all&sort=lotdate&page=3"
+        },
+        {
+          "page": 4,
+          "http": 200,
+          "bytes": 482792,
+          "file": "812_all_p4.html",
+          "url": "https://www.classic.com/m/ferrari/812/?status=all&sort=lotdate&page=4"
+        },
+        {
+          "page": 5,
+          "http": 200,
+          "bytes": 469451,
+          "file": "812_all_p5.html",
+          "url": "https://www.classic.com/m/ferrari/812/?status=all&sort=lotdate&page=5"
+        },
+        {
+          "page": 6,
+          "http": 200,
+          "bytes": 471582,
+          "file": "812_all_p6.html",
+          "url": "https://www.classic.com/m/ferrari/812/?status=all&sort=lotdate&page=6"
+        },
+        {
+          "page": 7,
+          "http": 200,
+          "bytes": 476509,
+          "file": "812_all_p7.html",
+          "url": "https://www.classic.com/m/ferrari/812/?status=all&sort=lotdate&page=7"
+        },
+        {
+          "page": 8,
+          "http": 200,
+          "bytes": 436051,
+          "file": "812_all_p8.html",
+          "url": "https://www.classic.com/m/ferrari/812/?status=all&sort=lotdate&page=8"
+        },
+        {
+          "page": 9,
+          "http": 200,
+          "bytes": 445705,
+          "file": "812_all_p9.html",
+          "url": "https://www.classic.com/m/ferrari/812/?status=all&sort=lotdate&page=9"
+        },
+        {
+          "page": 10,
+          "http": 200,
+          "bytes": 440580,
+          "file": "812_all_p10.html",
+          "url": "https://www.classic.com/m/ferrari/812/?status=all&sort=lotdate&page=10"
+        },
+        {
+          "page": 11,
+          "http": 200,
+          "bytes": 433588,
+          "file": "812_all_p11.html",
+          "url": "https://www.classic.com/m/ferrari/812/?status=all&sort=lotdate&page=11"
+        },
+        {
+          "page": 12,
+          "http": 200,
+          "bytes": 435500,
+          "file": "812_all_p12.html",
+          "url": "https://www.classic.com/m/ferrari/812/?status=all&sort=lotdate&page=12"
+        }
+      ],
+      "http_ok": true,
+      "error": null,
+      "items_seen": 288,
+      "rows_parsed": 145,
+      "stopped_reason": "all_dates_before_window_p12",
+      "skip_counts": {
+        "skip_for_sale_or_active_auction": 143
+      }
+    },
+    {
+      "key": "812_superfast_sold",
+      "make": "Ferrari",
+      "family": "812",
+      "path": "/m/ferrari/812/superfast/?status=sold&sort=lotdate",
+      "mode": "sold",
+      "pages": [
+        {
+          "page": 1,
+          "http": 200,
+          "bytes": 278937,
+          "file": "812_superfast_sold_p1.html",
+          "url": "https://www.classic.com/m/ferrari/812/superfast/?status=sold&sort=lotdate"
+        }
+      ],
+      "http_ok": true,
+      "error": null,
+      "items_seen": 16,
+      "rows_parsed": 16,
+      "stopped_reason": "last_page_p1",
+      "skip_counts": {}
+    },
+    {
+      "key": "812_superfast_all",
+      "make": "Ferrari",
+      "family": "812",
+      "path": "/m/ferrari/812/superfast/?status=all&sort=lotdate",
+      "mode": "all",
+      "pages": [
+        {
+          "page": 1,
+          "http": 200,
+          "bytes": 415022,
+          "file": "812_superfast_all_p1.html",
+          "url": "https://www.classic.com/m/ferrari/812/superfast/?status=all&sort=lotdate"
+        },
+        {
+          "page": 2,
+          "http": 200,
+          "bytes": 404700,
+          "file": "812_superfast_all_p2.html",
+          "url": "https://www.classic.com/m/ferrari/812/superfast/?status=all&sort=lotdate&page=2"
+        },
+        {
+          "page": 3,
+          "http": 200,
+          "bytes": 360421,
+          "file": "812_superfast_all_p3.html",
+          "url": "https://www.classic.com/m/ferrari/812/superfast/?status=all&sort=lotdate&page=3"
+        },
+        {
+          "page": 4,
+          "http": 200,
+          "bytes": 364912,
+          "file": "812_superfast_all_p4.html",
+          "url": "https://www.classic.com/m/ferrari/812/superfast/?status=all&sort=lotdate&page=4"
+        },
+        {
+          "page": 5,
+          "http": 200,
+          "bytes": 369776,
+          "file": "812_superfast_all_p5.html",
+          "url": "https://www.classic.com/m/ferrari/812/superfast/?status=all&sort=lotdate&page=5"
+        }
+      ],
+      "http_ok": true,
+      "error": null,
+      "items_seen": 120,
+      "rows_parsed": 81,
+      "stopped_reason": "all_dates_before_window_p5",
+      "skip_counts": {
+        "skip_for_sale_or_active_auction": 39
+      }
+    },
+    {
+      "key": "812_gts_sold",
+      "make": "Ferrari",
+      "family": "812",
+      "path": "/m/ferrari/812/gts/?status=sold&sort=lotdate",
+      "mode": "sold",
+      "pages": [
+        {
+          "page": 1,
+          "http": 200,
+          "bytes": 351555,
+          "file": "812_gts_sold_p1.html",
+          "url": "https://www.classic.com/m/ferrari/812/gts/?status=sold&sort=lotdate"
+        },
+        {
+          "page": 2,
+          "http": 200,
+          "bytes": 139680,
+          "file": "812_gts_sold_p2.html",
+          "url": "https://www.classic.com/m/ferrari/812/gts/?status=sold&sort=lotdate&page=2"
+        }
+      ],
+      "http_ok": true,
+      "error": null,
+      "items_seen": 25,
+      "rows_parsed": 25,
+      "stopped_reason": "all_dates_before_window_p2",
+      "skip_counts": {}
+    },
+    {
+      "key": "812_gts_all",
+      "make": "Ferrari",
+      "family": "812",
+      "path": "/m/ferrari/812/gts/?status=all&sort=lotdate",
+      "mode": "all",
+      "pages": [
+        {
+          "page": 1,
+          "http": 200,
+          "bytes": 420309,
+          "file": "812_gts_all_p1.html",
+          "url": "https://www.classic.com/m/ferrari/812/gts/?status=all&sort=lotdate"
+        },
+        {
+          "page": 2,
+          "http": 200,
+          "bytes": 420401,
+          "file": "812_gts_all_p2.html",
+          "url": "https://www.classic.com/m/ferrari/812/gts/?status=all&sort=lotdate&page=2"
+        },
+        {
+          "page": 3,
+          "http": 200,
+          "bytes": 405771,
+          "file": "812_gts_all_p3.html",
+          "url": "https://www.classic.com/m/ferrari/812/gts/?status=all&sort=lotdate&page=3"
+        },
+        {
+          "page": 4,
+          "http": 200,
+          "bytes": 409799,
+          "file": "812_gts_all_p4.html",
+          "url": "https://www.classic.com/m/ferrari/812/gts/?status=all&sort=lotdate&page=4"
+        },
+        {
+          "page": 5,
+          "http": 200,
+          "bytes": 392819,
+          "file": "812_gts_all_p5.html",
+          "url": "https://www.classic.com/m/ferrari/812/gts/?status=all&sort=lotdate&page=5"
+        },
+        {
+          "page": 6,
+          "http": 200,
+          "bytes": 376475,
+          "file": "812_gts_all_p6.html",
+          "url": "https://www.classic.com/m/ferrari/812/gts/?status=all&sort=lotdate&page=6"
+        },
+        {
+          "page": 7,
+          "http": 200,
+          "bytes": 365327,
+          "file": "812_gts_all_p7.html",
+          "url": "https://www.classic.com/m/ferrari/812/gts/?status=all&sort=lotdate&page=7"
+        },
+        {
+          "page": 8,
+          "http": 200,
+          "bytes": 379801,
+          "file": "812_gts_all_p8.html",
+          "url": "https://www.classic.com/m/ferrari/812/gts/?status=all&sort=lotdate&page=8"
+        }
+      ],
+      "http_ok": true,
+      "error": null,
+      "items_seen": 192,
+      "rows_parsed": 101,
+      "stopped_reason": "all_dates_before_window_p8",
+      "skip_counts": {
+        "skip_for_sale_or_active_auction": 91
+      }
+    },
+    {
+      "key": "f12_sold",
+      "make": "Ferrari",
+      "family": "F12",
+      "path": "/m/ferrari/f12/?status=sold&sort=lotdate",
+      "mode": "sold",
+      "pages": [
+        {
+          "page": 1,
+          "http": 200,
+          "bytes": 422569,
+          "file": "f12_sold_p1.html",
+          "url": "https://www.classic.com/m/ferrari/f12/?status=sold&sort=lotdate"
+        },
+        {
+          "page": 2,
+          "http": 200,
+          "bytes": 262499,
+          "file": "f12_sold_p2.html",
+          "url": "https://www.classic.com/m/ferrari/f12/?status=sold&sort=lotdate&page=2"
+        }
+      ],
+      "http_ok": true,
+      "error": null,
+      "items_seen": 31,
+      "rows_parsed": 22,
+      "stopped_reason": "all_dates_before_window_p2",
+      "skip_counts": {
+        "excluded_f12tdf": 9
+      }
+    },
+    {
+      "key": "f12_all",
+      "make": "Ferrari",
+      "family": "F12",
+      "path": "/m/ferrari/f12/?status=all&sort=lotdate",
+      "mode": "all",
+      "pages": [
+        {
+          "page": 1,
+          "http": 200,
+          "bytes": 475983,
+          "file": "f12_all_p1.html",
+          "url": "https://www.classic.com/m/ferrari/f12/?status=all&sort=lotdate"
+        },
+        {
+          "page": 2,
+          "http": 200,
+          "bytes": 461053,
+          "file": "f12_all_p2.html",
+          "url": "https://www.classic.com/m/ferrari/f12/?status=all&sort=lotdate&page=2"
+        },
+        {
+          "page": 3,
+          "http": 200,
+          "bytes": 440110,
+          "file": "f12_all_p3.html",
+          "url": "https://www.classic.com/m/ferrari/f12/?status=all&sort=lotdate&page=3"
+        },
+        {
+          "page": 4,
+          "http": 200,
+          "bytes": 440518,
+          "file": "f12_all_p4.html",
+          "url": "https://www.classic.com/m/ferrari/f12/?status=all&sort=lotdate&page=4"
+        },
+        {
+          "page": 5,
+          "http": 200,
+          "bytes": 432469,
+          "file": "f12_all_p5.html",
+          "url": "https://www.classic.com/m/ferrari/f12/?status=all&sort=lotdate&page=5"
+        }
+      ],
+      "http_ok": true,
+      "error": null,
+      "items_seen": 120,
+      "rows_parsed": 61,
+      "stopped_reason": "all_dates_before_window_p5",
+      "skip_counts": {
+        "skip_for_sale_or_active_auction": 39,
+        "excluded_f12tdf": 20
+      }
+    },
+    {
+      "key": "f12_berlinetta_sold",
+      "make": "Ferrari",
+      "family": "F12",
+      "path": "/m/ferrari/f12/berlinetta/?status=sold&sort=lotdate",
+      "mode": "sold",
+      "pages": [
+        {
+          "page": 1,
+          "http": 200,
+          "bytes": 301717,
+          "file": "f12_berlinetta_sold_p1.html",
+          "url": "https://www.classic.com/m/ferrari/f12/berlinetta/?status=sold&sort=lotdate"
         }
       ],
       "http_ok": true,
@@ -225,403 +612,104 @@
       "skip_counts": {}
     },
     {
-      "key": "720s_all",
-      "make": "McLaren",
-      "family": "720S",
-      "path": "/m/mclaren/720s/?status=all&sort=lotdate",
+      "key": "f12_berlinetta_all",
+      "make": "Ferrari",
+      "family": "F12",
+      "path": "/m/ferrari/f12/berlinetta/?status=all&sort=lotdate",
       "mode": "all",
       "pages": [
         {
           "page": 1,
           "http": 200,
-          "bytes": 445664,
-          "file": "720s_all_p1.html",
-          "url": "https://www.classic.com/m/mclaren/720s/?status=all&sort=lotdate"
+          "bytes": 408711,
+          "file": "f12_berlinetta_all_p1.html",
+          "url": "https://www.classic.com/m/ferrari/f12/berlinetta/?status=all&sort=lotdate"
         },
         {
           "page": 2,
           "http": 200,
-          "bytes": 455512,
-          "file": "720s_all_p2.html",
-          "url": "https://www.classic.com/m/mclaren/720s/?status=all&sort=lotdate&page=2"
+          "bytes": 396963,
+          "file": "f12_berlinetta_all_p2.html",
+          "url": "https://www.classic.com/m/ferrari/f12/berlinetta/?status=all&sort=lotdate&page=2"
         },
         {
           "page": 3,
           "http": 200,
-          "bytes": 435327,
-          "file": "720s_all_p3.html",
-          "url": "https://www.classic.com/m/mclaren/720s/?status=all&sort=lotdate&page=3"
+          "bytes": 382180,
+          "file": "f12_berlinetta_all_p3.html",
+          "url": "https://www.classic.com/m/ferrari/f12/berlinetta/?status=all&sort=lotdate&page=3"
         },
         {
           "page": 4,
           "http": 200,
-          "bytes": 447881,
-          "file": "720s_all_p4.html",
-          "url": "https://www.classic.com/m/mclaren/720s/?status=all&sort=lotdate&page=4"
-        },
-        {
-          "page": 5,
-          "http": 200,
-          "bytes": 435232,
-          "file": "720s_all_p5.html",
-          "url": "https://www.classic.com/m/mclaren/720s/?status=all&sort=lotdate&page=5"
-        },
-        {
-          "page": 6,
-          "http": 200,
-          "bytes": 435988,
-          "file": "720s_all_p6.html",
-          "url": "https://www.classic.com/m/mclaren/720s/?status=all&sort=lotdate&page=6"
-        }
-      ],
-      "http_ok": true,
-      "error": null,
-      "items_seen": 144,
-      "rows_parsed": 104,
-      "stopped_reason": "all_dates_before_window_p6",
-      "skip_counts": {
-        "skip_for_sale_or_active_auction": 40
-      }
-    },
-    {
-      "key": "750s_sold",
-      "make": "McLaren",
-      "family": "750S",
-      "path": "/m/mclaren/750s/?status=sold&sort=lotdate",
-      "mode": "sold",
-      "pages": [
-        {
-          "page": 1,
-          "http": 200,
-          "bytes": 281768,
-          "file": "750s_sold_p1.html",
-          "url": "https://www.classic.com/m/mclaren/750s/?status=sold&sort=lotdate"
-        }
-      ],
-      "http_ok": true,
-      "error": null,
-      "items_seen": 11,
-      "rows_parsed": 11,
-      "stopped_reason": "last_page_p1",
-      "skip_counts": {}
-    },
-    {
-      "key": "750s_all",
-      "make": "McLaren",
-      "family": "750S",
-      "path": "/m/mclaren/750s/?status=all&sort=lotdate",
-      "mode": "all",
-      "pages": [
-        {
-          "page": 1,
-          "http": 200,
-          "bytes": 446363,
-          "file": "750s_all_p1.html",
-          "url": "https://www.classic.com/m/mclaren/750s/?status=all&sort=lotdate"
-        },
-        {
-          "page": 2,
-          "http": 200,
-          "bytes": 443403,
-          "file": "750s_all_p2.html",
-          "url": "https://www.classic.com/m/mclaren/750s/?status=all&sort=lotdate&page=2"
-        },
-        {
-          "page": 3,
-          "http": 200,
-          "bytes": 439758,
-          "file": "750s_all_p3.html",
-          "url": "https://www.classic.com/m/mclaren/750s/?status=all&sort=lotdate&page=3"
-        },
-        {
-          "page": 4,
-          "http": 200,
-          "bytes": 427628,
-          "file": "750s_all_p4.html",
-          "url": "https://www.classic.com/m/mclaren/750s/?status=all&sort=lotdate&page=4"
-        },
-        {
-          "page": 5,
-          "http": 200,
-          "bytes": 425316,
-          "file": "750s_all_p5.html",
-          "url": "https://www.classic.com/m/mclaren/750s/?status=all&sort=lotdate&page=5"
-        },
-        {
-          "page": 6,
-          "http": 200,
-          "bytes": 424956,
-          "file": "750s_all_p6.html",
-          "url": "https://www.classic.com/m/mclaren/750s/?status=all&sort=lotdate&page=6"
-        }
-      ],
-      "http_ok": true,
-      "error": null,
-      "items_seen": 144,
-      "rows_parsed": 107,
-      "stopped_reason": "all_dates_before_window_p6",
-      "skip_counts": {
-        "skip_for_sale_or_active_auction": 37
-      }
-    },
-    {
-      "key": "570s_sold",
-      "make": "McLaren",
-      "family": "570S",
-      "path": "/m/mclaren/570s/?status=sold&sort=lotdate",
-      "mode": "sold",
-      "pages": [
-        {
-          "page": 1,
-          "http": 200,
-          "bytes": 397507,
-          "file": "570s_sold_p1.html",
-          "url": "https://www.classic.com/m/mclaren/570s/?status=sold&sort=lotdate"
-        }
-      ],
-      "http_ok": true,
-      "error": null,
-      "items_seen": 21,
-      "rows_parsed": 18,
-      "stopped_reason": "last_page_p1",
-      "skip_counts": {
-        "excluded": 3
-      }
-    },
-    {
-      "key": "570s_all",
-      "make": "McLaren",
-      "family": "570S",
-      "path": "/m/mclaren/570s/?status=all&sort=lotdate",
-      "mode": "all",
-      "pages": [
-        {
-          "page": 1,
-          "http": 200,
-          "bytes": 473539,
-          "file": "570s_all_p1.html",
-          "url": "https://www.classic.com/m/mclaren/570s/?status=all&sort=lotdate"
-        },
-        {
-          "page": 2,
-          "http": 200,
-          "bytes": 469326,
-          "file": "570s_all_p2.html",
-          "url": "https://www.classic.com/m/mclaren/570s/?status=all&sort=lotdate&page=2"
-        },
-        {
-          "page": 3,
-          "http": 200,
-          "bytes": 450796,
-          "file": "570s_all_p3.html",
-          "url": "https://www.classic.com/m/mclaren/570s/?status=all&sort=lotdate&page=3"
-        },
-        {
-          "page": 4,
-          "http": 200,
-          "bytes": 446934,
-          "file": "570s_all_p4.html",
-          "url": "https://www.classic.com/m/mclaren/570s/?status=all&sort=lotdate&page=4"
-        },
-        {
-          "page": 5,
-          "http": 200,
-          "bytes": 453654,
-          "file": "570s_all_p5.html",
-          "url": "https://www.classic.com/m/mclaren/570s/?status=all&sort=lotdate&page=5"
-        },
-        {
-          "page": 6,
-          "http": 200,
-          "bytes": 451461,
-          "file": "570s_all_p6.html",
-          "url": "https://www.classic.com/m/mclaren/570s/?status=all&sort=lotdate&page=6"
-        }
-      ],
-      "http_ok": true,
-      "error": null,
-      "items_seen": 144,
-      "rows_parsed": 96,
-      "stopped_reason": "all_dates_before_window_p6",
-      "skip_counts": {
-        "skip_for_sale_or_active_auction": 44,
-        "excluded": 4
-      }
-    },
-    {
-      "key": "570gt_sold",
-      "make": "McLaren",
-      "family": "570GT",
-      "path": "/m/mclaren/570gt/?status=sold&sort=lotdate",
-      "mode": "sold",
-      "pages": [
-        {
-          "page": 1,
-          "http": 200,
-          "bytes": 192469,
-          "file": "570gt_sold_p1.html",
-          "url": "https://www.classic.com/m/mclaren/570gt/?status=sold&sort=lotdate"
-        }
-      ],
-      "http_ok": true,
-      "error": null,
-      "items_seen": 3,
-      "rows_parsed": 3,
-      "stopped_reason": "last_page_p1",
-      "skip_counts": {}
-    },
-    {
-      "key": "570gt_all",
-      "make": "McLaren",
-      "family": "570GT",
-      "path": "/m/mclaren/570gt/?status=all&sort=lotdate",
-      "mode": "all",
-      "pages": [
-        {
-          "page": 1,
-          "http": 200,
-          "bytes": 416210,
-          "file": "570gt_all_p1.html",
-          "url": "https://www.classic.com/m/mclaren/570gt/?status=all&sort=lotdate"
-        },
-        {
-          "page": 2,
-          "http": 200,
-          "bytes": 356363,
-          "file": "570gt_all_p2.html",
-          "url": "https://www.classic.com/m/mclaren/570gt/?status=all&sort=lotdate&page=2"
-        }
-      ],
-      "http_ok": true,
-      "error": null,
-      "items_seen": 42,
-      "rows_parsed": 36,
-      "stopped_reason": "all_dates_before_window_p2",
-      "skip_counts": {
-        "skip_for_sale_or_active_auction": 6
-      }
-    },
-    {
-      "key": "gt_sold",
-      "make": "McLaren",
-      "family": "GT",
-      "path": "/m/mclaren/gt/?status=sold&sort=lotdate",
-      "mode": "sold",
-      "pages": [
-        {
-          "page": 1,
-          "http": 200,
-          "bytes": 250645,
-          "file": "gt_sold_p1.html",
-          "url": "https://www.classic.com/m/mclaren/gt/?status=sold&sort=lotdate"
-        }
-      ],
-      "http_ok": true,
-      "error": null,
-      "items_seen": 9,
-      "rows_parsed": 9,
-      "stopped_reason": "last_page_p1",
-      "skip_counts": {}
-    },
-    {
-      "key": "gt_all",
-      "make": "McLaren",
-      "family": "GT",
-      "path": "/m/mclaren/gt/?status=all&sort=lotdate",
-      "mode": "all",
-      "pages": [
-        {
-          "page": 1,
-          "http": 200,
-          "bytes": 429274,
-          "file": "gt_all_p1.html",
-          "url": "https://www.classic.com/m/mclaren/gt/?status=all&sort=lotdate"
-        },
-        {
-          "page": 2,
-          "http": 200,
-          "bytes": 412806,
-          "file": "gt_all_p2.html",
-          "url": "https://www.classic.com/m/mclaren/gt/?status=all&sort=lotdate&page=2"
-        },
-        {
-          "page": 3,
-          "http": 200,
-          "bytes": 420453,
-          "file": "gt_all_p3.html",
-          "url": "https://www.classic.com/m/mclaren/gt/?status=all&sort=lotdate&page=3"
-        },
-        {
-          "page": 4,
-          "http": 200,
-          "bytes": 411833,
-          "file": "gt_all_p4.html",
-          "url": "https://www.classic.com/m/mclaren/gt/?status=all&sort=lotdate&page=4"
+          "bytes": 374390,
+          "file": "f12_berlinetta_all_p4.html",
+          "url": "https://www.classic.com/m/ferrari/f12/berlinetta/?status=all&sort=lotdate&page=4"
         }
       ],
       "http_ok": true,
       "error": null,
       "items_seen": 96,
-      "rows_parsed": 68,
+      "rows_parsed": 61,
       "stopped_reason": "all_dates_before_window_p4",
       "skip_counts": {
-        "skip_for_sale_or_active_auction": 28
+        "skip_for_sale_or_active_auction": 35
       }
     }
   ],
   "dedupe_notes_sample": [
-    "dedupe ('url', 'https://www.classic.com/veh/2021-mclaren-720s-coupe-sbm14dcd2mw006228-WYl2adn/'): https://www.classic.com/veh/2021-mclaren-720s-coupe-sbm14dcd2mw006228-WYl2adn/ vs https://www.classic.com/veh/2021-mclaren-720s-coupe-sbm14dcd2mw006228-WYl2adn/",
-    "dedupe ('url', 'https://www.classic.com/veh/2020-mclaren-720s-spider-sbm14fca7lw005754-WYlgOdn/'): https://www.classic.com/veh/2020-mclaren-720s-spider-sbm14fca7lw005754-WYlgOdn/ vs https://www.classic.com/veh/2020-mclaren-720s-spider-sbm14fca7lw005754-WYlgOdn/",
-    "dedupe ('url', 'https://www.classic.com/veh/2019-mclaren-720s-coupe-sbm14dca9kw002955-nl2RGVp/'): https://www.classic.com/veh/2019-mclaren-720s-coupe-sbm14dca9kw002955-nl2RGVp/ vs https://www.classic.com/veh/2019-mclaren-720s-coupe-sbm14dca9kw002955-nl2RGVp/",
-    "dedupe ('url', 'https://www.classic.com/veh/2022-mclaren-720s-spider-performance-sbm14fca8nw00-WxR9ek4/'): https://www.classic.com/veh/2022-mclaren-720s-spider-performance-sbm14fca8nw00-WxR9ek4/ vs https://www.classic.com/veh/2022-mclaren-720s-spider-performance-sbm14fca8nw00-WxR9ek4/",
-    "dedupe ('url', 'https://www.classic.com/veh/2018-mclaren-720s-luxury-coupe-sbm14dca1jw002348-4D3g7wp/'): https://www.classic.com/veh/2018-mclaren-720s-luxury-coupe-sbm14dca1jw002348-4D3g7wp/ vs https://www.classic.com/veh/2018-mclaren-720s-luxury-coupe-sbm14dca1jw002348-4D3g7wp/",
-    "dedupe ('url', 'https://www.classic.com/veh/2018-mclaren-720s-coupe-sbm14dca8jw001780-pJQ2KXW/'): https://www.classic.com/veh/2018-mclaren-720s-coupe-sbm14dca8jw001780-pJQ2KXW/ vs https://www.classic.com/veh/2018-mclaren-720s-coupe-sbm14dca8jw001780-pJQ2KXW/",
-    "dedupe ('url', 'https://www.classic.com/veh/2020-mclaren-720s-spider-sbm14fca0lw005191-4DG0O8p/'): https://www.classic.com/veh/2020-mclaren-720s-spider-sbm14fca0lw005191-4DG0O8p/ vs https://www.classic.com/veh/2020-mclaren-720s-spider-sbm14fca0lw005191-4DG0O8p/",
-    "dedupe ('url', 'https://www.classic.com/veh/2022-mclaren-720s-spider-sbm14fca2nw006667-WNR1yqW/'): https://www.classic.com/veh/2022-mclaren-720s-spider-sbm14fca2nw006667-WNR1yqW/ vs https://www.classic.com/veh/2022-mclaren-720s-spider-sbm14fca2nw006667-WNR1yqW/",
-    "dedupe ('url', 'https://www.classic.com/veh/2022-mclaren-720s-spider-sbm14fca4nw006928-nXENo7W/'): https://www.classic.com/veh/2022-mclaren-720s-spider-sbm14fca4nw006928-nXENo7W/ vs https://www.classic.com/veh/2022-mclaren-720s-spider-sbm14fca4nw006928-nXENo7W/",
-    "dedupe ('url', 'https://www.classic.com/veh/2022-mclaren-720s-spider-performance-sbm14fca8nw00-WxR9ek4/'): https://www.classic.com/veh/2022-mclaren-720s-spider-performance-sbm14fca8nw00-WxR9ek4/ vs https://www.classic.com/veh/2022-mclaren-720s-spider-performance-sbm14fca8nw00-WxR9ek4/",
-    "dedupe ('url', 'https://www.classic.com/veh/2024-mclaren-750s-spider-sbm14bca3rw008281-WNEoYPn/'): https://www.classic.com/veh/2024-mclaren-750s-spider-sbm14bca3rw008281-WNEoYPn/ vs https://www.classic.com/veh/2024-mclaren-750s-spider-sbm14bca3rw008281-WNEoYPn/",
-    "dedupe ('url', 'https://www.classic.com/veh/2024-mclaren-750s-sbm14bca0rw008268-nBOD5BW/'): https://www.classic.com/veh/2024-mclaren-750s-sbm14bca0rw008268-nBOD5BW/ vs https://www.classic.com/veh/2024-mclaren-750s-sbm14bca0rw008268-nBOD5BW/",
-    "dedupe ('url', 'https://www.classic.com/veh/2025-mclaren-750s-spider-sbm14bca8sw009397-pGZxO2W/'): https://www.classic.com/veh/2025-mclaren-750s-spider-sbm14bca8sw009397-pGZxO2W/ vs https://www.classic.com/veh/2025-mclaren-750s-spider-sbm14bca8sw009397-pGZxO2W/",
-    "dedupe ('url', 'https://www.classic.com/veh/2025-mclaren-750s-spider-sbm14bca8sw009397-pGZxO2W/'): https://www.classic.com/veh/2025-mclaren-750s-spider-sbm14bca8sw009397-pGZxO2W/ vs https://www.classic.com/veh/2025-mclaren-750s-spider-sbm14bca8sw009397-pGZxO2W/",
-    "dedupe ('url', 'https://www.classic.com/veh/2024-mclaren-750s-spider-sbm14bca3rw008779-p0r17yn/'): https://www.classic.com/veh/2024-mclaren-750s-spider-sbm14bca3rw008779-p0r17yn/ vs https://www.classic.com/veh/2024-mclaren-750s-spider-sbm14bca3rw008779-p0r17yn/",
-    "dedupe ('url', 'https://www.classic.com/veh/2026-mclaren-750s-spider-sbm14bca6tw009979-nmybw2n/'): https://www.classic.com/veh/2026-mclaren-750s-spider-sbm14bca6tw009979-nmybw2n/ vs https://www.classic.com/veh/2026-mclaren-750s-spider-sbm14bca6tw009979-nmybw2n/",
-    "dedupe ('url', 'https://www.classic.com/veh/2024-mclaren-750s-spider-sbm14bca7rw008753-n1eP9vn/'): https://www.classic.com/veh/2024-mclaren-750s-spider-sbm14bca7rw008753-n1eP9vn/ vs https://www.classic.com/veh/2024-mclaren-750s-spider-sbm14bca7rw008753-n1eP9vn/",
-    "dedupe ('url', 'https://www.classic.com/veh/2024-mclaren-750s-spider-sbm14bca3rw007602-nO8qOwW/'): https://www.classic.com/veh/2024-mclaren-750s-spider-sbm14bca3rw007602-nO8qOwW/ vs https://www.classic.com/veh/2024-mclaren-750s-spider-sbm14bca3rw007602-nO8qOwW/",
-    "dedupe ('url', 'https://www.classic.com/veh/2026-mclaren-750s-sbm14ace3tw009810-WxoNzJn/'): https://www.classic.com/veh/2026-mclaren-750s-sbm14ace3tw009810-WxoNzJn/ vs https://www.classic.com/veh/2026-mclaren-750s-sbm14ace3tw009810-WxoNzJn/",
-    "dedupe ('url', 'https://www.classic.com/veh/2024-mclaren-750s-spider-techlux-sbm14bca4rw007656-WkBlV2n/'): https://www.classic.com/veh/2024-mclaren-750s-spider-techlux-sbm14bca4rw007656-WkBlV2n/ vs https://www.classic.com/veh/2024-mclaren-750s-spider-techlux-sbm14bca4rw007656-WkBlV2n/",
-    "dedupe ('url', 'https://www.classic.com/veh/2024-mclaren-750s-sbm14bca8rw008759-nwJYZP4/'): https://www.classic.com/veh/2024-mclaren-750s-sbm14bca8rw008759-nwJYZP4/ vs https://www.classic.com/veh/2024-mclaren-750s-sbm14bca8rw008759-nwJYZP4/",
-    "dedupe ('url', 'https://www.classic.com/veh/2024-mclaren-750s-spider-sbm14bca4rw008404-p6va81p/'): https://www.classic.com/veh/2024-mclaren-750s-spider-sbm14bca4rw008404-p6va81p/ vs https://www.classic.com/veh/2024-mclaren-750s-spider-sbm14bca4rw008404-p6va81p/",
-    "dedupe ('url', 'https://www.classic.com/veh/2024-mclaren-750s-spider-sbm14bca3rw007602-nO8qOwW/'): https://www.classic.com/veh/2024-mclaren-750s-spider-sbm14bca3rw007602-nO8qOwW/ vs https://www.classic.com/veh/2024-mclaren-750s-spider-sbm14bca3rw007602-nO8qOwW/",
-    "dedupe ('url', 'https://www.classic.com/veh/2024-mclaren-750s-spider-sbm14bca1rw007923-4D330Yp/'): https://www.classic.com/veh/2024-mclaren-750s-spider-sbm14bca1rw007923-4D330Yp/ vs https://www.classic.com/veh/2024-mclaren-750s-spider-sbm14bca1rw007923-4D330Yp/",
-    "dedupe ('url', 'https://www.classic.com/veh/2024-mclaren-750s-spider-sbm14bca3rw007602-nO8qOwW/'): https://www.classic.com/veh/2024-mclaren-750s-spider-sbm14bca3rw007602-nO8qOwW/ vs https://www.classic.com/veh/2024-mclaren-750s-spider-sbm14bca3rw007602-nO8qOwW/",
-    "dedupe ('url', 'https://www.classic.com/veh/2024-mclaren-750s-coupe-sbm14aca7rw008293-n1oxqrp/'): https://www.classic.com/veh/2024-mclaren-750s-coupe-sbm14aca7rw008293-n1oxqrp/ vs https://www.classic.com/veh/2024-mclaren-750s-coupe-sbm14aca7rw008293-n1oxqrp/",
-    "dedupe ('url', 'https://www.classic.com/veh/2024-mclaren-750s-spider-sbm14bca3rw007602-nO8qOwW/'): https://www.classic.com/veh/2024-mclaren-750s-spider-sbm14bca3rw007602-nO8qOwW/ vs https://www.classic.com/veh/2024-mclaren-750s-spider-sbm14bca3rw007602-nO8qOwW/",
-    "dedupe ('url', 'https://www.classic.com/veh/2025-mclaren-750s-sbm14bca6sw009351-W9avgPW/'): https://www.classic.com/veh/2025-mclaren-750s-sbm14bca6sw009351-W9avgPW/ vs https://www.classic.com/veh/2025-mclaren-750s-sbm14bca6sw009351-W9avgPW/",
-    "dedupe ('url', 'https://www.classic.com/veh/2024-mclaren-750s-spider-sbm14bca3rw007602-nO8qOwW/'): https://www.classic.com/veh/2024-mclaren-750s-spider-sbm14bca3rw007602-nO8qOwW/ vs https://www.classic.com/veh/2024-mclaren-750s-spider-sbm14bca3rw007602-nO8qOwW/",
-    "dedupe ('url', 'https://www.classic.com/veh/2017-mclaren-570s-sbm13daa4hw003266-nQMzwOn/'): https://www.classic.com/veh/2017-mclaren-570s-sbm13daa4hw003266-nQMzwOn/ vs https://www.classic.com/veh/2017-mclaren-570s-sbm13daa4hw003266-nQMzwOn/",
-    "dedupe ('url', 'https://www.classic.com/veh/2018-mclaren-570s-sbm13daa8jw570005-4DoYvlp/'): https://www.classic.com/veh/2018-mclaren-570s-sbm13daa8jw570005-4DoYvlp/ vs https://www.classic.com/veh/2018-mclaren-570s-sbm13daa8jw570005-4DoYvlp/",
-    "dedupe ('url', 'https://www.classic.com/veh/2019-mclaren-570s-spider-sbm13faa6kw007550-W9kr704/'): https://www.classic.com/veh/2019-mclaren-570s-spider-sbm13faa6kw007550-W9kr704/ vs https://www.classic.com/veh/2019-mclaren-570s-spider-sbm13faa6kw007550-W9kr704/",
-    "dedupe ('url', 'https://www.classic.com/veh/2018-mclaren-570s-sbm13faa6jw003870-nKwANXn/'): https://www.classic.com/veh/2018-mclaren-570s-sbm13faa6jw003870-nKwANXn/ vs https://www.classic.com/veh/2018-mclaren-570s-sbm13faa6jw003870-nKwANXn/",
-    "dedupe ('url', 'https://www.classic.com/veh/2017-mclaren-570s-coupe-sbm13daa6hw002510-pdQ2lQ4/'): https://www.classic.com/veh/2017-mclaren-570s-coupe-sbm13daa6hw002510-pdQ2lQ4/ vs https://www.classic.com/veh/2017-mclaren-570s-coupe-sbm13daa6hw002510-pdQ2lQ4/",
-    "dedupe ('url', 'https://www.classic.com/veh/2017-mclaren-570s-sbm13daa8hw002086-4DBXPjW/'): https://www.classic.com/veh/2017-mclaren-570s-sbm13daa8hw002086-4DBXPjW/ vs https://www.classic.com/veh/2017-mclaren-570s-sbm13daa8hw002086-4DBXPjW/",
-    "dedupe ('url', 'https://www.classic.com/veh/2017-mclaren-570s-coupe-sbm13daa6hw002510-pdQ2lQ4/'): https://www.classic.com/veh/2017-mclaren-570s-coupe-sbm13daa6hw002510-pdQ2lQ4/ vs https://www.classic.com/veh/2017-mclaren-570s-coupe-sbm13daa6hw002510-pdQ2lQ4/",
-    "dedupe ('url', 'https://www.classic.com/veh/2018-mclaren-570s-spider-sbm13faa5jw004878-pERryj4/'): https://www.classic.com/veh/2018-mclaren-570s-spider-sbm13faa5jw004878-pERryj4/ vs https://www.classic.com/veh/2018-mclaren-570s-spider-sbm13faa5jw004878-pERryj4/",
-    "dedupe ('url', 'https://www.classic.com/veh/2018-mclaren-570s-spider-sbm13fab7jw004437-4rOY5En/'): https://www.classic.com/veh/2018-mclaren-570s-spider-sbm13fab7jw004437-4rOY5En/ vs https://www.classic.com/veh/2018-mclaren-570s-spider-sbm13fab7jw004437-4rOY5En/",
-    "dedupe ('url', 'https://www.classic.com/veh/2024-mclaren-570s-gt4-p0rQY3n/'): https://www.classic.com/veh/2024-mclaren-570s-gt4-p0rQY3n/ vs https://www.classic.com/veh/2024-mclaren-570s-gt4-p0rQY3n/",
-    "dedupe ('url', 'https://www.classic.com/veh/2017-mclaren-570s-gt4-race-car-155-nXN0z7p/'): https://www.classic.com/veh/2017-mclaren-570s-gt4-race-car-155-nXN0z7p/ vs https://www.classic.com/veh/2017-mclaren-570s-gt4-race-car-155-nXN0z7p/"
+    "dedupe ('url', 'https://www.classic.com/veh/2022-ferrari-812-gts-zff97cma5n0279980-pJd8y7n/'): https://www.classic.com/veh/2022-ferrari-812-gts-zff97cma5n0279980-pJd8y7n/ vs https://www.classic.com/veh/2022-ferrari-812-gts-zff97cma5n0279980-pJd8y7n/",
+    "dedupe ('url', 'https://www.classic.com/veh/2018-ferrari-812-superfast-zff83cla7j0237040-nlamAJW/'): https://www.classic.com/veh/2018-ferrari-812-superfast-zff83cla7j0237040-nlamAJW/ vs https://www.classic.com/veh/2018-ferrari-812-superfast-zff83cla7j0237040-nlamAJW/",
+    "dedupe ('url', 'https://www.classic.com/veh/2023-ferrari-812-gts-zff97cma4p0291895-nKxEVgW/'): https://www.classic.com/veh/2023-ferrari-812-gts-zff97cma4p0291895-nKxEVgW/ vs https://www.classic.com/veh/2023-ferrari-812-gts-zff97cma4p0291895-nKxEVgW/",
+    "dedupe ('url', 'https://www.classic.com/veh/2021-ferrari-812-gts-zff97cma3m0262237-4oaPzvW/'): https://www.classic.com/veh/2021-ferrari-812-gts-zff97cma3m0262237-4oaPzvW/ vs https://www.classic.com/veh/2021-ferrari-812-gts-zff97cma3m0262237-4oaPzvW/",
+    "dedupe ('url', 'https://www.classic.com/veh/2021-ferrari-812-gts-zff97cma3m0258219-Wqyx0XW/'): https://www.classic.com/veh/2021-ferrari-812-gts-zff97cma3m0258219-Wqyx0XW/ vs https://www.classic.com/veh/2021-ferrari-812-gts-zff97cma3m0258219-Wqyx0XW/",
+    "dedupe ('url', 'https://www.classic.com/veh/2023-ferrari-812-gts-zff97cma9p0298258-nOxm3AW/'): https://www.classic.com/veh/2023-ferrari-812-gts-zff97cma9p0298258-nOxm3AW/ vs https://www.classic.com/veh/2023-ferrari-812-gts-zff97cma9p0298258-nOxm3AW/",
+    "dedupe ('url', 'https://www.classic.com/veh/2021-ferrari-812-gts-zff97cma0m0260347-47rePLp/'): https://www.classic.com/veh/2021-ferrari-812-gts-zff97cma0m0260347-47rePLp/ vs https://www.classic.com/veh/2021-ferrari-812-gts-zff97cma0m0260347-47rePLp/",
+    "dedupe ('url', 'https://www.classic.com/veh/2019-ferrari-812-superfast-zff83cla3k0246223-nOxL12W/'): https://www.classic.com/veh/2019-ferrari-812-superfast-zff83cla3k0246223-nOxL12W/ vs https://www.classic.com/veh/2019-ferrari-812-superfast-zff83cla3k0246223-nOxL12W/",
+    "dedupe ('url', 'https://www.classic.com/veh/2023-ferrari-812-gts-zff97cma9p0298258-nOxm3AW/'): https://www.classic.com/veh/2023-ferrari-812-gts-zff97cma9p0298258-nOxm3AW/ vs https://www.classic.com/veh/2023-ferrari-812-gts-zff97cma9p0298258-nOxm3AW/",
+    "dedupe ('url', 'https://www.classic.com/veh/2021-ferrari-812-gts-zff97cma2m0262679-WY09mvn/'): https://www.classic.com/veh/2021-ferrari-812-gts-zff97cma2m0262679-WY09mvn/ vs https://www.classic.com/veh/2021-ferrari-812-gts-zff97cma2m0262679-WY09mvn/",
+    "dedupe ('url', 'https://www.classic.com/veh/2023-ferrari-812-competizione-zff03tla4p0288873-4rmRBYp/'): https://www.classic.com/veh/2023-ferrari-812-competizione-zff03tla4p0288873-4rmRBYp/ vs https://www.classic.com/veh/2023-ferrari-812-competizione-zff03tla4p0288873-4rmRBYp/",
+    "dedupe ('url', 'https://www.classic.com/veh/2024-ferrari-812-competizione-a-zff04tma6r0301363-47kA8l4/'): https://www.classic.com/veh/2024-ferrari-812-competizione-a-zff04tma6r0301363-47kA8l4/ vs https://www.classic.com/veh/2024-ferrari-812-competizione-a-zff04tma6r0301363-47kA8l4/",
+    "dedupe ('url', 'https://www.classic.com/veh/2019-ferrari-812-superfast-zff83cla8k0241664-4yo1jqW/'): https://www.classic.com/veh/2019-ferrari-812-superfast-zff83cla8k0241664-4yo1jqW/ vs https://www.classic.com/veh/2019-ferrari-812-superfast-zff83cla8k0241664-4yo1jqW/",
+    "dedupe ('url', 'https://www.classic.com/veh/2020-ferrari-812-superfast-zff83cla1l0249882-pzm0v3W/'): https://www.classic.com/veh/2020-ferrari-812-superfast-zff83cla1l0249882-pzm0v3W/ vs https://www.classic.com/veh/2020-ferrari-812-superfast-zff83cla1l0249882-pzm0v3W/",
+    "dedupe ('url', 'https://www.classic.com/veh/2024-ferrari-812-competizione-zff03tla2r0303177-4Av5yzn/'): https://www.classic.com/veh/2024-ferrari-812-competizione-zff03tla2r0303177-4Av5yzn/ vs https://www.classic.com/veh/2024-ferrari-812-competizione-zff03tla2r0303177-4Av5yzn/",
+    "dedupe ('url', 'https://www.classic.com/veh/2022-ferrari-812-gts-zff97cma1n0271715-WNGe2Ep/'): https://www.classic.com/veh/2022-ferrari-812-gts-zff97cma1n0271715-WNGe2Ep/ vs https://www.classic.com/veh/2022-ferrari-812-gts-zff97cma1n0271715-WNGe2Ep/",
+    "dedupe ('url', 'https://www.classic.com/veh/2023-ferrari-812-gts-zff97cma3p0298918-pE7Pden/'): https://www.classic.com/veh/2023-ferrari-812-gts-zff97cma3p0298918-pE7Pden/ vs https://www.classic.com/veh/2023-ferrari-812-gts-zff97cma3p0298918-pE7Pden/",
+    "dedupe ('url', 'https://www.classic.com/veh/2019-ferrari-812-superfast-zff83cla4k0242326-nXwPOk4/'): https://www.classic.com/veh/2019-ferrari-812-superfast-zff83cla4k0242326-nXwPOk4/ vs https://www.classic.com/veh/2019-ferrari-812-superfast-zff83cla4k0242326-nXwPOk4/",
+    "dedupe ('url', 'https://www.classic.com/veh/2021-ferrari-812-gts-zff97cma5m0265723-Wxm6Exp/'): https://www.classic.com/veh/2021-ferrari-812-gts-zff97cma5m0265723-Wxm6Exp/ vs https://www.classic.com/veh/2021-ferrari-812-gts-zff97cma5m0265723-Wxm6Exp/",
+    "dedupe ('url', 'https://www.classic.com/veh/2022-ferrari-812-gts-zff97cma0n0280700-p6mdD3W/'): https://www.classic.com/veh/2022-ferrari-812-gts-zff97cma0n0280700-p6mdD3W/ vs https://www.classic.com/veh/2022-ferrari-812-gts-zff97cma0n0280700-p6mdD3W/",
+    "dedupe ('url', 'https://www.classic.com/veh/2022-ferrari-812-gts-zff97cma1n0271715-WNGe2Ep/'): https://www.classic.com/veh/2022-ferrari-812-gts-zff97cma1n0271715-WNGe2Ep/ vs https://www.classic.com/veh/2022-ferrari-812-gts-zff97cma1n0271715-WNGe2Ep/",
+    "dedupe ('url', 'https://www.classic.com/veh/2022-ferrari-812-competizione-zff03tmt9n0278336-pE7jGDn/'): https://www.classic.com/veh/2022-ferrari-812-competizione-zff03tmt9n0278336-pE7jGDn/ vs https://www.classic.com/veh/2022-ferrari-812-competizione-zff03tmt9n0278336-pE7jGDn/",
+    "dedupe ('url', 'https://www.classic.com/veh/2022-ferrari-812-gts-zff97cmaxn0274015-nBOmPQW/'): https://www.classic.com/veh/2022-ferrari-812-gts-zff97cmaxn0274015-nBOmPQW/ vs https://www.classic.com/veh/2022-ferrari-812-gts-zff97cmaxn0274015-nBOmPQW/",
+    "dedupe ('url', 'https://www.classic.com/veh/2021-ferrari-812-gts-zff97cma5m0267441-n36K9Q4/'): https://www.classic.com/veh/2021-ferrari-812-gts-zff97cma5m0267441-n36K9Q4/ vs https://www.classic.com/veh/2021-ferrari-812-gts-zff97cma5m0267441-n36K9Q4/",
+    "dedupe ('url', 'https://www.classic.com/veh/2022-ferrari-812-gts-zff97cma7n0280368-pJQob7W/'): https://www.classic.com/veh/2022-ferrari-812-gts-zff97cma7n0280368-pJQob7W/ vs https://www.classic.com/veh/2022-ferrari-812-gts-zff97cma7n0280368-pJQob7W/",
+    "dedupe ('url', 'https://www.classic.com/veh/2019-ferrari-812-superfast-zff83cla1k0245281-nlK61V4/'): https://www.classic.com/veh/2019-ferrari-812-superfast-zff83cla1k0245281-nlK61V4/ vs https://www.classic.com/veh/2019-ferrari-812-superfast-zff83cla1k0245281-nlK61V4/",
+    "dedupe ('url', 'https://www.classic.com/veh/2019-ferrari-812-superfast-zff83cla2k0241675-p6k9RO4/'): https://www.classic.com/veh/2019-ferrari-812-superfast-zff83cla2k0241675-p6k9RO4/ vs https://www.classic.com/veh/2019-ferrari-812-superfast-zff83cla2k0241675-p6k9RO4/",
+    "dedupe ('url', 'https://www.classic.com/veh/2019-ferrari-812-superfast-zff83cmb000249862-n85LV0W/'): https://www.classic.com/veh/2019-ferrari-812-superfast-zff83cmb000249862-n85LV0W/ vs https://www.classic.com/veh/2019-ferrari-812-superfast-zff83cmb000249862-n85LV0W/",
+    "dedupe ('url', 'https://www.classic.com/veh/2021-ferrari-812-gts-zff97cma0m0261174-Wj3Mjqp/'): https://www.classic.com/veh/2021-ferrari-812-gts-zff97cma0m0261174-Wj3Mjqp/ vs https://www.classic.com/veh/2021-ferrari-812-gts-zff97cma0m0261174-Wj3Mjqp/",
+    "dedupe ('url', 'https://www.classic.com/veh/2023-ferrari-812-gts-zff97cma4p0291895-nKxEVgW/'): https://www.classic.com/veh/2023-ferrari-812-gts-zff97cma4p0291895-nKxEVgW/ vs https://www.classic.com/veh/2023-ferrari-812-gts-zff97cma4p0291895-nKxEVgW/",
+    "dedupe ('url', 'https://www.classic.com/veh/2023-ferrari-812-competizione-zff03tmb000286622-47kYNe4/'): https://www.classic.com/veh/2023-ferrari-812-competizione-zff03tmb000286622-47kYNe4/ vs https://www.classic.com/veh/2023-ferrari-812-competizione-zff03tmb000286622-47kYNe4/",
+    "dedupe ('url', 'https://www.classic.com/veh/2023-ferrari-812-gts-zff97cmaxp0302348-n2Q5g94/'): https://www.classic.com/veh/2023-ferrari-812-gts-zff97cmaxp0302348-n2Q5g94/ vs https://www.classic.com/veh/2023-ferrari-812-gts-zff97cmaxp0302348-n2Q5g94/",
+    "dedupe ('url', 'https://www.classic.com/veh/2023-ferrari-812-gts-zff97cma8p0297280-Wj15eln/'): https://www.classic.com/veh/2023-ferrari-812-gts-zff97cma8p0297280-Wj15eln/ vs https://www.classic.com/veh/2023-ferrari-812-gts-zff97cma8p0297280-Wj15eln/",
+    "dedupe ('url', 'https://www.classic.com/veh/2020-ferrari-812-superfast-zff83cmj000253195-pzOQPx4/'): https://www.classic.com/veh/2020-ferrari-812-superfast-zff83cmj000253195-pzOQPx4/ vs https://www.classic.com/veh/2020-ferrari-812-superfast-zff83cmj000253195-pzOQPx4/",
+    "dedupe ('url', 'https://www.classic.com/veh/2021-ferrari-812-gts-zff97cma3m0267101-nKxMZ8W/'): https://www.classic.com/veh/2021-ferrari-812-gts-zff97cma3m0267101-nKxMZ8W/ vs https://www.classic.com/veh/2021-ferrari-812-gts-zff97cma3m0267101-nKxMZ8W/",
+    "dedupe ('url', 'https://www.classic.com/veh/2021-ferrari-812-superfast-zff83cla8m0266535-4VNey24/'): https://www.classic.com/veh/2021-ferrari-812-superfast-zff83cla8m0266535-4VNey24/ vs https://www.classic.com/veh/2021-ferrari-812-superfast-zff83cla8m0266535-4VNey24/",
+    "dedupe ('url', 'https://www.classic.com/veh/2021-ferrari-812-gts-zff97cma0m0264012-pPgJQ3W/'): https://www.classic.com/veh/2021-ferrari-812-gts-zff97cma0m0264012-pPgJQ3W/ vs https://www.classic.com/veh/2021-ferrari-812-gts-zff97cma0m0264012-pPgJQ3W/",
+    "dedupe ('url', 'https://www.classic.com/veh/2023-ferrari-812-gts-zff97cma4p0291895-nKxEVgW/'): https://www.classic.com/veh/2023-ferrari-812-gts-zff97cma4p0291895-nKxEVgW/ vs https://www.classic.com/veh/2023-ferrari-812-gts-zff97cma4p0291895-nKxEVgW/",
+    "dedupe ('url', 'https://www.classic.com/veh/2022-ferrari-812-gts-zff97cma1n0271715-WNGe2Ep/'): https://www.classic.com/veh/2022-ferrari-812-gts-zff97cma1n0271715-WNGe2Ep/ vs https://www.classic.com/veh/2022-ferrari-812-gts-zff97cma1n0271715-WNGe2Ep/",
+    "dedupe ('url', 'https://www.classic.com/veh/2018-ferrari-812-superfast-zff83cla2j0232490-p6mJNGW/'): https://www.classic.com/veh/2018-ferrari-812-superfast-zff83cla2j0232490-p6mJNGW/ vs https://www.classic.com/veh/2018-ferrari-812-superfast-zff83cla2j0232490-p6mJNGW/"
   ],
-  "dedupe_notes_count": 66,
+  "dedupe_notes_count": 319,
   "output_files": [
     "/home/box/agent-data/projects/car-trends-overview/data/backfill/classic_historical_90d.csv",
     "/home/box/agent-data/projects/car-trends-overview/data/backfill/classic_historical_undated.csv",
     "/home/box/agent-data/projects/car-trends-overview/data/backfill/classic_historical_90d_summary.json",
     "/workspace/classic-historical-90d/classic_historical_90d.csv",
-    "/workspace/classic-historical-90d/classic_new_families_90d.csv"
+    "/workspace/classic-historical-90d/classic_812_f12_90d.csv"
   ],
   "rules": [
     "Never invent prices/dates/miles",
-    "New rows dated outside 2026-06-16..2026-09-14 dropped",
+    "New rows dated outside 2026-06-17..2026-09-15 dropped",
     "APPEND new families; keep old families",
     "Dedupe by listing_url / vin+date",
     "Exclude SF90 XX; Aventador Ultimae/base S from SV; require SV/SVJ signals",
@@ -629,5 +717,5 @@
     "Prefer US/Canada noted; non-US kept with note",
     "Do NOT invent retail daily ask medians"
   ],
-  "generated_at": "2026-09-15T09:43:35.926797-04:00"
+  "generated_at": "2026-09-15T10:12:19.505740-04:00"
 }
