@@ -3,7 +3,7 @@
 Cryptographically / mathematically verifiable snapshot of the data behind
 https://dboundz.github.io/car-trends/ HTML pages.
 
-**as_of (America/New_York):** `2026-09-14`  
+**as_of (America/New_York):** `2026-09-15`  
 **schema_version:** `1.0.0`
 
 ## Files
@@ -67,7 +67,7 @@ path:sha256
 
 (one `path:sha256` per line, lines sorted, trailing newline; see `manifest.json` → `aggregate_definition`).
 
-Current aggregate: `82af77814a5449f34da2c4ca5f9d4bf0116feb23198cf231efa9b393d2f1aa9a`
+Current aggregate: `9b1db1569876c8cbe631d8fbbdb14468976dd57945c722f7b5bf6665d0aa5d47`
 
 ## Geography
 

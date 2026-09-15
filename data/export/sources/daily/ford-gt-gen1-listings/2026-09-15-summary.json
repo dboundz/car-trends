@@ -1,0 +1,316 @@
+{
+  "snapshot_date": "2026-09-15",
+  "timezone": "America/New_York",
+  "total_listings": 47,
+  "counts_by_family": {
+    "Gen1": 30,
+    "Gen2": 17
+  },
+  "medians_by_family": {
+    "Gen1": {
+      "median_ask": 749950,
+      "median_miles": 1928
+    },
+    "Gen2": {
+      "median_ask": 1075000,
+      "median_miles": 392
+    }
+  },
+  "counts_by_year": {
+    "2005": 13,
+    "2006": 17,
+    "2017": 1,
+    "2018": 1,
+    "2019": 5,
+    "2020": 6,
+    "2021": 3,
+    "2022": 1
+  },
+  "medians_by_year": {
+    "2005": {
+      "median_ask": 699900,
+      "median_miles": 8166
+    },
+    "2006": {
+      "median_ask": 869675,
+      "median_miles": 926
+    },
+    "2017": {
+      "median_ask": 1050000,
+      "median_miles": 1173
+    },
+    "2018": {
+      "median_ask": 2999975,
+      "median_miles": 699
+    },
+    "2019": {
+      "median_ask": 1045412,
+      "median_miles": 1551
+    },
+    "2020": {
+      "median_ask": 1082490,
+      "median_miles": 160
+    },
+    "2021": {
+      "median_ask": 1100000,
+      "median_miles": 498
+    },
+    "2022": {
+      "median_ask": 2199995,
+      "median_miles": 17
+    }
+  },
+  "overall": {
+    "median_ask": 935993,
+    "median_miles": 639,
+    "min_ask": 429995,
+    "max_ask": 2999975
+  },
+  "families": {
+    "Gen1": {
+      "count": 30,
+      "priced_count": 30,
+      "with_mileage_count": 21,
+      "median_asking_price_usd": 749950,
+      "min_asking_price_usd": 429995,
+      "max_asking_price_usd": 1500826,
+      "median_mileage_miles": 1928
+    },
+    "Gen2": {
+      "count": 17,
+      "priced_count": 17,
+      "with_mileage_count": 15,
+      "median_asking_price_usd": 1075000,
+      "min_asking_price_usd": 749000,
+      "max_asking_price_usd": 2999975,
+      "median_mileage_miles": 392
+    }
+  },
+  "years": {
+    "2005": {
+      "count": 13,
+      "priced_count": 13,
+      "with_mileage_count": 10,
+      "median_asking_price_usd": 699900,
+      "min_asking_price_usd": 429995,
+      "max_asking_price_usd": 1150000,
+      "median_mileage_miles": 8166
+    },
+    "2006": {
+      "count": 17,
+      "priced_count": 17,
+      "with_mileage_count": 11,
+      "median_asking_price_usd": 869675,
+      "min_asking_price_usd": 499992,
+      "max_asking_price_usd": 1500826,
+      "median_mileage_miles": 926
+    },
+    "2017": {
+      "count": 1,
+      "priced_count": 1,
+      "with_mileage_count": 1,
+      "median_asking_price_usd": 1050000,
+      "min_asking_price_usd": 1050000,
+      "max_asking_price_usd": 1050000,
+      "median_mileage_miles": 1173
+    },
+    "2018": {
+      "count": 1,
+      "priced_count": 1,
+      "with_mileage_count": 1,
+      "median_asking_price_usd": 2999975,
+      "min_asking_price_usd": 2999975,
+      "max_asking_price_usd": 2999975,
+      "median_mileage_miles": 699
+    },
+    "2019": {
+      "count": 5,
+      "priced_count": 5,
+      "with_mileage_count": 5,
+      "median_asking_price_usd": 1045412,
+      "min_asking_price_usd": 749900,
+      "max_asking_price_usd": 1599995,
+      "median_mileage_miles": 1551
+    },
+    "2020": {
+      "count": 6,
+      "priced_count": 6,
+      "with_mileage_count": 4,
+      "median_asking_price_usd": 1082490,
+      "min_asking_price_usd": 749000,
+      "max_asking_price_usd": 1299990,
+      "median_mileage_miles": 160
+    },
+    "2021": {
+      "count": 3,
+      "priced_count": 3,
+      "with_mileage_count": 3,
+      "median_asking_price_usd": 1100000,
+      "min_asking_price_usd": 1025412,
+      "max_asking_price_usd": 1299800,
+      "median_mileage_miles": 498
+    },
+    "2022": {
+      "count": 1,
+      "priced_count": 1,
+      "with_mileage_count": 1,
+      "median_asking_price_usd": 2199995,
+      "min_asking_price_usd": 2199995,
+      "max_asking_price_usd": 2199995,
+      "median_mileage_miles": 17
+    }
+  },
+  "counts_by_source": {
+    "Classic.com": 32,
+    "Cars.com": 10,
+    "CarGurus": 1,
+    "Hemmings": 3,
+    "duPont REGISTRY": 1
+  },
+  "source_raw_counts": {
+    "Classic.com": 32,
+    "Cars.com": 27,
+    "Hemmings": 4,
+    "duPont REGISTRY": 7,
+    "Merlin Auto Group": 0,
+    "CarGurus": 10
+  },
+  "dedupe_notes_count": 33,
+  "dedupe_notes_sample": [
+    "vin dedupe keep existing 979995 (Classic.com) drop 979995 (Cars.com) vin=1FAFP90S95Y401413",
+    "vin dedupe keep existing 779996 (Classic.com) drop 783076 (Cars.com) vin=1FAFP90S65Y401448",
+    "vin dedupe keep existing 429995 (Classic.com) drop 429995 (Cars.com) vin=1FAFP90S05Y401185",
+    "vin dedupe keep existing 749900 (Classic.com) drop 749900 (Cars.com) vin=1FAFP90S56Y401426",
+    "vin dedupe keep existing 869675 (Classic.com) drop 869900 (Cars.com) vin=1FAFP90S06Y401558",
+    "vin dedupe keep existing 649500 (Classic.com) drop 649500 (Cars.com) vin=1FAFP90S76Y401265",
+    "vin dedupe keep existing 569500 (Classic.com) drop 569500 (Cars.com) vin=1FAFP90S55Y400288",
+    "vin dedupe keep existing 869999 (Classic.com) drop 870084 (Cars.com) vin=1FAFP90S05Y401512",
+    "vin dedupe keep existing 899999 (Classic.com) drop 900084 (Cars.com) vin=1FAFP90S56Y400390",
+    "vin dedupe keep existing 1499888 (Classic.com) drop 1499888 (Cars.com) vin=1FAFP90S36Y401991",
+    "vin dedupe keep existing 1099980 (Classic.com) drop 1099980 (Cars.com) vin=2FAGP9DW2LH100166",
+    "vin dedupe keep existing 1199995 (Classic.com) drop 1200220 (Cars.com) vin=2FAGP9DW7LH100101",
+    "vin dedupe keep existing 1599995 (Classic.com) drop 1600790 (Cars.com) vin=2FAGP9CWXKH200242",
+    "vin dedupe keep existing 1045412 (Classic.com) drop 1045412 (Cars.com) vin=2FAGP9CW6KH200108",
+    "vin dedupe keep existing 999412 (Classic.com) drop 999412 (Cars.com) vin=2FAGP9CW2KH200137",
+    "vin dedupe keep existing 1050000 (Classic.com) drop 1050250 (Cars.com) vin=2FAGP9CW8HH200068",
+    "vin dedupe keep existing 599200 (Classic.com) drop 599200 (Hemmings) vin=1FAFP90S85Y401161",
+    "vin dedupe keep existing 779996 (Classic.com) drop 779996 (duPont REGISTRY) vin=1FAFP90S65Y401448",
+    "vin dedupe keep existing 999412 (Classic.com) drop 999412 (duPont REGISTRY) vin=2FAGP9CW2KH200137",
+    "vin dedupe keep existing 1045412 (Classic.com) drop 1045412 (duPont REGISTRY) vin=2FAGP9CW6KH200108",
+    "vin dedupe keep existing 979995 (Classic.com) drop 979995 (duPont REGISTRY) vin=1FAFP90S95Y401413",
+    "vin dedupe keep existing 1199995 (Classic.com) drop 1199995 (duPont REGISTRY) vin=2FAGP9DW7LH100101",
+    "vin dedupe keep 2199995 (duPont REGISTRY) drop 2200373 (Cars.com) vin=2FAGP9FW8NH200109",
+    "vin dedupe keep existing 869675 (Classic.com) drop 869675 (duPont REGISTRY) vin=1FAFP90S06Y401558",
+    "cargurus skip existing VIN 1FAFP90SX5Y400738 (prefer non-CarGurus)"
+  ],
+  "skipped_por": 19,
+  "sources_used": [
+    "CarGurus",
+    "Cars.com",
+    "Classic.com",
+    "Hemmings",
+    "duPont REGISTRY"
+  ],
+  "sources_blocked_or_empty": [
+    "Autotrader (page unavailable / blocked)",
+    "Cars & Bids (SPA shell; not merged)",
+    "Canepa inventory (blocked/empty)"
+  ],
+  "cargurus": {
+    "raw": 10,
+    "added": 1,
+    "deduped_against_existing": 8
+  },
+  "meta": {
+    "classic": {
+      "files": [
+        "classic_1st.html",
+        "classic_1st_p2.html",
+        "classic_2nd.html",
+        "classic_2nd_p2.html",
+        "classic_market.html",
+        "classic_market_p2.html"
+      ],
+      "items_seen": 96,
+      "skips": {
+        "no_price": 6,
+        "auction_skip": 27,
+        "sold_or_removed": 26,
+        "not_real_gt": 3,
+        "year_out_of_range": 2
+      }
+    },
+    "carscom": {
+      "files": [
+        "carscom_gen1.html",
+        "carscom_gen1_p2.html",
+        "carscom_gen2.html",
+        "carscom_gen2_p2.html"
+      ],
+      "unique_cards": 40,
+      "priced_rows": 27,
+      "skipped_por": 10,
+      "skipped_not_gt": 3
+    },
+    "hemmings": {
+      "vdps": 19,
+      "skips": {
+        "por_or_auction": 13,
+        "gt40": 1,
+        "replica": 1
+      },
+      "priced": 4
+    },
+    "dupont": {
+      "cars_in_payload": 17,
+      "priced": 7,
+      "skipped_por": 9
+    },
+    "merlin": {
+      "error": "missing"
+    },
+    "bat": {
+      "active_ford_gt_urls": [
+        "https://bringatrailer.com/listing/2006-ford-gt-217/",
+        "https://bringatrailer.com/listing/2005-ford-gt-244/"
+      ],
+      "active_gen1_urls": [
+        "https://bringatrailer.com/listing/2006-ford-gt-217/",
+        "https://bringatrailer.com/listing/2005-ford-gt-244/"
+      ],
+      "count": 2
+    },
+    "cargurus": {
+      "raw": 10,
+      "added": 1,
+      "deduped": 8
+    }
+  },
+  "csv": "/home/box/agent-data/projects/ford-gt-gen1-listings/data/daily/2026-09-15.csv",
+  "scrape_dir": "/workspace/ford-gt-scrape-2026-09-15",
+  "data_quality_notes": [
+    "Ford GT Gen1 (2005\u20132006) + Gen2 (2017\u20132022); GT40 replicas excluded.",
+    "POR / price=0 listings skipped; prices never invented.",
+    "Classic.com rounded Nk mi left blank.",
+    "US-focused; some Canada/EU Hemmings rows retained with location notes.",
+    "Dedupe by listing_url and VIN; keep lowest ask."
+  ],
+  "vs_prior_day": {
+    "prior_snapshot": "2026-09-13",
+    "prior_total_listings": 29,
+    "prior_overall_median_ask": 749900,
+    "overall_median_ask_delta": 186093,
+    "same_vin_price_drops": [
+      {
+        "vin": "1FAFP90S05Y401512",
+        "prior_ask": 870084,
+        "current_ask": 869999,
+        "drop_usd": 85,
+        "drop_pct": 0.01,
+        "source": "Classic.com",
+        "listing_url": "https://www.classic.com/veh/2005-ford-gt-1fafp90s05y401512-bnwx93W/"
+      }
+    ],
+    "striking_same_day_drop": false
+  }
+}

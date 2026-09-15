@@ -1,124 +1,124 @@
 {
   "brand": "mclaren",
-  "as_of": "2026-09-14",
+  "as_of": "2026-09-15",
   "geography": "US + Canada only (overview pages filter; raw CSV rows may include others — see GEO.md)",
   "source_csvs": [
     {
-      "path": "data/export/sources/daily/mclaren-lt-listings/2026-09-14.csv",
-      "bytes": 47950,
-      "sha256": "5b64ec8b1487f000d79c55fdb02dad1d290d09968c2f9224e84158b499b0d861",
+      "path": "data/export/sources/daily/mclaren-lt-listings/2026-09-15.csv",
+      "bytes": 47393,
+      "sha256": "d5c9f638014d5163da4e59577fa4cc99f9df56dd5fbfaa92841a141b4854665c",
       "row_count": 154,
       "project": "mclaren-lt-listings",
-      "as_of": "2026-09-14"
+      "as_of": "2026-09-15"
     }
   ],
   "kpis": {
     "listing_count": 154,
-    "median_ask": 256877,
-    "median_miles": 5668,
+    "median_ask": 258382,
+    "median_miles": 5687,
     "by_model_family": {
       "600LT": {
-        "count": 45,
+        "count": 46,
         "median_ask": 249995,
-        "median_miles": 14771
+        "median_miles": 14480
       },
       "675LT": {
-        "count": 4,
-        "median_ask": 394947,
-        "median_miles": 1417
+        "count": 5,
+        "median_ask": 379900,
+        "median_miles": 2290
       },
       "765LT": {
         "count": 36,
-        "median_ask": 787499,
-        "median_miles": 6406
+        "median_ask": 791499,
+        "median_miles": 6340
       },
       "Artura": {
-        "count": 69,
+        "count": 67,
         "median_ask": 213498,
-        "median_miles": 2088
+        "median_miles": 2128
       }
     }
   },
   "daily_summaries": [
     {
       "project": "mclaren-lt-listings",
-      "as_of": "2026-09-14",
+      "as_of": "2026-09-15",
       "summary": {
-        "snapshot_date": "2026-09-14",
+        "snapshot_date": "2026-09-15",
         "timezone": "America/New_York",
         "total_listings": 154,
-        "artura_listings": 69,
+        "artura_listings": 67,
         "counts_by_variant": {
-          "600LT_coupe": 24,
-          "600LT_spider": 21,
-          "675LT_coupe": 2,
+          "600LT_coupe": 23,
+          "600LT_spider": 23,
+          "675LT_coupe": 3,
           "675LT_spider": 2,
           "765LT_coupe": 18,
           "765LT_spider": 18,
-          "Artura_coupe": 51,
-          "Artura_spider": 18
+          "Artura_coupe": 50,
+          "Artura_spider": 17
         },
         "medians_by_variant": {
           "600LT_coupe": {
             "median_ask": 239990,
-            "median_miles": 17616
+            "median_miles": 12733
           },
           "600LT_spider": {
-            "median_ask": 259813,
+            "median_ask": 259728,
             "median_miles": 14480
           },
           "675LT_coupe": {
-            "median_ask": 394947,
-            "median_miles": 545
+            "median_ask": 379900,
+            "median_miles": 11542
           },
           "675LT_spider": {
             "median_ask": 447191,
             "median_miles": 2290
           },
           "765LT_coupe": {
-            "median_ask": 725350,
-            "median_miles": 8766
+            "median_ask": 731799,
+            "median_miles": 6406
           },
           "765LT_spider": {
             "median_ask": 849999,
-            "median_miles": 6326
+            "median_miles": 7073
           },
           "Artura_coupe": {
-            "median_ask": 190489,
-            "median_miles": 2855
+            "median_ask": 190993,
+            "median_miles": 2606
           },
           "Artura_spider": {
-            "median_ask": 279250,
-            "median_miles": 188
+            "median_ask": 289250,
+            "median_miles": 214
           }
         },
         "variants": {
           "600LT_coupe": {
-            "count": 24,
-            "priced_count": 24,
-            "with_mileage_count": 9,
+            "count": 23,
+            "priced_count": 23,
+            "with_mileage_count": 10,
             "median_asking_price_usd": 239990,
             "min_asking_price_usd": 180999,
             "max_asking_price_usd": 499999,
-            "median_mileage_miles": 17616
+            "median_mileage_miles": 12733
           },
           "600LT_spider": {
-            "count": 21,
-            "priced_count": 21,
-            "with_mileage_count": 15,
-            "median_asking_price_usd": 259813,
-            "min_asking_price_usd": 207625,
+            "count": 23,
+            "priced_count": 23,
+            "with_mileage_count": 17,
+            "median_asking_price_usd": 259728,
+            "min_asking_price_usd": 206656,
             "max_asking_price_usd": 299995,
             "median_mileage_miles": 14480
           },
           "675LT_coupe": {
-            "count": 2,
-            "priced_count": 2,
-            "with_mileage_count": 1,
-            "median_asking_price_usd": 394947,
-            "min_asking_price_usd": 379900,
+            "count": 3,
+            "priced_count": 3,
+            "with_mileage_count": 2,
+            "median_asking_price_usd": 379900,
+            "min_asking_price_usd": 329999,
             "max_asking_price_usd": 409995,
-            "median_mileage_miles": 545
+            "median_mileage_miles": 11542
           },
           "675LT_spider": {
             "count": 2,
@@ -133,64 +133,63 @@
             "count": 18,
             "priced_count": 18,
             "with_mileage_count": 8,
-            "median_asking_price_usd": 725350,
+            "median_asking_price_usd": 731799,
             "min_asking_price_usd": 599998,
             "max_asking_price_usd": 899990,
-            "median_mileage_miles": 8766
+            "median_mileage_miles": 6406
           },
           "765LT_spider": {
             "count": 18,
             "priced_count": 18,
-            "with_mileage_count": 9,
+            "with_mileage_count": 12,
             "median_asking_price_usd": 849999,
             "min_asking_price_usd": 568000,
             "max_asking_price_usd": 1199991,
-            "median_mileage_miles": 6326
+            "median_mileage_miles": 7073
           },
           "Artura_coupe": {
-            "count": 51,
-            "priced_count": 51,
-            "with_mileage_count": 31,
-            "median_asking_price_usd": 190489,
+            "count": 50,
+            "priced_count": 50,
+            "with_mileage_count": 30,
+            "median_asking_price_usd": 190993,
             "min_asking_price_usd": 165208,
             "max_asking_price_usd": 342655,
-            "median_mileage_miles": 2855
+            "median_mileage_miles": 2606
           },
           "Artura_spider": {
-            "count": 18,
-            "priced_count": 18,
-            "with_mileage_count": 11,
-            "median_asking_price_usd": 279250,
+            "count": 17,
+            "priced_count": 17,
+            "with_mileage_count": 12,
+            "median_asking_price_usd": 289250,
             "min_asking_price_usd": 228004,
             "max_asking_price_usd": 406983,
-            "median_mileage_miles": 188
+            "median_mileage_miles": 214
           }
         },
         "counts_by_source": {
-          "Classic.com": 81,
-          "Cars.com": 25,
+          "Cars.com": 26,
+          "Classic.com": 74,
           "Hemmings": 1,
-          "CarGurus": 16,
-          "duPont REGISTRY": 31
+          "CarGurus": 19,
+          "duPont REGISTRY": 34
         },
         "artura_source_raw_counts": {
-          "Classic.com": 62,
-          "Cars.com": 21,
+          "Classic.com": 60,
+          "Cars.com": 20,
           "CarGurus": 23,
           "duPont REGISTRY": 16
         },
         "cargurus_artura": {
           "raw": 23,
           "priced": 23,
-          "added": 13,
+          "added": 14,
           "excluded": 0,
           "no_price": 0
         },
-        "dedupe_notes_count": 30,
+        "dedupe_notes_count": 29,
         "dedupe_notes_sample": [
           "keep existing Classic.com drop Cars.com SBM16AEA8PW001874",
           "keep existing Classic.com drop Cars.com SBM16BEAXSW003396",
-          "keep existing Classic.com drop Cars.com SBM16BEA2SW003232",
           "keep existing Classic.com drop Cars.com SBM16BEA0SW002838",
           "keep existing Classic.com drop Cars.com SBM16AEAXPW001908",
           "keep existing Classic.com drop Cars.com SBM16AEA7PW001610",
@@ -200,19 +199,20 @@
           "keep existing Classic.com drop duPont REGISTRY SBM16AEA6RW002153",
           "keep existing Classic.com drop duPont REGISTRY SBM16BEAXSW002989",
           "keep existing Classic.com drop duPont REGISTRY SBM16AEA2SW003872",
-          "keep existing Classic.com drop duPont REGISTRY SBM16BEA5SW003371",
-          "keep existing Classic.com drop duPont REGISTRY SBM16BEA2SW003232",
+          "keep existing Cars.com drop duPont REGISTRY SBM16BEA2SW003232",
           "keep existing Classic.com drop duPont REGISTRY SBM16BEA6SW003198",
           "keep existing Classic.com drop duPont REGISTRY SBM16AEA0PW000623",
+          "keep existing Cars.com drop duPont REGISTRY SBM16BEAXSW003320",
           "keep existing Classic.com drop CarGurus SBM16AEA4PW001466",
           "keep existing Classic.com drop CarGurus SBM16AEA2SW003872",
           "keep existing Cars.com drop CarGurus SBM16AEA1RW002142",
           "keep existing Cars.com drop CarGurus SBM16AEA9SW003321",
-          "keep existing Cars.com drop CarGurus SBM16AEA7RW002114",
           "keep existing Classic.com drop CarGurus SBM16AEA6RW002153",
           "keep existing Cars.com drop CarGurus SBM16AEA4SW002822",
           "keep existing Classic.com drop CarGurus SBM16AEA6PW001727",
-          "keep existing duPont REGISTRY drop CarGurus SBM16BEA6SW002729"
+          "keep existing duPont REGISTRY drop CarGurus SBM16BEA6SW002729",
+          "keep existing Cars.com drop CarGurus SBM16AEA8SW003648",
+          "cars.com fuzzy dedupe drop 185092 https://www.cars.com/vehicledetail/c14e0b7e-16e3-4bbf-9644-c7b10848c60a/"
         ],
         "sources_used": [
           "CarGurus",
@@ -230,30 +230,62 @@
         "roof_scoop": {
           "note": "Roof-scoop rules do NOT apply to Artura"
         },
-        "csv": "/home/box/agent-data/projects/mclaren-lt-listings/data/daily/2026-09-14.csv",
-        "scrape_dir": "/workspace/mclaren-artura-scrape-2026-09-14",
+        "csv": "/home/box/agent-data/projects/mclaren-lt-listings/data/daily/2026-09-15.csv",
+        "scrape_dir": "/workspace/mclaren-artura-scrape-2026-09-15",
         "data_quality_notes": [
-          "Artura baseline added 2026-09-14 into existing mclaren-lt-listings (not a separate brand section).",
+          "Artura baseline added 2026-09-15 into existing mclaren-lt-listings (not a separate brand section).",
           "Excluded GT4 / Senna / Speedtail / Solus / Elva / GT / 720S / 750S.",
           "TechLux/Performance/etc. captured in notes as trim/pack when evidenced.",
           "Roof-scoop tagging skipped for Artura.",
           "US/Canada preferred; foreign locations dropped when identifiable.",
           "CarGurus d3238 (m141/d3238) via headless chrome; prefer non-CarGurus on VIN conflict."
-        ]
+        ],
+        "drop_check_vs_2026-09-14": {
+          "striking_count": 0,
+          "striking": [],
+          "rule": ">=5% AND >=$5k, or >=$15k same VIN/URL",
+          "note": "New duPont 628160 (675LT) had price:0 in search JSON — excluded as POR; no invented ask."
+        },
+        "cargurus_lt": {
+          "raw": 53,
+          "priced": 46,
+          "added": 5,
+          "deduped_against_existing": 41,
+          "skipped_null_price": 7
+        }
       }
     }
   ],
   "market_commentary": {
-    "headline": "McLaren edging down: -0.6% variant-median ask · 7d",
-    "take_short": "-0.6% · 131 cars · 7d",
-    "summary": "As of 2026-09-14, McLaren US/Canada tracked inventory sits at 131 cars (Δ +66 vs 2026-09-07). Variant-median ask -0.6% over ~7d (LFL $299,900, $-93,102 / -23.7%).",
+    "headline": "McLaren flat: -0.2% variant-median ask · 7d",
+    "take_short": "-0.2% · 128 cars · 7d",
+    "summary": "As of 2026-09-15, McLaren US/Canada tracked inventory sits at 128 cars (Δ +63 vs 2026-09-08). Variant-median ask -0.2% over ~7d (LFL $283,844, $-75,129 / -20.9%).",
     "windows_available": [
       "7d"
     ]
   },
   "listings": [
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
+      "model_family": "675LT",
+      "body": "coupe",
+      "model_year": "2016",
+      "asking_price_usd": "329999",
+      "mileage_miles": "22540",
+      "currency": "USD",
+      "location": "ZIP 07446, USA",
+      "seller_type": "dealer",
+      "listing_title": "2016 McLaren 675LT Coupe",
+      "listing_url": "https://www.cars.com/vehicledetail/5ef776d1-6f01-4e17-830e-50ab4dac5eeb/",
+      "source": "Cars.com",
+      "vin_or_stock": "SBM11RAAXGW675169",
+      "exterior_color": "gray",
+      "interior_color": "",
+      "notes": "Cars.com SRP vehicle-card JSON; seller:McLaren North Jersey; exterior color: gray",
+      "_project": "mclaren-lt-listings"
+    },
+    {
+      "snapshot_date": "2026-09-15",
       "model_family": "675LT",
       "body": "coupe",
       "model_year": "2016",
@@ -272,7 +304,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "675LT",
       "body": "coupe",
       "model_year": "2016",
@@ -291,7 +323,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "675LT",
       "body": "spider",
       "model_year": "2016",
@@ -310,7 +342,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "675LT",
       "body": "spider",
       "model_year": "2016",
@@ -329,7 +361,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "600LT",
       "body": "coupe",
       "model_year": "2019",
@@ -348,7 +380,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "600LT",
       "body": "coupe",
       "model_year": "2019",
@@ -367,7 +399,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "600LT",
       "body": "coupe",
       "model_year": "2019",
@@ -386,7 +418,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "600LT",
       "body": "coupe",
       "model_year": "2019",
@@ -405,26 +437,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
-      "model_family": "600LT",
-      "body": "coupe",
-      "model_year": "2019",
-      "asking_price_usd": "227280",
-      "mileage_miles": "29400",
-      "currency": "USD",
-      "location": "ZIP 33306, USA",
-      "seller_type": "dealer",
-      "listing_title": "2019 McLaren 600LT Coupe",
-      "listing_url": "https://www.cars.com/vehicledetail/1f7c2336-fc93-496a-a6a6-7f71d6f2e79a/",
-      "source": "Cars.com",
-      "vin_or_stock": "SBM13RAAXKW006967",
-      "exterior_color": "gray",
-      "interior_color": "",
-      "notes": "Cars.com SRP vehicle-card JSON; seller:Coast to Coast Imports; exterior color: gray",
-      "_project": "mclaren-lt-listings"
-    },
-    {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "600LT",
       "body": "coupe",
       "model_year": "2019",
@@ -443,7 +456,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "600LT",
       "body": "coupe",
       "model_year": "2019",
@@ -462,7 +475,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "600LT",
       "body": "coupe",
       "model_year": "2019",
@@ -481,7 +494,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "600LT",
       "body": "coupe",
       "model_year": "2019",
@@ -500,7 +513,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "600LT",
       "body": "coupe",
       "model_year": "2019",
@@ -519,7 +532,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "600LT",
       "body": "coupe",
       "model_year": "2019",
@@ -538,7 +551,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "600LT",
       "body": "coupe",
       "model_year": "2019",
@@ -557,7 +570,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "600LT",
       "body": "coupe",
       "model_year": "2019",
@@ -576,26 +589,26 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "600LT",
       "body": "coupe",
       "model_year": "2019",
       "asking_price_usd": "239998",
       "mileage_miles": "18457",
       "currency": "USD",
-      "location": "",
+      "location": "ZIP 33316, USA",
       "seller_type": "dealer",
-      "listing_title": "2019 McLaren 600LT",
-      "listing_url": "https://www.dupontregistry.com/car/mclaren/600lt/2019/SBM13RAA7KW007459/624922",
-      "source": "duPont REGISTRY",
+      "listing_title": "2019 McLaren 600LT Coupe",
+      "listing_url": "https://www.cars.com/vehicledetail/6eff1094-104e-4eb5-9e50-91f885cb071c/",
+      "source": "Cars.com",
       "vin_or_stock": "SBM13RAA7KW007459",
       "exterior_color": "Cirrus Gray",
       "interior_color": "",
-      "notes": "duPont REGISTRY VDP",
+      "notes": "Cars.com SRP vehicle-card JSON; seller:1 of 1 Motorsports",
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "600LT",
       "body": "coupe",
       "model_year": "2019",
@@ -614,7 +627,26 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
+      "model_family": "600LT",
+      "body": "coupe",
+      "model_year": "2019",
+      "asking_price_usd": "240985",
+      "mileage_miles": "16067",
+      "currency": "USD",
+      "location": "Ramsey, NJ",
+      "seller_type": "dealer",
+      "listing_title": "2019 McLaren 600LT",
+      "listing_url": "https://www.cargurus.com/details/458185490",
+      "source": "CarGurus",
+      "vin_or_stock": "SBM13RAA6KW006786",
+      "exterior_color": "",
+      "interior_color": "",
+      "notes": "Stock # MP502; trim: Coupe RWD; deal rating: FAIR_PRICE",
+      "_project": "mclaren-lt-listings"
+    },
+    {
+      "snapshot_date": "2026-09-15",
       "model_family": "600LT",
       "body": "coupe",
       "model_year": "2019",
@@ -633,45 +665,26 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
-      "model_family": "600LT",
-      "body": "coupe",
-      "model_year": "2020",
-      "asking_price_usd": "248990",
-      "mileage_miles": "",
-      "currency": "USD",
-      "location": "New Albany, Indiana, USA",
-      "seller_type": "dealer",
-      "listing_title": "2020 McLaren 600LT Base",
-      "listing_url": "https://www.classic.com/veh/2020-mclaren-600lt-spider-sbm13saa7lw007714-4y8Z7Xp/",
-      "source": "Classic.com",
-      "vin_or_stock": "SBM13SAA7LW007714",
-      "exterior_color": "Orange",
-      "interior_color": "",
-      "notes": "Classic.com asterisk asking; 9k mi displayed; mileage blank (rounded Nk mi); fixed-price; seller:Hypercars",
-      "_project": "mclaren-lt-listings"
-    },
-    {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "600LT",
       "body": "coupe",
       "model_year": "2019",
-      "asking_price_usd": "249900",
-      "mileage_miles": "",
+      "asking_price_usd": "249985",
+      "mileage_miles": "7976",
       "currency": "USD",
-      "location": "Beverly Hills, California, USA",
+      "location": "ZIP 90211, USA",
       "seller_type": "dealer",
       "listing_title": "2019 McLaren 600LT Coupe",
-      "listing_url": "https://www.classic.com/veh/2019-mclaren-600lt-coupe-sbm13raaxkw007357-WxyVAxp/",
-      "source": "Classic.com",
+      "listing_url": "https://www.cars.com/vehicledetail/78b82191-7db1-48cb-ba26-8a5ed3e7f396/",
+      "source": "Cars.com",
       "vin_or_stock": "SBM13RAAXKW007357",
       "exterior_color": "Silica White",
       "interior_color": "",
-      "notes": "Classic.com asterisk asking; 8k mi displayed; mileage blank (rounded Nk mi); fixed-price; seller:Marshall Goldman Beverly Hills",
+      "notes": "Cars.com SRP vehicle-card JSON; seller:Marshall Goldman Beverly Hills; exterior color: white",
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "600LT",
       "body": "coupe",
       "model_year": "2019",
@@ -690,7 +703,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "600LT",
       "body": "coupe",
       "model_year": "2019",
@@ -709,7 +722,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "600LT",
       "body": "coupe",
       "model_year": "2019",
@@ -728,7 +741,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "600LT",
       "body": "coupe",
       "model_year": "2019",
@@ -747,7 +760,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "600LT",
       "body": "coupe",
       "model_year": "2019",
@@ -766,7 +779,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "600LT",
       "body": "coupe",
       "model_year": "2020",
@@ -785,7 +798,26 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
+      "model_family": "600LT",
+      "body": "spider",
+      "model_year": "2020",
+      "asking_price_usd": "206656",
+      "mileage_miles": "28714",
+      "currency": "USD",
+      "location": "Tempe, AZ",
+      "seller_type": "dealer",
+      "listing_title": "2020 McLaren 600LT",
+      "listing_url": "https://www.cargurus.com/details/441638172",
+      "source": "CarGurus",
+      "vin_or_stock": "SBM13SAA6LW008417",
+      "exterior_color": "",
+      "interior_color": "",
+      "notes": "Stock # 008417; trim: Spider RWD; deal rating: GOOD_PRICE",
+      "_project": "mclaren-lt-listings"
+    },
+    {
+      "snapshot_date": "2026-09-15",
       "model_family": "600LT",
       "body": "spider",
       "model_year": "2020",
@@ -804,7 +836,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "600LT",
       "body": "spider",
       "model_year": "2020",
@@ -823,7 +855,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "600LT",
       "body": "spider",
       "model_year": "2020",
@@ -842,7 +874,26 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
+      "model_family": "600LT",
+      "body": "spider",
+      "model_year": "2020",
+      "asking_price_usd": "249990",
+      "mileage_miles": "9676",
+      "currency": "USD",
+      "location": "",
+      "seller_type": "dealer",
+      "listing_title": "2020 McLaren 600LT Spider",
+      "listing_url": "https://www.dupontregistry.com/car/mclaren/600lt--spider/2020/SBM13SAA7LW007714/604359",
+      "source": "duPont REGISTRY",
+      "vin_or_stock": "SBM13SAA7LW007714",
+      "exterior_color": "Orange",
+      "interior_color": "",
+      "notes": "duPont REGISTRY VDP; carryforward_from_prior_day_vdp",
+      "_project": "mclaren-lt-listings"
+    },
+    {
+      "snapshot_date": "2026-09-15",
       "model_family": "600LT",
       "body": "spider",
       "model_year": "2020",
@@ -861,7 +912,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "600LT",
       "body": "spider",
       "model_year": "2020",
@@ -880,7 +931,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "600LT",
       "body": "spider",
       "model_year": "2020",
@@ -899,7 +950,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "600LT",
       "body": "spider",
       "model_year": "2020",
@@ -918,11 +969,11 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "600LT",
       "body": "spider",
       "model_year": "2020",
-      "asking_price_usd": "259000",
+      "asking_price_usd": "258000",
       "mileage_miles": "",
       "currency": "USD",
       "location": "Boynton Beach, Florida, USA",
@@ -937,7 +988,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "600LT",
       "body": "spider",
       "model_year": "2020",
@@ -956,7 +1007,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "600LT",
       "body": "spider",
       "model_year": "2020",
@@ -975,7 +1026,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "600LT",
       "body": "spider",
       "model_year": "2020",
@@ -994,7 +1045,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "600LT",
       "body": "spider",
       "model_year": "2020",
@@ -1004,7 +1055,7 @@
       "location": "",
       "seller_type": "dealer",
       "listing_title": "2020 McLaren 600LT Spider",
-      "listing_url": "https://www.dupontregistry.com/cars/613857",
+      "listing_url": "https://www.dupontregistry.com/car/mclaren/600lt--spider/2020/SBM13SAA8LW008077/613857",
       "source": "duPont REGISTRY",
       "vin_or_stock": "SBM13SAA8LW008077",
       "exterior_color": "Silver",
@@ -1013,7 +1064,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "600LT",
       "body": "spider",
       "model_year": "2020",
@@ -1023,7 +1074,7 @@
       "location": "",
       "seller_type": "dealer",
       "listing_title": "2020 McLaren 600LT Spider",
-      "listing_url": "https://www.dupontregistry.com/cars/621655",
+      "listing_url": "https://www.dupontregistry.com/car/mclaren/600lt--spider/2020/SBM13SAA5LW007615/621655",
       "source": "duPont REGISTRY",
       "vin_or_stock": "SBM13SAA5LW007615",
       "exterior_color": "",
@@ -1032,7 +1083,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "600LT",
       "body": "spider",
       "model_year": "2020",
@@ -1051,7 +1102,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "600LT",
       "body": "spider",
       "model_year": "2020",
@@ -1061,7 +1112,7 @@
       "location": "",
       "seller_type": "dealer",
       "listing_title": "2020 McLaren 600LT Spider",
-      "listing_url": "https://www.dupontregistry.com/cars/620640",
+      "listing_url": "https://www.dupontregistry.com/car/mclaren/600lt--spider/2020/SBM13SAA4LW008271/620640",
       "source": "duPont REGISTRY",
       "vin_or_stock": "SBM13SAA4LW008271",
       "exterior_color": "",
@@ -1070,7 +1121,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "600LT",
       "body": "spider",
       "model_year": "2020",
@@ -1089,7 +1140,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "600LT",
       "body": "spider",
       "model_year": "2020",
@@ -1108,7 +1159,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "600LT",
       "body": "spider",
       "model_year": "2020",
@@ -1127,7 +1178,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "600LT",
       "body": "spider",
       "model_year": "2020",
@@ -1146,7 +1197,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "600LT",
       "body": "spider",
       "model_year": "2020",
@@ -1165,7 +1216,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "600LT",
       "body": "spider",
       "model_year": "2020",
@@ -1175,7 +1226,7 @@
       "location": "",
       "seller_type": "dealer",
       "listing_title": "2020 McLaren 600LT Spider",
-      "listing_url": "https://www.dupontregistry.com/car/mclaren/600lt/2020/SBM13SAA7LW008412/625390",
+      "listing_url": "https://www.dupontregistry.com/car/mclaren/600lt--spider/2020/SBM13SAA7LW008412/625390",
       "source": "duPont REGISTRY",
       "vin_or_stock": "SBM13SAA7LW008412",
       "exterior_color": "",
@@ -1184,7 +1235,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "765LT",
       "body": "coupe",
       "model_year": "2021",
@@ -1203,7 +1254,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "765LT",
       "body": "coupe",
       "model_year": "2021",
@@ -1222,7 +1273,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "765LT",
       "body": "coupe",
       "model_year": "2021",
@@ -1241,7 +1292,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "765LT",
       "body": "coupe",
       "model_year": "2021",
@@ -1260,7 +1311,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "765LT",
       "body": "coupe",
       "model_year": "2021",
@@ -1279,26 +1330,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
-      "model_family": "765LT",
-      "body": "coupe",
-      "model_year": "2021",
-      "asking_price_usd": "700065",
-      "mileage_miles": "11060",
-      "currency": "USD",
-      "location": "Los Angeles, CA",
-      "seller_type": "dealer",
-      "listing_title": "2021 McLaren 765LT",
-      "listing_url": "https://www.cargurus.com/details/457933608",
-      "source": "CarGurus",
-      "vin_or_stock": "SBM14RCA4MW765563",
-      "exterior_color": "Papaya Spark",
-      "interior_color": "Carbon Black",
-      "notes": "Stock # H2914; trim: RWD; exterior color: Papaya Spark",
-      "_project": "mclaren-lt-listings"
-    },
-    {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "765LT",
       "body": "coupe",
       "model_year": "2021",
@@ -1317,7 +1349,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "765LT",
       "body": "coupe",
       "model_year": "2021",
@@ -1336,7 +1368,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "765LT",
       "body": "coupe",
       "model_year": "2021",
@@ -1355,7 +1387,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "765LT",
       "body": "coupe",
       "model_year": "2021",
@@ -1374,7 +1406,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "765LT",
       "body": "coupe",
       "model_year": "2021",
@@ -1393,7 +1425,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "765LT",
       "body": "coupe",
       "model_year": "2021",
@@ -1412,7 +1444,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "765LT",
       "body": "coupe",
       "model_year": "2021",
@@ -1431,7 +1463,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "765LT",
       "body": "coupe",
       "model_year": "2021",
@@ -1450,7 +1482,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "765LT",
       "body": "coupe",
       "model_year": "2021",
@@ -1469,7 +1501,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "765LT",
       "body": "coupe",
       "model_year": "2021",
@@ -1488,7 +1520,26 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
+      "model_family": "765LT",
+      "body": "coupe",
+      "model_year": "2021",
+      "asking_price_usd": "792999",
+      "mileage_miles": "821",
+      "currency": "USD",
+      "location": "Sterling, VA",
+      "seller_type": "dealer",
+      "listing_title": "2021 McLaren 765LT",
+      "listing_url": "https://www.cargurus.com/details/456102143",
+      "source": "CarGurus",
+      "vin_or_stock": "SBM14RCAXMW765146",
+      "exterior_color": "Black",
+      "interior_color": "Blk/Black",
+      "notes": "Stock # MW765146QQ; trim: RWD; exterior color: Black",
+      "_project": "mclaren-lt-listings"
+    },
+    {
+      "snapshot_date": "2026-09-15",
       "model_family": "765LT",
       "body": "coupe",
       "model_year": "2021",
@@ -1507,7 +1558,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "765LT",
       "body": "coupe",
       "model_year": "2021",
@@ -1526,7 +1577,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "765LT",
       "body": "spider",
       "model_year": "2022",
@@ -1545,26 +1596,26 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "765LT",
       "body": "spider",
       "model_year": "2022",
       "asking_price_usd": "753888",
-      "mileage_miles": "",
+      "mileage_miles": "8111",
       "currency": "USD",
-      "location": "San Luis Obispo, California, USA",
+      "location": "",
       "seller_type": "dealer",
       "listing_title": "2022 McLaren 765LT Spider",
-      "listing_url": "https://www.classic.com/veh/2022-mclaren-765lt-spider-sbm14sca5nw765273-nXE0EkW/",
-      "source": "Classic.com",
+      "listing_url": "https://www.dupontregistry.com/car/mclaren/765lt--spider/2022/SBM14SCA5NW765273/594173",
+      "source": "duPont REGISTRY",
       "vin_or_stock": "SBM14SCA5NW765273",
       "exterior_color": "Napier Green",
       "interior_color": "",
-      "notes": "Classic.com asterisk asking; 8k mi displayed; mileage blank (rounded Nk mi); fixed-price; seller:Porsche San Luis Obispo",
+      "notes": "duPont REGISTRY VDP; carryforward_from_prior_day_vdp",
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "765LT",
       "body": "spider",
       "model_year": "2022",
@@ -1583,7 +1634,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "765LT",
       "body": "spider",
       "model_year": "2022",
@@ -1602,7 +1653,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "765LT",
       "body": "spider",
       "model_year": "2022",
@@ -1617,11 +1668,11 @@
       "vin_or_stock": "SBM14SCA2NW765585",
       "exterior_color": "Ice Silver",
       "interior_color": "Carbon Black",
-      "notes": "duPont REGISTRY VDP",
+      "notes": "duPont REGISTRY VDP; carryforward_from_prior_day_vdp",
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "765LT",
       "body": "spider",
       "model_year": "2022",
@@ -1640,7 +1691,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "765LT",
       "body": "spider",
       "model_year": "2022",
@@ -1659,26 +1710,26 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "765LT",
       "body": "spider",
       "model_year": "2022",
       "asking_price_usd": "829900",
-      "mileage_miles": "",
+      "mileage_miles": "4694",
       "currency": "USD",
-      "location": "Newton, Massachusetts, USA",
+      "location": "",
       "seller_type": "dealer",
       "listing_title": "2022 McLaren 765LT Spider",
-      "listing_url": "https://www.classic.com/veh/2022-mclaren-765lt-spider-sbm14sca2nw765537-WRYQRGn/",
-      "source": "Classic.com",
+      "listing_url": "https://www.dupontregistry.com/car/mclaren/765lt--spider/2022/SBM14SCA2NW765537/621263",
+      "source": "duPont REGISTRY",
       "vin_or_stock": "SBM14SCA2NW765537",
       "exterior_color": "Ventura Orange",
       "interior_color": "",
-      "notes": "Classic.com asterisk asking; 4k mi displayed; mileage blank (rounded Nk mi); fixed-price; seller:AVI Gallery",
+      "notes": "duPont REGISTRY VDP",
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "765LT",
       "body": "spider",
       "model_year": "2022",
@@ -1697,7 +1748,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "765LT",
       "body": "spider",
       "model_year": "2022",
@@ -1716,7 +1767,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "765LT",
       "body": "spider",
       "model_year": "2022",
@@ -1735,7 +1786,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "765LT",
       "body": "spider",
       "model_year": "2022",
@@ -1754,7 +1805,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "765LT",
       "body": "spider",
       "model_year": "2022",
@@ -1773,7 +1824,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "765LT",
       "body": "spider",
       "model_year": "2022",
@@ -1792,7 +1843,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "765LT",
       "body": "spider",
       "model_year": "2022",
@@ -1811,26 +1862,26 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "765LT",
       "body": "spider",
       "model_year": "2022",
       "asking_price_usd": "957888",
-      "mileage_miles": "",
+      "mileage_miles": "9133",
       "currency": "USD",
-      "location": "San Luis Obispo, California, USA",
+      "location": "",
       "seller_type": "dealer",
       "listing_title": "2022 McLaren 765LT Spider",
-      "listing_url": "https://www.classic.com/veh/2022-mclaren-765lt-spider-sbm14sca1nw765111-4rvgJ94/",
-      "source": "Classic.com",
+      "listing_url": "https://www.dupontregistry.com/car/mclaren/765lt--spider/2022/SBM14SCA1NW765111/594156",
+      "source": "duPont REGISTRY",
       "vin_or_stock": "SBM14SCA1NW765111",
       "exterior_color": "Blue (Tokyo Cyan)",
       "interior_color": "",
-      "notes": "Classic.com asterisk asking; 9k mi displayed; mileage blank (rounded Nk mi); fixed-price; seller:Porsche San Luis Obispo",
+      "notes": "duPont REGISTRY VDP",
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "765LT",
       "body": "spider",
       "model_year": "2022",
@@ -1849,7 +1900,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "765LT",
       "body": "spider",
       "model_year": "2022",
@@ -1868,7 +1919,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Artura",
       "body": "coupe",
       "model_year": "2023",
@@ -1887,7 +1938,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Artura",
       "body": "coupe",
       "model_year": "2023",
@@ -1906,7 +1957,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Artura",
       "body": "coupe",
       "model_year": "2023",
@@ -1925,7 +1976,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Artura",
       "body": "coupe",
       "model_year": "2023",
@@ -1944,7 +1995,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Artura",
       "body": "coupe",
       "model_year": "2023",
@@ -1963,7 +2014,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Artura",
       "body": "coupe",
       "model_year": "2023",
@@ -1982,7 +2033,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Artura",
       "body": "coupe",
       "model_year": "2023",
@@ -2001,26 +2052,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
-      "model_family": "Artura",
-      "body": "coupe",
-      "model_year": "2024",
-      "asking_price_usd": "175578",
-      "mileage_miles": "12155",
-      "currency": "USD",
-      "location": "ZIP 48084, USA",
-      "seller_type": "dealer",
-      "listing_title": "2024 McLaren Artura Coupe",
-      "listing_url": "https://www.cars.com/vehicledetail/0979905b-4dd7-41c0-8188-fb9a9652cb98/",
-      "source": "Cars.com",
-      "vin_or_stock": "SBM16AEA5RW002466",
-      "exterior_color": "orange",
-      "interior_color": "",
-      "notes": "Cars.com SRP vehicle-card JSON; seller:Suburban Exotic Motorcars; exterior color: orange",
-      "_project": "mclaren-lt-listings"
-    },
-    {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Artura",
       "body": "coupe",
       "model_year": "2023",
@@ -2039,7 +2071,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Artura",
       "body": "coupe",
       "model_year": "2023",
@@ -2058,7 +2090,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Artura",
       "body": "coupe",
       "model_year": "2023",
@@ -2077,7 +2109,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Artura",
       "body": "coupe",
       "model_year": "2023",
@@ -2096,7 +2128,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Artura",
       "body": "coupe",
       "model_year": "2023",
@@ -2115,7 +2147,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Artura",
       "body": "coupe",
       "model_year": "2024",
@@ -2134,7 +2166,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Artura",
       "body": "coupe",
       "model_year": "2023",
@@ -2153,7 +2185,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Artura",
       "body": "coupe",
       "model_year": "2023",
@@ -2172,7 +2204,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Artura",
       "body": "coupe",
       "model_year": "2023",
@@ -2191,7 +2223,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Artura",
       "body": "coupe",
       "model_year": "2024",
@@ -2210,7 +2242,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Artura",
       "body": "coupe",
       "model_year": "2023",
@@ -2229,7 +2261,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Artura",
       "body": "coupe",
       "model_year": "2023",
@@ -2248,7 +2280,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Artura",
       "body": "coupe",
       "model_year": "2024",
@@ -2267,7 +2299,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Artura",
       "body": "coupe",
       "model_year": "2024",
@@ -2286,7 +2318,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Artura",
       "body": "coupe",
       "model_year": "2024",
@@ -2305,7 +2337,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Artura",
       "body": "coupe",
       "model_year": "2024",
@@ -2324,7 +2356,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Artura",
       "body": "coupe",
       "model_year": "2024",
@@ -2343,7 +2375,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Artura",
       "body": "coupe",
       "model_year": "2023",
@@ -2362,7 +2394,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Artura",
       "body": "coupe",
       "model_year": "2024",
@@ -2381,7 +2413,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Artura",
       "body": "coupe",
       "model_year": "2023",
@@ -2400,26 +2432,26 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Artura",
       "body": "coupe",
       "model_year": "2024",
       "asking_price_usd": "193076",
       "mileage_miles": "5565",
       "currency": "USD",
-      "location": "ZIP 94306, USA",
+      "location": "Palo Alto, CA",
       "seller_type": "dealer",
-      "listing_title": "2024 McLaren Artura 2D Coupe",
-      "listing_url": "https://www.cars.com/vehicledetail/fc30b6c8-3fbc-47c2-badd-d483ec45a042/",
-      "source": "Cars.com",
+      "listing_title": "2024 McLaren Artura",
+      "listing_url": "https://www.cargurus.com/details/458192749",
+      "source": "CarGurus",
       "vin_or_stock": "SBM16AEA7RW002114",
       "exterior_color": "Ventura Orange",
       "interior_color": "",
-      "notes": "Cars.com SRP vehicle-card JSON; seller:McLaren San Francisco; trim: 2D Coupe; exterior color: orange",
+      "notes": "Stock # RW002114-MT; trim: RWD; deal rating: FAIR_PRICE; exterior color: Ventura Orange",
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Artura",
       "body": "coupe",
       "model_year": "2023",
@@ -2438,7 +2470,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Artura",
       "body": "coupe",
       "model_year": "2025",
@@ -2457,7 +2489,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Artura",
       "body": "coupe",
       "model_year": "2024",
@@ -2476,7 +2508,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Artura",
       "body": "coupe",
       "model_year": "2025",
@@ -2495,7 +2527,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Artura",
       "body": "coupe",
       "model_year": "2025",
@@ -2514,7 +2546,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Artura",
       "body": "coupe",
       "model_year": "2025",
@@ -2533,7 +2565,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Artura",
       "body": "coupe",
       "model_year": "2025",
@@ -2552,7 +2584,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Artura",
       "body": "coupe",
       "model_year": "2025",
@@ -2571,7 +2603,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Artura",
       "body": "coupe",
       "model_year": "2024",
@@ -2590,7 +2622,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Artura",
       "body": "coupe",
       "model_year": "2025",
@@ -2609,7 +2641,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Artura",
       "body": "coupe",
       "model_year": "2025",
@@ -2628,7 +2660,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Artura",
       "body": "coupe",
       "model_year": "2025",
@@ -2647,7 +2679,26 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
+      "model_family": "Artura",
+      "body": "coupe",
+      "model_year": "2025",
+      "asking_price_usd": "239999",
+      "mileage_miles": "2855",
+      "currency": "USD",
+      "location": "South Ramsey, NJ, USA",
+      "seller_type": "dealer",
+      "listing_title": "2025 McLaren Artura",
+      "listing_url": "https://www.dupontregistry.com/car/mclaren/artura/2025/SBM16BEA2SW003795/609304",
+      "source": "duPont REGISTRY",
+      "vin_or_stock": "SBM16BEA2SW003795",
+      "exterior_color": "Orange",
+      "interior_color": "",
+      "notes": "duPont REGISTRY search card; id=609304; Stock # M27006A; exterior color: Orange",
+      "_project": "mclaren-lt-listings"
+    },
+    {
+      "snapshot_date": "2026-09-15",
       "model_family": "Artura",
       "body": "coupe",
       "model_year": "2025",
@@ -2666,26 +2717,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
-      "model_family": "Artura",
-      "body": "coupe",
-      "model_year": "2025",
-      "asking_price_usd": "245999",
-      "mileage_miles": "2855",
-      "currency": "USD",
-      "location": "South Ramsey, NJ, USA",
-      "seller_type": "dealer",
-      "listing_title": "2025 McLaren Artura",
-      "listing_url": "https://www.dupontregistry.com/car/mclaren/artura/2025/SBM16BEA2SW003795/609304",
-      "source": "duPont REGISTRY",
-      "vin_or_stock": "SBM16BEA2SW003795",
-      "exterior_color": "Orange",
-      "interior_color": "",
-      "notes": "duPont REGISTRY search card; id=609304; Stock # M27006A; exterior color: Orange",
-      "_project": "mclaren-lt-listings"
-    },
-    {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Artura",
       "body": "coupe",
       "model_year": "2025",
@@ -2704,7 +2736,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Artura",
       "body": "coupe",
       "model_year": "2026",
@@ -2723,7 +2755,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Artura",
       "body": "coupe",
       "model_year": "2025",
@@ -2742,7 +2774,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Artura",
       "body": "coupe",
       "model_year": "2026",
@@ -2761,7 +2793,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Artura",
       "body": "coupe",
       "model_year": "2026",
@@ -2780,7 +2812,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Artura",
       "body": "coupe",
       "model_year": "2026",
@@ -2799,7 +2831,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Artura",
       "body": "coupe",
       "model_year": "2026",
@@ -2818,7 +2850,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Artura",
       "body": "coupe",
       "model_year": "2026",
@@ -2837,7 +2869,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Artura",
       "body": "spider",
       "model_year": "2025",
@@ -2856,7 +2888,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Artura",
       "body": "spider",
       "model_year": "2025",
@@ -2875,7 +2907,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Artura",
       "body": "spider",
       "model_year": "2025",
@@ -2894,7 +2926,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Artura",
       "body": "spider",
       "model_year": "2025",
@@ -2913,7 +2945,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Artura",
       "body": "spider",
       "model_year": "2025",
@@ -2932,7 +2964,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Artura",
       "body": "spider",
       "model_year": "2025",
@@ -2951,45 +2983,26 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
-      "model_family": "Artura",
-      "body": "spider",
-      "model_year": "2025",
-      "asking_price_usd": "249997",
-      "mileage_miles": "1570",
-      "currency": "USD",
-      "location": "La Jolla, CA, USA",
-      "seller_type": "dealer",
-      "listing_title": "2025 McLaren Artura Spider",
-      "listing_url": "https://www.dupontregistry.com/car/mclaren/artura--spider/2025/SBM16BEAXSW003320/612007",
-      "source": "duPont REGISTRY",
-      "vin_or_stock": "SBM16BEAXSW003320",
-      "exterior_color": "White",
-      "interior_color": "Black",
-      "notes": "duPont REGISTRY search card; id=612007; Stock # CS007; exterior color: White; interior color: Black",
-      "_project": "mclaren-lt-listings"
-    },
-    {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Artura",
       "body": "spider",
       "model_year": "2025",
       "asking_price_usd": "259996",
-      "mileage_miles": "",
+      "mileage_miles": "2130",
       "currency": "USD",
-      "location": "Charlotte, North Carolina, USA",
+      "location": "Charlotte, NC, USA",
       "seller_type": "dealer",
       "listing_title": "2025 McLaren Artura Spider",
-      "listing_url": "https://www.classic.com/veh/2025-mclaren-artura-spider-sbm16bea5sw003371-Wky7zl4/",
-      "source": "Classic.com",
+      "listing_url": "https://www.dupontregistry.com/car/mclaren/artura--spider/2025/SBM16BEA5SW003371/403522",
+      "source": "duPont REGISTRY",
       "vin_or_stock": "SBM16BEA5SW003371",
       "exterior_color": "",
       "interior_color": "Black",
-      "notes": "Classic.com asterisk asking; 2k mi displayed; mileage blank (rounded Nk mi); fixed-price; seller:McLaren Charlotte",
+      "notes": "duPont REGISTRY search card; id=403522; Stock # 003371; interior color: Black",
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Artura",
       "body": "spider",
       "model_year": "2026",
@@ -3008,7 +3021,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Artura",
       "body": "spider",
       "model_year": "2026",
@@ -3027,26 +3040,26 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Artura",
       "body": "spider",
       "model_year": "2025",
-      "asking_price_usd": "289996",
-      "mileage_miles": "",
+      "asking_price_usd": "293076",
+      "mileage_miles": "3867",
       "currency": "USD",
-      "location": "Charlotte, North Carolina, USA",
+      "location": "ZIP 28217, USA",
       "seller_type": "dealer",
-      "listing_title": "2025 McLaren Artura Spider",
-      "listing_url": "https://www.classic.com/veh/2025-mclaren-artura-spider-sbm16bea2sw003232-nlQOLyW/",
-      "source": "Classic.com",
+      "listing_title": "2025 McLaren Artura TechLux",
+      "listing_url": "https://www.cars.com/vehicledetail/257e3c7e-1145-4d2b-a535-2a0e3963f5d4/",
+      "source": "Cars.com",
       "vin_or_stock": "SBM16BEA2SW003232",
       "exterior_color": "orange",
       "interior_color": "Black",
-      "notes": "Classic.com asterisk asking; 3k mi displayed; mileage blank (rounded Nk mi); fixed-price; seller:McLaren Charlotte",
+      "notes": "Cars.com SRP vehicle-card JSON; seller:McLaren Charlotte; trim/pack: TechLux; exterior color: orange",
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Artura",
       "body": "spider",
       "model_year": "2026",
@@ -3065,7 +3078,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Artura",
       "body": "spider",
       "model_year": "2026",
@@ -3084,7 +3097,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Artura",
       "body": "spider",
       "model_year": "2026",
@@ -3103,7 +3116,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Artura",
       "body": "spider",
       "model_year": "2025",
@@ -3122,7 +3135,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Artura",
       "body": "spider",
       "model_year": "2025",
@@ -3141,7 +3154,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Artura",
       "body": "spider",
       "model_year": "2026",
@@ -3160,7 +3173,7 @@
       "_project": "mclaren-lt-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Artura",
       "body": "spider",
       "model_year": "2025",

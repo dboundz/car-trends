@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generated_at": "2026-09-14T20:43:48.093327-04:00",
-    "as_of": "2026-09-14",
+    "generated_at": "2026-09-15T09:17:34.305870-04:00",
+    "as_of": "2026-09-15",
     "timezone": "America/New_York",
     "geography": "US + Canada only (HTML overview filter; see GEO.md / sources/GEO.md)",
     "schema_version": "1.0.0",
@@ -10,77 +10,77 @@
   },
   "brands": {
     "ferrari": {
-      "as_of": "2026-09-14",
+      "as_of": "2026-09-15",
       "listings_file": {
         "path": "data/export/brands/ferrari.json",
-        "bytes": 696407,
-        "sha256": "75d31a010953eefdcd937e348b505f5c8853e72f64a18f8d91bf4f671568c9fa",
-        "listing_count": 845,
+        "bytes": 720748,
+        "sha256": "4917bbd4b64e90b85986ca6671a79c373aea6c8abc982121542248580b64d7e1",
+        "listing_count": 871,
         "kpis": {
-          "median_ask": 424900,
-          "median_miles": 6140,
+          "median_ask": 420990,
+          "median_miles": 6117,
           "by_model_family": {
             "296": {
-              "count": 122,
-              "median_ask": 370472,
-              "median_miles": 1090
+              "count": 133,
+              "median_ask": 384995,
+              "median_miles": 1020
             },
             "348": {
-              "count": 6,
-              "median_ask": 132000,
-              "median_miles": 23347
+              "count": 5,
+              "median_ask": 139000,
+              "median_miles": 17776
             },
             "355": {
-              "count": 18,
-              "median_ask": 262947,
-              "median_miles": 32299
+              "count": 19,
+              "median_ask": 285900,
+              "median_miles": 32673
             },
             "360": {
-              "count": 66,
-              "median_ask": 152451,
-              "median_miles": 20399
+              "count": 68,
+              "median_ask": 157454,
+              "median_miles": 19029
             },
             "458": {
               "count": 72,
-              "median_ask": 527172,
+              "median_ask": 529995,
               "median_miles": 8465
             },
             "488": {
-              "count": 219,
-              "median_ask": 398161,
-              "median_miles": 10385
+              "count": 230,
+              "median_ask": 394136,
+              "median_miles": 11388
             },
             "F430": {
-              "count": 78,
-              "median_ask": 274707,
-              "median_miles": 14689
+              "count": 79,
+              "median_ask": 269900,
+              "median_miles": 15757
             },
             "F8": {
-              "count": 143,
-              "median_ask": 638680,
-              "median_miles": 4353
+              "count": 145,
+              "median_ask": 629996,
+              "median_miles": 4502
             },
             "SF90": {
-              "count": 121,
-              "median_ask": 575900,
-              "median_miles": 1488
+              "count": 120,
+              "median_ask": 574900,
+              "median_miles": 1345
             }
           }
         },
         "source_csvs": [
           {
-            "path": "data/export/sources/daily/ferrari-488-f8-listings/2026-09-14.csv",
-            "bytes": 324681,
-            "sha256": "e4df50491f652ce856f8d05e45f4dc0d189431a69aa29999380de895a19ea67d",
-            "row_count": 845,
+            "path": "data/export/sources/daily/ferrari-488-f8-listings/2026-09-15.csv",
+            "bytes": 337802,
+            "sha256": "16862d94716672e446d52b1a7840cb4f8b083f9f9cfa3bf0be081b4f25b4fce1",
+            "row_count": 871,
             "project": "ferrari-488-f8-listings",
-            "as_of": "2026-09-14"
+            "as_of": "2026-09-15"
           }
         ],
         "market_commentary": {
-          "headline": "Ferrari edging up: +0.9% variant-median ask · 7d",
-          "take_short": "+0.9% · 826 cars · 7d",
-          "summary": "As of 2026-09-14, Ferrari US/Canada tracked inventory sits at 826 cars (Δ +441 vs 2026-09-07). Variant-median ask +0.9% over ~7d (LFL $449,951, +$951 / +0.2%).",
+          "headline": "Ferrari flat: 0.0% variant-median ask · 7d",
+          "take_short": "0.0% · 852 cars · 7d",
+          "summary": "As of 2026-09-15, Ferrari US/Canada tracked inventory sits at 852 cars (Δ +319 vs 2026-09-08). Variant-median ask 0.0% over ~7d (LFL $404,475, +$4,587 / +1.1%).",
           "windows_available": [
             "7d",
             "14d"
@@ -89,61 +89,61 @@
         "missing": []
       },
       "kpis": {
-        "listing_count": 845,
-        "median_ask": 424900,
-        "median_miles": 6140,
+        "listing_count": 871,
+        "median_ask": 420990,
+        "median_miles": 6117,
         "by_model_family": {
           "296": {
-            "count": 122,
-            "median_ask": 370472,
-            "median_miles": 1090
+            "count": 133,
+            "median_ask": 384995,
+            "median_miles": 1020
           },
           "348": {
-            "count": 6,
-            "median_ask": 132000,
-            "median_miles": 23347
+            "count": 5,
+            "median_ask": 139000,
+            "median_miles": 17776
           },
           "355": {
-            "count": 18,
-            "median_ask": 262947,
-            "median_miles": 32299
+            "count": 19,
+            "median_ask": 285900,
+            "median_miles": 32673
           },
           "360": {
-            "count": 66,
-            "median_ask": 152451,
-            "median_miles": 20399
+            "count": 68,
+            "median_ask": 157454,
+            "median_miles": 19029
           },
           "458": {
             "count": 72,
-            "median_ask": 527172,
+            "median_ask": 529995,
             "median_miles": 8465
           },
           "488": {
-            "count": 219,
-            "median_ask": 398161,
-            "median_miles": 10385
+            "count": 230,
+            "median_ask": 394136,
+            "median_miles": 11388
           },
           "F430": {
-            "count": 78,
-            "median_ask": 274707,
-            "median_miles": 14689
+            "count": 79,
+            "median_ask": 269900,
+            "median_miles": 15757
           },
           "F8": {
-            "count": 143,
-            "median_ask": 638680,
-            "median_miles": 4353
+            "count": 145,
+            "median_ask": 629996,
+            "median_miles": 4502
           },
           "SF90": {
-            "count": 121,
-            "median_ask": 575900,
-            "median_miles": 1488
+            "count": 120,
+            "median_ask": 574900,
+            "median_miles": 1345
           }
         }
       },
       "market_commentary": {
-        "headline": "Ferrari edging up: +0.9% variant-median ask · 7d",
-        "take_short": "+0.9% · 826 cars · 7d",
-        "summary": "As of 2026-09-14, Ferrari US/Canada tracked inventory sits at 826 cars (Δ +441 vs 2026-09-07). Variant-median ask +0.9% over ~7d (LFL $449,951, +$951 / +0.2%).",
+        "headline": "Ferrari flat: 0.0% variant-median ask · 7d",
+        "take_short": "0.0% · 852 cars · 7d",
+        "summary": "As of 2026-09-15, Ferrari US/Canada tracked inventory sits at 852 cars (Δ +319 vs 2026-09-08). Variant-median ask 0.0% over ~7d (LFL $404,475, +$4,587 / +1.1%).",
         "windows_available": [
           "7d",
           "14d"
@@ -151,58 +151,58 @@
       },
       "source_csvs": [
         {
-          "path": "data/export/sources/daily/ferrari-488-f8-listings/2026-09-14.csv",
-          "bytes": 324681,
-          "sha256": "e4df50491f652ce856f8d05e45f4dc0d189431a69aa29999380de895a19ea67d",
-          "row_count": 845,
+          "path": "data/export/sources/daily/ferrari-488-f8-listings/2026-09-15.csv",
+          "bytes": 337802,
+          "sha256": "16862d94716672e446d52b1a7840cb4f8b083f9f9cfa3bf0be081b4f25b4fce1",
+          "row_count": 871,
           "project": "ferrari-488-f8-listings",
-          "as_of": "2026-09-14"
+          "as_of": "2026-09-15"
         }
       ],
       "daily_summaries": [
         {
           "project": "ferrari-488-f8-listings",
-          "as_of": "2026-09-14",
+          "as_of": "2026-09-15",
           "summary": {
-            "snapshot_date": "2026-09-14",
-            "total_rows": 845,
+            "snapshot_date": "2026-09-15",
+            "total_rows": 871,
             "families": {
-              "488": 219,
-              "F8": 143,
+              "488": 230,
+              "F8": 145,
               "458": 72,
-              "F430": 78,
-              "360": 66,
-              "355": 18,
-              "348": 6,
-              "SF90": 121,
-              "296": 122
+              "F430": 79,
+              "360": 68,
+              "355": 19,
+              "348": 5,
+              "SF90": 120,
+              "296": 133
             },
             "variants": {
               "296_coupe": {
-                "count": 66,
-                "median_ask": 339983,
-                "min_ask": 285125,
-                "max_ask": 1888888,
-                "median_miles": 1251
+                "count": 67,
+                "median_ask": 339900,
+                "min_ask": 279000,
+                "max_ask": 1887888,
+                "median_miles": 1198
               },
               "296_spider": {
-                "count": 56,
-                "median_ask": 424495,
+                "count": 66,
+                "median_ask": 422493,
                 "min_ask": 359585,
                 "max_ask": 569000,
-                "median_miles": 995
+                "median_miles": 916
               },
               "348_spider": {
-                "count": 2,
-                "median_ask": 117497,
-                "min_ask": 109995,
+                "count": 1,
+                "median_ask": 125000,
+                "min_ask": 125000,
                 "max_ask": 125000,
-                "median_miles": 23347
+                "median_miles": null
               },
               "348_ts": {
                 "count": 4,
                 "median_ask": 141450,
-                "min_ask": 114093,
+                "min_ask": 111698,
                 "max_ask": 259999,
                 "median_miles": 17776
               },
@@ -214,11 +214,11 @@
                 "median_miles": 45416
               },
               "355_gts": {
-                "count": 1,
-                "median_ask": 399995,
-                "min_ask": 399995,
+                "count": 2,
+                "median_ask": 384997,
+                "min_ask": 370000,
                 "max_ask": 399995,
-                "median_miles": 27345
+                "median_miles": 33021
               },
               "355_spider": {
                 "count": 10,
@@ -228,25 +228,25 @@
                 "median_miles": 22250
               },
               "360_coupe": {
-                "count": 25,
-                "median_ask": 169890,
+                "count": 26,
+                "median_ask": 169932,
                 "min_ask": 89799,
                 "max_ask": 424895,
-                "median_miles": 21982
+                "median_miles": 21105
               },
               "360_spider": {
-                "count": 41,
-                "median_ask": 146298,
+                "count": 42,
+                "median_ask": 152404,
                 "min_ask": 83000,
-                "max_ask": 399989,
-                "median_miles": 19062
+                "max_ask": 500216,
+                "median_miles": 17560
               },
               "458_coupe": {
                 "count": 31,
-                "median_ask": 468273,
-                "min_ask": 296081,
-                "max_ask": 1429999,
-                "median_miles": 8859
+                "median_ask": 470195,
+                "min_ask": 330497,
+                "max_ask": 1450826,
+                "median_miles": 8284
               },
               "458_speciale": {
                 "count": 1,
@@ -259,141 +259,141 @@
                 "count": 40,
                 "median_ask": 554995,
                 "min_ask": 349995,
-                "max_ask": 766888,
-                "median_miles": 8580
+                "max_ask": 765888,
+                "median_miles": 9254
               },
               "488_coupe": {
-                "count": 77,
-                "median_ask": 339900,
+                "count": 83,
+                "median_ask": 339988,
                 "min_ask": 219950,
                 "max_ask": 825888,
-                "median_miles": 12062
+                "median_miles": 12165
               },
               "488_spider": {
-                "count": 142,
-                "median_ask": 418378,
+                "count": 147,
+                "median_ask": 417895,
                 "min_ask": 279991,
                 "max_ask": 549898,
-                "median_miles": 10227
+                "median_miles": 10853
               },
               "F430_coupe": {
-                "count": 28,
-                "median_ask": 276853,
-                "min_ask": 169998,
+                "count": 30,
+                "median_ask": 254814,
+                "min_ask": 154999,
                 "max_ask": 675125,
-                "median_miles": 19268
+                "median_miles": 20552
               },
               "F430_spider": {
-                "count": 50,
-                "median_ask": 272349,
-                "min_ask": 225,
-                "max_ask": 729063,
-                "median_miles": 14045
+                "count": 49,
+                "median_ask": 274708,
+                "min_ask": 135698,
+                "max_ask": 720536,
+                "median_miles": 12978
               },
               "F8_coupe": {
-                "count": 41,
-                "median_ask": 479996,
+                "count": 43,
+                "median_ask": 471212,
                 "min_ask": 295000,
                 "max_ask": 699000,
-                "median_miles": 6569
+                "median_miles": 6617
               },
               "F8_spider": {
                 "count": 102,
-                "median_ask": 658284,
+                "median_ask": 657495,
                 "min_ask": 389700,
                 "max_ask": 799990,
-                "median_miles": 4166
+                "median_miles": 4192
               },
               "SF90_coupe": {
-                "count": 56,
-                "median_ask": 479951,
+                "count": 57,
+                "median_ask": 479912,
                 "min_ask": 389912,
                 "max_ask": 699999,
-                "median_miles": 2369
+                "median_miles": 2250
               },
               "SF90_spider": {
-                "count": 65,
+                "count": 63,
                 "median_ask": 614795,
                 "min_ask": 549990,
                 "max_ask": 1200000,
-                "median_miles": 905
+                "median_miles": 867
               }
             },
             "sf90_296_baseline": {
-              "approved": 120,
-              "classic": 460,
+              "approved": 149,
+              "classic": 454,
               "carscom": 72,
               "dupont": 0,
               "cargurus": 70,
-              "sf90_296_unique": 243,
+              "sf90_296_unique": 253,
               "by_variant": {
-                "SF90_coupe": 56,
-                "SF90_spider": 65,
-                "296_coupe": 66,
-                "296_spider": 56
+                "SF90_coupe": 57,
+                "SF90_spider": 63,
+                "296_coupe": 67,
+                "296_spider": 66
               }
             },
             "sources": {
-              "Classic.com": 339,
-              "Cars.com": 126,
-              "Ferrari Approved (preowned.ferrari.com)": 331,
-              "CarGurus": 42,
-              "dupontregistry": 7
+              "Classic.com": 337,
+              "Cars.com": 121,
+              "CarGurus": 46,
+              "Ferrari Approved (preowned.ferrari.com)": 358,
+              "dupontregistry": 9
             }
           },
           "error": null
         }
       ],
       "listings_embedded": false,
-      "listing_count": 845
+      "listing_count": 871
     },
     "mclaren": {
-      "as_of": "2026-09-14",
+      "as_of": "2026-09-15",
       "listings_file": {
         "path": "data/export/brands/mclaren.json",
-        "bytes": 122769,
-        "sha256": "dad0f91c9eedd999be31703b49ffbfe1a928a8aeb5db9755f545b829679070ee",
+        "bytes": 122716,
+        "sha256": "407b1d71f246ae3eec2c8080d2019f3e872090caa2ecbe452fb278dc6b8ef610",
         "listing_count": 154,
         "kpis": {
-          "median_ask": 256877,
-          "median_miles": 5668,
+          "median_ask": 258382,
+          "median_miles": 5687,
           "by_model_family": {
             "600LT": {
-              "count": 45,
+              "count": 46,
               "median_ask": 249995,
-              "median_miles": 14771
+              "median_miles": 14480
             },
             "675LT": {
-              "count": 4,
-              "median_ask": 394947,
-              "median_miles": 1417
+              "count": 5,
+              "median_ask": 379900,
+              "median_miles": 2290
             },
             "765LT": {
               "count": 36,
-              "median_ask": 787499,
-              "median_miles": 6406
+              "median_ask": 791499,
+              "median_miles": 6340
             },
             "Artura": {
-              "count": 69,
+              "count": 67,
               "median_ask": 213498,
-              "median_miles": 2088
+              "median_miles": 2128
             }
           }
         },
         "source_csvs": [
           {
-            "path": "data/export/sources/daily/mclaren-lt-listings/2026-09-14.csv",
-            "bytes": 47950,
-            "sha256": "5b64ec8b1487f000d79c55fdb02dad1d290d09968c2f9224e84158b499b0d861",
+            "path": "data/export/sources/daily/mclaren-lt-listings/2026-09-15.csv",
+            "bytes": 47393,
+            "sha256": "d5c9f638014d5163da4e59577fa4cc99f9df56dd5fbfaa92841a141b4854665c",
             "row_count": 154,
             "project": "mclaren-lt-listings",
-            "as_of": "2026-09-14"
+            "as_of": "2026-09-15"
           }
         ],
         "market_commentary": {
-          "headline": "McLaren edging down: -0.6% variant-median ask · 7d",
-          "take_short": "-0.6% · 131 cars · 7d",
-          "summary": "As of 2026-09-14, McLaren US/Canada tracked inventory sits at 131 cars (Δ +66 vs 2026-09-07). Variant-median ask -0.6% over ~7d (LFL $299,900, $-93,102 / -23.7%).",
+          "headline": "McLaren flat: -0.2% variant-median ask · 7d",
+          "take_short": "-0.2% · 128 cars · 7d",
+          "summary": "As of 2026-09-15, McLaren US/Canada tracked inventory sits at 128 cars (Δ +63 vs 2026-09-08). Variant-median ask -0.2% over ~7d (LFL $283,844, $-75,129 / -20.9%).",
           "windows_available": [
             "7d"
           ]
@@ -402,129 +402,129 @@
       },
       "kpis": {
         "listing_count": 154,
-        "median_ask": 256877,
-        "median_miles": 5668,
+        "median_ask": 258382,
+        "median_miles": 5687,
         "by_model_family": {
           "600LT": {
-            "count": 45,
+            "count": 46,
             "median_ask": 249995,
-            "median_miles": 14771
+            "median_miles": 14480
           },
           "675LT": {
-            "count": 4,
-            "median_ask": 394947,
-            "median_miles": 1417
+            "count": 5,
+            "median_ask": 379900,
+            "median_miles": 2290
           },
           "765LT": {
             "count": 36,
-            "median_ask": 787499,
-            "median_miles": 6406
+            "median_ask": 791499,
+            "median_miles": 6340
           },
           "Artura": {
-            "count": 69,
+            "count": 67,
             "median_ask": 213498,
-            "median_miles": 2088
+            "median_miles": 2128
           }
         }
       },
       "market_commentary": {
-        "headline": "McLaren edging down: -0.6% variant-median ask · 7d",
-        "take_short": "-0.6% · 131 cars · 7d",
-        "summary": "As of 2026-09-14, McLaren US/Canada tracked inventory sits at 131 cars (Δ +66 vs 2026-09-07). Variant-median ask -0.6% over ~7d (LFL $299,900, $-93,102 / -23.7%).",
+        "headline": "McLaren flat: -0.2% variant-median ask · 7d",
+        "take_short": "-0.2% · 128 cars · 7d",
+        "summary": "As of 2026-09-15, McLaren US/Canada tracked inventory sits at 128 cars (Δ +63 vs 2026-09-08). Variant-median ask -0.2% over ~7d (LFL $283,844, $-75,129 / -20.9%).",
         "windows_available": [
           "7d"
         ]
       },
       "source_csvs": [
         {
-          "path": "data/export/sources/daily/mclaren-lt-listings/2026-09-14.csv",
-          "bytes": 47950,
-          "sha256": "5b64ec8b1487f000d79c55fdb02dad1d290d09968c2f9224e84158b499b0d861",
+          "path": "data/export/sources/daily/mclaren-lt-listings/2026-09-15.csv",
+          "bytes": 47393,
+          "sha256": "d5c9f638014d5163da4e59577fa4cc99f9df56dd5fbfaa92841a141b4854665c",
           "row_count": 154,
           "project": "mclaren-lt-listings",
-          "as_of": "2026-09-14"
+          "as_of": "2026-09-15"
         }
       ],
       "daily_summaries": [
         {
           "project": "mclaren-lt-listings",
-          "as_of": "2026-09-14",
+          "as_of": "2026-09-15",
           "summary": {
-            "snapshot_date": "2026-09-14",
+            "snapshot_date": "2026-09-15",
             "timezone": "America/New_York",
             "total_listings": 154,
-            "artura_listings": 69,
+            "artura_listings": 67,
             "counts_by_variant": {
-              "600LT_coupe": 24,
-              "600LT_spider": 21,
-              "675LT_coupe": 2,
+              "600LT_coupe": 23,
+              "600LT_spider": 23,
+              "675LT_coupe": 3,
               "675LT_spider": 2,
               "765LT_coupe": 18,
               "765LT_spider": 18,
-              "Artura_coupe": 51,
-              "Artura_spider": 18
+              "Artura_coupe": 50,
+              "Artura_spider": 17
             },
             "medians_by_variant": {
               "600LT_coupe": {
                 "median_ask": 239990,
-                "median_miles": 17616
+                "median_miles": 12733
               },
               "600LT_spider": {
-                "median_ask": 259813,
+                "median_ask": 259728,
                 "median_miles": 14480
               },
               "675LT_coupe": {
-                "median_ask": 394947,
-                "median_miles": 545
+                "median_ask": 379900,
+                "median_miles": 11542
               },
               "675LT_spider": {
                 "median_ask": 447191,
                 "median_miles": 2290
               },
               "765LT_coupe": {
-                "median_ask": 725350,
-                "median_miles": 8766
+                "median_ask": 731799,
+                "median_miles": 6406
               },
               "765LT_spider": {
                 "median_ask": 849999,
-                "median_miles": 6326
+                "median_miles": 7073
               },
               "Artura_coupe": {
-                "median_ask": 190489,
-                "median_miles": 2855
+                "median_ask": 190993,
+                "median_miles": 2606
               },
               "Artura_spider": {
-                "median_ask": 279250,
-                "median_miles": 188
+                "median_ask": 289250,
+                "median_miles": 214
               }
             },
             "variants": {
               "600LT_coupe": {
-                "count": 24,
-                "priced_count": 24,
-                "with_mileage_count": 9,
+                "count": 23,
+                "priced_count": 23,
+                "with_mileage_count": 10,
                 "median_asking_price_usd": 239990,
                 "min_asking_price_usd": 180999,
                 "max_asking_price_usd": 499999,
-                "median_mileage_miles": 17616
+                "median_mileage_miles": 12733
               },
               "600LT_spider": {
-                "count": 21,
-                "priced_count": 21,
-                "with_mileage_count": 15,
-                "median_asking_price_usd": 259813,
-                "min_asking_price_usd": 207625,
+                "count": 23,
+                "priced_count": 23,
+                "with_mileage_count": 17,
+                "median_asking_price_usd": 259728,
+                "min_asking_price_usd": 206656,
                 "max_asking_price_usd": 299995,
                 "median_mileage_miles": 14480
               },
               "675LT_coupe": {
-                "count": 2,
-                "priced_count": 2,
-                "with_mileage_count": 1,
-                "median_asking_price_usd": 394947,
-                "min_asking_price_usd": 379900,
+                "count": 3,
+                "priced_count": 3,
+                "with_mileage_count": 2,
+                "median_asking_price_usd": 379900,
+                "min_asking_price_usd": 329999,
                 "max_asking_price_usd": 409995,
-                "median_mileage_miles": 545
+                "median_mileage_miles": 11542
               },
               "675LT_spider": {
                 "count": 2,
@@ -539,64 +539,63 @@
                 "count": 18,
                 "priced_count": 18,
                 "with_mileage_count": 8,
-                "median_asking_price_usd": 725350,
+                "median_asking_price_usd": 731799,
                 "min_asking_price_usd": 599998,
                 "max_asking_price_usd": 899990,
-                "median_mileage_miles": 8766
+                "median_mileage_miles": 6406
               },
               "765LT_spider": {
                 "count": 18,
                 "priced_count": 18,
-                "with_mileage_count": 9,
+                "with_mileage_count": 12,
                 "median_asking_price_usd": 849999,
                 "min_asking_price_usd": 568000,
                 "max_asking_price_usd": 1199991,
-                "median_mileage_miles": 6326
+                "median_mileage_miles": 7073
               },
               "Artura_coupe": {
-                "count": 51,
-                "priced_count": 51,
-                "with_mileage_count": 31,
-                "median_asking_price_usd": 190489,
+                "count": 50,
+                "priced_count": 50,
+                "with_mileage_count": 30,
+                "median_asking_price_usd": 190993,
                 "min_asking_price_usd": 165208,
                 "max_asking_price_usd": 342655,
-                "median_mileage_miles": 2855
+                "median_mileage_miles": 2606
               },
               "Artura_spider": {
-                "count": 18,
-                "priced_count": 18,
-                "with_mileage_count": 11,
-                "median_asking_price_usd": 279250,
+                "count": 17,
+                "priced_count": 17,
+                "with_mileage_count": 12,
+                "median_asking_price_usd": 289250,
                 "min_asking_price_usd": 228004,
                 "max_asking_price_usd": 406983,
-                "median_mileage_miles": 188
+                "median_mileage_miles": 214
               }
             },
             "counts_by_source": {
-              "Classic.com": 81,
-              "Cars.com": 25,
+              "Cars.com": 26,
+              "Classic.com": 74,
               "Hemmings": 1,
-              "CarGurus": 16,
-              "duPont REGISTRY": 31
+              "CarGurus": 19,
+              "duPont REGISTRY": 34
             },
             "artura_source_raw_counts": {
-              "Classic.com": 62,
-              "Cars.com": 21,
+              "Classic.com": 60,
+              "Cars.com": 20,
               "CarGurus": 23,
               "duPont REGISTRY": 16
             },
             "cargurus_artura": {
               "raw": 23,
               "priced": 23,
-              "added": 13,
+              "added": 14,
               "excluded": 0,
               "no_price": 0
             },
-            "dedupe_notes_count": 30,
+            "dedupe_notes_count": 29,
             "dedupe_notes_sample": [
               "keep existing Classic.com drop Cars.com SBM16AEA8PW001874",
               "keep existing Classic.com drop Cars.com SBM16BEAXSW003396",
-              "keep existing Classic.com drop Cars.com SBM16BEA2SW003232",
               "keep existing Classic.com drop Cars.com SBM16BEA0SW002838",
               "keep existing Classic.com drop Cars.com SBM16AEAXPW001908",
               "keep existing Classic.com drop Cars.com SBM16AEA7PW001610",
@@ -606,19 +605,20 @@
               "keep existing Classic.com drop duPont REGISTRY SBM16AEA6RW002153",
               "keep existing Classic.com drop duPont REGISTRY SBM16BEAXSW002989",
               "keep existing Classic.com drop duPont REGISTRY SBM16AEA2SW003872",
-              "keep existing Classic.com drop duPont REGISTRY SBM16BEA5SW003371",
-              "keep existing Classic.com drop duPont REGISTRY SBM16BEA2SW003232",
+              "keep existing Cars.com drop duPont REGISTRY SBM16BEA2SW003232",
               "keep existing Classic.com drop duPont REGISTRY SBM16BEA6SW003198",
               "keep existing Classic.com drop duPont REGISTRY SBM16AEA0PW000623",
+              "keep existing Cars.com drop duPont REGISTRY SBM16BEAXSW003320",
               "keep existing Classic.com drop CarGurus SBM16AEA4PW001466",
               "keep existing Classic.com drop CarGurus SBM16AEA2SW003872",
               "keep existing Cars.com drop CarGurus SBM16AEA1RW002142",
               "keep existing Cars.com drop CarGurus SBM16AEA9SW003321",
-              "keep existing Cars.com drop CarGurus SBM16AEA7RW002114",
               "keep existing Classic.com drop CarGurus SBM16AEA6RW002153",
               "keep existing Cars.com drop CarGurus SBM16AEA4SW002822",
               "keep existing Classic.com drop CarGurus SBM16AEA6PW001727",
-              "keep existing duPont REGISTRY drop CarGurus SBM16BEA6SW002729"
+              "keep existing duPont REGISTRY drop CarGurus SBM16BEA6SW002729",
+              "keep existing Cars.com drop CarGurus SBM16AEA8SW003648",
+              "cars.com fuzzy dedupe drop 185092 https://www.cars.com/vehicledetail/c14e0b7e-16e3-4bbf-9644-c7b10848c60a/"
             ],
             "sources_used": [
               "CarGurus",
@@ -636,16 +636,29 @@
             "roof_scoop": {
               "note": "Roof-scoop rules do NOT apply to Artura"
             },
-            "csv": "/home/box/agent-data/projects/mclaren-lt-listings/data/daily/2026-09-14.csv",
-            "scrape_dir": "/workspace/mclaren-artura-scrape-2026-09-14",
+            "csv": "/home/box/agent-data/projects/mclaren-lt-listings/data/daily/2026-09-15.csv",
+            "scrape_dir": "/workspace/mclaren-artura-scrape-2026-09-15",
             "data_quality_notes": [
-              "Artura baseline added 2026-09-14 into existing mclaren-lt-listings (not a separate brand section).",
+              "Artura baseline added 2026-09-15 into existing mclaren-lt-listings (not a separate brand section).",
               "Excluded GT4 / Senna / Speedtail / Solus / Elva / GT / 720S / 750S.",
               "TechLux/Performance/etc. captured in notes as trim/pack when evidenced.",
               "Roof-scoop tagging skipped for Artura.",
               "US/Canada preferred; foreign locations dropped when identifiable.",
               "CarGurus d3238 (m141/d3238) via headless chrome; prefer non-CarGurus on VIN conflict."
-            ]
+            ],
+            "drop_check_vs_2026-09-14": {
+              "striking_count": 0,
+              "striking": [],
+              "rule": ">=5% AND >=$5k, or >=$15k same VIN/URL",
+              "note": "New duPont 628160 (675LT) had price:0 in search JSON — excluded as POR; no invented ask."
+            },
+            "cargurus_lt": {
+              "raw": 53,
+              "priced": 46,
+              "added": 5,
+              "deduped_against_existing": 41,
+              "skipped_null_price": 7
+            }
           },
           "error": null
         }
@@ -654,88 +667,88 @@
       "listing_count": 154
     },
     "lamborghini": {
-      "as_of": "2026-09-14",
+      "as_of": "2026-09-15",
       "listings_file": {
         "path": "data/export/brands/lamborghini.json",
-        "bytes": 283266,
-        "sha256": "bed7da8e10fae38189eaf69a6d72c640f21b3582b730886f25bbf8ee26fc1c65",
-        "listing_count": 342,
+        "bytes": 270683,
+        "sha256": "4d3294ce3a5f1a87a48f51a4e9de75d6932a67527cf8812c22185e45e75fc51f",
+        "listing_count": 325,
         "kpis": {
-          "median_ask": 521230,
-          "median_miles": 5252,
+          "median_ask": 553649,
+          "median_miles": 5015,
           "by_model_family": {
             "Gallardo": {
-              "count": 74,
-              "median_ask": 155494,
-              "median_miles": 19989
+              "count": 71,
+              "median_ask": 150145,
+              "median_miles": 19099
             },
             "Murcielago": {
-              "count": 42,
-              "median_ask": 619998,
+              "count": 34,
+              "median_ask": 760395,
               "median_miles": 13648
             },
             "Performante": {
-              "count": 33,
-              "median_ask": 371699,
+              "count": 30,
+              "median_ask": 370589,
               "median_miles": 14094
             },
             "Revuelto": {
-              "count": 67,
-              "median_ask": 689900,
-              "median_miles": 643
+              "count": 66,
+              "median_ask": 692019,
+              "median_miles": 669
             },
             "STO": {
-              "count": 27,
-              "median_ask": 499912,
+              "count": 30,
+              "median_ask": 501042,
               "median_miles": 4319
             },
             "SV": {
-              "count": 32,
-              "median_ask": 875039,
-              "median_miles": 12596
+              "count": 28,
+              "median_ask": 874794,
+              "median_miles": 12608
             },
             "SVJ": {
               "count": 35,
-              "median_ask": 1500790,
-              "median_miles": 6867
+              "median_ask": 1499990,
+              "median_miles": 7316
             },
             "Temerario": {
-              "count": 32,
-              "median_ask": 456018,
-              "median_miles": 818
+              "count": 31,
+              "median_ask": 455287,
+              "median_miles": 781
             }
           }
         },
         "source_csvs": [
           {
-            "path": "data/export/sources/daily/lamborghini-huracan-listings/2026-09-14.csv",
-            "bytes": 21547,
-            "sha256": "ed67d710454d5b7d975a273fbb52895976bc0f8dc243977a1cd0740d4c6d705f",
+            "path": "data/export/sources/daily/lamborghini-huracan-listings/2026-09-15.csv",
+            "bytes": 21454,
+            "sha256": "8e8045f15a4d8298632639e709beb34d500d58e1588f8d87ba9b840ad2f7a81b",
             "row_count": 60,
             "project": "lamborghini-huracan-listings",
-            "as_of": "2026-09-14"
+            "as_of": "2026-09-15"
           },
           {
-            "path": "data/export/sources/daily/lamborghini-aventador-sv-listings/2026-09-14.csv",
-            "bytes": 21099,
-            "sha256": "a16719741a077f6f6c01c01cd170c25d22b999f3587677c4a0706b91052cda7b",
-            "row_count": 67,
+            "path": "data/export/sources/daily/lamborghini-aventador-sv-listings/2026-09-15.csv",
+            "bytes": 20196,
+            "sha256": "c3e745eeff628fa3bd5edf206eda4e6a1a55199e2439e8b4b8729d0eb6ea7876",
+            "row_count": 63,
             "project": "lamborghini-aventador-sv-listings",
-            "as_of": "2026-09-14"
+            "as_of": "2026-09-15"
           },
           {
-            "path": "data/export/sources/daily/lamborghini-murcielago-gallardo-listings/2026-09-14.csv",
-            "bytes": 74041,
-            "sha256": "1dcb90e2bfdcd74cd30ffdd75f16e98b922a5163498be8518504d2ec1d963fa3",
-            "row_count": 215,
+            "path": "data/export/sources/daily/lamborghini-murcielago-gallardo-listings/2026-09-15.csv",
+            "bytes": 69696,
+            "sha256": "591a3f224cd9db7f6c0f160e941aeb3d9006910f91ac44de6615a7e0f6bc3ed6",
+            "row_count": 202,
             "project": "lamborghini-murcielago-gallardo-listings",
-            "as_of": "2026-09-14"
+            "as_of": "2026-09-15"
           }
         ],
         "market_commentary": {
-          "headline": "Lamborghini softening: -4.2% variant-median ask · 7d",
-          "take_short": "-4.2% · 332 cars · 7d",
-          "summary": "As of 2026-09-14, Lamborghini US/Canada tracked inventory sits at 332 cars (Δ +277 vs 2026-09-07). Variant-median ask -4.2% over ~7d (LFL $443,032, $-6,921 / -1.5%).",
+          "headline": "Lamborghini softening: -2.5% variant-median ask · 7d",
+          "take_short": "-2.5% · 319 cars · 7d",
+          "summary": "As of 2026-09-15, Lamborghini US/Canada tracked inventory sits at 319 cars (Δ +263 vs 2026-09-08). Variant-median ask -2.5% over ~7d (LFL $449,894, +$6,862 / +1.6%).",
           "windows_available": [
             "7d"
           ]
@@ -743,146 +756,146 @@
         "missing": []
       },
       "kpis": {
-        "listing_count": 342,
-        "median_ask": 521230,
-        "median_miles": 5252,
+        "listing_count": 325,
+        "median_ask": 553649,
+        "median_miles": 5015,
         "by_model_family": {
           "Gallardo": {
-            "count": 74,
-            "median_ask": 155494,
-            "median_miles": 19989
+            "count": 71,
+            "median_ask": 150145,
+            "median_miles": 19099
           },
           "Murcielago": {
-            "count": 42,
-            "median_ask": 619998,
+            "count": 34,
+            "median_ask": 760395,
             "median_miles": 13648
           },
           "Performante": {
-            "count": 33,
-            "median_ask": 371699,
+            "count": 30,
+            "median_ask": 370589,
             "median_miles": 14094
           },
           "Revuelto": {
-            "count": 67,
-            "median_ask": 689900,
-            "median_miles": 643
+            "count": 66,
+            "median_ask": 692019,
+            "median_miles": 669
           },
           "STO": {
-            "count": 27,
-            "median_ask": 499912,
+            "count": 30,
+            "median_ask": 501042,
             "median_miles": 4319
           },
           "SV": {
-            "count": 32,
-            "median_ask": 875039,
-            "median_miles": 12596
+            "count": 28,
+            "median_ask": 874794,
+            "median_miles": 12608
           },
           "SVJ": {
             "count": 35,
-            "median_ask": 1500790,
-            "median_miles": 6867
+            "median_ask": 1499990,
+            "median_miles": 7316
           },
           "Temerario": {
-            "count": 32,
-            "median_ask": 456018,
-            "median_miles": 818
+            "count": 31,
+            "median_ask": 455287,
+            "median_miles": 781
           }
         }
       },
       "market_commentary": {
-        "headline": "Lamborghini softening: -4.2% variant-median ask · 7d",
-        "take_short": "-4.2% · 332 cars · 7d",
-        "summary": "As of 2026-09-14, Lamborghini US/Canada tracked inventory sits at 332 cars (Δ +277 vs 2026-09-07). Variant-median ask -4.2% over ~7d (LFL $443,032, $-6,921 / -1.5%).",
+        "headline": "Lamborghini softening: -2.5% variant-median ask · 7d",
+        "take_short": "-2.5% · 319 cars · 7d",
+        "summary": "As of 2026-09-15, Lamborghini US/Canada tracked inventory sits at 319 cars (Δ +263 vs 2026-09-08). Variant-median ask -2.5% over ~7d (LFL $449,894, +$6,862 / +1.6%).",
         "windows_available": [
           "7d"
         ]
       },
       "source_csvs": [
         {
-          "path": "data/export/sources/daily/lamborghini-huracan-listings/2026-09-14.csv",
-          "bytes": 21547,
-          "sha256": "ed67d710454d5b7d975a273fbb52895976bc0f8dc243977a1cd0740d4c6d705f",
+          "path": "data/export/sources/daily/lamborghini-huracan-listings/2026-09-15.csv",
+          "bytes": 21454,
+          "sha256": "8e8045f15a4d8298632639e709beb34d500d58e1588f8d87ba9b840ad2f7a81b",
           "row_count": 60,
           "project": "lamborghini-huracan-listings",
-          "as_of": "2026-09-14"
+          "as_of": "2026-09-15"
         },
         {
-          "path": "data/export/sources/daily/lamborghini-aventador-sv-listings/2026-09-14.csv",
-          "bytes": 21099,
-          "sha256": "a16719741a077f6f6c01c01cd170c25d22b999f3587677c4a0706b91052cda7b",
-          "row_count": 67,
+          "path": "data/export/sources/daily/lamborghini-aventador-sv-listings/2026-09-15.csv",
+          "bytes": 20196,
+          "sha256": "c3e745eeff628fa3bd5edf206eda4e6a1a55199e2439e8b4b8729d0eb6ea7876",
+          "row_count": 63,
           "project": "lamborghini-aventador-sv-listings",
-          "as_of": "2026-09-14"
+          "as_of": "2026-09-15"
         },
         {
-          "path": "data/export/sources/daily/lamborghini-murcielago-gallardo-listings/2026-09-14.csv",
-          "bytes": 74041,
-          "sha256": "1dcb90e2bfdcd74cd30ffdd75f16e98b922a5163498be8518504d2ec1d963fa3",
-          "row_count": 215,
+          "path": "data/export/sources/daily/lamborghini-murcielago-gallardo-listings/2026-09-15.csv",
+          "bytes": 69696,
+          "sha256": "591a3f224cd9db7f6c0f160e941aeb3d9006910f91ac44de6615a7e0f6bc3ed6",
+          "row_count": 202,
           "project": "lamborghini-murcielago-gallardo-listings",
-          "as_of": "2026-09-14"
+          "as_of": "2026-09-15"
         }
       ],
       "daily_summaries": [
         {
           "project": "lamborghini-huracan-listings",
-          "as_of": "2026-09-14",
+          "as_of": "2026-09-15",
           "summary": {
-            "snapshot_date": "2026-09-14",
+            "snapshot_date": "2026-09-15",
             "timezone": "America/New_York",
             "total_listings": 60,
             "counts_by_variant": {
-              "Performante_coupe": 26,
-              "Performante_spider": 7,
-              "STO_coupe": 27
+              "Performante_coupe": 24,
+              "Performante_spider": 6,
+              "STO_coupe": 30
             },
             "medians_by_variant": {
               "Performante_coupe": {
-                "median_ask": 371350,
-                "median_miles": 13851
+                "median_ask": 370240,
+                "median_miles": 14094
               },
               "Performante_spider": {
-                "median_ask": 384500,
-                "median_miles": 15325
+                "median_ask": 392000,
+                "median_miles": 21793
               },
               "STO_coupe": {
-                "median_ask": 499912,
+                "median_ask": 501042,
                 "median_miles": 4319
               }
             },
             "variants": {
               "Performante_coupe": {
-                "count": 26,
-                "priced_count": 26,
-                "with_mileage_count": 15,
-                "median_asking_price_usd": 371350,
+                "count": 24,
+                "priced_count": 24,
+                "with_mileage_count": 14,
+                "median_asking_price_usd": 370240,
                 "min_asking_price_usd": 159999,
                 "max_asking_price_usd": 479995,
-                "median_mileage_miles": 13851
+                "median_mileage_miles": 14094
               },
               "Performante_spider": {
-                "count": 7,
-                "priced_count": 7,
-                "with_mileage_count": 3,
-                "median_asking_price_usd": 384500,
-                "min_asking_price_usd": 220419,
+                "count": 6,
+                "priced_count": 6,
+                "with_mileage_count": 2,
+                "median_asking_price_usd": 392000,
+                "min_asking_price_usd": 328991,
                 "max_asking_price_usd": 411696,
-                "median_mileage_miles": 15325
+                "median_mileage_miles": 21793
               },
               "STO_coupe": {
-                "count": 27,
-                "priced_count": 27,
-                "with_mileage_count": 22,
-                "median_asking_price_usd": 499912,
+                "count": 30,
+                "priced_count": 30,
+                "with_mileage_count": 26,
+                "median_asking_price_usd": 501042,
                 "min_asking_price_usd": 411246,
                 "max_asking_price_usd": 1997988,
                 "median_mileage_miles": 4319
               }
             },
             "counts_by_source": {
-              "Classic.com": 30,
-              "Cars.com": 16,
-              "CarGurus": 14
+              "Cars.com": 17,
+              "Classic.com": 28,
+              "CarGurus": 15
             },
             "sources_ok": {
               "Classic.com": true,
@@ -899,48 +912,48 @@
               "Autotrader: page unavailable / blocked (~3.7KB shell page).",
               "Hemmings: search HTML lacks usable STO/Performante inventory cards for merge (few generic listing links).",
               "duPont Registry: search HTML lacked parseable listing cards (JS-rendered).",
-              "BaT: model pages fetched; auction current-bid pages only (no fixed asking prices merged).",
-              "Cars & Bids: search returned JS shell (~14KB); no listings merged.",
+              "BaT: model pages returned HTTP 404 (~207KB error/shell); no fixed asking prices merged.",
+              "Cars & Bids: search returned small JS shell (~5.8KB compressed / ~14KB); no listings merged.",
               "Cars.com keyword-only STO search historically returns 0; model filter huracan_sto used.",
               "Classic.com truncates many Performante VINs in listing URL slugs."
             ],
             "cargurus_merge": {
-              "before": 46,
+              "before": 45,
               "after": 60,
-              "added": 14,
-              "skipped_dup": 5,
+              "added": 15,
+              "skipped_dup": 4,
               "skipped_norm": 0,
               "cargurus_input": 19
             },
             "vs_yesterday": {
               "Performante_coupe": {
                 "yesterday_median_ask": 371350,
-                "today_median_ask": 371350,
-                "delta": 0,
-                "pct": 0.0,
+                "today_median_ask": 370240,
+                "delta": -1110,
+                "pct": -0.3,
                 "yesterday_n": 26,
-                "today_n": 26
+                "today_n": 24
               },
               "Performante_spider": {
-                "yesterday_median_ask": 392224,
-                "today_median_ask": 384500,
-                "delta": -7724,
-                "pct": -1.97,
-                "yesterday_n": 6,
-                "today_n": 7
+                "yesterday_median_ask": 384500,
+                "today_median_ask": 392000,
+                "delta": 7500,
+                "pct": 1.95,
+                "yesterday_n": 7,
+                "today_n": 6
               },
               "STO_coupe": {
                 "yesterday_median_ask": 499912,
-                "today_median_ask": 499912,
-                "delta": 0,
-                "pct": 0.0,
+                "today_median_ask": 501042,
+                "delta": 1130,
+                "pct": 0.23,
                 "yesterday_n": 27,
-                "today_n": 27
+                "today_n": 30
               }
             },
             "striking_drops": [],
             "color_fill": {
-              "exterior": 31,
+              "exterior": 32,
               "interior": 17,
               "total": 60
             },
@@ -950,21 +963,21 @@
               "Never invent price/year/miles; rounded Classic Nk mi left blank.",
               "Dedupe by VIN/URL; CarGurus added only if not already present (prefer non-CarGurus).",
               "Prefer US/Canada; location recorded as found.",
-              "CarGurus via chrome --headless --dump-dom (zip=32801, delivery enabled); merge stats: {'before': 46, 'after': 60, 'added': 14, 'skipped_dup': 5, 'skipped_norm': 0, 'cargurus_input': 19}.",
-              "Color fill: exterior=31/60, interior=17/60."
+              "CarGurus via chrome --headless --dump-dom (zip=32801, delivery enabled); merge stats: {'before': 45, 'after': 60, 'added': 15, 'skipped_dup': 4, 'skipped_norm': 0, 'cargurus_input': 19}.",
+              "Color fill: exterior=32/60, interior=17/60."
             ],
             "classic_meta": {
-              "total": 31,
+              "total": 29,
               "page_stats": {
                 "STO_coupe": {
-                  "site_meta_for_sale": 17,
-                  "items_seen": 32,
+                  "site_meta_for_sale": 16,
+                  "items_seen": 30,
                   "pages_fetched": 2,
                   "url": "https://www.classic.com/m/lamborghini/huracan/sto/?status=for_sale"
                 },
                 "Performante_coupe": {
-                  "site_meta_for_sale": 11,
-                  "items_seen": 22,
+                  "site_meta_for_sale": 10,
+                  "items_seen": 20,
                   "pages_fetched": 2,
                   "url": "https://www.classic.com/m/lamborghini/huracan/lp640-4-performante/?status=for_sale"
                 },
@@ -976,7 +989,7 @@
                 }
               },
               "skip_counts": {
-                "dedupe": 31
+                "dedupe": 29
               }
             }
           },
@@ -984,20 +997,20 @@
         },
         {
           "project": "lamborghini-aventador-sv-listings",
-          "as_of": "2026-09-14",
+          "as_of": "2026-09-15",
           "summary": {
-            "snapshot_date": "2026-09-14",
+            "snapshot_date": "2026-09-15",
             "timezone": "America/New_York",
-            "total_listings": 67,
-            "overall_median_ask": 1187581,
-            "overall_median_miles": 8438,
+            "total_listings": 63,
+            "overall_median_ask": 1199996,
+            "overall_median_miles": 8376,
             "by_variant": {
               "SV_coupe": {
-                "count": 24,
-                "median_ask": 850478,
+                "count": 20,
+                "median_ask": 849989,
                 "median_miles": 12596,
                 "min_ask": 499900,
-                "max_ask": 1102185
+                "max_ask": 1050700
               },
               "SV_spider": {
                 "count": 8,
@@ -1008,10 +1021,10 @@
               },
               "SVJ_coupe": {
                 "count": 27,
-                "median_ask": 1499990,
-                "median_miles": 6328,
+                "median_ask": 1400478,
+                "median_miles": 7092,
                 "min_ask": 930353,
-                "max_ask": 3000000
+                "max_ask": 2803076
               },
               "SVJ_spider": {
                 "count": 8,
@@ -1024,17 +1037,17 @@
             "by_source": {
               "Cars.com": 14,
               "Classic.com": 24,
-              "CarGurus": 29
+              "CarGurus": 25
             },
             "by_family": {
-              "SV": 32,
+              "SV": 28,
               "SVJ": 35
             },
             "classic_count": 24,
-            "carscom_count": 15,
+            "carscom_count": 14,
             "cargurus_count": 36,
             "classic_meta": {
-              "snapshot_date": "2026-09-14",
+              "snapshot_date": "2026-09-15",
               "timezone": "America/New_York",
               "source": "Classic.com",
               "method": "Shell curl; status=for_sale market pages",
@@ -1083,107 +1096,119 @@
         },
         {
           "project": "lamborghini-murcielago-gallardo-listings",
-          "as_of": "2026-09-14",
+          "as_of": "2026-09-15",
           "summary": {
-            "snapshot_date": "2026-09-14",
+            "snapshot_date": "2026-09-15",
             "timezone": "America/New_York",
-            "total_listings": 215,
-            "overall_median_ask": 459995,
-            "overall_median_miles": 1466,
+            "total_listings": 202,
+            "overall_median_ask": 481645,
+            "overall_median_miles": 1494,
             "by_variant": {
               "Gallardo_coupe": {
-                "count": 38,
+                "count": 37,
                 "median_ask": 172998,
                 "median_miles": 18932,
                 "min_ask": 79433,
                 "max_ask": 340075
               },
               "Gallardo_spider": {
-                "count": 36,
-                "median_ask": 134549,
-                "median_miles": 21571,
+                "count": 34,
+                "median_ask": 135749,
+                "median_miles": 20596,
                 "min_ask": 94489,
                 "max_ask": 419000
               },
               "Murcielago_coupe": {
-                "count": 24,
-                "median_ask": 511750,
+                "count": 19,
+                "median_ask": 750000,
                 "median_miles": 9960,
-                "min_ask": 170000,
-                "max_ask": 1680200
+                "min_ask": 209000,
+                "max_ask": 3140000
               },
               "Murcielago_spider": {
-                "count": 18,
-                "median_ask": 749995,
+                "count": 15,
+                "median_ask": 799675,
                 "median_miles": 14491,
-                "min_ask": 260000,
+                "min_ask": 299900,
                 "max_ask": 950075
               },
               "Revuelto_coupe": {
-                "count": 67,
-                "median_ask": 689900,
-                "median_miles": 643,
-                "min_ask": 609000,
+                "count": 66,
+                "median_ask": 692019,
+                "median_miles": 669,
+                "min_ask": 609900,
                 "max_ask": 999998
               },
               "Temerario_coupe": {
-                "count": 32,
-                "median_ask": 456018,
-                "median_miles": 818,
+                "count": 31,
+                "median_ask": 455287,
+                "median_miles": 781,
                 "min_ask": 410035,
                 "max_ask": 559970
               }
             },
             "by_source": {
-              "Classic.com": 99,
-              "Cars.com": 86,
-              "CarGurus": 30
+              "Classic.com": 91,
+              "Cars.com": 80,
+              "CarGurus": 31
             },
             "by_family": {
-              "Murcielago": 42,
-              "Gallardo": 74,
-              "Revuelto": 67,
-              "Temerario": 32
+              "Murcielago": 34,
+              "Gallardo": 71,
+              "Revuelto": 66,
+              "Temerario": 31
             },
-            "classic_count": 99,
-            "carscom_count": 86,
-            "cargurus_count": 30,
+            "classic_count": 91,
+            "carscom_count": 80,
+            "cargurus_count": 31,
             "classic_meta": {
-              "snapshot_date": "2026-09-14",
+              "snapshot_date": "2026-09-15",
               "timezone": "America/New_York",
               "source": "Classic.com",
               "method": "Shell curl; status=for_sale market pages",
-              "total_listings": 99,
+              "total_listings": 91,
               "skip_counts": {
-                "non_usd_currency": 10,
-                "auction_no_ask_price": 19,
-                "dup_url": 65,
-                "no_price": 3
+                "non_usd_currency": 9,
+                "auction_no_ask_price": 16,
+                "dup_url": 49,
+                "no_price": 7
               },
               "page_stats": {
                 "classic_murcielago.html": {
-                  "cards": 7,
-                  "kept": 4
+                  "cards": 8,
+                  "kept": 5
                 },
                 "classic_murcielago_p2.html": {
-                  "cards": 7,
+                  "cards": 8,
                   "kept": 0
                 },
                 "classic_murcielago_lp640.html": {
-                  "cards": 24,
-                  "kept": 17
+                  "cards": 0,
+                  "kept": 0
                 },
                 "classic_murcielago_lp670.html": {
                   "cards": 1,
                   "kept": 0
                 },
                 "classic_murcielago_roadster.html": {
-                  "cards": 5,
-                  "kept": 3
+                  "cards": 0,
+                  "kept": 0
                 },
                 "classic_murcielago_roadster_p2.html": {
-                  "cards": 5,
+                  "cards": 0,
                   "kept": 0
+                },
+                "classic_murcielago_lp640_roadster.html": {
+                  "cards": 2,
+                  "kept": 0
+                },
+                "classic_murcielago_base.html": {
+                  "cards": 2,
+                  "kept": 0
+                },
+                "classic_murcielago_all.html": {
+                  "cards": 24,
+                  "kept": 10
                 },
                 "classic_gallardo.html": {
                   "cards": 24,
@@ -1191,18 +1216,18 @@
                 },
                 "classic_gallardo_p2.html": {
                   "cards": 24,
-                  "kept": 18
+                  "kept": 17
                 },
                 "classic_gallardo_p3.html": {
-                  "cards": 24,
-                  "kept": 0
+                  "cards": 2,
+                  "kept": 2
                 },
                 "classic_gallardo_spyder.html": {
-                  "cards": 16,
+                  "cards": 17,
                   "kept": 0
                 },
                 "classic_gallardo_spyder_p2.html": {
-                  "cards": 16,
+                  "cards": 17,
                   "kept": 0
                 },
                 "classic_gallardo_sl.html": {
@@ -1232,40 +1257,45 @@
         }
       ],
       "listings_embedded": false,
-      "listing_count": 342
+      "listing_count": 325
     },
     "ford": {
-      "as_of": "2026-09-14",
+      "as_of": "2026-09-15",
       "listings_file": {
         "path": "data/export/brands/ford.json",
-        "bytes": 29704,
-        "sha256": "b04896c809e733e11e9948323dae1ae61505affaac92faf78b34b79fb1f145e9",
-        "listing_count": 29,
+        "bytes": 46655,
+        "sha256": "8e07d11ea3a74525cbdd616c9e568af3e0f5c7114b20785f49e095f02015626d",
+        "listing_count": 47,
         "kpis": {
-          "median_ask": 749900,
-          "median_miles": 3387,
+          "median_ask": 935993,
+          "median_miles": 639,
           "by_model_family": {
-            "GT": {
-              "count": 29,
-              "median_ask": 749900,
-              "median_miles": 3387
+            "Gen1": {
+              "count": 30,
+              "median_ask": 749950,
+              "median_miles": 1928
+            },
+            "Gen2": {
+              "count": 17,
+              "median_ask": 1075000,
+              "median_miles": 392
             }
           }
         },
         "source_csvs": [
           {
-            "path": "data/export/sources/daily/ford-gt-gen1-listings/2026-09-14.csv",
-            "bytes": 9011,
-            "sha256": "9c771887387ad19e687c47e7203e80b8355f42b97d2e84d5950ed1ad23db1252",
-            "row_count": 29,
+            "path": "data/export/sources/daily/ford-gt-gen1-listings/2026-09-15.csv",
+            "bytes": 13925,
+            "sha256": "db1615414a9e4f6dad2e2e6ab7a8f181a7308b4a93c0a60069265a1a1c018fcd",
+            "row_count": 47,
             "project": "ford-gt-gen1-listings",
-            "as_of": "2026-09-14"
+            "as_of": "2026-09-15"
           }
         ],
         "market_commentary": {
-          "headline": "Ford flat: +0.2% variant-median ask · 7d",
-          "take_short": "+0.2% · 27 cars · 7d",
-          "summary": "As of 2026-09-14, Ford US/Canada tracked inventory sits at 27 cars (Δ +1 vs 2026-09-07). Variant-median ask +0.2% over ~7d (LFL $750,000, $0 / 0.0%).",
+          "headline": "Ford GT firming: +4.0% variant-median ask · 7d",
+          "take_short": "+4.0% · 34 cars · 7d",
+          "summary": "As of 2026-09-15, Ford GT US/Canada tracked inventory sits at 34 cars (Δ +8 vs 2026-09-08). Variant-median ask +4.0% over ~7d (LFL $779,996, +$29,996 / +4.0%).",
           "windows_available": [
             "7d"
           ]
@@ -1273,46 +1303,71 @@
         "missing": []
       },
       "kpis": {
-        "listing_count": 29,
-        "median_ask": 749900,
-        "median_miles": 3387,
+        "listing_count": 47,
+        "median_ask": 935993,
+        "median_miles": 639,
         "by_model_family": {
-          "GT": {
-            "count": 29,
-            "median_ask": 749900,
-            "median_miles": 3387
+          "Gen1": {
+            "count": 30,
+            "median_ask": 749950,
+            "median_miles": 1928
+          },
+          "Gen2": {
+            "count": 17,
+            "median_ask": 1075000,
+            "median_miles": 392
           }
         }
       },
       "market_commentary": {
-        "headline": "Ford flat: +0.2% variant-median ask · 7d",
-        "take_short": "+0.2% · 27 cars · 7d",
-        "summary": "As of 2026-09-14, Ford US/Canada tracked inventory sits at 27 cars (Δ +1 vs 2026-09-07). Variant-median ask +0.2% over ~7d (LFL $750,000, $0 / 0.0%).",
+        "headline": "Ford GT firming: +4.0% variant-median ask · 7d",
+        "take_short": "+4.0% · 34 cars · 7d",
+        "summary": "As of 2026-09-15, Ford GT US/Canada tracked inventory sits at 34 cars (Δ +8 vs 2026-09-08). Variant-median ask +4.0% over ~7d (LFL $779,996, +$29,996 / +4.0%).",
         "windows_available": [
           "7d"
         ]
       },
       "source_csvs": [
         {
-          "path": "data/export/sources/daily/ford-gt-gen1-listings/2026-09-14.csv",
-          "bytes": 9011,
-          "sha256": "9c771887387ad19e687c47e7203e80b8355f42b97d2e84d5950ed1ad23db1252",
-          "row_count": 29,
+          "path": "data/export/sources/daily/ford-gt-gen1-listings/2026-09-15.csv",
+          "bytes": 13925,
+          "sha256": "db1615414a9e4f6dad2e2e6ab7a8f181a7308b4a93c0a60069265a1a1c018fcd",
+          "row_count": 47,
           "project": "ford-gt-gen1-listings",
-          "as_of": "2026-09-14"
+          "as_of": "2026-09-15"
         }
       ],
       "daily_summaries": [
         {
           "project": "ford-gt-gen1-listings",
-          "as_of": "2026-09-14",
+          "as_of": "2026-09-15",
           "summary": {
-            "snapshot_date": "2026-09-14",
+            "snapshot_date": "2026-09-15",
             "timezone": "America/New_York",
-            "total_listings": 29,
+            "total_listings": 47,
+            "counts_by_family": {
+              "Gen1": 30,
+              "Gen2": 17
+            },
+            "medians_by_family": {
+              "Gen1": {
+                "median_ask": 749950,
+                "median_miles": 1928
+              },
+              "Gen2": {
+                "median_ask": 1075000,
+                "median_miles": 392
+              }
+            },
             "counts_by_year": {
               "2005": 13,
-              "2006": 16
+              "2006": 17,
+              "2017": 1,
+              "2018": 1,
+              "2019": 5,
+              "2020": 6,
+              "2021": 3,
+              "2022": 1
             },
             "medians_by_year": {
               "2005": {
@@ -1320,15 +1375,59 @@
                 "median_miles": 8166
               },
               "2006": {
-                "median_ask": 809838,
-                "median_miles": 1104
+                "median_ask": 869675,
+                "median_miles": 926
+              },
+              "2017": {
+                "median_ask": 1050000,
+                "median_miles": 1173
+              },
+              "2018": {
+                "median_ask": 2999975,
+                "median_miles": 699
+              },
+              "2019": {
+                "median_ask": 1045412,
+                "median_miles": 1551
+              },
+              "2020": {
+                "median_ask": 1082490,
+                "median_miles": 160
+              },
+              "2021": {
+                "median_ask": 1100000,
+                "median_miles": 498
+              },
+              "2022": {
+                "median_ask": 2199995,
+                "median_miles": 17
               }
             },
             "overall": {
-              "median_ask": 749900,
-              "median_miles": 3388,
+              "median_ask": 935993,
+              "median_miles": 639,
               "min_ask": 429995,
-              "max_ask": 1500826
+              "max_ask": 2999975
+            },
+            "families": {
+              "Gen1": {
+                "count": 30,
+                "priced_count": 30,
+                "with_mileage_count": 21,
+                "median_asking_price_usd": 749950,
+                "min_asking_price_usd": 429995,
+                "max_asking_price_usd": 1500826,
+                "median_mileage_miles": 1928
+              },
+              "Gen2": {
+                "count": 17,
+                "priced_count": 17,
+                "with_mileage_count": 15,
+                "median_asking_price_usd": 1075000,
+                "min_asking_price_usd": 749000,
+                "max_asking_price_usd": 2999975,
+                "median_mileage_miles": 392
+              }
             },
             "years": {
               "2005": {
@@ -1341,30 +1440,85 @@
                 "median_mileage_miles": 8166
               },
               "2006": {
-                "count": 16,
-                "priced_count": 16,
-                "with_mileage_count": 10,
-                "median_asking_price_usd": 809838,
+                "count": 17,
+                "priced_count": 17,
+                "with_mileage_count": 11,
+                "median_asking_price_usd": 869675,
                 "min_asking_price_usd": 499992,
                 "max_asking_price_usd": 1500826,
-                "median_mileage_miles": 1104
+                "median_mileage_miles": 926
+              },
+              "2017": {
+                "count": 1,
+                "priced_count": 1,
+                "with_mileage_count": 1,
+                "median_asking_price_usd": 1050000,
+                "min_asking_price_usd": 1050000,
+                "max_asking_price_usd": 1050000,
+                "median_mileage_miles": 1173
+              },
+              "2018": {
+                "count": 1,
+                "priced_count": 1,
+                "with_mileage_count": 1,
+                "median_asking_price_usd": 2999975,
+                "min_asking_price_usd": 2999975,
+                "max_asking_price_usd": 2999975,
+                "median_mileage_miles": 699
+              },
+              "2019": {
+                "count": 5,
+                "priced_count": 5,
+                "with_mileage_count": 5,
+                "median_asking_price_usd": 1045412,
+                "min_asking_price_usd": 749900,
+                "max_asking_price_usd": 1599995,
+                "median_mileage_miles": 1551
+              },
+              "2020": {
+                "count": 6,
+                "priced_count": 6,
+                "with_mileage_count": 4,
+                "median_asking_price_usd": 1082490,
+                "min_asking_price_usd": 749000,
+                "max_asking_price_usd": 1299990,
+                "median_mileage_miles": 160
+              },
+              "2021": {
+                "count": 3,
+                "priced_count": 3,
+                "with_mileage_count": 3,
+                "median_asking_price_usd": 1100000,
+                "min_asking_price_usd": 1025412,
+                "max_asking_price_usd": 1299800,
+                "median_mileage_miles": 498
+              },
+              "2022": {
+                "count": 1,
+                "priced_count": 1,
+                "with_mileage_count": 1,
+                "median_asking_price_usd": 2199995,
+                "min_asking_price_usd": 2199995,
+                "max_asking_price_usd": 2199995,
+                "median_mileage_miles": 17
               }
             },
             "counts_by_source": {
-              "Classic.com": 22,
-              "Cars.com": 4,
+              "Classic.com": 32,
+              "Cars.com": 10,
               "CarGurus": 1,
-              "Hemmings": 2
+              "Hemmings": 3,
+              "duPont REGISTRY": 1
             },
             "source_raw_counts": {
-              "Classic.com": 22,
-              "Cars.com": 14,
-              "Hemmings": 3,
-              "duPont REGISTRY": 3,
-              "Merlin Auto Group": 1,
-              "CarGurus": 18
+              "Classic.com": 32,
+              "Cars.com": 27,
+              "Hemmings": 4,
+              "duPont REGISTRY": 7,
+              "Merlin Auto Group": 0,
+              "CarGurus": 10
             },
-            "dedupe_notes_count": 32,
+            "dedupe_notes_count": 33,
             "dedupe_notes_sample": [
               "vin dedupe keep existing 979995 (Classic.com) drop 979995 (Cars.com) vin=1FAFP90S95Y401413",
               "vin dedupe keep existing 779996 (Classic.com) drop 783076 (Cars.com) vin=1FAFP90S65Y401448",
@@ -1375,100 +1529,110 @@
               "vin dedupe keep existing 569500 (Classic.com) drop 569500 (Cars.com) vin=1FAFP90S55Y400288",
               "vin dedupe keep existing 869999 (Classic.com) drop 870084 (Cars.com) vin=1FAFP90S05Y401512",
               "vin dedupe keep existing 899999 (Classic.com) drop 900084 (Cars.com) vin=1FAFP90S56Y400390",
-              "vin dedupe keep existing 1498888 (Classic.com) drop 1498888 (Cars.com) vin=1FAFP90S36Y401991",
+              "vin dedupe keep existing 1499888 (Classic.com) drop 1499888 (Cars.com) vin=1FAFP90S36Y401991",
+              "vin dedupe keep existing 1099980 (Classic.com) drop 1099980 (Cars.com) vin=2FAGP9DW2LH100166",
+              "vin dedupe keep existing 1199995 (Classic.com) drop 1200220 (Cars.com) vin=2FAGP9DW7LH100101",
+              "vin dedupe keep existing 1599995 (Classic.com) drop 1600790 (Cars.com) vin=2FAGP9CWXKH200242",
+              "vin dedupe keep existing 1045412 (Classic.com) drop 1045412 (Cars.com) vin=2FAGP9CW6KH200108",
+              "vin dedupe keep existing 999412 (Classic.com) drop 999412 (Cars.com) vin=2FAGP9CW2KH200137",
+              "vin dedupe keep existing 1050000 (Classic.com) drop 1050250 (Cars.com) vin=2FAGP9CW8HH200068",
               "vin dedupe keep existing 599200 (Classic.com) drop 599200 (Hemmings) vin=1FAFP90S85Y401161",
               "vin dedupe keep existing 779996 (Classic.com) drop 779996 (duPont REGISTRY) vin=1FAFP90S65Y401448",
+              "vin dedupe keep existing 999412 (Classic.com) drop 999412 (duPont REGISTRY) vin=2FAGP9CW2KH200137",
+              "vin dedupe keep existing 1045412 (Classic.com) drop 1045412 (duPont REGISTRY) vin=2FAGP9CW6KH200108",
               "vin dedupe keep existing 979995 (Classic.com) drop 979995 (duPont REGISTRY) vin=1FAFP90S95Y401413",
+              "vin dedupe keep existing 1199995 (Classic.com) drop 1199995 (duPont REGISTRY) vin=2FAGP9DW7LH100101",
+              "vin dedupe keep 2199995 (duPont REGISTRY) drop 2200373 (Cars.com) vin=2FAGP9FW8NH200109",
               "vin dedupe keep existing 869675 (Classic.com) drop 869675 (duPont REGISTRY) vin=1FAFP90S06Y401558",
-              "vin dedupe keep existing 1500826 (Hemmings) drop 1500826 (Merlin Auto Group) vin=1FAFP90S66Y400169",
-              "cargurus skip existing VIN 1FAFP90S05Y401185 (prefer non-CarGurus)",
-              "cargurus skip existing VIN 1FAFP90S95Y400472 (prefer non-CarGurus)",
-              "cargurus skip existing VIN 1FAFP90SX5Y400738 (prefer non-CarGurus)",
-              "cargurus skip existing VIN 1FAFP90S65Y401448 (prefer non-CarGurus)",
-              "cargurus skip existing VIN 1FAFP90S05Y401512 (prefer non-CarGurus)",
-              "cargurus skip existing VIN 1FAFP90S95Y401413 (prefer non-CarGurus)",
-              "cargurus skip existing VIN 1FAFP90S65Y400736 (prefer non-CarGurus)",
-              "cargurus skip POR/null price vin=1FAFP90S55Y400114",
-              "cargurus skip POR/null price vin=1FAFP90S35Y402055",
-              "cargurus skip POR/null price vin=1FAFP90S25Y400037"
+              "cargurus skip existing VIN 1FAFP90SX5Y400738 (prefer non-CarGurus)"
             ],
-            "skipped_por": 15,
+            "skipped_por": 19,
             "sources_used": [
               "CarGurus",
               "Cars.com",
               "Classic.com",
-              "Hemmings"
+              "Hemmings",
+              "duPont REGISTRY"
             ],
             "sources_blocked_or_empty": [
               "Autotrader (page unavailable / blocked)",
-              "Cars & Bids (SPA shell; no usable live Gen1)",
+              "Cars & Bids (SPA shell; not merged)",
               "Canepa inventory (blocked/empty)"
             ],
             "cargurus": {
-              "raw": 18,
+              "raw": 10,
               "added": 1,
-              "deduped_against_existing": 13
+              "deduped_against_existing": 8
             },
             "meta": {
               "classic": {
                 "files": [
                   "classic_1st.html",
                   "classic_1st_p2.html",
-                  "classic_2005.html",
-                  "classic_2006.html"
+                  "classic_2nd.html",
+                  "classic_2nd_p2.html",
+                  "classic_market.html",
+                  "classic_market_p2.html"
                 ],
-                "items_seen": 48,
+                "items_seen": 96,
                 "skips": {
-                  "no_price": 3,
-                  "auction_skip": 12,
-                  "sold_or_removed": 11
+                  "no_price": 6,
+                  "auction_skip": 27,
+                  "sold_or_removed": 26,
+                  "not_real_gt": 3,
+                  "year_out_of_range": 2
                 }
               },
               "carscom": {
                 "files": [
                   "carscom_gen1.html",
-                  "carscom_gen1_p2.html"
+                  "carscom_gen1_p2.html",
+                  "carscom_gen2.html",
+                  "carscom_gen2_p2.html"
                 ],
-                "total_listings_meta": 25,
-                "unique_cards": 23,
-                "priced_rows": 14,
-                "skipped_por": 9
+                "unique_cards": 40,
+                "priced_rows": 27,
+                "skipped_por": 10,
+                "skipped_not_gt": 3
               },
               "hemmings": {
-                "vdps": 11,
+                "vdps": 19,
                 "skips": {
-                  "por_or_auction": 8
+                  "por_or_auction": 13,
+                  "gt40": 1,
+                  "replica": 1
                 },
-                "priced": 3
+                "priced": 4
               },
               "dupont": {
                 "cars_in_payload": 17,
-                "gen1_priced": 3,
-                "skipped_por": 6
+                "priced": 7,
+                "skipped_por": 9
               },
               "merlin": {
-                "raw": 3,
-                "deduped": 1
+                "error": "missing"
               },
               "bat": {
-                "active_gen1_urls": [
+                "active_ford_gt_urls": [
                   "https://bringatrailer.com/listing/2006-ford-gt-217/",
-                  "https://bringatrailer.com/listing/2006-ford-gt-217/",
-                  "https://bringatrailer.com/listing/2005-ford-gt-244/",
                   "https://bringatrailer.com/listing/2005-ford-gt-244/"
                 ],
-                "count": 4
+                "active_gen1_urls": [
+                  "https://bringatrailer.com/listing/2006-ford-gt-217/",
+                  "https://bringatrailer.com/listing/2005-ford-gt-244/"
+                ],
+                "count": 2
               },
               "cargurus": {
-                "raw": 18,
+                "raw": 10,
                 "added": 1,
-                "deduped": 13
+                "deduped": 8
               }
             },
-            "csv": "/home/box/agent-data/projects/ford-gt-gen1-listings/data/daily/2026-09-14.csv",
-            "scrape_dir": "/workspace/ford-gt-gen1-scrape-2026-09-14",
+            "csv": "/home/box/agent-data/projects/ford-gt-gen1-listings/data/daily/2026-09-15.csv",
+            "scrape_dir": "/workspace/ford-gt-scrape-2026-09-15",
             "data_quality_notes": [
-              "Only 2005–2006 Ford GT Gen 1; Gen 2 / GT40 replicas excluded.",
+              "Ford GT Gen1 (2005–2006) + Gen2 (2017–2022); GT40 replicas excluded.",
               "POR / price=0 listings skipped; prices never invented.",
               "Classic.com rounded Nk mi left blank.",
               "US-focused; some Canada/EU Hemmings rows retained with location notes.",
@@ -1478,7 +1642,7 @@
               "prior_snapshot": "2026-09-13",
               "prior_total_listings": 29,
               "prior_overall_median_ask": 749900,
-              "overall_median_ask_delta": 0,
+              "overall_median_ask_delta": 186093,
               "same_vin_price_drops": [
                 {
                   "vin": "1FAFP90S05Y401512",
@@ -1497,41 +1661,41 @@
         }
       ],
       "listings_embedded": false,
-      "listing_count": 29
+      "listing_count": 47
     }
   },
   "brand_files": {
     "ferrari": {
       "path": "data/export/brands/ferrari.json",
-      "sha256": "75d31a010953eefdcd937e348b505f5c8853e72f64a18f8d91bf4f671568c9fa",
-      "bytes": 696407
+      "sha256": "4917bbd4b64e90b85986ca6671a79c373aea6c8abc982121542248580b64d7e1",
+      "bytes": 720748
     },
     "mclaren": {
       "path": "data/export/brands/mclaren.json",
-      "sha256": "dad0f91c9eedd999be31703b49ffbfe1a928a8aeb5db9755f545b829679070ee",
-      "bytes": 122769
+      "sha256": "407b1d71f246ae3eec2c8080d2019f3e872090caa2ecbe452fb278dc6b8ef610",
+      "bytes": 122716
     },
     "lamborghini": {
       "path": "data/export/brands/lamborghini.json",
-      "sha256": "bed7da8e10fae38189eaf69a6d72c640f21b3582b730886f25bbf8ee26fc1c65",
-      "bytes": 283266
+      "sha256": "4d3294ce3a5f1a87a48f51a4e9de75d6932a67527cf8812c22185e45e75fc51f",
+      "bytes": 270683
     },
     "ford": {
       "path": "data/export/brands/ford.json",
-      "sha256": "b04896c809e733e11e9948323dae1ae61505affaac92faf78b34b79fb1f145e9",
-      "bytes": 29704
+      "sha256": "8e07d11ea3a74525cbdd616c9e568af3e0f5c7114b20785f49e095f02015626d",
+      "bytes": 46655
     }
   },
   "market_commentary": {
     "available": true,
-    "as_of": "2026-09-14",
-    "generated_at": "2026-09-14T21:08:55.721041Z",
+    "as_of": "2026-09-15",
+    "generated_at": "2026-09-15T13:17:13.916827Z",
     "geography": "US + Canada only",
     "pointer": "data/export/sources/market-commentary/latest.json",
     "overall": {
-      "headline": "Exotics desk: asks flat -0.2% cross-brand",
-      "take_short": "-0.2% cross-brand · inv Δ +785",
-      "summary": "As of 2026-09-14, tracked Ferrari / McLaren / Lamborghini / Ford GT US+Canada asks are flat on a ~7-day read (-0.2% median of brand medians). Inventory Δ across the board: +785.",
+      "headline": "Exotics desk: asks flat -0.1% cross-brand",
+      "take_short": "-0.1% cross-brand · inv Δ +653",
+      "summary": "As of 2026-09-15, tracked Ferrari / McLaren / Lamborghini / Ford GT US+Canada asks are flat on a ~7-day read (-0.1% median of brand medians). Inventory Δ across the board: +653.",
       "windows_available": [
         "7d",
         "14d"
@@ -1539,34 +1703,34 @@
     },
     "brands": {
       "ferrari": {
-        "headline": "Ferrari edging up: +0.9% variant-median ask · 7d",
-        "take_short": "+0.9% · 826 cars · 7d",
-        "summary": "As of 2026-09-14, Ferrari US/Canada tracked inventory sits at 826 cars (Δ +441 vs 2026-09-07). Variant-median ask +0.9% over ~7d (LFL $449,951, +$951 / +0.2%).",
+        "headline": "Ferrari flat: 0.0% variant-median ask · 7d",
+        "take_short": "0.0% · 852 cars · 7d",
+        "summary": "As of 2026-09-15, Ferrari US/Canada tracked inventory sits at 852 cars (Δ +319 vs 2026-09-08). Variant-median ask 0.0% over ~7d (LFL $404,475, +$4,587 / +1.1%).",
         "windows_available": [
           "7d",
           "14d"
         ]
       },
       "mclaren": {
-        "headline": "McLaren edging down: -0.6% variant-median ask · 7d",
-        "take_short": "-0.6% · 131 cars · 7d",
-        "summary": "As of 2026-09-14, McLaren US/Canada tracked inventory sits at 131 cars (Δ +66 vs 2026-09-07). Variant-median ask -0.6% over ~7d (LFL $299,900, $-93,102 / -23.7%).",
+        "headline": "McLaren flat: -0.2% variant-median ask · 7d",
+        "take_short": "-0.2% · 128 cars · 7d",
+        "summary": "As of 2026-09-15, McLaren US/Canada tracked inventory sits at 128 cars (Δ +63 vs 2026-09-08). Variant-median ask -0.2% over ~7d (LFL $283,844, $-75,129 / -20.9%).",
         "windows_available": [
           "7d"
         ]
       },
       "lamborghini": {
-        "headline": "Lamborghini softening: -4.2% variant-median ask · 7d",
-        "take_short": "-4.2% · 332 cars · 7d",
-        "summary": "As of 2026-09-14, Lamborghini US/Canada tracked inventory sits at 332 cars (Δ +277 vs 2026-09-07). Variant-median ask -4.2% over ~7d (LFL $443,032, $-6,921 / -1.5%).",
+        "headline": "Lamborghini softening: -2.5% variant-median ask · 7d",
+        "take_short": "-2.5% · 319 cars · 7d",
+        "summary": "As of 2026-09-15, Lamborghini US/Canada tracked inventory sits at 319 cars (Δ +263 vs 2026-09-08). Variant-median ask -2.5% over ~7d (LFL $449,894, +$6,862 / +1.6%).",
         "windows_available": [
           "7d"
         ]
       },
       "ford": {
-        "headline": "Ford flat: +0.2% variant-median ask · 7d",
-        "take_short": "+0.2% · 27 cars · 7d",
-        "summary": "As of 2026-09-14, Ford US/Canada tracked inventory sits at 27 cars (Δ +1 vs 2026-09-07). Variant-median ask +0.2% over ~7d (LFL $750,000, $0 / 0.0%).",
+        "headline": "Ford GT firming: +4.0% variant-median ask · 7d",
+        "take_short": "+4.0% · 34 cars · 7d",
+        "summary": "As of 2026-09-15, Ford GT US/Canada tracked inventory sits at 34 cars (Δ +8 vs 2026-09-08). Variant-median ask +4.0% over ~7d (LFL $779,996, +$29,996 / +4.0%).",
         "windows_available": [
           "7d"
         ]
@@ -2138,48 +2302,49 @@
     "available": true,
     "csv": {
       "path": "data/export/sources/backfill/classic_historical_90d.csv",
-      "bytes": 375865,
-      "sha256": "e6df5699f598b8de6c2d3022cfb848f0a3b077602122adc9e506246885335899",
-      "row_count": 1106
+      "bytes": 382272,
+      "sha256": "4215dcfd46de080629ea6771da1c388e299ff1cbf57d5f8701c442137c34b736",
+      "row_count": 1128
     },
     "summary_json": {
       "path": "data/export/sources/backfill/classic_historical_90d_summary.json",
-      "bytes": 39178,
-      "sha256": "8650bd60e18dc5a3bcbb9ded4d48d768acc6f52873f323736b018ede9e0e36a6",
+      "bytes": 57161,
+      "sha256": "52a9d2ffe811cb7685c94d2bcd80f7ff5b63fef6b2e2f766e223b965a9d1641a",
       "row_count": null
     },
     "summary": {
-      "window_start": "2026-06-16",
-      "window_end": "2026-09-14",
+      "window_start": "2026-06-17",
+      "window_end": "2026-09-15",
       "timezone": "America/New_York",
       "source": "Classic.com",
-      "geo_note": "Classic.com market pages not geo-filterable; kept all locations; non_US_Canada_location noted in notes; Brand takes prefer US/CA when location present",
-      "total_rows_in_window": 1106,
+      "geo_note": "Classic.com market pages not geo-filterable; kept all locations; non_US_Canada_location noted in notes",
+      "total_rows_in_window": 1090,
       "counts_by_status": {
-        "last_ask": 855,
-        "sold": 132,
-        "off_market": 119
+        "last_ask": 836,
+        "sold": 133,
+        "off_market": 121
       },
       "counts_by_model_family": {
-        "296": 199,
-        "Revuelto": 68,
-        "SF90": 157,
-        "Aventador_SVJ": 18,
-        "Gallardo": 80,
+        "296": 201,
+        "Gen1": 41,
+        "Revuelto": 70,
+        "SF90": 158,
+        "Aventador_SVJ": 17,
+        "Gallardo": 81,
+        "Gen2": 16,
         "Murcielago": 26,
-        "Artura": 42,
-        "488": 151,
-        "600LT": 34,
-        "F8": 98,
-        "Huracan_STO": 36,
-        "458": 102,
-        "Huracan_Performante": 21,
+        "Artura": 41,
+        "488": 140,
+        "600LT": 32,
+        "F8": 91,
+        "Huracan_STO": 30,
+        "458": 95,
+        "Huracan_Performante": 19,
         "Aventador_SV": 11,
-        "765LT": 17,
-        "GT": 39,
-        "675LT": 7
+        "765LT": 16,
+        "675LT": 5
       },
-      "generated_at": "2026-09-14T17:07:09.077593-04:00"
+      "generated_at": "2026-09-15T09:16:55.771684-04:00"
     }
   }
 }

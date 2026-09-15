@@ -1,0 +1,94 @@
+{
+  "snapshot_date": "2026-09-15",
+  "timezone": "America/New_York",
+  "total_listings": 63,
+  "overall_median_ask": 1199996,
+  "overall_median_miles": 8376,
+  "by_variant": {
+    "SV_coupe": {
+      "count": 20,
+      "median_ask": 849989,
+      "median_miles": 12596,
+      "min_ask": 499900,
+      "max_ask": 1050700
+    },
+    "SV_spider": {
+      "count": 8,
+      "median_ask": 1025388,
+      "median_miles": 12621,
+      "min_ask": 799996,
+      "max_ask": 1499989
+    },
+    "SVJ_coupe": {
+      "count": 27,
+      "median_ask": 1400478,
+      "median_miles": 7092,
+      "min_ask": 930353,
+      "max_ask": 2803076
+    },
+    "SVJ_spider": {
+      "count": 8,
+      "median_ask": 1565357,
+      "median_miles": 16989,
+      "min_ask": 1375000,
+      "max_ask": 3000000
+    }
+  },
+  "by_source": {
+    "Cars.com": 14,
+    "Classic.com": 24,
+    "CarGurus": 25
+  },
+  "by_family": {
+    "SV": 28,
+    "SVJ": 35
+  },
+  "classic_count": 24,
+  "carscom_count": 14,
+  "cargurus_count": 36,
+  "classic_meta": {
+    "snapshot_date": "2026-09-15",
+    "timezone": "America/New_York",
+    "source": "Classic.com",
+    "method": "Shell curl; status=for_sale market pages",
+    "total_listings": 24,
+    "skip_counts": {
+      "dup_url": 24,
+      "auction_no_ask_price": 2
+    },
+    "page_stats": {
+      "classic_sv.html": {
+        "cards": 8,
+        "kept": 8
+      },
+      "classic_sv_p2.html": {
+        "cards": 8,
+        "kept": 0
+      },
+      "classic_sv_roadster.html": {
+        "cards": 1,
+        "kept": 1
+      },
+      "classic_sv_roadster_p2.html": {
+        "cards": 1,
+        "kept": 0
+      },
+      "classic_lp770_svj.html": {
+        "cards": 8,
+        "kept": 8
+      },
+      "classic_svj_p2.html": {
+        "cards": 8,
+        "kept": 0
+      },
+      "classic_lp770_svj_roadster.html": {
+        "cards": 8,
+        "kept": 7
+      },
+      "classic_svj_roadster_p2.html": {
+        "cards": 8,
+        "kept": 0
+      }
+    }
+  }
+}

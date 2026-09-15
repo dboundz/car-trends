@@ -1,140 +1,140 @@
 {
   "brand": "lamborghini",
-  "as_of": "2026-09-14",
+  "as_of": "2026-09-15",
   "geography": "US + Canada only (overview pages filter; raw CSV rows may include others — see GEO.md)",
   "source_csvs": [
     {
-      "path": "data/export/sources/daily/lamborghini-huracan-listings/2026-09-14.csv",
-      "bytes": 21547,
-      "sha256": "ed67d710454d5b7d975a273fbb52895976bc0f8dc243977a1cd0740d4c6d705f",
+      "path": "data/export/sources/daily/lamborghini-huracan-listings/2026-09-15.csv",
+      "bytes": 21454,
+      "sha256": "8e8045f15a4d8298632639e709beb34d500d58e1588f8d87ba9b840ad2f7a81b",
       "row_count": 60,
       "project": "lamborghini-huracan-listings",
-      "as_of": "2026-09-14"
+      "as_of": "2026-09-15"
     },
     {
-      "path": "data/export/sources/daily/lamborghini-aventador-sv-listings/2026-09-14.csv",
-      "bytes": 21099,
-      "sha256": "a16719741a077f6f6c01c01cd170c25d22b999f3587677c4a0706b91052cda7b",
-      "row_count": 67,
+      "path": "data/export/sources/daily/lamborghini-aventador-sv-listings/2026-09-15.csv",
+      "bytes": 20196,
+      "sha256": "c3e745eeff628fa3bd5edf206eda4e6a1a55199e2439e8b4b8729d0eb6ea7876",
+      "row_count": 63,
       "project": "lamborghini-aventador-sv-listings",
-      "as_of": "2026-09-14"
+      "as_of": "2026-09-15"
     },
     {
-      "path": "data/export/sources/daily/lamborghini-murcielago-gallardo-listings/2026-09-14.csv",
-      "bytes": 74041,
-      "sha256": "1dcb90e2bfdcd74cd30ffdd75f16e98b922a5163498be8518504d2ec1d963fa3",
-      "row_count": 215,
+      "path": "data/export/sources/daily/lamborghini-murcielago-gallardo-listings/2026-09-15.csv",
+      "bytes": 69696,
+      "sha256": "591a3f224cd9db7f6c0f160e941aeb3d9006910f91ac44de6615a7e0f6bc3ed6",
+      "row_count": 202,
       "project": "lamborghini-murcielago-gallardo-listings",
-      "as_of": "2026-09-14"
+      "as_of": "2026-09-15"
     }
   ],
   "kpis": {
-    "listing_count": 342,
-    "median_ask": 521230,
-    "median_miles": 5252,
+    "listing_count": 325,
+    "median_ask": 553649,
+    "median_miles": 5015,
     "by_model_family": {
       "Gallardo": {
-        "count": 74,
-        "median_ask": 155494,
-        "median_miles": 19989
+        "count": 71,
+        "median_ask": 150145,
+        "median_miles": 19099
       },
       "Murcielago": {
-        "count": 42,
-        "median_ask": 619998,
+        "count": 34,
+        "median_ask": 760395,
         "median_miles": 13648
       },
       "Performante": {
-        "count": 33,
-        "median_ask": 371699,
+        "count": 30,
+        "median_ask": 370589,
         "median_miles": 14094
       },
       "Revuelto": {
-        "count": 67,
-        "median_ask": 689900,
-        "median_miles": 643
+        "count": 66,
+        "median_ask": 692019,
+        "median_miles": 669
       },
       "STO": {
-        "count": 27,
-        "median_ask": 499912,
+        "count": 30,
+        "median_ask": 501042,
         "median_miles": 4319
       },
       "SV": {
-        "count": 32,
-        "median_ask": 875039,
-        "median_miles": 12596
+        "count": 28,
+        "median_ask": 874794,
+        "median_miles": 12608
       },
       "SVJ": {
         "count": 35,
-        "median_ask": 1500790,
-        "median_miles": 6867
+        "median_ask": 1499990,
+        "median_miles": 7316
       },
       "Temerario": {
-        "count": 32,
-        "median_ask": 456018,
-        "median_miles": 818
+        "count": 31,
+        "median_ask": 455287,
+        "median_miles": 781
       }
     }
   },
   "daily_summaries": [
     {
       "project": "lamborghini-huracan-listings",
-      "as_of": "2026-09-14",
+      "as_of": "2026-09-15",
       "summary": {
-        "snapshot_date": "2026-09-14",
+        "snapshot_date": "2026-09-15",
         "timezone": "America/New_York",
         "total_listings": 60,
         "counts_by_variant": {
-          "Performante_coupe": 26,
-          "Performante_spider": 7,
-          "STO_coupe": 27
+          "Performante_coupe": 24,
+          "Performante_spider": 6,
+          "STO_coupe": 30
         },
         "medians_by_variant": {
           "Performante_coupe": {
-            "median_ask": 371350,
-            "median_miles": 13851
+            "median_ask": 370240,
+            "median_miles": 14094
           },
           "Performante_spider": {
-            "median_ask": 384500,
-            "median_miles": 15325
+            "median_ask": 392000,
+            "median_miles": 21793
           },
           "STO_coupe": {
-            "median_ask": 499912,
+            "median_ask": 501042,
             "median_miles": 4319
           }
         },
         "variants": {
           "Performante_coupe": {
-            "count": 26,
-            "priced_count": 26,
-            "with_mileage_count": 15,
-            "median_asking_price_usd": 371350,
+            "count": 24,
+            "priced_count": 24,
+            "with_mileage_count": 14,
+            "median_asking_price_usd": 370240,
             "min_asking_price_usd": 159999,
             "max_asking_price_usd": 479995,
-            "median_mileage_miles": 13851
+            "median_mileage_miles": 14094
           },
           "Performante_spider": {
-            "count": 7,
-            "priced_count": 7,
-            "with_mileage_count": 3,
-            "median_asking_price_usd": 384500,
-            "min_asking_price_usd": 220419,
+            "count": 6,
+            "priced_count": 6,
+            "with_mileage_count": 2,
+            "median_asking_price_usd": 392000,
+            "min_asking_price_usd": 328991,
             "max_asking_price_usd": 411696,
-            "median_mileage_miles": 15325
+            "median_mileage_miles": 21793
           },
           "STO_coupe": {
-            "count": 27,
-            "priced_count": 27,
-            "with_mileage_count": 22,
-            "median_asking_price_usd": 499912,
+            "count": 30,
+            "priced_count": 30,
+            "with_mileage_count": 26,
+            "median_asking_price_usd": 501042,
             "min_asking_price_usd": 411246,
             "max_asking_price_usd": 1997988,
             "median_mileage_miles": 4319
           }
         },
         "counts_by_source": {
-          "Classic.com": 30,
-          "Cars.com": 16,
-          "CarGurus": 14
+          "Cars.com": 17,
+          "Classic.com": 28,
+          "CarGurus": 15
         },
         "sources_ok": {
           "Classic.com": true,
@@ -151,48 +151,48 @@
           "Autotrader: page unavailable / blocked (~3.7KB shell page).",
           "Hemmings: search HTML lacks usable STO/Performante inventory cards for merge (few generic listing links).",
           "duPont Registry: search HTML lacked parseable listing cards (JS-rendered).",
-          "BaT: model pages fetched; auction current-bid pages only (no fixed asking prices merged).",
-          "Cars & Bids: search returned JS shell (~14KB); no listings merged.",
+          "BaT: model pages returned HTTP 404 (~207KB error/shell); no fixed asking prices merged.",
+          "Cars & Bids: search returned small JS shell (~5.8KB compressed / ~14KB); no listings merged.",
           "Cars.com keyword-only STO search historically returns 0; model filter huracan_sto used.",
           "Classic.com truncates many Performante VINs in listing URL slugs."
         ],
         "cargurus_merge": {
-          "before": 46,
+          "before": 45,
           "after": 60,
-          "added": 14,
-          "skipped_dup": 5,
+          "added": 15,
+          "skipped_dup": 4,
           "skipped_norm": 0,
           "cargurus_input": 19
         },
         "vs_yesterday": {
           "Performante_coupe": {
             "yesterday_median_ask": 371350,
-            "today_median_ask": 371350,
-            "delta": 0,
-            "pct": 0.0,
+            "today_median_ask": 370240,
+            "delta": -1110,
+            "pct": -0.3,
             "yesterday_n": 26,
-            "today_n": 26
+            "today_n": 24
           },
           "Performante_spider": {
-            "yesterday_median_ask": 392224,
-            "today_median_ask": 384500,
-            "delta": -7724,
-            "pct": -1.97,
-            "yesterday_n": 6,
-            "today_n": 7
+            "yesterday_median_ask": 384500,
+            "today_median_ask": 392000,
+            "delta": 7500,
+            "pct": 1.95,
+            "yesterday_n": 7,
+            "today_n": 6
           },
           "STO_coupe": {
             "yesterday_median_ask": 499912,
-            "today_median_ask": 499912,
-            "delta": 0,
-            "pct": 0.0,
+            "today_median_ask": 501042,
+            "delta": 1130,
+            "pct": 0.23,
             "yesterday_n": 27,
-            "today_n": 27
+            "today_n": 30
           }
         },
         "striking_drops": [],
         "color_fill": {
-          "exterior": 31,
+          "exterior": 32,
           "interior": 17,
           "total": 60
         },
@@ -202,21 +202,21 @@
           "Never invent price/year/miles; rounded Classic Nk mi left blank.",
           "Dedupe by VIN/URL; CarGurus added only if not already present (prefer non-CarGurus).",
           "Prefer US/Canada; location recorded as found.",
-          "CarGurus via chrome --headless --dump-dom (zip=32801, delivery enabled); merge stats: {'before': 46, 'after': 60, 'added': 14, 'skipped_dup': 5, 'skipped_norm': 0, 'cargurus_input': 19}.",
-          "Color fill: exterior=31/60, interior=17/60."
+          "CarGurus via chrome --headless --dump-dom (zip=32801, delivery enabled); merge stats: {'before': 45, 'after': 60, 'added': 15, 'skipped_dup': 4, 'skipped_norm': 0, 'cargurus_input': 19}.",
+          "Color fill: exterior=32/60, interior=17/60."
         ],
         "classic_meta": {
-          "total": 31,
+          "total": 29,
           "page_stats": {
             "STO_coupe": {
-              "site_meta_for_sale": 17,
-              "items_seen": 32,
+              "site_meta_for_sale": 16,
+              "items_seen": 30,
               "pages_fetched": 2,
               "url": "https://www.classic.com/m/lamborghini/huracan/sto/?status=for_sale"
             },
             "Performante_coupe": {
-              "site_meta_for_sale": 11,
-              "items_seen": 22,
+              "site_meta_for_sale": 10,
+              "items_seen": 20,
               "pages_fetched": 2,
               "url": "https://www.classic.com/m/lamborghini/huracan/lp640-4-performante/?status=for_sale"
             },
@@ -228,27 +228,27 @@
             }
           },
           "skip_counts": {
-            "dedupe": 31
+            "dedupe": 29
           }
         }
       }
     },
     {
       "project": "lamborghini-aventador-sv-listings",
-      "as_of": "2026-09-14",
+      "as_of": "2026-09-15",
       "summary": {
-        "snapshot_date": "2026-09-14",
+        "snapshot_date": "2026-09-15",
         "timezone": "America/New_York",
-        "total_listings": 67,
-        "overall_median_ask": 1187581,
-        "overall_median_miles": 8438,
+        "total_listings": 63,
+        "overall_median_ask": 1199996,
+        "overall_median_miles": 8376,
         "by_variant": {
           "SV_coupe": {
-            "count": 24,
-            "median_ask": 850478,
+            "count": 20,
+            "median_ask": 849989,
             "median_miles": 12596,
             "min_ask": 499900,
-            "max_ask": 1102185
+            "max_ask": 1050700
           },
           "SV_spider": {
             "count": 8,
@@ -259,10 +259,10 @@
           },
           "SVJ_coupe": {
             "count": 27,
-            "median_ask": 1499990,
-            "median_miles": 6328,
+            "median_ask": 1400478,
+            "median_miles": 7092,
             "min_ask": 930353,
-            "max_ask": 3000000
+            "max_ask": 2803076
           },
           "SVJ_spider": {
             "count": 8,
@@ -275,17 +275,17 @@
         "by_source": {
           "Cars.com": 14,
           "Classic.com": 24,
-          "CarGurus": 29
+          "CarGurus": 25
         },
         "by_family": {
-          "SV": 32,
+          "SV": 28,
           "SVJ": 35
         },
         "classic_count": 24,
-        "carscom_count": 15,
+        "carscom_count": 14,
         "cargurus_count": 36,
         "classic_meta": {
-          "snapshot_date": "2026-09-14",
+          "snapshot_date": "2026-09-15",
           "timezone": "America/New_York",
           "source": "Classic.com",
           "method": "Shell curl; status=for_sale market pages",
@@ -333,107 +333,119 @@
     },
     {
       "project": "lamborghini-murcielago-gallardo-listings",
-      "as_of": "2026-09-14",
+      "as_of": "2026-09-15",
       "summary": {
-        "snapshot_date": "2026-09-14",
+        "snapshot_date": "2026-09-15",
         "timezone": "America/New_York",
-        "total_listings": 215,
-        "overall_median_ask": 459995,
-        "overall_median_miles": 1466,
+        "total_listings": 202,
+        "overall_median_ask": 481645,
+        "overall_median_miles": 1494,
         "by_variant": {
           "Gallardo_coupe": {
-            "count": 38,
+            "count": 37,
             "median_ask": 172998,
             "median_miles": 18932,
             "min_ask": 79433,
             "max_ask": 340075
           },
           "Gallardo_spider": {
-            "count": 36,
-            "median_ask": 134549,
-            "median_miles": 21571,
+            "count": 34,
+            "median_ask": 135749,
+            "median_miles": 20596,
             "min_ask": 94489,
             "max_ask": 419000
           },
           "Murcielago_coupe": {
-            "count": 24,
-            "median_ask": 511750,
+            "count": 19,
+            "median_ask": 750000,
             "median_miles": 9960,
-            "min_ask": 170000,
-            "max_ask": 1680200
+            "min_ask": 209000,
+            "max_ask": 3140000
           },
           "Murcielago_spider": {
-            "count": 18,
-            "median_ask": 749995,
+            "count": 15,
+            "median_ask": 799675,
             "median_miles": 14491,
-            "min_ask": 260000,
+            "min_ask": 299900,
             "max_ask": 950075
           },
           "Revuelto_coupe": {
-            "count": 67,
-            "median_ask": 689900,
-            "median_miles": 643,
-            "min_ask": 609000,
+            "count": 66,
+            "median_ask": 692019,
+            "median_miles": 669,
+            "min_ask": 609900,
             "max_ask": 999998
           },
           "Temerario_coupe": {
-            "count": 32,
-            "median_ask": 456018,
-            "median_miles": 818,
+            "count": 31,
+            "median_ask": 455287,
+            "median_miles": 781,
             "min_ask": 410035,
             "max_ask": 559970
           }
         },
         "by_source": {
-          "Classic.com": 99,
-          "Cars.com": 86,
-          "CarGurus": 30
+          "Classic.com": 91,
+          "Cars.com": 80,
+          "CarGurus": 31
         },
         "by_family": {
-          "Murcielago": 42,
-          "Gallardo": 74,
-          "Revuelto": 67,
-          "Temerario": 32
+          "Murcielago": 34,
+          "Gallardo": 71,
+          "Revuelto": 66,
+          "Temerario": 31
         },
-        "classic_count": 99,
-        "carscom_count": 86,
-        "cargurus_count": 30,
+        "classic_count": 91,
+        "carscom_count": 80,
+        "cargurus_count": 31,
         "classic_meta": {
-          "snapshot_date": "2026-09-14",
+          "snapshot_date": "2026-09-15",
           "timezone": "America/New_York",
           "source": "Classic.com",
           "method": "Shell curl; status=for_sale market pages",
-          "total_listings": 99,
+          "total_listings": 91,
           "skip_counts": {
-            "non_usd_currency": 10,
-            "auction_no_ask_price": 19,
-            "dup_url": 65,
-            "no_price": 3
+            "non_usd_currency": 9,
+            "auction_no_ask_price": 16,
+            "dup_url": 49,
+            "no_price": 7
           },
           "page_stats": {
             "classic_murcielago.html": {
-              "cards": 7,
-              "kept": 4
+              "cards": 8,
+              "kept": 5
             },
             "classic_murcielago_p2.html": {
-              "cards": 7,
+              "cards": 8,
               "kept": 0
             },
             "classic_murcielago_lp640.html": {
-              "cards": 24,
-              "kept": 17
+              "cards": 0,
+              "kept": 0
             },
             "classic_murcielago_lp670.html": {
               "cards": 1,
               "kept": 0
             },
             "classic_murcielago_roadster.html": {
-              "cards": 5,
-              "kept": 3
+              "cards": 0,
+              "kept": 0
             },
             "classic_murcielago_roadster_p2.html": {
-              "cards": 5,
+              "cards": 0,
               "kept": 0
+            },
+            "classic_murcielago_lp640_roadster.html": {
+              "cards": 2,
+              "kept": 0
+            },
+            "classic_murcielago_base.html": {
+              "cards": 2,
+              "kept": 0
+            },
+            "classic_murcielago_all.html": {
+              "cards": 24,
+              "kept": 10
             },
             "classic_gallardo.html": {
               "cards": 24,
@@ -441,18 +453,18 @@
             },
             "classic_gallardo_p2.html": {
               "cards": 24,
-              "kept": 18
+              "kept": 17
             },
             "classic_gallardo_p3.html": {
-              "cards": 24,
-              "kept": 0
+              "cards": 2,
+              "kept": 2
             },
             "classic_gallardo_spyder.html": {
-              "cards": 16,
+              "cards": 17,
               "kept": 0
             },
             "classic_gallardo_spyder_p2.html": {
-              "cards": 16,
+              "cards": 17,
               "kept": 0
             },
             "classic_gallardo_sl.html": {
@@ -481,16 +493,35 @@
     }
   ],
   "market_commentary": {
-    "headline": "Lamborghini softening: -4.2% variant-median ask · 7d",
-    "take_short": "-4.2% · 332 cars · 7d",
-    "summary": "As of 2026-09-14, Lamborghini US/Canada tracked inventory sits at 332 cars (Δ +277 vs 2026-09-07). Variant-median ask -4.2% over ~7d (LFL $443,032, $-6,921 / -1.5%).",
+    "headline": "Lamborghini softening: -2.5% variant-median ask · 7d",
+    "take_short": "-2.5% · 319 cars · 7d",
+    "summary": "As of 2026-09-15, Lamborghini US/Canada tracked inventory sits at 319 cars (Δ +263 vs 2026-09-08). Variant-median ask -2.5% over ~7d (LFL $449,894, +$6,862 / +1.6%).",
     "windows_available": [
       "7d"
     ]
   },
   "listings": [
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
+      "model_family": "STO",
+      "body": "coupe",
+      "model_year": "2021",
+      "asking_price_usd": "474989",
+      "mileage_miles": "14202",
+      "currency": "USD",
+      "location": "Johnson Creek, WI, USA",
+      "seller_type": "dealer",
+      "listing_title": "2021 Lamborghini Huracan STO Coupe",
+      "listing_url": "https://www.cars.com/vehicledetail/6d129822-aa5d-487c-8315-dbafaefd9c6d/",
+      "source": "Cars.com",
+      "vin_or_stock": "ZHWUA6ZX8MLA17242",
+      "exterior_color": "blue",
+      "interior_color": "",
+      "notes": "Cars.com search results; exact miles from Cars.com JSON: 14202; seller:Kearns Motor Car Co.; stock:Used; exterior color: blue",
+      "_project": "lamborghini-huracan-listings"
+    },
+    {
+      "snapshot_date": "2026-09-15",
       "model_family": "STO",
       "body": "coupe",
       "model_year": "2021",
@@ -509,12 +540,12 @@
       "_project": "lamborghini-huracan-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "STO",
       "body": "coupe",
       "model_year": "2022",
       "asking_price_usd": "411246",
-      "mileage_miles": "",
+      "mileage_miles": "16878",
       "currency": "USD",
       "location": "Merrillville, Indiana, USA",
       "seller_type": "dealer",
@@ -524,11 +555,11 @@
       "vin_or_stock": "ZHWUA6ZX2NLA18324",
       "exterior_color": "",
       "interior_color": "",
-      "notes": "Classic.com asterisk asking; 16k mi displayed; mileage blank (rounded Nk mi); fixed-price; seller:Sweis Infiniti Merrillville",
+      "notes": "Classic.com asterisk asking; 16k mi displayed; mileage blank (rounded Nk mi); fixed-price; seller:Sweis Infiniti Merrillville; mileage enriched from Cars.com; also listed on Cars.com @ $411246",
       "_project": "lamborghini-huracan-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "STO",
       "body": "coupe",
       "model_year": "2022",
@@ -547,7 +578,7 @@
       "_project": "lamborghini-huracan-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "STO",
       "body": "coupe",
       "model_year": "2022",
@@ -566,7 +597,7 @@
       "_project": "lamborghini-huracan-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "STO",
       "body": "coupe",
       "model_year": "2022",
@@ -585,7 +616,7 @@
       "_project": "lamborghini-huracan-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "STO",
       "body": "coupe",
       "model_year": "2022",
@@ -604,7 +635,7 @@
       "_project": "lamborghini-huracan-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "STO",
       "body": "coupe",
       "model_year": "2022",
@@ -623,7 +654,7 @@
       "_project": "lamborghini-huracan-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "STO",
       "body": "coupe",
       "model_year": "2022",
@@ -642,7 +673,26 @@
       "_project": "lamborghini-huracan-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
+      "model_family": "STO",
+      "body": "coupe",
+      "model_year": "2022",
+      "asking_price_usd": "508368",
+      "mileage_miles": "1161",
+      "currency": "USD",
+      "location": "Chicago, IL, USA",
+      "seller_type": "dealer",
+      "listing_title": "2022 Lamborghini Huracan STO Coupe",
+      "listing_url": "https://www.cars.com/vehicledetail/5425cee6-43dd-4e63-b697-c274a9bcc8e5/",
+      "source": "Cars.com",
+      "vin_or_stock": "ZHWUA6ZX1NLA19738",
+      "exterior_color": "blue",
+      "interior_color": "",
+      "notes": "Cars.com search results; exact miles from Cars.com JSON: 1161; seller:Fields Motorcars Chicago - Bentley Gold Coast, Lamborghini Chicago and Rolls Royce Chicago; stock:Used; exterior color: blue",
+      "_project": "lamborghini-huracan-listings"
+    },
+    {
+      "snapshot_date": "2026-09-15",
       "model_family": "STO",
       "body": "coupe",
       "model_year": "2022",
@@ -661,7 +711,7 @@
       "_project": "lamborghini-huracan-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "STO",
       "body": "coupe",
       "model_year": "2022",
@@ -680,7 +730,7 @@
       "_project": "lamborghini-huracan-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "STO",
       "body": "coupe",
       "model_year": "2022",
@@ -699,7 +749,7 @@
       "_project": "lamborghini-huracan-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "STO",
       "body": "coupe",
       "model_year": "2023",
@@ -718,7 +768,7 @@
       "_project": "lamborghini-huracan-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "STO",
       "body": "coupe",
       "model_year": "2023",
@@ -737,7 +787,7 @@
       "_project": "lamborghini-huracan-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "STO",
       "body": "coupe",
       "model_year": "2023",
@@ -756,7 +806,7 @@
       "_project": "lamborghini-huracan-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "STO",
       "body": "coupe",
       "model_year": "2023",
@@ -775,7 +825,7 @@
       "_project": "lamborghini-huracan-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "STO",
       "body": "coupe",
       "model_year": "2023",
@@ -794,7 +844,7 @@
       "_project": "lamborghini-huracan-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "STO",
       "body": "coupe",
       "model_year": "2023",
@@ -813,26 +863,26 @@
       "_project": "lamborghini-huracan-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "STO",
       "body": "coupe",
       "model_year": "2023",
       "asking_price_usd": "549912",
       "mileage_miles": "657",
       "currency": "USD",
-      "location": "West Chicago, Illinois, USA",
+      "location": "West Chicago, IL, USA",
       "seller_type": "dealer",
-      "listing_title": "2023 Lamborghini Huracan STO",
-      "listing_url": "https://www.classic.com/veh/2023-lamborghini-huracan-sto-zhwua6zx5pla21835-nQxA1e4/",
-      "source": "Classic.com",
+      "listing_title": "2023 Lamborghini Huracan STO Coupe",
+      "listing_url": "https://www.cars.com/vehicledetail/29850aaf-d286-45ef-b92e-c1e2a5ef39cd/",
+      "source": "Cars.com",
       "vin_or_stock": "ZHWUA6ZX5PLA21835",
       "exterior_color": "white",
       "interior_color": "",
-      "notes": "Classic.com asterisk asking; exact miles displayed: 657 mi; fixed-price; seller:Chicago Motor Cars; also listed on Cars.com @ $549912",
+      "notes": "Cars.com search results; exact miles from Cars.com JSON: 657; seller:Chicago Motor Cars; stock:Used; exterior color: white",
       "_project": "lamborghini-huracan-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "STO",
       "body": "coupe",
       "model_year": "2023",
@@ -851,7 +901,7 @@
       "_project": "lamborghini-huracan-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "STO",
       "body": "coupe",
       "model_year": "2023",
@@ -870,7 +920,7 @@
       "_project": "lamborghini-huracan-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "STO",
       "body": "coupe",
       "model_year": "2023",
@@ -889,7 +939,7 @@
       "_project": "lamborghini-huracan-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "STO",
       "body": "coupe",
       "model_year": "2024",
@@ -908,7 +958,7 @@
       "_project": "lamborghini-huracan-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "STO",
       "body": "coupe",
       "model_year": "2024",
@@ -927,7 +977,7 @@
       "_project": "lamborghini-huracan-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "STO",
       "body": "coupe",
       "model_year": "2024",
@@ -946,7 +996,7 @@
       "_project": "lamborghini-huracan-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Performante",
       "body": "coupe",
       "model_year": "2018",
@@ -965,7 +1015,7 @@
       "_project": "lamborghini-huracan-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Performante",
       "body": "coupe",
       "model_year": "2018",
@@ -984,7 +1034,7 @@
       "_project": "lamborghini-huracan-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Performante",
       "body": "coupe",
       "model_year": "2018",
@@ -1003,7 +1053,7 @@
       "_project": "lamborghini-huracan-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Performante",
       "body": "coupe",
       "model_year": "2018",
@@ -1022,7 +1072,7 @@
       "_project": "lamborghini-huracan-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Performante",
       "body": "coupe",
       "model_year": "2018",
@@ -1041,7 +1091,7 @@
       "_project": "lamborghini-huracan-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Performante",
       "body": "coupe",
       "model_year": "2018",
@@ -1060,7 +1110,7 @@
       "_project": "lamborghini-huracan-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Performante",
       "body": "coupe",
       "model_year": "2018",
@@ -1079,7 +1129,7 @@
       "_project": "lamborghini-huracan-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Performante",
       "body": "coupe",
       "model_year": "2018",
@@ -1098,7 +1148,26 @@
       "_project": "lamborghini-huracan-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
+      "model_family": "Performante",
+      "body": "coupe",
+      "model_year": "2018",
+      "asking_price_usd": "370000",
+      "mileage_miles": "",
+      "currency": "USD",
+      "location": "Scottsdale, Arizona, USA",
+      "seller_type": "dealer",
+      "listing_title": "2018 Lamborghini Huracan LP640-4 Performante",
+      "listing_url": "https://www.classic.com/veh/2018-lamborghini-huracan-lp640-4-performante-zhwcd-nwXmgKW/",
+      "source": "Classic.com",
+      "vin_or_stock": "",
+      "exterior_color": "",
+      "interior_color": "",
+      "notes": "Classic.com asterisk asking; 13k mi displayed; mileage blank (rounded Nk mi); fixed-price; seller:Spady Auto Group; VIN truncated/absent in Classic.com URL",
+      "_project": "lamborghini-huracan-listings"
+    },
+    {
+      "snapshot_date": "2026-09-15",
       "model_family": "Performante",
       "body": "coupe",
       "model_year": "2018",
@@ -1117,64 +1186,7 @@
       "_project": "lamborghini-huracan-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
-      "model_family": "Performante",
-      "body": "coupe",
-      "model_year": "2018",
-      "asking_price_usd": "371000",
-      "mileage_miles": "",
-      "currency": "USD",
-      "location": "Scottsdale, Arizona, USA",
-      "seller_type": "dealer",
-      "listing_title": "2018 Lamborghini Huracan LP640-4 Performante",
-      "listing_url": "https://www.classic.com/veh/2018-lamborghini-huracan-lp640-4-performante-zhwcd-nwXmgKW/",
-      "source": "Classic.com",
-      "vin_or_stock": "",
-      "exterior_color": "",
-      "interior_color": "",
-      "notes": "Classic.com asterisk asking; 13k mi displayed; mileage blank (rounded Nk mi); fixed-price; seller:Spady Auto Group; VIN truncated/absent in Classic.com URL",
-      "_project": "lamborghini-huracan-listings"
-    },
-    {
-      "snapshot_date": "2026-09-14",
-      "model_family": "Performante",
-      "body": "coupe",
-      "model_year": "2018",
-      "asking_price_usd": "399993",
-      "mileage_miles": "",
-      "currency": "USD",
-      "location": "Wilsonville, Oregon, USA",
-      "seller_type": "dealer",
-      "listing_title": "2018 Lamborghini Huracan LP640-4 Performante",
-      "listing_url": "https://www.classic.com/veh/2018-lamborghini-huracan-lp640-4-performante-zhwud-pGARXYn/",
-      "source": "Classic.com",
-      "vin_or_stock": "",
-      "exterior_color": "",
-      "interior_color": "",
-      "notes": "Classic.com asterisk asking; 9k mi displayed; mileage blank (rounded Nk mi); fixed-price; seller:Ron Tonkin Gran Turismo; VIN truncated/absent in Classic.com URL",
-      "_project": "lamborghini-huracan-listings"
-    },
-    {
-      "snapshot_date": "2026-09-14",
-      "model_family": "Performante",
-      "body": "coupe",
-      "model_year": "2018",
-      "asking_price_usd": "400243",
-      "mileage_miles": "9883",
-      "currency": "USD",
-      "location": "Lamborghini Huracan Performante Ron Tonkin Gran Turismo Wilsonville, OR, USA",
-      "seller_type": "dealer",
-      "listing_title": "2018 Lamborghini Huracan Performante",
-      "listing_url": "https://www.cars.com/vehicledetail/447a8224-881b-4e7d-9ac9-2a05e88c72c0/",
-      "source": "Cars.com",
-      "vin_or_stock": "ZHWUD4ZF6JLA10580",
-      "exterior_color": "white",
-      "interior_color": "Nero Cosmus/Rosso Alala",
-      "notes": "Cars.com search results; exact miles from Cars.com JSON: 9883; seller:Ron Tonkin Gran Turismo; stock:Used; exterior color: white",
-      "_project": "lamborghini-huracan-listings"
-    },
-    {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Performante",
       "body": "coupe",
       "model_year": "2018",
@@ -1193,7 +1205,7 @@
       "_project": "lamborghini-huracan-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Performante",
       "body": "coupe",
       "model_year": "2018",
@@ -1212,7 +1224,7 @@
       "_project": "lamborghini-huracan-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Performante",
       "body": "coupe",
       "model_year": "2019",
@@ -1231,26 +1243,7 @@
       "_project": "lamborghini-huracan-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
-      "model_family": "Performante",
-      "body": "spider",
-      "model_year": "2018",
-      "asking_price_usd": "220419",
-      "mileage_miles": "15325",
-      "currency": "USD",
-      "location": "Berwyn, IL, USA",
-      "seller_type": "dealer",
-      "listing_title": "2018 Lamborghini Huracan Performante",
-      "listing_url": "https://www.cars.com/vehicledetail/9002678c-1871-4698-8451-bbdcdb69bb81/",
-      "source": "Cars.com",
-      "vin_or_stock": "ZHWUS4ZF8JLA11008",
-      "exterior_color": "blue",
-      "interior_color": "",
-      "notes": "Cars.com search results; exact miles from Cars.com JSON: 15325; seller:Ogden Motors; stock:Used; exterior color: blue",
-      "_project": "lamborghini-huracan-listings"
-    },
-    {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Performante",
       "body": "spider",
       "model_year": "2018",
@@ -1269,7 +1262,7 @@
       "_project": "lamborghini-huracan-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Performante",
       "body": "spider",
       "model_year": "2018",
@@ -1288,7 +1281,7 @@
       "_project": "lamborghini-huracan-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Performante",
       "body": "spider",
       "model_year": "2018",
@@ -1307,7 +1300,7 @@
       "_project": "lamborghini-huracan-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Performante",
       "body": "spider",
       "model_year": "2019",
@@ -1326,7 +1319,7 @@
       "_project": "lamborghini-huracan-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Performante",
       "body": "spider",
       "model_year": "2019",
@@ -1345,7 +1338,7 @@
       "_project": "lamborghini-huracan-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Performante",
       "body": "spider",
       "model_year": "2019",
@@ -1364,7 +1357,7 @@
       "_project": "lamborghini-huracan-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "STO",
       "body": "coupe",
       "model_year": "2024",
@@ -1383,7 +1376,26 @@
       "_project": "lamborghini-huracan-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
+      "model_family": "STO",
+      "body": "coupe",
+      "model_year": "2024",
+      "asking_price_usd": "540140",
+      "mileage_miles": "1394",
+      "currency": "USD",
+      "location": "Houston, TX",
+      "seller_type": "dealer",
+      "listing_title": "2024 Lamborghini Huracan",
+      "listing_url": "https://www.cargurus.com/details/454513411",
+      "source": "CarGurus",
+      "vin_or_stock": "ZHWUA6ZX1RLA25657",
+      "exterior_color": "Blu Cepheus",
+      "interior_color": "Black/Red",
+      "notes": "Stock # RLA25657; trim: STO Coupe RWD; deal rating: POOR_PRICE; exterior color: Blu Cepheus",
+      "_project": "lamborghini-huracan-listings"
+    },
+    {
+      "snapshot_date": "2026-09-15",
       "model_family": "STO",
       "body": "coupe",
       "model_year": "2024",
@@ -1402,7 +1414,7 @@
       "_project": "lamborghini-huracan-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "STO",
       "body": "coupe",
       "model_year": "2024",
@@ -1421,7 +1433,7 @@
       "_project": "lamborghini-huracan-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Performante",
       "body": "coupe",
       "model_year": "2018",
@@ -1440,7 +1452,7 @@
       "_project": "lamborghini-huracan-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Performante",
       "body": "coupe",
       "model_year": "2018",
@@ -1459,7 +1471,7 @@
       "_project": "lamborghini-huracan-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Performante",
       "body": "coupe",
       "model_year": "2018",
@@ -1478,11 +1490,11 @@
       "_project": "lamborghini-huracan-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Performante",
       "body": "coupe",
       "model_year": "2018",
-      "asking_price_usd": "371699",
+      "asking_price_usd": "370699",
       "mileage_miles": "13568",
       "currency": "USD",
       "location": "Scottsdale, AZ",
@@ -1497,7 +1509,7 @@
       "_project": "lamborghini-huracan-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Performante",
       "body": "coupe",
       "model_year": "2018",
@@ -1516,7 +1528,7 @@
       "_project": "lamborghini-huracan-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Performante",
       "body": "coupe",
       "model_year": "2018",
@@ -1535,7 +1547,7 @@
       "_project": "lamborghini-huracan-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Performante",
       "body": "coupe",
       "model_year": "2018",
@@ -1554,7 +1566,7 @@
       "_project": "lamborghini-huracan-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Performante",
       "body": "coupe",
       "model_year": "2018",
@@ -1573,11 +1585,11 @@
       "_project": "lamborghini-huracan-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Performante",
       "body": "coupe",
       "model_year": "2018",
-      "asking_price_usd": "449953",
+      "asking_price_usd": "444939",
       "mileage_miles": "7225",
       "currency": "USD",
       "location": "Boerne, TX",
@@ -1592,7 +1604,7 @@
       "_project": "lamborghini-huracan-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Performante",
       "body": "coupe",
       "model_year": "2018",
@@ -1611,7 +1623,7 @@
       "_project": "lamborghini-huracan-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Performante",
       "body": "coupe",
       "model_year": "2018",
@@ -1630,7 +1642,7 @@
       "_project": "lamborghini-huracan-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "SV",
       "body": "coupe",
       "model_year": "2017",
@@ -1649,7 +1661,7 @@
       "_project": "lamborghini-aventador-sv-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "SV",
       "body": "coupe",
       "model_year": "2016",
@@ -1668,7 +1680,7 @@
       "_project": "lamborghini-aventador-sv-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "SV",
       "body": "coupe",
       "model_year": "2016",
@@ -1687,7 +1699,7 @@
       "_project": "lamborghini-aventador-sv-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "SV",
       "body": "coupe",
       "model_year": "2016",
@@ -1706,7 +1718,7 @@
       "_project": "lamborghini-aventador-sv-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "SV",
       "body": "coupe",
       "model_year": "2016",
@@ -1725,7 +1737,7 @@
       "_project": "lamborghini-aventador-sv-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "SV",
       "body": "coupe",
       "model_year": "2016",
@@ -1744,7 +1756,7 @@
       "_project": "lamborghini-aventador-sv-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "SV",
       "body": "coupe",
       "model_year": "2016",
@@ -1763,7 +1775,7 @@
       "_project": "lamborghini-aventador-sv-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "SV",
       "body": "coupe",
       "model_year": "2016",
@@ -1782,7 +1794,7 @@
       "_project": "lamborghini-aventador-sv-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "SV",
       "body": "coupe",
       "model_year": "2016",
@@ -1801,26 +1813,7 @@
       "_project": "lamborghini-aventador-sv-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
-      "model_family": "SV",
-      "body": "coupe",
-      "model_year": "2016",
-      "asking_price_usd": "849989",
-      "mileage_miles": "8896",
-      "currency": "USD",
-      "location": "Johnson Creek, WI, USA",
-      "seller_type": "dealer",
-      "listing_title": "2016 Lamborghini Aventador LP750-4 Superveloce",
-      "listing_url": "https://www.cars.com/vehicledetail/49d7d943-b067-4e4f-b317-d83aaf4efb45/",
-      "source": "Cars.com",
-      "vin_or_stock": "",
-      "exterior_color": "",
-      "interior_color": "",
-      "notes": "Cars.com search results; exact miles from Cars.com JSON: 8896; seller:Kearns Motor Car Co.; stock:Used",
-      "_project": "lamborghini-aventador-sv-listings"
-    },
-    {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "SV",
       "body": "coupe",
       "model_year": "2016",
@@ -1832,52 +1825,33 @@
       "listing_title": "2016 Lamborghini Aventador LP750-4 Superveloce",
       "listing_url": "https://www.cars.com/vehicledetail/48942d8d-f65b-4149-97ef-aa8b7989c693/",
       "source": "Cars.com",
-      "vin_or_stock": "",
+      "vin_or_stock": "ZHWUF3ZD7GLA04301",
       "exterior_color": "green",
-      "interior_color": "",
-      "notes": "Cars.com search results; exact miles from Cars.com JSON: 12596; seller:Kearns Motor Car Co.; stock:Used; exterior color: green",
+      "interior_color": "Nero Cosmus",
+      "notes": "Cars.com search results; exact miles from Cars.com JSON: 12596; seller:Kearns Motor Car Co.; stock:Used; exterior color: green; also listed on CarGurus @ $850478",
       "_project": "lamborghini-aventador-sv-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "SV",
       "body": "coupe",
       "model_year": "2016",
-      "asking_price_usd": "850478",
+      "asking_price_usd": "849989",
       "mileage_miles": "8896",
       "currency": "USD",
-      "location": "Johnson Creek, WI",
+      "location": "Johnson Creek, WI, USA",
       "seller_type": "dealer",
-      "listing_title": "2016 Lamborghini Aventador",
-      "listing_url": "https://www.cargurus.com/details/452219439",
-      "source": "CarGurus",
+      "listing_title": "2016 Lamborghini Aventador LP750-4 Superveloce",
+      "listing_url": "https://www.cars.com/vehicledetail/49d7d943-b067-4e4f-b317-d83aaf4efb45/",
+      "source": "Cars.com",
       "vin_or_stock": "ZHWCF3ZD5GLA04485",
       "exterior_color": "Grigio Antares Metallic (Blu Glauco Wrap)",
       "interior_color": "Nero Cosmus",
-      "notes": "Stock # K10227A; trim: LP 750-4 SV Coupe AWD; exterior color: Grigio Antares Metallic (Blu Glauco Wrap); interior color: Nero Cosmus",
+      "notes": "Cars.com search results; exact miles from Cars.com JSON: 8896; seller:Kearns Motor Car Co.; stock:Used; also listed on CarGurus @ $850478",
       "_project": "lamborghini-aventador-sv-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
-      "model_family": "SV",
-      "body": "coupe",
-      "model_year": "2016",
-      "asking_price_usd": "850478",
-      "mileage_miles": "12596",
-      "currency": "USD",
-      "location": "Johnson Creek, WI",
-      "seller_type": "dealer",
-      "listing_title": "2016 Lamborghini Aventador",
-      "listing_url": "https://www.cargurus.com/details/452475724",
-      "source": "CarGurus",
-      "vin_or_stock": "ZHWUF3ZD7GLA04301",
-      "exterior_color": "Green (Verde Ithaca Pearl Effect)",
-      "interior_color": "Nero Cosmus",
-      "notes": "Stock # KC10297; trim: LP 750-4 SV Coupe AWD; exterior color: Green (Verde Ithaca Pearl Effect); interior color: Nero Cosmus",
-      "_project": "lamborghini-aventador-sv-listings"
-    },
-    {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "SV",
       "body": "coupe",
       "model_year": "2016",
@@ -1896,7 +1870,7 @@
       "_project": "lamborghini-aventador-sv-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "SV",
       "body": "coupe",
       "model_year": "2016",
@@ -1915,7 +1889,7 @@
       "_project": "lamborghini-aventador-sv-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "SV",
       "body": "coupe",
       "model_year": "2016",
@@ -1934,7 +1908,7 @@
       "_project": "lamborghini-aventador-sv-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "SV",
       "body": "coupe",
       "model_year": "2017",
@@ -1953,12 +1927,50 @@
       "_project": "lamborghini-aventador-sv-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
+      "model_family": "SV",
+      "body": "coupe",
+      "model_year": "2017",
+      "asking_price_usd": "997190",
+      "mileage_miles": "",
+      "currency": "USD",
+      "location": "Ashburn, Virginia, USA",
+      "seller_type": "dealer",
+      "listing_title": "2017 Lamborghini Aventador LP750-4 SV",
+      "listing_url": "https://www.classic.com/veh/2017-lamborghini-aventador-lp750-4-sv-zhwcf3zd8hla-nBkDOZW/",
+      "source": "Classic.com",
+      "vin_or_stock": "",
+      "exterior_color": "",
+      "interior_color": "",
+      "notes": "Classic.com asterisk asking; 14k mi displayed; mileage blank (rounded Nk mi); seller:Exclusive Automotive Group",
+      "_project": "lamborghini-aventador-sv-listings"
+    },
+    {
+      "snapshot_date": "2026-09-15",
+      "model_family": "SV",
+      "body": "coupe",
+      "model_year": "2017",
+      "asking_price_usd": "997190",
+      "mileage_miles": "14314",
+      "currency": "USD",
+      "location": "Superveloce Exclusive Automotive Group Ashburn, VA, USA",
+      "seller_type": "dealer",
+      "listing_title": "2017 Lamborghini Aventador LP750-4 Superveloce",
+      "listing_url": "https://www.cars.com/vehicledetail/266d4835-0f4c-4ef6-ab0a-40c6343e0035/",
+      "source": "Cars.com",
+      "vin_or_stock": "ZHWCF3ZD8HLA06197",
+      "exterior_color": "blue",
+      "interior_color": "Nero Cosmus (Black)",
+      "notes": "Cars.com search results; exact miles from Cars.com JSON: 14314; seller:Exclusive Automotive Group; stock:Used; exterior color: blue; also listed on CarGurus @ $998185",
+      "_project": "lamborghini-aventador-sv-listings"
+    },
+    {
+      "snapshot_date": "2026-09-15",
       "model_family": "SV",
       "body": "coupe",
       "model_year": "2016",
       "asking_price_usd": "1048970",
-      "mileage_miles": "",
+      "mileage_miles": "998",
       "currency": "USD",
       "location": "Murrieta, California, USA",
       "seller_type": "dealer",
@@ -1968,11 +1980,11 @@
       "vin_or_stock": "",
       "exterior_color": "",
       "interior_color": "",
-      "notes": "Classic.com asterisk asking; 1k mi displayed; mileage blank (rounded Nk mi); seller:West Coast Exotic Cars",
+      "notes": "Classic.com asterisk asking; exact miles displayed: 998 mi; seller:West Coast Exotic Cars",
       "_project": "lamborghini-aventador-sv-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "SV",
       "body": "coupe",
       "model_year": "2016",
@@ -1991,7 +2003,7 @@
       "_project": "lamborghini-aventador-sv-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "SV",
       "body": "coupe",
       "model_year": "2016",
@@ -2010,83 +2022,7 @@
       "_project": "lamborghini-aventador-sv-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
-      "model_family": "SV",
-      "body": "coupe",
-      "model_year": "2016",
-      "asking_price_usd": "1100478",
-      "mileage_miles": "8376",
-      "currency": "USD",
-      "location": "Johnson Creek, WI",
-      "seller_type": "dealer",
-      "listing_title": "2016 Lamborghini Aventador",
-      "listing_url": "https://www.cargurus.com/details/454145559",
-      "source": "CarGurus",
-      "vin_or_stock": "ZHWUT3ZD2GLA04795",
-      "exterior_color": "Giallo Horus",
-      "interior_color": "Nero Cosmus",
-      "notes": "Stock # K10296; trim: LP 750-4 SV Coupe AWD; exterior color: Giallo Horus; interior color: Nero Cosmus",
-      "_project": "lamborghini-aventador-sv-listings"
-    },
-    {
-      "snapshot_date": "2026-09-14",
-      "model_family": "SV",
-      "body": "coupe",
-      "model_year": "2017",
-      "asking_price_usd": "1101190",
-      "mileage_miles": "",
-      "currency": "USD",
-      "location": "Ashburn, Virginia, USA",
-      "seller_type": "dealer",
-      "listing_title": "2017 Lamborghini Aventador LP750-4 SV",
-      "listing_url": "https://www.classic.com/veh/2017-lamborghini-aventador-lp750-4-sv-zhwcf3zd8hla-nBkDOZW/",
-      "source": "Classic.com",
-      "vin_or_stock": "",
-      "exterior_color": "",
-      "interior_color": "",
-      "notes": "Classic.com asterisk asking; 14k mi displayed; mileage blank (rounded Nk mi); seller:Exclusive Automotive Group",
-      "_project": "lamborghini-aventador-sv-listings"
-    },
-    {
-      "snapshot_date": "2026-09-14",
-      "model_family": "SV",
-      "body": "coupe",
-      "model_year": "2017",
-      "asking_price_usd": "1101190",
-      "mileage_miles": "14314",
-      "currency": "USD",
-      "location": "Superveloce Exclusive Automotive Group Ashburn, VA, USA",
-      "seller_type": "dealer",
-      "listing_title": "2017 Lamborghini Aventador LP750-4 Superveloce",
-      "listing_url": "https://www.cars.com/vehicledetail/266d4835-0f4c-4ef6-ab0a-40c6343e0035/",
-      "source": "Cars.com",
-      "vin_or_stock": "",
-      "exterior_color": "blue",
-      "interior_color": "",
-      "notes": "Cars.com search results; exact miles from Cars.com JSON: 14314; seller:Exclusive Automotive Group; stock:Used; exterior color: blue",
-      "_project": "lamborghini-aventador-sv-listings"
-    },
-    {
-      "snapshot_date": "2026-09-14",
-      "model_family": "SV",
-      "body": "coupe",
-      "model_year": "2017",
-      "asking_price_usd": "1102185",
-      "mileage_miles": "14314",
-      "currency": "USD",
-      "location": "Ashburn, VA",
-      "seller_type": "dealer",
-      "listing_title": "2017 Lamborghini Aventador",
-      "listing_url": "https://www.cargurus.com/details/455567941",
-      "source": "CarGurus",
-      "vin_or_stock": "ZHWCF3ZD8HLA06197",
-      "exterior_color": "Blu Cepheus",
-      "interior_color": "Nero Cosmus (Black)",
-      "notes": "Stock # PA06197; trim: LP 750-4 SV; exterior color: Blu Cepheus; interior color: Nero Cosmus (Black)",
-      "_project": "lamborghini-aventador-sv-listings"
-    },
-    {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "SV",
       "body": "spider",
       "model_year": "2016",
@@ -2105,7 +2041,7 @@
       "_project": "lamborghini-aventador-sv-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "SV",
       "body": "spider",
       "model_year": "2017",
@@ -2124,7 +2060,7 @@
       "_project": "lamborghini-aventador-sv-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "SV",
       "body": "spider",
       "model_year": "2016",
@@ -2143,7 +2079,7 @@
       "_project": "lamborghini-aventador-sv-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "SV",
       "body": "spider",
       "model_year": "2016",
@@ -2162,7 +2098,7 @@
       "_project": "lamborghini-aventador-sv-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "SV",
       "body": "spider",
       "model_year": "2016",
@@ -2181,7 +2117,7 @@
       "_project": "lamborghini-aventador-sv-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "SV",
       "body": "spider",
       "model_year": "2016",
@@ -2193,14 +2129,14 @@
       "listing_title": "2016 Lamborghini Aventador LP750-4 Superveloce",
       "listing_url": "https://www.cars.com/vehicledetail/8d447395-7d11-4171-89b4-c5db29735211/",
       "source": "Cars.com",
-      "vin_or_stock": "",
-      "exterior_color": "",
-      "interior_color": "",
-      "notes": "Cars.com search results; exact miles from Cars.com JSON: 8376; seller:Kearns Motor Car Co.; stock:Used",
+      "vin_or_stock": "ZHWUT3ZD2GLA04795",
+      "exterior_color": "Giallo Horus",
+      "interior_color": "Nero Cosmus",
+      "notes": "Cars.com search results; exact miles from Cars.com JSON: 8376; seller:Kearns Motor Car Co.; stock:Used; also listed on CarGurus @ $1100478",
       "_project": "lamborghini-aventador-sv-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "SV",
       "body": "spider",
       "model_year": "2016",
@@ -2219,7 +2155,7 @@
       "_project": "lamborghini-aventador-sv-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "SV",
       "body": "spider",
       "model_year": "2017",
@@ -2238,7 +2174,7 @@
       "_project": "lamborghini-aventador-sv-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "SVJ",
       "body": "coupe",
       "model_year": "2019",
@@ -2257,7 +2193,7 @@
       "_project": "lamborghini-aventador-sv-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "SVJ",
       "body": "coupe",
       "model_year": "2019",
@@ -2276,7 +2212,7 @@
       "_project": "lamborghini-aventador-sv-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "SVJ",
       "body": "coupe",
       "model_year": "2019",
@@ -2295,7 +2231,7 @@
       "_project": "lamborghini-aventador-sv-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "SVJ",
       "body": "coupe",
       "model_year": "2020",
@@ -2314,7 +2250,7 @@
       "_project": "lamborghini-aventador-sv-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "SVJ",
       "body": "coupe",
       "model_year": "2020",
@@ -2333,7 +2269,7 @@
       "_project": "lamborghini-aventador-sv-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "SVJ",
       "body": "coupe",
       "model_year": "2019",
@@ -2352,7 +2288,7 @@
       "_project": "lamborghini-aventador-sv-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "SVJ",
       "body": "coupe",
       "model_year": "2021",
@@ -2371,7 +2307,7 @@
       "_project": "lamborghini-aventador-sv-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "SVJ",
       "body": "coupe",
       "model_year": "2021",
@@ -2390,7 +2326,7 @@
       "_project": "lamborghini-aventador-sv-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "SVJ",
       "body": "coupe",
       "model_year": "2020",
@@ -2409,7 +2345,7 @@
       "_project": "lamborghini-aventador-sv-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "SVJ",
       "body": "coupe",
       "model_year": "2020",
@@ -2428,7 +2364,7 @@
       "_project": "lamborghini-aventador-sv-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "SVJ",
       "body": "coupe",
       "model_year": "2020",
@@ -2447,7 +2383,7 @@
       "_project": "lamborghini-aventador-sv-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "SVJ",
       "body": "coupe",
       "model_year": "2019",
@@ -2466,7 +2402,7 @@
       "_project": "lamborghini-aventador-sv-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "SVJ",
       "body": "coupe",
       "model_year": "2021",
@@ -2485,7 +2421,26 @@
       "_project": "lamborghini-aventador-sv-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
+      "model_family": "SVJ",
+      "body": "coupe",
+      "model_year": "2020",
+      "asking_price_usd": "1400478",
+      "mileage_miles": "10668",
+      "currency": "USD",
+      "location": "Johnson Creek, WI",
+      "seller_type": "dealer",
+      "listing_title": "2020 Lamborghini Aventador",
+      "listing_url": "https://www.cargurus.com/details/458912224",
+      "source": "CarGurus",
+      "vin_or_stock": "ZHWUN6ZD1LLA09380",
+      "exterior_color": "Viola Pasifae Pearl",
+      "interior_color": "Green (Nero Cosmus/Verde Fauns)",
+      "notes": "Stock # K10393; trim: LP 770-4 SVJ Coupe AWD; exterior color: Viola Pasifae Pearl; interior color: Green (Nero Cosmus/Verde Fauns)",
+      "_project": "lamborghini-aventador-sv-listings"
+    },
+    {
+      "snapshot_date": "2026-09-15",
       "model_family": "SVJ",
       "body": "coupe",
       "model_year": "2020",
@@ -2504,7 +2459,7 @@
       "_project": "lamborghini-aventador-sv-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "SVJ",
       "body": "coupe",
       "model_year": "2020",
@@ -2523,7 +2478,7 @@
       "_project": "lamborghini-aventador-sv-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "SVJ",
       "body": "coupe",
       "model_year": "2020",
@@ -2542,7 +2497,7 @@
       "_project": "lamborghini-aventador-sv-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "SVJ",
       "body": "coupe",
       "model_year": "2020",
@@ -2561,7 +2516,7 @@
       "_project": "lamborghini-aventador-sv-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "SVJ",
       "body": "coupe",
       "model_year": "2020",
@@ -2580,7 +2535,7 @@
       "_project": "lamborghini-aventador-sv-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "SVJ",
       "body": "coupe",
       "model_year": "2021",
@@ -2599,7 +2554,7 @@
       "_project": "lamborghini-aventador-sv-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "SVJ",
       "body": "coupe",
       "model_year": "2021",
@@ -2618,7 +2573,7 @@
       "_project": "lamborghini-aventador-sv-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "SVJ",
       "body": "coupe",
       "model_year": "2021",
@@ -2637,7 +2592,7 @@
       "_project": "lamborghini-aventador-sv-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "SVJ",
       "body": "coupe",
       "model_year": "2020",
@@ -2656,7 +2611,7 @@
       "_project": "lamborghini-aventador-sv-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "SVJ",
       "body": "coupe",
       "model_year": "2020",
@@ -2675,7 +2630,7 @@
       "_project": "lamborghini-aventador-sv-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "SVJ",
       "body": "coupe",
       "model_year": "2020",
@@ -2694,7 +2649,7 @@
       "_project": "lamborghini-aventador-sv-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "SVJ",
       "body": "coupe",
       "model_year": "2021",
@@ -2713,7 +2668,7 @@
       "_project": "lamborghini-aventador-sv-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "SVJ",
       "body": "coupe",
       "model_year": "2021",
@@ -2732,26 +2687,7 @@
       "_project": "lamborghini-aventador-sv-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
-      "model_family": "SVJ",
-      "body": "coupe",
-      "model_year": "2021",
-      "asking_price_usd": "3000000",
-      "mileage_miles": "1220",
-      "currency": "USD",
-      "location": "Westfield, IN",
-      "seller_type": "dealer",
-      "listing_title": "2021 Lamborghini Aventador",
-      "listing_url": "https://www.cargurus.com/details/332891693",
-      "source": "CarGurus",
-      "vin_or_stock": "ZHWUN6ZD3MLA10189",
-      "exterior_color": "Purple",
-      "interior_color": "White",
-      "notes": "Stock # STKA10189; trim: LP 770-4 SVJ Coupe AWD; exterior color: Purple; interior color: White",
-      "_project": "lamborghini-aventador-sv-listings"
-    },
-    {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "SVJ",
       "body": "spider",
       "model_year": "2020",
@@ -2770,7 +2706,7 @@
       "_project": "lamborghini-aventador-sv-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "SVJ",
       "body": "spider",
       "model_year": "2021",
@@ -2789,7 +2725,7 @@
       "_project": "lamborghini-aventador-sv-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "SVJ",
       "body": "spider",
       "model_year": "2021",
@@ -2808,7 +2744,7 @@
       "_project": "lamborghini-aventador-sv-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "SVJ",
       "body": "spider",
       "model_year": "2020",
@@ -2827,7 +2763,7 @@
       "_project": "lamborghini-aventador-sv-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "SVJ",
       "body": "spider",
       "model_year": "2020",
@@ -2846,7 +2782,7 @@
       "_project": "lamborghini-aventador-sv-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "SVJ",
       "body": "spider",
       "model_year": "2021",
@@ -2865,7 +2801,7 @@
       "_project": "lamborghini-aventador-sv-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "SVJ",
       "body": "spider",
       "model_year": "2020",
@@ -2884,7 +2820,7 @@
       "_project": "lamborghini-aventador-sv-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "SVJ",
       "body": "spider",
       "model_year": "2021",
@@ -2903,7 +2839,7 @@
       "_project": "lamborghini-aventador-sv-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Gallardo",
       "body": "coupe",
       "model_year": "2004",
@@ -2922,7 +2858,26 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
+      "model_family": "Gallardo",
+      "body": "coupe",
+      "model_year": "2004",
+      "asking_price_usd": "89900",
+      "mileage_miles": "",
+      "currency": "USD",
+      "location": "Addison, Texas, USA",
+      "seller_type": "dealer",
+      "listing_title": "2004 Lamborghini Gallardo Coupe",
+      "listing_url": "https://www.classic.com/veh/2004-lamborghini-gallardo-coupe-zhwgu11s74la01587-WbwA5yp/",
+      "source": "Classic.com",
+      "vin_or_stock": "ZHWGU11S74LA01587",
+      "exterior_color": "",
+      "interior_color": "",
+      "notes": "Classic.com asterisk asking; 62k mi displayed; mileage blank (rounded Nk mi); seller:Exotic World Motor Cars",
+      "_project": "lamborghini-murcielago-gallardo-listings"
+    },
+    {
+      "snapshot_date": "2026-09-15",
       "model_family": "Gallardo",
       "body": "coupe",
       "model_year": "2004",
@@ -2941,7 +2896,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Gallardo",
       "body": "coupe",
       "model_year": "2004",
@@ -2960,7 +2915,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Gallardo",
       "body": "coupe",
       "model_year": "2004",
@@ -2979,7 +2934,26 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
+      "model_family": "Gallardo",
+      "body": "coupe",
+      "model_year": "2007",
+      "asking_price_usd": "119989",
+      "mileage_miles": "16112",
+      "currency": "USD",
+      "location": "Johnson Creek, WI, USA",
+      "seller_type": "dealer",
+      "listing_title": "2007 Lamborghini Gallardo",
+      "listing_url": "https://www.cars.com/vehicledetail/59ea29d0-8968-456a-a9d0-1e7b509ce217/",
+      "source": "Cars.com",
+      "vin_or_stock": "ZHWGU12T77LA05778",
+      "exterior_color": "yellow",
+      "interior_color": "",
+      "notes": "Cars.com search results; exact miles from Cars.com JSON: 16112; seller:Kearns Motor Car Co.; stock:Used; exterior color: yellow",
+      "_project": "lamborghini-murcielago-gallardo-listings"
+    },
+    {
+      "snapshot_date": "2026-09-15",
       "model_family": "Gallardo",
       "body": "coupe",
       "model_year": "2006",
@@ -2998,7 +2972,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Gallardo",
       "body": "coupe",
       "model_year": "2005",
@@ -3017,7 +2991,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Gallardo",
       "body": "coupe",
       "model_year": "2012",
@@ -3036,7 +3010,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Gallardo",
       "body": "coupe",
       "model_year": "2013",
@@ -3055,26 +3029,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
-      "model_family": "Gallardo",
-      "body": "coupe",
-      "model_year": "2013",
-      "asking_price_usd": "140354",
-      "mileage_miles": "4281",
-      "currency": "USD",
-      "location": "Oakbrook Terrace, IL, USA",
-      "seller_type": "dealer",
-      "listing_title": "2013 Lamborghini Gallardo 1",
-      "listing_url": "https://www.cars.com/vehicledetail/4c09ae0a-2ea1-466e-b766-f661f44b688f/",
-      "source": "Cars.com",
-      "vin_or_stock": "ZHWGE5AU9DLA13469",
-      "exterior_color": "white",
-      "interior_color": "",
-      "notes": "Cars.com search results; exact miles from Cars.com JSON: 4281; seller:Carbox; stock:Used; exterior color: white",
-      "_project": "lamborghini-murcielago-gallardo-listings"
-    },
-    {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Gallardo",
       "body": "coupe",
       "model_year": "2006",
@@ -3093,7 +3048,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Gallardo",
       "body": "coupe",
       "model_year": "2005",
@@ -3112,7 +3067,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Gallardo",
       "body": "coupe",
       "model_year": "2014",
@@ -3131,7 +3086,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Gallardo",
       "body": "coupe",
       "model_year": "2004",
@@ -3150,26 +3105,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
-      "model_family": "Gallardo",
-      "body": "coupe",
-      "model_year": "2013",
-      "asking_price_usd": "159995",
-      "mileage_miles": "33545",
-      "currency": "USD",
-      "location": "Lewisville, TX, USA",
-      "seller_type": "dealer",
-      "listing_title": "2013 Lamborghini Gallardo LP560-4",
-      "listing_url": "https://www.cars.com/vehicledetail/e2d22aa7-d570-4f72-90a9-131e390d43b4/",
-      "source": "Cars.com",
-      "vin_or_stock": "ZHWGU5AU7DLA13277",
-      "exterior_color": "white",
-      "interior_color": "Marrone Janus",
-      "notes": "Cars.com search results; exact miles from Cars.com JSON: 33545; seller:Auto Park Dallas; stock:Used; exterior color: white; subvariant: LP560",
-      "_project": "lamborghini-murcielago-gallardo-listings"
-    },
-    {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Gallardo",
       "body": "coupe",
       "model_year": "2013",
@@ -3188,7 +3124,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Gallardo",
       "body": "coupe",
       "model_year": "2013",
@@ -3207,7 +3143,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Gallardo",
       "body": "coupe",
       "model_year": "2009",
@@ -3226,7 +3162,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Gallardo",
       "body": "coupe",
       "model_year": "2008",
@@ -3240,12 +3176,12 @@
       "source": "Classic.com",
       "vin_or_stock": "ZHWGU12T68LA05918",
       "exterior_color": "yellow",
-      "interior_color": "Black",
+      "interior_color": "",
       "notes": "Classic.com asterisk asking; 15k mi displayed; mileage blank (rounded Nk mi); seller:Hypercars",
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Gallardo",
       "body": "coupe",
       "model_year": "2013",
@@ -3264,7 +3200,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Gallardo",
       "body": "coupe",
       "model_year": "2013",
@@ -3283,7 +3219,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Gallardo",
       "body": "coupe",
       "model_year": "2013",
@@ -3302,7 +3238,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Gallardo",
       "body": "coupe",
       "model_year": "2013",
@@ -3321,7 +3257,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Gallardo",
       "body": "coupe",
       "model_year": "2007",
@@ -3340,7 +3276,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Gallardo",
       "body": "coupe",
       "model_year": "2011",
@@ -3359,7 +3295,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Gallardo",
       "body": "coupe",
       "model_year": "2006",
@@ -3378,7 +3314,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Gallardo",
       "body": "coupe",
       "model_year": "2006",
@@ -3397,7 +3333,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Gallardo",
       "body": "coupe",
       "model_year": "2009",
@@ -3416,7 +3352,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Gallardo",
       "body": "coupe",
       "model_year": "2013",
@@ -3435,7 +3371,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Gallardo",
       "body": "coupe",
       "model_year": "2008",
@@ -3454,7 +3390,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Gallardo",
       "body": "coupe",
       "model_year": "2005",
@@ -3473,26 +3409,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
-      "model_family": "Gallardo",
-      "body": "coupe",
-      "model_year": "2010",
-      "asking_price_usd": "219000",
-      "mileage_miles": "18005",
-      "currency": "USD",
-      "location": "",
-      "seller_type": "dealer",
-      "listing_title": "2010 Lamborghini Gallardo LP560-4",
-      "listing_url": "https://www.cars.com/vehicledetail/ccce06ae-cf83-46dd-aa26-411870df980c/",
-      "source": "Cars.com",
-      "vin_or_stock": "ZHWGU5AU2ALA09097",
-      "exterior_color": "white",
-      "interior_color": "",
-      "notes": "Cars.com search results; exact miles from Cars.com JSON: 18005; stock:Used; exterior color: white; subvariant: LP560; location missing from card parse",
-      "_project": "lamborghini-murcielago-gallardo-listings"
-    },
-    {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Gallardo",
       "body": "coupe",
       "model_year": "2009",
@@ -3511,7 +3428,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Gallardo",
       "body": "coupe",
       "model_year": "2004",
@@ -3530,7 +3447,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Gallardo",
       "body": "coupe",
       "model_year": "2004",
@@ -3549,7 +3466,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Gallardo",
       "body": "coupe",
       "model_year": "2010",
@@ -3568,7 +3485,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Gallardo",
       "body": "coupe",
       "model_year": "2011",
@@ -3587,7 +3504,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Gallardo",
       "body": "coupe",
       "model_year": "2008",
@@ -3606,7 +3523,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Gallardo",
       "body": "coupe",
       "model_year": "2013",
@@ -3625,7 +3542,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Gallardo",
       "body": "spider",
       "model_year": "2007",
@@ -3644,7 +3561,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Gallardo",
       "body": "spider",
       "model_year": "2007",
@@ -3663,7 +3580,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Gallardo",
       "body": "spider",
       "model_year": "2007",
@@ -3682,7 +3599,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Gallardo",
       "body": "spider",
       "model_year": "2006",
@@ -3701,26 +3618,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
-      "model_family": "Gallardo",
-      "body": "spider",
-      "model_year": "2007",
-      "asking_price_usd": "99994",
-      "mileage_miles": "39730",
-      "currency": "USD",
-      "location": "dr Convertible Auto Excellence Group Saugus, MA, USA",
-      "seller_type": "dealer",
-      "listing_title": "2007 Lamborghini Gallardo Spyder AWD 2dr Convertible",
-      "listing_url": "https://www.cars.com/vehicledetail/ec0133fc-c7ce-4f06-9270-fde6f41b87f3/",
-      "source": "Cars.com",
-      "vin_or_stock": "ZHWGU22T57LA04375",
-      "exterior_color": "",
-      "interior_color": "",
-      "notes": "Cars.com search results; exact miles from Cars.com JSON: 39730; seller:Auto Excellence Group; stock:Used",
-      "_project": "lamborghini-murcielago-gallardo-listings"
-    },
-    {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Gallardo",
       "body": "spider",
       "model_year": "2007",
@@ -3739,26 +3637,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
-      "model_family": "Gallardo",
-      "body": "spider",
-      "model_year": "2008",
-      "asking_price_usd": "107449",
-      "mileage_miles": "41294",
-      "currency": "USD",
-      "location": "Virginia Beach, VA",
-      "seller_type": "dealer",
-      "listing_title": "2008 Lamborghini Gallardo",
-      "listing_url": "https://www.cargurus.com/details/454305075",
-      "source": "CarGurus",
-      "vin_or_stock": "ZHWGU22T58LA07603",
-      "exterior_color": "Green",
-      "interior_color": "Black",
-      "notes": "Stock # A07603; trim: Spyder AWD; deal rating: FAIR_PRICE; exterior color: Green; interior color: Black",
-      "_project": "lamborghini-murcielago-gallardo-listings"
-    },
-    {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Gallardo",
       "body": "spider",
       "model_year": "2007",
@@ -3772,12 +3651,12 @@
       "source": "Classic.com",
       "vin_or_stock": "ZHWGU22T27LA04169",
       "exterior_color": "yellow",
-      "interior_color": "Nero Perseus",
+      "interior_color": "",
       "notes": "Classic.com asterisk asking; 31k mi displayed; mileage blank (rounded Nk mi); seller:Exotic Motorsports of Oklahoma",
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Gallardo",
       "body": "spider",
       "model_year": "2007",
@@ -3796,7 +3675,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Gallardo",
       "body": "spider",
       "model_year": "2006",
@@ -3815,7 +3694,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Gallardo",
       "body": "spider",
       "model_year": "2007",
@@ -3834,7 +3713,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Gallardo",
       "body": "spider",
       "model_year": "2006",
@@ -3853,7 +3732,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Gallardo",
       "body": "spider",
       "model_year": "2008",
@@ -3872,14 +3751,14 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Gallardo",
       "body": "spider",
       "model_year": "2008",
       "asking_price_usd": "124950",
       "mileage_miles": "",
       "currency": "USD",
-      "location": "Bellevue, Washington, USA",
+      "location": "Boise, Idaho, USA",
       "seller_type": "dealer",
       "listing_title": "2008 Lamborghini Gallardo Spyder",
       "listing_url": "https://www.classic.com/veh/2008-lamborghini-gallardo-spyder-zhwgu22t98la07006-45JJwon/",
@@ -3887,11 +3766,11 @@
       "vin_or_stock": "ZHWGU22T98LA07006",
       "exterior_color": "gray",
       "interior_color": "Black",
-      "notes": "Classic.com asterisk asking; 18k mi displayed; mileage blank (rounded Nk mi); seller:Park Place LTD - Bellevue",
+      "notes": "Classic.com asterisk asking; 18k mi displayed; mileage blank (rounded Nk mi); seller:Park Place LTD - Boise",
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Gallardo",
       "body": "spider",
       "model_year": "2006",
@@ -3910,7 +3789,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Gallardo",
       "body": "spider",
       "model_year": "2013",
@@ -3929,7 +3808,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Gallardo",
       "body": "spider",
       "model_year": "2008",
@@ -3948,7 +3827,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Gallardo",
       "body": "spider",
       "model_year": "2010",
@@ -3967,30 +3846,11 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
-      "model_family": "Gallardo",
-      "body": "spider",
-      "model_year": "2012",
-      "asking_price_usd": "135899",
-      "mileage_miles": "40556",
-      "currency": "USD",
-      "location": "Delray Beach, FL, USA",
-      "seller_type": "dealer",
-      "listing_title": "2012 Lamborghini Gallardo LP550-2",
-      "listing_url": "https://www.cars.com/vehicledetail/64907756-58a7-44d7-b247-85db213ac480/",
-      "source": "Cars.com",
-      "vin_or_stock": "ZHWGU6BZ4CLA11839",
-      "exterior_color": "",
-      "interior_color": "",
-      "notes": "Cars.com search results; exact miles from Cars.com JSON: 40556; seller:The Platinum Collection LLC; stock:Used; subvariant: LP550",
-      "_project": "lamborghini-murcielago-gallardo-listings"
-    },
-    {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Gallardo",
       "body": "spider",
       "model_year": "2011",
-      "asking_price_usd": "139099",
+      "asking_price_usd": "135599",
       "mileage_miles": "35575",
       "currency": "USD",
       "location": "Spyder RP Exotics Saint Louis, MO, USA",
@@ -4005,7 +3865,45 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
+      "model_family": "Gallardo",
+      "body": "spider",
+      "model_year": "2012",
+      "asking_price_usd": "135899",
+      "mileage_miles": "40556",
+      "currency": "USD",
+      "location": "Delray Beach, FL, USA",
+      "seller_type": "dealer",
+      "listing_title": "2012 Lamborghini Gallardo LP550-2",
+      "listing_url": "https://www.cars.com/vehicledetail/64907756-58a7-44d7-b247-85db213ac480/",
+      "source": "Cars.com",
+      "vin_or_stock": "ZHWGU6BZ4CLA11839",
+      "exterior_color": "",
+      "interior_color": "Leather",
+      "notes": "Cars.com search results; exact miles from Cars.com JSON: 40556; seller:The Platinum Collection LLC; stock:Used; subvariant: LP550",
+      "_project": "lamborghini-murcielago-gallardo-listings"
+    },
+    {
+      "snapshot_date": "2026-09-15",
+      "model_family": "Gallardo",
+      "body": "spider",
+      "model_year": "2006",
+      "asking_price_usd": "139888",
+      "mileage_miles": "",
+      "currency": "USD",
+      "location": "Costa Mesa, California, USA",
+      "seller_type": "dealer",
+      "listing_title": "2006 Lamborghini Gallardo Spyder",
+      "listing_url": "https://www.classic.com/veh/2006-lamborghini-gallardo-spyder-zhwgu22t76la03534-Wq5Kd3W/",
+      "source": "Classic.com",
+      "vin_or_stock": "ZHWGU22T76LA03534",
+      "exterior_color": "Yellow",
+      "interior_color": "Black",
+      "notes": "Classic.com asterisk asking; 18k mi displayed; mileage blank (rounded Nk mi); seller:Luxury Motors",
+      "_project": "lamborghini-murcielago-gallardo-listings"
+    },
+    {
+      "snapshot_date": "2026-09-15",
       "model_family": "Gallardo",
       "body": "spider",
       "model_year": "2008",
@@ -4024,26 +3922,26 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Gallardo",
       "body": "spider",
-      "model_year": "2006",
-      "asking_price_usd": "145555",
+      "model_year": "2010",
+      "asking_price_usd": "149900",
       "mileage_miles": "",
       "currency": "USD",
-      "location": "Costa Mesa, California, USA",
+      "location": "Boynton Beach, Florida, USA",
       "seller_type": "dealer",
-      "listing_title": "2006 Lamborghini Gallardo Spyder",
-      "listing_url": "https://www.classic.com/veh/2006-lamborghini-gallardo-spyder-zhwgu22t76la03534-Wq5Kd3W/",
+      "listing_title": "2010 Lamborghini Gallardo LP560-4 Spyder",
+      "listing_url": "https://www.classic.com/veh/2010-lamborghini-gallardo-lp560-4-spyder-zhwgu6au9-n8MQXZW/",
       "source": "Classic.com",
-      "vin_or_stock": "ZHWGU22T76LA03534",
-      "exterior_color": "Yellow",
-      "interior_color": "Black",
-      "notes": "Classic.com asterisk asking; 18k mi displayed; mileage blank (rounded Nk mi); seller:Luxury Motors",
+      "vin_or_stock": "",
+      "exterior_color": "",
+      "interior_color": "",
+      "notes": "Classic.com asterisk asking; 15k mi displayed; mileage blank (rounded Nk mi); seller:iLusso Boynton Beach; subvariant: LP560",
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Gallardo",
       "body": "spider",
       "model_year": "2011",
@@ -4062,7 +3960,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Gallardo",
       "body": "spider",
       "model_year": "2013",
@@ -4081,7 +3979,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Gallardo",
       "body": "spider",
       "model_year": "2010",
@@ -4100,7 +3998,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Gallardo",
       "body": "spider",
       "model_year": "2010",
@@ -4119,26 +4017,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
-      "model_family": "Gallardo",
-      "body": "spider",
-      "model_year": "2010",
-      "asking_price_usd": "159800",
-      "mileage_miles": "",
-      "currency": "USD",
-      "location": "Boynton Beach, Florida, USA",
-      "seller_type": "dealer",
-      "listing_title": "2010 Lamborghini Gallardo LP560-4 Spyder",
-      "listing_url": "https://www.classic.com/veh/2010-lamborghini-gallardo-lp560-4-spyder-zhwgu6au9-n8MQXZW/",
-      "source": "Classic.com",
-      "vin_or_stock": "",
-      "exterior_color": "",
-      "interior_color": "",
-      "notes": "Classic.com asterisk asking; 15k mi displayed; mileage blank (rounded Nk mi); seller:iLusso Boynton Beach; subvariant: LP560",
-      "_project": "lamborghini-murcielago-gallardo-listings"
-    },
-    {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Gallardo",
       "body": "spider",
       "model_year": "2010",
@@ -4157,26 +4036,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
-      "model_family": "Gallardo",
-      "body": "spider",
-      "model_year": "2011",
-      "asking_price_usd": "169995",
-      "mileage_miles": "17955",
-      "currency": "USD",
-      "location": "",
-      "seller_type": "dealer",
-      "listing_title": "2011 Lamborghini Gallardo LP560-4",
-      "listing_url": "https://www.cars.com/vehicledetail/018ce145-3622-475b-9ba1-785d3806e010/",
-      "source": "Cars.com",
-      "vin_or_stock": "ZHWGU5AU2BLA10946",
-      "exterior_color": "yellow",
-      "interior_color": "",
-      "notes": "Cars.com search results; exact miles from Cars.com JSON: 17955; stock:Used; exterior color: yellow; subvariant: LP560; location missing from card parse",
-      "_project": "lamborghini-murcielago-gallardo-listings"
-    },
-    {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Gallardo",
       "body": "spider",
       "model_year": "2011",
@@ -4195,7 +4055,26 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
+      "model_family": "Gallardo",
+      "body": "spider",
+      "model_year": "2011",
+      "asking_price_usd": "174995",
+      "mileage_miles": "17955",
+      "currency": "USD",
+      "location": "",
+      "seller_type": "dealer",
+      "listing_title": "2011 Lamborghini Gallardo LP560-4",
+      "listing_url": "https://www.cars.com/vehicledetail/018ce145-3622-475b-9ba1-785d3806e010/",
+      "source": "Cars.com",
+      "vin_or_stock": "ZHWGU5AU2BLA10946",
+      "exterior_color": "yellow",
+      "interior_color": "",
+      "notes": "Cars.com search results; exact miles from Cars.com JSON: 17955; stock:Used; exterior color: yellow; subvariant: LP560; location missing from card parse",
+      "_project": "lamborghini-murcielago-gallardo-listings"
+    },
+    {
+      "snapshot_date": "2026-09-15",
       "model_family": "Gallardo",
       "body": "spider",
       "model_year": "2013",
@@ -4214,7 +4093,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Gallardo",
       "body": "spider",
       "model_year": "2013",
@@ -4233,7 +4112,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Gallardo",
       "body": "spider",
       "model_year": "2014",
@@ -4252,7 +4131,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Gallardo",
       "body": "spider",
       "model_year": "2012",
@@ -4271,7 +4150,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Gallardo",
       "body": "spider",
       "model_year": "2012",
@@ -4290,7 +4169,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Gallardo",
       "body": "spider",
       "model_year": "2012",
@@ -4309,45 +4188,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
-      "model_family": "Murcielago",
-      "body": "coupe",
-      "model_year": "2007",
-      "asking_price_usd": "170000",
-      "mileage_miles": "",
-      "currency": "USD",
-      "location": "JPN",
-      "seller_type": "auction",
-      "listing_title": "2007 Lamborghini Murciélago LP640-4",
-      "listing_url": "https://www.classic.com/veh/2007-lamborghini-murcielago-lp640-4-zhwba37s57la02-pE1ydNp/",
-      "source": "Classic.com",
-      "vin_or_stock": "",
-      "exterior_color": "",
-      "interior_color": "",
-      "notes": "Classic.com asking; 56k km (35k mi) TMU displayed; mileage blank (rounded Nk mi); auction-style listing with ask; subvariant: LP640",
-      "_project": "lamborghini-murcielago-gallardo-listings"
-    },
-    {
-      "snapshot_date": "2026-09-14",
-      "model_family": "Murcielago",
-      "body": "coupe",
-      "model_year": "2008",
-      "asking_price_usd": "200500",
-      "mileage_miles": "",
-      "currency": "USD",
-      "location": "Fukushima, JPN",
-      "seller_type": "auction",
-      "listing_title": "2008 Lamborghini Murciélago LP640-4",
-      "listing_url": "https://www.classic.com/veh/2008-lamborghini-murcielago-lp640-4-zhwbe37s08la03-47e0KXW/",
-      "source": "Classic.com",
-      "vin_or_stock": "",
-      "exterior_color": "",
-      "interior_color": "",
-      "notes": "Classic.com asking; 27k km (17k mi) displayed; mileage blank (rounded Nk mi); auction-style listing with ask; subvariant: LP640",
-      "_project": "lamborghini-murcielago-gallardo-listings"
-    },
-    {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Murcielago",
       "body": "coupe",
       "model_year": "2005",
@@ -4366,26 +4207,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
-      "model_family": "Murcielago",
-      "body": "coupe",
-      "model_year": "2007",
-      "asking_price_usd": "310000",
-      "mileage_miles": "",
-      "currency": "USD",
-      "location": "Richmond, CAN",
-      "seller_type": "auction",
-      "listing_title": "2007 Lamborghini Murciélago LP640-4",
-      "listing_url": "https://www.classic.com/veh/2007-lamborghini-murcielago-lp640-4-zhwbe37s07la02-WYDeQRn/",
-      "source": "Classic.com",
-      "vin_or_stock": "",
-      "exterior_color": "",
-      "interior_color": "",
-      "notes": "Classic.com asking; 37k km (23k mi) displayed; mileage blank (rounded Nk mi); auction-style listing with ask; subvariant: LP640",
-      "_project": "lamborghini-murcielago-gallardo-listings"
-    },
-    {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Murcielago",
       "body": "coupe",
       "model_year": "2003",
@@ -4404,26 +4226,26 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Murcielago",
       "body": "coupe",
-      "model_year": "2007",
-      "asking_price_usd": "344000",
+      "model_year": "2004",
+      "asking_price_usd": "396000",
       "mileage_miles": "",
       "currency": "USD",
-      "location": "Whatcom County, Washington, USA",
+      "location": "Monterey, California, USA",
       "seller_type": "auction",
-      "listing_title": "2007 Lamborghini Murciélago LP640-4",
-      "listing_url": "https://www.classic.com/veh/2007-lamborghini-murcielago-lp640-4-zhwbu37s07la02-n2QD764/",
+      "listing_title": "2004 Lamborghini Murciélago",
+      "listing_url": "https://www.classic.com/veh/2004-lamborghini-murcielago-zhwbu16m84la01151-pJxa3an/",
       "source": "Classic.com",
-      "vin_or_stock": "",
+      "vin_or_stock": "ZHWBU16M84LA01151",
       "exterior_color": "",
       "interior_color": "",
-      "notes": "Classic.com asking; 20k mi displayed; mileage blank (rounded Nk mi); auction-style listing with ask; subvariant: LP640",
+      "notes": "Classic.com asking; 16k mi displayed; mileage blank (rounded Nk mi); auction-style listing with ask",
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Murcielago",
       "body": "coupe",
       "model_year": "2004",
@@ -4442,26 +4264,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
-      "model_family": "Murcielago",
-      "body": "coupe",
-      "model_year": "2009",
-      "asking_price_usd": "449000",
-      "mileage_miles": "",
-      "currency": "USD",
-      "location": "Costa Mesa, California, USA",
-      "seller_type": "dealer",
-      "listing_title": "2009 Lamborghini Murciélago LP640-4",
-      "listing_url": "https://www.classic.com/veh/2009-lamborghini-murcielago-lp640-4-zhwbu47s59la03-WYGZGv4/",
-      "source": "Classic.com",
-      "vin_or_stock": "",
-      "exterior_color": "",
-      "interior_color": "",
-      "notes": "Classic.com asking; 11k mi displayed; mileage blank (rounded Nk mi); subvariant: LP640",
-      "_project": "lamborghini-murcielago-gallardo-listings"
-    },
-    {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Murcielago",
       "body": "coupe",
       "model_year": "2006",
@@ -4480,64 +4283,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
-      "model_family": "Murcielago",
-      "body": "coupe",
-      "model_year": "2008",
-      "asking_price_usd": "450000",
-      "mileage_miles": "",
-      "currency": "USD",
-      "location": "Lynnwood, Washington, USA",
-      "seller_type": "dealer",
-      "listing_title": "2008 Lamborghini Murciélago LP640-4",
-      "listing_url": "https://www.classic.com/veh/2008-lamborghini-murcielago-lp640-4-zhwbu37s88la02-WkJjZJn/",
-      "source": "Classic.com",
-      "vin_or_stock": "",
-      "exterior_color": "",
-      "interior_color": "",
-      "notes": "Classic.com asking; 9k mi displayed; mileage blank (rounded Nk mi); subvariant: LP640",
-      "_project": "lamborghini-murcielago-gallardo-listings"
-    },
-    {
-      "snapshot_date": "2026-09-14",
-      "model_family": "Murcielago",
-      "body": "coupe",
-      "model_year": "2008",
-      "asking_price_usd": "499995",
-      "mileage_miles": "",
-      "currency": "USD",
-      "location": "City of Glen Cove, New York, USA",
-      "seller_type": "dealer",
-      "listing_title": "2008 Lamborghini Murciélago LP640-4",
-      "listing_url": "https://www.classic.com/veh/2008-lamborghini-murcielago-lp640-4-zhwbu37sx8la02-nmmDY0n/",
-      "source": "Classic.com",
-      "vin_or_stock": "",
-      "exterior_color": "",
-      "interior_color": "",
-      "notes": "Classic.com asking; 12k mi displayed; mileage blank (rounded Nk mi); subvariant: LP640",
-      "_project": "lamborghini-murcielago-gallardo-listings"
-    },
-    {
-      "snapshot_date": "2026-09-14",
-      "model_family": "Murcielago",
-      "body": "coupe",
-      "model_year": "2008",
-      "asking_price_usd": "501000",
-      "mileage_miles": "",
-      "currency": "USD",
-      "location": "Scottsdale, Arizona, USA",
-      "seller_type": "auction",
-      "listing_title": "2008 Lamborghini Murciélago LP640-4",
-      "listing_url": "https://www.classic.com/veh/2008-lamborghini-murcielago-lp640-4-zhwbu37sx8la02-p6lMxVn/",
-      "source": "Classic.com",
-      "vin_or_stock": "",
-      "exterior_color": "",
-      "interior_color": "",
-      "notes": "Classic.com asking; 19k mi displayed; mileage blank (rounded Nk mi); auction-style listing with ask; subvariant: LP640",
-      "_project": "lamborghini-murcielago-gallardo-listings"
-    },
-    {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Murcielago",
       "body": "coupe",
       "model_year": "2008",
@@ -4556,49 +4302,11 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Murcielago",
       "body": "coupe",
       "model_year": "2007",
-      "asking_price_usd": "551000",
-      "mileage_miles": "",
-      "currency": "USD",
-      "location": "Thousand Oaks, California, USA",
-      "seller_type": "auction",
-      "listing_title": "2007 Lamborghini Murciélago LP640-4",
-      "listing_url": "https://www.classic.com/veh/2007-lamborghini-murcielago-lp640-4-zhwbu37s27la02-n20G0Gp/",
-      "source": "Classic.com",
-      "vin_or_stock": "",
-      "exterior_color": "",
-      "interior_color": "",
-      "notes": "Classic.com asking; 8k mi displayed; mileage blank (rounded Nk mi); auction-style listing with ask; subvariant: LP640",
-      "_project": "lamborghini-murcielago-gallardo-listings"
-    },
-    {
-      "snapshot_date": "2026-09-14",
-      "model_family": "Murcielago",
-      "body": "coupe",
-      "model_year": "2007",
-      "asking_price_usd": "599995",
-      "mileage_miles": "",
-      "currency": "USD",
-      "location": "City of Glen Cove, New York, USA",
-      "seller_type": "dealer",
-      "listing_title": "2007 Lamborghini Murciélago LP640-4",
-      "listing_url": "https://www.classic.com/veh/2007-lamborghini-murcielago-lp640-4-zhwbu37s87la02-4VA1rdp/",
-      "source": "Classic.com",
-      "vin_or_stock": "",
-      "exterior_color": "",
-      "interior_color": "",
-      "notes": "Classic.com asking; 10k mi displayed; mileage blank (rounded Nk mi); subvariant: LP640",
-      "_project": "lamborghini-murcielago-gallardo-listings"
-    },
-    {
-      "snapshot_date": "2026-09-14",
-      "model_family": "Murcielago",
-      "body": "coupe",
-      "model_year": "2007",
-      "asking_price_usd": "599997",
+      "asking_price_usd": "590997",
       "mileage_miles": "29140",
       "currency": "USD",
       "location": "Boca Raton, FL",
@@ -4613,26 +4321,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
-      "model_family": "Murcielago",
-      "body": "coupe",
-      "model_year": "2008",
-      "asking_price_usd": "699900",
-      "mileage_miles": "",
-      "currency": "USD",
-      "location": "Fort Lauderdale, Florida, USA",
-      "seller_type": "dealer",
-      "listing_title": "2008 Lamborghini Murciélago LP640-4",
-      "listing_url": "https://www.classic.com/veh/2008-lamborghini-murcielago-lp640-4-zhwbu47sx8la03-n2MEGr4/",
-      "source": "Classic.com",
-      "vin_or_stock": "",
-      "exterior_color": "",
-      "interior_color": "",
-      "notes": "Classic.com asking; 6k mi displayed; mileage blank (rounded Nk mi); subvariant: LP640",
-      "_project": "lamborghini-murcielago-gallardo-listings"
-    },
-    {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Murcielago",
       "body": "coupe",
       "model_year": "2007",
@@ -4651,26 +4340,26 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Murcielago",
       "body": "coupe",
-      "model_year": "2008",
-      "asking_price_usd": "735000",
+      "model_year": "2005",
+      "asking_price_usd": "738773",
       "mileage_miles": "",
       "currency": "USD",
-      "location": "City of Glen Cove, New York, USA",
-      "seller_type": "auction",
-      "listing_title": "2008 Lamborghini Murciélago LP640-4",
-      "listing_url": "https://www.classic.com/veh/2008-lamborghini-murcielago-lp640-4-zhwbu37s78la02-4rvAGy4/",
+      "location": "Carrollton, Texas, USA",
+      "seller_type": "dealer",
+      "listing_title": "2005 Lamborghini Murciélago",
+      "listing_url": "https://www.classic.com/veh/2005-lamborghini-murcielago-zhwbu26s85la01673-WqDqXjn/",
       "source": "Classic.com",
-      "vin_or_stock": "",
+      "vin_or_stock": "ZHWBU26S85LA01673",
       "exterior_color": "",
       "interior_color": "",
-      "notes": "Classic.com asking; 1k mi displayed; mileage blank (rounded Nk mi); auction-style listing with ask; subvariant: LP640",
+      "notes": "Classic.com asking; 7k mi displayed; mileage blank (rounded Nk mi); seller:Earth MotorCars",
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Murcielago",
       "body": "coupe",
       "model_year": "2007",
@@ -4685,11 +4374,11 @@
       "vin_or_stock": "",
       "exterior_color": "",
       "interior_color": "",
-      "notes": "Classic.com asking; 7k km (4k mi) displayed; mileage blank (rounded Nk mi); seller:Mecum; auction-style listing with ask; subvariant: LP640",
+      "notes": "Classic.com asking; 7k km (4k mi) displayed; mileage blank (rounded Nk mi); auction-style listing with ask; subvariant: LP640",
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Murcielago",
       "body": "coupe",
       "model_year": "2004",
@@ -4708,11 +4397,68 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
+      "model_family": "Murcielago",
+      "body": "coupe",
+      "model_year": "2004",
+      "asking_price_usd": "779995",
+      "mileage_miles": "",
+      "currency": "USD",
+      "location": "Manatee County, Florida, USA",
+      "seller_type": "dealer",
+      "listing_title": "2004 Lamborghini Murcielago",
+      "listing_url": "https://www.classic.com/veh/2004-lamborghini-murcielago-6-speed-zhwbu16mx4la01-nOlwjoW/",
+      "source": "Classic.com",
+      "vin_or_stock": "",
+      "exterior_color": "",
+      "interior_color": "",
+      "notes": "Classic.com asterisk asking; 23k mi displayed; mileage blank (rounded Nk mi); seller:Skyway Motor Cars",
+      "_project": "lamborghini-murcielago-gallardo-listings"
+    },
+    {
+      "snapshot_date": "2026-09-15",
+      "model_family": "Murcielago",
+      "body": "coupe",
+      "model_year": "2004",
+      "asking_price_usd": "779995",
+      "mileage_miles": "23003",
+      "currency": "USD",
+      "location": "Lamborghini Murcielago Base Skyway Motors Cars Palmetto, FL, USA",
+      "seller_type": "dealer",
+      "listing_title": "2004 Lamborghini Murcielago Base",
+      "listing_url": "https://www.cars.com/vehicledetail/63c0d9d1-2cd5-485d-a889-a94878aaa668/",
+      "source": "Cars.com",
+      "vin_or_stock": "ZHWBU16MX4LA01233",
+      "exterior_color": "gold",
+      "interior_color": "",
+      "notes": "Cars.com search results; exact miles from Cars.com JSON: 23003; seller:Skyway Motors Cars; stock:Used; exterior color: gold",
+      "_project": "lamborghini-murcielago-gallardo-listings"
+    },
+    {
+      "snapshot_date": "2026-09-15",
+      "model_family": "Murcielago",
+      "body": "coupe",
+      "model_year": "2005",
+      "asking_price_usd": "800000",
+      "mileage_miles": "",
+      "currency": "USD",
+      "location": "Monterey, California, USA",
+      "seller_type": "auction",
+      "listing_title": "2005 Lamborghini Murciélago",
+      "listing_url": "https://www.classic.com/veh/2005-lamborghini-murcielago-zhwbu16mx5la01704-pPxjb3p/",
+      "source": "Classic.com",
+      "vin_or_stock": "ZHWBU16MX5LA01704",
+      "exterior_color": "",
+      "interior_color": "",
+      "notes": "Classic.com asking; 12k mi displayed; mileage blank (rounded Nk mi); auction-style listing with ask",
+      "_project": "lamborghini-murcielago-gallardo-listings"
+    },
+    {
+      "snapshot_date": "2026-09-15",
       "model_family": "Murcielago",
       "body": "coupe",
       "model_year": "2008",
-      "asking_price_usd": "899997",
+      "asking_price_usd": "850997",
       "mileage_miles": "1273",
       "currency": "USD",
       "location": "Boca Raton, FL",
@@ -4727,7 +4473,26 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
+      "model_family": "Murcielago",
+      "body": "coupe",
+      "model_year": "2003",
+      "asking_price_usd": "1105000",
+      "mileage_miles": "",
+      "currency": "USD",
+      "location": "Monterey, California, USA",
+      "seller_type": "auction",
+      "listing_title": "2003 Lamborghini Murciélago 40th Anniversary",
+      "listing_url": "https://www.classic.com/veh/2003-lamborghini-murcielago-40th-anniversary-zhwbc-p6qP0mW/",
+      "source": "Classic.com",
+      "vin_or_stock": "",
+      "exterior_color": "",
+      "interior_color": "",
+      "notes": "Classic.com asking; 6k mi displayed; mileage blank (rounded Nk mi); auction-style listing with ask",
+      "_project": "lamborghini-murcielago-gallardo-listings"
+    },
+    {
+      "snapshot_date": "2026-09-15",
       "model_family": "Murcielago",
       "body": "coupe",
       "model_year": "2007",
@@ -4746,7 +4511,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Murcielago",
       "body": "coupe",
       "model_year": "2008",
@@ -4765,45 +4530,26 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Murcielago",
-      "body": "spider",
-      "model_year": "2006",
-      "asking_price_usd": "260000",
-      "mileage_miles": "",
+      "body": "coupe",
+      "model_year": "2010",
+      "asking_price_usd": "3140000",
+      "mileage_miles": "791",
       "currency": "USD",
-      "location": "Costa Mesa, California, USA",
+      "location": "Monterey, California, USA",
       "seller_type": "auction",
-      "listing_title": "2006 Lamborghini Murciélago Roadster",
-      "listing_url": "https://www.classic.com/veh/2006-lamborghini-murcielago-roadster-zhwbu26s06la0-nmX9zG4/",
+      "listing_title": "2010 Lamborghini Murciélago LP670-4 SV",
+      "listing_url": "https://www.classic.com/veh/2010-lamborghini-murcielago-sv-zhwbu8ah4ala03896-4ZwLAqn/",
       "source": "Classic.com",
-      "vin_or_stock": "",
+      "vin_or_stock": "ZHWBU8AH4ALA03896",
       "exterior_color": "",
       "interior_color": "",
-      "notes": "Classic.com asking; 33k mi displayed; mileage blank (rounded Nk mi); auction-style listing with ask",
+      "notes": "Classic.com asking; exact miles displayed: 791 mi; auction-style listing with ask; subvariant: LP670-4 SV",
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
-      "model_family": "Murcielago",
-      "body": "spider",
-      "model_year": "2005",
-      "asking_price_usd": "298995",
-      "mileage_miles": "",
-      "currency": "USD",
-      "location": "Saint Louis County, Missouri, USA",
-      "seller_type": "dealer",
-      "listing_title": "2005 Lamborghini Murciélago Roadster",
-      "listing_url": "https://www.classic.com/veh/2005-lamborghini-murcielago-roadster-zhwbu26s25la0-WNozrqp/",
-      "source": "Classic.com",
-      "vin_or_stock": "",
-      "exterior_color": "",
-      "interior_color": "",
-      "notes": "Classic.com asking; 16k mi displayed; mileage blank (rounded Nk mi)",
-      "_project": "lamborghini-murcielago-gallardo-listings"
-    },
-    {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Murcielago",
       "body": "spider",
       "model_year": "2006",
@@ -4822,26 +4568,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
-      "model_family": "Murcielago",
-      "body": "spider",
-      "model_year": "2006",
-      "asking_price_usd": "299988",
-      "mileage_miles": "",
-      "currency": "USD",
-      "location": "Mercer County, New Jersey, USA",
-      "seller_type": "dealer",
-      "listing_title": "2006 Lamborghini Murciélago Roadster",
-      "listing_url": "https://www.classic.com/veh/2006-lamborghini-murcielago-roadster-zhwbu26s06la0-WNEzmdn/",
-      "source": "Classic.com",
-      "vin_or_stock": "",
-      "exterior_color": "",
-      "interior_color": "",
-      "notes": "Classic.com asking; 11k mi displayed; mileage blank (rounded Nk mi)",
-      "_project": "lamborghini-murcielago-gallardo-listings"
-    },
-    {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Murcielago",
       "body": "spider",
       "model_year": "2006",
@@ -4860,7 +4587,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Murcielago",
       "body": "spider",
       "model_year": "2007",
@@ -4879,7 +4606,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Murcielago",
       "body": "spider",
       "model_year": "2008",
@@ -4898,26 +4625,26 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Murcielago",
       "body": "spider",
-      "model_year": "2009",
-      "asking_price_usd": "700000",
+      "model_year": "2008",
+      "asking_price_usd": "701000",
       "mileage_miles": "",
       "currency": "USD",
-      "location": "Downey, California, USA",
+      "location": "Moorpark, California, USA",
       "seller_type": "auction",
-      "listing_title": "2009 Lamborghini Murciélago LP640-4 Roadster",
-      "listing_url": "https://www.classic.com/veh/2009-lamborghini-murcielago-lp640-4-roadster-zhwbu-pPxGdXp/",
+      "listing_title": "2008 Lamborghini Murciélago LP640-4 Roadster",
+      "listing_url": "https://www.classic.com/veh/2008-lamborghini-murcielago-lp640-4-roadster-zhwbu-nBvaPEn/",
       "source": "Classic.com",
       "vin_or_stock": "",
       "exterior_color": "",
       "interior_color": "",
-      "notes": "Classic.com asking; 6k mi displayed; mileage blank (rounded Nk mi); auction-style listing with ask; subvariant: LP640",
+      "notes": "Classic.com asking; 14k mi displayed; mileage blank (rounded Nk mi); seller:Bring a Trailer; auction-style listing with ask; subvariant: LP640",
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Murcielago",
       "body": "spider",
       "model_year": "2008",
@@ -4936,7 +4663,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Murcielago",
       "body": "spider",
       "model_year": "2008",
@@ -4955,7 +4682,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Murcielago",
       "body": "spider",
       "model_year": "2008",
@@ -4974,7 +4701,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Murcielago",
       "body": "spider",
       "model_year": "2008",
@@ -4993,7 +4720,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Murcielago",
       "body": "spider",
       "model_year": "2007",
@@ -5012,7 +4739,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Murcielago",
       "body": "spider",
       "model_year": "2007",
@@ -5031,7 +4758,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Murcielago",
       "body": "spider",
       "model_year": "2008",
@@ -5050,7 +4777,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Murcielago",
       "body": "spider",
       "model_year": "2008",
@@ -5069,7 +4796,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Murcielago",
       "body": "spider",
       "model_year": "2009",
@@ -5088,7 +4815,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Murcielago",
       "body": "spider",
       "model_year": "2007",
@@ -5107,26 +4834,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
-      "model_family": "Revuelto",
-      "body": "coupe",
-      "model_year": "2024",
-      "asking_price_usd": "609000",
-      "mileage_miles": "",
-      "currency": "USD",
-      "location": "Hollywood, Florida, USA",
-      "seller_type": "dealer",
-      "listing_title": "2024 Lamborghini Revuelto",
-      "listing_url": "https://www.classic.com/veh/2024-lamborghini-revuelto-zhwuc1zm2rla00561-WqOKmq4/",
-      "source": "Classic.com",
-      "vin_or_stock": "ZHWUC1ZM2RLA00561",
-      "exterior_color": "",
-      "interior_color": "",
-      "notes": "Classic.com asterisk asking; 9k mi displayed; mileage blank (rounded Nk mi); seller:Gravity Autos Hollywood",
-      "_project": "lamborghini-murcielago-gallardo-listings"
-    },
-    {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Revuelto",
       "body": "coupe",
       "model_year": "2024",
@@ -5145,7 +4853,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Revuelto",
       "body": "coupe",
       "model_year": "2024",
@@ -5159,12 +4867,12 @@
       "source": "Cars.com",
       "vin_or_stock": "ZHWUC1ZM0RLA01854",
       "exterior_color": "red",
-      "interior_color": "Nero Ade",
+      "interior_color": "",
       "notes": "Cars.com search results; exact miles from Cars.com JSON: 4933; seller:Lamborghini Broward; stock:Used; exterior color: red",
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Revuelto",
       "body": "coupe",
       "model_year": "2024",
@@ -5183,26 +4891,26 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Revuelto",
       "body": "coupe",
       "model_year": "2024",
-      "asking_price_usd": "620295",
-      "mileage_miles": "",
+      "asking_price_usd": "626250",
+      "mileage_miles": "5637",
       "currency": "USD",
-      "location": "Dublin, Ohio, USA",
+      "location": "Enumclaw, WA",
       "seller_type": "dealer",
       "listing_title": "2024 Lamborghini Revuelto",
-      "listing_url": "https://www.classic.com/veh/2024-lamborghini-revuelto-zhwuc1zm4rla00139-4aLKKlp/",
-      "source": "Classic.com",
-      "vin_or_stock": "ZHWUC1ZM4RLA00139",
+      "listing_url": "https://www.cargurus.com/details/451642123",
+      "source": "CarGurus",
+      "vin_or_stock": "ZHWUC1ZM5RLA01333",
       "exterior_color": "",
       "interior_color": "",
-      "notes": "Classic.com asterisk asking; 4k mi displayed; mileage blank (rounded Nk mi); seller:Maserati Columbus",
+      "notes": "Stock # 40; trim: AWD",
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Revuelto",
       "body": "coupe",
       "model_year": "2024",
@@ -5221,7 +4929,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Revuelto",
       "body": "coupe",
       "model_year": "2024",
@@ -5240,7 +4948,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Revuelto",
       "body": "coupe",
       "model_year": "2024",
@@ -5259,7 +4967,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Revuelto",
       "body": "coupe",
       "model_year": "2024",
@@ -5278,7 +4986,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Revuelto",
       "body": "coupe",
       "model_year": "2024",
@@ -5297,7 +5005,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Revuelto",
       "body": "coupe",
       "model_year": "2024",
@@ -5316,7 +5024,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Revuelto",
       "body": "coupe",
       "model_year": "2026",
@@ -5335,7 +5043,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Revuelto",
       "body": "coupe",
       "model_year": "2024",
@@ -5354,7 +5062,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Revuelto",
       "body": "coupe",
       "model_year": "2024",
@@ -5373,7 +5081,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Revuelto",
       "body": "coupe",
       "model_year": "2024",
@@ -5392,7 +5100,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Revuelto",
       "body": "coupe",
       "model_year": "2024",
@@ -5411,7 +5119,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Revuelto",
       "body": "coupe",
       "model_year": "2024",
@@ -5430,26 +5138,26 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Revuelto",
       "body": "coupe",
       "model_year": "2024",
-      "asking_price_usd": "657499",
-      "mileage_miles": "369",
+      "asking_price_usd": "655449",
+      "mileage_miles": "2031",
       "currency": "USD",
-      "location": "Sterling, VA",
+      "location": "Richardson, TX",
       "seller_type": "dealer",
       "listing_title": "2024 Lamborghini Revuelto",
-      "listing_url": "https://www.cargurus.com/details/431847860",
+      "listing_url": "https://www.cargurus.com/details/447800144",
       "source": "CarGurus",
-      "vin_or_stock": "ZHWUC1ZM2RLA00253",
-      "exterior_color": "Gray",
-      "interior_color": "Blk/Black",
-      "notes": "Stock # RLA00253Q; trim: AWD; exterior color: Gray; interior color: Blk/Black",
+      "vin_or_stock": "ZHWUC1ZM1RLA01023",
+      "exterior_color": "Arancio Xanto Metallic",
+      "interior_color": "Nero Ade",
+      "notes": "Stock # PLA01023; trim: AWD; exterior color: Arancio Xanto Metallic; interior color: Nero Ade",
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Revuelto",
       "body": "coupe",
       "model_year": "2024",
@@ -5468,7 +5176,26 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
+      "model_family": "Revuelto",
+      "body": "coupe",
+      "model_year": "2024",
+      "asking_price_usd": "659563",
+      "mileage_miles": "848",
+      "currency": "USD",
+      "location": "Phoenix, AZ",
+      "seller_type": "dealer",
+      "listing_title": "2024 Lamborghini Revuelto",
+      "listing_url": "https://www.cargurus.com/details/452013524",
+      "source": "CarGurus",
+      "vin_or_stock": "ZHWUC1ZM4RLA00111",
+      "exterior_color": "Giallo Metallic",
+      "interior_color": "Nero Ade",
+      "notes": "Stock # GT0013A; trim: AWD; exterior color: Giallo Metallic; interior color: Nero Ade",
+      "_project": "lamborghini-murcielago-gallardo-listings"
+    },
+    {
+      "snapshot_date": "2026-09-15",
       "model_family": "Revuelto",
       "body": "coupe",
       "model_year": "2026",
@@ -5487,45 +5214,26 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Revuelto",
       "body": "coupe",
       "model_year": "2024",
-      "asking_price_usd": "659999",
-      "mileage_miles": "745",
+      "asking_price_usd": "659990",
+      "mileage_miles": "",
       "currency": "USD",
-      "location": "Sterling, VA",
+      "location": "Murrieta, California, USA",
       "seller_type": "dealer",
       "listing_title": "2024 Lamborghini Revuelto",
-      "listing_url": "https://www.cargurus.com/details/455598246",
-      "source": "CarGurus",
-      "vin_or_stock": "ZHWUC1ZM7RLA01396",
-      "exterior_color": "Blue",
-      "interior_color": "Blu Delphinus",
-      "notes": "Stock # RLA01396Z; trim: AWD; exterior color: Blue; interior color: Blu Delphinus",
-      "_project": "lamborghini-murcielago-gallardo-listings"
-    },
-    {
-      "snapshot_date": "2026-09-14",
-      "model_family": "Revuelto",
-      "body": "coupe",
-      "model_year": "2024",
-      "asking_price_usd": "660433",
-      "mileage_miles": "112",
-      "currency": "USD",
-      "location": "West Chester, OH, USA",
-      "seller_type": "dealer",
-      "listing_title": "2024 Lamborghini Revuelto Base AWD 2dr Coupe",
-      "listing_url": "https://www.cars.com/vehicledetail/ff6fdd12-2e72-459e-b857-326ecd84e7c8/",
-      "source": "Cars.com",
-      "vin_or_stock": "ZHWUC1ZM4RLA00917",
-      "exterior_color": "white",
+      "listing_url": "https://www.classic.com/veh/2024-lamborghini-revuelto-zhwuc1zm9rla00363-4o6BMap/",
+      "source": "Classic.com",
+      "vin_or_stock": "ZHWUC1ZM9RLA00363",
+      "exterior_color": "",
       "interior_color": "",
-      "notes": "Cars.com search results; exact miles from Cars.com JSON: 112; seller:Unlimited Auto Group; stock:Used; exterior color: white",
+      "notes": "Classic.com asterisk asking; 1k mi displayed; mileage blank (rounded Nk mi); seller:West Coast Exotic Cars",
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Revuelto",
       "body": "coupe",
       "model_year": "2024",
@@ -5544,26 +5252,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
-      "model_family": "Revuelto",
-      "body": "coupe",
-      "model_year": "2024",
-      "asking_price_usd": "669990",
-      "mileage_miles": "",
-      "currency": "USD",
-      "location": "Murrieta, California, USA",
-      "seller_type": "dealer",
-      "listing_title": "2024 Lamborghini Revuelto",
-      "listing_url": "https://www.classic.com/veh/2024-lamborghini-revuelto-zhwuc1zm9rla00363-4o6BMap/",
-      "source": "Classic.com",
-      "vin_or_stock": "ZHWUC1ZM9RLA00363",
-      "exterior_color": "",
-      "interior_color": "",
-      "notes": "Classic.com asterisk asking; 1k mi displayed; mileage blank (rounded Nk mi); seller:West Coast Exotic Cars",
-      "_project": "lamborghini-murcielago-gallardo-listings"
-    },
-    {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Revuelto",
       "body": "coupe",
       "model_year": "2025",
@@ -5582,7 +5271,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Revuelto",
       "body": "coupe",
       "model_year": "2025",
@@ -5601,7 +5290,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Revuelto",
       "body": "coupe",
       "model_year": "2025",
@@ -5620,30 +5309,11 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Revuelto",
       "body": "coupe",
       "model_year": "2025",
-      "asking_price_usd": "679999",
-      "mileage_miles": "62",
-      "currency": "USD",
-      "location": "Pompano Beach, FL, USA",
-      "seller_type": "dealer",
-      "listing_title": "2025 Lamborghini Revuelto Base",
-      "listing_url": "https://www.cars.com/vehicledetail/5c17fbca-64a5-477f-a54d-8266f6acaf67/",
-      "source": "Cars.com",
-      "vin_or_stock": "ZHWCC1ZM6SLA03643",
-      "exterior_color": "",
-      "interior_color": "",
-      "notes": "Cars.com search results; exact miles from Cars.com JSON: 62; seller:HGreg.com Lux; stock:Used",
-      "_project": "lamborghini-murcielago-gallardo-listings"
-    },
-    {
-      "snapshot_date": "2026-09-14",
-      "model_family": "Revuelto",
-      "body": "coupe",
-      "model_year": "2025",
-      "asking_price_usd": "680991",
+      "asking_price_usd": "679991",
       "mileage_miles": "815",
       "currency": "USD",
       "location": "Scottsdale, Arizona, USA",
@@ -5658,7 +5328,26 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
+      "model_family": "Revuelto",
+      "body": "coupe",
+      "model_year": "2025",
+      "asking_price_usd": "679998",
+      "mileage_miles": "62",
+      "currency": "USD",
+      "location": "Pompano Beach, FL, USA",
+      "seller_type": "dealer",
+      "listing_title": "2025 Lamborghini Revuelto Base",
+      "listing_url": "https://www.cars.com/vehicledetail/5c17fbca-64a5-477f-a54d-8266f6acaf67/",
+      "source": "Cars.com",
+      "vin_or_stock": "ZHWCC1ZM6SLA03643",
+      "exterior_color": "",
+      "interior_color": "",
+      "notes": "Cars.com search results; exact miles from Cars.com JSON: 62; seller:HGreg.com Lux; stock:Used",
+      "_project": "lamborghini-murcielago-gallardo-listings"
+    },
+    {
+      "snapshot_date": "2026-09-15",
       "model_family": "Revuelto",
       "body": "coupe",
       "model_year": "2025",
@@ -5677,7 +5366,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Revuelto",
       "body": "coupe",
       "model_year": "2025",
@@ -5696,7 +5385,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Revuelto",
       "body": "coupe",
       "model_year": "2024",
@@ -5715,7 +5404,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Revuelto",
       "body": "coupe",
       "model_year": "2025",
@@ -5729,12 +5418,12 @@
       "source": "Classic.com",
       "vin_or_stock": "ZHWUC1ZM4SLA03662",
       "exterior_color": "green",
-      "interior_color": "",
+      "interior_color": "Nero Ade",
       "notes": "Classic.com asterisk asking; exact miles displayed: 569 mi; seller:Lamborghini Palm Beach",
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Revuelto",
       "body": "coupe",
       "model_year": "2025",
@@ -5753,7 +5442,26 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
+      "model_family": "Revuelto",
+      "body": "coupe",
+      "model_year": "2024",
+      "asking_price_usd": "690449",
+      "mileage_miles": "285",
+      "currency": "USD",
+      "location": "Richardson, TX",
+      "seller_type": "dealer",
+      "listing_title": "2024 Lamborghini Revuelto",
+      "listing_url": "https://www.cargurus.com/details/457251738",
+      "source": "CarGurus",
+      "vin_or_stock": "ZHWUC1ZM1RLA00244",
+      "exterior_color": "Grigio Acheso Matt",
+      "interior_color": "Nero Ade",
+      "notes": "Stock # ZLA00244; trim: AWD; exterior color: Grigio Acheso Matt; interior color: Nero Ade",
+      "_project": "lamborghini-murcielago-gallardo-listings"
+    },
+    {
+      "snapshot_date": "2026-09-15",
       "model_family": "Revuelto",
       "body": "coupe",
       "model_year": "2026",
@@ -5772,7 +5480,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Revuelto",
       "body": "coupe",
       "model_year": "2025",
@@ -5791,7 +5499,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Revuelto",
       "body": "coupe",
       "model_year": "2024",
@@ -5810,7 +5518,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Revuelto",
       "body": "coupe",
       "model_year": "2025",
@@ -5823,13 +5531,13 @@
       "listing_url": "https://www.classic.com/veh/2025-lamborghini-revuelto-zhwuc1zm9sla03009-pEqbMEp/",
       "source": "Classic.com",
       "vin_or_stock": "ZHWUC1ZM9SLA03009",
-      "exterior_color": "",
-      "interior_color": "",
+      "exterior_color": "Rosso Efesto Metallic",
+      "interior_color": "Nero Ade",
       "notes": "Classic.com asterisk asking; exact miles displayed: 625 mi; seller:Lamborghini Palm Beach",
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Revuelto",
       "body": "coupe",
       "model_year": "2025",
@@ -5848,7 +5556,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Revuelto",
       "body": "coupe",
       "model_year": "2025",
@@ -5867,7 +5575,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Revuelto",
       "body": "coupe",
       "model_year": "2025",
@@ -5886,7 +5594,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Revuelto",
       "body": "coupe",
       "model_year": "2026",
@@ -5905,7 +5613,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Revuelto",
       "body": "coupe",
       "model_year": "2025",
@@ -5924,7 +5632,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Revuelto",
       "body": "coupe",
       "model_year": "2025",
@@ -5943,7 +5651,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Revuelto",
       "body": "coupe",
       "model_year": "2026",
@@ -5962,7 +5670,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Revuelto",
       "body": "coupe",
       "model_year": "2024",
@@ -5981,7 +5689,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Revuelto",
       "body": "coupe",
       "model_year": "2026",
@@ -6000,64 +5708,64 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Revuelto",
       "body": "coupe",
       "model_year": "2025",
-      "asking_price_usd": "729900",
+      "asking_price_usd": "730895",
       "mileage_miles": "1288",
       "currency": "USD",
-      "location": "Lamborghini Revuelto Salt Lake City Motorcars South Jordan, UT, USA",
+      "location": "South Jordan, UT",
       "seller_type": "dealer",
       "listing_title": "2025 Lamborghini Revuelto",
-      "listing_url": "https://www.cars.com/vehicledetail/c6b6e58d-635a-4699-956a-46f06f08245d/",
-      "source": "Cars.com",
+      "listing_url": "https://www.cargurus.com/details/449404987",
+      "source": "CarGurus",
       "vin_or_stock": "ZHWUC1ZM4SLA02396",
-      "exterior_color": "gray",
+      "exterior_color": "Grigio Titans Matt",
       "interior_color": "Nero Ade",
-      "notes": "Cars.com search results; exact miles from Cars.com JSON: 1288; seller:Salt Lake City Motorcars; stock:Used; exterior color: gray",
+      "notes": "Stock # A02396; trim: AWD; exterior color: Grigio Titans Matt; interior color: Nero Ade",
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Revuelto",
       "body": "coupe",
-      "model_year": "2025",
-      "asking_price_usd": "729999",
-      "mileage_miles": "1388",
+      "model_year": "2024",
+      "asking_price_usd": "731393",
+      "mileage_miles": "5647",
       "currency": "USD",
-      "location": "Costa Mesa, CA",
+      "location": "Marietta, GA, USA",
       "seller_type": "dealer",
-      "listing_title": "2025 Lamborghini Revuelto",
-      "listing_url": "https://www.cargurus.com/details/450339639",
-      "source": "CarGurus",
-      "vin_or_stock": "ZHWUC1ZM1SLA02517",
-      "exterior_color": "Green (Verde Turbine Matt)",
-      "interior_color": "Terra Kapnus",
-      "notes": "Stock # SLA02517; trim: AWD; exterior color: Green (Verde Turbine Matt); interior color: Terra Kapnus",
+      "listing_title": "2024 Lamborghini Revuelto Base",
+      "listing_url": "https://www.cars.com/vehicledetail/fb18dbc3-a837-47f7-b2f2-af11791c0cdc/",
+      "source": "Cars.com",
+      "vin_or_stock": "ZHWUC1ZM1RLA00115",
+      "exterior_color": "yellow",
+      "interior_color": "",
+      "notes": "Cars.com search results; exact miles from Cars.com JSON: 5647; seller:Atlanta Autos; stock:Used; exterior color: yellow",
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Revuelto",
       "body": "coupe",
       "model_year": "2026",
-      "asking_price_usd": "738119",
+      "asking_price_usd": "739114",
       "mileage_miles": "1184",
       "currency": "USD",
-      "location": "Lamborghini Revuelto Base Salt Lake City Motorcars South Jordan, UT, USA",
+      "location": "South Jordan, UT",
       "seller_type": "dealer",
-      "listing_title": "2026 Lamborghini Revuelto Base",
-      "listing_url": "https://www.cars.com/vehicledetail/af3b632e-e2d9-47f6-86f9-8a800c9f12a2/",
-      "source": "Cars.com",
+      "listing_title": "2026 Lamborghini Revuelto",
+      "listing_url": "https://www.cargurus.com/details/453663135",
+      "source": "CarGurus",
       "vin_or_stock": "ZHWUC1ZM3TLA03945",
-      "exterior_color": "",
-      "interior_color": "",
-      "notes": "Cars.com search results; exact miles from Cars.com JSON: 1184; seller:Salt Lake City Motorcars; stock:Used",
+      "exterior_color": "Green (Verde Ermes)",
+      "interior_color": "Nero Ade",
+      "notes": "Stock # A03945; trim: AWD; exterior color: Green (Verde Ermes); interior color: Nero Ade",
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Revuelto",
       "body": "coupe",
       "model_year": "2024",
@@ -6076,7 +5784,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Revuelto",
       "body": "coupe",
       "model_year": "2025",
@@ -6095,7 +5803,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Revuelto",
       "body": "coupe",
       "model_year": "2025",
@@ -6108,13 +5816,13 @@
       "listing_url": "https://www.classic.com/veh/2025-lamborghini-revuelto-zhwuc1zm5sla03623-pg90b0n/",
       "source": "Classic.com",
       "vin_or_stock": "ZHWUC1ZM5SLA03623",
-      "exterior_color": "Green (Verde Scandal Metallic)",
-      "interior_color": "Nero Ade",
+      "exterior_color": "",
+      "interior_color": "",
       "notes": "Classic.com asterisk asking; exact miles displayed: 188 mi; seller:Eurocar Inc.",
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Revuelto",
       "body": "coupe",
       "model_year": "2026",
@@ -6133,26 +5841,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
-      "model_family": "Revuelto",
-      "body": "coupe",
-      "model_year": "2025",
-      "asking_price_usd": "759980",
-      "mileage_miles": "300",
-      "currency": "USD",
-      "location": "Lamborghini Revuelto Elite Autos LLC Jonesboro, AR, USA",
-      "seller_type": "dealer",
-      "listing_title": "2025 Lamborghini Revuelto",
-      "listing_url": "https://www.cars.com/vehicledetail/556bb280-6bc4-482a-a8e2-a8025190a37b/",
-      "source": "Cars.com",
-      "vin_or_stock": "ZHWUC1ZM1SLA02713",
-      "exterior_color": "blue",
-      "interior_color": "",
-      "notes": "Cars.com search results; exact miles from Cars.com JSON: 300; seller:Elite Autos LLC; stock:Used; exterior color: blue",
-      "_project": "lamborghini-murcielago-gallardo-listings"
-    },
-    {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Revuelto",
       "body": "coupe",
       "model_year": "2026",
@@ -6171,7 +5860,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Revuelto",
       "body": "coupe",
       "model_year": "2024",
@@ -6190,7 +5879,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Revuelto",
       "body": "coupe",
       "model_year": "2025",
@@ -6209,7 +5898,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Revuelto",
       "body": "coupe",
       "model_year": "2024",
@@ -6228,7 +5917,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Revuelto",
       "body": "coupe",
       "model_year": "2026",
@@ -6247,26 +5936,45 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Revuelto",
       "body": "coupe",
-      "model_year": "2024",
-      "asking_price_usd": "801393",
-      "mileage_miles": "5647",
+      "model_year": "2025",
+      "asking_price_usd": "799999",
+      "mileage_miles": "",
       "currency": "USD",
-      "location": "Marietta, GA, USA",
+      "location": "San Diego, California, USA",
       "seller_type": "dealer",
-      "listing_title": "2024 Lamborghini Revuelto Base",
-      "listing_url": "https://www.cars.com/vehicledetail/fb18dbc3-a837-47f7-b2f2-af11791c0cdc/",
-      "source": "Cars.com",
-      "vin_or_stock": "ZHWUC1ZM1RLA00115",
-      "exterior_color": "yellow",
+      "listing_title": "2025 Lamborghini Revuelto",
+      "listing_url": "https://www.classic.com/veh/2025-lamborghini-revuelto-zhwuc1zm3sla01885-nlQw8yW/",
+      "source": "Classic.com",
+      "vin_or_stock": "ZHWUC1ZM3SLA01885",
+      "exterior_color": "",
       "interior_color": "",
-      "notes": "Cars.com search results; exact miles from Cars.com JSON: 5647; seller:Atlanta Autos; stock:Used; exterior color: yellow",
+      "notes": "Classic.com asterisk asking; 1k mi displayed; mileage blank (rounded Nk mi); seller:Champion Motoring",
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
+      "model_family": "Revuelto",
+      "body": "coupe",
+      "model_year": "2024",
+      "asking_price_usd": "802290",
+      "mileage_miles": "1678",
+      "currency": "USD",
+      "location": "Orlando, FL",
+      "seller_type": "dealer",
+      "listing_title": "2024 Lamborghini Revuelto",
+      "listing_url": "https://www.cargurus.com/details/447285247",
+      "source": "CarGurus",
+      "vin_or_stock": "ZHWUC1ZM2RLA00981",
+      "exterior_color": "Green",
+      "interior_color": "Black",
+      "notes": "Stock # RC01421; trim: AWD; exterior color: Green; interior color: Black",
+      "_project": "lamborghini-murcielago-gallardo-listings"
+    },
+    {
+      "snapshot_date": "2026-09-15",
       "model_family": "Revuelto",
       "body": "coupe",
       "model_year": "2026",
@@ -6285,7 +5993,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Revuelto",
       "body": "coupe",
       "model_year": "2024",
@@ -6304,7 +6012,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Revuelto",
       "body": "coupe",
       "model_year": "2026",
@@ -6323,7 +6031,26 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
+      "model_family": "Revuelto",
+      "body": "coupe",
+      "model_year": "2026",
+      "asking_price_usd": "899999",
+      "mileage_miles": "430",
+      "currency": "USD",
+      "location": "San Diego, California, USA",
+      "seller_type": "dealer",
+      "listing_title": "2026 Lamborghini Revuelto",
+      "listing_url": "https://www.classic.com/veh/2026-lamborghini-revuelto-zhwuc1zm5tla03929-Wky2DJ4/",
+      "source": "Classic.com",
+      "vin_or_stock": "ZHWUC1ZM5TLA03929",
+      "exterior_color": "",
+      "interior_color": "",
+      "notes": "Classic.com asterisk asking; exact miles displayed: 430 mi; seller:Champion Motoring",
+      "_project": "lamborghini-murcielago-gallardo-listings"
+    },
+    {
+      "snapshot_date": "2026-09-15",
       "model_family": "Revuelto",
       "body": "coupe",
       "model_year": "2026",
@@ -6342,26 +6069,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
-      "model_family": "Revuelto",
-      "body": "coupe",
-      "model_year": "2025",
-      "asking_price_usd": "901993",
-      "mileage_miles": "1438",
-      "currency": "USD",
-      "location": "Ft. Lauderdale, FL",
-      "seller_type": "dealer",
-      "listing_title": "2025 Lamborghini Revuelto",
-      "listing_url": "https://www.cargurus.com/details/457317855",
-      "source": "CarGurus",
-      "vin_or_stock": "ZHWUC1ZM3SL000000",
-      "exterior_color": "",
-      "interior_color": "",
-      "notes": "Stock # 000000; trim: AWD",
-      "_project": "lamborghini-murcielago-gallardo-listings"
-    },
-    {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Revuelto",
       "body": "coupe",
       "model_year": "2025",
@@ -6380,7 +6088,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Temerario",
       "body": "coupe",
       "model_year": "2026",
@@ -6399,7 +6107,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Temerario",
       "body": "coupe",
       "model_year": "2026",
@@ -6418,7 +6126,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Temerario",
       "body": "coupe",
       "model_year": "2026",
@@ -6437,7 +6145,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Temerario",
       "body": "coupe",
       "model_year": "2026",
@@ -6456,7 +6164,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Temerario",
       "body": "coupe",
       "model_year": "2026",
@@ -6475,7 +6183,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Temerario",
       "body": "coupe",
       "model_year": "2026",
@@ -6489,12 +6197,12 @@
       "source": "Cars.com",
       "vin_or_stock": "ZHWUC1ZC0TLA01805",
       "exterior_color": "white",
-      "interior_color": "F",
+      "interior_color": "",
       "notes": "Cars.com search results; exact miles from Cars.com JSON: 1979; seller:F.C. Kerbeck & Sons; stock:Used; exterior color: white",
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Temerario",
       "body": "coupe",
       "model_year": "2026",
@@ -6513,7 +6221,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Temerario",
       "body": "coupe",
       "model_year": "2026",
@@ -6526,13 +6234,13 @@
       "listing_url": "https://www.cargurus.com/details/458638796",
       "source": "CarGurus",
       "vin_or_stock": "ZHWUC1ZC8TLA01289",
-      "exterior_color": "Yellow",
-      "interior_color": "",
-      "notes": "Stock # LP0040A; trim: AWD; deal rating: GOOD_PRICE; exterior color: Yellow",
+      "exterior_color": "Giallo Tenerife Metallic",
+      "interior_color": "Nero Ade",
+      "notes": "Stock # LP0040A; trim: AWD; deal rating: GOOD_PRICE; exterior color: Giallo Tenerife Metallic; interior color: Nero Ade",
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Temerario",
       "body": "coupe",
       "model_year": "2026",
@@ -6551,7 +6259,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Temerario",
       "body": "coupe",
       "model_year": "2026",
@@ -6570,7 +6278,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Temerario",
       "body": "coupe",
       "model_year": "2026",
@@ -6584,12 +6292,12 @@
       "source": "Cars.com",
       "vin_or_stock": "ZHWUC1ZC7TLA01459",
       "exterior_color": "blue",
-      "interior_color": "Nero Ade",
+      "interior_color": "",
       "notes": "Cars.com search results; exact miles from Cars.com JSON: 152; seller:Lamborghini Houston, Rolls-Royce Motorcars North Houston, McLaren Houston; stock:Used; exterior color: blue",
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Temerario",
       "body": "coupe",
       "model_year": "2026",
@@ -6608,7 +6316,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Temerario",
       "body": "coupe",
       "model_year": "2026",
@@ -6627,7 +6335,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Temerario",
       "body": "coupe",
       "model_year": "2026",
@@ -6646,7 +6354,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Temerario",
       "body": "coupe",
       "model_year": "2026",
@@ -6665,7 +6373,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Temerario",
       "body": "coupe",
       "model_year": "2026",
@@ -6678,13 +6386,13 @@
       "listing_url": "https://www.cars.com/vehicledetail/c790179f-64f9-49b6-a259-5ee9725c1998/",
       "source": "Cars.com",
       "vin_or_stock": "ZHWUC1ZC2TLA01580",
-      "exterior_color": "",
+      "exterior_color": "Gray",
       "interior_color": "",
       "notes": "Cars.com search results; exact miles from Cars.com JSON: 651; seller:Herb Chambers Exotics; stock:Used",
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Temerario",
       "body": "coupe",
       "model_year": "2026",
@@ -6703,7 +6411,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Temerario",
       "body": "coupe",
       "model_year": "2026",
@@ -6722,7 +6430,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Temerario",
       "body": "coupe",
       "model_year": "2026",
@@ -6741,7 +6449,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Temerario",
       "body": "coupe",
       "model_year": "2026",
@@ -6760,7 +6468,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Temerario",
       "body": "coupe",
       "model_year": "2026",
@@ -6779,7 +6487,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Temerario",
       "body": "coupe",
       "model_year": "2026",
@@ -6798,7 +6506,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Temerario",
       "body": "coupe",
       "model_year": "2026",
@@ -6817,7 +6525,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Temerario",
       "body": "coupe",
       "model_year": "2026",
@@ -6836,11 +6544,11 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Temerario",
       "body": "coupe",
       "model_year": "2026",
-      "asking_price_usd": "484991",
+      "asking_price_usd": "482991",
       "mileage_miles": "295",
       "currency": "USD",
       "location": "Lamborghini Temerario Coupe Spady Auto Group Scottsdale, AZ, USA",
@@ -6855,7 +6563,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Temerario",
       "body": "coupe",
       "model_year": "2026",
@@ -6874,7 +6582,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Temerario",
       "body": "coupe",
       "model_year": "2026",
@@ -6893,7 +6601,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Temerario",
       "body": "coupe",
       "model_year": "2026",
@@ -6912,11 +6620,11 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Temerario",
       "body": "coupe",
       "model_year": "2026",
-      "asking_price_usd": "515688",
+      "asking_price_usd": "515689",
       "mileage_miles": "1628",
       "currency": "USD",
       "location": "Lamborghini Temerario Base Fields Motorcars Seattle Bellevue, WA, USA",
@@ -6931,26 +6639,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
-      "model_family": "Temerario",
-      "body": "coupe",
-      "model_year": "2026",
-      "asking_price_usd": "545000",
-      "mileage_miles": "1985",
-      "currency": "USD",
-      "location": "",
-      "seller_type": "dealer",
-      "listing_title": "2026 Lamborghini Temerario",
-      "listing_url": "https://www.cargurus.com/details/455784451",
-      "source": "CarGurus",
-      "vin_or_stock": "ZHWUC1ZC5TLA00326",
-      "exterior_color": "",
-      "interior_color": "",
-      "notes": "Stock # 101A00326; trim: AWD",
-      "_project": "lamborghini-murcielago-gallardo-listings"
-    },
-    {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Temerario",
       "body": "coupe",
       "model_year": "2026",
@@ -6969,7 +6658,7 @@
       "_project": "lamborghini-murcielago-gallardo-listings"
     },
     {
-      "snapshot_date": "2026-09-14",
+      "snapshot_date": "2026-09-15",
       "model_family": "Temerario",
       "body": "coupe",
       "model_year": "2026",
