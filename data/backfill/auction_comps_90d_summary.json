@@ -1,0 +1,117 @@
+{
+  "window": {
+    "start": "2026-06-09",
+    "end": "2026-09-07",
+    "tz": "America/New_York"
+  },
+  "generated_at_utc": "2026-09-07T21:30:36Z",
+  "sources": [
+    "Classic.com market sold/not_sold tabs",
+    "Bring a Trailer completed results (model pages)",
+    "Cars & Bids results via Classic.com sold-tab links when present"
+  ],
+  "total_rows": 88,
+  "sold_rows": 78,
+  "unsold_rows": 10,
+  "sold_usd_rows": 62,
+  "currency_counts": {
+    "USD": 72,
+    "EUR": 9,
+    "GBP": 7
+  },
+  "per_model": {
+    "Ferrari 458": {
+      "total_lots": 34,
+      "sold_count": 25,
+      "sold_non_usd_count": 6,
+      "unsold_count": 3,
+      "sold_median_usd": 425000,
+      "sold_min_usd": 143000,
+      "sold_max_usd": 1490000
+    },
+    "Ferrari 488": {
+      "total_lots": 26,
+      "sold_count": 14,
+      "sold_non_usd_count": 5,
+      "unsold_count": 7,
+      "sold_median_usd": 409500,
+      "sold_min_usd": 102500,
+      "sold_max_usd": 475000
+    },
+    "Ferrari F8": {
+      "total_lots": 6,
+      "sold_count": 6,
+      "sold_non_usd_count": 0,
+      "unsold_count": 0,
+      "sold_median_usd": 535500,
+      "sold_min_usd": 385500,
+      "sold_max_usd": 642500
+    },
+    "Ford GT": {
+      "total_lots": 14,
+      "sold_count": 12,
+      "sold_non_usd_count": 2,
+      "unsold_count": 0,
+      "sold_median_usd": 687500,
+      "sold_min_usd": 480000,
+      "sold_max_usd": 2101000
+    },
+    "Lamborghini Performante": {
+      "total_lots": 3,
+      "sold_count": 2,
+      "sold_non_usd_count": 1,
+      "unsold_count": 0,
+      "sold_median_usd": 351000,
+      "sold_min_usd": 329000,
+      "sold_max_usd": 373000
+    },
+    "Lamborghini STO": {
+      "total_lots": 1,
+      "sold_count": 1,
+      "sold_non_usd_count": 0,
+      "unsold_count": 0,
+      "sold_median_usd": 485000,
+      "sold_min_usd": 485000,
+      "sold_max_usd": 485000
+    },
+    "McLaren 600LT": {
+      "total_lots": 0,
+      "sold_count": 0,
+      "sold_non_usd_count": 0,
+      "unsold_count": 0,
+      "sold_median_usd": null,
+      "sold_min_usd": null,
+      "sold_max_usd": null
+    },
+    "McLaren 675LT": {
+      "total_lots": 2,
+      "sold_count": 1,
+      "sold_non_usd_count": 1,
+      "unsold_count": 0,
+      "sold_median_usd": 182000,
+      "sold_min_usd": 182000,
+      "sold_max_usd": 182000
+    },
+    "McLaren 765LT": {
+      "total_lots": 2,
+      "sold_count": 1,
+      "sold_non_usd_count": 1,
+      "unsold_count": 0,
+      "sold_median_usd": 775000,
+      "sold_min_usd": 775000,
+      "sold_max_usd": 775000
+    }
+  },
+  "notes": [
+    "Medians/min/max use USD sold prices only; never invent FX for EUR/GBP natives.",
+    "Rounded Nk mi left blank.",
+    "Excluded Ferrari Pista/Competizione/Challenge/Piloti/Mansory/Speciale A/Aperta; Ford GT outside 2005-2006; non-STO/Performante Hurac\u00e1n; non-vehicle BaT lots.",
+    "McLaren 600LT: no public sold/unsold results found in window."
+  ],
+  "paths": {
+    "csv": "/home/box/agent-data/projects/car-trends-overview/data/backfill/auction_comps_90d.csv",
+    "csv_copy": "/workspace/auction-comps-90d/auction_comps_90d.csv",
+    "summary": "/home/box/agent-data/projects/car-trends-overview/data/backfill/auction_comps_90d_summary.json",
+    "summary_copy": "/workspace/auction-comps-90d/auction_comps_90d_summary.json"
+  }
+}

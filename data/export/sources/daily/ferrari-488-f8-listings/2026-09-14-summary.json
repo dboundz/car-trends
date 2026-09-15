@@ -1,0 +1,178 @@
+{
+  "snapshot_date": "2026-09-14",
+  "total_rows": 845,
+  "families": {
+    "488": 219,
+    "F8": 143,
+    "458": 72,
+    "F430": 78,
+    "360": 66,
+    "355": 18,
+    "348": 6,
+    "SF90": 121,
+    "296": 122
+  },
+  "variants": {
+    "296_coupe": {
+      "count": 66,
+      "median_ask": 339983,
+      "min_ask": 285125,
+      "max_ask": 1888888,
+      "median_miles": 1251
+    },
+    "296_spider": {
+      "count": 56,
+      "median_ask": 424495,
+      "min_ask": 359585,
+      "max_ask": 569000,
+      "median_miles": 995
+    },
+    "348_spider": {
+      "count": 2,
+      "median_ask": 117497,
+      "min_ask": 109995,
+      "max_ask": 125000,
+      "median_miles": 23347
+    },
+    "348_ts": {
+      "count": 4,
+      "median_ask": 141450,
+      "min_ask": 114093,
+      "max_ask": 259999,
+      "median_miles": 17776
+    },
+    "355_berlinetta": {
+      "count": 7,
+      "median_ask": 239995,
+      "min_ask": 19999,
+      "max_ask": 449000,
+      "median_miles": 45416
+    },
+    "355_gts": {
+      "count": 1,
+      "median_ask": 399995,
+      "min_ask": 399995,
+      "max_ask": 399995,
+      "median_miles": 27345
+    },
+    "355_spider": {
+      "count": 10,
+      "median_ask": 264677,
+      "min_ask": 94900,
+      "max_ask": 379990,
+      "median_miles": 22250
+    },
+    "360_coupe": {
+      "count": 25,
+      "median_ask": 169890,
+      "min_ask": 89799,
+      "max_ask": 424895,
+      "median_miles": 21982
+    },
+    "360_spider": {
+      "count": 41,
+      "median_ask": 146298,
+      "min_ask": 83000,
+      "max_ask": 399989,
+      "median_miles": 19062
+    },
+    "458_coupe": {
+      "count": 31,
+      "median_ask": 468273,
+      "min_ask": 296081,
+      "max_ask": 1429999,
+      "median_miles": 8859
+    },
+    "458_speciale": {
+      "count": 1,
+      "median_ask": 1299900,
+      "min_ask": 1299900,
+      "max_ask": 1299900,
+      "median_miles": 6104
+    },
+    "458_spider": {
+      "count": 40,
+      "median_ask": 554995,
+      "min_ask": 349995,
+      "max_ask": 766888,
+      "median_miles": 8580
+    },
+    "488_coupe": {
+      "count": 77,
+      "median_ask": 339900,
+      "min_ask": 219950,
+      "max_ask": 825888,
+      "median_miles": 12062
+    },
+    "488_spider": {
+      "count": 142,
+      "median_ask": 418378,
+      "min_ask": 279991,
+      "max_ask": 549898,
+      "median_miles": 10227
+    },
+    "F430_coupe": {
+      "count": 28,
+      "median_ask": 276853,
+      "min_ask": 169998,
+      "max_ask": 675125,
+      "median_miles": 19268
+    },
+    "F430_spider": {
+      "count": 50,
+      "median_ask": 272349,
+      "min_ask": 225,
+      "max_ask": 729063,
+      "median_miles": 14045
+    },
+    "F8_coupe": {
+      "count": 41,
+      "median_ask": 479996,
+      "min_ask": 295000,
+      "max_ask": 699000,
+      "median_miles": 6569
+    },
+    "F8_spider": {
+      "count": 102,
+      "median_ask": 658284,
+      "min_ask": 389700,
+      "max_ask": 799990,
+      "median_miles": 4166
+    },
+    "SF90_coupe": {
+      "count": 56,
+      "median_ask": 479951,
+      "min_ask": 389912,
+      "max_ask": 699999,
+      "median_miles": 2369
+    },
+    "SF90_spider": {
+      "count": 65,
+      "median_ask": 614795,
+      "min_ask": 549990,
+      "max_ask": 1200000,
+      "median_miles": 905
+    }
+  },
+  "sf90_296_baseline": {
+    "approved": 120,
+    "classic": 460,
+    "carscom": 72,
+    "dupont": 0,
+    "cargurus": 70,
+    "sf90_296_unique": 243,
+    "by_variant": {
+      "SF90_coupe": 56,
+      "SF90_spider": 65,
+      "296_coupe": 66,
+      "296_spider": 56
+    }
+  },
+  "sources": {
+    "Classic.com": 339,
+    "Cars.com": 126,
+    "Ferrari Approved (preowned.ferrari.com)": 331,
+    "CarGurus": 42,
+    "dupontregistry": 7
+  }
+}

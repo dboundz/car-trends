@@ -1,0 +1,153 @@
+{
+  "snapshot_date": "2026-09-14",
+  "timezone": "America/New_York",
+  "total_listings": 60,
+  "counts_by_variant": {
+    "Performante_coupe": 26,
+    "Performante_spider": 7,
+    "STO_coupe": 27
+  },
+  "medians_by_variant": {
+    "Performante_coupe": {
+      "median_ask": 371350,
+      "median_miles": 13851
+    },
+    "Performante_spider": {
+      "median_ask": 384500,
+      "median_miles": 15325
+    },
+    "STO_coupe": {
+      "median_ask": 499912,
+      "median_miles": 4319
+    }
+  },
+  "variants": {
+    "Performante_coupe": {
+      "count": 26,
+      "priced_count": 26,
+      "with_mileage_count": 15,
+      "median_asking_price_usd": 371350,
+      "min_asking_price_usd": 159999,
+      "max_asking_price_usd": 479995,
+      "median_mileage_miles": 13851
+    },
+    "Performante_spider": {
+      "count": 7,
+      "priced_count": 7,
+      "with_mileage_count": 3,
+      "median_asking_price_usd": 384500,
+      "min_asking_price_usd": 220419,
+      "max_asking_price_usd": 411696,
+      "median_mileage_miles": 15325
+    },
+    "STO_coupe": {
+      "count": 27,
+      "priced_count": 27,
+      "with_mileage_count": 22,
+      "median_asking_price_usd": 499912,
+      "min_asking_price_usd": 411246,
+      "max_asking_price_usd": 1997988,
+      "median_mileage_miles": 4319
+    }
+  },
+  "counts_by_source": {
+    "Classic.com": 30,
+    "Cars.com": 16,
+    "CarGurus": 14
+  },
+  "sources_ok": {
+    "Classic.com": true,
+    "Cars.com": true,
+    "CarGurus": true,
+    "Hemmings": false,
+    "duPont": false,
+    "Autotrader": false,
+    "BaT": false,
+    "CarsAndBids": false,
+    "dealers_direct": false
+  },
+  "blockers": [
+    "Autotrader: page unavailable / blocked (~3.7KB shell page).",
+    "Hemmings: search HTML lacks usable STO/Performante inventory cards for merge (few generic listing links).",
+    "duPont Registry: search HTML lacked parseable listing cards (JS-rendered).",
+    "BaT: model pages fetched; auction current-bid pages only (no fixed asking prices merged).",
+    "Cars & Bids: search returned JS shell (~14KB); no listings merged.",
+    "Cars.com keyword-only STO search historically returns 0; model filter huracan_sto used.",
+    "Classic.com truncates many Performante VINs in listing URL slugs."
+  ],
+  "cargurus_merge": {
+    "before": 46,
+    "after": 60,
+    "added": 14,
+    "skipped_dup": 5,
+    "skipped_norm": 0,
+    "cargurus_input": 19
+  },
+  "vs_yesterday": {
+    "Performante_coupe": {
+      "yesterday_median_ask": 371350,
+      "today_median_ask": 371350,
+      "delta": 0,
+      "pct": 0.0,
+      "yesterday_n": 26,
+      "today_n": 26
+    },
+    "Performante_spider": {
+      "yesterday_median_ask": 392224,
+      "today_median_ask": 384500,
+      "delta": -7724,
+      "pct": -1.97,
+      "yesterday_n": 6,
+      "today_n": 7
+    },
+    "STO_coupe": {
+      "yesterday_median_ask": 499912,
+      "today_median_ask": 499912,
+      "delta": 0,
+      "pct": 0.0,
+      "yesterday_n": 27,
+      "today_n": 27
+    }
+  },
+  "striking_drops": [],
+  "color_fill": {
+    "exterior": 31,
+    "interior": 17,
+    "total": 60
+  },
+  "notes": [
+    "Models: Hurac\u00e1n STO + Performante only (coupe/spider).",
+    "Excluded Evo/Tecnica/Sterrato/base LP580/LP610.",
+    "Never invent price/year/miles; rounded Classic Nk mi left blank.",
+    "Dedupe by VIN/URL; CarGurus added only if not already present (prefer non-CarGurus).",
+    "Prefer US/Canada; location recorded as found.",
+    "CarGurus via chrome --headless --dump-dom (zip=32801, delivery enabled); merge stats: {'before': 46, 'after': 60, 'added': 14, 'skipped_dup': 5, 'skipped_norm': 0, 'cargurus_input': 19}.",
+    "Color fill: exterior=31/60, interior=17/60."
+  ],
+  "classic_meta": {
+    "total": 31,
+    "page_stats": {
+      "STO_coupe": {
+        "site_meta_for_sale": 17,
+        "items_seen": 32,
+        "pages_fetched": 2,
+        "url": "https://www.classic.com/m/lamborghini/huracan/sto/?status=for_sale"
+      },
+      "Performante_coupe": {
+        "site_meta_for_sale": 11,
+        "items_seen": 22,
+        "pages_fetched": 2,
+        "url": "https://www.classic.com/m/lamborghini/huracan/lp640-4-performante/?status=for_sale"
+      },
+      "Performante_spider": {
+        "site_meta_for_sale": 4,
+        "items_seen": 8,
+        "pages_fetched": 2,
+        "url": "https://www.classic.com/m/lamborghini/huracan/lp640-4-performante-spyder/?status=for_sale"
+      }
+    },
+    "skip_counts": {
+      "dedupe": 31
+    }
+  }
+}

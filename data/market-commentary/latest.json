@@ -1,0 +1,1941 @@
+{
+  "generated_at": "2026-09-14T21:08:55.721041Z",
+  "as_of": "2026-09-14",
+  "windows": [
+    "7d",
+    "14d"
+  ],
+  "geography": "US + Canada only",
+  "overall": {
+    "headline": "Exotics desk: asks flat -0.2% cross-brand",
+    "summary": "As of 2026-09-14, tracked Ferrari / McLaren / Lamborghini / Ford GT US+Canada asks are flat on a ~7-day read (-0.2% median of brand medians). Inventory Δ across the board: +785.",
+    "take_short": "-0.2% cross-brand · inv Δ +785",
+    "bullets": [
+      "Softest ~7d ask move: lamborghini -4.2%",
+      "Firmest: ferrari +0.9%",
+      "Cross-brand inventory Δ sum: +785 listings",
+      "Cross-brand median ask Δ: -0.2%",
+      "Auction vs retail: No Reserve: 5k-Mile 2018 Ferrari 488 Spider bid $207,000 vs ask $418,378"
+    ],
+    "metrics": {
+      "by_window": {
+        "7d": {
+          "brands": [
+            {
+              "brand": "ferrari",
+              "median_ask_pct": 0.88,
+              "median_ask_delta": 951,
+              "median_ask_pct_raw_mix": -5.37,
+              "count_delta": 441,
+              "count": 826,
+              "prior_date": "2026-09-07",
+              "span_days": 7,
+              "composition_note": "new variants: 296 Coupe, 296 Spider, 348 Spider, 348 TS, 355 Berlinetta, 355 GTS; inventory Δ +441"
+            },
+            {
+              "brand": "mclaren",
+              "median_ask_pct": -0.55,
+              "median_ask_delta": -93102,
+              "median_ask_pct_raw_mix": -36.39,
+              "count_delta": 66,
+              "count": 131,
+              "prior_date": "2026-09-07",
+              "span_days": 7,
+              "composition_note": "new variants: Artura Coupe, Artura Spider; inventory Δ +66"
+            },
+            {
+              "brand": "lamborghini",
+              "median_ask_pct": -4.23,
+              "median_ask_delta": -6921,
+              "median_ask_pct_raw_mix": 18.23,
+              "count_delta": 277,
+              "count": 332,
+              "prior_date": "2026-09-07",
+              "span_days": 7,
+              "composition_note": "new variants: Gallardo Coupe, Gallardo Spider, Murcielago Coupe, Murcielago Spider, Revuelto Coupe, SVJ Coupe; inventory Δ +277"
+            },
+            {
+              "brand": "ford",
+              "median_ask_pct": 0.24,
+              "median_ask_delta": 0,
+              "median_ask_pct_raw_mix": 0.0,
+              "count_delta": 1,
+              "count": 27,
+              "prior_date": "2026-09-07",
+              "span_days": 7,
+              "composition_note": null
+            }
+          ],
+          "median_ask_pct_cross": -0.16,
+          "inventory_delta_sum": 785
+        },
+        "14d": {
+          "brands": [
+            {
+              "brand": "ferrari",
+              "median_ask_pct": 3.31,
+              "median_ask_delta": 14150,
+              "median_ask_pct_raw_mix": 2.2,
+              "count_delta": 712,
+              "count": 826,
+              "prior_date": "2026-09-03",
+              "span_days": 11,
+              "composition_note": "new variants: 296 Coupe, 296 Spider, 348 Spider, 348 TS, 355 Berlinetta, 355 GTS; inventory Δ +712"
+            }
+          ],
+          "median_ask_pct_cross": 3.31,
+          "inventory_delta_sum": 712
+        }
+      },
+      "as_of": "2026-09-14",
+      "history_start": "2026-09-03"
+    },
+    "history_callout": "Tracker history from 2026-09-03 — 30d/90d windows not ready yet.",
+    "social_hook": "Market desk: cross-brand asks are flat about -0.2% this week — here's the one number that matters.",
+    "reel_angle": "Open on the cross-brand median ask move, call out the softest brand, flash one auction-vs-retail gap, close with 'not hype — snapshot math.'",
+    "windows_available": [
+      "7d",
+      "14d"
+    ]
+  },
+  "brands": {
+    "ferrari": {
+      "brand": "Ferrari",
+      "brand_key": "ferrari",
+      "headline": "Ferrari edging up: +0.9% variant-median ask · 7d",
+      "summary": "As of 2026-09-14, Ferrari US/Canada tracked inventory sits at 826 cars (Δ +441 vs 2026-09-07). Variant-median ask +0.9% over ~7d (LFL $449,951, +$951 / +0.2%).",
+      "take_short": "+0.9% · 826 cars · 7d",
+      "bullets": [
+        "Variant-median ask move: +0.9% (LFL pool +0.2%) [2026-09-07→2026-09-14]",
+        "458: median ask +$17,424 (+3.4%) · n=67 [2026-09-07→2026-09-14]",
+        "F8: median ask +$3,614 (+0.8%) · n=142 [2026-09-07→2026-09-14]",
+        "488: median ask +$2,589 (+0.6%) · n=219 [2026-09-07→2026-09-14]",
+        "Same-VIN cuts: 86/270 (32%) over 7d; median cut $10,000",
+        "Inventory: 826 listings (+441 vs 2026-09-07)",
+        "Mix: new variants: 296 Coupe, 296 Spider, 348 Spider, 348 TS, 355 Berlinetta, 355 GTS; inventory Δ +441",
+        "Auction softness: No Reserve: 5k-Mile 2018 Ferrari 488 Spider bid $207,000 vs retail $418,378 (-51% vs ask)",
+        "Example: 296 Spider @ $384,995 / 191 mi"
+      ],
+      "metrics": {
+        "as_of": "2026-09-14",
+        "history_start": "2026-09-03",
+        "history_days": 11,
+        "snapshot_count": 12,
+        "by_window": {
+          "7d": {
+            "window": "7d",
+            "target_days": 7,
+            "as_of": "2026-09-14",
+            "prior_date": "2026-09-07",
+            "span_days": 7,
+            "count": 826,
+            "count_prior": 385,
+            "count_delta": 441,
+            "median_ask": 424900,
+            "median_ask_prior": 449000,
+            "median_ask_delta": -24100,
+            "median_ask_pct": -5.37,
+            "median_ask_lfl": 449951,
+            "median_ask_lfl_prior": 449000,
+            "median_ask_lfl_delta": 951,
+            "median_ask_lfl_pct": 0.21,
+            "variant_pct_median": 0.88,
+            "overlap_variants": [
+              "488 Spider",
+              "458 Spider",
+              "458 Coupe",
+              "F8 Spider",
+              "F8 Coupe",
+              "488 Coupe"
+            ],
+            "composition_note": "new variants: 296 Coupe, 296 Spider, 348 Spider, 348 TS, 355 Berlinetta, 355 GTS; inventory Δ +441",
+            "drops": {
+              "comparable_vins": 270,
+              "cuts": 86,
+              "cut_share": 0.319,
+              "median_cut_usd": 10000,
+              "raises": 6
+            },
+            "thin": false,
+            "top_variants": [
+              {
+                "key": "458_spider",
+                "label": "458 Spider",
+                "median_ask_delta": 32495,
+                "median_ask_pct": 6.22,
+                "count_delta": 6,
+                "median_ask": 554995,
+                "count": 40
+              },
+              {
+                "key": "F8_coupe",
+                "label": "F8 Coupe",
+                "median_ask_delta": 8784,
+                "median_ask_pct": 1.86,
+                "count_delta": -20,
+                "median_ask": 479996,
+                "count": 41
+              },
+              {
+                "key": "488_spider",
+                "label": "488 Spider",
+                "median_ask_delta": 5178,
+                "median_ask_pct": 1.25,
+                "count_delta": 26,
+                "median_ask": 418378,
+                "count": 142
+              },
+              {
+                "key": "458_coupe",
+                "label": "458 Coupe",
+                "median_ask_delta": 2352,
+                "median_ask_pct": 0.5,
+                "count_delta": -1,
+                "median_ask": 474900,
+                "count": 27
+              },
+              {
+                "key": "F8_spider",
+                "label": "F8 Spider",
+                "median_ask_delta": -1555,
+                "median_ask_pct": -0.24,
+                "count_delta": 22,
+                "median_ask": 657995,
+                "count": 101
+              }
+            ],
+            "families": {
+              "SF90": {
+                "count": 119,
+                "median_ask": 547394,
+                "median_ask_delta": null,
+                "median_ask_pct": null,
+                "variants": [
+                  "SF90 Coupe",
+                  "SF90 Spider"
+                ]
+              },
+              "296": {
+                "count": 115,
+                "median_ask": 379462,
+                "median_ask_delta": null,
+                "median_ask_pct": null,
+                "variants": [
+                  "296 Coupe",
+                  "296 Spider"
+                ]
+              },
+              "F8": {
+                "count": 142,
+                "median_ask": 568996,
+                "median_ask_delta": 3614,
+                "median_ask_pct": 0.81,
+                "variants": [
+                  "F8 Coupe",
+                  "F8 Spider"
+                ]
+              },
+              "488": {
+                "count": 219,
+                "median_ask": 379139,
+                "median_ask_delta": 2589,
+                "median_ask_pct": 0.62,
+                "variants": [
+                  "488 Coupe",
+                  "488 Spider"
+                ]
+              },
+              "458": {
+                "count": 67,
+                "median_ask": 514948,
+                "median_ask_delta": 17424,
+                "median_ask_pct": 3.36,
+                "variants": [
+                  "458 Coupe",
+                  "458 Spider"
+                ]
+              },
+              "F430": {
+                "count": 78,
+                "median_ask": 274601,
+                "median_ask_delta": null,
+                "median_ask_pct": null,
+                "variants": [
+                  "F430 Coupe",
+                  "F430 Spider"
+                ]
+              },
+              "classic": {
+                "count": 164,
+                "median_ask": 239995,
+                "median_ask_delta": null,
+                "median_ask_pct": null,
+                "variants": [
+                  "F430 Coupe",
+                  "F430 Spider",
+                  "360 Modena",
+                  "360 Spider",
+                  "355 Berlinetta",
+                  "355 GTS",
+                  "355 Spider",
+                  "348 TS",
+                  "348 Spider"
+                ]
+              }
+            }
+          },
+          "14d": {
+            "window": "14d",
+            "target_days": 14,
+            "as_of": "2026-09-14",
+            "prior_date": "2026-09-03",
+            "span_days": 11,
+            "count": 826,
+            "count_prior": 114,
+            "count_delta": 712,
+            "median_ask": 424900,
+            "median_ask_prior": 415750,
+            "median_ask_delta": 9150,
+            "median_ask_pct": 2.2,
+            "median_ask_lfl": 429900,
+            "median_ask_lfl_prior": 415750,
+            "median_ask_lfl_delta": 14150,
+            "median_ask_lfl_pct": 3.4,
+            "variant_pct_median": 3.31,
+            "overlap_variants": [
+              "488 Spider",
+              "488 Coupe",
+              "F8 Spider",
+              "F8 Coupe"
+            ],
+            "composition_note": "new variants: 296 Coupe, 296 Spider, 348 Spider, 348 TS, 355 Berlinetta, 355 GTS; inventory Δ +712",
+            "drops": {
+              "comparable_vins": 3,
+              "cuts": 2,
+              "cut_share": 0.667,
+              "median_cut_usd": 17752,
+              "raises": 0
+            },
+            "thin": false,
+            "top_variants": [
+              {
+                "key": "488_coupe",
+                "label": "488 Coupe",
+                "median_ask_delta": 16955,
+                "median_ask_pct": 5.25,
+                "count_delta": 45,
+                "median_ask": 339900,
+                "count": 77
+              },
+              {
+                "key": "488_spider",
+                "label": "488 Spider",
+                "median_ask_delta": 19508,
+                "median_ask_pct": 4.89,
+                "count_delta": 112,
+                "median_ask": 418378,
+                "count": 142
+              },
+              {
+                "key": "F8_coupe",
+                "label": "F8 Coupe",
+                "median_ask_delta": -9904,
+                "median_ask_pct": -2.02,
+                "count_delta": 4,
+                "median_ask": 479996,
+                "count": 41
+              },
+              {
+                "key": "F8_spider",
+                "label": "F8 Spider",
+                "median_ask_delta": 11214,
+                "median_ask_pct": 1.73,
+                "count_delta": 86,
+                "median_ask": 657995,
+                "count": 101
+              }
+            ],
+            "families": {
+              "SF90": {
+                "count": 119,
+                "median_ask": 547394,
+                "median_ask_delta": null,
+                "median_ask_pct": null,
+                "variants": [
+                  "SF90 Coupe",
+                  "SF90 Spider"
+                ]
+              },
+              "296": {
+                "count": 115,
+                "median_ask": 379462,
+                "median_ask_delta": null,
+                "median_ask_pct": null,
+                "variants": [
+                  "296 Coupe",
+                  "296 Spider"
+                ]
+              },
+              "F8": {
+                "count": 142,
+                "median_ask": 568996,
+                "median_ask_delta": 655,
+                "median_ask_pct": -0.15,
+                "variants": [
+                  "F8 Coupe",
+                  "F8 Spider"
+                ]
+              },
+              "488": {
+                "count": 219,
+                "median_ask": 379139,
+                "median_ask_delta": 18232,
+                "median_ask_pct": 5.07,
+                "variants": [
+                  "488 Coupe",
+                  "488 Spider"
+                ]
+              },
+              "458": {
+                "count": 67,
+                "median_ask": 514948,
+                "median_ask_delta": null,
+                "median_ask_pct": null,
+                "variants": [
+                  "458 Coupe",
+                  "458 Spider"
+                ]
+              },
+              "F430": {
+                "count": 78,
+                "median_ask": 274601,
+                "median_ask_delta": null,
+                "median_ask_pct": null,
+                "variants": [
+                  "F430 Coupe",
+                  "F430 Spider"
+                ]
+              },
+              "classic": {
+                "count": 164,
+                "median_ask": 239995,
+                "median_ask_delta": null,
+                "median_ask_pct": null,
+                "variants": [
+                  "F430 Coupe",
+                  "F430 Spider",
+                  "360 Modena",
+                  "360 Spider",
+                  "355 Berlinetta",
+                  "355 GTS",
+                  "355 Spider",
+                  "348 TS",
+                  "348 Spider"
+                ]
+              }
+            }
+          }
+        },
+        "auction_comps": [
+          {
+            "title": "No Reserve: 5k-Mile 2018 Ferrari 488 Spider",
+            "url": "https://bringatrailer.com/listing/2018-ferrari-488-spider-50/",
+            "bid": 207000,
+            "retail_median": 418378,
+            "gap_usd": -211378,
+            "gap_pct": -50.52,
+            "softness": "soft",
+            "no_reserve": true,
+            "location": "Manitowoc, Wisconsin, USA",
+            "canada_tariff_note": null,
+            "variant": "488 Spider",
+            "source": "Bring a Trailer"
+          },
+          {
+            "title": "2018 Ferrari 488 Spider | Avorio Historical Paint | 2,440 Miles",
+            "url": "https://live.dupontregistry.com/auction/2018-ferrari-488spideravoriohistoricalpaint2440miles-4075",
+            "bid": 306000,
+            "retail_median": 418378,
+            "gap_usd": -112378,
+            "gap_pct": -26.86,
+            "softness": "soft",
+            "no_reserve": true,
+            "location": "Lebanon, Tennessee, USA",
+            "canada_tariff_note": null,
+            "variant": "488 Spider",
+            "source": "duPont REGISTRY auctions"
+          },
+          {
+            "title": "15k-Mile 2007 Ferrari F430",
+            "url": "https://bringatrailer.com/listing/2007-ferrari-f430-91/",
+            "bid": 130430,
+            "retail_median": 276853,
+            "gap_usd": -146423,
+            "gap_pct": -52.89,
+            "softness": "soft",
+            "no_reserve": false,
+            "location": "Neptune, New Jersey, USA",
+            "canada_tariff_note": null,
+            "variant": "F430 Coupe",
+            "source": "Bring a Trailer"
+          }
+        ],
+        "thin_note": "Tracker history for Ferrari starts 2026-09-03; 30d/90d windows not available yet."
+      },
+      "history_callout": "Tracker history from 2026-09-03 — 30d/90d windows not ready yet.",
+      "social_hook": "Desk take on Ferrari: variant-median ask is edging up +0.9% over the last ~7 days.",
+      "reel_angle": "Argue that Ferrari is edging up on variant asks, with auction bids undershooting retail on 488 Spider — ~15s, one number, one example.",
+      "models": {
+        "SF90": {
+          "headline": "SF90 — baseline (no 7d history yet)",
+          "take_short": "Baseline · $547,394 · n=119 · Classic last-ask $564,999",
+          "metrics": {
+            "median_ask": 547394,
+            "median_ask_delta": null,
+            "median_ask_pct": null,
+            "count": 119,
+            "window": "7d",
+            "prior_date": "2026-09-07",
+            "as_of": "2026-09-14",
+            "baseline": true,
+            "retail_thin": true
+          },
+          "summary": "Ferrari SF90 retail median is $547,394 · n=119. First snapshot for this family — no prior Δ yet. Secondary: Classic last-ask (not retail scrape) $564,999 · n=9 · ~7d.",
+          "classic": {
+            "source": "Classic.com",
+            "disclaimer": "Classic.com market cards — not our daily retail ask scrape",
+            "primary_window": "7d",
+            "windows": {
+              "7d": {
+                "last_ask_median": 564999,
+                "last_ask_n": 9,
+                "sold_median": null,
+                "sold_n": 0,
+                "geo": "US/CA",
+                "label_last_ask": "Classic last-ask (not retail scrape)",
+                "label_sold": "Classic sold"
+              },
+              "14d": {
+                "last_ask_median": 589598,
+                "last_ask_n": 25,
+                "sold_median": null,
+                "sold_n": 0,
+                "geo": "US/CA",
+                "label_last_ask": "Classic last-ask (not retail scrape)",
+                "label_sold": "Classic sold"
+              },
+              "30d": {
+                "last_ask_median": 569770,
+                "last_ask_n": 47,
+                "sold_median": 440000,
+                "sold_n": 3,
+                "geo": "US/CA",
+                "label_last_ask": "Classic last-ask (not retail scrape)",
+                "label_sold": "Classic sold"
+              }
+            },
+            "last_ask_median": 564999,
+            "last_ask_n": 9,
+            "sold_median": null,
+            "sold_n": 0
+          }
+        },
+        "296": {
+          "headline": "296 — baseline (no 7d history yet)",
+          "take_short": "Baseline · $379,462 · n=115 · Classic last-ask $346,935",
+          "metrics": {
+            "median_ask": 379462,
+            "median_ask_delta": null,
+            "median_ask_pct": null,
+            "count": 115,
+            "window": "7d",
+            "prior_date": "2026-09-07",
+            "as_of": "2026-09-14",
+            "baseline": true,
+            "retail_thin": true
+          },
+          "summary": "Ferrari 296 retail median is $379,462 · n=115. First snapshot for this family — no prior Δ yet. Secondary: Classic last-ask (not retail scrape) $346,935 · n=14 · ~7d · Classic sold $350,000 · n=1 · ~7d.",
+          "classic": {
+            "source": "Classic.com",
+            "disclaimer": "Classic.com market cards — not our daily retail ask scrape",
+            "primary_window": "7d",
+            "windows": {
+              "7d": {
+                "last_ask_median": 346935,
+                "last_ask_n": 14,
+                "sold_median": 350000,
+                "sold_n": 1,
+                "geo": "US/CA",
+                "label_last_ask": "Classic last-ask (not retail scrape)",
+                "label_sold": "Classic sold"
+              },
+              "14d": {
+                "last_ask_median": 374766,
+                "last_ask_n": 32,
+                "sold_median": 350000,
+                "sold_n": 1,
+                "geo": "US/CA",
+                "label_last_ask": "Classic last-ask (not retail scrape)",
+                "label_sold": "Classic sold"
+              },
+              "30d": {
+                "last_ask_median": 374999,
+                "last_ask_n": 75,
+                "sold_median": 350000,
+                "sold_n": 1,
+                "geo": "US/CA",
+                "label_last_ask": "Classic last-ask (not retail scrape)",
+                "label_sold": "Classic sold"
+              }
+            },
+            "last_ask_median": 346935,
+            "last_ask_n": 14,
+            "sold_median": 350000,
+            "sold_n": 1
+          }
+        },
+        "F8": {
+          "headline": "F8 edging up",
+          "take_short": "+0.8% · $568,996 · n=142",
+          "metrics": {
+            "median_ask": 568996,
+            "median_ask_delta": 3614,
+            "median_ask_pct": 0.81,
+            "count": 142,
+            "window": "7d",
+            "prior_date": "2026-09-07",
+            "as_of": "2026-09-14",
+            "baseline": false,
+            "retail_thin": false
+          },
+          "summary": "Ferrari F8 retail median is $568,996 (+$3,614 / +0.8% vs 2026-09-07). Inventory in family: 142. Secondary: Classic last-ask (not retail scrape) $479,900 · n=3 · ~14d · Classic sold $640,000 · n=1 · ~14d.",
+          "classic": {
+            "source": "Classic.com",
+            "disclaimer": "Classic.com market cards — not our daily retail ask scrape",
+            "primary_window": "14d",
+            "windows": {
+              "14d": {
+                "last_ask_median": 479900,
+                "last_ask_n": 3,
+                "sold_median": 640000,
+                "sold_n": 1,
+                "geo": "US/CA",
+                "label_last_ask": "Classic last-ask (not retail scrape)",
+                "label_sold": "Classic sold"
+              },
+              "30d": {
+                "last_ask_median": 641689,
+                "last_ask_n": 17,
+                "sold_median": 616000,
+                "sold_n": 3,
+                "geo": "US/CA",
+                "label_last_ask": "Classic last-ask (not retail scrape)",
+                "label_sold": "Classic sold"
+              }
+            },
+            "last_ask_median": 479900,
+            "last_ask_n": 3,
+            "sold_median": 640000,
+            "sold_n": 1
+          }
+        },
+        "488": {
+          "headline": "488 edging up",
+          "take_short": "+0.6% · $379,139 · n=219",
+          "metrics": {
+            "median_ask": 379139,
+            "median_ask_delta": 2589,
+            "median_ask_pct": 0.62,
+            "count": 219,
+            "window": "7d",
+            "prior_date": "2026-09-07",
+            "as_of": "2026-09-14",
+            "baseline": false,
+            "retail_thin": false
+          },
+          "summary": "Ferrari 488 retail median is $379,139 (+$2,589 / +0.6% vs 2026-09-07). Inventory in family: 219. Secondary: Classic last-ask (not retail scrape) $377,500 · n=1 · ~7d.",
+          "classic": {
+            "source": "Classic.com",
+            "disclaimer": "Classic.com market cards — not our daily retail ask scrape",
+            "primary_window": "7d",
+            "windows": {
+              "7d": {
+                "last_ask_median": 377500,
+                "last_ask_n": 1,
+                "sold_median": null,
+                "sold_n": 0,
+                "geo": "US/CA",
+                "label_last_ask": "Classic last-ask (not retail scrape)",
+                "label_sold": "Classic sold"
+              },
+              "14d": {
+                "last_ask_median": 345446,
+                "last_ask_n": 6,
+                "sold_median": 428000,
+                "sold_n": 3,
+                "geo": "US/CA",
+                "label_last_ask": "Classic last-ask (not retail scrape)",
+                "label_sold": "Classic sold"
+              },
+              "30d": {
+                "last_ask_median": 369900,
+                "last_ask_n": 31,
+                "sold_median": 405000,
+                "sold_n": 7,
+                "geo": "US/CA",
+                "label_last_ask": "Classic last-ask (not retail scrape)",
+                "label_sold": "Classic sold"
+              }
+            },
+            "last_ask_median": 377500,
+            "last_ask_n": 1,
+            "sold_median": null,
+            "sold_n": 0
+          }
+        },
+        "458": {
+          "headline": "458 firming",
+          "take_short": "+3.4% · $514,948 · n=67",
+          "metrics": {
+            "median_ask": 514948,
+            "median_ask_delta": 17424,
+            "median_ask_pct": 3.36,
+            "count": 67,
+            "window": "7d",
+            "prior_date": "2026-09-07",
+            "as_of": "2026-09-14",
+            "baseline": false,
+            "retail_thin": false
+          },
+          "summary": "Ferrari 458 retail median is $514,948 (+$17,424 / +3.4% vs 2026-09-07). Inventory in family: 67. Secondary: Classic last-ask (not retail scrape) $548,366 · n=4 · ~14d · Classic sold $500,000 · n=1 · ~14d.",
+          "classic": {
+            "source": "Classic.com",
+            "disclaimer": "Classic.com market cards — not our daily retail ask scrape",
+            "primary_window": "14d",
+            "windows": {
+              "14d": {
+                "last_ask_median": 548366,
+                "last_ask_n": 4,
+                "sold_median": 500000,
+                "sold_n": 1,
+                "geo": "US/CA",
+                "label_last_ask": "Classic last-ask (not retail scrape)",
+                "label_sold": "Classic sold"
+              },
+              "30d": {
+                "last_ask_median": 499995,
+                "last_ask_n": 12,
+                "sold_median": 500500,
+                "sold_n": 8,
+                "geo": "US/CA",
+                "label_last_ask": "Classic last-ask (not retail scrape)",
+                "label_sold": "Classic sold"
+              }
+            },
+            "last_ask_median": 548366,
+            "last_ask_n": 4,
+            "sold_median": 500000,
+            "sold_n": 1
+          }
+        },
+        "F430": {
+          "headline": "F430 — baseline (no 7d history yet)",
+          "take_short": "Baseline · $274,601 · n=78",
+          "metrics": {
+            "median_ask": 274601,
+            "median_ask_delta": null,
+            "median_ask_pct": null,
+            "count": 78,
+            "window": "7d",
+            "prior_date": "2026-09-07",
+            "as_of": "2026-09-14",
+            "baseline": true,
+            "retail_thin": true
+          },
+          "summary": "Ferrari F430 retail median is $274,601 · n=78. First snapshot for this family — no prior Δ yet.",
+          "classic": null
+        },
+        "classic": {
+          "headline": "classic — baseline (no 7d history yet)",
+          "take_short": "Baseline · $239,995 · n=164",
+          "metrics": {
+            "median_ask": 239995,
+            "median_ask_delta": null,
+            "median_ask_pct": null,
+            "count": 164,
+            "window": "7d",
+            "prior_date": "2026-09-07",
+            "as_of": "2026-09-14",
+            "baseline": true,
+            "retail_thin": true
+          },
+          "summary": "Ferrari classic retail median is $239,995 · n=164. First snapshot for this family — no prior Δ yet.",
+          "classic": null
+        }
+      },
+      "examples": [
+        {
+          "title": "2024 Ferrari 296 GTS",
+          "ask": 384995,
+          "miles": 191,
+          "variant": "296 Spider",
+          "url": "https://www.classic.com/veh/2024-ferrari-296-gts-zff01sma9r0304258-nwXmDyW/"
+        },
+        {
+          "title": "2023 Ferrari 296 GTS",
+          "ask": 369970,
+          "miles": 230,
+          "variant": "296 Spider",
+          "url": "https://www.classic.com/veh/2023-ferrari-296-gts-zff01sma2p0298350-nwOMZKn/"
+        }
+      ],
+      "windows_available": [
+        "7d",
+        "14d"
+      ]
+    },
+    "mclaren": {
+      "brand": "McLaren",
+      "brand_key": "mclaren",
+      "headline": "McLaren edging down: -0.6% variant-median ask · 7d",
+      "summary": "As of 2026-09-14, McLaren US/Canada tracked inventory sits at 131 cars (Δ +66 vs 2026-09-07). Variant-median ask -0.6% over ~7d (LFL $299,900, $-93,102 / -23.7%).",
+      "take_short": "-0.6% · 131 cars · 7d",
+      "bullets": [
+        "Variant-median ask move: -0.6% (LFL pool -23.7%) [2026-09-07→2026-09-14]",
+        "675LT: median ask +$974 (+2.1%) · n=4 [2026-09-07→2026-09-14]",
+        "765LT: median ask $-16,530 (-1.9%) · n=26 [2026-09-07→2026-09-14]",
+        "600LT: median ask +$206 (+0.1%) · n=33 [2026-09-07→2026-09-14]",
+        "Same-VIN cuts: 18/50 (36%) over 7d; median cut $3,966",
+        "Inventory: 131 listings (+66 vs 2026-09-07)",
+        "Mix: new variants: Artura Coupe, Artura Spider; inventory Δ +66",
+        "Example: Artura Spider @ $249,997 / 1,570 mi"
+      ],
+      "metrics": {
+        "as_of": "2026-09-14",
+        "history_start": "2026-09-06",
+        "history_days": 8,
+        "snapshot_count": 9,
+        "by_window": {
+          "7d": {
+            "window": "7d",
+            "target_days": 7,
+            "as_of": "2026-09-14",
+            "prior_date": "2026-09-07",
+            "span_days": 7,
+            "count": 131,
+            "count_prior": 65,
+            "count_delta": 66,
+            "median_ask": 249995,
+            "median_ask_prior": 393002,
+            "median_ask_delta": -143007,
+            "median_ask_pct": -36.39,
+            "median_ask_lfl": 299900,
+            "median_ask_lfl_prior": 393002,
+            "median_ask_lfl_delta": -93102,
+            "median_ask_lfl_pct": -23.69,
+            "variant_pct_median": -0.55,
+            "overlap_variants": [
+              "600LT Coupe",
+              "765LT Coupe",
+              "675LT Coupe",
+              "765LT Spider",
+              "600LT Spider",
+              "675LT Spider"
+            ],
+            "composition_note": "new variants: Artura Coupe, Artura Spider; inventory Δ +66",
+            "drops": {
+              "comparable_vins": 50,
+              "cuts": 18,
+              "cut_share": 0.36,
+              "median_cut_usd": 3966,
+              "raises": 3
+            },
+            "thin": false,
+            "top_variants": [
+              {
+                "key": "675LT_spider",
+                "label": "675LT Spider",
+                "median_ask_delta": 72799,
+                "median_ask_pct": 19.44,
+                "count_delta": 1,
+                "median_ask": 447192,
+                "count": 2
+              },
+              {
+                "key": "675LT_coupe",
+                "label": "675LT Coupe",
+                "median_ask_delta": -70852,
+                "median_ask_pct": -15.21,
+                "count_delta": -3,
+                "median_ask": 394948,
+                "count": 2
+              },
+              {
+                "key": "765LT_spider",
+                "label": "765LT Spider",
+                "median_ask_delta": -25578,
+                "median_ask_pct": -2.87,
+                "count_delta": -2,
+                "median_ask": 864700,
+                "count": 10
+              },
+              {
+                "key": "765LT_coupe",
+                "label": "765LT Coupe",
+                "median_ask_delta": -7481,
+                "median_ask_pct": -1.02,
+                "count_delta": -2,
+                "median_ask": 724975,
+                "count": 16
+              },
+              {
+                "key": "600LT_spider",
+                "label": "600LT Spider",
+                "median_ask_delta": 612,
+                "median_ask_pct": 0.24,
+                "count_delta": 3,
+                "median_ask": 259498,
+                "count": 13
+              }
+            ],
+            "families": {
+              "600LT": {
+                "count": 33,
+                "median_ask": 249896,
+                "median_ask_delta": 206,
+                "median_ask_pct": 0.08,
+                "variants": [
+                  "600LT Coupe",
+                  "600LT Spider"
+                ]
+              },
+              "675LT": {
+                "count": 4,
+                "median_ask": 421070,
+                "median_ask_delta": 974,
+                "median_ask_pct": 2.12,
+                "variants": [
+                  "675LT Coupe",
+                  "675LT Spider"
+                ]
+              },
+              "765LT": {
+                "count": 26,
+                "median_ask": 794838,
+                "median_ask_delta": -16530,
+                "median_ask_pct": -1.95,
+                "variants": [
+                  "765LT Coupe",
+                  "765LT Spider"
+                ]
+              },
+              "Artura": {
+                "count": 68,
+                "median_ask": 235122,
+                "median_ask_delta": null,
+                "median_ask_pct": null,
+                "variants": [
+                  "Artura Coupe",
+                  "Artura Spider"
+                ]
+              }
+            }
+          }
+        },
+        "auction_comps": [],
+        "thin_note": "Tracker history for McLaren starts 2026-09-06; 30d/90d windows not available yet."
+      },
+      "history_callout": "Tracker history from 2026-09-06 — 30d/90d windows not ready yet.",
+      "social_hook": "Desk take on McLaren: variant-median ask is edging down -0.6% over the last ~7 days.",
+      "reel_angle": "Argue that McLaren is edging down on variant asks, watching same-VIN cut rate — ~15s, one number, one example.",
+      "models": {
+        "600LT": {
+          "headline": "600LT flat",
+          "take_short": "+0.1% · $249,896 · n=33",
+          "metrics": {
+            "median_ask": 249896,
+            "median_ask_delta": 206,
+            "median_ask_pct": 0.08,
+            "count": 33,
+            "window": "7d",
+            "prior_date": "2026-09-07",
+            "as_of": "2026-09-14",
+            "baseline": false,
+            "retail_thin": false
+          },
+          "summary": "McLaren 600LT retail median is $249,896 (+$206 / +0.1% vs 2026-09-07). Inventory in family: 33. Secondary: Classic last-ask (not retail scrape) $289,999 · n=1 · ~7d.",
+          "classic": {
+            "source": "Classic.com",
+            "disclaimer": "Classic.com market cards — not our daily retail ask scrape",
+            "primary_window": "7d",
+            "windows": {
+              "7d": {
+                "last_ask_median": 289999,
+                "last_ask_n": 1,
+                "sold_median": null,
+                "sold_n": 0,
+                "geo": "US/CA",
+                "label_last_ask": "Classic last-ask (not retail scrape)",
+                "label_sold": "Classic sold"
+              },
+              "14d": {
+                "last_ask_median": 289999,
+                "last_ask_n": 5,
+                "sold_median": null,
+                "sold_n": 0,
+                "geo": "US/CA",
+                "label_last_ask": "Classic last-ask (not retail scrape)",
+                "label_sold": "Classic sold"
+              },
+              "30d": {
+                "last_ask_median": 244900,
+                "last_ask_n": 11,
+                "sold_median": null,
+                "sold_n": 0,
+                "geo": "US/CA",
+                "label_last_ask": "Classic last-ask (not retail scrape)",
+                "label_sold": "Classic sold"
+              }
+            },
+            "last_ask_median": 289999,
+            "last_ask_n": 1,
+            "sold_median": null,
+            "sold_n": 0
+          }
+        },
+        "675LT": {
+          "headline": "675LT firming",
+          "take_short": "+2.1% · $421,070 · n=4",
+          "metrics": {
+            "median_ask": 421070,
+            "median_ask_delta": 974,
+            "median_ask_pct": 2.12,
+            "count": 4,
+            "window": "7d",
+            "prior_date": "2026-09-07",
+            "as_of": "2026-09-14",
+            "baseline": false,
+            "retail_thin": false
+          },
+          "summary": "McLaren 675LT retail median is $421,070 (+$974 / +2.1% vs 2026-09-07). Inventory in family: 4. Secondary: Classic last-ask (not retail scrape) $359,944 · n=2 · ~30d.",
+          "classic": {
+            "source": "Classic.com",
+            "disclaimer": "Classic.com market cards — not our daily retail ask scrape",
+            "primary_window": "30d",
+            "windows": {
+              "30d": {
+                "last_ask_median": 359944,
+                "last_ask_n": 2,
+                "sold_median": null,
+                "sold_n": 0,
+                "geo": "US/CA",
+                "label_last_ask": "Classic last-ask (not retail scrape)",
+                "label_sold": "Classic sold"
+              }
+            },
+            "last_ask_median": 359944,
+            "last_ask_n": 2,
+            "sold_median": null,
+            "sold_n": 0
+          }
+        },
+        "765LT": {
+          "headline": "765LT edging down",
+          "take_short": "-1.9% · $794,838 · n=26",
+          "metrics": {
+            "median_ask": 794838,
+            "median_ask_delta": -16530,
+            "median_ask_pct": -1.95,
+            "count": 26,
+            "window": "7d",
+            "prior_date": "2026-09-07",
+            "as_of": "2026-09-14",
+            "baseline": false,
+            "retail_thin": false
+          },
+          "summary": "McLaren 765LT retail median is $794,838 ($-16,530 / -1.9% vs 2026-09-07). Inventory in family: 26. Secondary: Classic last-ask (not retail scrape) $779,182 · n=4 · ~30d · Classic sold $775,000 · n=1 · ~30d.",
+          "classic": {
+            "source": "Classic.com",
+            "disclaimer": "Classic.com market cards — not our daily retail ask scrape",
+            "primary_window": "30d",
+            "windows": {
+              "30d": {
+                "last_ask_median": 779182,
+                "last_ask_n": 4,
+                "sold_median": 775000,
+                "sold_n": 1,
+                "geo": "US/CA",
+                "label_last_ask": "Classic last-ask (not retail scrape)",
+                "label_sold": "Classic sold"
+              }
+            },
+            "last_ask_median": 779182,
+            "last_ask_n": 4,
+            "sold_median": 775000,
+            "sold_n": 1
+          }
+        },
+        "Artura": {
+          "headline": "Artura — baseline (no 7d history yet)",
+          "take_short": "Baseline · $235,122 · n=68 · Classic last-ask $179,900",
+          "metrics": {
+            "median_ask": 235122,
+            "median_ask_delta": null,
+            "median_ask_pct": null,
+            "count": 68,
+            "window": "7d",
+            "prior_date": "2026-09-07",
+            "as_of": "2026-09-14",
+            "baseline": true,
+            "retail_thin": true
+          },
+          "summary": "McLaren Artura retail median is $235,122 · n=68. First snapshot for this family — no prior Δ yet. Secondary: Classic last-ask (not retail scrape) $179,900 · n=1 · ~7d.",
+          "classic": {
+            "source": "Classic.com",
+            "disclaimer": "Classic.com market cards — not our daily retail ask scrape",
+            "primary_window": "7d",
+            "windows": {
+              "7d": {
+                "last_ask_median": 179900,
+                "last_ask_n": 1,
+                "sold_median": null,
+                "sold_n": 0,
+                "geo": "US/CA",
+                "label_last_ask": "Classic last-ask (not retail scrape)",
+                "label_sold": "Classic sold"
+              },
+              "14d": {
+                "last_ask_median": 179900,
+                "last_ask_n": 3,
+                "sold_median": null,
+                "sold_n": 0,
+                "geo": "US/CA",
+                "label_last_ask": "Classic last-ask (not retail scrape)",
+                "label_sold": "Classic sold"
+              },
+              "30d": {
+                "last_ask_median": 210000,
+                "last_ask_n": 9,
+                "sold_median": 203300,
+                "sold_n": 3,
+                "geo": "US/CA",
+                "label_last_ask": "Classic last-ask (not retail scrape)",
+                "label_sold": "Classic sold"
+              }
+            },
+            "last_ask_median": 179900,
+            "last_ask_n": 1,
+            "sold_median": null,
+            "sold_n": 0
+          }
+        }
+      },
+      "examples": [
+        {
+          "title": "2025 McLaren Artura Spider",
+          "ask": 249997,
+          "miles": 1570,
+          "variant": "Artura Spider",
+          "url": "https://www.dupontregistry.com/car/mclaren/artura--spider/2025/SBM16BEAXSW003320/612007"
+        },
+        {
+          "title": "2025 McLaren Artura Spider",
+          "ask": 249991,
+          "miles": 2359,
+          "variant": "Artura Spider",
+          "url": "https://www.dupontregistry.com/car/mclaren/artura--spider/2025/SBM16BEA4SW003300/614662"
+        }
+      ],
+      "windows_available": [
+        "7d"
+      ]
+    },
+    "lamborghini": {
+      "brand": "Lamborghini",
+      "brand_key": "lamborghini",
+      "headline": "Lamborghini softening: -4.2% variant-median ask · 7d",
+      "summary": "As of 2026-09-14, Lamborghini US/Canada tracked inventory sits at 332 cars (Δ +277 vs 2026-09-07). Variant-median ask -4.2% over ~7d (LFL $443,032, $-6,921 / -1.5%).",
+      "take_short": "-4.2% · 332 cars · 7d",
+      "bullets": [
+        "Variant-median ask move: -4.2% (LFL pool -1.5%) [2026-09-07→2026-09-14]",
+        "Performante: median ask $-19,200 (-4.8%) · n=33 [2026-09-07→2026-09-14]",
+        "STO: median ask +$9,921 (+2.0%) · n=27 [2026-09-07→2026-09-14]",
+        "Same-VIN cuts: 7/35 (20%) over 7d; median cut $700",
+        "Inventory: 332 listings (+277 vs 2026-09-07)",
+        "Mix: new variants: Gallardo Coupe, Gallardo Spider, Murcielago Coupe, Murcielago Spider, Revuelto Coupe, SVJ Coupe; inventory Δ +277",
+        "Example: Temerario Coupe @ $410,975 / 781 mi"
+      ],
+      "metrics": {
+        "as_of": "2026-09-14",
+        "history_start": "2026-09-07",
+        "history_days": 7,
+        "snapshot_count": 8,
+        "by_window": {
+          "7d": {
+            "window": "7d",
+            "target_days": 7,
+            "as_of": "2026-09-14",
+            "prior_date": "2026-09-07",
+            "span_days": 7,
+            "count": 332,
+            "count_prior": 55,
+            "count_delta": 277,
+            "median_ask": 532000,
+            "median_ask_prior": 449953,
+            "median_ask_delta": 82047,
+            "median_ask_pct": 18.23,
+            "median_ask_lfl": 443032,
+            "median_ask_lfl_prior": 449953,
+            "median_ask_lfl_delta": -6921,
+            "median_ask_lfl_pct": -1.54,
+            "variant_pct_median": -4.23,
+            "overlap_variants": [
+              "Performante Coupe",
+              "Performante Spider",
+              "STO Coupe"
+            ],
+            "composition_note": "new variants: Gallardo Coupe, Gallardo Spider, Murcielago Coupe, Murcielago Spider, Revuelto Coupe, SVJ Coupe; inventory Δ +277",
+            "drops": {
+              "comparable_vins": 35,
+              "cuts": 7,
+              "cut_share": 0.2,
+              "median_cut_usd": 700,
+              "raises": 4
+            },
+            "thin": false,
+            "top_variants": [
+              {
+                "key": "Performante_spider",
+                "label": "Performante Spider",
+                "median_ask_delta": -21999,
+                "median_ask_pct": -5.41,
+                "count_delta": 3,
+                "median_ask": 384500,
+                "count": 7
+              },
+              {
+                "key": "Performante_coupe",
+                "label": "Performante Coupe",
+                "median_ask_delta": -16402,
+                "median_ask_pct": -4.23,
+                "count_delta": 3,
+                "median_ask": 371350,
+                "count": 26
+              },
+              {
+                "key": "STO_coupe",
+                "label": "STO Coupe",
+                "median_ask_delta": 9921,
+                "median_ask_pct": 2.02,
+                "count_delta": -1,
+                "median_ask": 499912,
+                "count": 27
+              }
+            ],
+            "families": {
+              "STO": {
+                "count": 27,
+                "median_ask": 499912,
+                "median_ask_delta": 9921,
+                "median_ask_pct": 2.02,
+                "variants": [
+                  "STO Coupe"
+                ]
+              },
+              "Performante": {
+                "count": 33,
+                "median_ask": 377925,
+                "median_ask_delta": -19200,
+                "median_ask_pct": -4.82,
+                "variants": [
+                  "Performante Coupe",
+                  "Performante Spider"
+                ]
+              },
+              "SV": {
+                "count": 32,
+                "median_ask": 937933,
+                "median_ask_delta": null,
+                "median_ask_pct": null,
+                "variants": [
+                  "SV Coupe",
+                  "SV Spider"
+                ]
+              },
+              "SVJ": {
+                "count": 35,
+                "median_ask": 1532674,
+                "median_ask_delta": null,
+                "median_ask_pct": null,
+                "variants": [
+                  "SVJ Coupe",
+                  "SVJ Spider"
+                ]
+              },
+              "Murcielago": {
+                "count": 40,
+                "median_ask": 643372,
+                "median_ask_delta": null,
+                "median_ask_pct": null,
+                "variants": [
+                  "Murcielago Coupe",
+                  "Murcielago Spider"
+                ]
+              },
+              "Gallardo": {
+                "count": 70,
+                "median_ask": 151594,
+                "median_ask_delta": null,
+                "median_ask_pct": null,
+                "variants": [
+                  "Gallardo Coupe",
+                  "Gallardo Spider"
+                ]
+              },
+              "Temerario": {
+                "count": 30,
+                "median_ask": 456018,
+                "median_ask_delta": null,
+                "median_ask_pct": null,
+                "variants": [
+                  "Temerario Coupe"
+                ]
+              },
+              "Revuelto": {
+                "count": 65,
+                "median_ask": 689900,
+                "median_ask_delta": null,
+                "median_ask_pct": null,
+                "variants": [
+                  "Revuelto Coupe"
+                ]
+              }
+            }
+          }
+        },
+        "auction_comps": [],
+        "thin_note": "Tracker history for Lamborghini starts 2026-09-07; 30d/90d windows not available yet."
+      },
+      "history_callout": "Tracker history from 2026-09-07 — 30d/90d windows not ready yet.",
+      "social_hook": "Desk take on Lamborghini: variant-median ask is softening -4.2% over the last ~7 days.",
+      "reel_angle": "Argue that Lamborghini is softening on variant asks, watching same-VIN cut rate — ~15s, one number, one example.",
+      "models": {
+        "STO": {
+          "headline": "STO firming",
+          "take_short": "+2.0% · $499,912 · n=27",
+          "metrics": {
+            "median_ask": 499912,
+            "median_ask_delta": 9921,
+            "median_ask_pct": 2.02,
+            "count": 27,
+            "window": "7d",
+            "prior_date": "2026-09-07",
+            "as_of": "2026-09-14",
+            "baseline": false,
+            "retail_thin": false
+          },
+          "summary": "Lamborghini STO retail median is $499,912 (+$9,921 / +2.0% vs 2026-09-07). Inventory in family: 27. Secondary: Classic last-ask (not retail scrape) $539,970 · n=2 · ~14d.",
+          "classic": {
+            "source": "Classic.com",
+            "disclaimer": "Classic.com market cards — not our daily retail ask scrape",
+            "primary_window": "14d",
+            "windows": {
+              "14d": {
+                "last_ask_median": 539970,
+                "last_ask_n": 2,
+                "sold_median": null,
+                "sold_n": 0,
+                "geo": "US/CA",
+                "label_last_ask": "Classic last-ask (not retail scrape)",
+                "label_sold": "Classic sold"
+              },
+              "30d": {
+                "last_ask_median": 489975,
+                "last_ask_n": 8,
+                "sold_median": null,
+                "sold_n": 0,
+                "geo": "US/CA",
+                "label_last_ask": "Classic last-ask (not retail scrape)",
+                "label_sold": "Classic sold"
+              }
+            },
+            "last_ask_median": 539970,
+            "last_ask_n": 2,
+            "sold_median": null,
+            "sold_n": 0
+          }
+        },
+        "Performante": {
+          "headline": "Performante softening",
+          "take_short": "-4.8% · $377,925 · n=33",
+          "metrics": {
+            "median_ask": 377925,
+            "median_ask_delta": -19200,
+            "median_ask_pct": -4.82,
+            "count": 33,
+            "window": "7d",
+            "prior_date": "2026-09-07",
+            "as_of": "2026-09-14",
+            "baseline": false,
+            "retail_thin": false
+          },
+          "summary": "Lamborghini Performante retail median is $377,925 ($-19,200 / -4.8% vs 2026-09-07). Inventory in family: 33. Secondary: Classic sold $373,000 · n=1 · ~14d.",
+          "classic": {
+            "source": "Classic.com",
+            "disclaimer": "Classic.com market cards — not our daily retail ask scrape",
+            "primary_window": "14d",
+            "windows": {
+              "14d": {
+                "last_ask_median": null,
+                "last_ask_n": 0,
+                "sold_median": 373000,
+                "sold_n": 1,
+                "geo": "US/CA",
+                "label_last_ask": "Classic last-ask (not retail scrape)",
+                "label_sold": "Classic sold"
+              },
+              "30d": {
+                "last_ask_median": null,
+                "last_ask_n": 0,
+                "sold_median": 351000,
+                "sold_n": 2,
+                "geo": "US/CA",
+                "label_last_ask": "Classic last-ask (not retail scrape)",
+                "label_sold": "Classic sold"
+              }
+            },
+            "last_ask_median": null,
+            "last_ask_n": 0,
+            "sold_median": 373000,
+            "sold_n": 1
+          }
+        },
+        "SV": {
+          "headline": "SV — baseline (no 7d history yet)",
+          "take_short": "Baseline · $937,933 · n=32 · Classic last-ask $901,190",
+          "metrics": {
+            "median_ask": 937933,
+            "median_ask_delta": null,
+            "median_ask_pct": null,
+            "count": 32,
+            "window": "7d",
+            "prior_date": "2026-09-07",
+            "as_of": "2026-09-14",
+            "baseline": true,
+            "retail_thin": true
+          },
+          "summary": "Lamborghini SV retail median is $937,933 · n=32. First snapshot for this family — no prior Δ yet. Secondary: Classic last-ask (not retail scrape) $901,190 · n=1 · ~14d.",
+          "classic": {
+            "source": "Classic.com",
+            "disclaimer": "Classic.com market cards — not our daily retail ask scrape",
+            "primary_window": "14d",
+            "windows": {
+              "14d": {
+                "last_ask_median": 901190,
+                "last_ask_n": 1,
+                "sold_median": null,
+                "sold_n": 0,
+                "geo": "US/CA",
+                "label_last_ask": "Classic last-ask (not retail scrape)",
+                "label_sold": "Classic sold"
+              },
+              "30d": {
+                "last_ask_median": 800095,
+                "last_ask_n": 2,
+                "sold_median": null,
+                "sold_n": 0,
+                "geo": "US/CA",
+                "label_last_ask": "Classic last-ask (not retail scrape)",
+                "label_sold": "Classic sold"
+              }
+            },
+            "last_ask_median": 901190,
+            "last_ask_n": 1,
+            "sold_median": null,
+            "sold_n": 0
+          }
+        },
+        "SVJ": {
+          "headline": "SVJ — baseline (no 7d history yet)",
+          "take_short": "Baseline · $1,532,674 · n=35 · Classic last-ask $1,168,166",
+          "metrics": {
+            "median_ask": 1532674,
+            "median_ask_delta": null,
+            "median_ask_pct": null,
+            "count": 35,
+            "window": "7d",
+            "prior_date": "2026-09-07",
+            "as_of": "2026-09-14",
+            "baseline": true,
+            "retail_thin": true
+          },
+          "summary": "Lamborghini SVJ retail median is $1,532,674 · n=35. First snapshot for this family — no prior Δ yet. Secondary: Classic last-ask (not retail scrape) $1,168,166 · n=2 · ~7d · Classic sold $1,550,000 · n=1 · ~7d.",
+          "classic": {
+            "source": "Classic.com",
+            "disclaimer": "Classic.com market cards — not our daily retail ask scrape",
+            "primary_window": "7d",
+            "windows": {
+              "7d": {
+                "last_ask_median": 1168166,
+                "last_ask_n": 2,
+                "sold_median": 1550000,
+                "sold_n": 1,
+                "geo": "US/CA",
+                "label_last_ask": "Classic last-ask (not retail scrape)",
+                "label_sold": "Classic sold"
+              },
+              "14d": {
+                "last_ask_median": 1194995,
+                "last_ask_n": 3,
+                "sold_median": 1550000,
+                "sold_n": 1,
+                "geo": "US/CA",
+                "label_last_ask": "Classic last-ask (not retail scrape)",
+                "label_sold": "Classic sold"
+              },
+              "30d": {
+                "last_ask_median": 1237610,
+                "last_ask_n": 6,
+                "sold_median": 1550000,
+                "sold_n": 1,
+                "geo": "US/CA",
+                "label_last_ask": "Classic last-ask (not retail scrape)",
+                "label_sold": "Classic sold"
+              }
+            },
+            "last_ask_median": 1168166,
+            "last_ask_n": 2,
+            "sold_median": 1550000,
+            "sold_n": 1
+          }
+        },
+        "Murcielago": {
+          "headline": "Murcielago — baseline (no 7d history yet)",
+          "take_short": "Baseline · $643,372 · n=40 · Classic last-ask $738,773",
+          "metrics": {
+            "median_ask": 643372,
+            "median_ask_delta": null,
+            "median_ask_pct": null,
+            "count": 40,
+            "window": "7d",
+            "prior_date": "2026-09-07",
+            "as_of": "2026-09-14",
+            "baseline": true,
+            "retail_thin": true
+          },
+          "summary": "Lamborghini Murcielago retail median is $643,372 · n=40. First snapshot for this family — no prior Δ yet. Secondary: Classic last-ask (not retail scrape) $738,773 · n=1 · ~7d.",
+          "classic": {
+            "source": "Classic.com",
+            "disclaimer": "Classic.com market cards — not our daily retail ask scrape",
+            "primary_window": "7d",
+            "windows": {
+              "7d": {
+                "last_ask_median": 738773,
+                "last_ask_n": 1,
+                "sold_median": null,
+                "sold_n": 0,
+                "geo": "US/CA",
+                "label_last_ask": "Classic last-ask (not retail scrape)",
+                "label_sold": "Classic sold"
+              },
+              "14d": {
+                "last_ask_median": 738773,
+                "last_ask_n": 1,
+                "sold_median": null,
+                "sold_n": 0,
+                "geo": "US/CA",
+                "label_last_ask": "Classic last-ask (not retail scrape)",
+                "label_sold": "Classic sold"
+              },
+              "30d": {
+                "last_ask_median": 769386,
+                "last_ask_n": 2,
+                "sold_median": 701000,
+                "sold_n": 5,
+                "geo": "US/CA",
+                "label_last_ask": "Classic last-ask (not retail scrape)",
+                "label_sold": "Classic sold"
+              }
+            },
+            "last_ask_median": 738773,
+            "last_ask_n": 1,
+            "sold_median": null,
+            "sold_n": 0
+          }
+        },
+        "Gallardo": {
+          "headline": "Gallardo — baseline (no 7d history yet)",
+          "take_short": "Baseline · $151,594 · n=70 · Classic last-ask $212,448",
+          "metrics": {
+            "median_ask": 151594,
+            "median_ask_delta": null,
+            "median_ask_pct": null,
+            "count": 70,
+            "window": "7d",
+            "prior_date": "2026-09-07",
+            "as_of": "2026-09-14",
+            "baseline": true,
+            "retail_thin": true
+          },
+          "summary": "Lamborghini Gallardo retail median is $151,594 · n=70. First snapshot for this family — no prior Δ yet. Secondary: Classic last-ask (not retail scrape) $212,448 · n=2 · ~7d · Classic sold $220,000 · n=5 · ~7d.",
+          "classic": {
+            "source": "Classic.com",
+            "disclaimer": "Classic.com market cards — not our daily retail ask scrape",
+            "primary_window": "7d",
+            "windows": {
+              "7d": {
+                "last_ask_median": 212448,
+                "last_ask_n": 2,
+                "sold_median": 220000,
+                "sold_n": 5,
+                "geo": "US/CA",
+                "label_last_ask": "Classic last-ask (not retail scrape)",
+                "label_sold": "Classic sold"
+              },
+              "14d": {
+                "last_ask_median": 175900,
+                "last_ask_n": 5,
+                "sold_median": 220000,
+                "sold_n": 5,
+                "geo": "US/CA",
+                "label_last_ask": "Classic last-ask (not retail scrape)",
+                "label_sold": "Classic sold"
+              },
+              "30d": {
+                "last_ask_median": 169925,
+                "last_ask_n": 16,
+                "sold_median": 140000,
+                "sold_n": 9,
+                "geo": "US/CA",
+                "label_last_ask": "Classic last-ask (not retail scrape)",
+                "label_sold": "Classic sold"
+              }
+            },
+            "last_ask_median": 212448,
+            "last_ask_n": 2,
+            "sold_median": 220000,
+            "sold_n": 5
+          }
+        },
+        "Temerario": {
+          "headline": "Temerario — baseline (no 7d history yet)",
+          "take_short": "Baseline · $456,018 · n=30",
+          "metrics": {
+            "median_ask": 456018,
+            "median_ask_delta": null,
+            "median_ask_pct": null,
+            "count": 30,
+            "window": "7d",
+            "prior_date": "2026-09-07",
+            "as_of": "2026-09-14",
+            "baseline": true,
+            "retail_thin": true
+          },
+          "summary": "Lamborghini Temerario retail median is $456,018 · n=30. First snapshot for this family — no prior Δ yet.",
+          "classic": null
+        },
+        "Revuelto": {
+          "headline": "Revuelto — baseline (no 7d history yet)",
+          "take_short": "Baseline · $689,900 · n=65 · Classic last-ask $649,994",
+          "metrics": {
+            "median_ask": 689900,
+            "median_ask_delta": null,
+            "median_ask_pct": null,
+            "count": 65,
+            "window": "7d",
+            "prior_date": "2026-09-07",
+            "as_of": "2026-09-14",
+            "baseline": true,
+            "retail_thin": true
+          },
+          "summary": "Lamborghini Revuelto retail median is $689,900 · n=65. First snapshot for this family — no prior Δ yet. Secondary: Classic last-ask (not retail scrape) $649,994 · n=6 · ~7d.",
+          "classic": {
+            "source": "Classic.com",
+            "disclaimer": "Classic.com market cards — not our daily retail ask scrape",
+            "primary_window": "7d",
+            "windows": {
+              "7d": {
+                "last_ask_median": 649994,
+                "last_ask_n": 6,
+                "sold_median": null,
+                "sold_n": 0,
+                "geo": "US/CA",
+                "label_last_ask": "Classic last-ask (not retail scrape)",
+                "label_sold": "Classic sold"
+              },
+              "14d": {
+                "last_ask_median": 698799,
+                "last_ask_n": 9,
+                "sold_median": null,
+                "sold_n": 0,
+                "geo": "US/CA",
+                "label_last_ask": "Classic last-ask (not retail scrape)",
+                "label_sold": "Classic sold"
+              },
+              "30d": {
+                "last_ask_median": 699900,
+                "last_ask_n": 25,
+                "sold_median": 653000,
+                "sold_n": 2,
+                "geo": "US/CA",
+                "label_last_ask": "Classic last-ask (not retail scrape)",
+                "label_sold": "Classic sold"
+              }
+            },
+            "last_ask_median": 649994,
+            "last_ask_n": 6,
+            "sold_median": null,
+            "sold_n": 0
+          }
+        }
+      },
+      "examples": [
+        {
+          "title": "2026 Lamborghini Temerario Base",
+          "ask": 410975,
+          "miles": 781,
+          "variant": "Temerario Coupe",
+          "url": "https://www.cars.com/vehicledetail/9ca408c4-4338-4ad1-9502-04f26395035c/"
+        },
+        {
+          "title": "2026 Lamborghini Temerario",
+          "ask": 410035,
+          "miles": 896,
+          "variant": "Temerario Coupe",
+          "url": "https://www.cars.com/vehicledetail/0ed7c5ce-627b-4360-80c5-3acdc87ca1d8/"
+        }
+      ],
+      "windows_available": [
+        "7d"
+      ]
+    },
+    "ford": {
+      "brand": "Ford",
+      "brand_key": "ford",
+      "headline": "Ford flat: +0.2% variant-median ask · 7d",
+      "summary": "As of 2026-09-14, Ford US/Canada tracked inventory sits at 27 cars (Δ +1 vs 2026-09-07). Variant-median ask +0.2% over ~7d (LFL $750,000, $0 / 0.0%).",
+      "take_short": "+0.2% · 27 cars · 7d",
+      "bullets": [
+        "Variant-median ask move: +0.2% (LFL pool 0.0%) [2026-09-07→2026-09-14]",
+        "2005: median ask +$25,000 (+3.9%) · n=12 [2026-09-07→2026-09-14]",
+        "2006: median ask $-30,315 (-3.4%) · n=15 [2026-09-07→2026-09-14]",
+        "Same-VIN cuts: 0/22 (0%) over 7d",
+        "Inventory: 27 listings (+1 vs 2026-09-07)",
+        "Auction softness: Ex–Mac Davis 2006 Ford GT bid $465,000 vs retail $869,675 (-47% vs ask)",
+        "Canada listing — apply ~×1.5 tariff lens vs US retail asks",
+        "Example: 2006 GT @ $749,900 / 1,282 mi"
+      ],
+      "metrics": {
+        "as_of": "2026-09-14",
+        "history_start": "2026-09-07",
+        "history_days": 7,
+        "snapshot_count": 7,
+        "by_window": {
+          "7d": {
+            "window": "7d",
+            "target_days": 7,
+            "as_of": "2026-09-14",
+            "prior_date": "2026-09-07",
+            "span_days": 7,
+            "count": 27,
+            "count_prior": 26,
+            "count_delta": 1,
+            "median_ask": 750000,
+            "median_ask_prior": 750000,
+            "median_ask_delta": 0,
+            "median_ask_pct": 0.0,
+            "median_ask_lfl": 750000,
+            "median_ask_lfl_prior": 750000,
+            "median_ask_lfl_delta": 0,
+            "median_ask_lfl_pct": 0.0,
+            "variant_pct_median": 0.24,
+            "overlap_variants": [
+              "2005 GT",
+              "2006 GT"
+            ],
+            "composition_note": null,
+            "drops": {
+              "comparable_vins": 22,
+              "cuts": 0,
+              "cut_share": 0.0,
+              "median_cut_usd": null,
+              "raises": 0
+            },
+            "thin": false,
+            "top_variants": [
+              {
+                "key": "2005",
+                "label": "2005 GT",
+                "median_ask_delta": 25000,
+                "median_ask_pct": 3.85,
+                "count_delta": -1,
+                "median_ask": 674900,
+                "count": 12
+              },
+              {
+                "key": "2006",
+                "label": "2006 GT",
+                "median_ask_delta": -30315,
+                "median_ask_pct": -3.37,
+                "count_delta": 2,
+                "median_ask": 869675,
+                "count": 15
+              }
+            ],
+            "families": {
+              "2005": {
+                "count": 12,
+                "median_ask": 674900,
+                "median_ask_delta": 25000,
+                "median_ask_pct": 3.85,
+                "variants": [
+                  "2005 GT"
+                ]
+              },
+              "2006": {
+                "count": 15,
+                "median_ask": 869675,
+                "median_ask_delta": -30315,
+                "median_ask_pct": -3.37,
+                "variants": [
+                  "2006 GT"
+                ]
+              }
+            }
+          }
+        },
+        "auction_comps": [
+          {
+            "title": "Ex–Mac Davis 2006 Ford GT",
+            "url": "https://bringatrailer.com/listing/2006-ford-gt-217/",
+            "bid": 465000,
+            "retail_median": 869675,
+            "gap_usd": -404675,
+            "gap_pct": -46.53,
+            "softness": "soft",
+            "no_reserve": false,
+            "location": "Vancouver, British Columbia, Canada",
+            "canada_tariff_note": "Canada listing — apply ~×1.5 tariff lens vs US retail asks",
+            "variant": "2006 GT",
+            "source": "Bring a Trailer"
+          },
+          {
+            "title": "166-Mile 2005 Ford GT",
+            "url": "https://bringatrailer.com/listing/2005-ford-gt-244/",
+            "bid": 550000,
+            "retail_median": 674900,
+            "gap_usd": -124900,
+            "gap_pct": -18.51,
+            "softness": "soft",
+            "no_reserve": false,
+            "location": "Fresno, California, USA",
+            "canada_tariff_note": null,
+            "variant": "2005 GT",
+            "source": "Bring a Trailer"
+          }
+        ],
+        "thin_note": "Tracker history for Ford starts 2026-09-07; 30d/90d windows not available yet."
+      },
+      "history_callout": "Tracker history from 2026-09-07 — 30d/90d windows not ready yet.",
+      "social_hook": "Desk take on Ford: variant-median ask is flat +0.2% over the last ~7 days.",
+      "reel_angle": "Argue that Ford is flat on variant asks, with auction bids undershooting retail on 2006 GT — ~15s, one number, one example.",
+      "models": {
+        "2005": {
+          "headline": "2005 firming",
+          "take_short": "+3.9% · $674,900 · n=12",
+          "metrics": {
+            "median_ask": 674900,
+            "median_ask_delta": 25000,
+            "median_ask_pct": 3.85,
+            "count": 12,
+            "window": "7d",
+            "prior_date": "2026-09-07",
+            "as_of": "2026-09-14",
+            "baseline": false,
+            "retail_thin": false
+          },
+          "summary": "Ford 2005 retail median is $674,900 (+$25,000 / +3.9% vs 2026-09-07). Inventory in family: 12.",
+          "classic": null
+        },
+        "2006": {
+          "headline": "2006 softening",
+          "take_short": "-3.4% · $869,675 · n=15",
+          "metrics": {
+            "median_ask": 869675,
+            "median_ask_delta": -30315,
+            "median_ask_pct": -3.37,
+            "count": 15,
+            "window": "7d",
+            "prior_date": "2026-09-07",
+            "as_of": "2026-09-14",
+            "baseline": false,
+            "retail_thin": false
+          },
+          "summary": "Ford 2006 retail median is $869,675 ($-30,315 / -3.4% vs 2026-09-07). Inventory in family: 15.",
+          "classic": null
+        },
+        "GT": {
+          "headline": "GT — Classic last-ask $677,956 (~30d)",
+          "take_short": "Classic last-ask $677,956 · n=6 · not retail scrape",
+          "metrics": {
+            "median_ask": null,
+            "median_ask_delta": null,
+            "median_ask_pct": null,
+            "count": 0,
+            "window": "30d",
+            "prior_date": null,
+            "as_of": "2026-09-14",
+            "baseline": true,
+            "retail_thin": true
+          },
+          "summary": "Ford GT: no retail daily ask median in tracker. Classic last-ask (not retail scrape) $677,956 · n=6 · ~30d · Classic sold $687,500 · n=4 · ~30d. (Source: Classic.com — not our daily retail median.)",
+          "classic": {
+            "source": "Classic.com",
+            "disclaimer": "Classic.com market cards — not our daily retail ask scrape",
+            "primary_window": "30d",
+            "windows": {
+              "30d": {
+                "last_ask_median": 677956,
+                "last_ask_n": 6,
+                "sold_median": 687500,
+                "sold_n": 4,
+                "geo": "US/CA",
+                "label_last_ask": "Classic last-ask (not retail scrape)",
+                "label_sold": "Classic sold"
+              }
+            },
+            "last_ask_median": 677956,
+            "last_ask_n": 6,
+            "sold_median": 687500,
+            "sold_n": 4
+          }
+        }
+      },
+      "examples": [
+        {
+          "title": "2006 Ford GT",
+          "ask": 749900,
+          "miles": 1282,
+          "variant": "2006 GT",
+          "url": "https://www.classic.com/veh/2006-ford-gt-1fafp90s56y401426-nX7oEZ4/"
+        },
+        {
+          "title": "2005 Ford GT",
+          "ask": 569500,
+          "miles": 7500,
+          "variant": "2005 GT",
+          "url": "https://www.classic.com/veh/2005-ford-gt-1fafp90s55y400288-N4Avobn/"
+        }
+      ],
+      "windows_available": [
+        "7d"
+      ]
+    }
+  },
+  "notes": [
+    "Medians from daily ask CSVs after US/Canada geo filter; outliers trimmed when n≥5.",
+    "Windows use nearest prior snapshot within tolerance; omitted when history is thin.",
+    "Auction softness compares live bid_or_ask to same-day retail median by variant.",
+    "Classic.com last-ask/sold medians are secondary comps (labeled) — never presented as retail daily ask medians."
+  ]
+}

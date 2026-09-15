@@ -1,0 +1,144 @@
+{
+  "snapshot_date": "2026-09-14",
+  "timezone": "America/New_York",
+  "total_listings": 215,
+  "overall_median_ask": 459995,
+  "overall_median_miles": 1466,
+  "by_variant": {
+    "Gallardo_coupe": {
+      "count": 38,
+      "median_ask": 172998,
+      "median_miles": 18932,
+      "min_ask": 79433,
+      "max_ask": 340075
+    },
+    "Gallardo_spider": {
+      "count": 36,
+      "median_ask": 134549,
+      "median_miles": 21571,
+      "min_ask": 94489,
+      "max_ask": 419000
+    },
+    "Murcielago_coupe": {
+      "count": 24,
+      "median_ask": 511750,
+      "median_miles": 9960,
+      "min_ask": 170000,
+      "max_ask": 1680200
+    },
+    "Murcielago_spider": {
+      "count": 18,
+      "median_ask": 749995,
+      "median_miles": 14491,
+      "min_ask": 260000,
+      "max_ask": 950075
+    },
+    "Revuelto_coupe": {
+      "count": 67,
+      "median_ask": 689900,
+      "median_miles": 643,
+      "min_ask": 609000,
+      "max_ask": 999998
+    },
+    "Temerario_coupe": {
+      "count": 32,
+      "median_ask": 456018,
+      "median_miles": 818,
+      "min_ask": 410035,
+      "max_ask": 559970
+    }
+  },
+  "by_source": {
+    "Classic.com": 99,
+    "Cars.com": 86,
+    "CarGurus": 30
+  },
+  "by_family": {
+    "Murcielago": 42,
+    "Gallardo": 74,
+    "Revuelto": 67,
+    "Temerario": 32
+  },
+  "classic_count": 99,
+  "carscom_count": 86,
+  "cargurus_count": 30,
+  "classic_meta": {
+    "snapshot_date": "2026-09-14",
+    "timezone": "America/New_York",
+    "source": "Classic.com",
+    "method": "Shell curl; status=for_sale market pages",
+    "total_listings": 99,
+    "skip_counts": {
+      "non_usd_currency": 10,
+      "auction_no_ask_price": 19,
+      "dup_url": 65,
+      "no_price": 3
+    },
+    "page_stats": {
+      "classic_murcielago.html": {
+        "cards": 7,
+        "kept": 4
+      },
+      "classic_murcielago_p2.html": {
+        "cards": 7,
+        "kept": 0
+      },
+      "classic_murcielago_lp640.html": {
+        "cards": 24,
+        "kept": 17
+      },
+      "classic_murcielago_lp670.html": {
+        "cards": 1,
+        "kept": 0
+      },
+      "classic_murcielago_roadster.html": {
+        "cards": 5,
+        "kept": 3
+      },
+      "classic_murcielago_roadster_p2.html": {
+        "cards": 5,
+        "kept": 0
+      },
+      "classic_gallardo.html": {
+        "cards": 24,
+        "kept": 21
+      },
+      "classic_gallardo_p2.html": {
+        "cards": 24,
+        "kept": 18
+      },
+      "classic_gallardo_p3.html": {
+        "cards": 24,
+        "kept": 0
+      },
+      "classic_gallardo_spyder.html": {
+        "cards": 16,
+        "kept": 0
+      },
+      "classic_gallardo_spyder_p2.html": {
+        "cards": 16,
+        "kept": 0
+      },
+      "classic_gallardo_sl.html": {
+        "cards": 0,
+        "kept": 0
+      },
+      "classic_gallardo_lp570.html": {
+        "cards": 3,
+        "kept": 0
+      },
+      "classic_gallardo_lp560.html": {
+        "cards": 3,
+        "kept": 0
+      },
+      "classic_revuelto.html": {
+        "cards": 24,
+        "kept": 23
+      },
+      "classic_revuelto_p2.html": {
+        "cards": 13,
+        "kept": 13
+      }
+    }
+  }
+}

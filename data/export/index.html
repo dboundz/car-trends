@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Car Trends — data export</title>
+<style>
+body{font-family:ui-sans-serif,system-ui,sans-serif;max-width:720px;margin:2rem auto;padding:0 1rem;line-height:1.5;color:#e6edf3;background:#0d1117}
+a{color:#58a6ff} code{background:#21262d;padding:.1em .35em;border-radius:4px}
+.muted{color:#8b949e;font-size:.9rem}
+</style>
+</head>
+<body>
+<h1>Data export + hashes</h1>
+<p class="muted">as_of <strong>2026-09-14</strong> (America/New_York) · schema 1.0.0</p>
+<p>Cryptographically verifiable JSON package for
+<a href="../..">car-trends</a> HTML pages. Integrity via SHA-256 — not a digital signature
+(optional minisign/GPG later).</p>
+<ul>
+  <li><a href="latest.json"><code>latest.json</code></a> — consolidated snapshot</li>
+  <li><a href="manifest.json"><code>manifest.json</code></a> — per-file path / bytes / sha256</li>
+  <li><a href="README.md"><code>README.md</code></a> — how to verify with <code>shasum -a 256</code></li>
+  <li><a href="../manifest.json"><code>../manifest.json</code></a> — same manifest at data root</li>
+</ul>
+<h2>Per-brand</h2>
+<ul>
+    <li><a href="brands/ferrari.json">ferrari.json</a> (696,407 bytes, 845 listings)</li>
+    <li><a href="brands/mclaren.json">mclaren.json</a> (122,769 bytes, 154 listings)</li>
+    <li><a href="brands/lamborghini.json">lamborghini.json</a> (283,266 bytes, 342 listings)</li>
+    <li><a href="brands/ford.json">ford.json</a> (29,704 bytes, 29 listings)</li>
+</ul>
+<p class="muted">aggregate_sha256: <code>1b6e03a3d42c64d122b664230262885215d0e48c10253e62c455e5109868cf3d</code></p>
+<p><a href="../../">← Home</a></p>
+</body>
+</html>

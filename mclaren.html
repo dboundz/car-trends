@@ -300,8 +300,8 @@ td.mag .mag-empty{display:inline-block;width:28px;color:var(--muted);opacity:.35
   }
   document.getElementById("headerMeta").textContent =
     `Latest: ${DATA.latest_snapshot_date || "—"} · ${DATA.stats.latest_count} listings · ${DATA.stats.standout_count} standouts`;
-  document.getElementById("footerMeta").textContent =
-    `Embedded ${DATA.stats.total_rows} rows across ${DATA.snapshot_dates.length} snapshot(s). Generated ${DATA.generated_at}. Chart.js 4.x CDN.`;
+  document.getElementById("footerMeta").innerHTML =
+    `Embedded ${DATA.stats.total_rows} rows across ${DATA.snapshot_dates.length} snapshot(s). Generated ${DATA.generated_at}. Chart.js 4.x CDN. · <a href="mclaren.json" style="color:#58a6ff">Download data (JSON)</a>`;
 
   // --- Variant visibility (localStorage) ---
   const allVariants = (DATA.variants && DATA.variants.length)

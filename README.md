@@ -18,3 +18,17 @@ Static HTML dashboards for tracked car listing prices (Ferrari, McLaren, Lamborg
 - `ford-gt-gen1.html` → `ford.html`
 
 Dashboards are self-contained (data embedded). Chart.js loads from CDN.
+
+
+## Download data (JSON)
+
+Same payloads embedded in the dashboards (for friends & tooling):
+
+- https://dboundz.github.io/car-trends/ferrari.json
+- https://dboundz.github.io/car-trends/mclaren.json
+- https://dboundz.github.io/car-trends/lamborghini.json
+- https://dboundz.github.io/car-trends/ford.json
+- https://dboundz.github.io/car-trends/data.json (overview)
+- Index: https://dboundz.github.io/car-trends/data/
+
+Each brand page footer has **Download data (JSON)**.

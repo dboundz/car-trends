@@ -1,0 +1,198 @@
+{
+  "snapshot_date": "2026-09-14",
+  "timezone": "America/New_York",
+  "total_listings": 154,
+  "artura_listings": 69,
+  "counts_by_variant": {
+    "600LT_coupe": 24,
+    "600LT_spider": 21,
+    "675LT_coupe": 2,
+    "675LT_spider": 2,
+    "765LT_coupe": 18,
+    "765LT_spider": 18,
+    "Artura_coupe": 51,
+    "Artura_spider": 18
+  },
+  "medians_by_variant": {
+    "600LT_coupe": {
+      "median_ask": 239990,
+      "median_miles": 17616
+    },
+    "600LT_spider": {
+      "median_ask": 259813,
+      "median_miles": 14480
+    },
+    "675LT_coupe": {
+      "median_ask": 394947,
+      "median_miles": 545
+    },
+    "675LT_spider": {
+      "median_ask": 447191,
+      "median_miles": 2290
+    },
+    "765LT_coupe": {
+      "median_ask": 725350,
+      "median_miles": 8766
+    },
+    "765LT_spider": {
+      "median_ask": 849999,
+      "median_miles": 6326
+    },
+    "Artura_coupe": {
+      "median_ask": 190489,
+      "median_miles": 2855
+    },
+    "Artura_spider": {
+      "median_ask": 279250,
+      "median_miles": 188
+    }
+  },
+  "variants": {
+    "600LT_coupe": {
+      "count": 24,
+      "priced_count": 24,
+      "with_mileage_count": 9,
+      "median_asking_price_usd": 239990,
+      "min_asking_price_usd": 180999,
+      "max_asking_price_usd": 499999,
+      "median_mileage_miles": 17616
+    },
+    "600LT_spider": {
+      "count": 21,
+      "priced_count": 21,
+      "with_mileage_count": 15,
+      "median_asking_price_usd": 259813,
+      "min_asking_price_usd": 207625,
+      "max_asking_price_usd": 299995,
+      "median_mileage_miles": 14480
+    },
+    "675LT_coupe": {
+      "count": 2,
+      "priced_count": 2,
+      "with_mileage_count": 1,
+      "median_asking_price_usd": 394947,
+      "min_asking_price_usd": 379900,
+      "max_asking_price_usd": 409995,
+      "median_mileage_miles": 545
+    },
+    "675LT_spider": {
+      "count": 2,
+      "priced_count": 2,
+      "with_mileage_count": 1,
+      "median_asking_price_usd": 447191,
+      "min_asking_price_usd": 374393,
+      "max_asking_price_usd": 519990,
+      "median_mileage_miles": 2290
+    },
+    "765LT_coupe": {
+      "count": 18,
+      "priced_count": 18,
+      "with_mileage_count": 8,
+      "median_asking_price_usd": 725350,
+      "min_asking_price_usd": 599998,
+      "max_asking_price_usd": 899990,
+      "median_mileage_miles": 8766
+    },
+    "765LT_spider": {
+      "count": 18,
+      "priced_count": 18,
+      "with_mileage_count": 9,
+      "median_asking_price_usd": 849999,
+      "min_asking_price_usd": 568000,
+      "max_asking_price_usd": 1199991,
+      "median_mileage_miles": 6326
+    },
+    "Artura_coupe": {
+      "count": 51,
+      "priced_count": 51,
+      "with_mileage_count": 31,
+      "median_asking_price_usd": 190489,
+      "min_asking_price_usd": 165208,
+      "max_asking_price_usd": 342655,
+      "median_mileage_miles": 2855
+    },
+    "Artura_spider": {
+      "count": 18,
+      "priced_count": 18,
+      "with_mileage_count": 11,
+      "median_asking_price_usd": 279250,
+      "min_asking_price_usd": 228004,
+      "max_asking_price_usd": 406983,
+      "median_mileage_miles": 188
+    }
+  },
+  "counts_by_source": {
+    "Classic.com": 81,
+    "Cars.com": 25,
+    "Hemmings": 1,
+    "CarGurus": 16,
+    "duPont REGISTRY": 31
+  },
+  "artura_source_raw_counts": {
+    "Classic.com": 62,
+    "Cars.com": 21,
+    "CarGurus": 23,
+    "duPont REGISTRY": 16
+  },
+  "cargurus_artura": {
+    "raw": 23,
+    "priced": 23,
+    "added": 13,
+    "excluded": 0,
+    "no_price": 0
+  },
+  "dedupe_notes_count": 30,
+  "dedupe_notes_sample": [
+    "keep existing Classic.com drop Cars.com SBM16AEA8PW001874",
+    "keep existing Classic.com drop Cars.com SBM16BEAXSW003396",
+    "keep existing Classic.com drop Cars.com SBM16BEA2SW003232",
+    "keep existing Classic.com drop Cars.com SBM16BEA0SW002838",
+    "keep existing Classic.com drop Cars.com SBM16AEAXPW001908",
+    "keep existing Classic.com drop Cars.com SBM16AEA7PW001610",
+    "keep existing Classic.com drop Cars.com SBM16AEA3SW003671",
+    "keep existing Classic.com drop Cars.com SBM16BEA4SW003040",
+    "keep existing Classic.com drop Cars.com SBM16AEA0PW000623",
+    "keep existing Classic.com drop duPont REGISTRY SBM16AEA6RW002153",
+    "keep existing Classic.com drop duPont REGISTRY SBM16BEAXSW002989",
+    "keep existing Classic.com drop duPont REGISTRY SBM16AEA2SW003872",
+    "keep existing Classic.com drop duPont REGISTRY SBM16BEA5SW003371",
+    "keep existing Classic.com drop duPont REGISTRY SBM16BEA2SW003232",
+    "keep existing Classic.com drop duPont REGISTRY SBM16BEA6SW003198",
+    "keep existing Classic.com drop duPont REGISTRY SBM16AEA0PW000623",
+    "keep existing Classic.com drop CarGurus SBM16AEA4PW001466",
+    "keep existing Classic.com drop CarGurus SBM16AEA2SW003872",
+    "keep existing Cars.com drop CarGurus SBM16AEA1RW002142",
+    "keep existing Cars.com drop CarGurus SBM16AEA9SW003321",
+    "keep existing Cars.com drop CarGurus SBM16AEA7RW002114",
+    "keep existing Classic.com drop CarGurus SBM16AEA6RW002153",
+    "keep existing Cars.com drop CarGurus SBM16AEA4SW002822",
+    "keep existing Classic.com drop CarGurus SBM16AEA6PW001727",
+    "keep existing duPont REGISTRY drop CarGurus SBM16BEA6SW002729"
+  ],
+  "sources_used": [
+    "CarGurus",
+    "Cars.com",
+    "Classic.com",
+    "Hemmings",
+    "duPont REGISTRY"
+  ],
+  "sources_blocked_or_empty": [
+    "Autotrader (page unavailable ~3.7KB shell)",
+    "Hemmings (no Artura classifieds found)",
+    "BaT (auction model page only; no fixed asks merged)",
+    "Classic coupe/spider subpaths 404 \u2014 used /artura/ all pages"
+  ],
+  "roof_scoop": {
+    "note": "Roof-scoop rules do NOT apply to Artura"
+  },
+  "csv": "/home/box/agent-data/projects/mclaren-lt-listings/data/daily/2026-09-14.csv",
+  "scrape_dir": "/workspace/mclaren-artura-scrape-2026-09-14",
+  "data_quality_notes": [
+    "Artura baseline added 2026-09-14 into existing mclaren-lt-listings (not a separate brand section).",
+    "Excluded GT4 / Senna / Speedtail / Solus / Elva / GT / 720S / 750S.",
+    "TechLux/Performance/etc. captured in notes as trim/pack when evidenced.",
+    "Roof-scoop tagging skipped for Artura.",
+    "US/Canada preferred; foreign locations dropped when identifiable.",
+    "CarGurus d3238 (m141/d3238) via headless chrome; prefer non-CarGurus on VIN conflict."
+  ]
+}
