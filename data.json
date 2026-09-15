@@ -1,6 +1,6 @@
 {
   "title": "Car Trends",
-  "generated_at": "2026-09-15 20:15 UTC",
+  "generated_at": "2026-09-15 20:28 UTC",
   "snapshot_dates": [
     "2026-09-15"
   ],
@@ -1514,7 +1514,7 @@
     "note": "10am ET refresh 2026-09-15T14:12:35Z: 4 NEW (BaT F430 coupe $66k, F430 Spider $50k, 458 Italia $150k, SVJ Roadster $1.008M). NR: BaT 488 Spider $250k (+$40k), duPont Avorio 488 $309.5k, duPont F430 Giallo $45k (+$43.5k). Ending-soon: SF90 $480k, F430 $145k, 360 Spider $85k, 360 Modena $85k, PCAR F430 Spider $80k, Canada Gallardo $40k (~$60k landed). C&B/SBX/CC curl SPA-blocked; Hemmings/Classic no new Tier A matches. Medians daily CSV 2026-09-15."
   },
   "market_commentary": {
-    "generated_at": "2026-09-15T19:38:27.849573Z",
+    "generated_at": "2026-09-15T20:28:50.641820Z",
     "as_of": "2026-09-15",
     "windows": [
       "7d",
@@ -1523,12 +1523,12 @@
     "geography": "US + Canada only",
     "overall": {
       "headline": "Asking prices are broadly flat over the latest 7-day period",
-      "summary": "As of Sep 15, 2026, asking prices across Ferrari, McLaren, Lamborghini, and Ford GT are basically flat — down about a tenth of a percent over the latest 7-day period. About 1,130 more cars listed.",
-      "take_short": "Asking prices are broadly flat over the latest 7-day period; about 1,130 more cars listed",
+      "summary": "As of Sep 15, 2026, asking prices across Ferrari, McLaren, Lamborghini, and Ford GT are basically flat — down about a tenth of a percent over the latest 7-day period. About 1,120 more cars listed.",
+      "take_short": "Asking prices are broadly flat over the latest 7-day period; about 1,120 more cars listed",
       "bullets": [
         "Softest ~7d ask move: lamborghini -2.5%",
         "Firmest: ford +4.0%",
-        "Cross-brand inventory Δ sum: +1131 listings",
+        "Cross-brand inventory Δ sum: +1115 listings",
         "Cross-brand median ask Δ: -0.1%",
         "Auction vs retail: No Reserve: 5k-Mile 2018 Ferrari 488 Spider bid $250,000 vs ask $417,895"
       ],
@@ -1551,12 +1551,12 @@
                 "brand": "mclaren",
                 "median_ask_pct": -0.19,
                 "median_ask_delta": -75129,
-                "median_ask_pct_raw_mix": -31.35,
-                "count_delta": 321,
-                "count": 386,
+                "median_ask_pct_raw_mix": -30.36,
+                "count_delta": 305,
+                "count": 370,
                 "prior_date": "2026-09-08",
                 "span_days": 7,
-                "composition_note": "new variants: 570GT, 570S Coupe, 570S Spider, 720S Coupe, 720S Spider, 750S Coupe; inventory Δ +321"
+                "composition_note": "new variants: 570S Coupe, 570S Spider, 720S Coupe, 720S Spider, 750S Coupe, 750S Spider; inventory Δ +305"
               },
               {
                 "brand": "lamborghini",
@@ -1582,7 +1582,7 @@
               }
             ],
             "median_ask_pct_cross": -0.1,
-            "inventory_delta_sum": 1131
+            "inventory_delta_sum": 1115
           },
           "14d": {
             "brands": [
@@ -1606,7 +1606,7 @@
         "history_start": "2026-09-03"
       },
       "history_callout": "Tracker history from 2026-09-03 — 30d/90d windows not ready yet.",
-      "social_hook": "Quick market check: asking prices are basically flat — down about a tenth of a percent this week — and roughly 1,130 more cars hit the boards.",
+      "social_hook": "Quick market check: asking prices are basically flat — down about a tenth of a percent this week — and roughly 1,120 more cars hit the boards.",
       "reel_angle": "Open on the one weekly price move that matters, call out the softest brand, flash one auction-vs-retail gap, close with 'not hype — real listings.'",
       "windows_available": [
         "7d",
@@ -1657,20 +1657,20 @@
               "variant_pct_median": 0.0,
               "overlap_variants": [
                 "458 Coupe",
-                "F8 Coupe",
                 "360 Modena",
-                "348 Spider",
-                "360 Spider",
-                "F430 Coupe",
-                "488 Spider",
-                "F430 Spider",
-                "355 Spider",
                 "F8 Spider",
+                "348 Spider",
                 "355 Berlinetta",
-                "348 TS",
-                "488 Coupe",
+                "F430 Spider",
+                "F8 Coupe",
                 "355 GTS",
-                "458 Spider"
+                "458 Spider",
+                "355 Spider",
+                "360 Spider",
+                "488 Coupe",
+                "F430 Coupe",
+                "348 TS",
+                "488 Spider"
               ],
               "composition_note": "new variants: 296 Coupe, 296 Spider, 812 Coupe, 812 Spider, F12 Coupe, SF90 Coupe; inventory Δ +539",
               "drops": {
@@ -1846,10 +1846,10 @@
               "median_ask_lfl_pct": 3.4,
               "variant_pct_median": 3.17,
               "overlap_variants": [
-                "F8 Spider",
                 "488 Spider",
-                "F8 Coupe",
-                "488 Coupe"
+                "F8 Spider",
+                "488 Coupe",
+                "F8 Coupe"
               ],
               "composition_note": "new variants: 296 Coupe, 296 Spider, 348 Spider, 348 TS, 355 Berlinetta, 355 GTS; inventory Δ +951",
               "drops": {
@@ -2459,16 +2459,16 @@
         "brand": "McLaren",
         "brand_key": "mclaren",
         "headline": "McLaren holding steady this week",
-        "summary": "As of Sep 15, 2026, McLaren has 386 cars on the US/Canada market. About 320 more cars listed since Sep 8, 2026. Asking prices are basically flat — down about 0.2% over the last ~7 days (typical ask around $283,844).",
-        "take_short": "Holding steady · 386 cars",
+        "summary": "As of Sep 15, 2026, McLaren has 370 cars on the US/Canada market. About 300 more cars listed since Sep 8, 2026. Asking prices are basically flat — down about 0.2% over the last ~7 days (typical ask around $283,844).",
+        "take_short": "Holding steady · 370 cars",
         "bullets": [
           "Variant-median ask move: -0.2% (LFL pool -20.9%) [2026-09-08→2026-09-15]",
           "675LT: median ask $-2,292 (-0.6%) · n=5 [2026-09-08→2026-09-15]",
           "765LT: median ask $-4,960 (-0.6%) · n=23 [2026-09-08→2026-09-15]",
           "600LT: median ask $-490 (-0.2%) · n=34 [2026-09-08→2026-09-15]",
           "Same-VIN cuts: 16/51 (31%) over 7d; median cut $5,940",
-          "Inventory: 386 listings (+321 vs 2026-09-08)",
-          "Mix: new variants: 570GT, 570S Coupe, 570S Spider, 720S Coupe, 720S Spider, 750S Coupe; inventory Δ +321",
+          "Inventory: 370 listings (+305 vs 2026-09-08)",
+          "Mix: new variants: 570S Coupe, 570S Spider, 720S Coupe, 720S Spider, 750S Coupe, 750S Spider; inventory Δ +305",
           "Example: 750S Coupe @ $324,991 / 1,691 mi"
         ],
         "metrics": {
@@ -2483,27 +2483,27 @@
               "as_of": "2026-09-15",
               "prior_date": "2026-09-08",
               "span_days": 7,
-              "count": 386,
+              "count": 370,
               "count_prior": 65,
-              "count_delta": 321,
-              "median_ask": 246439,
+              "count_delta": 305,
+              "median_ask": 249995,
               "median_ask_prior": 358973,
-              "median_ask_delta": -112534,
-              "median_ask_pct": -31.35,
+              "median_ask_delta": -108978,
+              "median_ask_pct": -30.36,
               "median_ask_lfl": 283844,
               "median_ask_lfl_prior": 358973,
               "median_ask_lfl_delta": -75129,
               "median_ask_lfl_pct": -20.93,
               "variant_pct_median": -0.19,
               "overlap_variants": [
-                "675LT Coupe",
-                "600LT Coupe",
-                "600LT Spider",
                 "675LT Spider",
+                "765LT Spider",
+                "600LT Coupe",
                 "765LT Coupe",
-                "765LT Spider"
+                "675LT Coupe",
+                "600LT Spider"
               ],
-              "composition_note": "new variants: 570GT, 570S Coupe, 570S Spider, 720S Coupe, 720S Spider, 750S Coupe; inventory Δ +321",
+              "composition_note": "new variants: 570S Coupe, 570S Spider, 720S Coupe, 720S Spider, 750S Coupe, 750S Spider; inventory Δ +305",
               "drops": {
                 "comparable_vins": 51,
                 "cuts": 16,
@@ -2628,15 +2628,6 @@
                   "variants": [
                     "570S Coupe",
                     "570S Spider"
-                  ]
-                },
-                "570GT": {
-                  "count": 16,
-                  "median_ask": 129938,
-                  "median_ask_delta": null,
-                  "median_ask_pct": null,
-                  "variants": [
-                    "570GT"
                   ]
                 },
                 "GT": {
@@ -2991,60 +2982,6 @@
               "sold_n": 0
             }
           },
-          "570GT": {
-            "headline": "570GT — baseline (no 7d history yet)",
-            "take_short": "Baseline · $129,938 · n=16 · Classic last-ask $139,991",
-            "metrics": {
-              "median_ask": 129938,
-              "median_ask_delta": null,
-              "median_ask_pct": null,
-              "count": 16,
-              "window": "7d",
-              "prior_date": "2026-09-08",
-              "as_of": "2026-09-15",
-              "baseline": true,
-              "retail_thin": true
-            },
-            "summary": "McLaren 570GT retail median is $129,938 · n=16. First snapshot for this family — no prior Δ yet. Secondary: Classic last-ask (not retail scrape) $139,991 · n=1 · ~7d.",
-            "classic": {
-              "source": "Classic.com",
-              "disclaimer": "Classic.com market cards — not our daily retail ask scrape",
-              "primary_window": "7d",
-              "windows": {
-                "7d": {
-                  "last_ask_median": 139991,
-                  "last_ask_n": 1,
-                  "sold_median": null,
-                  "sold_n": 0,
-                  "geo": "US/CA",
-                  "label_last_ask": "Classic last-ask (not retail scrape)",
-                  "label_sold": "Classic sold"
-                },
-                "14d": {
-                  "last_ask_median": 139991,
-                  "last_ask_n": 1,
-                  "sold_median": null,
-                  "sold_n": 0,
-                  "geo": "US/CA",
-                  "label_last_ask": "Classic last-ask (not retail scrape)",
-                  "label_sold": "Classic sold"
-                },
-                "30d": {
-                  "last_ask_median": 139970,
-                  "last_ask_n": 2,
-                  "sold_median": 111200,
-                  "sold_n": 1,
-                  "geo": "US/CA",
-                  "label_last_ask": "Classic last-ask (not retail scrape)",
-                  "label_sold": "Classic sold"
-                }
-              },
-              "last_ask_median": 139991,
-              "last_ask_n": 1,
-              "sold_median": null,
-              "sold_n": 0
-            }
-          },
           "GT": {
             "headline": "GT — baseline (no 7d history yet)",
             "take_short": "Baseline · $158,281 · n=46 · Classic last-ask $159,845",
@@ -3162,9 +3099,9 @@
               "median_ask_lfl_pct": 1.55,
               "variant_pct_median": -2.55,
               "overlap_variants": [
-                "Performante Spider",
+                "Performante Coupe",
                 "STO Coupe",
-                "Performante Coupe"
+                "Performante Spider"
               ],
               "composition_note": "new variants: Gallardo Coupe, Gallardo Spider, Murcielago Coupe, Murcielago Spider, Revuelto Coupe, SVJ Coupe; inventory Δ +263",
               "drops": {
