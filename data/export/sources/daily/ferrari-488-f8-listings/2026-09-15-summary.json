@@ -196,5 +196,83 @@
     "Ferrari Approved (preowned.ferrari.com)": 493,
     "CarGurus": 47,
     "dupontregistry": 9
+  },
+  "excluded_812_competizione": 8,
+  "excluded_specials_scrub": [
+    {
+      "family": "296",
+      "title": "2024 Ferrari 296 Challenge",
+      "ask": "288900"
+    },
+    {
+      "family": "812",
+      "title": "2022 Ferrari 812 Competizione",
+      "ask": "3399996"
+    },
+    {
+      "family": "812",
+      "title": "2023 Ferrari 812 Competizione",
+      "ask": "3295000"
+    },
+    {
+      "family": "812",
+      "title": "2023 Ferrari 812 Competizione",
+      "ask": "3395000"
+    },
+    {
+      "family": "812",
+      "title": "2023 Ferrari 812 Competizione",
+      "ask": "3499000"
+    },
+    {
+      "family": "812",
+      "title": "2023 Ferrari 812 Competizione",
+      "ask": "3590249"
+    },
+    {
+      "family": "812",
+      "title": "2023 Ferrari 812 Competizione",
+      "ask": "3799765"
+    },
+    {
+      "family": "812",
+      "title": "2024 Ferrari 812 Competizione A",
+      "ask": "4075000"
+    },
+    {
+      "family": "812",
+      "title": "2024 Ferrari 812 Competizione A",
+      "ask": "4100894"
+    }
+  ],
+  "row_count_after_specials_scrub": 1107,
+  "by_family_body_after_scrub": {
+    "296|coupe": 66,
+    "296|spider": 66,
+    "348|spider": 1,
+    "348|ts": 4,
+    "355|berlinetta": 7,
+    "355|gts": 2,
+    "355|spider": 10,
+    "360|coupe": 26,
+    "360|spider": 42,
+    "458|coupe": 31,
+    "458|speciale": 1,
+    "458|spider": 40,
+    "488|coupe": 83,
+    "488|spider": 147,
+    "812|coupe": 60,
+    "812|spider": 126,
+    "F12|coupe": 51,
+    "F430|coupe": 30,
+    "F430|spider": 49,
+    "F8|coupe": 43,
+    "F8|spider": 102,
+    "SF90|coupe": 57,
+    "SF90|spider": 63
+  },
+  "speciale_scrub_2026_09_15": {
+    "dropped": 9,
+    "note": "458 Speciale / Speciale Aperta hard-excluded"
   }
 }

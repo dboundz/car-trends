@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-09-15T14:47:10.513964-04:00",
+    "generated_at": "2026-09-15T16:49:59.323589-04:00",
     "as_of": "2026-09-15",
     "timezone": "America/New_York",
     "geography": "US + Canada only (HTML overview filter; see GEO.md / sources/GEO.md)",
@@ -13,16 +13,16 @@
       "as_of": "2026-09-15",
       "listings_file": {
         "path": "data/export/brands/ferrari.json",
-        "bytes": 932600,
-        "sha256": "5333b8fc5e50ff9a7d8e56ab1f16067cd1714d2ce66e2d5feb9287369aaa322b",
-        "listing_count": 1116,
+        "bytes": 920618,
+        "sha256": "8b4959efa6d4a2a7e3ced3d07bcc959341ed86118936deba86bd29447cb9347a",
+        "listing_count": 1098,
         "kpis": {
-          "median_ask": 464397,
-          "median_miles": 5521,
+          "median_ask": 459992,
+          "median_miles": 5726,
           "by_model_family": {
             "296": {
-              "count": 133,
-              "median_ask": 384995,
+              "count": 132,
+              "median_ask": 386997,
               "median_miles": 1020
             },
             "348": {
@@ -41,9 +41,9 @@
               "median_miles": 19029
             },
             "458": {
-              "count": 72,
-              "median_ask": 529995,
-              "median_miles": 8465
+              "count": 63,
+              "median_ask": 499995,
+              "median_miles": 8580
             },
             "488": {
               "count": 230,
@@ -51,9 +51,9 @@
               "median_miles": 11388
             },
             "812": {
-              "count": 194,
-              "median_ask": 867062,
-              "median_miles": 3207
+              "count": 186,
+              "median_ask": 849949,
+              "median_miles": 3398
             },
             "F12": {
               "count": 51,
@@ -80,17 +80,17 @@
         "source_csvs": [
           {
             "path": "data/export/sources/daily/ferrari-488-f8-listings/2026-09-15.csv",
-            "bytes": 442946,
-            "sha256": "3c0144736438b17b60f21ee818fb8674cdfde3dbfcdbc37e61f35326c2357599",
-            "row_count": 1116,
+            "bytes": 436551,
+            "sha256": "39b33ea45309e27520057b97db589438075ee999b3e6490f2939277f7c6e3a81",
+            "row_count": 1098,
             "project": "ferrari-488-f8-listings",
             "as_of": "2026-09-15"
           }
         ],
         "market_commentary": {
           "headline": "Ferrari holding steady this week",
-          "take_short": "Holding steady · 1,082 cars",
-          "summary": "As of Sep 15, 2026, Ferrari has 1,082 cars on the US/Canada market. About 550 more cars listed since Sep 8, 2026. Asking prices are basically flat over the last ~7 days (typical ask around $404,475).",
+          "take_short": "Holding steady · 1,065 cars",
+          "summary": "As of Sep 15, 2026, Ferrari has 1,065 cars on the US/Canada market. About 540 more cars listed since Sep 8, 2026. Asking prices are basically flat over the last ~7 days (typical ask around $399,998).",
           "windows_available": [
             "7d",
             "14d"
@@ -99,13 +99,13 @@
         "missing": []
       },
       "kpis": {
-        "listing_count": 1116,
-        "median_ask": 464397,
-        "median_miles": 5521,
+        "listing_count": 1098,
+        "median_ask": 459992,
+        "median_miles": 5726,
         "by_model_family": {
           "296": {
-            "count": 133,
-            "median_ask": 384995,
+            "count": 132,
+            "median_ask": 386997,
             "median_miles": 1020
           },
           "348": {
@@ -124,9 +124,9 @@
             "median_miles": 19029
           },
           "458": {
-            "count": 72,
-            "median_ask": 529995,
-            "median_miles": 8465
+            "count": 63,
+            "median_ask": 499995,
+            "median_miles": 8580
           },
           "488": {
             "count": 230,
@@ -134,9 +134,9 @@
             "median_miles": 11388
           },
           "812": {
-            "count": 194,
-            "median_ask": 867062,
-            "median_miles": 3207
+            "count": 186,
+            "median_ask": 849949,
+            "median_miles": 3398
           },
           "F12": {
             "count": 51,
@@ -162,8 +162,8 @@
       },
       "market_commentary": {
         "headline": "Ferrari holding steady this week",
-        "take_short": "Holding steady · 1,082 cars",
-        "summary": "As of Sep 15, 2026, Ferrari has 1,082 cars on the US/Canada market. About 550 more cars listed since Sep 8, 2026. Asking prices are basically flat over the last ~7 days (typical ask around $404,475).",
+        "take_short": "Holding steady · 1,065 cars",
+        "summary": "As of Sep 15, 2026, Ferrari has 1,065 cars on the US/Canada market. About 540 more cars listed since Sep 8, 2026. Asking prices are basically flat over the last ~7 days (typical ask around $399,998).",
         "windows_available": [
           "7d",
           "14d"
@@ -172,9 +172,9 @@
       "source_csvs": [
         {
           "path": "data/export/sources/daily/ferrari-488-f8-listings/2026-09-15.csv",
-          "bytes": 442946,
-          "sha256": "3c0144736438b17b60f21ee818fb8674cdfde3dbfcdbc37e61f35326c2357599",
-          "row_count": 1116,
+          "bytes": 436551,
+          "sha256": "39b33ea45309e27520057b97db589438075ee999b3e6490f2939277f7c6e3a81",
+          "row_count": 1098,
           "project": "ferrari-488-f8-listings",
           "as_of": "2026-09-15"
         }
@@ -381,20 +381,98 @@
               "Ferrari Approved (preowned.ferrari.com)": 493,
               "CarGurus": 47,
               "dupontregistry": 9
+            },
+            "excluded_812_competizione": 8,
+            "excluded_specials_scrub": [
+              {
+                "family": "296",
+                "title": "2024 Ferrari 296 Challenge",
+                "ask": "288900"
+              },
+              {
+                "family": "812",
+                "title": "2022 Ferrari 812 Competizione",
+                "ask": "3399996"
+              },
+              {
+                "family": "812",
+                "title": "2023 Ferrari 812 Competizione",
+                "ask": "3295000"
+              },
+              {
+                "family": "812",
+                "title": "2023 Ferrari 812 Competizione",
+                "ask": "3395000"
+              },
+              {
+                "family": "812",
+                "title": "2023 Ferrari 812 Competizione",
+                "ask": "3499000"
+              },
+              {
+                "family": "812",
+                "title": "2023 Ferrari 812 Competizione",
+                "ask": "3590249"
+              },
+              {
+                "family": "812",
+                "title": "2023 Ferrari 812 Competizione",
+                "ask": "3799765"
+              },
+              {
+                "family": "812",
+                "title": "2024 Ferrari 812 Competizione A",
+                "ask": "4075000"
+              },
+              {
+                "family": "812",
+                "title": "2024 Ferrari 812 Competizione A",
+                "ask": "4100894"
+              }
+            ],
+            "row_count_after_specials_scrub": 1107,
+            "by_family_body_after_scrub": {
+              "296|coupe": 66,
+              "296|spider": 66,
+              "348|spider": 1,
+              "348|ts": 4,
+              "355|berlinetta": 7,
+              "355|gts": 2,
+              "355|spider": 10,
+              "360|coupe": 26,
+              "360|spider": 42,
+              "458|coupe": 31,
+              "458|speciale": 1,
+              "458|spider": 40,
+              "488|coupe": 83,
+              "488|spider": 147,
+              "812|coupe": 60,
+              "812|spider": 126,
+              "F12|coupe": 51,
+              "F430|coupe": 30,
+              "F430|spider": 49,
+              "F8|coupe": 43,
+              "F8|spider": 102,
+              "SF90|coupe": 57,
+              "SF90|spider": 63
+            },
+            "speciale_scrub_2026_09_15": {
+              "dropped": 9,
+              "note": "458 Speciale / Speciale Aperta hard-excluded"
             }
           },
           "error": null
         }
       ],
       "listings_embedded": false,
-      "listing_count": 1116
+      "listing_count": 1098
     },
     "mclaren": {
       "as_of": "2026-09-15",
       "listings_file": {
         "path": "data/export/brands/mclaren.json",
         "bytes": 319320,
-        "sha256": "5b09a7233b8068ed09074e847a1d54e1d1ecea2b4033874ea41907e29e002dea",
+        "sha256": "5150d79bf80487d1c3748c3c76548780d04db9dac03467268c516f3d5b877c5c",
         "listing_count": 413,
         "kpis": {
           "median_ask": 249995,
@@ -459,8 +537,8 @@
         ],
         "market_commentary": {
           "headline": "McLaren holding steady this week",
-          "take_short": "Holding steady · 386 cars",
-          "summary": "As of Sep 15, 2026, McLaren has 386 cars on the US/Canada market. About 320 more cars listed since Sep 8, 2026. Asking prices are basically flat — down about 0.2% over the last ~7 days (typical ask around $283,844).",
+          "take_short": "Holding steady · 370 cars",
+          "summary": "As of Sep 15, 2026, McLaren has 370 cars on the US/Canada market. About 300 more cars listed since Sep 8, 2026. Asking prices are basically flat — down about 0.2% over the last ~7 days (typical ask around $283,844).",
           "windows_available": [
             "7d"
           ]
@@ -521,8 +599,8 @@
       },
       "market_commentary": {
         "headline": "McLaren holding steady this week",
-        "take_short": "Holding steady · 386 cars",
-        "summary": "As of Sep 15, 2026, McLaren has 386 cars on the US/Canada market. About 320 more cars listed since Sep 8, 2026. Asking prices are basically flat — down about 0.2% over the last ~7 days (typical ask around $283,844).",
+        "take_short": "Holding steady · 370 cars",
+        "summary": "As of Sep 15, 2026, McLaren has 370 cars on the US/Canada market. About 300 more cars listed since Sep 8, 2026. Asking prices are basically flat — down about 0.2% over the last ~7 days (typical ask around $283,844).",
         "windows_available": [
           "7d"
         ]
@@ -1883,12 +1961,12 @@
   "brand_files": {
     "ferrari": {
       "path": "data/export/brands/ferrari.json",
-      "sha256": "5333b8fc5e50ff9a7d8e56ab1f16067cd1714d2ce66e2d5feb9287369aaa322b",
-      "bytes": 932600
+      "sha256": "8b4959efa6d4a2a7e3ced3d07bcc959341ed86118936deba86bd29447cb9347a",
+      "bytes": 920618
     },
     "mclaren": {
       "path": "data/export/brands/mclaren.json",
-      "sha256": "5b09a7233b8068ed09074e847a1d54e1d1ecea2b4033874ea41907e29e002dea",
+      "sha256": "5150d79bf80487d1c3748c3c76548780d04db9dac03467268c516f3d5b877c5c",
       "bytes": 319320
     },
     "lamborghini": {
@@ -1905,13 +1983,13 @@
   "market_commentary": {
     "available": true,
     "as_of": "2026-09-15",
-    "generated_at": "2026-09-15T18:47:01.366951Z",
+    "generated_at": "2026-09-15T20:28:50.641820Z",
     "geography": "US + Canada only",
     "pointer": "data/export/sources/market-commentary/latest.json",
     "overall": {
       "headline": "Asking prices are broadly flat over the latest 7-day period",
-      "take_short": "Asking prices are broadly flat over the latest 7-day period; about 1,140 more cars listed",
-      "summary": "As of Sep 15, 2026, asking prices across Ferrari, McLaren, Lamborghini, and Ford GT are basically flat — down about a tenth of a percent over the latest 7-day period. About 1,140 more cars listed.",
+      "take_short": "Asking prices are broadly flat over the latest 7-day period; about 1,120 more cars listed",
+      "summary": "As of Sep 15, 2026, asking prices across Ferrari, McLaren, Lamborghini, and Ford GT are basically flat — down about a tenth of a percent over the latest 7-day period. About 1,120 more cars listed.",
       "windows_available": [
         "7d",
         "14d"
@@ -1920,8 +1998,8 @@
     "brands": {
       "ferrari": {
         "headline": "Ferrari holding steady this week",
-        "take_short": "Holding steady · 1,082 cars",
-        "summary": "As of Sep 15, 2026, Ferrari has 1,082 cars on the US/Canada market. About 550 more cars listed since Sep 8, 2026. Asking prices are basically flat over the last ~7 days (typical ask around $404,475).",
+        "take_short": "Holding steady · 1,065 cars",
+        "summary": "As of Sep 15, 2026, Ferrari has 1,065 cars on the US/Canada market. About 540 more cars listed since Sep 8, 2026. Asking prices are basically flat over the last ~7 days (typical ask around $399,998).",
         "windows_available": [
           "7d",
           "14d"
@@ -1929,8 +2007,8 @@
       },
       "mclaren": {
         "headline": "McLaren holding steady this week",
-        "take_short": "Holding steady · 386 cars",
-        "summary": "As of Sep 15, 2026, McLaren has 386 cars on the US/Canada market. About 320 more cars listed since Sep 8, 2026. Asking prices are basically flat — down about 0.2% over the last ~7 days (typical ask around $283,844).",
+        "take_short": "Holding steady · 370 cars",
+        "summary": "As of Sep 15, 2026, McLaren has 370 cars on the US/Canada market. About 300 more cars listed since Sep 8, 2026. Asking prices are basically flat — down about 0.2% over the last ~7 days (typical ask around $283,844).",
         "windows_available": [
           "7d"
         ]
