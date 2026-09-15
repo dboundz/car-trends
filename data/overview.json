@@ -1,14 +1,14 @@
 {
   "title": "Car Trends",
-  "generated_at": "2026-09-15 19:38 UTC",
+  "generated_at": "2026-09-15 19:53 UTC",
   "snapshot_dates": [
     "2026-09-15"
   ],
   "geography": "US + Canada only",
   "geo_totals": {
     "raw": 1883,
-    "kept": 1804,
-    "dropped": 79
+    "kept": 1788,
+    "dropped": 95
   },
   "categories": [
     {
@@ -378,12 +378,12 @@
       "available": true,
       "snapshot_date": "2026-09-15",
       "prior_date": "2026-09-14",
-      "total_listings": 386,
+      "total_listings": 370,
       "prior_total_listings": 131,
-      "delta_total": 255,
-      "overall_median_ask": 246439,
-      "overall_median_miles": 6215,
-      "delta_median_ask_overall": -3556,
+      "delta_total": 239,
+      "overall_median_ask": 249995,
+      "overall_median_miles": 5565,
+      "delta_median_ask_overall": 0,
       "variants": [
         {
           "key": "600LT_coupe",
@@ -561,19 +561,6 @@
           "group": "current"
         },
         {
-          "key": "570GT_coupe",
-          "label": "570GT",
-          "count": 16,
-          "median_ask": 129938,
-          "median_miles": 22031,
-          "delta_count": null,
-          "delta_ask": null,
-          "prior_count": null,
-          "prior_median_ask": null,
-          "group": "current",
-          "note": "scoop = optional roof scoop (flagged when listed)"
-        },
-        {
           "key": "GT_coupe",
           "label": "GT",
           "count": 46,
@@ -605,8 +592,8 @@
       ],
       "geo": {
         "raw": 413,
-        "kept": 386,
-        "dropped": 27,
+        "kept": 370,
+        "dropped": 43,
         "prior": {
           "raw": 154,
           "kept": 131,
@@ -1527,7 +1514,7 @@
     "note": "10am ET refresh 2026-09-15T14:12:35Z: 4 NEW (BaT F430 coupe $66k, F430 Spider $50k, 458 Italia $150k, SVJ Roadster $1.008M). NR: BaT 488 Spider $250k (+$40k), duPont Avorio 488 $309.5k, duPont F430 Giallo $45k (+$43.5k). Ending-soon: SF90 $480k, F430 $145k, 360 Spider $85k, 360 Modena $85k, PCAR F430 Spider $80k, Canada Gallardo $40k (~$60k landed). C&B/SBX/CC curl SPA-blocked; Hemmings/Classic no new Tier A matches. Medians daily CSV 2026-09-15."
   },
   "market_commentary": {
-    "generated_at": "2026-09-15T19:27:34.234670Z",
+    "generated_at": "2026-09-15T19:38:27.849573Z",
     "as_of": "2026-09-15",
     "windows": [
       "7d",
@@ -1541,7 +1528,7 @@
       "bullets": [
         "Softest ~7d ask move: lamborghini -2.5%",
         "Firmest: ford +4.0%",
-        "Cross-brand inventory Δ sum: +1132 listings",
+        "Cross-brand inventory Δ sum: +1131 listings",
         "Cross-brand median ask Δ: -0.1%",
         "Auction vs retail: No Reserve: 5k-Mile 2018 Ferrari 488 Spider bid $250,000 vs ask $417,895"
       ],
@@ -1552,13 +1539,13 @@
               {
                 "brand": "ferrari",
                 "median_ask_pct": 0.0,
-                "median_ask_delta": 4587,
-                "median_ask_pct_raw_mix": 15.34,
-                "count_delta": 540,
-                "count": 1073,
+                "median_ask_delta": 273,
+                "median_ask_pct_raw_mix": 15.08,
+                "count_delta": 539,
+                "count": 1065,
                 "prior_date": "2026-09-08",
                 "span_days": 7,
-                "composition_note": "new variants: 296 Coupe, 296 Spider, 812 Coupe, 812 Spider, F12 Coupe, SF90 Coupe; inventory Δ +540"
+                "composition_note": "new variants: 296 Coupe, 296 Spider, 812 Coupe, 812 Spider, F12 Coupe, SF90 Coupe; inventory Δ +539"
               },
               {
                 "brand": "mclaren",
@@ -1595,7 +1582,7 @@
               }
             ],
             "median_ask_pct_cross": -0.1,
-            "inventory_delta_sum": 1132
+            "inventory_delta_sum": 1131
           },
           "14d": {
             "brands": [
@@ -1603,16 +1590,16 @@
                 "brand": "ferrari",
                 "median_ask_pct": 3.17,
                 "median_ask_delta": 14150,
-                "median_ask_pct_raw_mix": 10.93,
-                "count_delta": 959,
-                "count": 1073,
+                "median_ask_pct_raw_mix": 10.64,
+                "count_delta": 951,
+                "count": 1065,
                 "prior_date": "2026-09-03",
                 "span_days": 12,
-                "composition_note": "new variants: 296 Coupe, 296 Spider, 348 Spider, 348 TS, 355 Berlinetta, 355 GTS; inventory Δ +959"
+                "composition_note": "new variants: 296 Coupe, 296 Spider, 348 Spider, 348 TS, 355 Berlinetta, 355 GTS; inventory Δ +951"
               }
             ],
             "median_ask_pct_cross": 3.17,
-            "inventory_delta_sum": 959
+            "inventory_delta_sum": 951
           }
         },
         "as_of": "2026-09-15",
@@ -1631,16 +1618,16 @@
         "brand": "Ferrari",
         "brand_key": "ferrari",
         "headline": "Ferrari holding steady this week",
-        "summary": "As of Sep 15, 2026, Ferrari has 1,073 cars on the US/Canada market. About 540 more cars listed since Sep 8, 2026. Asking prices are basically flat over the last ~7 days (typical ask around $404,475).",
-        "take_short": "Holding steady · 1,073 cars",
+        "summary": "As of Sep 15, 2026, Ferrari has 1,065 cars on the US/Canada market. About 540 more cars listed since Sep 8, 2026. Asking prices are basically flat over the last ~7 days (typical ask around $399,998).",
+        "take_short": "Holding steady · 1,065 cars",
         "bullets": [
-          "Variant-median ask move: 0.0% (LFL pool +1.1%) [2026-09-08→2026-09-15]",
+          "Variant-median ask move: 0.0% (LFL pool +0.1%) [2026-09-08→2026-09-15]",
           "F430: median ask +$8,114 (+3.6%) · n=79 [2026-09-08→2026-09-15]",
-          "458: median ask +$11,456 (+2.2%) · n=68 [2026-09-08→2026-09-15]",
+          "458: median ask +$9,255 (+1.7%) · n=60 [2026-09-08→2026-09-15]",
           "488: median ask +$3,998 (+1.0%) · n=228 [2026-09-08→2026-09-15]",
-          "Same-VIN cuts: 132/402 (33%) over 7d; median cut $10,000",
-          "Inventory: 1073 listings (+540 vs 2026-09-08)",
-          "Mix: new variants: 296 Coupe, 296 Spider, 812 Coupe, 812 Spider, F12 Coupe, SF90 Coupe; inventory Δ +540",
+          "Same-VIN cuts: 131/396 (33%) over 7d; median cut $10,000",
+          "Inventory: 1065 listings (+539 vs 2026-09-08)",
+          "Mix: new variants: 296 Coupe, 296 Spider, 812 Coupe, 812 Spider, F12 Coupe, SF90 Coupe; inventory Δ +539",
           "Auction softness: No Reserve: 5k-Mile 2018 Ferrari 488 Spider bid $250,000 vs retail $417,895 (-40% vs ask)",
           "Example: 296 Spider @ $384,995 / 191 mi"
         ],
@@ -1656,42 +1643,42 @@
               "as_of": "2026-09-15",
               "prior_date": "2026-09-08",
               "span_days": 7,
-              "count": 1073,
-              "count_prior": 533,
-              "count_delta": 540,
-              "median_ask": 461212,
-              "median_ask_prior": 399888,
-              "median_ask_delta": 61324,
-              "median_ask_pct": 15.34,
-              "median_ask_lfl": 404475,
-              "median_ask_lfl_prior": 399888,
-              "median_ask_lfl_delta": 4587,
-              "median_ask_lfl_pct": 1.15,
+              "count": 1065,
+              "count_prior": 526,
+              "count_delta": 539,
+              "median_ask": 459998,
+              "median_ask_prior": 399725,
+              "median_ask_delta": 60273,
+              "median_ask_pct": 15.08,
+              "median_ask_lfl": 399998,
+              "median_ask_lfl_prior": 399725,
+              "median_ask_lfl_delta": 273,
+              "median_ask_lfl_pct": 0.07,
               "variant_pct_median": 0.0,
               "overlap_variants": [
-                "458 Spider",
-                "360 Spider",
-                "488 Coupe",
-                "355 Spider",
-                "355 Berlinetta",
-                "F8 Coupe",
-                "355 GTS",
-                "348 Spider",
-                "348 TS",
-                "F430 Coupe",
                 "458 Coupe",
-                "F8 Spider",
-                "F430 Spider",
+                "F8 Coupe",
                 "360 Modena",
-                "488 Spider"
+                "348 Spider",
+                "360 Spider",
+                "F430 Coupe",
+                "488 Spider",
+                "F430 Spider",
+                "355 Spider",
+                "F8 Spider",
+                "355 Berlinetta",
+                "348 TS",
+                "488 Coupe",
+                "355 GTS",
+                "458 Spider"
               ],
-              "composition_note": "new variants: 296 Coupe, 296 Spider, 812 Coupe, 812 Spider, F12 Coupe, SF90 Coupe; inventory Δ +540",
+              "composition_note": "new variants: 296 Coupe, 296 Spider, 812 Coupe, 812 Spider, F12 Coupe, SF90 Coupe; inventory Δ +539",
               "drops": {
-                "comparable_vins": 402,
-                "cuts": 132,
-                "cut_share": 0.328,
+                "comparable_vins": 396,
+                "cuts": 131,
+                "cut_share": 0.331,
                 "median_cut_usd": 10000,
-                "raises": 12
+                "raises": 11
               },
               "thin": false,
               "top_variants": [
@@ -1802,10 +1789,10 @@
                   ]
                 },
                 "458": {
-                  "count": 68,
-                  "median_ask": 515972,
-                  "median_ask_delta": 11456,
-                  "median_ask_pct": 2.19,
+                  "count": 60,
+                  "median_ask": 507496,
+                  "median_ask_delta": 9255,
+                  "median_ask_pct": 1.73,
                   "variants": [
                     "458 Coupe",
                     "458 Spider"
@@ -1846,25 +1833,25 @@
               "as_of": "2026-09-15",
               "prior_date": "2026-09-03",
               "span_days": 12,
-              "count": 1073,
+              "count": 1065,
               "count_prior": 114,
-              "count_delta": 959,
-              "median_ask": 461212,
+              "count_delta": 951,
+              "median_ask": 459998,
               "median_ask_prior": 415750,
-              "median_ask_delta": 45462,
-              "median_ask_pct": 10.93,
+              "median_ask_delta": 44248,
+              "median_ask_pct": 10.64,
               "median_ask_lfl": 429900,
               "median_ask_lfl_prior": 415750,
               "median_ask_lfl_delta": 14150,
               "median_ask_lfl_pct": 3.4,
               "variant_pct_median": 3.17,
               "overlap_variants": [
-                "488 Coupe",
-                "F8 Coupe",
+                "F8 Spider",
                 "488 Spider",
-                "F8 Spider"
+                "F8 Coupe",
+                "488 Coupe"
               ],
-              "composition_note": "new variants: 296 Coupe, 296 Spider, 348 Spider, 348 TS, 355 Berlinetta, 355 GTS; inventory Δ +959",
+              "composition_note": "new variants: 296 Coupe, 296 Spider, 348 Spider, 348 TS, 355 Berlinetta, 355 GTS; inventory Δ +951",
               "drops": {
                 "comparable_vins": 3,
                 "cuts": 2,
@@ -1972,8 +1959,8 @@
                   ]
                 },
                 "458": {
-                  "count": 68,
-                  "median_ask": 515972,
+                  "count": 60,
+                  "median_ask": 507496,
                   "median_ask_delta": null,
                   "median_ask_pct": null,
                   "variants": [
@@ -2368,20 +2355,20 @@
             }
           },
           "458": {
-            "headline": "458 firming",
-            "take_short": "+2.2% · $515,972 · n=68",
+            "headline": "458 edging up",
+            "take_short": "+1.7% · $507,496 · n=60",
             "metrics": {
-              "median_ask": 515972,
-              "median_ask_delta": 11456,
-              "median_ask_pct": 2.19,
-              "count": 68,
+              "median_ask": 507496,
+              "median_ask_delta": 9255,
+              "median_ask_pct": 1.73,
+              "count": 60,
               "window": "7d",
               "prior_date": "2026-09-08",
               "as_of": "2026-09-15",
               "baseline": false,
               "retail_thin": false
             },
-            "summary": "Ferrari 458 retail median is $515,972 (+$11,456 / +2.2% vs 2026-09-08). Inventory in family: 68. Secondary: Classic last-ask (not retail scrape) $548,366 · n=4 · ~14d · Classic sold $500,000 · n=1 · ~14d.",
+            "summary": "Ferrari 458 retail median is $507,496 (+$9,255 / +1.7% vs 2026-09-08). Inventory in family: 60. Secondary: Classic last-ask (not retail scrape) $548,366 · n=4 · ~14d · Classic sold $500,000 · n=1 · ~14d.",
             "classic": {
               "source": "Classic.com",
               "disclaimer": "Classic.com market cards — not our daily retail ask scrape",
@@ -2509,12 +2496,12 @@
               "median_ask_lfl_pct": -20.93,
               "variant_pct_median": -0.19,
               "overlap_variants": [
+                "675LT Coupe",
                 "600LT Coupe",
-                "765LT Spider",
+                "600LT Spider",
                 "675LT Spider",
                 "765LT Coupe",
-                "600LT Spider",
-                "675LT Coupe"
+                "765LT Spider"
               ],
               "composition_note": "new variants: 570GT, 570S Coupe, 570S Spider, 720S Coupe, 720S Spider, 750S Coupe; inventory Δ +321",
               "drops": {
@@ -3175,9 +3162,9 @@
               "median_ask_lfl_pct": 1.55,
               "variant_pct_median": -2.55,
               "overlap_variants": [
-                "Performante Coupe",
+                "Performante Spider",
                 "STO Coupe",
-                "Performante Spider"
+                "Performante Coupe"
               ],
               "composition_note": "new variants: Gallardo Coupe, Gallardo Spider, Murcielago Coupe, Murcielago Spider, Revuelto Coupe, SVJ Coupe; inventory Δ +263",
               "drops": {
