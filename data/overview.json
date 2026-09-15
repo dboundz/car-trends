@@ -1,6 +1,6 @@
 {
   "title": "Car Trends",
-  "generated_at": "2026-09-15 19:53 UTC",
+  "generated_at": "2026-09-15 20:15 UTC",
   "snapshot_dates": [
     "2026-09-15"
   ],
@@ -613,7 +613,7 @@
           "label": "Lamborghini detail"
         }
       ],
-      "accent": "#c9a227",
+      "accent": "#16a34a",
       "available": true,
       "snapshot_date": "2026-09-15",
       "prior_date": "2026-09-14",
