@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-15T14:15:15.568844Z",
+  "generated_at": "2026-09-15T15:46:46.101530Z",
   "as_of": "2026-09-15",
   "windows": [
     "7d",
@@ -7,9 +7,9 @@
   ],
   "geography": "US + Canada only",
   "overall": {
-    "headline": "Exotics desk: asks flat -0.1% cross-brand",
-    "summary": "As of 2026-09-15, tracked Ferrari / McLaren / Lamborghini / Ford GT US+Canada asks are flat on a ~7-day read (-0.1% median of brand medians). Inventory Δ across the board: +1141.",
-    "take_short": "-0.1% cross-brand · inv Δ +1141",
+    "headline": "Asking prices are broadly flat over the latest 7-day period",
+    "summary": "As of Sep 15, 2026, asking prices across Ferrari, McLaren, Lamborghini, and Ford GT are basically flat — down about a tenth of a percent over the latest 7-day period. About 1,140 more cars listed.",
+    "take_short": "Asking prices are broadly flat over the latest 7-day period; about 1,140 more cars listed",
     "bullets": [
       "Softest ~7d ask move: lamborghini -2.5%",
       "Firmest: ford +4.0%",
@@ -91,8 +91,8 @@
       "history_start": "2026-09-03"
     },
     "history_callout": "Tracker history from 2026-09-03 — 30d/90d windows not ready yet.",
-    "social_hook": "Market desk: cross-brand asks are flat about -0.1% this week — here's the one number that matters.",
-    "reel_angle": "Open on the cross-brand median ask move, call out the softest brand, flash one auction-vs-retail gap, close with 'not hype — snapshot math.'",
+    "social_hook": "Quick market check: asking prices are basically flat — down about a tenth of a percent this week — and roughly 1,140 more cars hit the boards.",
+    "reel_angle": "Open on the one weekly price move that matters, call out the softest brand, flash one auction-vs-retail gap, close with 'not hype — real listings.'",
     "windows_available": [
       "7d",
       "14d"
@@ -102,9 +102,9 @@
     "ferrari": {
       "brand": "Ferrari",
       "brand_key": "ferrari",
-      "headline": "Ferrari flat: 0.0% variant-median ask · 7d",
-      "summary": "As of 2026-09-15, Ferrari US/Canada tracked inventory sits at 1082 cars (Δ +549 vs 2026-09-08). Variant-median ask 0.0% over ~7d (LFL $404,475, +$4,587 / +1.1%).",
-      "take_short": "0.0% · 1082 cars · 7d",
+      "headline": "Ferrari holding steady this week",
+      "summary": "As of Sep 15, 2026, Ferrari has 1,082 cars on the US/Canada market. About 550 more cars listed since Sep 8, 2026. Asking prices are basically flat over the last ~7 days (typical ask around $404,475).",
+      "take_short": "Holding steady · 1,082 cars",
       "bullets": [
         "Variant-median ask move: 0.0% (LFL pool +1.1%) [2026-09-08→2026-09-15]",
         "F430: median ask +$8,114 (+3.6%) · n=79 [2026-09-08→2026-09-15]",
@@ -141,20 +141,20 @@
             "median_ask_lfl_pct": 1.15,
             "variant_pct_median": 0.0,
             "overlap_variants": [
-              "F430 Coupe",
-              "360 Spider",
+              "360 Modena",
               "F8 Spider",
-              "F430 Spider",
-              "348 Spider",
+              "348 TS",
+              "355 Spider",
               "458 Spider",
+              "355 Berlinetta",
+              "F430 Coupe",
               "F8 Coupe",
               "355 GTS",
-              "348 TS",
-              "458 Coupe",
+              "360 Spider",
+              "348 Spider",
               "488 Coupe",
-              "355 Spider",
-              "355 Berlinetta",
-              "360 Modena",
+              "458 Coupe",
+              "F430 Spider",
               "488 Spider"
             ],
             "composition_note": "new variants: 296 Coupe, 296 Spider, 812 Coupe, 812 Spider, F12 Coupe, SF90 Coupe; inventory Δ +549",
@@ -331,10 +331,10 @@
             "median_ask_lfl_pct": 3.4,
             "variant_pct_median": 3.17,
             "overlap_variants": [
-              "488 Spider",
+              "488 Coupe",
               "F8 Spider",
               "F8 Coupe",
-              "488 Coupe"
+              "488 Spider"
             ],
             "composition_note": "new variants: 296 Coupe, 296 Spider, 348 Spider, 348 TS, 355 Berlinetta, 355 GTS; inventory Δ +968",
             "drops": {
@@ -530,8 +530,8 @@
         "thin_note": "Tracker history for Ferrari starts 2026-09-03; 30d/90d windows not available yet."
       },
       "history_callout": "Tracker history from 2026-09-03 — 30d/90d windows not ready yet.",
-      "social_hook": "Desk take on Ferrari: variant-median ask is flat 0.0% over the last ~7 days.",
-      "reel_angle": "Argue that Ferrari is flat on variant asks, with auction bids undershooting retail on 488 Spider — ~15s, one number, one example.",
+      "social_hook": "Desk take on Ferrari: asking prices are basically flat over the last ~7 days.",
+      "reel_angle": "Argue that Ferrari is flat on asking prices, with auction bids undershooting retail on 488 Spider — ~15s, one number, one example.",
       "models": {
         "SF90": {
           "headline": "SF90 — baseline (no 7d history yet)",
@@ -943,9 +943,9 @@
     "mclaren": {
       "brand": "McLaren",
       "brand_key": "mclaren",
-      "headline": "McLaren flat: -0.2% variant-median ask · 7d",
-      "summary": "As of 2026-09-15, McLaren US/Canada tracked inventory sits at 386 cars (Δ +321 vs 2026-09-08). Variant-median ask -0.2% over ~7d (LFL $283,844, $-75,129 / -20.9%).",
-      "take_short": "-0.2% · 386 cars · 7d",
+      "headline": "McLaren holding steady this week",
+      "summary": "As of Sep 15, 2026, McLaren has 386 cars on the US/Canada market. About 320 more cars listed since Sep 8, 2026. Asking prices are basically flat — down about 0.2% over the last ~7 days (typical ask around $283,844).",
+      "take_short": "Holding steady · 386 cars",
       "bullets": [
         "Variant-median ask move: -0.2% (LFL pool -20.9%) [2026-09-08→2026-09-15]",
         "675LT: median ask $-2,292 (-0.6%) · n=5 [2026-09-08→2026-09-15]",
@@ -981,12 +981,12 @@
             "median_ask_lfl_pct": -20.93,
             "variant_pct_median": -0.19,
             "overlap_variants": [
-              "765LT Coupe",
-              "675LT Spider",
               "600LT Spider",
-              "675LT Coupe",
+              "675LT Spider",
+              "765LT Spider",
               "600LT Coupe",
-              "765LT Spider"
+              "765LT Coupe",
+              "675LT Coupe"
             ],
             "composition_note": "new variants: 570GT, 570S Coupe, 570S Spider, 720S Coupe, 720S Spider, 750S Coupe; inventory Δ +321",
             "drops": {
@@ -1140,8 +1140,8 @@
         "thin_note": "Tracker history for McLaren starts 2026-09-06; 30d/90d windows not available yet."
       },
       "history_callout": "Tracker history from 2026-09-06 — 30d/90d windows not ready yet.",
-      "social_hook": "Desk take on McLaren: variant-median ask is flat -0.2% over the last ~7 days.",
-      "reel_angle": "Argue that McLaren is flat on variant asks, watching same-VIN cut rate — ~15s, one number, one example.",
+      "social_hook": "Desk take on McLaren: asking prices are basically flat — down about 0.2% over the last ~7 days.",
+      "reel_angle": "Argue that McLaren is flat on asking prices, watching how sellers are adjusting — ~15s, one number, one example.",
       "models": {
         "600LT": {
           "headline": "600LT flat",
@@ -1608,9 +1608,9 @@
     "lamborghini": {
       "brand": "Lamborghini",
       "brand_key": "lamborghini",
-      "headline": "Lamborghini softening: -2.5% variant-median ask · 7d",
-      "summary": "As of 2026-09-15, Lamborghini US/Canada tracked inventory sits at 319 cars (Δ +263 vs 2026-09-08). Variant-median ask -2.5% over ~7d (LFL $449,894, +$6,862 / +1.6%).",
-      "take_short": "-2.5% · 319 cars · 7d",
+      "headline": "Lamborghini asking prices are down about 2.5%",
+      "summary": "As of Sep 15, 2026, Lamborghini has 319 cars on the US/Canada market. About 260 more cars listed since Sep 8, 2026. Asking prices are down about 2.5% over the last ~7 days (typical ask around $449,894).",
+      "take_short": "Down 2.5% this week · 319 cars",
       "bullets": [
         "Variant-median ask move: -2.5% (LFL pool +1.6%) [2026-09-08→2026-09-15]",
         "Performante: median ask $-12,086 (-3.1%) · n=30 [2026-09-08→2026-09-15]",
@@ -1648,8 +1648,8 @@
             "variant_pct_median": -2.55,
             "overlap_variants": [
               "Performante Coupe",
-              "STO Coupe",
-              "Performante Spider"
+              "Performante Spider",
+              "STO Coupe"
             ],
             "composition_note": "new variants: Gallardo Coupe, Gallardo Spider, Murcielago Coupe, Murcielago Spider, Revuelto Coupe, SVJ Coupe; inventory Δ +263",
             "drops": {
@@ -1789,8 +1789,8 @@
         "thin_note": "Tracker history for Lamborghini starts 2026-09-07; 30d/90d windows not available yet."
       },
       "history_callout": "Tracker history from 2026-09-07 — 30d/90d windows not ready yet.",
-      "social_hook": "Desk take on Lamborghini: variant-median ask is softening -2.5% over the last ~7 days.",
-      "reel_angle": "Argue that Lamborghini is softening on variant asks, with auction bids undershooting retail on Gallardo Coupe — ~15s, one number, one example.",
+      "social_hook": "Desk take on Lamborghini: asking prices are down about 2.5% over the last ~7 days.",
+      "reel_angle": "Argue that Lamborghini is softening on asking prices, with auction bids undershooting retail on Gallardo Coupe — ~15s, one number, one example.",
       "models": {
         "STO": {
           "headline": "STO firming",
@@ -2184,9 +2184,9 @@
     "ford": {
       "brand": "Ford GT",
       "brand_key": "ford",
-      "headline": "Ford GT firming: +4.0% variant-median ask · 7d",
-      "summary": "As of 2026-09-15, Ford GT US/Canada tracked inventory sits at 34 cars (Δ +8 vs 2026-09-08). Variant-median ask +4.0% over ~7d (LFL $779,996, +$29,996 / +4.0%).",
-      "take_short": "+4.0% · 34 cars · 7d",
+      "headline": "Ford GT asking prices are up about 4.0%",
+      "summary": "As of Sep 15, 2026, Ford GT has 34 cars on the US/Canada market. About 8 more cars listed since Sep 8, 2026. Asking prices are up about 4.0% over the last ~7 days (typical ask around $779,996).",
+      "take_short": "Up 4.0% this week · 34 cars",
       "bullets": [
         "Variant-median ask move: +4.0% (LFL pool +4.0%) [2026-09-08→2026-09-15]",
         "Gen1: median ask +$29,996 (+4.0%) · n=23 [2026-09-08→2026-09-15]",
@@ -2299,8 +2299,8 @@
         "thin_note": "Tracker history for Ford GT starts 2026-09-07; 30d/90d windows not available yet."
       },
       "history_callout": "Tracker history from 2026-09-07 — 30d/90d windows not ready yet.",
-      "social_hook": "Desk take on Ford GT: variant-median ask is firming +4.0% over the last ~7 days.",
-      "reel_angle": "Argue that Ford GT is firming on variant asks, with auction bids undershooting retail on Gen 1 — ~15s, one number, one example.",
+      "social_hook": "Desk take on Ford GT: asking prices are up about 4.0% over the last ~7 days.",
+      "reel_angle": "Argue that Ford GT is firming on asking prices, with auction bids undershooting retail on Gen 1 — ~15s, one number, one example.",
       "models": {
         "Gen1": {
           "headline": "Gen1 firming",

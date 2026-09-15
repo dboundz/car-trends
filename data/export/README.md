@@ -67,7 +67,7 @@ path:sha256
 
 (one `path:sha256` per line, lines sorted, trailing newline; see `manifest.json` → `aggregate_definition`).
 
-Current aggregate: `a01867b28b8cf3c656b609fc61b2465d461a8d24e0e087e823c8ae26df1e1433`
+Current aggregate: `e8583dc19055669e9506f60249ec2367b31b95545f568a98a28af8aa8ee321f4`
 
 ## Geography
 

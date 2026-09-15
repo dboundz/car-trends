@@ -281,9 +281,9 @@
     }
   ],
   "market_commentary": {
-    "headline": "Ferrari flat: 0.0% variant-median ask · 7d",
-    "take_short": "0.0% · 1082 cars · 7d",
-    "summary": "As of 2026-09-15, Ferrari US/Canada tracked inventory sits at 1082 cars (Δ +549 vs 2026-09-08). Variant-median ask 0.0% over ~7d (LFL $404,475, +$4,587 / +1.1%).",
+    "headline": "Ferrari holding steady this week",
+    "take_short": "Holding steady · 1,082 cars",
+    "summary": "As of Sep 15, 2026, Ferrari has 1,082 cars on the US/Canada market. About 550 more cars listed since Sep 8, 2026. Asking prices are basically flat over the last ~7 days (typical ask around $404,475).",
     "windows_available": [
       "7d",
       "14d"

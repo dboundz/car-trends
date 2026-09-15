@@ -352,9 +352,9 @@
     }
   ],
   "market_commentary": {
-    "headline": "Ford GT firming: +4.0% variant-median ask · 7d",
-    "take_short": "+4.0% · 34 cars · 7d",
-    "summary": "As of 2026-09-15, Ford GT US/Canada tracked inventory sits at 34 cars (Δ +8 vs 2026-09-08). Variant-median ask +4.0% over ~7d (LFL $779,996, +$29,996 / +4.0%).",
+    "headline": "Ford GT asking prices are up about 4.0%",
+    "take_short": "Up 4.0% this week · 34 cars",
+    "summary": "As of Sep 15, 2026, Ford GT has 34 cars on the US/Canada market. About 8 more cars listed since Sep 8, 2026. Asking prices are up about 4.0% over the last ~7 days (typical ask around $779,996).",
     "windows_available": [
       "7d"
     ]

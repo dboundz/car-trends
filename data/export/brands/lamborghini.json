@@ -493,9 +493,9 @@
     }
   ],
   "market_commentary": {
-    "headline": "Lamborghini softening: -2.5% variant-median ask · 7d",
-    "take_short": "-2.5% · 319 cars · 7d",
-    "summary": "As of 2026-09-15, Lamborghini US/Canada tracked inventory sits at 319 cars (Δ +263 vs 2026-09-08). Variant-median ask -2.5% over ~7d (LFL $449,894, +$6,862 / +1.6%).",
+    "headline": "Lamborghini asking prices are down about 2.5%",
+    "take_short": "Down 2.5% this week · 319 cars",
+    "summary": "As of Sep 15, 2026, Lamborghini has 319 cars on the US/Canada market. About 260 more cars listed since Sep 8, 2026. Asking prices are down about 2.5% over the last ~7 days (typical ask around $449,894).",
     "windows_available": [
       "7d"
     ]

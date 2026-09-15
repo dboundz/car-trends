@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-09-15T11:22:31.173035-04:00",
+    "generated_at": "2026-09-15T12:18:29.194933-04:00",
     "as_of": "2026-09-15",
     "timezone": "America/New_York",
     "geography": "US + Canada only (HTML overview filter; see GEO.md / sources/GEO.md)",
@@ -13,8 +13,8 @@
       "as_of": "2026-09-15",
       "listings_file": {
         "path": "data/export/brands/ferrari.json",
-        "bytes": 932569,
-        "sha256": "0167f4be231f11c61e7fdb60fe816f31d50d9239f58a279413a67b222df1f6dc",
+        "bytes": 932600,
+        "sha256": "5333b8fc5e50ff9a7d8e56ab1f16067cd1714d2ce66e2d5feb9287369aaa322b",
         "listing_count": 1116,
         "kpis": {
           "median_ask": 464397,
@@ -88,9 +88,9 @@
           }
         ],
         "market_commentary": {
-          "headline": "Ferrari flat: 0.0% variant-median ask · 7d",
-          "take_short": "0.0% · 1082 cars · 7d",
-          "summary": "As of 2026-09-15, Ferrari US/Canada tracked inventory sits at 1082 cars (Δ +549 vs 2026-09-08). Variant-median ask 0.0% over ~7d (LFL $404,475, +$4,587 / +1.1%).",
+          "headline": "Ferrari holding steady this week",
+          "take_short": "Holding steady · 1,082 cars",
+          "summary": "As of Sep 15, 2026, Ferrari has 1,082 cars on the US/Canada market. About 550 more cars listed since Sep 8, 2026. Asking prices are basically flat over the last ~7 days (typical ask around $404,475).",
           "windows_available": [
             "7d",
             "14d"
@@ -161,9 +161,9 @@
         }
       },
       "market_commentary": {
-        "headline": "Ferrari flat: 0.0% variant-median ask · 7d",
-        "take_short": "0.0% · 1082 cars · 7d",
-        "summary": "As of 2026-09-15, Ferrari US/Canada tracked inventory sits at 1082 cars (Δ +549 vs 2026-09-08). Variant-median ask 0.0% over ~7d (LFL $404,475, +$4,587 / +1.1%).",
+        "headline": "Ferrari holding steady this week",
+        "take_short": "Holding steady · 1,082 cars",
+        "summary": "As of Sep 15, 2026, Ferrari has 1,082 cars on the US/Canada market. About 550 more cars listed since Sep 8, 2026. Asking prices are basically flat over the last ~7 days (typical ask around $404,475).",
         "windows_available": [
           "7d",
           "14d"
@@ -393,8 +393,8 @@
       "as_of": "2026-09-15",
       "listings_file": {
         "path": "data/export/brands/mclaren.json",
-        "bytes": 319276,
-        "sha256": "a386ad6450e22e23771d88e92d4dc56a574163261dd9256049139f3cc1bf2a02",
+        "bytes": 319320,
+        "sha256": "5b09a7233b8068ed09074e847a1d54e1d1ecea2b4033874ea41907e29e002dea",
         "listing_count": 413,
         "kpis": {
           "median_ask": 249995,
@@ -458,9 +458,9 @@
           }
         ],
         "market_commentary": {
-          "headline": "McLaren flat: -0.2% variant-median ask · 7d",
-          "take_short": "-0.2% · 386 cars · 7d",
-          "summary": "As of 2026-09-15, McLaren US/Canada tracked inventory sits at 386 cars (Δ +321 vs 2026-09-08). Variant-median ask -0.2% over ~7d (LFL $283,844, $-75,129 / -20.9%).",
+          "headline": "McLaren holding steady this week",
+          "take_short": "Holding steady · 386 cars",
+          "summary": "As of Sep 15, 2026, McLaren has 386 cars on the US/Canada market. About 320 more cars listed since Sep 8, 2026. Asking prices are basically flat — down about 0.2% over the last ~7 days (typical ask around $283,844).",
           "windows_available": [
             "7d"
           ]
@@ -520,9 +520,9 @@
         }
       },
       "market_commentary": {
-        "headline": "McLaren flat: -0.2% variant-median ask · 7d",
-        "take_short": "-0.2% · 386 cars · 7d",
-        "summary": "As of 2026-09-15, McLaren US/Canada tracked inventory sits at 386 cars (Δ +321 vs 2026-09-08). Variant-median ask -0.2% over ~7d (LFL $283,844, $-75,129 / -20.9%).",
+        "headline": "McLaren holding steady this week",
+        "take_short": "Holding steady · 386 cars",
+        "summary": "As of Sep 15, 2026, McLaren has 386 cars on the US/Canada market. About 320 more cars listed since Sep 8, 2026. Asking prices are basically flat — down about 0.2% over the last ~7 days (typical ask around $283,844).",
         "windows_available": [
           "7d"
         ]
@@ -886,8 +886,8 @@
       "as_of": "2026-09-15",
       "listings_file": {
         "path": "data/export/brands/lamborghini.json",
-        "bytes": 270683,
-        "sha256": "4d3294ce3a5f1a87a48f51a4e9de75d6932a67527cf8812c22185e45e75fc51f",
+        "bytes": 270719,
+        "sha256": "7cf0260ec978b899354d4286c9dfc87631f893fee30a56717fac3fe9ca7400dc",
         "listing_count": 325,
         "kpis": {
           "median_ask": 553649,
@@ -962,9 +962,9 @@
           }
         ],
         "market_commentary": {
-          "headline": "Lamborghini softening: -2.5% variant-median ask · 7d",
-          "take_short": "-2.5% · 319 cars · 7d",
-          "summary": "As of 2026-09-15, Lamborghini US/Canada tracked inventory sits at 319 cars (Δ +263 vs 2026-09-08). Variant-median ask -2.5% over ~7d (LFL $449,894, +$6,862 / +1.6%).",
+          "headline": "Lamborghini asking prices are down about 2.5%",
+          "take_short": "Down 2.5% this week · 319 cars",
+          "summary": "As of Sep 15, 2026, Lamborghini has 319 cars on the US/Canada market. About 260 more cars listed since Sep 8, 2026. Asking prices are down about 2.5% over the last ~7 days (typical ask around $449,894).",
           "windows_available": [
             "7d"
           ]
@@ -1019,9 +1019,9 @@
         }
       },
       "market_commentary": {
-        "headline": "Lamborghini softening: -2.5% variant-median ask · 7d",
-        "take_short": "-2.5% · 319 cars · 7d",
-        "summary": "As of 2026-09-15, Lamborghini US/Canada tracked inventory sits at 319 cars (Δ +263 vs 2026-09-08). Variant-median ask -2.5% over ~7d (LFL $449,894, +$6,862 / +1.6%).",
+        "headline": "Lamborghini asking prices are down about 2.5%",
+        "take_short": "Down 2.5% this week · 319 cars",
+        "summary": "As of Sep 15, 2026, Lamborghini has 319 cars on the US/Canada market. About 260 more cars listed since Sep 8, 2026. Asking prices are down about 2.5% over the last ~7 days (typical ask around $449,894).",
         "windows_available": [
           "7d"
         ]
@@ -1479,8 +1479,8 @@
       "as_of": "2026-09-15",
       "listings_file": {
         "path": "data/export/brands/ford.json",
-        "bytes": 46655,
-        "sha256": "8e07d11ea3a74525cbdd616c9e568af3e0f5c7114b20785f49e095f02015626d",
+        "bytes": 46686,
+        "sha256": "ecfcf7e2252cb23527eebcbf9dd0188469abd69a93d8b906f48ba0561f78c9e9",
         "listing_count": 47,
         "kpis": {
           "median_ask": 935993,
@@ -1509,9 +1509,9 @@
           }
         ],
         "market_commentary": {
-          "headline": "Ford GT firming: +4.0% variant-median ask · 7d",
-          "take_short": "+4.0% · 34 cars · 7d",
-          "summary": "As of 2026-09-15, Ford GT US/Canada tracked inventory sits at 34 cars (Δ +8 vs 2026-09-08). Variant-median ask +4.0% over ~7d (LFL $779,996, +$29,996 / +4.0%).",
+          "headline": "Ford GT asking prices are up about 4.0%",
+          "take_short": "Up 4.0% this week · 34 cars",
+          "summary": "As of Sep 15, 2026, Ford GT has 34 cars on the US/Canada market. About 8 more cars listed since Sep 8, 2026. Asking prices are up about 4.0% over the last ~7 days (typical ask around $779,996).",
           "windows_available": [
             "7d"
           ]
@@ -1536,9 +1536,9 @@
         }
       },
       "market_commentary": {
-        "headline": "Ford GT firming: +4.0% variant-median ask · 7d",
-        "take_short": "+4.0% · 34 cars · 7d",
-        "summary": "As of 2026-09-15, Ford GT US/Canada tracked inventory sits at 34 cars (Δ +8 vs 2026-09-08). Variant-median ask +4.0% over ~7d (LFL $779,996, +$29,996 / +4.0%).",
+        "headline": "Ford GT asking prices are up about 4.0%",
+        "take_short": "Up 4.0% this week · 34 cars",
+        "summary": "As of Sep 15, 2026, Ford GT has 34 cars on the US/Canada market. About 8 more cars listed since Sep 8, 2026. Asking prices are up about 4.0% over the last ~7 days (typical ask around $779,996).",
         "windows_available": [
           "7d"
         ]
@@ -1883,35 +1883,35 @@
   "brand_files": {
     "ferrari": {
       "path": "data/export/brands/ferrari.json",
-      "sha256": "0167f4be231f11c61e7fdb60fe816f31d50d9239f58a279413a67b222df1f6dc",
-      "bytes": 932569
+      "sha256": "5333b8fc5e50ff9a7d8e56ab1f16067cd1714d2ce66e2d5feb9287369aaa322b",
+      "bytes": 932600
     },
     "mclaren": {
       "path": "data/export/brands/mclaren.json",
-      "sha256": "a386ad6450e22e23771d88e92d4dc56a574163261dd9256049139f3cc1bf2a02",
-      "bytes": 319276
+      "sha256": "5b09a7233b8068ed09074e847a1d54e1d1ecea2b4033874ea41907e29e002dea",
+      "bytes": 319320
     },
     "lamborghini": {
       "path": "data/export/brands/lamborghini.json",
-      "sha256": "4d3294ce3a5f1a87a48f51a4e9de75d6932a67527cf8812c22185e45e75fc51f",
-      "bytes": 270683
+      "sha256": "7cf0260ec978b899354d4286c9dfc87631f893fee30a56717fac3fe9ca7400dc",
+      "bytes": 270719
     },
     "ford": {
       "path": "data/export/brands/ford.json",
-      "sha256": "8e07d11ea3a74525cbdd616c9e568af3e0f5c7114b20785f49e095f02015626d",
-      "bytes": 46655
+      "sha256": "ecfcf7e2252cb23527eebcbf9dd0188469abd69a93d8b906f48ba0561f78c9e9",
+      "bytes": 46686
     }
   },
   "market_commentary": {
     "available": true,
     "as_of": "2026-09-15",
-    "generated_at": "2026-09-15T14:15:15.568844Z",
+    "generated_at": "2026-09-15T15:46:46.101530Z",
     "geography": "US + Canada only",
     "pointer": "data/export/sources/market-commentary/latest.json",
     "overall": {
-      "headline": "Exotics desk: asks flat -0.1% cross-brand",
-      "take_short": "-0.1% cross-brand · inv Δ +1141",
-      "summary": "As of 2026-09-15, tracked Ferrari / McLaren / Lamborghini / Ford GT US+Canada asks are flat on a ~7-day read (-0.1% median of brand medians). Inventory Δ across the board: +1141.",
+      "headline": "Asking prices are broadly flat over the latest 7-day period",
+      "take_short": "Asking prices are broadly flat over the latest 7-day period; about 1,140 more cars listed",
+      "summary": "As of Sep 15, 2026, asking prices across Ferrari, McLaren, Lamborghini, and Ford GT are basically flat — down about a tenth of a percent over the latest 7-day period. About 1,140 more cars listed.",
       "windows_available": [
         "7d",
         "14d"
@@ -1919,34 +1919,34 @@
     },
     "brands": {
       "ferrari": {
-        "headline": "Ferrari flat: 0.0% variant-median ask · 7d",
-        "take_short": "0.0% · 1082 cars · 7d",
-        "summary": "As of 2026-09-15, Ferrari US/Canada tracked inventory sits at 1082 cars (Δ +549 vs 2026-09-08). Variant-median ask 0.0% over ~7d (LFL $404,475, +$4,587 / +1.1%).",
+        "headline": "Ferrari holding steady this week",
+        "take_short": "Holding steady · 1,082 cars",
+        "summary": "As of Sep 15, 2026, Ferrari has 1,082 cars on the US/Canada market. About 550 more cars listed since Sep 8, 2026. Asking prices are basically flat over the last ~7 days (typical ask around $404,475).",
         "windows_available": [
           "7d",
           "14d"
         ]
       },
       "mclaren": {
-        "headline": "McLaren flat: -0.2% variant-median ask · 7d",
-        "take_short": "-0.2% · 386 cars · 7d",
-        "summary": "As of 2026-09-15, McLaren US/Canada tracked inventory sits at 386 cars (Δ +321 vs 2026-09-08). Variant-median ask -0.2% over ~7d (LFL $283,844, $-75,129 / -20.9%).",
+        "headline": "McLaren holding steady this week",
+        "take_short": "Holding steady · 386 cars",
+        "summary": "As of Sep 15, 2026, McLaren has 386 cars on the US/Canada market. About 320 more cars listed since Sep 8, 2026. Asking prices are basically flat — down about 0.2% over the last ~7 days (typical ask around $283,844).",
         "windows_available": [
           "7d"
         ]
       },
       "lamborghini": {
-        "headline": "Lamborghini softening: -2.5% variant-median ask · 7d",
-        "take_short": "-2.5% · 319 cars · 7d",
-        "summary": "As of 2026-09-15, Lamborghini US/Canada tracked inventory sits at 319 cars (Δ +263 vs 2026-09-08). Variant-median ask -2.5% over ~7d (LFL $449,894, +$6,862 / +1.6%).",
+        "headline": "Lamborghini asking prices are down about 2.5%",
+        "take_short": "Down 2.5% this week · 319 cars",
+        "summary": "As of Sep 15, 2026, Lamborghini has 319 cars on the US/Canada market. About 260 more cars listed since Sep 8, 2026. Asking prices are down about 2.5% over the last ~7 days (typical ask around $449,894).",
         "windows_available": [
           "7d"
         ]
       },
       "ford": {
-        "headline": "Ford GT firming: +4.0% variant-median ask · 7d",
-        "take_short": "+4.0% · 34 cars · 7d",
-        "summary": "As of 2026-09-15, Ford GT US/Canada tracked inventory sits at 34 cars (Δ +8 vs 2026-09-08). Variant-median ask +4.0% over ~7d (LFL $779,996, +$29,996 / +4.0%).",
+        "headline": "Ford GT asking prices are up about 4.0%",
+        "take_short": "Up 4.0% this week · 34 cars",
+        "summary": "As of Sep 15, 2026, Ford GT has 34 cars on the US/Canada market. About 8 more cars listed since Sep 8, 2026. Asking prices are up about 4.0% over the last ~7 days (typical ask around $779,996).",
         "windows_available": [
           "7d"
         ]
