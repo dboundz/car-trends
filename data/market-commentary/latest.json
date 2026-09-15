@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-15T13:17:13.916827Z",
+  "generated_at": "2026-09-15T13:19:47.514660Z",
   "as_of": "2026-09-15",
   "windows": [
     "7d",
@@ -142,20 +142,20 @@
             "variant_pct_median": 0.0,
             "overlap_variants": [
               "F8 Coupe",
-              "F430 Coupe",
-              "355 Berlinetta",
-              "355 Spider",
-              "458 Coupe",
-              "360 Spider",
-              "F8 Spider",
-              "348 Spider",
-              "360 Modena",
-              "F430 Spider",
-              "348 TS",
-              "488 Coupe",
-              "488 Spider",
               "458 Spider",
-              "355 GTS"
+              "F430 Spider",
+              "360 Spider",
+              "355 GTS",
+              "488 Spider",
+              "355 Berlinetta",
+              "360 Modena",
+              "348 TS",
+              "458 Coupe",
+              "488 Coupe",
+              "355 Spider",
+              "348 Spider",
+              "F430 Coupe",
+              "F8 Spider"
             ],
             "composition_note": "new variants: 296 Coupe, 296 Spider, SF90 Coupe, SF90 Spider; inventory Δ +319",
             "drops": {
@@ -313,8 +313,8 @@
             "variant_pct_median": 3.17,
             "overlap_variants": [
               "F8 Coupe",
-              "488 Coupe",
               "488 Spider",
+              "488 Coupe",
               "F8 Spider"
             ],
             "composition_note": "new variants: 296 Coupe, 296 Spider, 348 Spider, 348 TS, 355 Berlinetta, 355 GTS; inventory Δ +738",
@@ -835,11 +835,11 @@
             "median_ask_lfl_pct": -20.93,
             "variant_pct_median": -0.19,
             "overlap_variants": [
-              "765LT Spider",
-              "600LT Coupe",
-              "675LT Coupe",
               "765LT Coupe",
+              "600LT Coupe",
               "675LT Spider",
+              "675LT Coupe",
+              "765LT Spider",
               "600LT Spider"
             ],
             "composition_note": "new variants: Artura Coupe, Artura Spider; inventory Δ +63",
@@ -1183,9 +1183,9 @@
             "median_ask_lfl_pct": 1.55,
             "variant_pct_median": -2.55,
             "overlap_variants": [
-              "Performante Spider",
               "Performante Coupe",
-              "STO Coupe"
+              "STO Coupe",
+              "Performante Spider"
             ],
             "composition_note": "new variants: Gallardo Coupe, Gallardo Spider, Murcielago Coupe, Murcielago Spider, Revuelto Coupe, SVJ Coupe; inventory Δ +263",
             "drops": {

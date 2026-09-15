@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-15T13:04:15Z",
+  "generated_at": "2026-09-15T13:19:51Z",
   "latest_snapshot_date": "2026-09-15",
   "snapshot_dates": [
     "2026-09-07",
@@ -32961,110 +32961,110 @@
     ],
     "brand": "Lamborghini",
     "brand_key": "lamborghini",
-    "headline": "Lamborghini softening: -4.2% variant-median ask · 7d",
-    "summary": "As of 2026-09-14, Lamborghini US/Canada tracked inventory sits at 332 cars (Δ +277 vs 2026-09-07). Variant-median ask -4.2% over ~7d (LFL $443,032, $-6,921 / -1.5%).",
-    "take_short": "-4.2% · 332 cars · 7d",
+    "headline": "Lamborghini softening: -2.5% variant-median ask · 7d",
+    "summary": "As of 2026-09-15, Lamborghini US/Canada tracked inventory sits at 319 cars (Δ +263 vs 2026-09-08). Variant-median ask -2.5% over ~7d (LFL $449,894, +$6,862 / +1.6%).",
+    "take_short": "-2.5% · 319 cars · 7d",
     "bullets": [
-      "Variant-median ask move: -4.2% (LFL pool -1.5%) [2026-09-07→2026-09-14]",
-      "Performante: median ask $-19,200 (-4.8%) · n=33 [2026-09-07→2026-09-14]",
-      "STO: median ask +$9,921 (+2.0%) · n=27 [2026-09-07→2026-09-14]",
-      "Same-VIN cuts: 7/35 (20%) over 7d; median cut $700",
-      "Inventory: 332 listings (+277 vs 2026-09-07)",
-      "Mix: new variants: Gallardo Coupe, Gallardo Spider, Murcielago Coupe, Murcielago Spider, Revuelto Coupe, SVJ Coupe; inventory Δ +277",
+      "Variant-median ask move: -2.5% (LFL pool +1.6%) [2026-09-08→2026-09-15]",
+      "Performante: median ask $-12,086 (-3.1%) · n=30 [2026-09-08→2026-09-15]",
+      "STO: median ask +$11,044 (+2.2%) · n=30 [2026-09-08→2026-09-15]",
+      "Same-VIN cuts: 5/38 (13%) over 7d; median cut $4,789",
+      "Inventory: 319 listings (+263 vs 2026-09-08)",
+      "Mix: new variants: Gallardo Coupe, Gallardo Spider, Murcielago Coupe, Murcielago Spider, Revuelto Coupe, SVJ Coupe; inventory Δ +263",
       "Auction softness: 2004 Lamborghini Gallardo bid $30,000 vs retail $169,990 (-82% vs ask)",
       "Canada listing — apply ~×1.5 tariff lens vs US retail asks",
       "Example: Temerario Coupe @ $410,975 / 781 mi"
     ],
     "metrics": {
-      "as_of": "2026-09-14",
+      "as_of": "2026-09-15",
       "history_start": "2026-09-07",
-      "history_days": 7,
-      "snapshot_count": 8,
+      "history_days": 8,
+      "snapshot_count": 9,
       "by_window": {
         "7d": {
           "window": "7d",
           "target_days": 7,
-          "as_of": "2026-09-14",
-          "prior_date": "2026-09-07",
+          "as_of": "2026-09-15",
+          "prior_date": "2026-09-08",
           "span_days": 7,
-          "count": 332,
-          "count_prior": 55,
-          "count_delta": 277,
-          "median_ask": 532000,
-          "median_ask_prior": 449953,
-          "median_ask_delta": 82047,
-          "median_ask_pct": 18.23,
-          "median_ask_lfl": 443032,
-          "median_ask_lfl_prior": 449953,
-          "median_ask_lfl_delta": -6921,
-          "median_ask_lfl_pct": -1.54,
-          "variant_pct_median": -4.23,
+          "count": 319,
+          "count_prior": 56,
+          "count_delta": 263,
+          "median_ask": 559970,
+          "median_ask_prior": 443032,
+          "median_ask_delta": 116938,
+          "median_ask_pct": 26.39,
+          "median_ask_lfl": 449894,
+          "median_ask_lfl_prior": 443032,
+          "median_ask_lfl_delta": 6862,
+          "median_ask_lfl_pct": 1.55,
+          "variant_pct_median": -2.55,
           "overlap_variants": [
-            "Performante Spider",
+            "Performante Coupe",
             "STO Coupe",
-            "Performante Coupe"
+            "Performante Spider"
           ],
-          "composition_note": "new variants: Gallardo Coupe, Gallardo Spider, Murcielago Coupe, Murcielago Spider, Revuelto Coupe, SVJ Coupe; inventory Δ +277",
+          "composition_note": "new variants: Gallardo Coupe, Gallardo Spider, Murcielago Coupe, Murcielago Spider, Revuelto Coupe, SVJ Coupe; inventory Δ +263",
           "drops": {
-            "comparable_vins": 35,
-            "cuts": 7,
-            "cut_share": 0.2,
-            "median_cut_usd": 700,
-            "raises": 4
+            "comparable_vins": 38,
+            "cuts": 5,
+            "cut_share": 0.132,
+            "median_cut_usd": 4789,
+            "raises": 5
           },
           "thin": false,
           "top_variants": [
             {
               "key": "Performante_spider",
               "label": "Performante Spider",
-              "median_ask_delta": -21999,
-              "median_ask_pct": -5.41,
-              "count_delta": 3,
-              "median_ask": 384500,
-              "count": 7
+              "median_ask_delta": -14499,
+              "median_ask_pct": -3.57,
+              "count_delta": -2,
+              "median_ask": 392000,
+              "count": 6
             },
             {
               "key": "Performante_coupe",
               "label": "Performante Coupe",
-              "median_ask_delta": -16402,
-              "median_ask_pct": -4.23,
+              "median_ask_delta": -9672,
+              "median_ask_pct": -2.55,
               "count_delta": 3,
-              "median_ask": 371350,
-              "count": 26
+              "median_ask": 370240,
+              "count": 24
             },
             {
               "key": "STO_coupe",
               "label": "STO Coupe",
-              "median_ask_delta": 9921,
-              "median_ask_pct": 2.02,
-              "count_delta": -1,
-              "median_ask": 499912,
-              "count": 27
+              "median_ask_delta": 11044,
+              "median_ask_pct": 2.25,
+              "count_delta": 3,
+              "median_ask": 501042,
+              "count": 30
             }
           ],
           "families": {
             "STO": {
-              "count": 27,
-              "median_ask": 499912,
-              "median_ask_delta": 9921,
-              "median_ask_pct": 2.02,
+              "count": 30,
+              "median_ask": 501042,
+              "median_ask_delta": 11044,
+              "median_ask_pct": 2.25,
               "variants": [
                 "STO Coupe"
               ]
             },
             "Performante": {
-              "count": 33,
-              "median_ask": 377925,
-              "median_ask_delta": -19200,
-              "median_ask_pct": -4.82,
+              "count": 30,
+              "median_ask": 381120,
+              "median_ask_delta": -12086,
+              "median_ask_pct": -3.06,
               "variants": [
                 "Performante Coupe",
                 "Performante Spider"
               ]
             },
             "SV": {
-              "count": 32,
-              "median_ask": 937933,
+              "count": 28,
+              "median_ask": 937688,
               "median_ask_delta": null,
               "median_ask_pct": null,
               "variants": [
@@ -33074,7 +33074,7 @@
             },
             "SVJ": {
               "count": 35,
-              "median_ask": 1532674,
+              "median_ask": 1482918,
               "median_ask_delta": null,
               "median_ask_pct": null,
               "variants": [
@@ -33083,8 +33083,8 @@
               ]
             },
             "Murcielago": {
-              "count": 40,
-              "median_ask": 643372,
+              "count": 34,
+              "median_ask": 774838,
               "median_ask_delta": null,
               "median_ask_pct": null,
               "variants": [
@@ -33093,8 +33093,8 @@
               ]
             },
             "Gallardo": {
-              "count": 70,
-              "median_ask": 151594,
+              "count": 68,
+              "median_ask": 152794,
               "median_ask_delta": null,
               "median_ask_pct": null,
               "variants": [
@@ -33112,8 +33112,8 @@
               ]
             },
             "Revuelto": {
-              "count": 65,
-              "median_ask": 689900,
+              "count": 64,
+              "median_ask": 692019,
               "median_ask_delta": null,
               "median_ask_pct": null,
               "variants": [
@@ -33142,32 +33142,32 @@
       "thin_note": "Tracker history for Lamborghini starts 2026-09-07; 30d/90d windows not available yet."
     },
     "history_callout": "Tracker history from 2026-09-07 — 30d/90d windows not ready yet.",
-    "social_hook": "Desk take on Lamborghini: variant-median ask is softening -4.2% over the last ~7 days.",
+    "social_hook": "Desk take on Lamborghini: variant-median ask is softening -2.5% over the last ~7 days.",
     "reel_angle": "Argue that Lamborghini is softening on variant asks, with auction bids undershooting retail on Gallardo Coupe — ~15s, one number, one example.",
     "models": {
       "STO": {
         "headline": "STO firming",
-        "take_short": "+2.0% · $499,912 · n=27",
+        "take_short": "+2.2% · $501,042 · n=30",
         "metrics": {
-          "median_ask": 499912,
-          "median_ask_delta": 9921,
-          "median_ask_pct": 2.02,
-          "count": 27,
+          "median_ask": 501042,
+          "median_ask_delta": 11044,
+          "median_ask_pct": 2.25,
+          "count": 30,
           "window": "7d",
-          "prior_date": "2026-09-07",
-          "as_of": "2026-09-14",
+          "prior_date": "2026-09-08",
+          "as_of": "2026-09-15",
           "baseline": false,
           "retail_thin": false
         },
-        "summary": "Lamborghini STO retail median is $499,912 (+$9,921 / +2.0% vs 2026-09-07). Inventory in family: 27. Secondary: Classic last-ask (not retail scrape) $539,970 · n=2 · ~14d.",
+        "summary": "Lamborghini STO retail median is $501,042 (+$11,044 / +2.2% vs 2026-09-08). Inventory in family: 30. Secondary: Classic last-ask (not retail scrape) $549,990 · n=1 · ~14d.",
         "classic": {
           "source": "Classic.com",
           "disclaimer": "Classic.com market cards — not our daily retail ask scrape",
           "primary_window": "14d",
           "windows": {
             "14d": {
-              "last_ask_median": 539970,
-              "last_ask_n": 2,
+              "last_ask_median": 549990,
+              "last_ask_n": 1,
               "sold_median": null,
               "sold_n": 0,
               "geo": "US/CA",
@@ -33184,27 +33184,27 @@
               "label_sold": "Classic sold"
             }
           },
-          "last_ask_median": 539970,
-          "last_ask_n": 2,
+          "last_ask_median": 549990,
+          "last_ask_n": 1,
           "sold_median": null,
           "sold_n": 0
         }
       },
       "Performante": {
         "headline": "Performante softening",
-        "take_short": "-4.8% · $377,925 · n=33",
+        "take_short": "-3.1% · $381,120 · n=30",
         "metrics": {
-          "median_ask": 377925,
-          "median_ask_delta": -19200,
-          "median_ask_pct": -4.82,
-          "count": 33,
+          "median_ask": 381120,
+          "median_ask_delta": -12086,
+          "median_ask_pct": -3.06,
+          "count": 30,
           "window": "7d",
-          "prior_date": "2026-09-07",
-          "as_of": "2026-09-14",
+          "prior_date": "2026-09-08",
+          "as_of": "2026-09-15",
           "baseline": false,
           "retail_thin": false
         },
-        "summary": "Lamborghini Performante retail median is $377,925 ($-19,200 / -4.8% vs 2026-09-07). Inventory in family: 33. Secondary: Classic sold $373,000 · n=1 · ~14d.",
+        "summary": "Lamborghini Performante retail median is $381,120 ($-12,086 / -3.1% vs 2026-09-08). Inventory in family: 30. Secondary: Classic sold $373,000 · n=1 · ~14d.",
         "classic": {
           "source": "Classic.com",
           "disclaimer": "Classic.com market cards — not our daily retail ask scrape",
@@ -33237,19 +33237,19 @@
       },
       "SV": {
         "headline": "SV — baseline (no 7d history yet)",
-        "take_short": "Baseline · $937,933 · n=32 · Classic last-ask $901,190",
+        "take_short": "Baseline · $937,688 · n=28 · Classic last-ask $901,190",
         "metrics": {
-          "median_ask": 937933,
+          "median_ask": 937688,
           "median_ask_delta": null,
           "median_ask_pct": null,
-          "count": 32,
+          "count": 28,
           "window": "7d",
-          "prior_date": "2026-09-07",
-          "as_of": "2026-09-14",
+          "prior_date": "2026-09-08",
+          "as_of": "2026-09-15",
           "baseline": true,
           "retail_thin": true
         },
-        "summary": "Lamborghini SV retail median is $937,933 · n=32. First snapshot for this family — no prior Δ yet. Secondary: Classic last-ask (not retail scrape) $901,190 · n=1 · ~14d.",
+        "summary": "Lamborghini SV retail median is $937,688 · n=28. First snapshot for this family — no prior Δ yet. Secondary: Classic last-ask (not retail scrape) $901,190 · n=1 · ~14d.",
         "classic": {
           "source": "Classic.com",
           "disclaimer": "Classic.com market cards — not our daily retail ask scrape",
@@ -33282,19 +33282,19 @@
       },
       "SVJ": {
         "headline": "SVJ — baseline (no 7d history yet)",
-        "take_short": "Baseline · $1,532,674 · n=35 · Classic last-ask $1,168,166",
+        "take_short": "Baseline · $1,482,918 · n=35 · Classic last-ask $1,168,166",
         "metrics": {
-          "median_ask": 1532674,
+          "median_ask": 1482918,
           "median_ask_delta": null,
           "median_ask_pct": null,
           "count": 35,
           "window": "7d",
-          "prior_date": "2026-09-07",
-          "as_of": "2026-09-14",
+          "prior_date": "2026-09-08",
+          "as_of": "2026-09-15",
           "baseline": true,
           "retail_thin": true
         },
-        "summary": "Lamborghini SVJ retail median is $1,532,674 · n=35. First snapshot for this family — no prior Δ yet. Secondary: Classic last-ask (not retail scrape) $1,168,166 · n=2 · ~7d · Classic sold $1,550,000 · n=1 · ~7d.",
+        "summary": "Lamborghini SVJ retail median is $1,482,918 · n=35. First snapshot for this family — no prior Δ yet. Secondary: Classic last-ask (not retail scrape) $1,168,166 · n=2 · ~7d · Classic sold $1,550,000 · n=1 · ~7d.",
         "classic": {
           "source": "Classic.com",
           "disclaimer": "Classic.com market cards — not our daily retail ask scrape",
@@ -33319,8 +33319,8 @@
               "label_sold": "Classic sold"
             },
             "30d": {
-              "last_ask_median": 1237610,
-              "last_ask_n": 6,
+              "last_ask_median": 1225221,
+              "last_ask_n": 5,
               "sold_median": 1550000,
               "sold_n": 1,
               "geo": "US/CA",
@@ -33336,19 +33336,19 @@
       },
       "Murcielago": {
         "headline": "Murcielago — baseline (no 7d history yet)",
-        "take_short": "Baseline · $643,372 · n=40 · Classic last-ask $738,773",
+        "take_short": "Baseline · $774,838 · n=34 · Classic last-ask $738,773",
         "metrics": {
-          "median_ask": 643372,
+          "median_ask": 774838,
           "median_ask_delta": null,
           "median_ask_pct": null,
-          "count": 40,
+          "count": 34,
           "window": "7d",
-          "prior_date": "2026-09-07",
-          "as_of": "2026-09-14",
+          "prior_date": "2026-09-08",
+          "as_of": "2026-09-15",
           "baseline": true,
           "retail_thin": true
         },
-        "summary": "Lamborghini Murcielago retail median is $643,372 · n=40. First snapshot for this family — no prior Δ yet. Secondary: Classic last-ask (not retail scrape) $738,773 · n=1 · ~7d.",
+        "summary": "Lamborghini Murcielago retail median is $774,838 · n=34. First snapshot for this family — no prior Δ yet. Secondary: Classic last-ask (not retail scrape) $738,773 · n=1 · ~7d.",
         "classic": {
           "source": "Classic.com",
           "disclaimer": "Classic.com market cards — not our daily retail ask scrape",
@@ -33375,8 +33375,8 @@
             "30d": {
               "last_ask_median": 769386,
               "last_ask_n": 2,
-              "sold_median": 701000,
-              "sold_n": 5,
+              "sold_median": 700500,
+              "sold_n": 2,
               "geo": "US/CA",
               "label_last_ask": "Classic last-ask (not retail scrape)",
               "label_sold": "Classic sold"
@@ -33390,19 +33390,19 @@
       },
       "Gallardo": {
         "headline": "Gallardo — baseline (no 7d history yet)",
-        "take_short": "Baseline · $151,594 · n=70 · Classic last-ask $212,448",
+        "take_short": "Baseline · $152,794 · n=68 · Classic last-ask $212,448",
         "metrics": {
-          "median_ask": 151594,
+          "median_ask": 152794,
           "median_ask_delta": null,
           "median_ask_pct": null,
-          "count": 70,
+          "count": 68,
           "window": "7d",
-          "prior_date": "2026-09-07",
-          "as_of": "2026-09-14",
+          "prior_date": "2026-09-08",
+          "as_of": "2026-09-15",
           "baseline": true,
           "retail_thin": true
         },
-        "summary": "Lamborghini Gallardo retail median is $151,594 · n=70. First snapshot for this family — no prior Δ yet. Secondary: Classic last-ask (not retail scrape) $212,448 · n=2 · ~7d · Classic sold $220,000 · n=5 · ~7d.",
+        "summary": "Lamborghini Gallardo retail median is $152,794 · n=68. First snapshot for this family — no prior Δ yet. Secondary: Classic last-ask (not retail scrape) $212,448 · n=2 · ~7d · Classic sold $162,500 · n=4 · ~7d.",
         "classic": {
           "source": "Classic.com",
           "disclaimer": "Classic.com market cards — not our daily retail ask scrape",
@@ -33411,15 +33411,15 @@
             "7d": {
               "last_ask_median": 212448,
               "last_ask_n": 2,
-              "sold_median": 220000,
-              "sold_n": 5,
+              "sold_median": 162500,
+              "sold_n": 4,
               "geo": "US/CA",
               "label_last_ask": "Classic last-ask (not retail scrape)",
               "label_sold": "Classic sold"
             },
             "14d": {
-              "last_ask_median": 175900,
-              "last_ask_n": 5,
+              "last_ask_median": 189000,
+              "last_ask_n": 3,
               "sold_median": 220000,
               "sold_n": 5,
               "geo": "US/CA",
@@ -33429,8 +33429,8 @@
             "30d": {
               "last_ask_median": 169925,
               "last_ask_n": 16,
-              "sold_median": 140000,
-              "sold_n": 9,
+              "sold_median": 136500,
+              "sold_n": 8,
               "geo": "US/CA",
               "label_last_ask": "Classic last-ask (not retail scrape)",
               "label_sold": "Classic sold"
@@ -33438,8 +33438,8 @@
           },
           "last_ask_median": 212448,
           "last_ask_n": 2,
-          "sold_median": 220000,
-          "sold_n": 5
+          "sold_median": 162500,
+          "sold_n": 4
         }
       },
       "Temerario": {
@@ -33451,8 +33451,8 @@
           "median_ask_pct": null,
           "count": 30,
           "window": "7d",
-          "prior_date": "2026-09-07",
-          "as_of": "2026-09-14",
+          "prior_date": "2026-09-08",
+          "as_of": "2026-09-15",
           "baseline": true,
           "retail_thin": true
         },
@@ -33461,27 +33461,27 @@
       },
       "Revuelto": {
         "headline": "Revuelto — baseline (no 7d history yet)",
-        "take_short": "Baseline · $689,900 · n=65 · Classic last-ask $649,994",
+        "take_short": "Baseline · $692,019 · n=64 · Classic last-ask $659,990",
         "metrics": {
-          "median_ask": 689900,
+          "median_ask": 692019,
           "median_ask_delta": null,
           "median_ask_pct": null,
-          "count": 65,
+          "count": 64,
           "window": "7d",
-          "prior_date": "2026-09-07",
-          "as_of": "2026-09-14",
+          "prior_date": "2026-09-08",
+          "as_of": "2026-09-15",
           "baseline": true,
           "retail_thin": true
         },
-        "summary": "Lamborghini Revuelto retail median is $689,900 · n=65. First snapshot for this family — no prior Δ yet. Secondary: Classic last-ask (not retail scrape) $649,994 · n=6 · ~7d.",
+        "summary": "Lamborghini Revuelto retail median is $692,019 · n=64. First snapshot for this family — no prior Δ yet. Secondary: Classic last-ask (not retail scrape) $659,990 · n=7 · ~7d.",
         "classic": {
           "source": "Classic.com",
           "disclaimer": "Classic.com market cards — not our daily retail ask scrape",
           "primary_window": "7d",
           "windows": {
             "7d": {
-              "last_ask_median": 649994,
-              "last_ask_n": 6,
+              "last_ask_median": 659990,
+              "last_ask_n": 7,
               "sold_median": null,
               "sold_n": 0,
               "geo": "US/CA",
@@ -33489,8 +33489,8 @@
               "label_sold": "Classic sold"
             },
             "14d": {
-              "last_ask_median": 698799,
-              "last_ask_n": 9,
+              "last_ask_median": 699399,
+              "last_ask_n": 10,
               "sold_median": null,
               "sold_n": 0,
               "geo": "US/CA",
@@ -33498,8 +33498,8 @@
               "label_sold": "Classic sold"
             },
             "30d": {
-              "last_ask_median": 699900,
-              "last_ask_n": 25,
+              "last_ask_median": 699948,
+              "last_ask_n": 26,
               "sold_median": 653000,
               "sold_n": 2,
               "geo": "US/CA",
@@ -33507,8 +33507,8 @@
               "label_sold": "Classic sold"
             }
           },
-          "last_ask_median": 649994,
-          "last_ask_n": 6,
+          "last_ask_median": 659990,
+          "last_ask_n": 7,
           "sold_median": null,
           "sold_n": 0
         }

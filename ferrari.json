@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-15T12:41:08Z",
+  "generated_at": "2026-09-15T13:19:51Z",
   "latest_snapshot_date": "2026-09-15",
   "snapshot_dates": [
     "2026-09-03",
@@ -54,29 +54,29 @@
   ],
   "classic_note": "Pre-2010 regular Ferraris. 348 GTS is the later targa; 348 TS is the earlier targa. Both included. Excludes Scuderia, 16M, Challenge, Challenge Stradale, and Fiorano numbered specials.",
   "variant_colors": {
-    "348 GTS": "#ffd166",
-    "F430 Spider": "#e6c36a",
-    "360 Modena": "#d4a373",
-    "355 GTS": "#e5989b",
-    "296 Spider": "#b388ff",
     "458 Speciale": "#2a9d8f",
-    "348 TS": "#edf2f4",
-    "SF90 Coupe": "#ff006e",
-    "488 Spider": "#ff8fa3",
-    "348 Spider": "#adb5bd",
-    "F8 Spider": "#90e0ef",
-    "355 Spider": "#ffb4a2",
-    "F430 Coupe": "#c9a227",
-    "296 Coupe": "#8338ec",
-    "F8 Coupe": "#4cc9f0",
-    "348 TB": "#8d99ae",
-    "488 Coupe": "#e63946",
-    "348 GTB": "#6c757d",
     "SF90 Spider": "#ff4d94",
-    "360 Spider": "#faedcd",
-    "458 Coupe": "#f4a261",
+    "348 TB": "#8d99ae",
+    "F8 Spider": "#90e0ef",
     "355 Berlinetta": "#b5838d",
-    "458 Spider": "#e9c46a"
+    "355 GTS": "#e5989b",
+    "348 GTB": "#6c757d",
+    "SF90 Coupe": "#ff006e",
+    "348 Spider": "#adb5bd",
+    "296 Coupe": "#8338ec",
+    "348 TS": "#edf2f4",
+    "F430 Spider": "#e6c36a",
+    "488 Coupe": "#e63946",
+    "F8 Coupe": "#4cc9f0",
+    "360 Spider": "#faedcd",
+    "F430 Coupe": "#c9a227",
+    "458 Spider": "#e9c46a",
+    "348 GTS": "#ffd166",
+    "458 Coupe": "#f4a261",
+    "355 Spider": "#ffb4a2",
+    "296 Spider": "#b388ff",
+    "488 Spider": "#ff8fa3",
+    "360 Modena": "#d4a373"
   },
   "kpis": [
     {
@@ -154471,21 +154471,21 @@
           "median_ask_lfl_pct": 1.15,
           "variant_pct_median": 0.0,
           "overlap_variants": [
-            "355 GTS",
-            "F430 Coupe",
-            "348 TS",
-            "355 Spider",
-            "F8 Spider",
-            "488 Coupe",
-            "458 Coupe",
             "F8 Coupe",
-            "488 Spider",
-            "360 Modena",
-            "355 Berlinetta",
-            "F430 Spider",
             "458 Spider",
+            "F430 Spider",
             "360 Spider",
-            "348 Spider"
+            "355 GTS",
+            "488 Spider",
+            "355 Berlinetta",
+            "360 Modena",
+            "348 TS",
+            "458 Coupe",
+            "488 Coupe",
+            "355 Spider",
+            "348 Spider",
+            "F430 Coupe",
+            "F8 Spider"
           ],
           "composition_note": "new variants: 296 Coupe, 296 Spider, SF90 Coupe, SF90 Spider; inventory Δ +319",
           "drops": {
@@ -154827,7 +154827,7 @@
     "models": {
       "SF90": {
         "headline": "SF90 — baseline (no 7d history yet)",
-        "take_short": "Baseline · $547,373 · n=119 · Classic last-ask $564,999",
+        "take_short": "Baseline · $547,373 · n=119 · Classic last-ask $570,450",
         "metrics": {
           "median_ask": 547373,
           "median_ask_delta": null,
@@ -154839,15 +154839,15 @@
           "baseline": true,
           "retail_thin": true
         },
-        "summary": "Ferrari SF90 retail median is $547,373 · n=119. First snapshot for this family — no prior Δ yet. Secondary: Classic last-ask (not retail scrape) $564,999 · n=9 · ~7d.",
+        "summary": "Ferrari SF90 retail median is $547,373 · n=119. First snapshot for this family — no prior Δ yet. Secondary: Classic last-ask (not retail scrape) $570,450 · n=8 · ~7d.",
         "classic": {
           "source": "Classic.com",
           "disclaimer": "Classic.com market cards — not our daily retail ask scrape",
           "primary_window": "7d",
           "windows": {
             "7d": {
-              "last_ask_median": 564999,
-              "last_ask_n": 9,
+              "last_ask_median": 570450,
+              "last_ask_n": 8,
               "sold_median": null,
               "sold_n": 0,
               "geo": "US/CA",
@@ -154855,8 +154855,8 @@
               "label_sold": "Classic sold"
             },
             "14d": {
-              "last_ask_median": 589598,
-              "last_ask_n": 23,
+              "last_ask_median": 589744,
+              "last_ask_n": 22,
               "sold_median": null,
               "sold_n": 0,
               "geo": "US/CA",
@@ -154864,8 +154864,8 @@
               "label_sold": "Classic sold"
             },
             "30d": {
-              "last_ask_median": 569770,
-              "last_ask_n": 47,
+              "last_ask_median": 572497,
+              "last_ask_n": 46,
               "sold_median": 465000,
               "sold_n": 2,
               "geo": "US/CA",
@@ -154873,8 +154873,8 @@
               "label_sold": "Classic sold"
             }
           },
-          "last_ask_median": 564999,
-          "last_ask_n": 9,
+          "last_ask_median": 570450,
+          "last_ask_n": 8,
           "sold_median": null,
           "sold_n": 0
         }
@@ -154893,7 +154893,7 @@
           "baseline": true,
           "retail_thin": true
         },
-        "summary": "Ferrari 296 retail median is $379,948 · n=125. First snapshot for this family — no prior Δ yet. Secondary: Classic last-ask (not retail scrape) $343,499 · n=12 · ~7d · Classic sold $350,000 · n=1 · ~7d.",
+        "summary": "Ferrari 296 retail median is $379,948 · n=125. First snapshot for this family — no prior Δ yet. Secondary: Classic last-ask (not retail scrape) $343,499 · n=14 · ~7d · Classic sold $350,000 · n=1 · ~7d.",
         "classic": {
           "source": "Classic.com",
           "disclaimer": "Classic.com market cards — not our daily retail ask scrape",
@@ -154901,7 +154901,7 @@
           "windows": {
             "7d": {
               "last_ask_median": 343499,
-              "last_ask_n": 12,
+              "last_ask_n": 14,
               "sold_median": 350000,
               "sold_n": 1,
               "geo": "US/CA",
@@ -154910,7 +154910,7 @@
             },
             "14d": {
               "last_ask_median": 374766,
-              "last_ask_n": 30,
+              "last_ask_n": 32,
               "sold_median": 350000,
               "sold_n": 1,
               "geo": "US/CA",
@@ -154919,7 +154919,7 @@
             },
             "30d": {
               "last_ask_median": 374999,
-              "last_ask_n": 73,
+              "last_ask_n": 75,
               "sold_median": 350000,
               "sold_n": 1,
               "geo": "US/CA",
@@ -154928,7 +154928,7 @@
             }
           },
           "last_ask_median": 343499,
-          "last_ask_n": 12,
+          "last_ask_n": 14,
           "sold_median": 350000,
           "sold_n": 1
         }

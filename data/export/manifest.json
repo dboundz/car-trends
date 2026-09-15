@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-09-15T09:17:34.305870-04:00",
+  "generated_at": "2026-09-15T09:19:55.125808-04:00",
   "as_of": "2026-09-15",
   "schema_version": "1.0.0",
-  "aggregate_sha256": "35466ac4c489444ae1935a02af03e6037b0f122bdefaad04b7b08df08d6b9e70",
+  "aggregate_sha256": "f982629f94483fa90a9268aae661006277df1158c67cedcc3adebc2c66de4854",
   "aggregate_definition": "SHA-256 of UTF-8 bytes of sorted unique lines 'path:sha256\\n' for every entry in files[]. This is integrity verification, not a digital signature. Optional later: minisign/GPG over this manifest or aggregate_sha256.",
   "aggregate_material_preview_lines": [
-    "data/export/README.md:a4b8fe498a8a95395de601268ec1b08223d4cab986ec7de0de5d766d66d05068",
+    "data/export/README.md:936a545388fe5f0d42ecf0117c7d2333641df5b0749ef645ff186eea449f4623",
     "data/export/brands/ferrari.json:4917bbd4b64e90b85986ca6671a79c373aea6c8abc982121542248580b64d7e1",
     "data/export/brands/ford.json:8e07d11ea3a74525cbdd616c9e568af3e0f5c7114b20785f49e095f02015626d",
     "data/export/brands/lamborghini.json:4d3294ce3a5f1a87a48f51a4e9de75d6932a67527cf8812c22185e45e75fc51f",
@@ -16,7 +16,7 @@
     {
       "path": "data/export/README.md",
       "bytes": 2763,
-      "sha256": "a4b8fe498a8a95395de601268ec1b08223d4cab986ec7de0de5d766d66d05068"
+      "sha256": "936a545388fe5f0d42ecf0117c7d2333641df5b0749ef645ff186eea449f4623"
     },
     {
       "path": "data/export/brands/ferrari.json",
@@ -45,12 +45,12 @@
     {
       "path": "data/export/index.html",
       "bytes": 1743,
-      "sha256": "4ee0b9dcb2082d730eb2d95492fa3bb6397dd1409525759f07504d8d14d5f07b"
+      "sha256": "849f5adbcaf628ce775f0a049a927d7400b5bc73d3b4ecb716e9ff688e42d9d9"
     },
     {
       "path": "data/export/latest.json",
       "bytes": 87189,
-      "sha256": "e651990058149afe0a7a544074152789fa8615ae5871a8f3e79ff62aef747f03"
+      "sha256": "6448d6b6f9b20c2b8fa0db8149d354b295cf88fae26e98352cdca3a3a003beb9"
     },
     {
       "path": "data/export/sources/GEO.md",
@@ -154,12 +154,12 @@
     {
       "path": "data/export/sources/market-commentary/2026-09-15.json",
       "bytes": 72613,
-      "sha256": "a9d6847f68df356f7ec84fc952dad29ee2c52e001df838f8ed0724e6de9d15bb"
+      "sha256": "5d23afe8b7c37044de47ab82dd4cfb01dfb8025f96cb23123c18508b8d8324a7"
     },
     {
       "path": "data/export/sources/market-commentary/latest.json",
       "bytes": 72613,
-      "sha256": "a9d6847f68df356f7ec84fc952dad29ee2c52e001df838f8ed0724e6de9d15bb"
+      "sha256": "5d23afe8b7c37044de47ab82dd4cfb01dfb8025f96cb23123c18508b8d8324a7"
     }
   ]
 }

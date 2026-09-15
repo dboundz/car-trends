@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-09-15T09:17:34.305870-04:00",
+    "generated_at": "2026-09-15T09:19:55.125808-04:00",
     "as_of": "2026-09-15",
     "timezone": "America/New_York",
     "geography": "US + Canada only (HTML overview filter; see GEO.md / sources/GEO.md)",
@@ -1689,7 +1689,7 @@
   "market_commentary": {
     "available": true,
     "as_of": "2026-09-15",
-    "generated_at": "2026-09-15T13:17:13.916827Z",
+    "generated_at": "2026-09-15T13:19:47.514660Z",
     "geography": "US + Canada only",
     "pointer": "data/export/sources/market-commentary/latest.json",
     "overall": {
