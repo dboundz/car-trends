@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-15T15:47:11Z",
+  "generated_at": "2026-09-15T16:03:47Z",
   "latest_snapshot_date": "2026-09-15",
   "snapshot_dates": [
     "2026-09-06",
@@ -32,22 +32,22 @@
     "GT"
   ],
   "variant_colors": {
-    "675LT Coupe": "#ff6b35",
-    "675LT Spider": "#ff9f1c",
-    "600LT Coupe": "#4cc9f0",
-    "600LT Spider": "#90e0ef",
-    "765LT Coupe": "#e63946",
-    "765LT Spider": "#ff8fa3",
-    "Artura Coupe": "#b8f2e6",
-    "Artura Spider": "#7bdff2",
-    "720S Coupe": "#c77dff",
-    "720S Spider": "#e0aaff",
-    "750S Coupe": "#ff4d6d",
-    "750S Spider": "#ff8fa3",
-    "570S Coupe": "#80ed99",
-    "570S Spider": "#b7e4c7",
-    "570GT": "#95d5b2",
-    "GT": "#adb5bd"
+    "675LT Coupe": "#c47a3a",
+    "675LT Spider": "#a87a55",
+    "600LT Coupe": "#5c6570",
+    "600LT Spider": "#7a828c",
+    "765LT Coupe": "#8a5a32",
+    "765LT Spider": "#b08968",
+    "Artura Coupe": "#4b5563",
+    "Artura Spider": "#6b7280",
+    "720S Coupe": "#57534e",
+    "720S Spider": "#78716c",
+    "750S Coupe": "#64748b",
+    "750S Spider": "#94a3b8",
+    "570S Coupe": "#737373",
+    "570S Spider": "#9ca3af",
+    "570GT": "#525252",
+    "GT": "#8b919a"
   },
   "kpis": [
     {
@@ -59,7 +59,7 @@
       "max_ask": 409995,
       "priced_count": 3,
       "miled_count": 2,
-      "color": "#ff6b35"
+      "color": "#c47a3a"
     },
     {
       "variant": "675LT Spider",
@@ -70,7 +70,7 @@
       "max_ask": 519990,
       "priced_count": 2,
       "miled_count": 1,
-      "color": "#ff9f1c"
+      "color": "#a87a55"
     },
     {
       "variant": "600LT Coupe",
@@ -81,7 +81,7 @@
       "max_ask": 499999,
       "priced_count": 23,
       "miled_count": 10,
-      "color": "#4cc9f0"
+      "color": "#5c6570"
     },
     {
       "variant": "600LT Spider",
@@ -92,7 +92,7 @@
       "max_ask": 299995,
       "priced_count": 23,
       "miled_count": 17,
-      "color": "#90e0ef"
+      "color": "#7a828c"
     },
     {
       "variant": "765LT Coupe",
@@ -103,7 +103,7 @@
       "max_ask": 899990,
       "priced_count": 18,
       "miled_count": 8,
-      "color": "#e63946"
+      "color": "#8a5a32"
     },
     {
       "variant": "765LT Spider",
@@ -114,7 +114,7 @@
       "max_ask": 1199991,
       "priced_count": 18,
       "miled_count": 13,
-      "color": "#ff8fa3"
+      "color": "#b08968"
     },
     {
       "variant": "Artura Coupe",
@@ -125,7 +125,7 @@
       "max_ask": 342655,
       "priced_count": 50,
       "miled_count": 30,
-      "color": "#b8f2e6"
+      "color": "#4b5563"
     },
     {
       "variant": "Artura Spider",
@@ -136,7 +136,7 @@
       "max_ask": 406983,
       "priced_count": 17,
       "miled_count": 12,
-      "color": "#7bdff2"
+      "color": "#6b7280"
     },
     {
       "variant": "720S Coupe",
@@ -147,7 +147,7 @@
       "max_ask": 359985,
       "priced_count": 29,
       "miled_count": 13,
-      "color": "#c77dff"
+      "color": "#57534e"
     },
     {
       "variant": "720S Spider",
@@ -158,7 +158,7 @@
       "max_ask": 349600,
       "priced_count": 47,
       "miled_count": 22,
-      "color": "#e0aaff"
+      "color": "#78716c"
     },
     {
       "variant": "750S Coupe",
@@ -169,7 +169,7 @@
       "max_ask": 446899,
       "priced_count": 18,
       "miled_count": 14,
-      "color": "#ff4d6d"
+      "color": "#64748b"
     },
     {
       "variant": "750S Spider",
@@ -180,7 +180,7 @@
       "max_ask": 476295,
       "priced_count": 41,
       "miled_count": 30,
-      "color": "#ff8fa3"
+      "color": "#94a3b8"
     },
     {
       "variant": "570S Coupe",
@@ -191,7 +191,7 @@
       "max_ask": 329000,
       "priced_count": 41,
       "miled_count": 10,
-      "color": "#80ed99"
+      "color": "#737373"
     },
     {
       "variant": "570S Spider",
@@ -202,7 +202,7 @@
       "max_ask": 190268,
       "priced_count": 21,
       "miled_count": 9,
-      "color": "#b7e4c7"
+      "color": "#9ca3af"
     },
     {
       "variant": "570GT",
@@ -213,7 +213,7 @@
       "max_ask": 199777,
       "priced_count": 16,
       "miled_count": 10,
-      "color": "#95d5b2"
+      "color": "#525252"
     },
     {
       "variant": "GT",
@@ -224,7 +224,7 @@
       "max_ask": 186991,
       "priced_count": 46,
       "miled_count": 21,
-      "color": "#adb5bd"
+      "color": "#8b919a"
     }
   ],
   "median_series": {

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-15T15:47:11Z",
+  "generated_at": "2026-09-15T16:03:47Z",
   "latest_snapshot_date": "2026-09-15",
   "snapshot_dates": [
     "2026-09-03",
@@ -57,32 +57,32 @@
   ],
   "classic_note": "Pre-2010 regular Ferraris. 348 GTS is the later targa; 348 TS is the earlier targa. Both included. Excludes Scuderia, 16M, Challenge, Challenge Stradale, and Fiorano numbered specials.",
   "variant_colors": {
-    "348 TS": "#edf2f4",
-    "488 Coupe": "#e63946",
-    "458 Coupe": "#f4a261",
-    "348 Spider": "#adb5bd",
-    "F430 Spider": "#e6c36a",
-    "F8 Coupe": "#4cc9f0",
-    "355 GTS": "#e5989b",
-    "812 Spider": "#ff9f1c",
-    "348 GTS": "#ffd166",
-    "296 Coupe": "#8338ec",
-    "296 Spider": "#b388ff",
-    "F8 Spider": "#90e0ef",
-    "348 GTB": "#6c757d",
-    "458 Spider": "#e9c46a",
-    "SF90 Coupe": "#ff006e",
-    "360 Modena": "#d4a373",
-    "488 Spider": "#ff8fa3",
-    "458 Speciale": "#2a9d8f",
-    "360 Spider": "#faedcd",
-    "348 TB": "#8d99ae",
-    "F430 Coupe": "#c9a227",
-    "F12 Coupe": "#3a86ff",
-    "SF90 Spider": "#ff4d94",
-    "812 Coupe": "#fb5607",
-    "355 Spider": "#ffb4a2",
-    "355 Berlinetta": "#b5838d"
+    "296 Coupe": "#5c6570",
+    "488 Spider": "#a87878",
+    "360 Spider": "#a8a29e",
+    "348 Spider": "#9ca3af",
+    "812 Spider": "#6b7280",
+    "296 Spider": "#7a828c",
+    "F430 Coupe": "#6b7280",
+    "355 Berlinetta": "#57534e",
+    "SF90 Coupe": "#a85858",
+    "F8 Coupe": "#64748b",
+    "458 Coupe": "#737373",
+    "458 Spider": "#9ca3af",
+    "F8 Spider": "#94a3b8",
+    "SF90 Spider": "#8f6a6a",
+    "348 TS": "#8b8b93",
+    "F12 Coupe": "#57534e",
+    "348 TB": "#71717a",
+    "F430 Spider": "#8b919a",
+    "355 GTS": "#7c746c",
+    "355 Spider": "#a1a1aa",
+    "348 GTS": "#6b7280",
+    "360 Modena": "#78716c",
+    "488 Coupe": "#c45c5c",
+    "348 GTB": "#52525b",
+    "458 Speciale": "#525252",
+    "812 Coupe": "#4b5563"
   },
   "kpis": [
     {
@@ -94,7 +94,7 @@
       "max_ask": 699999,
       "priced_count": 57,
       "miled_count": 45,
-      "color": "#ff006e",
+      "color": "#a85858",
       "group": "current"
     },
     {
@@ -106,7 +106,7 @@
       "max_ask": 1200000,
       "priced_count": 63,
       "miled_count": 51,
-      "color": "#ff4d94",
+      "color": "#8f6a6a",
       "group": "current"
     },
     {
@@ -118,7 +118,7 @@
       "max_ask": 1887888,
       "priced_count": 67,
       "miled_count": 62,
-      "color": "#8338ec",
+      "color": "#5c6570",
       "group": "current"
     },
     {
@@ -130,7 +130,7 @@
       "max_ask": 569000,
       "priced_count": 66,
       "miled_count": 62,
-      "color": "#b388ff",
+      "color": "#7a828c",
       "group": "current"
     },
     {
@@ -142,7 +142,7 @@
       "max_ask": 4100894,
       "priced_count": 68,
       "miled_count": 55,
-      "color": "#fb5607",
+      "color": "#4b5563",
       "group": "current"
     },
     {
@@ -154,7 +154,7 @@
       "max_ask": 1399990,
       "priced_count": 126,
       "miled_count": 99,
-      "color": "#ff9f1c",
+      "color": "#6b7280",
       "group": "current"
     },
     {
@@ -166,7 +166,7 @@
       "max_ask": 1149063,
       "priced_count": 51,
       "miled_count": 39,
-      "color": "#3a86ff",
+      "color": "#57534e",
       "group": "current"
     },
     {
@@ -178,7 +178,7 @@
       "max_ask": 825888,
       "priced_count": 83,
       "miled_count": 49,
-      "color": "#e63946",
+      "color": "#c45c5c",
       "group": "current"
     },
     {
@@ -190,7 +190,7 @@
       "max_ask": 549898,
       "priced_count": 147,
       "miled_count": 99,
-      "color": "#ff8fa3",
+      "color": "#a87878",
       "group": "current"
     },
     {
@@ -202,7 +202,7 @@
       "max_ask": 699000,
       "priced_count": 43,
       "miled_count": 40,
-      "color": "#4cc9f0",
+      "color": "#64748b",
       "group": "current"
     },
     {
@@ -214,7 +214,7 @@
       "max_ask": 799990,
       "priced_count": 102,
       "miled_count": 82,
-      "color": "#90e0ef",
+      "color": "#94a3b8",
       "group": "current"
     },
     {
@@ -226,7 +226,7 @@
       "max_ask": 1450826,
       "priced_count": 31,
       "miled_count": 13,
-      "color": "#f4a261",
+      "color": "#737373",
       "group": "current"
     },
     {
@@ -238,7 +238,7 @@
       "max_ask": 765888,
       "priced_count": 40,
       "miled_count": 30,
-      "color": "#e9c46a",
+      "color": "#9ca3af",
       "group": "current"
     },
     {
@@ -250,7 +250,7 @@
       "max_ask": 1299900,
       "priced_count": 1,
       "miled_count": 1,
-      "color": "#2a9d8f",
+      "color": "#525252",
       "group": "current"
     },
     {
@@ -262,7 +262,7 @@
       "max_ask": 675125,
       "priced_count": 30,
       "miled_count": 22,
-      "color": "#c9a227",
+      "color": "#6b7280",
       "group": "classic"
     },
     {
@@ -274,7 +274,7 @@
       "max_ask": 720536,
       "priced_count": 49,
       "miled_count": 26,
-      "color": "#e6c36a",
+      "color": "#8b919a",
       "group": "classic"
     },
     {
@@ -286,7 +286,7 @@
       "max_ask": 424895,
       "priced_count": 26,
       "miled_count": 23,
-      "color": "#d4a373",
+      "color": "#78716c",
       "group": "classic"
     },
     {
@@ -298,7 +298,7 @@
       "max_ask": 500216,
       "priced_count": 42,
       "miled_count": 31,
-      "color": "#faedcd",
+      "color": "#a8a29e",
       "group": "classic"
     },
     {
@@ -310,7 +310,7 @@
       "max_ask": 449000,
       "priced_count": 7,
       "miled_count": 5,
-      "color": "#b5838d",
+      "color": "#57534e",
       "group": "classic"
     },
     {
@@ -322,7 +322,7 @@
       "max_ask": 399995,
       "priced_count": 2,
       "miled_count": 2,
-      "color": "#e5989b",
+      "color": "#7c746c",
       "group": "classic"
     },
     {
@@ -334,7 +334,7 @@
       "max_ask": 379990,
       "priced_count": 10,
       "miled_count": 7,
-      "color": "#ffb4a2",
+      "color": "#a1a1aa",
       "group": "classic"
     },
     {
@@ -346,7 +346,7 @@
       "max_ask": 259999,
       "priced_count": 4,
       "miled_count": 2,
-      "color": "#edf2f4",
+      "color": "#8b8b93",
       "group": "classic"
     },
     {
@@ -358,7 +358,7 @@
       "max_ask": 125000,
       "priced_count": 1,
       "miled_count": 0,
-      "color": "#adb5bd",
+      "color": "#9ca3af",
       "group": "classic"
     },
     {
@@ -370,7 +370,7 @@
       "max_ask": null,
       "priced_count": 0,
       "miled_count": 0,
-      "color": "#8d99ae",
+      "color": "#71717a",
       "group": "classic"
     },
     {
@@ -382,7 +382,7 @@
       "max_ask": null,
       "priced_count": 0,
       "miled_count": 0,
-      "color": "#6c757d",
+      "color": "#52525b",
       "group": "classic"
     },
     {
@@ -394,7 +394,7 @@
       "max_ask": null,
       "priced_count": 0,
       "miled_count": 0,
-      "color": "#ffd166",
+      "color": "#6b7280",
       "group": "classic"
     }
   ],

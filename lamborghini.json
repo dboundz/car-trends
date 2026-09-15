@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-15T15:47:12Z",
+  "generated_at": "2026-09-15T16:03:47Z",
   "latest_snapshot_date": "2026-09-15",
   "snapshot_dates": [
     "2026-09-07",
@@ -28,19 +28,19 @@
     "Revuelto Coupe"
   ],
   "variant_colors": {
-    "STO Coupe": "#ff6b35",
-    "Performante Coupe": "#4cc9f0",
-    "Performante Spider": "#90e0ef",
-    "SV Coupe": "#c9a227",
-    "SV Spider": "#e0c35a",
-    "SVJ Coupe": "#9b5de5",
-    "SVJ Spider": "#c77dff",
-    "Murcielago Coupe": "#e63946",
-    "Murcielago Spider": "#f07167",
-    "Gallardo Coupe": "#2a9d8f",
-    "Gallardo Spider": "#52b788",
-    "Temerario Coupe": "#457b9d",
-    "Revuelto Coupe": "#fb8500"
+    "STO Coupe": "#7a8f4a",
+    "Performante Coupe": "#5c6570",
+    "Performante Spider": "#7a828c",
+    "SV Coupe": "#6b7a45",
+    "SV Spider": "#8f9a70",
+    "SVJ Coupe": "#4b5563",
+    "SVJ Spider": "#6b7280",
+    "Murcielago Coupe": "#57534e",
+    "Murcielago Spider": "#78716c",
+    "Gallardo Coupe": "#64748b",
+    "Gallardo Spider": "#94a3b8",
+    "Temerario Coupe": "#737373",
+    "Revuelto Coupe": "#525252"
   },
   "kpis": [
     {
@@ -52,7 +52,7 @@
       "max_ask": 1997988,
       "priced_count": 30,
       "miled_count": 26,
-      "color": "#ff6b35"
+      "color": "#7a8f4a"
     },
     {
       "variant": "Performante Coupe",
@@ -63,7 +63,7 @@
       "max_ask": 479995,
       "priced_count": 24,
       "miled_count": 14,
-      "color": "#4cc9f0"
+      "color": "#5c6570"
     },
     {
       "variant": "Performante Spider",
@@ -74,7 +74,7 @@
       "max_ask": 411696,
       "priced_count": 6,
       "miled_count": 2,
-      "color": "#90e0ef"
+      "color": "#7a828c"
     },
     {
       "variant": "SV Coupe",
@@ -85,7 +85,7 @@
       "max_ask": 1050700,
       "priced_count": 20,
       "miled_count": 13,
-      "color": "#c9a227"
+      "color": "#6b7a45"
     },
     {
       "variant": "SV Spider",
@@ -96,7 +96,7 @@
       "max_ask": 1499989,
       "priced_count": 8,
       "miled_count": 7,
-      "color": "#e0c35a"
+      "color": "#8f9a70"
     },
     {
       "variant": "SVJ Coupe",
@@ -107,7 +107,7 @@
       "max_ask": 2803076,
       "priced_count": 27,
       "miled_count": 20,
-      "color": "#9b5de5"
+      "color": "#4b5563"
     },
     {
       "variant": "SVJ Spider",
@@ -118,7 +118,7 @@
       "max_ask": 3000000,
       "priced_count": 8,
       "miled_count": 1,
-      "color": "#c77dff"
+      "color": "#6b7280"
     },
     {
       "variant": "Murcielago Coupe",
@@ -129,7 +129,7 @@
       "max_ask": 3140000,
       "priced_count": 19,
       "miled_count": 9,
-      "color": "#e63946"
+      "color": "#57534e"
     },
     {
       "variant": "Murcielago Spider",
@@ -140,7 +140,7 @@
       "max_ask": 950075,
       "priced_count": 15,
       "miled_count": 11,
-      "color": "#f07167"
+      "color": "#78716c"
     },
     {
       "variant": "Gallardo Coupe",
@@ -151,7 +151,7 @@
       "max_ask": 340075,
       "priced_count": 37,
       "miled_count": 19,
-      "color": "#2a9d8f"
+      "color": "#64748b"
     },
     {
       "variant": "Gallardo Spider",
@@ -162,7 +162,7 @@
       "max_ask": 419000,
       "priced_count": 34,
       "miled_count": 12,
-      "color": "#52b788"
+      "color": "#94a3b8"
     },
     {
       "variant": "Temerario Coupe",
@@ -173,7 +173,7 @@
       "max_ask": 559970,
       "priced_count": 31,
       "miled_count": 31,
-      "color": "#457b9d"
+      "color": "#737373"
     },
     {
       "variant": "Revuelto Coupe",
@@ -184,7 +184,7 @@
       "max_ask": 999998,
       "priced_count": 66,
       "miled_count": 47,
-      "color": "#fb8500"
+      "color": "#525252"
     }
   ],
   "median_series": {

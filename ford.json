@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-15T15:47:12Z",
+  "generated_at": "2026-09-15T16:03:47Z",
   "latest_snapshot_date": "2026-09-15",
   "snapshot_dates": [
     "2026-09-07",
@@ -16,8 +16,8 @@
     "Gen2"
   ],
   "variant_colors": {
-    "Gen1": "#1e90ff",
-    "Gen2": "#e63946"
+    "Gen1": "#4a6fa5",
+    "Gen2": "#6b7280"
   },
   "variant_display": {
     "Gen1": "Gen 1",
@@ -33,7 +33,7 @@
       "max_ask": 1500826,
       "priced_count": 30,
       "miled_count": 21,
-      "color": "#1e90ff"
+      "color": "#4a6fa5"
     },
     {
       "variant": "Gen2",
@@ -44,7 +44,7 @@
       "max_ask": 2999975,
       "priced_count": 17,
       "miled_count": 15,
-      "color": "#e63946"
+      "color": "#6b7280"
     }
   ],
   "median_series": {
