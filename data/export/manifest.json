@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-09-15T11:06:16.946456-04:00",
+  "generated_at": "2026-09-15T11:22:31.173035-04:00",
   "as_of": "2026-09-15",
   "schema_version": "1.0.0",
-  "aggregate_sha256": "2273ac460c3e8745ea7155fca1fe5291a6ec9169a2a64b37d7466ddef24bd32f",
+  "aggregate_sha256": "a771e32ce1eb727bf5534051d73150ff6df951fcbbeee2ac54f7bd83cb318202",
   "aggregate_definition": "SHA-256 of UTF-8 bytes of sorted unique lines 'path:sha256\\n' for every entry in files[]. This is integrity verification, not a digital signature. Optional later: minisign/GPG over this manifest or aggregate_sha256.",
   "aggregate_material_preview_lines": [
-    "data/export/README.md:a73a0c2247261cfe74aa9f17dce7d6fa597eba6b6c9b50e9fb2b339302a32458",
+    "data/export/README.md:251336f380851c2e54285ea93298d5643022fc71b859bf3ad67b8f7bcf862466",
     "data/export/brands/ferrari.json:0167f4be231f11c61e7fdb60fe816f31d50d9239f58a279413a67b222df1f6dc",
     "data/export/brands/ford.json:8e07d11ea3a74525cbdd616c9e568af3e0f5c7114b20785f49e095f02015626d",
     "data/export/brands/lamborghini.json:4d3294ce3a5f1a87a48f51a4e9de75d6932a67527cf8812c22185e45e75fc51f",
@@ -16,7 +16,7 @@
     {
       "path": "data/export/README.md",
       "bytes": 2763,
-      "sha256": "a73a0c2247261cfe74aa9f17dce7d6fa597eba6b6c9b50e9fb2b339302a32458"
+      "sha256": "251336f380851c2e54285ea93298d5643022fc71b859bf3ad67b8f7bcf862466"
     },
     {
       "path": "data/export/brands/ferrari.json",
@@ -45,12 +45,12 @@
     {
       "path": "data/export/index.html",
       "bytes": 1744,
-      "sha256": "b9b17a98b36dad0d3cc5c232b881fff863b8443fe75e98d33050aabee5d699e6"
+      "sha256": "4342cc27bc5c411afbf728289e82f6e172a3268933825b75facf3bd79f64119b"
     },
     {
       "path": "data/export/latest.json",
       "bytes": 96500,
-      "sha256": "15bf4bcad7b2f2ac55f9108a9472a282fcb8898fe6228d1a9eba6e0ca9b107fc"
+      "sha256": "7f154edec4629df94f06407ab1826fc1eddaa0ff1310314fc3ed3536b97cd91f"
     },
     {
       "path": "data/export/sources/GEO.md",
