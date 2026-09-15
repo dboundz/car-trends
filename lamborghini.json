@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-15T15:36:06Z",
+  "generated_at": "2026-09-15T15:47:12Z",
   "latest_snapshot_date": "2026-09-15",
   "snapshot_dates": [
     "2026-09-07",
@@ -32961,9 +32961,9 @@
     ],
     "brand": "Lamborghini",
     "brand_key": "lamborghini",
-    "headline": "Lamborghini softening: -2.5% variant-median ask · 7d",
-    "summary": "As of 2026-09-15, Lamborghini US/Canada tracked inventory sits at 319 cars (Δ +263 vs 2026-09-08). Variant-median ask -2.5% over ~7d (LFL $449,894, +$6,862 / +1.6%).",
-    "take_short": "-2.5% · 319 cars · 7d",
+    "headline": "Lamborghini asking prices are down about 2.5%",
+    "summary": "As of Sep 15, 2026, Lamborghini has 319 cars on the US/Canada market. About 260 more cars listed since Sep 8, 2026. Asking prices are down about 2.5% over the last ~7 days (typical ask around $449,894).",
+    "take_short": "Down 2.5% this week · 319 cars",
     "bullets": [
       "Variant-median ask move: -2.5% (LFL pool +1.6%) [2026-09-08→2026-09-15]",
       "Performante: median ask $-12,086 (-3.1%) · n=30 [2026-09-08→2026-09-15]",
@@ -33001,8 +33001,8 @@
           "variant_pct_median": -2.55,
           "overlap_variants": [
             "Performante Coupe",
-            "STO Coupe",
-            "Performante Spider"
+            "Performante Spider",
+            "STO Coupe"
           ],
           "composition_note": "new variants: Gallardo Coupe, Gallardo Spider, Murcielago Coupe, Murcielago Spider, Revuelto Coupe, SVJ Coupe; inventory Δ +263",
           "drops": {
@@ -33142,8 +33142,8 @@
       "thin_note": "Tracker history for Lamborghini starts 2026-09-07; 30d/90d windows not available yet."
     },
     "history_callout": "Tracker history from 2026-09-07 — 30d/90d windows not ready yet.",
-    "social_hook": "Desk take on Lamborghini: variant-median ask is softening -2.5% over the last ~7 days.",
-    "reel_angle": "Argue that Lamborghini is softening on variant asks, with auction bids undershooting retail on Gallardo Coupe — ~15s, one number, one example.",
+    "social_hook": "Desk take on Lamborghini: asking prices are down about 2.5% over the last ~7 days.",
+    "reel_angle": "Argue that Lamborghini is softening on asking prices, with auction bids undershooting retail on Gallardo Coupe — ~15s, one number, one example.",
     "models": {
       "STO": {
         "headline": "STO firming",

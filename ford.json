@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-15T15:36:06Z",
+  "generated_at": "2026-09-15T15:47:12Z",
   "latest_snapshot_date": "2026-09-15",
   "snapshot_dates": [
     "2026-09-07",
@@ -6876,9 +6876,9 @@
     ],
     "brand": "Ford GT",
     "brand_key": "ford",
-    "headline": "Ford GT firming: +4.0% variant-median ask · 7d",
-    "summary": "As of 2026-09-15, Ford GT US/Canada tracked inventory sits at 34 cars (Δ +8 vs 2026-09-08). Variant-median ask +4.0% over ~7d (LFL $779,996, +$29,996 / +4.0%).",
-    "take_short": "+4.0% · 34 cars · 7d",
+    "headline": "Ford GT asking prices are up about 4.0%",
+    "summary": "As of Sep 15, 2026, Ford GT has 34 cars on the US/Canada market. About 8 more cars listed since Sep 8, 2026. Asking prices are up about 4.0% over the last ~7 days (typical ask around $779,996).",
+    "take_short": "Up 4.0% this week · 34 cars",
     "bullets": [
       "Variant-median ask move: +4.0% (LFL pool +4.0%) [2026-09-08→2026-09-15]",
       "Gen1: median ask +$29,996 (+4.0%) · n=23 [2026-09-08→2026-09-15]",
@@ -6991,8 +6991,8 @@
       "thin_note": "Tracker history for Ford GT starts 2026-09-07; 30d/90d windows not available yet."
     },
     "history_callout": "Tracker history from 2026-09-07 — 30d/90d windows not ready yet.",
-    "social_hook": "Desk take on Ford GT: variant-median ask is firming +4.0% over the last ~7 days.",
-    "reel_angle": "Argue that Ford GT is firming on variant asks, with auction bids undershooting retail on Gen 1 — ~15s, one number, one example.",
+    "social_hook": "Desk take on Ford GT: asking prices are up about 4.0% over the last ~7 days.",
+    "reel_angle": "Argue that Ford GT is firming on asking prices, with auction bids undershooting retail on Gen 1 — ~15s, one number, one example.",
     "models": {
       "Gen1": {
         "headline": "Gen1 firming",
