@@ -21,9 +21,9 @@ All counts, medians, and day-over-day deltas on the overview are recomputed from
 
 ## Latest run
 
-- Totals: raw **1883** · kept **1788** · dropped **95**
+- Totals: raw **1883** · kept **1709** · dropped **174**
 
-- **Ferrari** (2026-09-15): raw 1098, kept 1065, dropped 33
+- **Ferrari** (2026-09-15): raw 1098, kept 986, dropped 112
   - SF90 Coupe: count=56, median_ask=479951, median_miles=2250
   - SF90 Spider: count=63, median_ask=614795, median_miles=867
   - 296 Coupe: count=61, median_ask=339900, median_miles=1251
@@ -37,8 +37,6 @@ All counts, medians, and day-over-day deltas on the overview are recomputed from
   - F8 Spider: count=101, median_ask=656995, median_miles=4192
   - 458 Coupe: count=20, median_ask=459998, median_miles=8080
   - 458 Spider: count=40, median_ask=554995, median_miles=9254
-  - F430 Coupe: count=30, median_ask=254814, median_miles=20552
-  - F430 Spider: count=49, median_ask=274708, median_miles=12978
   - 360 Modena: count=23, median_ask=159908, median_miles=22232
   - 360 Spider: count=42, median_ask=152404, median_miles=17560
   - 355 Berlinetta: count=7, median_ask=239995, median_miles=45416

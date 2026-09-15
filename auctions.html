@@ -1,0 +1,1517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Live Auctions — Car Trends</title>
+<meta name="description" content="All live tracked exotic car auction lots across Ferrari, McLaren, Lamborghini, and Ford GT."/>
+<style id="ct-nav-shell-css">
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600;700&display=swap');
+:root {
+  --ct-nav-h: 0px; --ct-section-h: 0px;
+  /* Miami dusk: warm-white data UI + coral/aqua accents + deep navy structure */
+  --ct-ivory: #f5f6f8;
+  --ct-ivory-2: #eef0f3;
+  --ct-ink: #0f172a;
+  --ct-navy: #0b1220;
+  --ct-navy-2: #121a2b;
+  --ct-charcoal: #334155;
+  --ct-muted: #64748b;
+  --ct-line: #e2e8f0;
+  --ct-coral: #ff4d7a;
+  --ct-coral-soft: #ff8fab;
+  --ct-cyan: #2dd4bf;
+  --ct-cyan-bright: #22d3ee;
+  --ct-sunset: #fb923c;
+  --ct-up: #059669;
+  --ct-down: #dc2626;
+  --ct-dark: #0b1220;
+  --ct-dark-2: #121a2b;
+  --ct-card: #ffffff;
+  --ct-brand: #ff4d7a;
+  --ct-neon-pink: var(--ct-coral);
+  --ct-neon-cyan: var(--ct-cyan);
+  --ct-neon-purple: #64748b;
+  --ct-dusk: var(--ct-navy);
+  --ct-motif: linear-gradient(90deg, var(--ct-coral) 0%, var(--ct-cyan) 100%);
+}
+.ct-global-nav {
+  /* Full-bleed bar chrome; content constrained via .ct-nav-inner */
+  position: sticky; top: 0; z-index: 40;
+  display: block;
+  background: rgba(11,18,32,.96); backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255,255,255,.06);
+  border-radius: 0; box-shadow: 0 1px 0 rgba(255,77,122,.18);
+  padding: 0; margin: 0;
+  min-height: 56px; /* keep chrome similar; only inner content scales ~50% */
+}
+.ct-global-nav .ct-nav-inner {
+  max-width: 1120px; margin: 0 auto; padding: 0 20px;
+  box-sizing: border-box;
+  display: flex; flex-wrap: nowrap; gap: 4px; align-items: center;
+  overflow-x: auto; -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  min-height: 56px;
+}
+.ct-global-nav .ct-nav-logo {
+  display: flex; align-items: center; padding: 4px 10px 4px 0;
+  margin-right: 8px; border-radius: 0; background: transparent !important;
+  box-shadow: none !important; flex: 0 0 auto;
+}
+.ct-global-nav .ct-nav-logo img {
+  display: block; height: 54px; width: auto; max-width: 315px;
+  object-fit: contain; object-position: left center;
+}
+.ct-global-nav a {
+  flex: 0 0 auto; white-space: nowrap;
+  font-size: 0.88rem; font-weight: 600; color: rgba(248,250,252,.82);
+  text-decoration: none; padding: 10px 12px; border-radius: 0;
+}
+.ct-global-nav a:hover { color: #fff; background: rgba(255,255,255,.04); text-decoration: none; }
+.ct-global-nav a.active {
+  color: #fff; background: transparent;
+  box-shadow: inset 0 -2px 0 var(--ct-coral);
+  border-radius: 0;
+}
+.ct-global-nav .ct-nav-cta {
+  margin-left: auto; font-size: .72rem; font-weight: 650;
+  color: var(--ct-coral); border: 1px solid rgba(255,77,122,.45);
+  border-radius: 999px; padding: 5px 12px;
+}
+.ct-global-nav .ct-nav-cta:hover { background: rgba(255,77,122,.1); color: var(--ct-coral); box-shadow: none; }
+
+.ct-global-nav .ct-nav-social {
+  margin-left: auto; display: flex; align-items: center; gap: 2px;
+  flex: 0 0 auto; padding-left: 8px;
+}
+.ct-global-nav .ct-nav-social a {
+  font-size: 0.68rem; font-weight: 600; letter-spacing: .02em;
+  color: rgba(248,250,252,.55); padding: 8px 8px; border-radius: 0;
+  text-decoration: none;
+}
+.ct-global-nav .ct-nav-social a:hover {
+  color: var(--ct-coral); background: transparent; text-decoration: none;
+}
+.ct-section-nav {
+  position: sticky; top: 56px; z-index: 35;
+  display: flex; flex-wrap: nowrap; gap: 2px; align-items: center;
+  overflow-x: auto; -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  background: rgba(245,246,248,.92); backdrop-filter: blur(10px);
+  border: none; border-radius: 0;
+  border-top: 2px solid transparent;
+  border-image: var(--ct-motif) 1;
+  box-shadow: 0 1px 0 var(--ct-line);
+  padding: 0 4px; margin: 0 0 22px;
+}
+.ct-section-nav a {
+  flex: 0 0 auto; white-space: nowrap;
+  font-size: .72rem; font-weight: 650; letter-spacing: .04em;
+  text-transform: uppercase; color: var(--ct-navy);
+  text-decoration: none; padding: 12px 12px 10px; border-radius: 0;
+  border: none; background: transparent;
+}
+.ct-section-nav a:hover { color: var(--ct-ink); text-decoration: none; background: rgba(15,23,42,.03); }
+.ct-section-nav a.active {
+  color: var(--ct-navy); border-color: transparent;
+  background: transparent; font-weight: 700;
+  box-shadow: inset 0 -2px 0 var(--ct-coral);
+}
+.ct-page-section {
+  scroll-margin-top: 110px;
+  margin: 0 0 28px;
+}
+.ct-page-section > .ct-sec-head {
+  display: block; margin: 0 0 6px;
+}
+.ct-page-section > .ct-sec-head .ct-ed-eyebrow {
+  font-size: .68rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase;
+  color: var(--ct-coral); margin: 0 0 6px;
+}
+.ct-page-section > .ct-sec-head h2 {
+  margin: 0; font-size: clamp(1.25rem, 2.2vw, 1.55rem); font-weight: 700;
+  letter-spacing: -.02em; color: var(--ct-navy);
+}
+.ct-motif-rule {
+  display: block; height: 2px; width: 100%; border: 0; margin: 0;
+  background: var(--ct-motif);
+}
+.ct-motif-rule--sec {
+  width: 72px; height: 2px; margin: 10px 0 14px; border-radius: 2px;
+}
+.ct-takeaway {
+  font-size: .86rem; line-height: 1.45; color: var(--ct-muted);
+  background: transparent; border: none; border-left: none;
+  border-radius: 0; padding: 0; margin: 0 0 14px;
+}
+.ct-takeaway strong { color: var(--ct-navy); font-weight: 650; }
+  display: flex; flex-wrap: wrap; gap: 8px; align-items: center;
+  margin: 0 0 14px; padding: 10px 12px;
+  background: var(--panel,#161b22); border: 1px solid var(--border,#30363d);
+  border-radius: 10px;
+}
+  background: var(--bg,#0d1117); color: var(--text,#e6edf3);
+  border: 1px solid var(--border,#30363d); border-radius: 8px;
+  padding: 6px 10px; font-size: .85rem;
+}
+.ct-models-wrap { overflow-x: auto; border: 1px solid var(--border,#30363d); border-radius: 10px; background: var(--panel,#161b22); }
+table.ct-models-table { width: 100%; border-collapse: collapse; font-size: .82rem; }
+table.ct-models-table th, table.ct-models-table td {
+  padding: 8px 10px; text-align: left; border-bottom: 1px solid var(--border,#30363d);
+  white-space: nowrap;
+}
+table.ct-models-table th {
+  background: var(--panel2,#1c2330); color: var(--muted,#8b949e); font-weight: 650;
+  cursor: pointer; user-select: none; position: sticky; top: 0;
+}
+table.ct-models-table th:hover { color: var(--text,#e6edf3); }
+table.ct-models-table th[data-num="1"],
+table.ct-models-table td.num {
+  font-family: var(--mono, ui-monospace, SFMono-Regular, Menlo, monospace);
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+table.ct-models-table tr.ct-model-row { cursor: pointer; }
+table.ct-models-table tr.ct-model-row:hover td { background: rgba(255,255,255,.02); }
+table.ct-models-table tr.ct-model-row.expanded td { background: rgba(88,166,255,.06); }
+table.ct-models-table tr.ct-model-row.ct-model-hit td { outline: 1px solid rgba(88,166,255,.45); }
+table.ct-models-table tr.ct-model-detail td {
+  white-space: normal; background: var(--panel2,#1c2330); color: var(--muted,#8b949e);
+  font-size: .8rem; line-height: 1.45; padding: 10px 12px 12px;
+}
+table.ct-models-table tr.ct-model-detail[hidden] { display: none; }
+
+.ct-table-more {
+  display: flex; justify-content: center; padding: 14px 0 6px;
+}
+.ct-view-all {
+  appearance: none; border: 1px solid var(--ct-line, #e2e8f0);
+  background: #fff; color: var(--ct-ink, #0f172a);
+  font: inherit; font-size: .84rem; font-weight: 600;
+  padding: 8px 16px; border-radius: 999px; cursor: pointer;
+}
+.ct-view-all:hover { border-color: var(--ct-brand, #e11d48); color: var(--ct-brand, #e11d48); }
+body.ct-brand-editorial .ct-view-all {
+  background: #fff; border-color: var(--ct-line); color: var(--ct-ink);
+}
+
+.ct-chip {
+  display: inline-block; font-size: .68rem; font-weight: 650; font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  padding: 2px 7px; border-radius: 999px; border: 1px solid rgba(107,114,128,.28);
+  background: rgba(107,114,128,.08); color: #6b7280;
+}
+.ct-chip.up { background: rgba(47,111,78,.10); color: #2f6f4e; border-color: rgba(47,111,78,.28); }
+.ct-chip.down { background: rgba(163,59,59,.10); color: #a33b3b; border-color: rgba(163,59,59,.28); }
+.ct-chip.flat { background: rgba(107,114,128,.08); color: #6b7280; border-color: rgba(107,114,128,.25); }
+.ct-chip.base { background: rgba(107,114,128,.06); color: #6b7280; border-color: rgba(107,114,128,.22); }
+.ct-more {
+  margin-top: 10px; border: 1px solid var(--border,#30363d); border-radius: 10px;
+  background: var(--panel2,#1c2330);
+}
+.ct-more > summary {
+  cursor: pointer; list-style: none; padding: 10px 12px; font-size: .82rem; font-weight: 600;
+  color: var(--muted,#8b949e);
+}
+.ct-more > summary::-webkit-details-marker { display: none; }
+.ct-more[open] > summary { color: var(--text,#e6edf3); border-bottom: 1px solid var(--border,#30363d); }
+.ct-more .ct-more-body { padding: 12px; }
+body.ct-has-nav .back-home { display: none; }
+
+/* —— Shared light editorial chrome (home + brand) —— */
+body.ct-home-editorial,
+body.ct-brand-editorial {
+  background: var(--ct-ivory);
+  color: var(--ct-ink);
+  font-family: Inter, Segoe UI, system-ui, sans-serif;
+}
+body.ct-home-editorial .wrap { max-width: 1120px; padding-top: 0; }
+body.ct-home-editorial a { color: var(--ct-coral); }
+body.ct-home-editorial a:hover { color: #e11d48; }
+body.ct-home-editorial .ct-legacy-hide { display: none !important; }
+body.ct-brand-editorial .ct-legacy-hide { display: none !important; }
+body.ct-home-editorial .ct-page-section > .ct-sec-head { display: none; }
+body.ct-home-editorial .ct-page-section > .ct-takeaway { display: none; }
+
+/* Brand pages: cool warm-white dashboard; shared Miami coral/aqua; thin --ct-brand overlay */
+body.ct-brand-editorial {
+  --bg: #f5f6f8;
+  --panel: #ffffff;
+  --panel2: #f8fafc;
+  --border: #e2e8f0;
+  --text: #0f172a;
+  --muted: #64748b;
+  --link: var(--ct-coral);
+  --accent: var(--ct-coral);
+}
+body.ct-brand-ferrari { --ct-brand: #e11d48; }
+body.ct-brand-mclaren { --ct-brand: #ea580c; }
+body.ct-brand-lamborghini { --ct-brand: #16a34a; }
+body.ct-brand-ford { --ct-brand: #2563eb; }
+body.ct-brand-editorial .wrap { max-width: 1120px; }
+body.ct-brand-editorial header {
+  background: transparent; border: none; padding: 18px 0 8px;
+}
+body.ct-brand-editorial header h1 { color: var(--ct-ink); }
+body.ct-brand-editorial header .sub,
+body.ct-brand-editorial header .badge { color: var(--ct-muted); }
+body.ct-brand-editorial header .badge {
+  background: #fff; border-color: var(--ct-line);
+}
+/* Do NOT hide .card — Pricing/Mileage charts use .card; only legacy Variants chrome */
+body.ct-brand-editorial .brand-take,
+/* Global variant filter removed — Inventory .filters stay visible (per-section) */
+body.ct-brand-editorial .variant-bar,
+body.ct-brand-editorial #variantBar,
+body.ct-brand-editorial #variantPills,
+body.ct-brand-editorial #variantAll,
+body.ct-brand-editorial #variantNone {
+  display: none !important;
+}
+/* Inventory + Auctions per-section filter bars (Miami dusk) */
+body.ct-brand-editorial .filters,
+body.ct-brand-editorial .la-filters {
+  display: flex !important;
+  flex-wrap: wrap;
+  gap: 10px 16px;
+  align-items: center;
+  margin-bottom: 12px;
+  padding: 12px 14px;
+  background: #fff !important;
+  border: 1px solid var(--ct-line) !important;
+  border-radius: 12px;
+  box-shadow: 0 1px 2px rgba(18,20,26,.03);
+}
+body.ct-brand-editorial .filters label,
+body.ct-brand-editorial .la-filters label {
+  font-size: .85rem;
+  color: var(--ct-muted);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+body.ct-brand-editorial .la-filters select,
+body.ct-brand-editorial .la-filters input {
+  background: #fff !important;
+  color: var(--ct-ink) !important;
+  border: 1px solid var(--ct-line) !important;
+  border-radius: 8px;
+  padding: 7px 10px;
+  font-size: .85rem;
+}
+body.ct-brand-editorial .la-filters input[type=search] {
+  min-width: 200px;
+  flex: 1;
+}
+body.ct-brand-editorial .variant-bar,
+body.ct-brand-editorial .filters,
+body.ct-brand-editorial .la-filters,
+body.ct-brand-editorial .table-wrap,
+body.ct-brand-editorial .live-auctions,
+body.ct-brand-editorial .ct-models-wrap,
+body.ct-brand-editorial .ct-more {
+  background: #fff !important;
+  border-color: var(--ct-line) !important;
+  box-shadow: 0 1px 2px rgba(18,20,26,.03);
+}
+body.ct-brand-editorial .card { border-radius: 12px; }
+
+/* Standouts UI removed — inventory section is the surface; JSON may still carry standouts */
+body.ct-brand-editorial section.standouts {
+  display: none !important;
+}
+body.ct-brand-editorial .standout-card,
+body.ct-brand-editorial .live-auctions .la-card,
+body.ct-brand-editorial .bt-model {
+  background: #fff !important;
+  border-color: var(--ct-line) !important;
+}
+body.ct-brand-editorial th {
+  background: #fafaf8 !important;
+  color: var(--ct-muted) !important;
+}
+body.ct-brand-editorial td { color: var(--ct-ink); border-bottom-color: var(--ct-line) !important; }
+body.ct-brand-editorial .filters select,
+body.ct-brand-editorial .filters input,
+body.ct-brand-editorial .variant-bar .vb-btn,
+body.ct-brand-editorial .variant-pill {
+  background: #fff !important;
+  color: var(--ct-ink) !important;
+  border-color: var(--ct-line) !important;
+  opacity: 1 !important;
+}
+body.ct-brand-editorial .variant-pill .dot {
+  background: #c5c9d0 !important;
+  opacity: 1 !important;
+}
+body.ct-brand-editorial .variant-pill.active {
+  background: color-mix(in srgb, var(--ct-brand,#c45c5c) 14%, #fff) !important;
+  border-color: color-mix(in srgb, var(--ct-brand,#c45c5c) 40%, var(--ct-line)) !important;
+  color: var(--ct-ink) !important;
+  box-shadow: none !important;
+  opacity: 1 !important;
+}
+body.ct-brand-editorial .variant-pill.active .dot {
+  background: var(--ct-brand,#c45c5c) !important;
+}
+body.ct-brand-editorial .variant-bar .vb-btn.active,
+body.ct-brand-editorial .filters .chip.active,
+body.ct-brand-editorial .filters button.active {
+  background: color-mix(in srgb, var(--ct-brand,#c45c5c) 14%, #fff) !important;
+  border-color: color-mix(in srgb, var(--ct-brand,#c45c5c) 40%, var(--ct-line)) !important;
+  color: var(--ct-ink) !important;
+}
+body.ct-brand-editorial a { color: var(--ct-brand, var(--ct-coral)); }
+body.ct-brand-editorial .ct-chip.up { color: #2f6f4e; background: rgba(47,111,78,.10); border-color: rgba(47,111,78,.28); }
+body.ct-brand-editorial .ct-chip.down { color: #a33b3b; background: rgba(163,59,59,.10); border-color: rgba(163,59,59,.28); }
+body.ct-brand-editorial .ct-chip.flat,
+body.ct-brand-editorial .ct-chip.base { color: var(--ct-muted); background: rgba(107,114,128,.06); border-color: rgba(107,114,128,.22); }
+body.ct-brand-editorial footer { color: var(--ct-muted); border-top-color: var(--ct-line); }
+body.ct-brand-editorial .ct-section-nav a.active {
+  background: transparent; color: var(--ct-navy);
+  box-shadow: inset 0 -2px 0 var(--ct-coral);
+}
+
+/* Pricing line chart controls (variants / sources / range / chips) */
+.ct-pl-head {
+  display: flex; align-items: flex-start; justify-content: space-between;
+  gap: 12px; flex-wrap: wrap; margin: 0 0 10px;
+}
+.ct-pl-titleblock { min-width: 0; flex: 1 1 220px; }
+.ct-pl-titleblock h3 { margin: 0 0 2px !important; }
+.ct-pl-sub { margin: 0 !important; font-size: 0.78rem !important; color: var(--ct-muted, #6b7280) !important; }
+.ct-pl-ranges {
+  display: inline-flex; gap: 4px; flex: 0 0 auto; align-items: center;
+}
+.ct-pl-ranges button {
+  appearance: none; border: 1px solid var(--ct-line, #e5e7eb); background: #fff;
+  color: var(--ct-muted, #6b7280); font-size: 0.72rem; font-weight: 600;
+  padding: 4px 9px; border-radius: 999px; cursor: pointer; line-height: 1.2;
+}
+.ct-pl-ranges button:hover { border-color: color-mix(in srgb, var(--ct-brand,#c45c5c) 45%, var(--ct-line,#e5e7eb)); color: var(--ct-ink,#111); }
+.ct-pl-ranges button.active {
+  background: var(--ct-brand, #c45c5c); border-color: var(--ct-brand, #c45c5c); color: #fff;
+}
+.ct-pl-controls {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 10px 14px;
+  margin: 0 0 10px; position: relative; z-index: 3;
+}
+.ct-pl-dd { position: relative; }
+.ct-pl-dd-btn {
+  display: inline-flex; align-items: baseline; gap: 8px;
+  border: 1px solid var(--ct-line, #e5e7eb); background: #fff; border-radius: 10px;
+  padding: 7px 10px; cursor: pointer; color: var(--ct-ink, #111827);
+  font: inherit; min-width: 132px;
+}
+.ct-pl-dd-btn:hover { border-color: color-mix(in srgb, var(--ct-brand,#c45c5c) 40%, var(--ct-line,#e5e7eb)); }
+.ct-pl-dd-label { font-size: 0.72rem; font-weight: 700; letter-spacing: .02em; text-transform: uppercase; color: var(--ct-muted,#6b7280); }
+.ct-pl-dd-count { font-size: 0.82rem; font-weight: 600; color: var(--ct-ink,#111827); }
+.ct-pl-dd-chev { margin-left: auto; color: var(--ct-muted,#6b7280); font-size: 0.7rem; }
+.ct-pl-dd-panel {
+  position: absolute; top: calc(100% + 4px); left: 0; z-index: 20;
+  min-width: 220px; max-height: 320px; overflow: auto;
+  background: #fff; border: 1px solid var(--ct-line,#e5e7eb); border-radius: 12px;
+  box-shadow: 0 12px 32px rgba(15,23,42,.12); padding: 8px;
+}
+.ct-pl-dd-actions { display: flex; gap: 8px; margin-bottom: 6px; }
+.ct-pl-dd-actions button {
+  border: 0; background: transparent; color: var(--ct-brand, #c45c5c);
+  font-size: 0.72rem; font-weight: 600; cursor: pointer; padding: 2px 4px;
+}
+.ct-pl-dd-group { padding: 4px 0 6px; border-top: 1px solid var(--ct-line,#e5e7eb); }
+.ct-pl-dd-group:first-of-type { border-top: 0; }
+.ct-pl-dd-model { font-size: 0.72rem; font-weight: 700; color: var(--ct-muted,#6b7280); padding: 4px 6px 2px; text-transform: uppercase; letter-spacing: .03em; }
+.ct-pl-dd-item {
+  display: flex; align-items: center; gap: 8px; padding: 5px 6px; border-radius: 8px;
+  font-size: 0.82rem; color: var(--ct-ink,#111827); cursor: pointer;
+}
+.ct-pl-dd-item:hover { background: rgba(15,23,42,.04); }
+.ct-pl-dd-sub { padding-left: 14px; }
+.ct-pl-sources { display: inline-flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.ct-pl-tog {
+  display: inline-flex; align-items: center; gap: 6px; font-size: 0.8rem;
+  color: var(--ct-ink,#111827); cursor: pointer; user-select: none;
+}
+.ct-pl-tog input {
+  appearance: none; width: 34px; height: 18px; border-radius: 999px;
+  background: #d1d5db; position: relative; cursor: pointer; border: 0; outline: none;
+  transition: background .15s ease;
+}
+.ct-pl-tog input::after {
+  content: ""; position: absolute; top: 2px; left: 2px; width: 14px; height: 14px;
+  border-radius: 50%; background: #fff; box-shadow: 0 1px 2px rgba(0,0,0,.2);
+  transition: transform .15s ease;
+}
+.ct-pl-tog input:checked { background: var(--ct-brand, #c45c5c); }
+.ct-pl-tog input:checked::after { transform: translateX(16px); }
+.ct-pl-info {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 14px; height: 14px; border-radius: 50%; font-size: 0.65rem; font-weight: 700;
+  color: var(--ct-muted,#6b7280); border: 1px solid var(--ct-line,#d1d5db);
+  cursor: help; line-height: 1;
+}
+.ct-pl-reset {
+  border: 0; background: transparent; color: var(--ct-brand, #c45c5c);
+  font-size: 0.8rem; font-weight: 600; cursor: pointer; padding: 4px 2px; margin-left: auto;
+}
+.ct-pl-reset:hover { text-decoration: underline; }
+.ct-pl-chips {
+  display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 12px; min-height: 0;
+}
+.ct-pl-chip {
+  display: inline-flex; align-items: center; gap: 6px;
+  border: 1px solid var(--ct-line,#e5e7eb); background: #fff; border-radius: 999px;
+  padding: 3px 4px 3px 8px; font-size: 0.75rem; color: var(--ct-ink,#111827);
+}
+.ct-pl-chip-dot, .ct-pl-dd-item .ct-pl-chip-dot {
+  width: 8px; height: 8px; border-radius: 50%; flex: 0 0 auto;
+}
+.ct-pl-chip-name { font-weight: 550; }
+.ct-pl-chip-x {
+  border: 0; background: transparent; color: var(--ct-muted,#6b7280);
+  cursor: pointer; font-size: 0.95rem; line-height: 1; padding: 0 6px 0 2px; border-radius: 999px;
+}
+.ct-pl-chip-x:hover { color: var(--ct-ink,#111); background: rgba(15,23,42,.06); }
+body.ct-brand-editorial #pricing .ct-pricing-charts .card .ct-pl-sub { color: var(--ct-muted) !important; }
+
+/* Pricing section chart: full content width (not half of 1.4fr/1fr grid) */
+.ct-pricing-charts {
+  display: grid !important;
+  grid-template-columns: 1fr !important;
+  gap: 14px;
+  margin-bottom: 22px;
+}
+#pricing.ct-page-section .ct-pricing-charts > .card {
+  width: 100%;
+  max-width: none;
+}
+#pricing.ct-page-section .ct-pricing-charts canvas {
+  width: 100% !important;
+  min-height: 380px;
+}
+body.ct-brand-editorial #pricing .ct-pricing-charts .card {
+  display: block !important;
+  background: #fff !important;
+  border: 1px solid var(--ct-line) !important;
+  color: var(--ct-ink) !important;
+}
+body.ct-brand-editorial #pricing .ct-pricing-charts .card h3,
+body.ct-brand-editorial #pricing .ct-pricing-charts .card .sub,
+body.ct-brand-editorial #pricing .ct-pricing-charts .card .hint,
+body.ct-brand-editorial #pricing .ct-pricing-charts .card .enlarge {
+  color: var(--ct-ink) !important;
+}
+body.ct-brand-editorial #pricing .ct-pricing-charts .card .sub {
+  color: var(--ct-muted) !important;
+}
+body.ct-brand-editorial #pricing .ct-mileage-charts .card {
+  display: block !important;
+  background: #fff !important;
+  border: 1px solid var(--ct-line) !important;
+  color: var(--ct-ink) !important;
+}
+body.ct-brand-editorial #pricing .ct-mileage-charts .card h3,
+body.ct-brand-editorial #pricing .ct-mileage-charts .card .sub {
+  color: var(--ct-ink) !important;
+}
+body.ct-brand-editorial #pricing .ct-mileage-charts {
+  margin-top: 88px;
+  width: 100%;
+  display: grid !important;
+  grid-template-columns: 1fr !important;
+}
+body.ct-brand-editorial #pricing .ct-mileage-charts > .card {
+  width: 100%;
+  max-width: none;
+}
+#pricing.ct-page-section .ct-mileage-charts canvas {
+  width: 100% !important;
+  min-height: 380px;
+}
+body.ct-brand-editorial #pricing .ct-pricing-charts {
+  margin-bottom: 8px;
+}
+body.ct-brand-editorial #pricing .ct-pricing-charts .card {
+  padding-bottom: 8px;
+}
+body.ct-brand-editorial .charts .card {
+  display: block !important;
+  background: #fff !important;
+  border: 1px solid var(--ct-line) !important;
+}
+
+/* Auctions: inventory-style list/table (not card grid) */
+body.ct-brand-editorial .live-auctions {
+  background: transparent !important;
+  border: none !important;
+  border-left: none !important;
+  padding: 0 !important;
+  margin: 0 0 8px !important;
+}
+body.ct-brand-editorial .live-auctions .la-head {
+  display: flex; flex-wrap: wrap; align-items: baseline;
+  justify-content: space-between; gap: 8px 16px; margin-bottom: 12px;
+}
+body.ct-brand-editorial .live-auctions .la-head .section-title {
+  margin: 0; font-size: 1.05rem; color: var(--ct-ink);
+}
+body.ct-brand-editorial .live-auctions .la-meta {
+  font-size: .8rem; color: var(--ct-muted);
+}
+body.ct-brand-editorial .live-auctions .la-note {
+  font-size: .9rem; color: var(--ct-muted); margin: 8px 0;
+}
+body.ct-brand-editorial .live-auctions .la-list {
+  display: block !important;
+}
+body.ct-brand-editorial .live-auctions .table-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--ct-line);
+  border-radius: 10px;
+  background: #fff;
+}
+body.ct-brand-editorial .live-auctions table.la-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: .78rem;
+  font-family: inherit;
+  table-layout: fixed;
+}
+body.ct-brand-editorial .live-auctions table.la-table th {
+  text-align: left;
+  font-size: .68rem;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  color: var(--ct-muted);
+  font-weight: 650;
+  padding: 8px 8px;
+  border-bottom: 1px solid var(--ct-line);
+  background: #f8fafc;
+  white-space: nowrap;
+  font-family: inherit;
+}
+body.ct-brand-editorial .live-auctions table.la-table td {
+  padding: 8px 8px;
+  border-bottom: 1px solid var(--ct-line);
+  color: var(--ct-ink);
+  vertical-align: middle;
+  font-family: inherit;
+  font-size: .78rem;
+  font-weight: 500;
+}
+body.ct-brand-editorial .live-auctions table.la-table tr:last-child td { border-bottom: none; }
+body.ct-brand-editorial .live-auctions table.la-table td.num {
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+body.ct-brand-editorial .live-auctions table.la-table a {
+  color: var(--ct-ink);
+  font-weight: 600;
+  text-decoration: none;
+  font-family: inherit;
+}
+body.ct-brand-editorial .live-auctions table.la-table a:hover {
+  color: var(--ct-brand, var(--ct-coral));
+  text-decoration: underline;
+}
+body.ct-brand-editorial .live-auctions table.la-table .la-lot {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+body.ct-brand-editorial .live-auctions table.la-table .la-ends,
+body.ct-brand-editorial .live-auctions table.la-table .la-src {
+  white-space: nowrap;
+}
+body.ct-brand-editorial .live-auctions table.la-table .la-src { color: var(--ct-muted); }
+body.ct-brand-editorial .live-auctions table.la-table th.mag,
+body.ct-brand-editorial .live-auctions table.la-table td.mag { width: 2rem; }
+body.ct-brand-editorial .live-auctions table.la-table th:nth-child(2),
+body.ct-brand-editorial .live-auctions table.la-table td:nth-child(2) { width: 38%; }
+body.ct-brand-editorial .live-auctions table.la-table th:nth-child(3),
+body.ct-brand-editorial .live-auctions table.la-table td:nth-child(3) { width: 6%; }
+body.ct-brand-editorial .live-auctions table.la-table th:nth-child(4),
+body.ct-brand-editorial .live-auctions table.la-table td:nth-child(4) { width: 12%; }
+body.ct-brand-editorial .live-auctions table.la-table th:nth-child(5),
+body.ct-brand-editorial .live-auctions table.la-table td:nth-child(5) { width: 9%; }
+body.ct-brand-editorial .live-auctions table.la-table th:nth-child(6),
+body.ct-brand-editorial .live-auctions table.la-table td:nth-child(6) { width: 20%; }
+body.ct-brand-editorial .live-auctions table.la-table th:nth-child(7),
+body.ct-brand-editorial .live-auctions table.la-table td:nth-child(7) { width: 8%; }
+body.ct-brand-editorial .live-auctions table.la-table th:nth-child(8),
+body.ct-brand-editorial .live-auctions table.la-table td:nth-child(8) { width: 5%; }
+body.ct-brand-editorial .live-auctions .table-wrap {
+  overflow-x: hidden;
+  border: 1px solid var(--ct-line);
+  border-radius: 10px;
+  background: #fff;
+}
+body.ct-brand-editorial .live-auctions .la-flag {
+  display: inline-block;
+  font-size: .65rem;
+  font-weight: 650;
+  padding: 2px 6px;
+  border-radius: 999px;
+  margin-right: 3px;
+  border: 1px solid var(--ct-line);
+  color: var(--ct-muted);
+  background: #f8fafc;
+  font-family: inherit;
+}
+body.ct-brand-editorial .live-auctions .la-flag.nr {
+  color: #8a6d1d;
+  border-color: rgba(138,109,29,.35);
+  background: rgba(240,193,75,.12);
+}
+body.ct-brand-editorial .live-auctions .la-flag.soon {
+  color: #a33b3b;
+  border-color: rgba(163,59,59,.3);
+  background: rgba(163,59,59,.08);
+}
+
+/* Pricing → Inventory clearance: chart canvas can overflow card bounds */
+body.ct-brand-editorial #pricing.ct-page-section {
+  margin-bottom: 48px;
+  padding-bottom: 28px;
+}
+body.ct-brand-editorial #pricing .ct-pricing-charts,
+body.ct-brand-editorial #pricing .ct-mileage-charts {
+  overflow: visible;
+}
+body.ct-brand-editorial #pricing .ct-pricing-charts .card,
+body.ct-brand-editorial #pricing .ct-mileage-charts .card {
+  overflow: visible;
+  margin-bottom: 0;
+}
+body.ct-brand-editorial #pricing .chart-wrap,
+body.ct-brand-editorial #pricing .ct-pricing-charts .card .chart-wrap,
+body.ct-brand-editorial #pricing .ct-mileage-charts .card .chart-wrap {
+  position: relative;
+  height: 400px;
+  min-height: 400px;
+  margin-bottom: 12px;
+}
+body.ct-brand-editorial #inventory.ct-page-section {
+  margin-top: 24px;
+  clear: both;
+}
+/* Classic / auction chrome — no gold/yellow pills */
+body.ct-brand-editorial .variant-bar.classic-group { border-color: var(--ct-line) !important; }
+body.ct-brand-editorial .vb-label.classic { color: var(--ct-muted) !important; }
+body.ct-brand-editorial .flag.low_mile_classic,
+body.ct-brand-editorial .flag.rare_classic_body,
+body.ct-brand-editorial .flag.classic_value {
+  background: #fafafa !important;
+  color: var(--ct-charcoal) !important;
+  border-color: var(--ct-line) !important;
+}
+body.ct-brand-editorial .brand-take { border-left-color: var(--ct-brand) !important; }
+/* Full-bleed cinematic brand hero — dark left wash only; photo stays rich */
+.ct-brand-hero {
+  position: relative; color: #eef1f5;
+  background-color: #0b1220;
+  margin: 0 0 0; border-radius: 0; overflow: hidden;
+  border: none; min-height: 340px;
+}
+.ct-brand-hero .ct-brand-hero-photo {
+  position: absolute; inset: 0; width: 100%; height: 100%;
+  object-fit: cover; object-position: 72% center; display: block; z-index: 0;
+}
+.ct-brand-hero .ct-brand-hero-wash {
+  position: absolute; inset: 0; z-index: 1; pointer-events: none;
+  background: linear-gradient(105deg,
+    rgba(8,12,22,.88) 0%,
+    rgba(8,12,22,.62) 28%,
+    rgba(8,12,22,.28) 52%,
+    rgba(8,12,22,.06) 72%,
+    rgba(8,12,22,0) 88%);
+}
+.ct-brand-hero::after { display: none; content: none; }
+.ct-brand-hero .ct-ed-inner { position: relative; z-index: 2; padding: 48px 20px 44px; }
+.ct-brand-hero .inner {
+  position: relative; z-index: 2; max-width: 34rem; padding: 0;
+}
+.ct-brand-hero .eyebrow {
+  font-size: .72rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase;
+  color: var(--ct-coral-soft); margin: 0 0 12px;
+}
+.ct-brand-hero h1 {
+  margin: 0; font-family: Inter, system-ui, sans-serif;
+  font-size: clamp(1.85rem, 4vw, 2.55rem); font-weight: 800; color: #fff;
+  letter-spacing: -.02em; line-height: 1.08;
+  display: flex; align-items: center; gap: 12px;
+}
+.ct-brand-hero h1 .ct-brand-bar {
+  display: inline-block; width: 4px; height: 1.05em; border-radius: 2px;
+  background: var(--ct-brand, var(--ct-coral)); flex: 0 0 auto;
+}
+.ct-brand-hero h1 .thin { font-weight: 650; opacity: .92; letter-spacing: -.01em; }
+.ct-brand-hero .sub { margin: 14px 0 0; font-size: 1.02rem; color: #c9d0da; line-height: 1.5; max-width: 36rem; }
+.ct-brand-hero .ct-motif-rule {
+  position: absolute; left: 0; right: 0; bottom: 0; z-index: 3; height: 3px;
+}
+/* Dark feature band (Pricing) */
+.ct-page-section.ct-sec-dark {
+  margin-left: calc(50% - 50vw); margin-right: calc(50% - 50vw);
+  padding: 28px calc(50vw - 50%) 32px;
+  background: var(--ct-navy);
+  color: #eef1f5;
+  border-radius: 0;
+}
+.ct-page-section.ct-sec-dark > .ct-sec-head .ct-ed-eyebrow { color: var(--ct-coral-soft); }
+.ct-page-section.ct-sec-dark > .ct-sec-head h2 { color: #f8fafc; }
+.ct-page-section.ct-sec-dark > .ct-takeaway { color: #94a3b8; }
+.ct-page-section.ct-sec-dark > .ct-takeaway strong { color: #e2e8f0; }
+.ct-page-section.ct-sec-dark .card,
+.ct-page-section.ct-sec-dark .ct-more {
+  background: #162033 !important;
+  border: 1px solid rgba(255,255,255,.14) !important;
+  box-shadow: none !important;
+  color: #f1f5f9 !important;
+}
+.ct-page-section.ct-sec-dark .card h2,
+.ct-page-section.ct-sec-dark .card h3,
+.ct-page-section.ct-sec-dark .card h4,
+.ct-page-section.ct-sec-dark .ct-more > summary {
+  color: #f8fafc !important;
+}
+.ct-page-section.ct-sec-dark .card .sub,
+.ct-page-section.ct-sec-dark .card .caption,
+.ct-page-section.ct-sec-dark .card p,
+.ct-page-section.ct-sec-dark .card .muted,
+.ct-page-section.ct-sec-dark .card small,
+.ct-page-section.ct-sec-dark .card li,
+.ct-page-section.ct-sec-dark .card .legend,
+.ct-page-section.ct-sec-dark .card [class*="legend"],
+.ct-page-section.ct-sec-dark .card span {
+  color: #cbd5e1 !important;
+}
+.ct-page-section.ct-sec-dark .ct-more[open] > summary {
+  color: #f8fafc !important; border-bottom-color: rgba(255,255,255,.12) !important;
+}
+/* Beat brand-editorial white-card rules inside Pricing */
+body.ct-brand-editorial .ct-page-section.ct-sec-dark .card {
+  background: #162033 !important;
+  color: #f1f5f9 !important;
+  border-color: rgba(255,255,255,.14) !important;
+}
+
+
+.ct-ed-band { margin: 0 calc(50% - 50vw); padding: 0 calc(50vw - 50%); }
+.ct-ed-inner { max-width: 1120px; margin: 0 auto; padding: 0 20px; position: relative; z-index: 1; }
+
+/* Cinematic Miami hero → data dashboard (personality here; calm UI below) */
+.ct-ed-hero {
+  position: relative; color: #eef1f5;
+  background-color: #0e1624;
+  padding: 52px 0 48px; margin-bottom: 0; overflow: hidden;
+  min-height: 320px;
+}
+.ct-ed-hero::before { display: none; content: none; }
+.ct-ed-hero-photo {
+  position: absolute; inset: 0; width: 100%; height: 100%;
+  object-fit: cover; object-position: 72% center; display: block; z-index: 0;
+}
+.ct-ed-hero-wash {
+  position: absolute; inset: 0; z-index: 1; pointer-events: none;
+  background: linear-gradient(105deg,
+    rgba(10,16,28,.82) 0%,
+    rgba(10,16,28,.58) 30%,
+    rgba(10,16,28,.28) 52%,
+    rgba(10,16,28,.08) 70%,
+    rgba(10,16,28,0) 85%);
+}
+.ct-ed-hero .ct-ed-inner { position: relative; z-index: 2; }
+.ct-ed-hero-copy {
+  max-width: 34rem; padding: 4px 8px 4px 0;
+}
+.ct-ed-hero .ct-kicker {
+  font-size: .72rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase;
+  color: #e8a0a8; margin: 0 0 12px;
+}
+.ct-ed-hero h1 {
+  margin: 0 0 12px; font-family: Inter, system-ui, sans-serif;
+  font-size: clamp(1.75rem, 3.6vw, 2.35rem); font-weight: 700; letter-spacing: -.02em;
+  line-height: 1.12; color: #f7f4ef; max-width: 18ch;
+}
+.ct-ed-hero .ct-tagline {
+  margin: 0; max-width: 36rem; font-size: 1.02rem; line-height: 1.5; color: #c9d0da;
+}
+.ct-ed-hero .ct-hero-row { display: none; }
+.ct-ed-btn {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: var(--ct-coral); color: #fff !important; text-decoration: none !important;
+  font-size: .82rem; font-weight: 700; letter-spacing: .04em; text-transform: uppercase;
+  padding: 11px 18px; border-radius: 999px; border: none;
+  transition: background .15s, transform .15s;
+}
+.ct-ed-btn:hover { background: #b86a6a; transform: translateY(-1px); }
+.ct-ed-btn.ghost {
+  background: transparent; color: var(--ct-navy) !important;
+  border: 1px solid rgba(26,35,50,.22);
+}
+.ct-ed-script { display: none !important; }
+.ct-ed-hero .ct-desk { display: none; }
+.ct-ed-hero .ct-desk strong { color: #f7f4ef; font-weight: 650; }
+.ct-ed-hero .ct-hero-rule {
+  display: block; position: absolute; left: 0; right: 0; bottom: 0; z-index: 3;
+  height: 3px; background: var(--ct-motif); border: 0; margin: 0;
+}
+
+.ct-ed-sec { padding: 42px 0 36px; }
+.ct-ed-sec.dark {
+  position: relative; overflow: hidden;
+  background: #1a2332;
+  color: #eef1f5;
+}
+.ct-ed-sec.dark::before { display: none; content: none; }
+.ct-ed-eyebrow {
+  font-size: .68rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase;
+  color: var(--ct-coral); margin: 0 0 6px;
+}
+.ct-ed-sec.dark .ct-ed-eyebrow { color: var(--ct-coral-soft); }
+.ct-ed-title {
+  margin: 0; font-size: clamp(1.45rem, 2.5vw, 1.85rem); font-weight: 700;
+  letter-spacing: -.02em; color: var(--ct-ink);
+}
+.ct-ed-sec.dark .ct-ed-title { color: #f5f2ec; }
+.ct-ed-head {
+  display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between;
+  gap: 10px 16px; margin-bottom: 22px;
+}
+.ct-ed-head .ct-ed-title { position: relative; padding-bottom: 10px; }
+.ct-ed-head .ct-ed-title::after {
+  content: ""; display: block; width: 72px; height: 2px; margin-top: 10px;
+  background: var(--ct-motif); border-radius: 2px;
+}
+.ct-ed-link {
+  font-size: .82rem; font-weight: 600; color: var(--ct-coral); text-decoration: none;
+}
+.ct-ed-link:hover { text-decoration: underline; }
+.ct-ed-sec.dark .ct-ed-link { color: var(--ct-coral-soft); }
+
+.ct-pulse-list {
+  width: 100%; border-collapse: collapse; background: var(--ct-card);
+  border: 1px solid var(--ct-line); border-radius: 12px; overflow: hidden;
+  box-shadow: 0 1px 2px rgba(18,20,26,.03);
+}
+.ct-pulse-list th, .ct-pulse-list td {
+  padding: 12px 14px; text-align: left; border-bottom: 1px solid var(--ct-line);
+  vertical-align: middle;
+}
+.ct-pulse-list th {
+  font-size: .68rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase;
+  color: var(--ct-muted); background: rgba(18,20,26,.02);
+}
+.ct-pulse-list tr:last-child td { border-bottom: none; }
+.ct-pulse-list .num { font-variant-numeric: tabular-nums; text-align: right; white-space: nowrap; }
+.ct-pulse-list a { color: var(--ct-navy); font-weight: 650; text-decoration: none; }
+.ct-pulse-list a:hover { color: var(--ct-coral); }
+.ct-pulse-list .model { font-size: .95rem; font-weight: 650; color: var(--ct-ink); }
+.ct-pulse-list .delta { font-size: .82rem; font-weight: 650; font-variant-numeric: tabular-nums; margin-left: 6px; }
+.ct-pulse-list .delta.up { color: var(--ct-up); }
+.ct-pulse-list .delta.down { color: var(--ct-down); }
+.ct-pulse-list .delta.flat { color: var(--ct-muted); }
+.ct-pulse-list .sub { display: block; font-size: .72rem; color: var(--ct-muted); font-weight: 500; margin-top: 2px; }
+.ct-pulse-note { font-size: .78rem; color: var(--ct-muted); margin: 10px 0 0; }
+
+.ct-move-grid {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px;
+}
+.ct-move-card {
+  position: relative; border-radius: 12px; overflow: hidden;
+  min-height: 200px; border: 1px solid var(--ct-line);
+  background: #d8cfc3 center/cover no-repeat;
+  display: flex; flex-direction: column; justify-content: flex-end;
+}
+.ct-move-card::before {
+  content: ""; position: absolute; inset: 0;
+  /* Stronger dark scrim so white overlay text stays readable on bright photos */
+  background: linear-gradient(180deg,
+    rgba(10,12,18,.48) 0%,
+    rgba(10,12,18,.36) 38%,
+    rgba(10,12,18,.62) 62%,
+    rgba(6,8,12,.88) 100%);
+}
+.ct-move-card .body { position: relative; z-index: 1; padding: 16px; }
+.ct-move-card .lbl {
+  font-size: .65rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase;
+  color: #f5e6e2; margin: 0 0 8px; text-shadow: 0 1px 2px rgba(0,0,0,.35);
+}
+.ct-move-card .who { font-size: 1.05rem; font-weight: 700; color: #faf8f4; margin: 0 0 6px;
+  text-shadow: 0 1px 3px rgba(0,0,0,.4); }
+.ct-move-card .stat { font-size: .9rem; color: #f0f2f5; text-shadow: 0 1px 2px rgba(0,0,0,.35); }
+.ct-move-card .stat em { font-style: normal; color: #b8e4e8; font-weight: 650; }
+
+.ct-iconic-grid {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px;
+}
+.ct-iconic-card {
+  background: #fff; border: 1px solid var(--ct-line); border-radius: 14px;
+  overflow: hidden; text-decoration: none; color: inherit; display: block;
+  box-shadow: 0 1px 2px rgba(18,20,26,.03);
+  transition: border-color .15s, transform .15s;
+}
+.ct-iconic-card:hover { border-color: #d4ccc0; transform: translateY(-2px); text-decoration: none; color: inherit; }
+.ct-iconic-card .img {
+  aspect-ratio: 16/10; background: var(--ct-ivory-2) center/cover no-repeat;
+}
+.ct-iconic-card .img img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.ct-iconic-card .copy { padding: 14px 16px 16px; }
+.ct-iconic-card .brand { font-size: 1.1rem; font-weight: 700; color: var(--ct-ink); margin: 0 0 8px; }
+.ct-iconic-card .take { font-size: .88rem; color: var(--ct-muted); line-height: 1.4; margin: 0 0 12px; min-height: 2.6em; }
+.ct-iconic-card .go { font-size: .82rem; font-weight: 650; color: var(--ct-coral); }
+
+.ct-insight {
+  display: grid; grid-template-columns: 1fr 1.1fr; gap: 28px; align-items: center;
+  position: relative; z-index: 1;
+}
+.ct-insight h3 {
+  margin: 0 0 12px; font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 700; line-height: 1.15; color: #f5f2ec;
+}
+.ct-insight p { margin: 0 0 18px; color: #c5ccd6; font-size: .95rem; line-height: 1.5; }
+.ct-insight-chart {
+  background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.1);
+  border-radius: 12px; padding: 16px 16px 10px;
+}
+.ct-insight-chart .cht { font-size: .72rem; font-weight: 650; letter-spacing: .06em; text-transform: uppercase; color: #9aa3b2; margin-bottom: 8px; }
+.ct-insight-chart svg { width: 100%; height: 200px; display: block; }
+.ct-insight-legend { display: flex; gap: 14px; margin-top: 8px; font-size: .75rem; color: #9aa3b2; }
+.ct-insight-legend span::before {
+  content: ""; display: inline-block; width: 12px; height: 2px; margin-right: 6px; vertical-align: middle;
+}
+.ct-insight-legend .spider::before { background: var(--ct-coral); }
+.ct-insight-legend .coupe::before { background: var(--ct-cyan); }
+.ct-insight-script { display: none !important; }
+.ct-insight .ct-ed-btn { display: none; }
+.ct-insight .ct-text-link {
+  font-size: .85rem; font-weight: 650; color: #e8a0a8; text-decoration: none;
+}
+.ct-insight .ct-text-link:hover { text-decoration: underline; }
+
+.ct-auc-list { display: grid; gap: 10px; }
+.ct-auc-card {
+  display: grid; grid-template-columns: 1fr auto; gap: 8px 16px; align-items: center;
+  background: #fff; border: 1px solid var(--ct-line); border-radius: 12px;
+  padding: 14px 16px; text-decoration: none; color: inherit;
+  box-shadow: 0 1px 2px rgba(18,20,26,.03);
+  transition: border-color .15s, background .15s;
+}
+.ct-auc-card:hover { border-color: #d4ccc0; background: #fbfaf7; text-decoration: none; color: inherit; }
+.ct-auc-card .title { font-weight: 650; font-size: .95rem; color: var(--ct-ink); }
+.ct-auc-card .sub { font-size: .8rem; color: var(--ct-muted); margin-top: 2px; }
+.ct-auc-card .bid { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-weight: 700; font-size: .95rem; text-align: right; color: var(--ct-ink); }
+.ct-auc-card .ends { font-size: .78rem; color: var(--ct-down); font-weight: 650; text-align: right; }
+
+.ct-footer-logo {
+  display: block; height: 72px; width: auto; margin: 0 0 16px;
+  border-radius: 8px; background: #000;
+}
+.ct-ed-cta, .ct-ed-data {
+  position: relative; color: var(--ct-ink); padding: 36px 0 40px; text-align: left;
+  background: var(--ct-ivory); border-top: 1px solid var(--ct-line);
+  overflow: hidden;
+}
+.ct-ed-cta::before, .ct-ed-data::before { display: none; content: none; }
+.ct-ed-cta h2, .ct-ed-data h2 {
+  margin: 0 0 8px; font-family: Inter, system-ui, sans-serif;
+  font-size: 1.25rem; font-weight: 700; color: var(--ct-ink);
+}
+.ct-ed-cta p, .ct-ed-data p { margin: 0 0 10px; color: var(--ct-muted); font-size: .9rem; line-height: 1.5; max-width: 42rem; }
+.ct-ed-cta .ct-ed-script { display: none !important; }
+.ct-compare-table {
+  width: 100%; border-collapse: collapse; font-size: .9rem;
+  background: #fff; border: 1px solid var(--ct-line); border-radius: 10px; overflow: hidden;
+}
+.ct-compare-table th, .ct-compare-table td {
+  padding: 10px 12px; text-align: left; border-bottom: 1px solid var(--ct-line);
+}
+.ct-compare-table th {
+  font-size: .72rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase;
+  color: var(--ct-muted); background: var(--ct-ivory-2);
+}
+.ct-compare-table td { color: var(--ct-ink); }
+.ct-compare-table tr:last-child td { border-bottom: none; }
+.ct-compare-table .num { font-variant-numeric: tabular-nums; text-align: right; }
+.ct-compare-table a { color: var(--ct-navy); font-weight: 650; text-decoration: none; }
+.ct-compare-table a:hover { color: var(--ct-coral); }
+
+/* Restyle leftover deep brand / auction blocks on light home */
+body.ct-home-editorial #brands-root .brand,
+body.ct-home-editorial .brand {
+  background: #fff; border-color: var(--ct-line); color: var(--ct-ink);
+}
+body.ct-home-editorial .brand-head h2 { color: var(--ct-ink); }
+body.ct-home-editorial .brand-head .sub,
+body.ct-home-editorial .meta,
+body.ct-home-editorial .stat .lbl { color: var(--ct-muted); }
+body.ct-home-editorial .model-card {
+  background: var(--ct-ivory); border-color: var(--ct-line);
+}
+body.ct-home-editorial .live-auctions {
+  background: transparent; border: none; border-left: none; padding: 0; border-radius: 0;
+}
+body.ct-home-editorial .live-auctions h2 { color: var(--ct-ink); }
+body.ct-home-editorial .live-auctions .la-card {
+  background: #fff; border-color: var(--ct-line);
+}
+body.ct-home-editorial .live-auctions .la-title a { color: var(--ct-ink); }
+body.ct-home-editorial .geo-pill {
+  background: #fff; border-color: var(--ct-line); color: var(--ct-muted);
+}
+body.ct-home-editorial .geo-pill strong { color: var(--ct-ink); }
+body.ct-home-editorial .callout {
+  background: #fff; border-color: var(--ct-line);
+}
+body.ct-home-editorial footer {
+  border-top-color: rgba(255,255,255,.2); color: rgba(255,255,255,.75);
+}
+body.ct-home-editorial .delta.up { color: var(--ct-up); }
+body.ct-home-editorial .delta.down { color: var(--ct-down); }
+body.ct-home-editorial .btn {
+  background: #fff; border-color: var(--ct-line); color: var(--ct-coral);
+}
+
+
+/* —— Home editorial v2 (below hero) —— */
+.ct-brief-layout {
+  display: grid; grid-template-columns: 1fr; gap: 20px; align-items: start;
+}
+@media (min-width: 900px) {
+  .ct-brief-layout.has-metrics { grid-template-columns: 1fr auto; gap: 28px; }
+}
+.ct-brief-copy { max-width: 44rem; }
+.ct-brief-copy .ct-brief-lede {
+  margin: 0 0 12px; font-size: clamp(1.15rem, 2.2vw, 1.45rem); font-weight: 700;
+  letter-spacing: -.015em; color: var(--ct-ink); line-height: 1.25;
+}
+.ct-brief-copy p {
+  margin: 0; font-size: .95rem; line-height: 1.55; color: var(--ct-muted);
+}
+.ct-brief-metrics {
+  display: none; gap: 10px; flex-wrap: wrap; justify-content: flex-end;
+}
+@media (min-width: 900px) {
+  .ct-brief-metrics { display: flex; flex-direction: column; min-width: 160px; }
+}
+.ct-brief-metric {
+  background: #fff; border: 1px solid var(--ct-line); border-radius: 12px;
+  padding: 12px 14px; text-align: right;
+  box-shadow: 0 1px 2px rgba(18,20,26,.03);
+}
+.ct-brief-metric .val {
+  font-size: 1.25rem; font-weight: 700; color: var(--ct-ink);
+  font-variant-numeric: tabular-nums; line-height: 1.1;
+}
+.ct-brief-metric .lbl {
+  font-size: .68rem; font-weight: 650; letter-spacing: .06em; text-transform: uppercase;
+  color: var(--ct-muted); margin-top: 4px;
+}
+
+.ct-brand-explore-grid {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px;
+}
+.ct-brand-explore-card {
+  background: #fff; border: 1px solid var(--ct-line); border-radius: 14px;
+  overflow: hidden; display: flex; flex-direction: column;
+  box-shadow: 0 1px 2px rgba(18,20,26,.03);
+  text-align: center;
+}
+.ct-brand-explore-card .hdr {
+  min-height: 72px; display: flex; align-items: center; justify-content: center;
+  padding: 18px 12px;
+}
+.ct-brand-explore-card .hdr.hdr-photo {
+  min-height: 0; padding: 0; position: relative;
+  background: #fff; aspect-ratio: 16 / 9; max-height: 160px;
+  overflow: hidden;
+}
+.ct-brand-explore-card .hdr.hdr-photo img {
+  width: 100%; height: 100%; object-fit: cover; object-position: center;
+  display: block;
+}
+.ct-brand-explore-card .hdr.hdr-photo::after {
+  content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 28%;
+  background: linear-gradient(to top, rgba(255,255,255,.85), transparent);
+  pointer-events: none;
+}
+.ct-brand-explore-card .wordmark {
+  color: #fff; font-weight: 800; letter-spacing: .06em; text-transform: uppercase;
+  font-size: .95rem; line-height: 1.15;
+}
+.ct-brand-explore-card .body {
+  padding: 18px 16px 20px; display: flex; flex-direction: column;
+  align-items: center; gap: 8px; flex: 1;
+}
+.ct-brand-explore-card .name {
+  font-size: 1.05rem; font-weight: 700; color: var(--ct-ink); margin: 0;
+}
+.ct-brand-explore-card .metric {
+  font-size: .78rem; color: var(--ct-muted); font-weight: 550; margin: 0;
+}
+.ct-brand-explore-card .obs {
+  font-size: .88rem; color: var(--ct-ink); line-height: 1.4; margin: 4px 0 10px;
+  min-height: 2.6em; max-width: 22ch;
+}
+.ct-brand-explore-card .cta {
+  display: inline-flex; align-items: center; justify-content: center;
+  margin-top: auto; padding: 10px 16px; border-radius: 999px;
+  background: var(--ct-coral); color: #fff !important; text-decoration: none !important;
+  font-size: .82rem; font-weight: 700; letter-spacing: .02em;
+  transition: background .15s, transform .15s;
+}
+.ct-brand-explore-card .cta:hover { background: #b86a6a; transform: translateY(-1px); }
+
+.ct-mover-grid {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px;
+}
+.ct-mover-card {
+  background: #fff; border: 1px solid var(--ct-line); border-radius: 12px;
+  padding: 0; overflow: hidden; box-shadow: 0 1px 2px rgba(18,20,26,.03);
+}
+.ct-mover-card .thumb {
+  width: 100%; height: 130px; background: #fff; overflow: hidden;
+}
+.ct-mover-card .thumb img {
+  width: 100%; height: 100%; object-fit: cover; object-position: center; display: block;
+}
+.ct-mover-card a.ct-mover-link { display: block; padding: 14px 16px 16px; color: inherit; text-decoration: none; }
+.ct-mover-card .name {
+  font-size: .98rem; font-weight: 700; color: var(--ct-ink); margin: 0 0 10px;
+}
+.ct-mover-card .ask-lbl {
+  font-size: .68rem; font-weight: 650; letter-spacing: .06em; text-transform: uppercase;
+  color: var(--ct-muted); margin: 0 0 2px;
+}
+.ct-mover-card .ask {
+  font-size: 1.05rem; font-weight: 700; color: var(--ct-ink);
+  font-variant-numeric: tabular-nums; margin: 0 0 8px;
+}
+.ct-mover-card .pct {
+  font-size: 1.05rem; font-weight: 700; font-variant-numeric: tabular-nums;
+}
+.ct-mover-card .pct.up { color: var(--ct-up); }
+.ct-mover-card .pct.down { color: var(--ct-down); }
+.ct-mover-card .pct.flat { color: var(--ct-muted); }
+.ct-mover-card a { color: inherit; text-decoration: none; }
+.ct-mover-card a:hover .name { color: var(--ct-coral); }
+
+.ct-insight-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px;
+}
+.ct-insight-card {
+  background: #fff; border: 1px solid var(--ct-line); border-radius: 12px;
+  padding: 16px 16px 18px; box-shadow: 0 1px 2px rgba(18,20,26,.03);
+  display: flex; flex-direction: column; gap: 8px;
+}
+.ct-insight-card .ico {
+  font-size: .72rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase;
+  color: var(--ct-coral);
+}
+.ct-insight-card h3 {
+  margin: 0; font-size: 1.02rem; font-weight: 700; color: var(--ct-ink); line-height: 1.25;
+}
+.ct-insight-card p {
+  margin: 0; font-size: .88rem; line-height: 1.45; color: var(--ct-muted); flex: 1;
+}
+.ct-insight-card a {
+  font-size: .82rem; font-weight: 650; color: var(--ct-coral); text-decoration: none;
+}
+.ct-insight-card a:hover { text-decoration: underline; }
+
+.ct-auc-strip {
+  display: grid; grid-template-columns: 1fr; gap: 10px;
+}
+@media (min-width: 720px) {
+  .ct-auc-strip.cols-2 { grid-template-columns: 1fr 1fr; }
+}
+.ct-auc-strip-card {
+  display: grid; grid-template-columns: 1fr auto; gap: 8px 16px; align-items: center;
+  background: #fff; border: 1px solid var(--ct-line); border-radius: 12px;
+  padding: 14px 16px; text-decoration: none; color: inherit;
+  box-shadow: 0 1px 2px rgba(18,20,26,.03);
+}
+.ct-auc-strip-card:hover { border-color: #d4ccc0; background: #fbfaf7; text-decoration: none; color: inherit; }
+.ct-auc-strip-card .title { font-weight: 650; font-size: .95rem; color: var(--ct-ink); }
+.ct-auc-strip-card .sub { font-size: .8rem; color: var(--ct-muted); margin-top: 2px; }
+.ct-auc-strip-card .bid {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-weight: 700;
+  font-size: .95rem; text-align: right; color: var(--ct-ink);
+}
+.ct-auc-strip-card .ends { font-size: .78rem; color: var(--ct-down); font-weight: 650; text-align: right; }
+.ct-auc-all {
+  margin: 12px 0 0; font-size: .85rem; font-weight: 650;
+}
+.ct-auc-all a { color: var(--ct-coral); text-decoration: none; }
+.ct-auc-all a:hover { text-decoration: underline; }
+
+@media (max-width: 960px) {
+  .ct-brand-explore-grid { grid-template-columns: 1fr 1fr; }
+  .ct-mover-grid { grid-template-columns: 1fr 1fr; }
+  .ct-insight-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 720px) {
+  .ct-brand-explore-grid { grid-template-columns: 1fr; }
+  .ct-mover-grid { grid-template-columns: 1fr; }
+  .ct-auc-strip-card { grid-template-columns: 1fr; }
+  .ct-auc-strip-card .bid, .ct-auc-strip-card .ends { text-align: left; }
+}
+
+@media (max-width: 960px) {
+  .ct-move-grid, .ct-iconic-grid { grid-template-columns: 1fr 1fr; }
+  .ct-insight { grid-template-columns: 1fr; }
+  .ct-insight-script { display: none; }
+}
+@media (max-width: 720px) {
+  .ct-section-nav { top: 52px; }
+  .ct-page-section { scroll-margin-top: 92px; }
+  .ct-move-grid, .ct-iconic-grid { grid-template-columns: 1fr; }
+  .ct-ed-script { margin-left: 0; }
+  .ct-auc-card { grid-template-columns: 1fr; }
+  .ct-auc-card .bid, .ct-auc-card .ends { text-align: left; }
+  .ct-ed-hero { padding: 36px 0 40px; min-height: 300px; }
+  .ct-ed-hero-photo { object-position: 78% center; }
+  .ct-ed-hero .ct-ed-script.ct-ed-hero-script { display: none; }
+  .ct-ed-hero-wash {
+    background: linear-gradient(180deg,
+      rgba(10,16,28,.78) 0%,
+      rgba(10,16,28,.45) 50%,
+      rgba(10,16,28,.18) 100%);
+  }
+  .ct-brand-hero { min-height: 280px; }
+  .ct-brand-hero .ct-ed-inner { padding: 36px 16px 40px; }
+  .ct-brand-hero .ct-brand-hero-photo { object-position: 78% center; }
+  .ct-brand-hero .ct-brand-hero-wash {
+    background: linear-gradient(180deg,
+      rgba(8,12,22,.82) 0%,
+      rgba(8,12,22,.48) 55%,
+      rgba(8,12,22,.2) 100%);
+  }
+  .ct-global-nav .ct-nav-logo img { height: 45px; max-width: 240px; }
+  .ct-global-nav a { font-size: 1.02rem; padding: 8px 10px; }
+  .ct-section-nav { top: 52px; }
+}
+</style>
+<style id="ct-auctions-page-css">
+body.ct-auctions-page {
+  --ct-ink: #0f172a;
+  --ct-muted: #64748b;
+  --ct-line: #e2e8f0;
+  --ct-coral: #ff4d7a;
+  --ct-up: #059669;
+  --ct-down: #dc2626;
+  background: #f7f5f2;
+  color: var(--ct-ink);
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+}
+body.ct-auctions-page .wrap {
+  max-width: 1120px; margin: 0 auto; padding: 28px 18px 64px;
+}
+body.ct-auctions-page .ct-page-head { margin: 8px 0 22px; }
+body.ct-auctions-page .ct-page-head .eyebrow {
+  font-size: .72rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase;
+  color: var(--ct-coral); margin: 0 0 6px;
+}
+body.ct-auctions-page .ct-page-head h1 {
+  font-size: 1.85rem; font-weight: 800; margin: 0 0 8px; letter-spacing: -.02em;
+}
+body.ct-auctions-page .ct-page-head .sub {
+  color: var(--ct-muted); font-size: .95rem; margin: 0; line-height: 1.45;
+}
+body.ct-auctions-page .ct-auc-filters {
+  display: flex; flex-wrap: wrap; gap: 10px 14px; align-items: end;
+  background: #fff; border: 1px solid var(--ct-line); border-radius: 12px;
+  padding: 14px 16px; margin-bottom: 16px;
+}
+body.ct-auctions-page .ct-auc-filters label {
+  display: flex; flex-direction: column; gap: 4px;
+  font-size: .68rem; font-weight: 650; letter-spacing: .05em; text-transform: uppercase;
+  color: var(--ct-muted);
+}
+body.ct-auctions-page .ct-auc-filters .chk {
+  flex-direction: row; align-items: center; gap: 8px;
+  text-transform: none; letter-spacing: 0; font-size: .85rem; font-weight: 550;
+  color: var(--ct-ink); padding-bottom: 6px;
+}
+body.ct-auctions-page .ct-auc-filters select,
+body.ct-auctions-page .ct-auc-filters input[type="search"] {
+  min-width: 140px; padding: 8px 10px; border-radius: 8px;
+  border: 1px solid var(--ct-line); font-size: .9rem; color: var(--ct-ink);
+  background: #fff;
+}
+body.ct-auctions-page .ct-auc-filters input[type="search"] { min-width: 200px; }
+body.ct-auctions-page .ct-auc-meta {
+  font-size: .85rem; color: var(--ct-muted); margin: 0 0 12px;
+}
+body.ct-auctions-page .ct-auc-table-wrap {
+  background: #fff; border: 1px solid var(--ct-line); border-radius: 12px;
+  overflow: auto; box-shadow: 0 1px 2px rgba(18,20,26,.03);
+}
+body.ct-auctions-page table.ct-auc-table {
+  width: 100%; border-collapse: collapse; font-size: .9rem;
+}
+body.ct-auctions-page table.ct-auc-table th {
+  text-align: left; font-size: .68rem; font-weight: 700; letter-spacing: .06em;
+  text-transform: uppercase; color: var(--ct-muted);
+  padding: 12px 14px; border-bottom: 1px solid var(--ct-line);
+  background: #fafaf9; white-space: nowrap;
+}
+body.ct-auctions-page table.ct-auc-table td {
+  padding: 12px 14px; border-bottom: 1px solid var(--ct-line);
+  vertical-align: top;
+}
+body.ct-auctions-page table.ct-auc-table tr:last-child td { border-bottom: none; }
+body.ct-auctions-page table.ct-auc-table a.lot {
+  color: var(--ct-ink); font-weight: 650; text-decoration: none;
+}
+body.ct-auctions-page table.ct-auc-table a.lot:hover { color: var(--ct-coral); }
+body.ct-auctions-page .badge {
+  display: inline-block; font-size: .68rem; font-weight: 700;
+  padding: 2px 7px; border-radius: 999px; margin-right: 4px;
+  border: 1px solid var(--ct-line); color: var(--ct-muted);
+}
+body.ct-auctions-page .badge.nr {
+  background: rgba(5,150,105,.08); color: #059669; border-color: rgba(5,150,105,.25);
+}
+body.ct-auctions-page .badge.soon {
+  background: rgba(255,77,122,.08); color: #e11d48; border-color: rgba(255,77,122,.25);
+}
+body.ct-auctions-page .bid { font-variant-numeric: tabular-nums; font-weight: 650; white-space: nowrap; }
+body.ct-auctions-page .muted { color: var(--ct-muted); font-size: .82rem; }
+body.ct-auctions-page .ct-footer-logo { display: block; margin: 36px auto 8px; opacity: .9; }
+body.ct-auctions-page footer.ct-auc-foot {
+  text-align: center; color: var(--ct-muted); font-size: .85rem; margin-top: 28px;
+}
+@media (max-width: 720px) {
+  body.ct-auctions-page .ct-auc-filters input[type="search"] { min-width: 100%; width: 100%; }
+  body.ct-auctions-page table.ct-auc-table th:nth-child(3),
+  body.ct-auctions-page table.ct-auc-table td:nth-child(3) { display: none; }
+}
+</style>
+<!-- Cloudflare Web Analytics -->
+<script id="cf-web-analytics" type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token":"8fdf6d27dcf142858856124ec043f1cd"}'></script>
+<!-- End Cloudflare Web Analytics -->
+</head>
+<body class="ct-auctions-page">
+<nav class="ct-global-nav" id="ct-global-nav" aria-label="Site"><div class="ct-nav-inner"><a class="ct-nav-logo" href="index.html" aria-label="Car Trends home"><img src="assets/editorial/logo-car-trends-horizontal.png?v=202609151706" alt="Car Trends — Exotic Car Market Intelligence" /></a><a class="" href="index.html">Overview</a><a class="" href="ferrari.html">Ferrari</a><a class="" href="mclaren.html">McLaren</a><a class="" href="lamborghini.html">Lamborghini</a><a class="" href="ford.html">Ford GT</a><a class="active" href="auctions.html">Auctions</a><div class="ct-nav-social" role="navigation" aria-label="Social"><a href="https://www.instagram.com/dbo_car_trends/" target="_blank" rel="noopener noreferrer" aria-label="Instagram @dbo_car_trends">IG</a><a href="https://www.tiktok.com/@dbo_car_trends" target="_blank" rel="noopener noreferrer" aria-label="TikTok @dbo_car_trends">TikTok</a><a href="https://www.youtube.com/@dbo_car_trends" target="_blank" rel="noopener noreferrer" aria-label="YouTube @dbo_car_trends">YouTube</a></div></div></nav>
+<div class="wrap">
+  <header class="ct-page-head">
+    <p class="eyebrow">Auction Watch</p>
+    <h1>Live Auctions</h1>
+    <p class="sub">30 tracked live lots · Updated Filled by Auction / no-reserve watch (10am &amp; 6pm ET) · US &amp; Canada focus</p>
+  </header>
+
+  <div class="ct-auc-filters" id="ct-auc-filters">
+    <label>Brand
+      <select id="f-brand"><option value="">All brands</option><option value="ferrari">Ferrari</option><option value="ford">Ford</option><option value="lamborghini">Lamborghini</option></select>
+    </label>
+    <label>Venue
+      <select id="f-venue"><option value="">All venues</option><option value="Bring a Trailer">Bring a Trailer</option><option value="PCARMARKET">PCARMARKET</option><option value="RM Sotheby&#x27;s">RM Sotheby&#x27;s</option><option value="duPont REGISTRY auctions">duPont REGISTRY auctions</option></select>
+    </label>
+    <label class="chk"><input type="checkbox" id="f-soon"/> Ending soon</label>
+    <label class="chk"><input type="checkbox" id="f-nr"/> No reserve</label>
+    <label>Search
+      <input type="search" id="f-q" placeholder="Title, VIN, location…" autocomplete="off"/>
+    </label>
+  </div>
+  <p class="ct-auc-meta" id="ct-auc-count">Showing 30 lots</p>
+  <div class="ct-auc-table-wrap">
+    <table class="ct-auc-table">
+      <thead>
+        <tr>
+          <th>Lot</th>
+          <th>Brand</th>
+          <th>Bid / ask</th>
+          <th>Ends</th>
+          <th>Venue</th>
+        </tr>
+      </thead>
+      <tbody id="ct-auc-tbody"></tbody>
+    </table>
+  </div>
+  <footer class="ct-auc-foot">
+    <img class="ct-footer-logo" src="assets/editorial/logo-car-trends-stacked.png?v=202609151706" alt="Car Trends" width="140" height="70"/>
+    <p>Lots from the daily auction watch — never invented. <a href="index.html">Market overview</a> · <a href="data/auction-watch/latest.json">Raw JSON</a></p>
+  </footer>
+</div>
+<script id="ct-auc-data" type="application/json">{"lots": [{"url": "https://bringatrailer.com/listing/2018-ferrari-488-spider-50/", "source": "Bring a Trailer", "title": "No Reserve: 5k-Mile 2018 Ferrari 488 Spider", "year": 2018, "model": "488", "body": "Spider", "miles": 5000, "bid_or_ask": 250000, "bid_or_ask_display": "$250,000 current bid", "no_reserve": true, "ending_soon": false, "ends_at": "2026-09-17T17:00:00Z", "ends_at_note": "Thu Sep 17, 2026 1:00pm ET / 10:00am PT", "location": "Manitowoc, Wisconsin, USA", "notes": "Bid +$40,000 vs 6pm ($210,000→$250,000). BaT no-reserve. Soft vs 488 spider ask median ~$417,895 (daily CSV 2026-09-15).", "brand": "ferrari", "vin": "ZFF80AMA4J0237220", "exterior": "Bianco Avus", "interior": "Cuoio"}, {"url": "https://live.dupontregistry.com/auction/2018-ferrari-488spideravoriohistoricalpaint2440miles-4075", "source": "duPont REGISTRY auctions", "title": "2018 Ferrari 488 Spider | Avorio Historical Paint | 2,440 Miles", "year": 2018, "model": "488", "body": "Spider", "miles": 2440, "bid_or_ask": 309500, "bid_or_ask_display": "$309,500 current bid", "no_reserve": true, "ending_soon": false, "ends_at": "2026-09-17T19:30:24Z", "ends_at_note": "Thu Sep 17, 2026 3:30pm ET / 12:30pm PT (duPont endTime)", "location": "Lebanon, Tennessee, USA", "notes": "Bid flat vs 6pm. Extra Campionario Avorio / Crema; duPont NR (hasReservePrice=False). Soft vs 488 spider ask median ~$417,895 (daily CSV 2026-09-15).", "brand": "ferrari", "vin": "ZFF80AMA0J0234511", "exterior": "Avorio", "interior": "Crema"}, {"url": "https://live.dupontregistry.com/auction/2005-ferrari-f430giallomodena11kmiles-4089", "source": "duPont REGISTRY auctions", "title": "2005 Ferrari F430 | Giallo Modena | 11k Miles", "year": 2005, "model": "F430", "body": "Coupe", "miles": 11000, "bid_or_ask": 45000, "bid_or_ask_display": "$45,000 current bid", "no_reserve": true, "ending_soon": false, "ends_at": "2026-09-21T18:30:15Z", "ends_at_note": "Mon Sep 21, 2026 2:30pm ET / 11:30am PT (duPont endTime)", "location": "Lebanon, Tennessee, USA", "notes": "Bid +$43,500 vs 6pm ($1,500→$45,000). F1 automated; ~11k miles; duPont NR (hasReservePrice=False). Soft vs F430 coupe ask median ~$254,814 (daily CSV 2026-09-15).", "brand": "ferrari", "vin": "ZFFEW58A150144034", "exterior": "Giallo Modena", "interior": "Black"}, {"url": "https://bringatrailer.com/listing/2024-ferrari-sf90-spider-8/", "source": "Bring a Trailer", "title": "2024 Ferrari SF90 Spider", "year": 2024, "model": "SF90", "body": "Spider", "miles": 2000, "bid_or_ask": 480000, "bid_or_ask_display": "$480,000 current bid", "no_reserve": false, "ending_soon": true, "ends_at": "2026-09-15T17:10:00Z", "ends_at_note": "Tue Sep 15, 2026 1:10pm ET / 10:10am PT", "location": "Moorpark, California, USA", "notes": "Bid +$25,000 vs 6pm ($455,000→$480,000). Not Assetto Fiorano. Soft vs SF90 spider ask median ~$614,795 (daily CSV 2026-09-15). Ending within ~48h.", "brand": "ferrari", "vin": "ZFF96NMA6R0309363", "exterior": "Rosso Scuderia w/ Nero DS hardtop", "interior": "Nero leather"}, {"url": "https://bringatrailer.com/listing/2007-ferrari-f430-91/", "source": "Bring a Trailer", "title": "15k-Mile 2007 Ferrari F430", "year": 2007, "model": "F430", "body": "Coupe", "miles": 15000, "bid_or_ask": 145000, "bid_or_ask_display": "$145,000 current bid", "no_reserve": false, "ending_soon": true, "ends_at": "2026-09-15T18:10:00Z", "ends_at_note": "Tue Sep 15, 2026 2:10pm ET / 11:10am PT", "location": "Neptune, New Jersey, USA", "notes": "Bid +$13,570 vs 6pm ($131,430→$145,000). Soft vs F430 coupe ask median ~$254,814 (daily CSV 2026-09-15). Ending within ~48h. F1.", "brand": "ferrari", "vin": "ZFFEW58A570154097", "exterior": "Blu Pozzi", "interior": "Nero"}, {"url": "https://bringatrailer.com/listing/2002-ferrari-360-spider-73/", "source": "Bring a Trailer", "title": "18k-Mile 2002 Ferrari 360 Spider", "year": 2002, "model": "360", "body": "Spider", "miles": 18000, "bid_or_ask": 85000, "bid_or_ask_display": "$85,000 current bid", "no_reserve": false, "ending_soon": true, "ends_at": "2026-09-15T18:50:00Z", "ends_at_note": "Tue Sep 15, 2026 2:50pm ET / 11:50am PT", "location": "Leander, Texas, USA", "notes": "Bid +$10,000 vs 6pm ($75,000→$85,000). Soft vs 360 spider ask median ~$152,404 (daily CSV 2026-09-15). Ending within ~48h. F1.", "brand": "ferrari", "vin": "ZFFYT53AX20127824", "exterior": "Blu Nart", "interior": "brown"}, {"url": "https://bringatrailer.com/listing/2000-ferrari-360-modena-110/", "source": "Bring a Trailer", "title": "24k-Mile 2000 Ferrari 360 Modena", "year": 2000, "model": "360", "body": "Coupe", "miles": 24000, "bid_or_ask": 85000, "bid_or_ask_display": "$85,000 current bid", "no_reserve": false, "ending_soon": true, "ends_at": "2026-09-16T17:21:00Z", "ends_at_note": "Wed Sep 16, 2026 1:21pm ET / 10:21am PT", "location": "Douglassville, Pennsylvania, USA", "notes": "Bid flat vs 6pm. Soft vs 360 coupe ask median ~$169,932 (daily CSV 2026-09-15). Ending within ~48h. F1.", "brand": "ferrari", "vin": "ZFFYU51A0Y0120356", "exterior": "Nero", "interior": "Nero"}, {"url": "https://www.pcarmarket.com/auction/2007-ferrari-f430-spider-4", "source": "PCARMARKET", "title": "25k-Mile 2007 Ferrari F430 Spider F1", "year": 2007, "model": "F430", "body": "Spider", "miles": 24513, "bid_or_ask": 80000, "bid_or_ask_display": "$80,000 current bid", "no_reserve": false, "ending_soon": true, "ends_at": "2026-09-16T19:00:00Z", "ends_at_note": "Wed Sep 16, 2026 3:00pm ET / 12:00pm PT", "location": "Burbank, CA, United States", "notes": "Bid flat vs 6pm. Reserve unmet; soft vs F430 spider ask median ~$274,708 (daily CSV 2026-09-15). Ending within ~48h.", "brand": "ferrari"}, {"url": "https://bringatrailer.com/listing/2004-lamborghini-gallardo-67/", "source": "Bring a Trailer", "title": "2004 Lamborghini Gallardo", "year": 2004, "model": "Gallardo", "body": "Coupe", "miles": 30000, "bid_or_ask": 40000, "bid_or_ask_display": "$40,000 current bid (~$60,000 tariff-landed)", "no_reserve": false, "ending_soon": true, "ends_at": "2026-09-16T19:25:00Z", "ends_at_note": "Wed Sep 16, 2026 3:25pm ET / 12:25pm PT", "location": "Saskatoon, Saskatchewan, Canada", "notes": "CANADA + 50% US import tariff: raw $40,000 → ~landed $60,000. Bid +$10,000 vs 6pm ($30,000→$40,000). Soft vs Gallardo coupe ask median ~$172,998 after tariff (daily CSV 2026-09-15). Ending within ~48h.", "brand": "lamborghini", "vin": "ZHWGU11S04LA01818", "exterior": "Giallo Midas", "interior": "Nero Perseus"}, {"url": "https://bringatrailer.com/listing/2021-lamborghini-aventador-lp770-4-svj-roadster-12/", "source": "Bring a Trailer", "title": "2021 Lamborghini Aventador LP770-4 SVJ Roadster", "year": 2021, "model": "Aventador SVJ", "body": "Roadster", "miles": null, "bid_or_ask": 1007777, "bid_or_ask_display": "$1,007,777 current bid", "no_reserve": false, "ending_soon": false, "ends_at": "2026-09-17T17:30:00Z", "ends_at_note": "Thu Sep 17, 2026 1:30pm ET / 10:30am PT", "location": "Naperville, Illinois, USA", "notes": "NEW this run. Vs SVJ Roadster ask median ~$1,565,357 (daily CSV 2026-09-15).", "brand": "lamborghini"}, {"url": "https://bringatrailer.com/listing/2007-ferrari-f430-95/", "source": "Bring a Trailer", "title": "8k-Mile 2007 Ferrari F430 Spider", "year": 2007, "model": "F430", "body": "Spider", "miles": 8000, "bid_or_ask": 190000, "bid_or_ask_display": "$190,000 current bid", "no_reserve": false, "ending_soon": false, "ends_at": "2026-09-17T18:26:00Z", "ends_at_note": "Thu Sep 17, 2026 2:26pm ET / 11:26am PT", "location": "Indianapolis, Indiana, USA", "notes": "Bid +$40,000 vs 6pm ($150,000→$190,000). Soft vs F430 spider ask median ~$274,708 (daily CSV 2026-09-15). F1.", "brand": "ferrari", "vin": "ZFFEW59A170155052", "exterior": "Rosso Corsa", "interior": "beige"}, {"url": "https://bringatrailer.com/listing/2014-ferrari-458-italia-15/", "source": "Bring a Trailer", "title": "8k-Mile 2014 Ferrari 458 Italia", "year": 2014, "model": "458", "body": "Coupe", "miles": 8000, "bid_or_ask": 301000, "bid_or_ask_display": "$301,000 current bid", "no_reserve": false, "ending_soon": false, "ends_at": "2026-09-17T18:37:00Z", "ends_at_note": "Thu Sep 17, 2026 2:37pm ET / 11:37am PT", "location": "Palm Beach, Florida, USA", "notes": "Bid flat vs 6pm. Soft vs 458 coupe ask median ~$470,195 (daily CSV 2026-09-15). Carbon racing seats.", "brand": "ferrari", "vin": "ZFF67NFA7E0203026", "exterior": "Rosso Corsa", "interior": "black"}, {"url": "https://bringatrailer.com/listing/1997-ferrari-f355-gts-19-2/", "source": "Bring a Trailer", "title": "1997 Ferrari F355 GTS 6-Speed", "year": 1997, "model": "355", "body": "GTS", "miles": 50000, "bid_or_ask": 180355, "bid_or_ask_display": "$180,355 current bid", "no_reserve": false, "ending_soon": false, "ends_at": "2026-09-17T18:49:00Z", "ends_at_note": "Thu Sep 17, 2026 2:49pm ET / 11:49am PT", "location": "Pompano Beach, Florida, USA", "notes": "Bid flat vs 6pm. Soft vs 355 gts ask median ~$384,997 (daily CSV 2026-09-15). Gated 6-speed.", "brand": "ferrari", "vin": "ZFFXR42A4V0106638", "exterior": "Modena Yellow", "interior": "black Connolly"}, {"url": "https://bringatrailer.com/listing/1999-ferrari-360-modena-69/", "source": "Bring a Trailer", "title": "15k-Mile 1999 Ferrari 360 Modena 6-Speed", "year": 1999, "model": "360", "body": "Coupe", "miles": 15000, "bid_or_ask": 110000, "bid_or_ask_display": "$110,000 current bid", "no_reserve": false, "ending_soon": false, "ends_at": "2026-09-17T19:44:00Z", "ends_at_note": "Thu Sep 17, 2026 3:44pm ET / 12:44pm PT", "location": "Novato, California, USA", "notes": "Bid +$8,000 vs 6pm ($102,000→$110,000). Soft vs 360 coupe ask median ~$169,932 (daily CSV 2026-09-15). Gated 6-speed.", "brand": "ferrari", "vin": "ZFFYR51A1X0117465", "exterior": "Rosso Corsa", "interior": "Nero"}, {"url": "https://bringatrailer.com/listing/2020-ferrari-f8-tributo-20/", "source": "Bring a Trailer", "title": "3,600-Mile 2020 Ferrari F8 Tributo", "year": 2020, "model": "F8", "body": "Coupe", "miles": 3600, "bid_or_ask": 190000, "bid_or_ask_display": "$190,000 current bid", "no_reserve": false, "ending_soon": false, "ends_at": "2026-09-17T19:59:00Z", "ends_at_note": "Thu Sep 17, 2026 3:59pm ET / 12:59pm PT", "location": "Mount Kisco, New York, USA", "notes": "Bid flat vs 6pm. Still far under F8 coupe ask median ~$471,212 and under ~$450k F8 watch band (daily CSV 2026-09-15). Not marked no-reserve.", "brand": "ferrari", "vin": "ZFF92LLA1L0255107", "exterior": "Bianco Avus", "interior": "Nero DS two-tone"}, {"url": "https://bringatrailer.com/listing/2012-lamborghini-gallardo-lp570-4-superleggera-4/", "source": "Bring a Trailer", "title": "7k-Mile 2012 Lamborghini Gallardo LP570-4 Superleggera", "year": 2012, "model": "Gallardo", "body": "Coupe", "miles": 7000, "bid_or_ask": 255000, "bid_or_ask_display": "$255,000 current bid", "no_reserve": false, "ending_soon": false, "ends_at": "2026-09-18T17:15:00Z", "ends_at_note": "Fri Sep 18, 2026 1:15pm ET / 10:15am PT", "location": "Alpharetta, Georgia, USA", "notes": "Bid +$25,000 vs 6pm ($230,000→$255,000). Vs Gallardo coupe ask median ~$172,998 (daily CSV 2026-09-15) — Superleggera typically above base median.", "brand": "lamborghini", "vin": "ZHWGU7AJ9CLA11207", "exterior": "Verde Ithaca", "interior": "black Alcantara"}, {"url": "https://bringatrailer.com/listing/2006-ford-gt-217/", "source": "Bring a Trailer", "title": "Ex–Mac Davis 2006 Ford GT", "year": 2006, "model": "GT", "body": "Coupe", "miles": 6000, "bid_or_ask": 511000, "bid_or_ask_display": "$511,000 current bid (~$766,500 tariff-landed)", "no_reserve": false, "ending_soon": false, "ends_at": "2026-09-18T17:25:00Z", "ends_at_note": "Fri Sep 18, 2026 1:25pm ET / 10:25am PT", "location": "Vancouver, British Columbia, Canada", "notes": "CANADA + 50% US import tariff: raw $511,000 → ~landed $766,500. Bid +$1,000 vs 6pm ($510,000→$511,000). Vs 2006 Ford GT ask median ~$869,675 / overall Gen1 median ~$749,950 (daily CSV 2026-09-15) — after tariff, not a clear soft deal vs US comps.", "brand": "ford", "vin": "1FAFP90S36Y401554", "exterior": "Midnight Blue stripe-delete"}, {"url": "https://bringatrailer.com/listing/2018-ferrari-488-gtb-51/", "source": "Bring a Trailer", "title": "2018 Ferrari 488 GTB", "year": 2018, "model": "488", "body": "Coupe", "miles": 24000, "bid_or_ask": 125000, "bid_or_ask_display": "$125,000 current bid", "no_reserve": false, "ending_soon": false, "ends_at": "2026-09-18T19:06:00Z", "ends_at_note": "Fri Sep 18, 2026 3:06pm ET / 12:06pm PT", "location": "Rancho Cordova, California, USA", "notes": "Bid +$19,000 vs 6pm ($106,000→$125,000). Soft vs 488 coupe ask median ~$339,988 (daily CSV 2026-09-15). 24k miles; dealer.", "brand": "ferrari", "vin": "ZFF79ALA1J0229711", "exterior": "Rosso Corsa", "interior": "Nero+Rosso"}, {"url": "https://bringatrailer.com/listing/2005-ferrari-f430-106/", "source": "Bring a Trailer", "title": "2005 Ferrari F430 Spider 6-Speed Conversion", "year": 2005, "model": "F430", "body": "Spider", "miles": 17000, "bid_or_ask": 130000, "bid_or_ask_display": "$130,000 current bid", "no_reserve": false, "ending_soon": false, "ends_at": "2026-09-18T19:50:00Z", "ends_at_note": "Fri Sep 18, 2026 3:50pm ET / 12:50pm PT", "location": "Pompano Beach, Florida, USA", "notes": "Bid flat vs 6pm. Soft vs F430 spider ask median ~$274,708 (daily CSV 2026-09-15). Retrofitted gated 6-speed (not factory manual).", "brand": "ferrari", "vin": "ZFFEW59A850143865", "exterior": "Blu Tour de France", "interior": "beige"}, {"url": "https://bringatrailer.com/listing/2019-ferrari-488-spider-28/", "source": "Bring a Trailer", "title": "12k-Mile 2019 Ferrari 488 Spider", "year": 2019, "model": "488", "body": "Spider", "miles": 12000, "bid_or_ask": 326000, "bid_or_ask_display": "$326,000 current bid", "no_reserve": false, "ending_soon": false, "ends_at": "2026-09-19T17:00:00Z", "ends_at_note": "Sat Sep 19, 2026 1:00pm ET / 10:00am PT", "location": "Myrtle Beach, South Carolina, USA", "notes": "Bid flat vs 6pm. Soft vs 488 spider ask median ~$417,895 (daily CSV 2026-09-15).", "brand": "ferrari", "vin": "ZFF80AMA8K0246701", "exterior": "Extra Range Matte Nero", "interior": "Nero+Rosso"}, {"url": "https://bringatrailer.com/listing/2003-ferrari-360-modena-63/", "source": "Bring a Trailer", "title": "2003 Ferrari 360 Modena", "year": 2003, "model": "360", "body": "Coupe", "miles": 27000, "bid_or_ask": 67000, "bid_or_ask_display": "$67,000 current bid", "no_reserve": false, "ending_soon": false, "ends_at": "2026-09-19T18:49:00Z", "ends_at_note": "Sat Sep 19, 2026 2:49pm ET / 11:49am PT", "location": "Largo, Florida, USA", "notes": "Bid flat vs 6pm. Soft vs 360 coupe ask median ~$169,932 (daily CSV 2026-09-15). F1; Challenge-style grilles.", "brand": "ferrari", "vin": "ZFFYU51A230130525", "exterior": "Rosso Corsa", "interior": "Nero"}, {"url": "https://bringatrailer.com/listing/2001-ferrari-360-spider-96/", "source": "Bring a Trailer", "title": "Japanese-Market 2001 Ferrari 360 Spider", "year": 2001, "model": "360", "body": "Spider", "miles": 41000, "bid_or_ask": 10360, "bid_or_ask_display": "$10,360 current bid (~$15,540 tariff-landed)", "no_reserve": false, "ending_soon": false, "ends_at": "2026-09-20T17:37:00Z", "ends_at_note": "Sun Sep 20, 2026 1:37pm ET / 10:37am PT", "location": "St. Albert, Alberta, Canada", "notes": "CANADA + 50% US import tariff: raw $10,360 → ~landed $15,540. Bid flat vs 6pm. Soft vs 360 spider ask median ~$152,404 after tariff (daily CSV 2026-09-15). Japanese-market; Alberta registration.", "brand": "ferrari", "vin": "ZFFYT53J000122749", "exterior": "Grigio Alloy", "interior": "grey"}, {"url": "https://bringatrailer.com/listing/2018-ferrari-488-gtb-50/", "source": "Bring a Trailer", "title": "2018 Ferrari 488 GTB", "year": 2018, "model": "488", "body": "Coupe", "miles": 38000, "bid_or_ask": 70000, "bid_or_ask_display": "$70,000 current bid (~$105,000 tariff-landed)", "no_reserve": false, "ending_soon": false, "ends_at": "2026-09-20T17:42:00Z", "ends_at_note": "Sun Sep 20, 2026 1:42pm ET / 10:42am PT", "location": "Ajax, Ontario, Canada", "notes": "CANADA + 50% US import tariff: raw $70,000 → ~landed $105,000. Bid +$580 vs 6pm ($69,420→$70,000). Soft vs 488 coupe ask median ~$339,988 after tariff (daily CSV 2026-09-15).", "brand": "ferrari", "vin": "ZFF79ALA1J0233953", "exterior": "Nero Daytona", "interior": "Rosso Ferrari"}, {"url": "https://bringatrailer.com/listing/2005-ford-gt-244/", "source": "Bring a Trailer", "title": "166-Mile 2005 Ford GT", "year": 2005, "model": "GT", "body": "Coupe", "miles": 166, "bid_or_ask": 552500, "bid_or_ask_display": "$552,500 current bid", "no_reserve": false, "ending_soon": false, "ends_at": "2026-09-21T17:30:00Z", "ends_at_note": "Mon Sep 21, 2026 1:30pm ET / 10:30am PT", "location": "Fresno, California, USA", "notes": "Bid +$1,500 vs 6pm ($551,000→$552,500). Vs 2005 Ford GT ask median ~$699,900 / overall Gen1 median ~$749,950 (daily CSV 2026-09-15). Mark IV Red.", "brand": "ford", "vin": "1FAFP90S75Y401670", "exterior": "Mark IV Red"}, {"url": "https://bringatrailer.com/listing/1998-ferrari-f355-spider-72/", "source": "Bring a Trailer", "title": "27k-Mile 1998 Ferrari F355 Spider 6-Speed", "year": 1998, "model": "355", "body": "Spider", "miles": 27000, "bid_or_ask": 60000, "bid_or_ask_display": "$60,000 current bid", "no_reserve": false, "ending_soon": false, "ends_at": "2026-09-21T17:31:00Z", "ends_at_note": "Mon Sep 21, 2026 1:31pm ET / 10:31am PT", "location": "Emeryville, California, USA", "notes": "Bid +$4,500 vs 6pm ($55,500→$60,000). Soft vs 355 spider ask median ~$264,677 (daily CSV 2026-09-15). Gated 6-speed; Fantasy Junction consignment. Belt service dated Dec 2014 — plan on service.", "brand": "ferrari", "vin": "ZFFXR48A4W0111623", "exterior": "Rosso Corsa", "interior": "tan Connolly"}, {"url": "https://bringatrailer.com/listing/2016-ferrari-488-gtb-37/", "source": "Bring a Trailer", "title": "8k-Mile 2016 Ferrari 488 GTB", "year": 2016, "model": "488", "body": "Coupe", "miles": 8000, "bid_or_ask": 100000, "bid_or_ask_display": "$100,000 current bid", "no_reserve": false, "ending_soon": false, "ends_at": "2026-09-21T17:50:00Z", "ends_at_note": "Mon Sep 21, 2026 1:50pm ET / 10:50am PT", "location": "Pompano Beach, Florida, USA", "notes": "Bid +$50,000 vs 6pm ($50,000→$100,000). Canadian-market car imported to US 2026; now in FL. Soft vs 488 coupe ask median ~$339,988 (daily CSV 2026-09-15).", "brand": "ferrari", "vin": "ZFF79ALA1G0214280", "exterior": "Nero Daytona", "interior": "Nero"}, {"url": "https://bringatrailer.com/listing/2007-ferrari-f430-99/", "source": "Bring a Trailer", "title": "17k-Mile 2007 Ferrari F430 Spider", "year": 2007, "model": "F430", "body": "Spider", "miles": 17000, "bid_or_ask": 50000, "bid_or_ask_display": "$50,000 current bid", "no_reserve": false, "ending_soon": false, "ends_at": "2026-09-21T17:56:00Z", "ends_at_note": "Mon Sep 21, 2026 1:56pm ET / 10:56am PT", "location": "Pompano Beach, Florida, USA", "notes": "NEW this run. Soft vs F430 spider ask median ~$274,708 (daily CSV 2026-09-15).", "brand": "ferrari"}, {"url": "https://bringatrailer.com/listing/2011-ferrari-458-italia-59/", "source": "Bring a Trailer", "title": "2011 Ferrari 458 Italia", "year": 2011, "model": "458", "body": "Coupe", "miles": null, "bid_or_ask": 150000, "bid_or_ask_display": "$150,000 current bid", "no_reserve": false, "ending_soon": false, "ends_at": "2026-09-21T19:31:00Z", "ends_at_note": "Mon Sep 21, 2026 3:31pm ET / 12:31pm PT", "location": "Costa Mesa, California, USA", "notes": "NEW this run. Soft vs 458 coupe ask median ~$470,195 (daily CSV 2026-09-15).", "brand": "ferrari"}, {"url": "https://bringatrailer.com/listing/2007-ferrari-f430-98/", "source": "Bring a Trailer", "title": "8k-Mile 2007 Ferrari F430", "year": 2007, "model": "F430", "body": "Coupe", "miles": 8000, "bid_or_ask": 66000, "bid_or_ask_display": "$66,000 current bid", "no_reserve": false, "ending_soon": false, "ends_at": "2026-09-21T19:47:00Z", "ends_at_note": "Mon Sep 21, 2026 3:47pm ET / 12:47pm PT", "location": "Scottsdale, Arizona, USA", "notes": "NEW this run. Soft vs F430 coupe ask median ~$254,814 (daily CSV 2026-09-15).", "brand": "ferrari"}, {"url": "https://rmsothebys.com/auctions/s0926/lots/r0009-2006-ford-gt/", "source": "RM Sotheby's", "title": "2006 Ford GT (Sealed September)", "year": 2006, "model": "GT", "body": "Coupe", "miles": 1975, "bid_or_ask": null, "bid_or_ask_display": "Estimate $700,000–$850,000", "no_reserve": false, "ending_soon": false, "ends_at": "2026-09-30T18:45:00Z", "ends_at_note": "Sealed bid closes Wed Sep 30, 2026 2:45pm EDT; opens Sep 23", "location": "Boca Raton, Florida, USA", "notes": "Tier C catalog: Tungsten stripe-delete rarity (1 of 25). Still listed (catalog note only).", "brand": "ford", "vin": "1FAFP90S36Y402008", "exterior": "Tungsten stripe-delete"}]}</script>
+<script>
+(function () {
+  const raw = document.getElementById('ct-auc-data').textContent;
+  const data = JSON.parse(raw);
+  const lots = data.lots || [];
+  const tbody = document.getElementById('ct-auc-tbody');
+  const countEl = document.getElementById('ct-auc-count');
+  const brandEl = document.getElementById('f-brand');
+  const venueEl = document.getElementById('f-venue');
+  const soonEl = document.getElementById('f-soon');
+  const nrEl = document.getElementById('f-nr');
+  const qEl = document.getElementById('f-q');
+
+  function money(n) {
+    if (n == null || n === '') return '—';
+    const v = Number(n);
+    if (!isFinite(v)) return '—';
+    return '$' + Math.round(v).toLocaleString('en-US');
+  }
+  function esc(s) {
+    return String(s == null ? '' : s)
+      .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')
+      .replace(/"/g,'&quot;');
+  }
+  function endsLabel(lot) {
+    if (lot.ends_at_note) return lot.ends_at_note;
+    if (lot.ends_at) return lot.ends_at;
+    return '—';
+  }
+  function rowHtml(lot) {
+    const title = lot.title || 'Lot';
+    const url = lot.url || '#';
+    const brand = (lot.brand || '').toString();
+    const bid = lot.bid_or_ask_display || money(lot.bid_or_ask);
+    const badges = [];
+    if (lot.no_reserve) badges.push('<span class="badge nr">NR</span>');
+    if (lot.ending_soon) badges.push('<span class="badge soon">Ending soon</span>');
+    const loc = lot.location ? '<div class="muted">' + esc(lot.location) + '</div>' : '';
+    return '<tr>'
+      + '<td><a class="lot" href="' + esc(url) + '" target="_blank" rel="noopener">' + esc(title) + '</a>'
+      + (badges.length ? '<div style="margin-top:4px">' + badges.join(' ') + '</div>' : '')
+      + loc + '</td>'
+      + '<td>' + esc(brand ? brand.charAt(0).toUpperCase() + brand.slice(1) : '—') + '</td>'
+      + '<td class="bid">' + esc(bid) + '</td>'
+      + '<td><span class="muted">' + esc(endsLabel(lot)) + '</span></td>'
+      + '<td>' + esc(lot.source || '—') + '</td>'
+      + '</tr>';
+  }
+  function apply() {
+    const brand = (brandEl.value || '').toLowerCase();
+    const venue = venueEl.value || '';
+    const soon = soonEl.checked;
+    const nr = nrEl.checked;
+    const q = (qEl.value || '').trim().toLowerCase();
+    const filtered = lots.filter(function (lot) {
+      if (brand && String(lot.brand || '').toLowerCase() !== brand) return false;
+      if (venue && String(lot.source || '') !== venue) return false;
+      if (soon && !lot.ending_soon) return false;
+      if (nr && !lot.no_reserve) return false;
+      if (q) {
+        const blob = [lot.title, lot.vin, lot.location, lot.model, lot.notes, lot.exterior, lot.interior]
+          .map(function (x) { return String(x || '').toLowerCase(); }).join(' ');
+        if (blob.indexOf(q) < 0) return false;
+      }
+      return true;
+    });
+    tbody.innerHTML = filtered.map(rowHtml).join('') ||
+      '<tr><td colspan="5" class="muted">No lots match these filters.</td></tr>';
+    countEl.textContent = 'Showing ' + filtered.length + ' of ' + lots.length + ' lots';
+  }
+  [brandEl, venueEl, soonEl, nrEl, qEl].forEach(function (el) {
+    el.addEventListener('input', apply);
+    el.addEventListener('change', apply);
+  });
+  apply();
+})();
+</script>
+</body>
+</html>

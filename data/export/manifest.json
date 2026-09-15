@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-09-15T16:49:59.323589-04:00",
+  "generated_at": "2026-09-15T17:06:59.564636-04:00",
   "as_of": "2026-09-15",
   "schema_version": "1.0.0",
-  "aggregate_sha256": "7b7e00918de75be21cb648af133de821dfb641f22a5a240101f0a4cb08d66de9",
+  "aggregate_sha256": "343e38f7c2022c394bdf5e8832abf9362f97108c588f85baf245fa0d09185777",
   "aggregate_definition": "SHA-256 of UTF-8 bytes of sorted unique lines 'path:sha256\\n' for every entry in files[]. This is integrity verification, not a digital signature. Optional later: minisign/GPG over this manifest or aggregate_sha256.",
   "aggregate_material_preview_lines": [
-    "data/export/README.md:198ffd4da421d61deb4dcc9a2057b4750fedfd0cdd5717cba408249b49ccb043",
-    "data/export/brands/ferrari.json:8b4959efa6d4a2a7e3ced3d07bcc959341ed86118936deba86bd29447cb9347a",
+    "data/export/README.md:77e58a5887c4e0023a7f8125a4661de26051a2f470227e4f2dd7c584fc186364",
+    "data/export/brands/ferrari.json:e65a3a8382003a5121c7b700ed2963bb4a69e0969472a0164eb59ec382a4df96",
     "data/export/brands/ford.json:ecfcf7e2252cb23527eebcbf9dd0188469abd69a93d8b906f48ba0561f78c9e9",
     "data/export/brands/lamborghini.json:7cf0260ec978b899354d4286c9dfc87631f893fee30a56717fac3fe9ca7400dc",
     "data/export/brands/mclaren.json:5150d79bf80487d1c3748c3c76548780d04db9dac03467268c516f3d5b877c5c"
@@ -16,12 +16,12 @@
     {
       "path": "data/export/README.md",
       "bytes": 2763,
-      "sha256": "198ffd4da421d61deb4dcc9a2057b4750fedfd0cdd5717cba408249b49ccb043"
+      "sha256": "77e58a5887c4e0023a7f8125a4661de26051a2f470227e4f2dd7c584fc186364"
     },
     {
       "path": "data/export/brands/ferrari.json",
-      "bytes": 920618,
-      "sha256": "8b4959efa6d4a2a7e3ced3d07bcc959341ed86118936deba86bd29447cb9347a",
+      "bytes": 920614,
+      "sha256": "e65a3a8382003a5121c7b700ed2963bb4a69e0969472a0164eb59ec382a4df96",
       "row_count": 1098
     },
     {
@@ -45,17 +45,17 @@
     {
       "path": "data/export/index.html",
       "bytes": 1744,
-      "sha256": "6fa3a1c486714b835e635251b0a444568575dc93355bc6318865c1771a493b57"
+      "sha256": "80cdd5f3a84e5ca51524bb0cc83c8e670babb7bfa745cb81dc87c97c1c05e24d"
     },
     {
       "path": "data/export/latest.json",
-      "bytes": 99522,
-      "sha256": "5d91aa8c2f321f7498a47e1dac03b3b3804e4aada4ac7592d33a79827cd21219"
+      "bytes": 99510,
+      "sha256": "dd33431dcc052e820196166c1286fd1652732c329b784a84e48c15320ee03969"
     },
     {
       "path": "data/export/sources/GEO.md",
-      "bytes": 4624,
-      "sha256": "84f701fc83f13876f2dbdd8cd3e29b1ec0ada6ba3e8498753447797eb2f39b6b"
+      "bytes": 4496,
+      "sha256": "ad6dddfaee53d63910565bda0e7ec05bfeb8670d5725cc2334a74a9af54e70cd"
     },
     {
       "path": "data/export/sources/auction-watch/latest.json",
@@ -153,13 +153,13 @@
     },
     {
       "path": "data/export/sources/market-commentary/2026-09-15.json",
-      "bytes": 87916,
-      "sha256": "6dcbe403de0df0dd35ef6123b6a3c0e0f6a5c60a8553be7f9782996023cf9742"
+      "bytes": 86460,
+      "sha256": "89a49e2f8a26e5a08889622ce5e5aaf000fd08e747d90aa84a995a61b28e8098"
     },
     {
       "path": "data/export/sources/market-commentary/latest.json",
-      "bytes": 87916,
-      "sha256": "6dcbe403de0df0dd35ef6123b6a3c0e0f6a5c60a8553be7f9782996023cf9742"
+      "bytes": 86460,
+      "sha256": "89a49e2f8a26e5a08889622ce5e5aaf000fd08e747d90aa84a995a61b28e8098"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-15T20:33:58Z",
+  "generated_at": "2026-09-15T21:06:51Z",
   "latest_snapshot_date": "2026-09-15",
   "snapshot_dates": [
     "2026-09-06",
@@ -38013,12 +38013,12 @@
           "median_ask_lfl_pct": -20.93,
           "variant_pct_median": -0.19,
           "overlap_variants": [
-            "675LT Spider",
-            "765LT Spider",
-            "600LT Coupe",
             "765LT Coupe",
+            "600LT Coupe",
             "675LT Coupe",
-            "600LT Spider"
+            "600LT Spider",
+            "765LT Spider",
+            "675LT Spider"
           ],
           "composition_note": "new variants: 570S Coupe, 570S Spider, 720S Coupe, 720S Spider, 750S Coupe, 750S Spider; inventory Δ +305",
           "drops": {

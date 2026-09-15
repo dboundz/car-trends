@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-09-15T16:49:59.323589-04:00",
+    "generated_at": "2026-09-15T17:06:59.564636-04:00",
     "as_of": "2026-09-15",
     "timezone": "America/New_York",
     "geography": "US + Canada only (HTML overview filter; see GEO.md / sources/GEO.md)",
@@ -13,8 +13,8 @@
       "as_of": "2026-09-15",
       "listings_file": {
         "path": "data/export/brands/ferrari.json",
-        "bytes": 920618,
-        "sha256": "8b4959efa6d4a2a7e3ced3d07bcc959341ed86118936deba86bd29447cb9347a",
+        "bytes": 920614,
+        "sha256": "e65a3a8382003a5121c7b700ed2963bb4a69e0969472a0164eb59ec382a4df96",
         "listing_count": 1098,
         "kpis": {
           "median_ask": 459992,
@@ -89,8 +89,8 @@
         ],
         "market_commentary": {
           "headline": "Ferrari holding steady this week",
-          "take_short": "Holding steady · 1,065 cars",
-          "summary": "As of Sep 15, 2026, Ferrari has 1,065 cars on the US/Canada market. About 540 more cars listed since Sep 8, 2026. Asking prices are basically flat over the last ~7 days (typical ask around $399,998).",
+          "take_short": "Holding steady · 986 cars",
+          "summary": "As of Sep 15, 2026, Ferrari has 986 cars on the US/Canada market. About 540 more cars listed since Sep 8, 2026. Asking prices are basically flat over the last ~7 days (typical ask around $420,900).",
           "windows_available": [
             "7d",
             "14d"
@@ -162,8 +162,8 @@
       },
       "market_commentary": {
         "headline": "Ferrari holding steady this week",
-        "take_short": "Holding steady · 1,065 cars",
-        "summary": "As of Sep 15, 2026, Ferrari has 1,065 cars on the US/Canada market. About 540 more cars listed since Sep 8, 2026. Asking prices are basically flat over the last ~7 days (typical ask around $399,998).",
+        "take_short": "Holding steady · 986 cars",
+        "summary": "As of Sep 15, 2026, Ferrari has 986 cars on the US/Canada market. About 540 more cars listed since Sep 8, 2026. Asking prices are basically flat over the last ~7 days (typical ask around $420,900).",
         "windows_available": [
           "7d",
           "14d"
@@ -1961,8 +1961,8 @@
   "brand_files": {
     "ferrari": {
       "path": "data/export/brands/ferrari.json",
-      "sha256": "8b4959efa6d4a2a7e3ced3d07bcc959341ed86118936deba86bd29447cb9347a",
-      "bytes": 920618
+      "sha256": "e65a3a8382003a5121c7b700ed2963bb4a69e0969472a0164eb59ec382a4df96",
+      "bytes": 920614
     },
     "mclaren": {
       "path": "data/export/brands/mclaren.json",
@@ -1983,7 +1983,7 @@
   "market_commentary": {
     "available": true,
     "as_of": "2026-09-15",
-    "generated_at": "2026-09-15T20:28:50.641820Z",
+    "generated_at": "2026-09-15T21:05:31.690716Z",
     "geography": "US + Canada only",
     "pointer": "data/export/sources/market-commentary/latest.json",
     "overall": {
@@ -1998,8 +1998,8 @@
     "brands": {
       "ferrari": {
         "headline": "Ferrari holding steady this week",
-        "take_short": "Holding steady · 1,065 cars",
-        "summary": "As of Sep 15, 2026, Ferrari has 1,065 cars on the US/Canada market. About 540 more cars listed since Sep 8, 2026. Asking prices are basically flat over the last ~7 days (typical ask around $399,998).",
+        "take_short": "Holding steady · 986 cars",
+        "summary": "As of Sep 15, 2026, Ferrari has 986 cars on the US/Canada market. About 540 more cars listed since Sep 8, 2026. Asking prices are basically flat over the last ~7 days (typical ask around $420,900).",
         "windows_available": [
           "7d",
           "14d"

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-15T20:33:58Z",
+  "generated_at": "2026-09-15T21:09:15Z",
   "latest_snapshot_date": "2026-09-15",
   "snapshot_dates": [
     "2026-09-07",
@@ -33000,8 +33000,8 @@
           "median_ask_lfl_pct": 1.55,
           "variant_pct_median": -2.55,
           "overlap_variants": [
-            "Performante Coupe",
             "STO Coupe",
+            "Performante Coupe",
             "Performante Spider"
           ],
           "composition_note": "new variants: Gallardo Coupe, Gallardo Spider, Murcielago Coupe, Murcielago Spider, Revuelto Coupe, SVJ Coupe; inventory Δ +263",
