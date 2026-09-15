@@ -1,0 +1,830 @@
+{
+  "runs": [
+    {
+      "ran_at": "2026-09-10T22:25:52Z",
+      "lot_urls": [
+        "https://bringatrailer.com/listing/2018-ferrari-488-spider-50/",
+        "https://bringatrailer.com/listing/2008-ferrari-f430-35/",
+        "https://live.dupontregistry.com/auction/2016-mclaren-675ltsilicawhite1of500-4061",
+        "https://www.barrett-jackson.com/2026-las-vegas/docket",
+        "https://live.dupontregistry.com/auction/2018-ferrari-488spideravoriohistoricalpaint2440miles-4075",
+        "https://bringatrailer.com/listing/2006-ford-gt-217/",
+        "https://rmsothebys.com/auctions/s0926/lots/r0009-2006-ford-gt/"
+      ],
+      "actionable_notify": [
+        "https://bringatrailer.com/listing/2018-ferrari-488-spider-50/",
+        "https://bringatrailer.com/listing/2008-ferrari-f430-35/",
+        "https://live.dupontregistry.com/auction/2016-mclaren-675ltsilicawhite1of500-4061"
+      ]
+    },
+    {
+      "ran_at": "2026-09-11T14:28:03Z",
+      "lot_urls": [
+        "https://bringatrailer.com/listing/2018-ferrari-488-spider-50/",
+        "https://bringatrailer.com/listing/2008-ferrari-f430-35/",
+        "https://live.dupontregistry.com/auction/2016-mclaren-675ltsilicawhite1of500-4061",
+        "https://www.barrett-jackson.com/2026-las-vegas/docket",
+        "https://bringatrailer.com/listing/2007-ferrari-f430-91/",
+        "https://bringatrailer.com/listing/2007-ferrari-f430-95/",
+        "https://bringatrailer.com/listing/2014-ferrari-458-italia-15/",
+        "https://bringatrailer.com/listing/2020-ferrari-f8-tributo-20/",
+        "https://live.dupontregistry.com/auction/2018-ferrari-488spideravoriohistoricalpaint2440miles-4075",
+        "https://bringatrailer.com/listing/2006-ford-gt-217/",
+        "https://rmsothebys.com/auctions/s0926/lots/r0009-2006-ford-gt/"
+      ],
+      "actionable_notify": [
+        "https://bringatrailer.com/listing/2020-ferrari-f8-tributo-20/",
+        "https://bringatrailer.com/listing/2014-ferrari-458-italia-15/"
+      ],
+      "skipped_renotify_dedup": [
+        "https://bringatrailer.com/listing/2018-ferrari-488-spider-50/",
+        "https://bringatrailer.com/listing/2008-ferrari-f430-35/",
+        "https://live.dupontregistry.com/auction/2016-mclaren-675ltsilicawhite1of500-4061"
+      ]
+    },
+    {
+      "ran_at": "2026-09-11T22:19:48Z",
+      "lot_urls": [
+        "https://bringatrailer.com/listing/2018-ferrari-488-spider-50/",
+        "https://live.dupontregistry.com/auction/2018-ferrari-488spideravoriohistoricalpaint2440miles-4075",
+        "https://bringatrailer.com/listing/2007-ferrari-f430-91/",
+        "https://bringatrailer.com/listing/2002-ferrari-360-spider-73/",
+        "https://bringatrailer.com/listing/2000-ferrari-360-modena-110/",
+        "https://bringatrailer.com/listing/2007-ferrari-f430-95/",
+        "https://bringatrailer.com/listing/2014-ferrari-458-italia-15/",
+        "https://bringatrailer.com/listing/1999-ferrari-360-modena-69/",
+        "https://bringatrailer.com/listing/2020-ferrari-f8-tributo-20/",
+        "https://bringatrailer.com/listing/2006-ford-gt-217/",
+        "https://bringatrailer.com/listing/2018-ferrari-488-gtb-51/",
+        "https://bringatrailer.com/listing/2005-ferrari-f430-106/",
+        "https://rmsothebys.com/auctions/s0926/lots/r0009-2006-ford-gt/"
+      ],
+      "actionable_notify": [
+        "https://live.dupontregistry.com/auction/2018-ferrari-488spideravoriohistoricalpaint2440miles-4075",
+        "https://bringatrailer.com/listing/2018-ferrari-488-gtb-51/",
+        "https://bringatrailer.com/listing/2005-ferrari-f430-106/"
+      ],
+      "skipped_renotify_dedup": [
+        "https://bringatrailer.com/listing/2018-ferrari-488-spider-50/",
+        "https://bringatrailer.com/listing/2020-ferrari-f8-tributo-20/",
+        "https://bringatrailer.com/listing/2014-ferrari-458-italia-15/"
+      ]
+    },
+    {
+      "ran_at": "2026-09-12T14:12:30Z",
+      "lot_urls": [
+        "https://bringatrailer.com/listing/2018-ferrari-488-spider-50/",
+        "https://live.dupontregistry.com/auction/2018-ferrari-488spideravoriohistoricalpaint2440miles-4075",
+        "https://bringatrailer.com/listing/2007-ferrari-f430-91/",
+        "https://bringatrailer.com/listing/2002-ferrari-360-spider-73/",
+        "https://bringatrailer.com/listing/2000-ferrari-360-modena-110/",
+        "https://bringatrailer.com/listing/2007-ferrari-f430-95/",
+        "https://bringatrailer.com/listing/2014-ferrari-458-italia-15/",
+        "https://bringatrailer.com/listing/1997-ferrari-f355-gts-19-2/",
+        "https://bringatrailer.com/listing/1999-ferrari-360-modena-69/",
+        "https://bringatrailer.com/listing/2020-ferrari-f8-tributo-20/",
+        "https://bringatrailer.com/listing/2006-ford-gt-217/",
+        "https://bringatrailer.com/listing/2018-ferrari-488-gtb-51/",
+        "https://bringatrailer.com/listing/2005-ferrari-f430-106/",
+        "https://bringatrailer.com/listing/2019-ferrari-488-spider-28/",
+        "https://rmsothebys.com/auctions/s0926/lots/r0009-2006-ford-gt/",
+        "https://bid.goodingco.com/lots/view/1-BZAWGT/2022-ferrari-f8-spider"
+      ],
+      "actionable_notify": [
+        "https://bringatrailer.com/listing/2019-ferrari-488-spider-28/",
+        "https://bringatrailer.com/listing/1997-ferrari-f355-gts-19-2/"
+      ],
+      "skipped_renotify_dedup": [
+        "https://bringatrailer.com/listing/2018-ferrari-488-spider-50/",
+        "https://live.dupontregistry.com/auction/2018-ferrari-488spideravoriohistoricalpaint2440miles-4075",
+        "https://bringatrailer.com/listing/2020-ferrari-f8-tributo-20/",
+        "https://bringatrailer.com/listing/2014-ferrari-458-italia-15/",
+        "https://bringatrailer.com/listing/2018-ferrari-488-gtb-51/",
+        "https://bringatrailer.com/listing/2005-ferrari-f430-106/"
+      ]
+    },
+    {
+      "ran_at": "2026-09-12T22:14:49Z",
+      "lot_urls": [
+        "https://collectingcars.com/for-sale/1998-ferrari-f355-spider-7",
+        "https://bringatrailer.com/listing/2018-ferrari-488-spider-50/",
+        "https://live.dupontregistry.com/auction/2018-ferrari-488spideravoriohistoricalpaint2440miles-4075",
+        "https://collectingcars.com/for-sale/2018-ferrari-488-gtb-7",
+        "https://bringatrailer.com/listing/2007-ferrari-f430-91/",
+        "https://bringatrailer.com/listing/2002-ferrari-360-spider-73/",
+        "https://bringatrailer.com/listing/2000-ferrari-360-modena-110/",
+        "https://www.pcarmarket.com/auction/2007-ferrari-f430-spider-4",
+        "https://bringatrailer.com/listing/2007-ferrari-f430-95/",
+        "https://bringatrailer.com/listing/2014-ferrari-458-italia-15/",
+        "https://bringatrailer.com/listing/1997-ferrari-f355-gts-19-2/",
+        "https://bringatrailer.com/listing/1999-ferrari-360-modena-69/",
+        "https://bringatrailer.com/listing/2020-ferrari-f8-tributo-20/",
+        "https://bringatrailer.com/listing/2006-ford-gt-217/",
+        "https://bringatrailer.com/listing/2018-ferrari-488-gtb-51/",
+        "https://bringatrailer.com/listing/2005-ferrari-f430-106/",
+        "https://bringatrailer.com/listing/2019-ferrari-488-spider-28/",
+        "https://rmsothebys.com/auctions/s0926/lots/r0009-2006-ford-gt/"
+      ],
+      "actionable_notify": [
+        "https://collectingcars.com/for-sale/1998-ferrari-f355-spider-7",
+        "https://collectingcars.com/for-sale/2018-ferrari-488-gtb-7"
+      ],
+      "skipped_renotify_dedup": [
+        "https://bringatrailer.com/listing/2005-ferrari-f430-106/",
+        "https://bringatrailer.com/listing/2019-ferrari-488-spider-28/",
+        "https://bringatrailer.com/listing/2018-ferrari-488-gtb-51/",
+        "https://bringatrailer.com/listing/1997-ferrari-f355-gts-19-2/",
+        "https://bringatrailer.com/listing/2014-ferrari-458-italia-15/",
+        "https://live.dupontregistry.com/auction/2018-ferrari-488spideravoriohistoricalpaint2440miles-4075",
+        "https://bringatrailer.com/listing/2018-ferrari-488-spider-50/",
+        "https://bringatrailer.com/listing/2020-ferrari-f8-tributo-20/"
+      ]
+    },
+    {
+      "ran_at": "2026-09-13T14:28:49Z",
+      "lot_urls": [
+        "https://bringatrailer.com/listing/2018-ferrari-488-spider-50/",
+        "https://live.dupontregistry.com/auction/2018-ferrari-488spideravoriohistoricalpaint2440miles-4075",
+        "https://bringatrailer.com/listing/2007-ferrari-f430-91/",
+        "https://bringatrailer.com/listing/2002-ferrari-360-spider-73/",
+        "https://bringatrailer.com/listing/2000-ferrari-360-modena-110/",
+        "https://bringatrailer.com/listing/2007-ferrari-f430-95/",
+        "https://bringatrailer.com/listing/2014-ferrari-458-italia-15/",
+        "https://bringatrailer.com/listing/1997-ferrari-f355-gts-19-2/",
+        "https://bringatrailer.com/listing/1999-ferrari-360-modena-69/",
+        "https://bringatrailer.com/listing/2020-ferrari-f8-tributo-20/",
+        "https://bringatrailer.com/listing/2006-ford-gt-217/",
+        "https://bringatrailer.com/listing/2018-ferrari-488-gtb-51/",
+        "https://bringatrailer.com/listing/2005-ferrari-f430-106/",
+        "https://bringatrailer.com/listing/2019-ferrari-488-spider-28/",
+        "https://bringatrailer.com/listing/2003-ferrari-360-modena-63/",
+        "https://bringatrailer.com/listing/2018-ferrari-488-gtb-50/",
+        "https://bringatrailer.com/listing/2005-ford-gt-244/",
+        "https://rmsothebys.com/auctions/s0926/lots/r0009-2006-ford-gt/",
+        "https://www.pcarmarket.com/auction/2007-ferrari-f430-spider-4"
+      ],
+      "actionable_notify": [
+        "https://bringatrailer.com/listing/2018-ferrari-488-gtb-50/",
+        "https://bringatrailer.com/listing/2003-ferrari-360-modena-63/",
+        "https://bringatrailer.com/listing/2005-ford-gt-244/"
+      ],
+      "skipped_renotify_dedup": [
+        "https://bringatrailer.com/listing/2018-ferrari-488-spider-50/",
+        "https://live.dupontregistry.com/auction/2018-ferrari-488spideravoriohistoricalpaint2440miles-4075",
+        "https://bringatrailer.com/listing/2020-ferrari-f8-tributo-20/"
+      ],
+      "removed_overseas": [
+        "https://collectingcars.com/for-sale/1998-ferrari-f355-spider-7",
+        "https://collectingcars.com/for-sale/2018-ferrari-488-gtb-7"
+      ]
+    },
+    {
+      "run_at": "2026-09-13T22:13:06Z",
+      "lot_count": 19,
+      "urls": [
+        "https://bringatrailer.com/listing/2018-ferrari-488-spider-50/",
+        "https://live.dupontregistry.com/auction/2018-ferrari-488spideravoriohistoricalpaint2440miles-4075",
+        "https://bringatrailer.com/listing/2007-ferrari-f430-91/",
+        "https://bringatrailer.com/listing/2002-ferrari-360-spider-73/",
+        "https://bringatrailer.com/listing/2000-ferrari-360-modena-110/",
+        "https://www.pcarmarket.com/auction/2007-ferrari-f430-spider-4",
+        "https://bringatrailer.com/listing/2007-ferrari-f430-95/",
+        "https://bringatrailer.com/listing/2014-ferrari-458-italia-15/",
+        "https://bringatrailer.com/listing/1997-ferrari-f355-gts-19-2/",
+        "https://bringatrailer.com/listing/1999-ferrari-360-modena-69/",
+        "https://bringatrailer.com/listing/2020-ferrari-f8-tributo-20/",
+        "https://bringatrailer.com/listing/2006-ford-gt-217/",
+        "https://bringatrailer.com/listing/2018-ferrari-488-gtb-51/",
+        "https://bringatrailer.com/listing/2005-ferrari-f430-106/",
+        "https://bringatrailer.com/listing/2019-ferrari-488-spider-28/",
+        "https://bringatrailer.com/listing/2003-ferrari-360-modena-63/",
+        "https://bringatrailer.com/listing/2018-ferrari-488-gtb-50/",
+        "https://bringatrailer.com/listing/2005-ford-gt-244/",
+        "https://rmsothebys.com/auctions/s0926/lots/r0009-2006-ford-gt/"
+      ],
+      "ending_soon": [
+        "https://bringatrailer.com/listing/2007-ferrari-f430-91/",
+        "https://bringatrailer.com/listing/2002-ferrari-360-spider-73/"
+      ],
+      "no_reserve": [
+        "https://bringatrailer.com/listing/2018-ferrari-488-spider-50/",
+        "https://live.dupontregistry.com/auction/2018-ferrari-488spideravoriohistoricalpaint2440miles-4075"
+      ],
+      "bid_moves": [
+        {
+          "url": "https://bringatrailer.com/listing/2018-ferrari-488-spider-50/",
+          "bid": 207000,
+          "title": "No Reserve: 5k-Mile 2018 Ferrari 488 Spider"
+        },
+        {
+          "url": "https://bringatrailer.com/listing/2014-ferrari-458-italia-15/",
+          "bid": 301000,
+          "title": "8k-Mile 2014 Ferrari 458 Italia"
+        },
+        {
+          "url": "https://bringatrailer.com/listing/2006-ford-gt-217/",
+          "bid": 465000,
+          "title": "Ex\u2013Mac Davis 2006 Ford GT"
+        },
+        {
+          "url": "https://bringatrailer.com/listing/2018-ferrari-488-gtb-50/",
+          "bid": 25000,
+          "title": "2018 Ferrari 488 GTB"
+        }
+      ],
+      "venues_checked": [
+        "duPont REGISTRY auctions",
+        "Bring a Trailer",
+        "Cars & Bids",
+        "PCARMARKET",
+        "Collecting Cars",
+        "SBX Cars",
+        "Hemmings Auctions",
+        "Bonhams Cars Online",
+        "ISSIMI"
+      ],
+      "note": "6pm ET watch; Tier A via curl/API; C&B/SBX browser scan in flight"
+    },
+    {
+      "ran_at": "2026-09-14T14:41:54Z",
+      "lot_urls": [
+        "https://bringatrailer.com/listing/2018-ferrari-488-spider-50/",
+        "https://live.dupontregistry.com/auction/2018-ferrari-488spideravoriohistoricalpaint2440miles-4075",
+        "https://bringatrailer.com/listing/2007-ferrari-f430-91/",
+        "https://bringatrailer.com/listing/2002-ferrari-360-spider-73/",
+        "https://bringatrailer.com/listing/2000-ferrari-360-modena-110/",
+        "https://www.pcarmarket.com/auction/2007-ferrari-f430-spider-4",
+        "https://bringatrailer.com/listing/2007-ferrari-f430-95/",
+        "https://bringatrailer.com/listing/2014-ferrari-458-italia-15/",
+        "https://bringatrailer.com/listing/1997-ferrari-f355-gts-19-2/",
+        "https://bringatrailer.com/listing/1999-ferrari-360-modena-69/",
+        "https://bringatrailer.com/listing/2020-ferrari-f8-tributo-20/",
+        "https://bringatrailer.com/listing/2006-ford-gt-217/",
+        "https://bringatrailer.com/listing/2018-ferrari-488-gtb-51/",
+        "https://bringatrailer.com/listing/2005-ferrari-f430-106/",
+        "https://bringatrailer.com/listing/2019-ferrari-488-spider-28/",
+        "https://bringatrailer.com/listing/2003-ferrari-360-modena-63/",
+        "https://bringatrailer.com/listing/2001-ferrari-360-spider-96/",
+        "https://bringatrailer.com/listing/2018-ferrari-488-gtb-50/",
+        "https://bringatrailer.com/listing/2005-ford-gt-244/",
+        "https://bringatrailer.com/listing/1998-ferrari-f355-spider-72/",
+        "https://rmsothebys.com/auctions/s0926/lots/r0009-2006-ford-gt/"
+      ],
+      "actionable_notify": [
+        "https://bringatrailer.com/listing/2001-ferrari-360-spider-96/",
+        "https://bringatrailer.com/listing/1998-ferrari-f355-spider-72/"
+      ],
+      "skipped_renotify_dedup": [
+        "https://bringatrailer.com/listing/2018-ferrari-488-spider-50/",
+        "https://live.dupontregistry.com/auction/2018-ferrari-488spideravoriohistoricalpaint2440miles-4075",
+        "https://bringatrailer.com/listing/2007-ferrari-f430-91/",
+        "https://bringatrailer.com/listing/2002-ferrari-360-spider-73/",
+        "https://bringatrailer.com/listing/2020-ferrari-f8-tributo-20/"
+      ],
+      "ending_soon": [
+        "https://bringatrailer.com/listing/2007-ferrari-f430-91/",
+        "https://bringatrailer.com/listing/2002-ferrari-360-spider-73/"
+      ],
+      "no_reserve": [
+        "https://bringatrailer.com/listing/2018-ferrari-488-spider-50/",
+        "https://live.dupontregistry.com/auction/2018-ferrari-488spideravoriohistoricalpaint2440miles-4075"
+      ],
+      "venues_checked": [
+        "duPont REGISTRY auctions",
+        "Bring a Trailer",
+        "Cars & Bids",
+        "PCARMARKET",
+        "SBX Cars",
+        "Collecting Cars",
+        "Hemmings Auctions",
+        "Bonhams Cars Online",
+        "ISSIMI",
+        "RM Sotheby's"
+      ],
+      "note": "10am ET refresh (US/CA): NEW BaT JP-market 360 Spider Alberta $10.4k (~$15.5k landed) + NEW F355 Spider 6spd $55k. Ending-soon Tue: F430 $130.4k + 360 Spider $75k. NR BaT 488 Spider $207k + duPont Avorio $306k. F8 still $190k. Canada 488 GTB now $69.4k (~$104k landed)."
+    },
+    {
+      "ran_at": "2026-09-14T22:12:50Z",
+      "lot_urls": [
+        "https://bringatrailer.com/listing/2018-ferrari-488-spider-50/",
+        "https://live.dupontregistry.com/auction/2018-ferrari-488spideravoriohistoricalpaint2440miles-4075",
+        "https://live.dupontregistry.com/auction/2005-ferrari-f430giallomodena11kmiles-4089",
+        "https://bringatrailer.com/listing/2024-ferrari-sf90-spider-8/",
+        "https://bringatrailer.com/listing/2007-ferrari-f430-91/",
+        "https://bringatrailer.com/listing/2002-ferrari-360-spider-73/",
+        "https://bringatrailer.com/listing/2000-ferrari-360-modena-110/",
+        "https://www.pcarmarket.com/auction/2007-ferrari-f430-spider-4",
+        "https://bringatrailer.com/listing/2004-lamborghini-gallardo-67/",
+        "https://bringatrailer.com/listing/2007-ferrari-f430-95/",
+        "https://bringatrailer.com/listing/2014-ferrari-458-italia-15/",
+        "https://bringatrailer.com/listing/1997-ferrari-f355-gts-19-2/",
+        "https://bringatrailer.com/listing/1999-ferrari-360-modena-69/",
+        "https://bringatrailer.com/listing/2020-ferrari-f8-tributo-20/",
+        "https://bringatrailer.com/listing/2012-lamborghini-gallardo-lp570-4-superleggera-4/",
+        "https://bringatrailer.com/listing/2006-ford-gt-217/",
+        "https://bringatrailer.com/listing/2018-ferrari-488-gtb-51/",
+        "https://bringatrailer.com/listing/2005-ferrari-f430-106/",
+        "https://bringatrailer.com/listing/2019-ferrari-488-spider-28/",
+        "https://bringatrailer.com/listing/2003-ferrari-360-modena-63/",
+        "https://bringatrailer.com/listing/2001-ferrari-360-spider-96/",
+        "https://bringatrailer.com/listing/2018-ferrari-488-gtb-50/",
+        "https://bringatrailer.com/listing/2005-ford-gt-244/",
+        "https://bringatrailer.com/listing/1998-ferrari-f355-spider-72/",
+        "https://bringatrailer.com/listing/2016-ferrari-488-gtb-37/",
+        "https://rmsothebys.com/auctions/s0926/lots/r0009-2006-ford-gt/"
+      ],
+      "actionable_notify": [
+        "https://live.dupontregistry.com/auction/2005-ferrari-f430giallomodena11kmiles-4089",
+        "https://bringatrailer.com/listing/2024-ferrari-sf90-spider-8/",
+        "https://bringatrailer.com/listing/2000-ferrari-360-modena-110/",
+        "https://www.pcarmarket.com/auction/2007-ferrari-f430-spider-4",
+        "https://bringatrailer.com/listing/2004-lamborghini-gallardo-67/",
+        "https://bringatrailer.com/listing/2016-ferrari-488-gtb-37/"
+      ],
+      "skipped_renotify_dedup": [
+        "https://bringatrailer.com/listing/2018-ferrari-488-spider-50/",
+        "https://live.dupontregistry.com/auction/2018-ferrari-488spideravoriohistoricalpaint2440miles-4075",
+        "https://bringatrailer.com/listing/2007-ferrari-f430-91/",
+        "https://bringatrailer.com/listing/2002-ferrari-360-spider-73/",
+        "https://bringatrailer.com/listing/2020-ferrari-f8-tributo-20/",
+        "https://bringatrailer.com/listing/2001-ferrari-360-spider-96/"
+      ],
+      "ending_soon": [
+        "https://bringatrailer.com/listing/2024-ferrari-sf90-spider-8/",
+        "https://bringatrailer.com/listing/2007-ferrari-f430-91/",
+        "https://bringatrailer.com/listing/2002-ferrari-360-spider-73/",
+        "https://bringatrailer.com/listing/2000-ferrari-360-modena-110/",
+        "https://www.pcarmarket.com/auction/2007-ferrari-f430-spider-4",
+        "https://bringatrailer.com/listing/2004-lamborghini-gallardo-67/"
+      ],
+      "no_reserve": [
+        "https://bringatrailer.com/listing/2018-ferrari-488-spider-50/",
+        "https://live.dupontregistry.com/auction/2018-ferrari-488spideravoriohistoricalpaint2440miles-4075",
+        "https://live.dupontregistry.com/auction/2005-ferrari-f430giallomodena11kmiles-4089"
+      ],
+      "bid_moves": [
+        {
+          "url": "https://bringatrailer.com/listing/2018-ferrari-488-spider-50/",
+          "old": 207000,
+          "new": 210000
+        },
+        {
+          "url": "https://live.dupontregistry.com/auction/2018-ferrari-488spideravoriohistoricalpaint2440miles-4075",
+          "old": 306000,
+          "new": 309500
+        },
+        {
+          "url": "https://bringatrailer.com/listing/2007-ferrari-f430-91/",
+          "old": 130430,
+          "new": 131430
+        },
+        {
+          "url": "https://www.pcarmarket.com/auction/2007-ferrari-f430-spider-4",
+          "old": 60000,
+          "new": 80000
+        },
+        {
+          "url": "https://bringatrailer.com/listing/2007-ferrari-f430-95/",
+          "old": 105000,
+          "new": 150000
+        },
+        {
+          "url": "https://bringatrailer.com/listing/1999-ferrari-360-modena-69/",
+          "old": 100000,
+          "new": 102000
+        },
+        {
+          "url": "https://bringatrailer.com/listing/2006-ford-gt-217/",
+          "old": 465000,
+          "new": 510000
+        },
+        {
+          "url": "https://bringatrailer.com/listing/2018-ferrari-488-gtb-51/",
+          "old": 105000,
+          "new": 106000
+        },
+        {
+          "url": "https://bringatrailer.com/listing/2005-ford-gt-244/",
+          "old": 550000,
+          "new": 551000
+        },
+        {
+          "url": "https://bringatrailer.com/listing/1998-ferrari-f355-spider-72/",
+          "old": 55000,
+          "new": 55500
+        }
+      ],
+      "new_urls": [
+        "https://bringatrailer.com/listing/2004-lamborghini-gallardo-67/",
+        "https://bringatrailer.com/listing/2012-lamborghini-gallardo-lp570-4-superleggera-4/",
+        "https://bringatrailer.com/listing/2016-ferrari-488-gtb-37/",
+        "https://bringatrailer.com/listing/2024-ferrari-sf90-spider-8/",
+        "https://live.dupontregistry.com/auction/2005-ferrari-f430giallomodena11kmiles-4089"
+      ],
+      "venues_checked": [
+        "duPont REGISTRY auctions",
+        "Bring a Trailer",
+        "Cars & Bids",
+        "PCARMARKET",
+        "SBX Cars",
+        "Collecting Cars",
+        "Hemmings Auctions",
+        "Bonhams Cars Online",
+        "ISSIMI"
+      ],
+      "note": "6pm ET watch: NEW duPont NR F430 Giallo $1.5k; NEW BaT SF90 Spider $455k ends Tue; NEW 488 GTB $50k; NEW Gallardos; NR 488 Spider $210k / Avorio $309.5k. C&B/SBX/CC curl-limited."
+    },
+    {
+      "ran_at": "2026-09-15T14:12:35Z",
+      "lot_urls": [
+        "https://bringatrailer.com/listing/2018-ferrari-488-spider-50/",
+        "https://live.dupontregistry.com/auction/2018-ferrari-488spideravoriohistoricalpaint2440miles-4075",
+        "https://live.dupontregistry.com/auction/2005-ferrari-f430giallomodena11kmiles-4089",
+        "https://bringatrailer.com/listing/2024-ferrari-sf90-spider-8/",
+        "https://bringatrailer.com/listing/2007-ferrari-f430-91/",
+        "https://bringatrailer.com/listing/2002-ferrari-360-spider-73/",
+        "https://bringatrailer.com/listing/2000-ferrari-360-modena-110/",
+        "https://www.pcarmarket.com/auction/2007-ferrari-f430-spider-4",
+        "https://bringatrailer.com/listing/2004-lamborghini-gallardo-67/",
+        "https://bringatrailer.com/listing/2021-lamborghini-aventador-lp770-4-svj-roadster-12/",
+        "https://bringatrailer.com/listing/2007-ferrari-f430-95/",
+        "https://bringatrailer.com/listing/2014-ferrari-458-italia-15/",
+        "https://bringatrailer.com/listing/1997-ferrari-f355-gts-19-2/",
+        "https://bringatrailer.com/listing/1999-ferrari-360-modena-69/",
+        "https://bringatrailer.com/listing/2020-ferrari-f8-tributo-20/",
+        "https://bringatrailer.com/listing/2012-lamborghini-gallardo-lp570-4-superleggera-4/",
+        "https://bringatrailer.com/listing/2006-ford-gt-217/",
+        "https://bringatrailer.com/listing/2018-ferrari-488-gtb-51/",
+        "https://bringatrailer.com/listing/2005-ferrari-f430-106/",
+        "https://bringatrailer.com/listing/2019-ferrari-488-spider-28/",
+        "https://bringatrailer.com/listing/2003-ferrari-360-modena-63/",
+        "https://bringatrailer.com/listing/2001-ferrari-360-spider-96/",
+        "https://bringatrailer.com/listing/2018-ferrari-488-gtb-50/",
+        "https://bringatrailer.com/listing/2005-ford-gt-244/",
+        "https://bringatrailer.com/listing/1998-ferrari-f355-spider-72/",
+        "https://bringatrailer.com/listing/2016-ferrari-488-gtb-37/",
+        "https://bringatrailer.com/listing/2007-ferrari-f430-99/",
+        "https://bringatrailer.com/listing/2011-ferrari-458-italia-59/",
+        "https://bringatrailer.com/listing/2007-ferrari-f430-98/",
+        "https://rmsothebys.com/auctions/s0926/lots/r0009-2006-ford-gt/"
+      ],
+      "actionable_notify": [
+        "https://bringatrailer.com/listing/2007-ferrari-f430-98/",
+        "https://bringatrailer.com/listing/2007-ferrari-f430-99/",
+        "https://bringatrailer.com/listing/2011-ferrari-458-italia-59/",
+        "https://bringatrailer.com/listing/2021-lamborghini-aventador-lp770-4-svj-roadster-12/",
+        "https://bringatrailer.com/listing/2018-ferrari-488-spider-50/",
+        "https://live.dupontregistry.com/auction/2005-ferrari-f430giallomodena11kmiles-4089"
+      ],
+      "skipped_renotify_dedup": [
+        "https://bringatrailer.com/listing/2024-ferrari-sf90-spider-8/",
+        "https://bringatrailer.com/listing/2007-ferrari-f430-91/",
+        "https://bringatrailer.com/listing/2002-ferrari-360-spider-73/",
+        "https://bringatrailer.com/listing/2000-ferrari-360-modena-110/",
+        "https://www.pcarmarket.com/auction/2007-ferrari-f430-spider-4",
+        "https://bringatrailer.com/listing/2004-lamborghini-gallardo-67/",
+        "https://live.dupontregistry.com/auction/2018-ferrari-488spideravoriohistoricalpaint2440miles-4075",
+        "https://bringatrailer.com/listing/2020-ferrari-f8-tributo-20/"
+      ],
+      "material_changes": [
+        {
+          "url": "https://bringatrailer.com/listing/1998-ferrari-f355-spider-72/",
+          "title": "27k-Mile 1998 Ferrari F355 Spider 6-Speed",
+          "field": "bid",
+          "before": 55500,
+          "after": 60000,
+          "delta": 4500
+        },
+        {
+          "url": "https://bringatrailer.com/listing/1999-ferrari-360-modena-69/",
+          "title": "15k-Mile 1999 Ferrari 360 Modena 6-Speed",
+          "field": "bid",
+          "before": 102000,
+          "after": 110000,
+          "delta": 8000
+        },
+        {
+          "url": "https://bringatrailer.com/listing/2002-ferrari-360-spider-73/",
+          "title": "18k-Mile 2002 Ferrari 360 Spider",
+          "field": "bid",
+          "before": 75000,
+          "after": 85000,
+          "delta": 10000
+        },
+        {
+          "url": "https://bringatrailer.com/listing/2004-lamborghini-gallardo-67/",
+          "title": "2004 Lamborghini Gallardo",
+          "field": "bid",
+          "before": 30000,
+          "after": 40000,
+          "delta": 10000
+        },
+        {
+          "url": "https://bringatrailer.com/listing/2005-ford-gt-244/",
+          "title": "166-Mile 2005 Ford GT",
+          "field": "bid",
+          "before": 551000,
+          "after": 552500,
+          "delta": 1500
+        },
+        {
+          "url": "https://bringatrailer.com/listing/2006-ford-gt-217/",
+          "title": "Ex\u2013Mac Davis 2006 Ford GT",
+          "field": "bid",
+          "before": 510000,
+          "after": 511000,
+          "delta": 1000
+        },
+        {
+          "url": "https://bringatrailer.com/listing/2007-ferrari-f430-91/",
+          "title": "15k-Mile 2007 Ferrari F430",
+          "field": "bid",
+          "before": 131430,
+          "after": 145000,
+          "delta": 13570
+        },
+        {
+          "url": "https://bringatrailer.com/listing/2007-ferrari-f430-95/",
+          "title": "8k-Mile 2007 Ferrari F430 Spider",
+          "field": "bid",
+          "before": 150000,
+          "after": 190000,
+          "delta": 40000
+        },
+        {
+          "url": "https://bringatrailer.com/listing/2012-lamborghini-gallardo-lp570-4-superleggera-4/",
+          "title": "7k-Mile 2012 Lamborghini Gallardo LP570-4 Superleggera",
+          "field": "bid",
+          "before": 230000,
+          "after": 255000,
+          "delta": 25000
+        },
+        {
+          "url": "https://bringatrailer.com/listing/2016-ferrari-488-gtb-37/",
+          "title": "8k-Mile 2016 Ferrari 488 GTB",
+          "field": "bid",
+          "before": 50000,
+          "after": 100000,
+          "delta": 50000
+        },
+        {
+          "url": "https://bringatrailer.com/listing/2018-ferrari-488-gtb-50/",
+          "title": "2018 Ferrari 488 GTB",
+          "field": "bid",
+          "before": 69420,
+          "after": 70000,
+          "delta": 580
+        },
+        {
+          "url": "https://bringatrailer.com/listing/2018-ferrari-488-gtb-51/",
+          "title": "2018 Ferrari 488 GTB",
+          "field": "bid",
+          "before": 106000,
+          "after": 125000,
+          "delta": 19000
+        },
+        {
+          "url": "https://bringatrailer.com/listing/2018-ferrari-488-spider-50/",
+          "title": "No Reserve: 5k-Mile 2018 Ferrari 488 Spider",
+          "field": "bid",
+          "before": 210000,
+          "after": 250000,
+          "delta": 40000
+        },
+        {
+          "url": "https://bringatrailer.com/listing/2024-ferrari-sf90-spider-8/",
+          "title": "2024 Ferrari SF90 Spider",
+          "field": "bid",
+          "before": 455000,
+          "after": 480000,
+          "delta": 25000
+        },
+        {
+          "url": "https://live.dupontregistry.com/auction/2005-ferrari-f430giallomodena11kmiles-4089",
+          "title": "2005 Ferrari F430 | Giallo Modena | 11k Miles",
+          "field": "bid",
+          "before": 1500,
+          "after": 45000,
+          "delta": 43500
+        }
+      ],
+      "venues_notes": {
+        "Cars & Bids": "curl/API SPA shell only \u2014 blocked",
+        "SBX Cars": "curl SPA shell \u2014 no parseable live lots",
+        "Collecting Cars": "curl geo pages shell \u2014 no US/CA parse",
+        "Hemmings": "no in-scope live matches in home trending",
+        "Bonhams/ISSIMI": "not scraped this run (Tier B; Tier A sufficient)"
+      }
+    }
+  ],
+  "seen": {
+    "https://bringatrailer.com/listing/2018-ferrari-488-spider-50/": {
+      "last_seen": "2026-09-14T22:12:50Z",
+      "bid_or_ask": 210000,
+      "no_reserve": true,
+      "ending_soon": false,
+      "ends_at": "2026-09-17T17:00:00Z",
+      "title": "No Reserve: 5k-Mile 2018 Ferrari 488 Spider"
+    },
+    "https://live.dupontregistry.com/auction/2018-ferrari-488spideravoriohistoricalpaint2440miles-4075": {
+      "last_seen": "2026-09-14T22:12:50Z",
+      "bid_or_ask": 309500,
+      "no_reserve": true,
+      "ending_soon": false,
+      "ends_at": "2026-09-17T19:30:24Z",
+      "title": "2018 Ferrari 488 Spider | Avorio Historical Paint | 2,440 Miles"
+    },
+    "https://bringatrailer.com/listing/2007-ferrari-f430-91/": {
+      "last_seen": "2026-09-14T22:12:50Z",
+      "bid_or_ask": 131430,
+      "no_reserve": false,
+      "ending_soon": true,
+      "ends_at": "2026-09-15T18:10:00Z",
+      "title": "15k-Mile 2007 Ferrari F430"
+    },
+    "https://bringatrailer.com/listing/2002-ferrari-360-spider-73/": {
+      "last_seen": "2026-09-14T22:12:50Z",
+      "bid_or_ask": 75000,
+      "no_reserve": false,
+      "ending_soon": true,
+      "ends_at": "2026-09-15T18:50:00Z",
+      "title": "18k-Mile 2002 Ferrari 360 Spider"
+    },
+    "https://bringatrailer.com/listing/2000-ferrari-360-modena-110/": {
+      "last_seen": "2026-09-14T22:12:50Z",
+      "bid_or_ask": 85000,
+      "no_reserve": false,
+      "ending_soon": true,
+      "ends_at": "2026-09-16T17:21:00Z",
+      "title": "24k-Mile 2000 Ferrari 360 Modena"
+    },
+    "https://www.pcarmarket.com/auction/2007-ferrari-f430-spider-4": {
+      "last_seen": "2026-09-14T22:12:50Z",
+      "bid_or_ask": 80000,
+      "no_reserve": false,
+      "ending_soon": true,
+      "ends_at": "2026-09-16T19:00:00Z",
+      "title": "25k-Mile 2007 Ferrari F430 Spider F1"
+    },
+    "https://bringatrailer.com/listing/2007-ferrari-f430-95/": {
+      "last_seen": "2026-09-14T22:12:50Z",
+      "bid_or_ask": 150000,
+      "no_reserve": false,
+      "ending_soon": false,
+      "ends_at": "2026-09-17T18:26:00Z",
+      "title": "8k-Mile 2007 Ferrari F430 Spider"
+    },
+    "https://bringatrailer.com/listing/2014-ferrari-458-italia-15/": {
+      "last_seen": "2026-09-14T22:12:50Z",
+      "bid_or_ask": 301000,
+      "no_reserve": false,
+      "ending_soon": false,
+      "ends_at": "2026-09-17T18:37:00Z",
+      "title": "8k-Mile 2014 Ferrari 458 Italia"
+    },
+    "https://bringatrailer.com/listing/1997-ferrari-f355-gts-19-2/": {
+      "last_seen": "2026-09-14T22:12:50Z",
+      "bid_or_ask": 180355,
+      "no_reserve": false,
+      "ending_soon": false,
+      "ends_at": "2026-09-17T18:49:00Z",
+      "title": "1997 Ferrari F355 GTS 6-Speed"
+    },
+    "https://bringatrailer.com/listing/1999-ferrari-360-modena-69/": {
+      "last_seen": "2026-09-14T22:12:50Z",
+      "bid_or_ask": 102000,
+      "no_reserve": false,
+      "ending_soon": false,
+      "ends_at": "2026-09-17T19:44:00Z",
+      "title": "15k-Mile 1999 Ferrari 360 Modena 6-Speed"
+    },
+    "https://bringatrailer.com/listing/2020-ferrari-f8-tributo-20/": {
+      "last_seen": "2026-09-14T22:12:50Z",
+      "bid_or_ask": 190000,
+      "no_reserve": false,
+      "ending_soon": false,
+      "ends_at": "2026-09-17T19:59:00Z",
+      "title": "3,600-Mile 2020 Ferrari F8 Tributo"
+    },
+    "https://bringatrailer.com/listing/2006-ford-gt-217/": {
+      "last_seen": "2026-09-14T22:12:50Z",
+      "bid_or_ask": 510000,
+      "no_reserve": false,
+      "ending_soon": false,
+      "ends_at": "2026-09-18T17:25:00Z",
+      "title": "Ex\u2013Mac Davis 2006 Ford GT"
+    },
+    "https://bringatrailer.com/listing/2018-ferrari-488-gtb-51/": {
+      "last_seen": "2026-09-14T22:12:50Z",
+      "bid_or_ask": 106000,
+      "no_reserve": false,
+      "ending_soon": false,
+      "ends_at": "2026-09-18T19:06:00Z",
+      "title": "2018 Ferrari 488 GTB"
+    },
+    "https://bringatrailer.com/listing/2005-ferrari-f430-106/": {
+      "last_seen": "2026-09-14T22:12:50Z",
+      "bid_or_ask": 130000,
+      "no_reserve": false,
+      "ending_soon": false,
+      "ends_at": "2026-09-18T19:50:00Z",
+      "title": "2005 Ferrari F430 Spider 6-Speed Conversion"
+    },
+    "https://bringatrailer.com/listing/2019-ferrari-488-spider-28/": {
+      "last_seen": "2026-09-14T22:12:50Z",
+      "bid_or_ask": 326000,
+      "no_reserve": false,
+      "ending_soon": false,
+      "ends_at": "2026-09-19T17:00:00Z",
+      "title": "12k-Mile 2019 Ferrari 488 Spider"
+    },
+    "https://bringatrailer.com/listing/2003-ferrari-360-modena-63/": {
+      "last_seen": "2026-09-14T22:12:50Z",
+      "bid_or_ask": 67000,
+      "no_reserve": false,
+      "ending_soon": false,
+      "ends_at": "2026-09-19T18:49:00Z",
+      "title": "2003 Ferrari 360 Modena"
+    },
+    "https://bringatrailer.com/listing/2018-ferrari-488-gtb-50/": {
+      "last_seen": "2026-09-14T22:12:50Z",
+      "bid_or_ask": 69420,
+      "no_reserve": false,
+      "ending_soon": false,
+      "ends_at": "2026-09-20T17:42:00Z",
+      "title": "2018 Ferrari 488 GTB"
+    },
+    "https://bringatrailer.com/listing/2005-ford-gt-244/": {
+      "last_seen": "2026-09-14T22:12:50Z",
+      "bid_or_ask": 551000,
+      "no_reserve": false,
+      "ending_soon": false,
+      "ends_at": "2026-09-21T17:30:00Z",
+      "title": "166-Mile 2005 Ford GT"
+    },
+    "https://rmsothebys.com/auctions/s0926/lots/r0009-2006-ford-gt/": {
+      "last_seen": "2026-09-14T22:12:50Z",
+      "bid_or_ask": null,
+      "no_reserve": false,
+      "ending_soon": false,
+      "ends_at": "2026-09-30T18:45:00Z",
+      "title": "2006 Ford GT (Sealed September)"
+    },
+    "https://bringatrailer.com/listing/2001-ferrari-360-spider-96/": {
+      "last_seen": "2026-09-14T22:12:50Z",
+      "bid_or_ask": 10360,
+      "no_reserve": false,
+      "ending_soon": false,
+      "ends_at": "2026-09-20T17:37:00Z",
+      "title": "Japanese-Market 2001 Ferrari 360 Spider"
+    },
+    "https://bringatrailer.com/listing/1998-ferrari-f355-spider-72/": {
+      "last_seen": "2026-09-14T22:12:50Z",
+      "bid_or_ask": 55500,
+      "no_reserve": false,
+      "ending_soon": false,
+      "ends_at": "2026-09-21T17:31:00Z",
+      "title": "27k-Mile 1998 Ferrari F355 Spider 6-Speed"
+    },
+    "https://live.dupontregistry.com/auction/2005-ferrari-f430giallomodena11kmiles-4089": {
+      "last_seen": "2026-09-14T22:12:50Z",
+      "bid_or_ask": 1500,
+      "no_reserve": true,
+      "ending_soon": false,
+      "ends_at": "2026-09-21T18:30:15Z",
+      "title": "2005 Ferrari F430 | Giallo Modena | 11k Miles"
+    },
+    "https://bringatrailer.com/listing/2024-ferrari-sf90-spider-8/": {
+      "last_seen": "2026-09-14T22:12:50Z",
+      "bid_or_ask": 455000,
+      "no_reserve": false,
+      "ending_soon": true,
+      "ends_at": "2026-09-15T17:10:00Z",
+      "title": "2024 Ferrari SF90 Spider"
+    },
+    "https://bringatrailer.com/listing/2004-lamborghini-gallardo-67/": {
+      "last_seen": "2026-09-14T22:12:50Z",
+      "bid_or_ask": 30000,
+      "no_reserve": false,
+      "ending_soon": true,
+      "ends_at": "2026-09-16T19:25:00Z",
+      "title": "2004 Lamborghini Gallardo"
+    },
+    "https://bringatrailer.com/listing/2012-lamborghini-gallardo-lp570-4-superleggera-4/": {
+      "last_seen": "2026-09-14T22:12:50Z",
+      "bid_or_ask": 230000,
+      "no_reserve": false,
+      "ending_soon": false,
+      "ends_at": "2026-09-18T17:15:00Z",
+      "title": "7k-Mile 2012 Lamborghini Gallardo LP570-4 Superleggera"
+    },
+    "https://bringatrailer.com/listing/2016-ferrari-488-gtb-37/": {
+      "last_seen": "2026-09-14T22:12:50Z",
+      "bid_or_ask": 50000,
+      "no_reserve": false,
+      "ending_soon": false,
+      "ends_at": "2026-09-21T17:50:00Z",
+      "title": "8k-Mile 2016 Ferrari 488 GTB"
+    }
+  }
+}

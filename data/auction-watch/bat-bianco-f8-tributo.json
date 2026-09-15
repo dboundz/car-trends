@@ -1,0 +1,27 @@
+{
+  "url": "https://bringatrailer.com/listing/2020-ferrari-f8-tributo-20/",
+  "title": "2020 Ferrari F8 Tributo Bianco Avus / Nero DS",
+  "year": 2020,
+  "miles": 3600,
+  "location": "Mount Kisco, NY",
+  "bid_or_ask": 190000,
+  "bid_count": 4,
+  "high_bidder": "Eli2024",
+  "no_reserve": false,
+  "reserve_status": "not_met_or_unshown",
+  "reserve_note": "Title is not No Reserve; page shows Current Bid + Place Bid (not Sold); no reserve-met indicator. Treat as reserve still in play / not met.",
+  "ends_at": "2026-09-17T19:59:00Z",
+  "ends_at_note": "Thu Sep 17, 2026 ~3:59pm ET (12:59pm PT)",
+  "ends_at_unix": 1789675140,
+  "sold": false,
+  "views": 1925,
+  "watchers": 606,
+  "checked_at": "2026-09-15T14:16:45Z",
+  "prev_bid_or_ask": 190000,
+  "change": {
+    "bid_delta": 0,
+    "notify": false,
+    "reason": "no material change"
+  },
+  "note": "10am ET watch (2026-09-15T14:16:45Z): still $190k / 4 bids by Eli2024; reserve not shown met; ~2d 5.7h left to Thu Sep 17 ~3:59pm ET. Views/watchers kept from prior (not refreshed from static HTML)."
+}
